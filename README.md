@@ -177,7 +177,7 @@ three classes:
 | Condition | Classifier class | Meaning |
 |---|---|---|
 | `label_pos4 == +1` | **+1** | Use +4 steering (wrong→correct) |
-| `label_neg4 == +1` | **-1** | Use -4 steering (wrong→correct via backfire) |
+| `label_neg4 == +1` | **-1** | Use -4 steering (wrong→correct) |
 | Everything else | **0** | No steering recommended |
 
 `no_change` samples (~89%) are downsampled to match the size of the minority
