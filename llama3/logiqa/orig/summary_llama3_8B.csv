@@ -1,0 +1,2 @@
+model,size,suite,refusal_enabled,refusal_label,task,role,correct,E_count,invalid,total,accuracy_percentage
+llama3,8B,default,0,,MRC-test,neutral,853,0,719,1572,54.26

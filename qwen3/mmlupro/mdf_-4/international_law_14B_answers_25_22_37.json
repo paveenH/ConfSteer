@@ -1,0 +1,1657 @@
+{
+  "data": [
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is the major difference between naturalism and positivism?\nA) On the one hand, naturalism is based on a set of rules that are of universal and objective scope and on the other hand, positivism is based on a structured and coherent legal system that is created by States in light of their interests and desires\nB) While naturalism serves only the theory human rights law, positivism has a wider and more general scope\nC) Naturalism concerns the underpinning values of the international society, while positivism the international rules as such\nD) Naturalism is a school of thought advocated outside of Europe, while positivism is Euro-centric theory\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.6116507053375244,
+      "softmax_neutral": [
+        0.1098773255944252,
+        0.07319407910108566,
+        0.20527787506580353,
+        0.6116507053375244
+      ],
+      "logits_neutral": [
+        -2.046875,
+        -2.453125,
+        -1.421875,
+        -0.330078125
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is the major difference between naturalism and positivism?\nA) Naturalism concerns the underpinning values of the international society, while positivism the international rules as such\nB) Naturalism is a contemporary theory, while positivism is a traditional theory\nC) On the one hand, naturalism is based on a set of rules that are of universal and objective scope and on the other hand, positivism is based on a structured and coherent legal system that is created by States in light of their interests and desires\nD) Naturalism argues that laws are inherently subjective and influenced by personal beliefs, while positivism argues that laws are objective and universally applicable\nE) Naturalism focuses on the interpretation of law, while positivism focuses on the enforcement of law\nF) Naturalism is a theory of law that is subjective and varies from person to person, while positivism is a theory of law that is objective and the same for everyone.\nG) Naturalism is a school of thought advocated outside of Europe, while positivism is Euro-centric theory\nH) Naturalism is a theory of law that relies on the inherent morality of a society, while positivism relies on the codification of laws by a governing body\nI) While naturalism serves only the theory human rights law, positivism has a wider and more general scope\nJ) Naturalism is concerned with the moral aspects of law, while positivism is concerned with the legal aspects of law\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.3731156885623932,
+      "softmax_neutral": [
+        0.012867452576756477,
+        0.005363951902836561,
+        0.014354679733514786,
+        0.08984270691871643,
+        0.03902006521821022,
+        0.03608766198158264,
+        0.05721914768218994,
+        0.08827723562717438,
+        0.2838514447212219,
+        0.3731156885623932
+      ],
+      "logits_neutral": [
+        -2.359375,
+        -3.234375,
+        -2.25,
+        -0.416015625,
+        -1.25,
+        -1.328125,
+        -0.8671875,
+        -0.43359375,
+        0.734375,
+        1.0078125
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Was the use of armed force permitted prior to the United Nations Charter?\nA) Armed force was only permitted in self-defense\nB) Armed force was permitted with many restrictions\nC) Armed force was not regulated under international law prior to 1945\nD) Armed force was permitted but required approval from an international body\nE) Armed force was prohibited\nF) Armed force was permitted but required approval from the countries involved\nG) Armed force was permitted subject to few restrictions\nH) Armed force was permitted with no restrictions\nI) Armed force was permitted with the consent of all nations\nJ) Armed force was not permitted under any circumstances\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.4154288172721863,
+      "softmax_neutral": [
+        0.02985936962068081,
+        0.015490837395191193,
+        0.06521886587142944,
+        0.043445128947496414,
+        0.10022687166929245,
+        0.015250676311552525,
+        0.13148866593837738,
+        0.01989062875509262,
+        0.4154288172721863,
+        0.16370022296905518
+      ],
+      "logits_neutral": [
+        -1.671875,
+        -2.328125,
+        -0.890625,
+        -1.296875,
+        -0.4609375,
+        -2.34375,
+        -0.189453125,
+        -2.078125,
+        0.9609375,
+        0.0296630859375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Which case was the first to define the meaning of the doctrine of 'margin of appreciation' as applied by the European Court of Human Rights?\nA) Dudgeon v UK (1981)\nB) Marckx v Belgium (1979)\nC) Osman v UK ( 1998)\nD) Tyrer v UK (1978)\nE) McCann v UK (1995)\nF) Soering v UK (1989)\nG) Airey v Ireland (1979)\nH) Handyside v UK (1976)\nI) Sunday Times v UK (1979)\nJ) Goodwin v UK (2002)\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.3632524907588959,
+      "softmax_neutral": [
+        0.033919986337423325,
+        0.031126732006669044,
+        0.005894409958273172,
+        0.1272648125886917,
+        0.043895721435546875,
+        0.011722433380782604,
+        0.1765711009502411,
+        0.043895721435546875,
+        0.3632524907588959,
+        0.16245655715465546
+      ],
+      "logits_neutral": [
+        -1.640625,
+        -1.7265625,
+        -3.390625,
+        -0.318359375,
+        -1.3828125,
+        -2.703125,
+        0.00909423828125,
+        -1.3828125,
+        0.73046875,
+        -0.07421875
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Is the ICJ hostile to the idea that an armed attack may arise through a series of lower intensity, yet cumulative, instances of armed force?\nA) The ICJ has often supported the accumulation theory\nB) The ICJ considers each instance of armed force individually, not cumulatively\nC) The ICJ has never addressed this issue\nD) The concept of an armed attack refers to a single attack, not multiple smaller instances of armed force\nE) The ICJ has shown mixed views on the accumulation theory\nF) In the Nicaragua case the ICJ dismissed the accumulation theory\nG) The ICJ was not hostile to the accumulation theory\nH) The ICJ has consistently rejected the concept of an armed attack arising from cumulative instances\nI) The ICJ has yet to make a definitive ruling on the accumulation theory\nJ) The ICJ ruled in favor of the accumulation theory in the Bosnia and Herzegovina case\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.2615208029747009,
+      "softmax_neutral": [
+        0.033904410898685455,
+        0.03286128491163254,
+        0.007866456173360348,
+        0.07205656170845032,
+        0.11753182113170624,
+        0.08326119184494019,
+        0.1583108752965927,
+        0.03872005268931389,
+        0.2615208029747009,
+        0.19396653771400452
+      ],
+      "logits_neutral": [
+        -1.4140625,
+        -1.4453125,
+        -2.875,
+        -0.66015625,
+        -0.1708984375,
+        -0.515625,
+        0.126953125,
+        -1.28125,
+        0.62890625,
+        0.330078125
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Is the ICJ hostile to the idea that an armed attack may arise through a series of lower intensity, yet cumulative, instances of armed force? \nA) The ICJ considers each instance of armed force individually, not cumulatively\nB) The ICJ has often supported the accumulation theory\nC) In the Nicaragua case the ICJ dismissed the accumulation theory\nD) The ICJ was not hostile to the accumulation theory\nE) The ICJ has yet to make a definitive ruling on the accumulation theory\nF) The ICJ has never addressed this issue\nG) The ICJ has consistently rejected the concept of an armed attack arising from cumulative instances\nH) The ICJ ruled in favor of the accumulation theory in the Bosnia and Herzegovina case\nI) The ICJ has shown mixed views on the accumulation theory\nJ) The concept of an armed attack refers to a single attack, not multiple smaller instances of armed force\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.29567939043045044,
+      "softmax_neutral": [
+        0.05577395483851433,
+        0.009883218444883823,
+        0.03215363994240761,
+        0.0921354815363884,
+        0.10604728013277054,
+        0.013937571085989475,
+        0.14219793677330017,
+        0.014606449753046036,
+        0.23758506774902344,
+        0.29567939043045044
+      ],
+      "logits_neutral": [
+        -0.95703125,
+        -2.6875,
+        -1.5078125,
+        -0.455078125,
+        -0.314453125,
+        -2.34375,
+        -0.0211181640625,
+        -2.296875,
+        0.4921875,
+        0.7109375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is personal (ratione personae) immunity?\nA) Personal immunity is given to individuals for their private conduct, not their public conduct\nB) Personal immunity is afforded to all physical persons\nC) Personal immunity is afforded to all State officials, regardless of their conduct\nD) Personal immunity is only given to individuals who have committed a crime in a public capacity\nE) Personal immunity is afforded only to particular persons irrespective if their conduct was undertaken in a private or public capacity\nF) Personal immunity is given to all individuals, regardless of their conduct\nG) Personal immunity is that which is afforded in a personal capacity and hence does not cover conduct of the State as such\nH) Personal immunity is afforded to State officials for conduct undertaken in a public capacity\nI) Personal immunity is afforded to State officials for conduct undertaken in a private capacity.\nJ) Personal immunity is afforded only to particular persons if their conduct was undertaken in a public capacity\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.3379422724246979,
+      "softmax_neutral": [
+        0.022729333490133286,
+        0.005526716820895672,
+        0.0048773097805678844,
+        0.015500059351325035,
+        0.1731104552745819,
+        0.00883166678249836,
+        0.11408429592847824,
+        0.0657695084810257,
+        0.3379422724246979,
+        0.2516283690929413
+      ],
+      "logits_neutral": [
+        -1.9609375,
+        -3.375,
+        -3.5,
+        -2.34375,
+        0.0693359375,
+        -2.90625,
+        -0.34765625,
+        -0.8984375,
+        0.73828125,
+        0.443359375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What was the outcome before the European Court of Human Rights in the Al-Adsani case?\nA) The Court held that the right to a fair trial trumped the privilege of immunity\nB) The Court held that the privilege of immunity was not applicable in this case\nC) The Court held that the right to a fair trial was not applicable in this case\nD) The Court held that immunities were not in conflict with the right to a fair trial\nE) The Court held that the case was admissible due to overriding human rights considerations\nF) The Court held that immunity trumped the right to a fair trial\nG) The Court held that the case was inadmissible due to lack of jurisdiction\nH) The Court held that the case was inadmissible due to the defendant's diplomatic status\nI) The Court held that human rights considerations prevailed over all other contrary rules of international law, including most immunities\nJ) The Court held that both immunity and the right to a fair trial were in conflict with each other\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.3595682680606842,
+      "softmax_neutral": [
+        0.10342123359441757,
+        0.020604902878403664,
+        0.008068994618952274,
+        0.0792958065867424,
+        0.07478306442499161,
+        0.04194950312376022,
+        0.11270207166671753,
+        0.021258972585201263,
+        0.3595682680606842,
+        0.17834718525409698
+      ],
+      "logits_neutral": [
+        -0.73046875,
+        -2.34375,
+        -3.28125,
+        -0.99609375,
+        -1.0546875,
+        -1.6328125,
+        -0.64453125,
+        -2.3125,
+        0.515625,
+        -0.185546875
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What was the particular advantage of UNSC Resolution 678 over a collective defensive action under Article 51 UN Charter during the Gulf War?\nA) Resolution 678 is broader because it authorised the use of force with respect to any matter threatening the peace and security of the Gulf region.\nB) Resolution 678 allowed the allies to attack Iraq with nuclear and chemical weapons\nC) Resolution 678 provided an unlimited time frame for military action.\nD) Resolution 678 was faster to adopt and negotiate.\nE) Resolution 678 allowed for the use of force without any geographic restrictions.\nF) Resolution 678 bypassed the need for UN Charter approval.\nG) Resolution 678 is narrower than the inherent right of self-defence under Article 51 UN Charter\nH) Resolution 678 overruled Article 51 UN Charter completely.\nI) Resolution 678 mandated a ceasefire after a specific period.\nJ) Resolution 678 allowed unrestricted air strikes against Iraq.\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.3615048825740814,
+      "softmax_neutral": [
+        0.1651860624551773,
+        0.007862861268222332,
+        0.009337378665804863,
+        0.05415433645248413,
+        0.11839952319860458,
+        0.01337517611682415,
+        0.08050525188446045,
+        0.015883414074778557,
+        0.3615048825740814,
+        0.1737910509109497
+      ],
+      "logits_neutral": [
+        0.279296875,
+        -2.765625,
+        -2.59375,
+        -0.8359375,
+        -0.0537109375,
+        -2.234375,
+        -0.439453125,
+        -2.0625,
+        1.0625,
+        0.330078125
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What was the particular advantage of UNSC Resolution 678 over a collective defensive action under Article 51 UN Charter during the Gulf War? \nA) Resolution 678 allowed for the use of force without any geographic restrictions.\nB) Resolution 678 is broader because it authorised the use of force with respect to any matter threatening the peace and security of the Gulf region.\nC) Resolution 678 overruled Article 51 UN Charter completely.\nD) Resolution 678 provided an unlimited time frame for military action.\nE) Resolution 678 is narrower than the inherent right of self-defence under Article 51 UN Charter\nF) Resolution 678 mandated a ceasefire after a specific period.\nG) Resolution 678 allowed unrestricted air strikes against Iraq.\nH) Resolution 678 bypassed the need for UN Charter approval.\nI) Resolution 678 allowed the allies to attack Iraq with nuclear and chemical weapons\nJ) Resolution 678 was faster to adopt and negotiate.\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.28840523958206177,
+      "softmax_neutral": [
+        0.06613580882549286,
+        0.06045302376151085,
+        0.011765221133828163,
+        0.04440148547291756,
+        0.15369528532028198,
+        0.017118295654654503,
+        0.10713954269886017,
+        0.028892597183585167,
+        0.22199343144893646,
+        0.28840523958206177
+      ],
+      "logits_neutral": [
+        -0.7421875,
+        -0.83203125,
+        -2.46875,
+        -1.140625,
+        0.10107421875,
+        -2.09375,
+        -0.259765625,
+        -1.5703125,
+        0.46875,
+        0.73046875
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "How are the members of the arbitral tribunal appointed?\nA) All the members of the arbitral tribunal are appointed by the parties\nB) All the members of the arbitral tribunal are appointed by an impartial third party, such as the president of the ICJ\nC) All the members of the arbitral tribunal are appointed by the parties from a restricted list of arbitrators\n",
+      "label": 0,
+      "num_options": 3,
+      "answer_neutral": "A",
+      "prob_neutral": 0.6618081331253052,
+      "softmax_neutral": [
+        0.6618081331253052,
+        0.12892533838748932,
+        0.20926648378372192
+      ],
+      "logits_neutral": [
+        -0.1220703125,
+        -1.7578125,
+        -1.2734375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Do third States enjoy any fishing rights within the Exclusive Economic Zone of another State?\nA) Third States may never have access to fisheries within another State's EEZ\nB) Third States are free to fish within another EEZ, except from certain designated areas\nC) When the coastal State cannot harvest the 'total allowable catch', the coastal State is to give other State access to that surplus with priority to be given to developing and land-locked States\nD) The coastal State must share all of its fish resources with all other States\nE) Third States have access to fisheries within its EEZ only during a specific season\nF) The coastal State is to give access to fisheries within its EEZ only to States with which it has diplomatic relations\nG) Third States have unlimited fishing rights within the EEZ of any State\nH) Third States can only fish within another State's EEZ with a special permit\nI) The coastal State is to give access to fisheries within its EEZ only to neighbouring States\nJ) Third States can only fish within another State's EEZ if they have a mutual agreement\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.48139122128486633,
+      "softmax_neutral": [
+        0.02737123891711235,
+        0.010148291476070881,
+        0.04995163902640343,
+        0.010308102704584599,
+        0.02531425841152668,
+        0.009836060926318169,
+        0.03327496722340584,
+        0.04879450798034668,
+        0.3036096692085266,
+        0.48139122128486633
+      ],
+      "logits_neutral": [
+        -1.8359375,
+        -2.828125,
+        -1.234375,
+        -2.8125,
+        -1.9140625,
+        -2.859375,
+        -1.640625,
+        -1.2578125,
+        0.5703125,
+        1.03125
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Which of the following statements is false?\nA) In the 1990's it became apparent the European Court of Human Rights had to be reformed because of the decrease in the number of member states\nB) In the 1990's it became apparent the European Court of Human Rights had to be reformed because it was not enforcing its judgments effectively\nC) In the 1990's it became apparent the European Court of Human Rights had to be reformed because it wasn't examining enough cases\nD) In the 1990's it became apparent the European Court of Human Rights had to be reformed because of the growth in the number of individuals who could access the Court after the increase in the number of member states\nE) In the 1990's it became apparent the European Court of Human Rights had to be reformed because it was unable to keep up with the rapid changes in international law\nF) In the 1990's it became apparent the European Court of Human Rights had to be reformed because the workload had increased\nG) In the 1990's it became apparent the European Court of Human Rights had to be reformed because it was being heavily influenced by political pressure\nH) In the 1990's it became apparent the European Court of Human Rights had to be reformed because it was a part time court that could not process the growing number of complaints\nI) In the 1990's it became apparent the European Court of Human Rights had to be reformed because of the lack of diversity among its judges\nJ) In the 1990's it became apparent the European Court of Human Rights had to be reformed because of budgetary constraints\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.413562148809433,
+      "softmax_neutral": [
+        0.1136150062084198,
+        0.020270826295018196,
+        0.03164231777191162,
+        0.06698678433895111,
+        0.0792386457324028,
+        0.033420950174331665,
+        0.08111772686243057,
+        0.0329027995467186,
+        0.413562148809433,
+        0.127242773771286
+      ],
+      "logits_neutral": [
+        -0.2138671875,
+        -1.9375,
+        -1.4921875,
+        -0.7421875,
+        -0.57421875,
+        -1.4375,
+        -0.55078125,
+        -1.453125,
+        1.078125,
+        -0.1005859375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is an act jure gestionis?\nA) Acts jure gestionis are all actions performed by the State in a public capacity\nB) All conduct undertaken by government officials in their free time is considered jus gestionis.\nC) Acts jure gestionis are those undertaken by States in a private capacity\nD) All international treaties signed by the State are acts jure gestionis\nE) Acts jure gestionis are all decisions made by State courts\nF) Acts jure gestionis are all legislative decisions made by the State.\nG) All purchases by the State are acts jure gestionis\nH) All diplomatic missions undertaken by the State are acts jure gestionis\nI) Acts jure gestionis are military actions undertaken by States\nJ) All acts undertaken by State corporations are jure gestionis\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.47027698159217834,
+      "softmax_neutral": [
+        0.021111253648996353,
+        0.008664040826261044,
+        0.0868227481842041,
+        0.022472810000181198,
+        0.021111253648996353,
+        0.005682016257196665,
+        0.07254312932491302,
+        0.018341774120926857,
+        0.47027698159217834,
+        0.2729739844799042
+      ],
+      "logits_neutral": [
+        -2.78125,
+        -3.671875,
+        -1.3671875,
+        -2.71875,
+        -2.78125,
+        -4.09375,
+        -1.546875,
+        -2.921875,
+        0.322265625,
+        -0.2216796875
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is an act jure gestionis? \nA) Acts jure gestionis are military actions undertaken by States\nB) All diplomatic missions undertaken by the State are acts jure gestionis\nC) All international treaties signed by the State are acts jure gestionis\nD) All purchases by the State are acts jure gestionis\nE) All acts undertaken by State corporations are jure gestionis\nF) Acts jure gestionis are all legislative decisions made by the State.\nG) Acts jure gestionis are those undertaken by States in a private capacity\nH) All conduct undertaken by government officials in their free time is considered jus gestionis.\nI) Acts jure gestionis are all actions performed by the State in a public capacity\nJ) Acts jure gestionis are all decisions made by State courts\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.5020569562911987,
+      "softmax_neutral": [
+        0.009195494465529919,
+        0.003657714929431677,
+        0.004770559258759022,
+        0.024995943531394005,
+        0.076992928981781,
+        0.00905293133109808,
+        0.5020569562911987,
+        0.0149257592856884,
+        0.2410072237253189,
+        0.11334455013275146
+      ],
+      "logits_neutral": [
+        -3.171875,
+        -4.09375,
+        -3.828125,
+        -2.171875,
+        -1.046875,
+        -3.1875,
+        0.828125,
+        -2.6875,
+        0.09423828125,
+        -0.66015625
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Which of the following cases best illustrates the 'living instrument principle' used by the European Court of Human Rights?\nA) Golder v UK (1978)\nB) A v UK (2009)\nC) Goodwin v UK (2002)\nD) Osman v UK (1998)\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.6224163174629211,
+      "softmax_neutral": [
+        0.1338205635547638,
+        0.095637246966362,
+        0.14812585711479187,
+        0.6224163174629211
+      ],
+      "logits_neutral": [
+        -1.9453125,
+        -2.28125,
+        -1.84375,
+        -0.408203125
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Which of the following cases best illustrates the 'living instrument principle' used by the European Court of Human Rights?\nA) McCann v UK (1995)\nB) Soering v UK (1989)\nC) A v UK (2009)\nD) Marper v UK (2008)\nE) Goodwin v UK (2002)\nF) Golder v UK (1978)\nG) Tyrer v UK (1978)\nH) Osman v UK (1998)\n",
+      "label": 4,
+      "num_options": 8,
+      "answer_neutral": "E",
+      "prob_neutral": 0.364146888256073,
+      "softmax_neutral": [
+        0.04077643156051636,
+        0.051546238362789154,
+        0.031264375895261765,
+        0.16001887619495392,
+        0.364146888256073,
+        0.037127360701560974,
+        0.2567102611064911,
+        0.05840953812003136
+      ],
+      "logits_neutral": [
+        -2.578125,
+        -2.34375,
+        -2.84375,
+        -1.2109375,
+        -0.388671875,
+        -2.671875,
+        -0.73828125,
+        -2.21875
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is the meaning of cultural relativism?\nA) Cultural relativism posits that the application of human rights is relative to the laws in each nation\nB) Cultural relativism posits that laws in each nation should validate the existence and practice of human rights\nC) Cultural relativism posits that human rights are determined by global consensus\nD) Culture relativism posits that human rights have a cultural origin\nE) Cultural relativism posits that all cultures are objectively equal in value\nF) Cultural relativism posits that human rights should be universally the same in every culture\nG) Cultural relativism posits that human rights are determined by religious beliefs\nH) Culture relativism posits that human rights apply equally to all without restrictions\nI) Cultural relativism posits that the validity of human rights depends on individual beliefs\nJ) Cultural relativism posits that local culture should validate the existence and practice of all human rights\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.36005815863609314,
+      "softmax_neutral": [
+        0.07430219650268555,
+        0.012612683698534966,
+        0.01130593754351139,
+        0.05436065047979355,
+        0.16089041531085968,
+        0.01281130500137806,
+        0.03707074373960495,
+        0.0152138015255332,
+        0.36005815863609314,
+        0.26137417554855347
+      ],
+      "logits_neutral": [
+        -0.7890625,
+        -2.5625,
+        -2.671875,
+        -1.1015625,
+        -0.0164794921875,
+        -2.546875,
+        -1.484375,
+        -2.375,
+        0.7890625,
+        0.46875
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Is the recognition of foreign judgments subject to the same rules as those applicable to the incorporation and transformation of treaties?\nA) Foreign judgments are enforced on the basis of the doctrine of monism\nB) Foreign judgments are enforced on the basis of the doctrine of dualism\nC) Foreign judgments are enforced on the basis of the doctrine of incorporation\nD) The recognition of foreign judgments is dependent on the existence of appropriate bilateral or multilateral treaties\nE) The courts exercise discretion as to the enforcement of foreign judgments on the basis of the rule of reciprocity\nF) Foreign judgments are automatically recognized and enforced without any additional process.\nG) Foreign judgments are enforced on the basis of the doctrine of transformation\n",
+      "label": 3,
+      "num_options": 7,
+      "answer_neutral": "E",
+      "prob_neutral": 0.41545936465263367,
+      "softmax_neutral": [
+        0.03630243241786957,
+        0.009178693406283855,
+        0.01399583462625742,
+        0.24519185721874237,
+        0.41545936465263367,
+        0.030331816524267197,
+        0.24953997135162354
+      ],
+      "logits_neutral": [
+        -1.609375,
+        -2.984375,
+        -2.5625,
+        0.30078125,
+        0.828125,
+        -1.7890625,
+        0.318359375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is the meaning of \"armed attack\" in Article 51 UN Charter?\nA) Armed attack includes all types of armed force\nB) Armed attack includes all high intensity instances of armed force\nC) Armed attack includes terrorist attacks\nD) An \"armed attack\" gives the right to invade the aggressor State\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.6503076553344727,
+      "softmax_neutral": [
+        0.21486796438694,
+        0.0809200182557106,
+        0.05390435457229614,
+        0.6503076553344727
+      ],
+      "logits_neutral": [
+        -1.5234375,
+        -2.5,
+        -2.90625,
+        -0.416015625
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Which of the following articles are not qualified rights?\nA) Article 19\nB) Article 11\nC) Article 12\nD) Article 9\nE) Article 3\nF) Article 17\n",
+      "label": 4,
+      "num_options": 6,
+      "answer_neutral": "E",
+      "prob_neutral": 0.488175630569458,
+      "softmax_neutral": [
+        0.11021069437265396,
+        0.03749730437994003,
+        0.04383878409862518,
+        0.19342580437660217,
+        0.488175630569458,
+        0.12685173749923706
+      ],
+      "logits_neutral": [
+        -2.40625,
+        -3.484375,
+        -3.328125,
+        -1.84375,
+        -0.91796875,
+        -2.265625
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Which philosopher called the idea of natural rights 'nonsense on stilts'?\nA) Socrates\nB) John Locke\nC) Immanuel Kant\nD) Emmanuel Kant\nE) René Descartes\nF) Thomas Hobbes\nG) Alan Gerwith\nH) Jeremy Bentham\nI) John Stuart Mill\nJ) Friedrich Nietzsche\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.35695189237594604,
+      "softmax_neutral": [
+        0.023543527349829674,
+        0.017224814742803574,
+        0.009076839312911034,
+        0.027525175362825394,
+        0.01951827108860016,
+        0.15901638567447662,
+        0.057817328721284866,
+        0.23249998688697815,
+        0.35695189237594604,
+        0.09682580083608627
+      ],
+      "logits_neutral": [
+        -2.4375,
+        -2.75,
+        -3.390625,
+        -2.28125,
+        -2.625,
+        -0.52734375,
+        -1.5390625,
+        -0.1474609375,
+        0.28125,
+        -1.0234375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is the effects doctrine?\nA) It posits that jurisdiction exists only when it is ineffective\nB) The effects doctrine serves to confer jurisdiction on the State sharing the nationality of the victim\nC) The effects doctrine serves to confer jurisdiction on the State sharing the nationality of the offender\nD) The effects doctrine posits that jurisdiction is solely determined by the severity of the harmful conduct\nE) The effects doctrine serves to confer jurisdiction to the State on whose territory the conduct produces effects\nF) The effects doctrine serves to confer jurisdiction to the State on whose territory the conduct originated\nG) It posits that jurisdiction exists only when it is effective\nH) The effects doctrine serves to confer jurisdiction to the State that is most affected by the harmful conduct\nI) The effects doctrine serves to confer jurisdiction on the State which has an effective link with the harmful conduct\nJ) The effects doctrine serves to confer jurisdiction on the State where the offender resides\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.4231788218021393,
+      "softmax_neutral": [
+        0.00987476296722889,
+        0.005715074483305216,
+        0.006375626195222139,
+        0.007453862112015486,
+        0.4231788218021393,
+        0.0078115807846188545,
+        0.05727102607488632,
+        0.026220588013529778,
+        0.3648029565811157,
+        0.09129568189382553
+      ],
+      "logits_neutral": [
+        -2.328125,
+        -2.875,
+        -2.765625,
+        -2.609375,
+        1.4296875,
+        -2.5625,
+        -0.5703125,
+        -1.3515625,
+        1.28125,
+        -0.10400390625
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Which one of the statements below is false?\nA) The war crimes trials at Nuremberg and Tokyo took place immediately after the First World War\nB) The war crimes trials found that \"superior orders\" could not be used as a defence for war crimes or crimes against humanity\nC) The war crimes trials introduced a 'crime against humanity' as an offence\nD) The war crimes trials were held after the Second World War, but before the creation of the United Nations\nE) The war crimes trials were conducted by the United Nations\nF) The war crimes trials at Nuremberg and Tokyo took place in the United States\nG) The war crimes trials did not include the crime of genocide\nH) The war crimes trials held individuals legally responsible for acts such as war crimes and crimes against humanity\n",
+      "label": 0,
+      "num_options": 8,
+      "answer_neutral": "G",
+      "prob_neutral": 0.2611887454986572,
+      "softmax_neutral": [
+        0.1816282570362091,
+        0.03359784930944443,
+        0.02382444404065609,
+        0.1349746584892273,
+        0.19485867023468018,
+        0.1127755418419838,
+        0.2611887454986572,
+        0.05715186893939972
+      ],
+      "logits_neutral": [
+        -0.859375,
+        -2.546875,
+        -2.890625,
+        -1.15625,
+        -0.7890625,
+        -1.3359375,
+        -0.49609375,
+        -2.015625
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Which State ordinarily exercises jurisdiction in respect of crimes committed on board vessels?\nA) All States enjoy such jurisdiction\nB) The neighboring State\nC) The International Maritime Organization\nD) The port State\nE) The United Nations\nF) The State of the vessel's destination\nG) The State of the vessel's origin\nH) The coastal State\nI) The flag State\nJ) The International Tribunal for the Law of the Sea\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.8560998439788818,
+      "softmax_neutral": [
+        0.016822200268507004,
+        0.002811271697282791,
+        0.00255969213321805,
+        0.008392907679080963,
+        0.00585919339209795,
+        0.005590881686657667,
+        0.0279526486992836,
+        0.020450595766305923,
+        0.8560998439788818,
+        0.05346084013581276
+      ],
+      "logits_neutral": [
+        -1.6796875,
+        -3.46875,
+        -3.5625,
+        -2.375,
+        -2.734375,
+        -2.78125,
+        -1.171875,
+        -1.484375,
+        2.25,
+        -0.5234375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What dimension did the Kadi judgment introduce with respect to the incorporation of UN Security Council resolutions?\nA) The Kadi judgment demanded that UNSC resolutions are construed in accordance with human rights\nB) The Kadi judgment demanded that all UNSC resolutions be incorporated without any further implementing legislation\nC) The Kadi judgment required that important UNSC resolutions be transformed and not merely incorporated\nD) The Kadi judgment claimed that UNSC resolutions are not binding if they violate human rights\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.5351548790931702,
+      "softmax_neutral": [
+        0.5351548790931702,
+        0.034211307764053345,
+        0.03757376968860626,
+        0.39306002855300903
+      ],
+      "logits_neutral": [
+        -0.53125,
+        -3.28125,
+        -3.1875,
+        -0.83984375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is the meaning of collective security?\nA) The establishment of a mutual defense pact among several nations\nB) The right of a nation to defend itself without outside intervention\nC) The authorisation of armed force by the UN Security Council\nD) The authorisation of humanitarian missions by the UN Security Council\nE) The right of one's allies to defend the victim State\nF) The authorisation of sanctions by the UN Security Council\nG) The right to self-defence by more than one nation acting in concert\nH) The right of a nation to invade another for its own security\nI) The authorisation of peacekeeping missions by the UN General Assembly\nJ) The creation of a global police force by the UN\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.31690719723701477,
+      "softmax_neutral": [
+        0.20193086564540863,
+        0.011101123876869678,
+        0.00906047411262989,
+        0.025810888037085533,
+        0.08869216591119766,
+        0.013601383194327354,
+        0.31690719723701477,
+        0.020418092608451843,
+        0.2339009940624237,
+        0.07857689261436462
+      ],
+      "logits_neutral": [
+        0.08837890625,
+        -2.8125,
+        -3.015625,
+        -1.96875,
+        -0.734375,
+        -2.609375,
+        0.5390625,
+        -2.203125,
+        0.2353515625,
+        -0.85546875
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is the 'equitable result' in the law and practice of maritime delimitation?\nA) It is the only method of delimitation that international courts and tribunals follow\nB) An equitable result is what a judge or the arbitrator would decide ex aequo et bono, i.e. upon their discretion and in light of what they consider as fair and equitable in a delimitation case\nC) It is the end result that all delimitations of areas of continental shelf and EEZ should achieve, after, however, drawing a provisional 'equidistance line' and adjusting the zone in the light of the relevant circumstances and the proportionality test.\nD) Achieving an equitable result is an old method of delimitation which is currently not applicable\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.36080288887023926,
+      "softmax_neutral": [
+        0.09230059385299683,
+        0.24894653260707855,
+        0.2979499399662018,
+        0.36080288887023926
+      ],
+      "logits_neutral": [
+        -2.28125,
+        -1.2890625,
+        -1.109375,
+        -0.91796875
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Is extra-territorial abduction a ground for refusal of otherwise lawful jurisdiction by English courts?\nA) Such abduction constitutes abuse of process and leads to a stay of proceedings\nB) Such abduction gives rise to the abductor's liability but does not lead to a stay of proceedings\nC) The stay of proceedings under such circumstances would prevent the administration of justice in respect of international criminals\nD) The courts may, but will seldom, stay proceedings in cases of extra-territorial abduction\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.4540712833404541,
+      "softmax_neutral": [
+        0.39450395107269287,
+        0.11891517788171768,
+        0.03250959888100624,
+        0.4540712833404541
+      ],
+      "logits_neutral": [
+        -0.75390625,
+        -1.953125,
+        -3.25,
+        -0.61328125
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Is extra-territorial abduction a ground for refusal of otherwise lawful jurisdiction by English courts?\nA) Such abduction is encouraged to expedite the course of justice\nB) Extra-territorial abduction has no influence on the proceedings of English courts\nC) The stay of proceedings under such circumstances would prevent the administration of justice in respect of international criminals\nD) Such abduction results in immediate dismissal of the case\nE) The jurisdiction of English courts is nullified in cases of extra-territorial abduction\nF) Such abduction gives rise to the abductor's liability but does not lead to a stay of proceedings\nG) English courts will always refuse jurisdiction in cases of extra-territorial abduction\nH) Such abduction constitutes abuse of process and leads to a stay of proceedings\nI) The court proceedings are automatically stayed if the abductee is a non-UK citizen\n",
+      "label": 7,
+      "num_options": 9,
+      "answer_neutral": "I",
+      "prob_neutral": 0.47316980361938477,
+      "softmax_neutral": [
+        0.02775779739022255,
+        0.013528070412576199,
+        0.01710108481347561,
+        0.03001333586871624,
+        0.044356830418109894,
+        0.11686469614505768,
+        0.10516683757305145,
+        0.17204147577285767,
+        0.47316980361938477
+      ],
+      "logits_neutral": [
+        -2.1875,
+        -2.90625,
+        -2.671875,
+        -2.109375,
+        -1.71875,
+        -0.75,
+        -0.85546875,
+        -0.36328125,
+        0.6484375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Which of these statements best describes the UK Constitution?\nA) The UK Constitution is a direct copy of the US Constitution\nB) The UK Constitution is codified and contained in a single document\nC) The UK Constitution can be changed by a simple majority vote in Parliament\nD) The UK Constitution gives the judiciary the power to overturn acts of parliament\nE) The UK Constitution is based on a Bill of Rights\nF) The UK Constitution's power is derived solely from Parliament\nG) The UK Constitution is based entirely on European Union law\nH) The UK Constitution is uncodified and can be found in a number of sources\nI) The UK Constitution's only source of power is that of the sovereign\nJ) The UK Constitution is based solely on common law\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.350350946187973,
+      "softmax_neutral": [
+        0.020795080810785294,
+        0.008271711878478527,
+        0.026287449523806572,
+        0.027982845902442932,
+        0.03170870989561081,
+        0.026701416820287704,
+        0.05146832764148712,
+        0.31321027874946594,
+        0.350350946187973,
+        0.14322318136692047
+      ],
+      "logits_neutral": [
+        -2.65625,
+        -3.578125,
+        -2.421875,
+        -2.359375,
+        -2.234375,
+        -2.40625,
+        -1.75,
+        0.055908203125,
+        0.16796875,
+        -0.7265625
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Which of these statements best describes the UK Constitution? \nA) The UK Constitution is based on a Bill of Rights\nB) The UK Constitution gives the judiciary the power to overturn acts of parliament\nC) The UK Constitution's power is derived solely from Parliament\nD) The UK Constitution is codified and contained in a single document\nE) The UK Constitution is uncodified and can be found in a number of sources\nF) The UK Constitution is a direct copy of the US Constitution\nG) The UK Constitution's only source of power is that of the sovereign\nH) The UK Constitution is based solely on common law\nI) The UK Constitution can be changed by a simple majority vote in Parliament\nJ) The UK Constitution is based entirely on European Union law\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.8023994565010071,
+      "softmax_neutral": [
+        0.00877565611153841,
+        0.002436911454424262,
+        0.005406524520367384,
+        0.005755215883255005,
+        0.8023994565010071,
+        0.004344264976680279,
+        0.008505658246576786,
+        0.006624213419854641,
+        0.12547892332077026,
+        0.0302731990814209
+      ],
+      "logits_neutral": [
+        -2.1875,
+        -3.46875,
+        -2.671875,
+        -2.609375,
+        2.328125,
+        -2.890625,
+        -2.21875,
+        -2.46875,
+        0.47265625,
+        -0.94921875
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Is the unlawful homicide committed by Minister of country X abroad an act jure imperii or jure gestionis?\nA) Such conduct is a public act but is shielded by immunity\nB) Such conduct is a private act but is not shielded by immunity\nC) Such conduct is a public act and does not attract immunity\nD) Such conduct is a public act (jure imperii)\nE) Such conduct is a private act (jure gestionis)\nF) Such conduct is a private act and is shielded by immunity\nG) Such conduct is a public act (jure gestionis)\nH) Such conduct never attracts immunity\nI) Such conduct is neither a public nor a private act\nJ) Such conduct is a private act (jure imperii)\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.2811751961708069,
+      "softmax_neutral": [
+        0.028949137777090073,
+        0.016494721174240112,
+        0.012846101075410843,
+        0.15227629244327545,
+        0.2400326281785965,
+        0.017558539286255836,
+        0.08986899256706238,
+        0.015495357103645802,
+        0.2811751961708069,
+        0.14530305564403534
+      ],
+      "logits_neutral": [
+        -2.609375,
+        -3.171875,
+        -3.421875,
+        -0.94921875,
+        -0.494140625,
+        -3.109375,
+        -1.4765625,
+        -3.234375,
+        -0.3359375,
+        -0.99609375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Do treaties bind third States, ie non-State parties?\nA) Treaties do no create obligations or rights for third States without their consent\nB) Treaties create both obligations and rights for third States\nC) Treaties do not create any rights for third States, even when the latter consent.\nD) Treaties may create only obligations for third States\nE) Treaties create obligations for third States without their consent\nF) Treaties may create only rights for third States\nG) Treaties do not create any obligations or rights for third States, even when the latter consent.\nH) Treaties create rights for third States without their consent\n",
+      "label": 0,
+      "num_options": 8,
+      "answer_neutral": "A",
+      "prob_neutral": 0.6733413338661194,
+      "softmax_neutral": [
+        0.6733413338661194,
+        0.013179447501897812,
+        0.007993738166987896,
+        0.03696267306804657,
+        0.06487151235342026,
+        0.011450503021478653,
+        0.1496570110321045,
+        0.04254378005862236
+      ],
+      "logits_neutral": [
+        0.24609375,
+        -3.6875,
+        -4.1875,
+        -2.65625,
+        -2.09375,
+        -3.828125,
+        -1.2578125,
+        -2.515625
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is the fundamental prerequisite for the incorporation of custom under English law?\nA) Custom is superior to English law and is always incorporated\nB) Custom is not incorporated under English law\nC) Custom is incorporated if it has been approved by the Queen\nD) Custom is incorporated if it is not in conflict with existing legislation\nE) Custom is incorporated if it has been practiced for at least a century\nF) Custom is incorporated if it is ratified by a national referendum\nG) Custom is only incorporated if it is universally practiced throughout England\nH) Custom must first be recognised by Parliament before the courts can bring it into the domestic sphere\nI) Custom is incorporated if it is not in conflict with the common law\nJ) Custom is incorporated with the passing of implementing legislation\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.5480298399925232,
+      "softmax_neutral": [
+        0.013506955467164516,
+        0.005900752265006304,
+        0.0058092693798244,
+        0.07118728011846542,
+        0.09158497303724289,
+        0.007817225530743599,
+        0.040324319154024124,
+        0.026445336639881134,
+        0.5480298399925232,
+        0.1893940418958664
+      ],
+      "logits_neutral": [
+        -2.140625,
+        -2.96875,
+        -2.984375,
+        -0.478515625,
+        -0.2265625,
+        -2.6875,
+        -1.046875,
+        -1.46875,
+        1.5625,
+        0.5
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Which one of the following statements is false?\nA) Protocol 14 changed the committee that hears admissibility cases from a three judge to a one judge formation\nB) Protocol 14 added a new criterion for admissibility\nC) Protocol 14 abolished the Commission of Human Rights\nD) Protocol 14 extended the judicial term of office for the European Court of Human Rights\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.593370258808136,
+      "softmax_neutral": [
+        0.21219342947006226,
+        0.06573446094989777,
+        0.1287018209695816,
+        0.593370258808136
+      ],
+      "logits_neutral": [
+        -1.21875,
+        -2.390625,
+        -1.71875,
+        -0.1904296875
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Which one of the following statements is false?\nA) Protocol 14 established the Human Rights Council\nB) Protocol 14 mandated a two judge formation for hearing admissibility cases\nC) Protocol 14 reduced the jurisdiction of the European Court of Human Rights\nD) Protocol 14 shortened the judicial term of office for the European Court of Human Rights\nE) Protocol 14 introduced a requirement for unanimous decision-making in admissibility cases\nF) Protocol 14 added a new criterion for admissibility\nG) Protocol 14 eliminated the right to individual petition\nH) Protocol 14 changed the committee that hears admissibility cases from a three judge to a one judge formation\nI) Protocol 14 extended the judicial term of office for the European Court of Human Rights\nJ) Protocol 14 abolished the Commission of Human Rights\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.38951626420021057,
+      "softmax_neutral": [
+        0.02968633733689785,
+        0.009196396917104721,
+        0.012968999333679676,
+        0.05502977594733238,
+        0.06848565489053726,
+        0.03285977989435196,
+        0.16460973024368286,
+        0.03811800852417946,
+        0.38951626420021057,
+        0.19952914118766785
+      ],
+      "logits_neutral": [
+        -2.046875,
+        -3.21875,
+        -2.875,
+        -1.4296875,
+        -1.2109375,
+        -1.9453125,
+        -0.333984375,
+        -1.796875,
+        0.52734375,
+        -0.1416015625
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Should treaties assume a particular form?\nA) Treaties do not need to be designated as such, but must always assume a particular form\nB) Treaties should always be written in legal language, regardless of their form\nC) Treaties should always assume a particular form, no matter how they are designated\nD) Treaties should always be designated as such, but do not need to assume a particular form\nE) Treaties do not have to assume a particular form or designated as such\nF) Treaties should not be designated as such, and do not need to assume a particular form\nG) Treaties do not need to be designated or assume a particular form, but must always be ratified by the legislative body\nH) Treaties have to be designated as such, no matter what form they assume\nI) Treaties should always be designated as such and assume a particular form\nJ) Treaties can assume any form, but must always be signed by the heads of states\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.5081427097320557,
+      "softmax_neutral": [
+        0.023215608671307564,
+        0.005962261464446783,
+        0.016984902322292328,
+        0.05110524967312813,
+        0.13919009268283844,
+        0.011857372708618641,
+        0.04726463928818703,
+        0.019549502059817314,
+        0.5081427097320557,
+        0.17672766745090485
+      ],
+      "logits_neutral": [
+        -2.125,
+        -3.484375,
+        -2.4375,
+        -1.3359375,
+        -0.333984375,
+        -2.796875,
+        -1.4140625,
+        -2.296875,
+        0.9609375,
+        -0.09521484375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Should treaties assume a particular form? \nA) Treaties should always assume a particular form, no matter how they are designated\nB) Treaties should always be designated as such, but do not need to assume a particular form\nC) Treaties should always be designated as such and assume a particular form\nD) Treaties should always be written in legal language, regardless of their form\nE) Treaties do not need to be designated or assume a particular form, but must always be ratified by the legislative body\nF) Treaties have to be designated as such, no matter what form they assume\nG) Treaties do not have to assume a particular form or designated as such\nH) Treaties should not be designated as such, and do not need to assume a particular form\nI) Treaties can assume any form, but must always be signed by the heads of states\nJ) Treaties do not need to be designated as such, but must always assume a particular form\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.2985284924507141,
+      "softmax_neutral": [
+        0.023065051063895226,
+        0.030082497745752335,
+        0.019121598452329636,
+        0.028259892016649246,
+        0.05753428116440773,
+        0.030556228011846542,
+        0.1957678347826004,
+        0.03278204798698425,
+        0.2985284924507141,
+        0.2843020558357239
+      ],
+      "logits_neutral": [
+        -2.140625,
+        -1.875,
+        -2.328125,
+        -1.9375,
+        -1.2265625,
+        -1.859375,
+        -0.00201416015625,
+        -1.7890625,
+        0.419921875,
+        0.37109375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "In Osman v UK (1998), the European Court laid down a test, which can be used to apply a general positive obligation on a state. Which of the following statements is not part of the Osman test?\nA) The risk must emanate from a state agent\nB) If a real and imminent risk (of death/harm)\nC) A state should take reasonable steps to prevent death/harm occurring\nD) A state knows or ought to have known\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.6135461330413818,
+      "softmax_neutral": [
+        0.21038579940795898,
+        0.06777074187994003,
+        0.10829732567071915,
+        0.6135461330413818
+      ],
+      "logits_neutral": [
+        -1.4296875,
+        -2.5625,
+        -2.09375,
+        -0.359375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "In Osman v UK (1998), the European Court laid down a test, which can be used to apply a general positive obligation on a state. Which of the following statements is not part of the Osman test?\nA) The risk must be immediate and unavoidable\nB) If a real and imminent risk (of death/harm)\nC) The state should take unreasonable steps to prevent death/harm occurring\nD) The risk must have been previously reported to the state\nE) A state should take reasonable steps to prevent death/harm occurring\nF) The state has a duty to inform the individual of the risk\nG) The state has a responsibility to eliminate all risk\nH) The state must provide financial compensation for any potential harm\nI) The risk must emanate from a state agent\nJ) A state knows or ought to have known\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.30081453919410706,
+      "softmax_neutral": [
+        0.03136685490608215,
+        0.00805567391216755,
+        0.05051721632480621,
+        0.020251963287591934,
+        0.07465961575508118,
+        0.02560088038444519,
+        0.29934927821159363,
+        0.029466429725289345,
+        0.30081453919410706,
+        0.15991748869419098
+      ],
+      "logits_neutral": [
+        -2.40625,
+        -3.765625,
+        -1.9296875,
+        -2.84375,
+        -1.5390625,
+        -2.609375,
+        -0.150390625,
+        -2.46875,
+        -0.1455078125,
+        -0.77734375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is the relationship between the formal sources of international law?\nA) Treaties supersede custom\nB) Treaties and General Principles of Law are of equal importance, but both supersede custom\nC) General Principles of Law supersede both custom and treaties\nD) Judicial decisions and teachings of the most highly qualified publicists are the only sources of international law.\nE) Judicial decisions and teachings of the most highly qualified publicists supersede both custom and treaties\nF) Custom and General Principles of Law are of equal importance, but both supersede treaties\nG) There is a hierarchy, but it varies from case to case\nH) Custom supersedes treaties\nI) Treaties and custom are of equal importance, but General Principles of Law supersede both\nJ) There is no hierarchy between the formal sources of international law\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.44867897033691406,
+      "softmax_neutral": [
+        0.015840305015444756,
+        0.004682384897023439,
+        0.0029763048514723778,
+        0.006500847637653351,
+        0.014649887569248676,
+        0.004831020254641771,
+        0.24972745776176453,
+        0.010068709030747414,
+        0.24204415082931519,
+        0.44867897033691406
+      ],
+      "logits_neutral": [
+        -2.125,
+        -3.34375,
+        -3.796875,
+        -3.015625,
+        -2.203125,
+        -3.3125,
+        0.6328125,
+        -2.578125,
+        0.6015625,
+        1.21875
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is the relationship between the formal sources of international law? \nA) Custom and General Principles of Law are of equal importance, but both supersede treaties\nB) Judicial decisions and teachings of the most highly qualified publicists supersede both custom and treaties\nC) There is no hierarchy between the formal sources of international law\nD) General Principles of Law supersede both custom and treaties\nE) Treaties and General Principles of Law are of equal importance, but both supersede custom\nF) Custom supersedes treaties\nG) There is a hierarchy, but it varies from case to case\nH) Treaties supersede custom\nI) Judicial decisions and teachings of the most highly qualified publicists are the only sources of international law.\nJ) Treaties and custom are of equal importance, but General Principles of Law supersede both\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.31834864616394043,
+      "softmax_neutral": [
+        0.01934368535876274,
+        0.005717982072383165,
+        0.05096381902694702,
+        0.015064876526594162,
+        0.062442172318696976,
+        0.01288567204028368,
+        0.19422292709350586,
+        0.05056721344590187,
+        0.31834864616394043,
+        0.2704429626464844
+      ],
+      "logits_neutral": [
+        -2.515625,
+        -3.734375,
+        -1.546875,
+        -2.765625,
+        -1.34375,
+        -2.921875,
+        -0.208984375,
+        -1.5546875,
+        0.28515625,
+        0.1220703125
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is a derogation?\nA) A State may suspend particular rights by means of a derogation in circumstances that threaten its existence\nB) A derogation is a process whereby a state can amend a treaty\nC) Derogations are enforcement clauses in human rights treaties\nD) A derogation is a mechanism that allows a state to temporarily suspend its obligations under a treaty in times of peace\nE) A derogation refers to the ability of rights holders to bring a claim against the State for breach of an obligation\nF) Derogations are clauses in human rights treaties that outline the penalties for non-compliance\nG) Derogations refer to the responsibility of a state to ensure the protection of human rights within its territory\nH) Derogations are clauses in treaties that allow a state to withdraw from the treaty\nI) A derogation is a legal term for a state's refusal to comply with a treaty\nJ) Derogations are exemptions from particular human rights obligations contained in a treaty\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.4342745244503021,
+      "softmax_neutral": [
+        0.1606995016336441,
+        0.007370642852038145,
+        0.004401212092489004,
+        0.0188215970993042,
+        0.024167409166693687,
+        0.007033117581158876,
+        0.040472790598869324,
+        0.008483558893203735,
+        0.2942756116390228,
+        0.4342745244503021
+      ],
+      "logits_neutral": [
+        -0.52734375,
+        -3.609375,
+        -4.125,
+        -2.671875,
+        -2.421875,
+        -3.65625,
+        -1.90625,
+        -3.46875,
+        0.07763671875,
+        0.466796875
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is a derogation? \nA) Derogations refer to the responsibility of a state to ensure the protection of human rights within its territory\nB) A derogation is a mechanism that allows a state to temporarily suspend its obligations under a treaty in times of peace\nC) A derogation refers to the ability of rights holders to bring a claim against the State for breach of an obligation\nD) Derogations are enforcement clauses in human rights treaties\nE) A derogation is a legal term for a state's refusal to comply with a treaty\nF) Derogations are exemptions from particular human rights obligations contained in a treaty\nG) Derogations are clauses in treaties that allow a state to withdraw from the treaty\nH) A derogation is a process whereby a state can amend a treaty\nI) A State may suspend particular rights by means of a derogation in circumstances that threaten its existence\nJ) Derogations are clauses in human rights treaties that outline the penalties for non-compliance\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.6792777180671692,
+      "softmax_neutral": [
+        0.014890412800014019,
+        0.006063457578420639,
+        0.005696090403944254,
+        0.00687079643830657,
+        0.029729025438427925,
+        0.12614554166793823,
+        0.03252365067601204,
+        0.008032774552702904,
+        0.6792777180671692,
+        0.09077053517103195
+      ],
+      "logits_neutral": [
+        -1.6171875,
+        -2.515625,
+        -2.578125,
+        -2.390625,
+        -0.92578125,
+        0.51953125,
+        -0.8359375,
+        -2.234375,
+        2.203125,
+        0.1904296875
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is the meaning of justiciability?\nA) Justiciability refers to the limitation of a State to enforce a particular right\nB) Justiciability refers to the ethical implications of a particular right\nC) Justiciability refers to the just nature or cause of a particular right\nD) Justiciability refers to the availability of legal remedies for a particular right\nE) Justiciability refers to the obligation of a State to enforce a particular Right\nF) Justiciability refers to the legal interpretation of a particular right\nG) Justiciability refers to the public perception of a particular right\nH) Justiciability refers to the courts' assessment of whether the non-enforcement of a particular rights conforms to principles of justice\nI) Justiciability refers to the political implications of a particular right\nJ) Justiciability refers to the possibility of enforcement of a particular right by the relevant rights holders\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.3580547273159027,
+      "softmax_neutral": [
+        0.02271154336631298,
+        0.005028194282203913,
+        0.007315979339182377,
+        0.23299066722393036,
+        0.03032389096915722,
+        0.009248264133930206,
+        0.03893664479255676,
+        0.02826497331261635,
+        0.26712509989738464,
+        0.3580547273159027
+      ],
+      "logits_neutral": [
+        -1.8828125,
+        -3.390625,
+        -3.015625,
+        0.4453125,
+        -1.59375,
+        -2.78125,
+        -1.34375,
+        -1.6640625,
+        0.58203125,
+        0.875
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "In what way is Responsibility to Protect (R2P) different from humanitarian intervention?\nA) R2P is less arbitrary because it requires some UNSC input and its primary objective is to avert a humanitarian crisis\nB) R2P always involves economic sanctions, whereas humanitarian intervention does not\nC) R2P is essentially the same as humanitarian intervention\nD) R2P requires a call for assistance by the State in distress\nE) R2P always involves armed force, whereas humanitarian intervention does not\nF) Humanitarian intervention is essentially the same as R2P\nG) Humanitarian intervention always requires UNSC approval while R2P does not\nH) Humanitarian intervention requires a call for assistance by the State in distress while R2P does not\nI) R2P is more arbitrary because it does not require UNSC input\nJ) R2P is a broader concept that includes economic sanctions, whereas humanitarian intervention is strictly military\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.3324020504951477,
+      "softmax_neutral": [
+        0.26657137274742126,
+        0.008354092948138714,
+        0.010895789600908756,
+        0.0919448584318161,
+        0.03408990800380707,
+        0.008892885409295559,
+        0.04343167319893837,
+        0.017411423847079277,
+        0.3324020504951477,
+        0.18600599467754364
+      ],
+      "logits_neutral": [
+        0.400390625,
+        -3.0625,
+        -2.796875,
+        -0.6640625,
+        -1.65625,
+        -3.0,
+        -1.4140625,
+        -2.328125,
+        0.62109375,
+        0.04052734375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is the 'Lotus principle'?\nA) The so-called Lotus principle is that customary law is superior to treaty law\nB) The so-called Lotus principle is that States have the right to intervene in the internal affairs of other States if it concerns their national security\nC) The so-called Lotus principle is that States are permitted to apply their own domestic laws in disputes with other States\nD) The so-called Lotus principle is that international law governs the relations between States and not the relations between individuals.\nE) The so-called Lotus principle is that States have unlimited jurisdiction over their own citizens, regardless of where they are located\nF) The so-called Lotus principle is that States are free to ignore international law as long as they don't infringe on the sovereignty of other States\nG) The so-called Lotus principle is that 'restrictions upon the independence of States cannot therefore be presumed', or, as it has been construed, 'whatever is not prohibited is permitted in international law'\nH) The so-called Lotus principle is that States are not prohibited to assert their enforcement jurisdiction on the high seas\nI) The so-called Lotus principle is that customary law derives from the combination of State practice and opinio juris\nJ) The so-called Lotus principle is that States are free to choose the Court that they will submit their disputes\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.4965569078922272,
+      "softmax_neutral": [
+        0.019556799903512,
+        0.005141709465533495,
+        0.020177600905299187,
+        0.020818106830120087,
+        0.030527735128998756,
+        0.0117694903165102,
+        0.4965569078922272,
+        0.02694063074886799,
+        0.24871104955673218,
+        0.11979992687702179
+      ],
+      "logits_neutral": [
+        -1.8984375,
+        -3.234375,
+        -1.8671875,
+        -1.8359375,
+        -1.453125,
+        -2.40625,
+        1.3359375,
+        -1.578125,
+        0.64453125,
+        -0.0859375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "Is the jurisdiction of international tribunals regulated by the same principles applicable to national courts?\nA) The jurisdictional principles applicable to national courts are also common to international tribunals\nB) The jurisdiction of all international tribunals is regulated by the UN Security Council\nC) International tribunals share some, but not all, of the jurisdictional principles applicable to national courts\nD) The jurisdiction of international tribunals is dictated solely by their founding treaties\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.6372010111808777,
+      "softmax_neutral": [
+        0.13474367558956146,
+        0.032004427164793015,
+        0.19605088233947754,
+        0.6372010111808777
+      ],
+      "logits_neutral": [
+        -1.640625,
+        -3.078125,
+        -1.265625,
+        -0.0869140625
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "When a reservation is considered as invalid under the law of treaties?\nA) A reservation is invalid when the majority of the State parties objects to it\nB) A reservation is invalid only when an international tribunal says so\nC) A reservation is invalid only when is incompatible with a peremptory norm of international law (jus cogens)\nD) A reservation is invalid when it is incompatible with the object and purpose of the treaty\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.8835024833679199,
+      "softmax_neutral": [
+        0.061548877507448196,
+        0.007014340255409479,
+        0.047934312373399734,
+        0.8835024833679199
+      ],
+      "logits_neutral": [
+        -1.78125,
+        -3.953125,
+        -2.03125,
+        0.8828125
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is the protective principle of jurisdiction?\nA) It is jurisdiction based on the nationality of the victim\nB) It is jurisdiction in order to protect state sovereignty\nC) It is jurisdiction based on the severity of the crime committed\nD) It is jurisdiction in order to uphold international law\nE) It is jurisdiction based on the harm to national interests by conduct committed abroad\nF) It is jurisdiction based on the location of the crime committed\nG) It is jurisdiction based on the nationality of the offender\nH) It is jurisdiction in order to protect international human rights\nI) It is jurisdiction to protect the interests of foreign nationals within the country\nJ) It is jurisdiction in order to protect one's nationals abroad\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.45362451672554016,
+      "softmax_neutral": [
+        0.01645885407924652,
+        0.010140005499124527,
+        0.0035042923409491777,
+        0.011311993934214115,
+        0.45362451672554016,
+        0.016203682869672775,
+        0.08967357128858566,
+        0.012619441375136375,
+        0.19856131076812744,
+        0.1879023015499115
+      ],
+      "logits_neutral": [
+        -2.34375,
+        -2.828125,
+        -3.890625,
+        -2.71875,
+        0.97265625,
+        -2.359375,
+        -0.6484375,
+        -2.609375,
+        0.146484375,
+        0.09130859375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is the function of \"standard-setting in human rights diplomacy?\nA) Standard-setting means putting forward binding legal standards\nB) Standard-setting means merely proposing binding legal standards\nC) Standard-setting means putting forward non-binding legal standards\nD) Standard-setting means setting certain standards of conduct in human rights treaties\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.8100696206092834,
+      "softmax_neutral": [
+        0.10491756349802017,
+        0.019868038594722748,
+        0.06514479219913483,
+        0.8100696206092834
+      ],
+      "logits_neutral": [
+        -1.8828125,
+        -3.546875,
+        -2.359375,
+        0.1611328125
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is the function of \"standard-setting in human rights diplomacy?\nA) Standard-setting means setting certain standards of conduct in human rights treaties\nB) Standard-setting means putting forward both binding and non-binding legal standards\nC) Standard-setting means putting forward non-binding legal standards\nD) Standard-setting means enforcing human rights treaties\nE) Standard-setting means establishing a set of universal human rights principles\nF) Standard-setting means merely proposing binding legal standards\nG) Standard-setting means proposing non-binding legal standards\nH) Standard-setting means putting forward binding legal standards\nI) Standard-setting means proposing certain standards of conduct in human rights treaties\nJ) Standard-setting means creating guidelines for human rights diplomacy\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.5096212029457092,
+      "softmax_neutral": [
+        0.0745740607380867,
+        0.016127770766615868,
+        0.009334038011729717,
+        0.02274380251765251,
+        0.11151247471570969,
+        0.00918932817876339,
+        0.06951066106557846,
+        0.01827515847980976,
+        0.5096212029457092,
+        0.15911149978637695
+      ],
+      "logits_neutral": [
+        -0.90625,
+        -2.4375,
+        -2.984375,
+        -2.09375,
+        -0.50390625,
+        -3.0,
+        -0.9765625,
+        -2.3125,
+        1.015625,
+        -0.1484375
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is passive personality jurisdiction?\nA) It is jurisdiction based on the country where the legal person was Registered\nB) It is jurisdiction based on the nationality of the offender\nC) It is jurisdiction based on the relationship between the victim and the offender\nD) It is jurisdiction based on the nationality of the victims\nE) It is jurisdiction based on the severity of the offence\nF) It is jurisdiction based on the country where the crime was planned\nG) It is jurisdiction based on the international law applicable to the crime\nH) It is jurisdiction based on the country of residence of the offender\nI) It is jurisdiction based on where the offence was committed\nJ) It is jurisdiction based on the nationality of the witness\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.5824686288833618,
+      "softmax_neutral": [
+        0.06458979845046997,
+        0.014468339271843433,
+        0.012183562852442265,
+        0.03782235458493233,
+        0.04491515830159187,
+        0.020244847983121872,
+        0.058809686452150345,
+        0.03363989666104317,
+        0.5824686288833618,
+        0.13085779547691345
+      ],
+      "logits_neutral": [
+        -0.78515625,
+        -2.28125,
+        -2.453125,
+        -1.3203125,
+        -1.1484375,
+        -1.9453125,
+        -0.87890625,
+        -1.4375,
+        1.4140625,
+        -0.0791015625
+      ]
+    },
+    {
+      "task": "international law",
+      "category": "law",
+      "text": "What is passive personality jurisdiction? \nA) It is jurisdiction based on the relationship between the victim and the offender\nB) It is jurisdiction based on the country of residence of the offender\nC) It is jurisdiction based on where the offence was committed\nD) It is jurisdiction based on the country where the legal person was Registered\nE) It is jurisdiction based on the international law applicable to the crime\nF) It is jurisdiction based on the nationality of the offender\nG) It is jurisdiction based on the nationality of the victims\nH) It is jurisdiction based on the nationality of the witness\nI) It is jurisdiction based on the severity of the offence\nJ) It is jurisdiction based on the country where the crime was planned\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.330596387386322,
+      "softmax_neutral": [
+        0.05812622606754303,
+        0.018723970279097557,
+        0.046705737709999084,
+        0.04562379792332649,
+        0.08391501009464264,
+        0.04971799626946449,
+        0.1769554764032364,
+        0.029456935822963715,
+        0.330596387386322,
+        0.16017849743366241
+      ],
+      "logits_neutral": [
+        -1.4296875,
+        -2.5625,
+        -1.6484375,
+        -1.671875,
+        -1.0625,
+        -1.5859375,
+        -0.31640625,
+        -2.109375,
+        0.30859375,
+        -0.416015625
+      ]
+    }
+  ],
+  "accuracy": {
+    "neutral": {
+      "correct": 17,
+      "E_count": 0,
+      "invalid": 38,
+      "total": 55,
+      "accuracy_percentage": 30.91
+    }
+  },
+  "template": [
+    "Would you answer the following question with A, B, C, D, E, F, G, H, I, J?\nQuestion: {context}\nYour answer among \"A, B, C, D, E, F, G, H, I, J\" is: "
+  ]
+}

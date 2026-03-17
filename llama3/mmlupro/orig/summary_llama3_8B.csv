@@ -1,0 +1,91 @@
+model,size,suite,refusal_enabled,refusal_label,task,role,correct,E_count,invalid,total,accuracy_percentage
+llama3,8B,default,0,,Biology,neutral,281,0,70,351,80.06
+llama3,8B,default,0,,Business,neutral,152,0,408,560,27.14
+llama3,8B,default,0,,Chemistry,neutral,87,0,421,508,17.13
+llama3,8B,default,0,,ComputerScience,neutral,38,0,22,60,63.33
+llama3,8B,default,0,,EECS,neutral,14,0,62,76,18.42
+llama3,8B,default,0,,Economics,neutral,248,0,152,400,62.0
+llama3,8B,default,0,,ElectricCircuits,neutral,17,0,50,67,25.37
+llama3,8B,default,0,,ElectricalMachines,neutral,29,0,73,102,28.43
+llama3,8B,default,0,,Electromagnetics,neutral,23,0,77,100,23.0
+llama3,8B,default,0,,ElectronicCommunications,neutral,30,0,85,115,26.09
+llama3,8B,default,0,,Finance,neutral,15,0,59,74,20.27
+llama3,8B,default,0,,FluidMechanics,neutral,14,0,51,65,21.54
+llama3,8B,default,0,,Genetics,neutral,63,0,84,147,42.86
+llama3,8B,default,0,,HeatTransfer,neutral,22,0,44,66,33.33
+llama3,8B,default,0,,MachineDesign,neutral,13,0,57,70,18.57
+llama3,8B,default,0,,Math,neutral,59,0,285,344,17.15
+llama3,8B,default,0,,Mechanics,neutral,9,0,24,33,27.27
+llama3,8B,default,0,,Optics,neutral,44,0,149,193,22.8
+llama3,8B,default,0,,OrganicChemistry,neutral,5,0,12,17,29.41
+llama3,8B,default,0,,PhysicalChemistry,neutral,43,0,173,216,19.91
+llama3,8B,default,0,,Physics,neutral,107,0,388,495,21.62
+llama3,8B,default,0,,Psychology,neutral,239,0,66,305,78.36
+llama3,8B,default,0,,Thermodynamics,neutral,45,0,124,169,26.63
+llama3,8B,default,0,,TransportPhenomena,neutral,45,0,103,148,30.41
+llama3,8B,default,0,,abstract algebra,neutral,20,0,63,83,24.1
+llama3,8B,default,0,,anatomy,neutral,33,0,46,79,41.77
+llama3,8B,default,0,,astronomy,neutral,35,0,45,80,43.75
+llama3,8B,default,0,,atkins,neutral,21,0,80,101,20.79
+llama3,8B,default,0,,business ethics,neutral,20,0,23,43,46.51
+llama3,8B,default,0,,calculus,neutral,8,0,32,40,20.0
+llama3,8B,default,0,,chemmc,neutral,11,0,22,33,33.33
+llama3,8B,default,0,,class,neutral,7,0,38,45,15.56
+llama3,8B,default,0,,clinical knowledge,neutral,37,0,35,72,51.39
+llama3,8B,default,0,,college biology,neutral,42,0,37,79,53.16
+llama3,8B,default,0,,college chemistry,neutral,22,0,41,63,34.92
+llama3,8B,default,0,,college computer science,neutral,27,0,49,76,35.53
+llama3,8B,default,0,,college mathematics,neutral,15,0,59,74,20.27
+llama3,8B,default,0,,college medicine,neutral,24,0,24,48,50.0
+llama3,8B,default,0,,college physics,neutral,18,0,50,68,26.47
+llama3,8B,default,0,,computer security,neutral,20,0,26,46,43.48
+llama3,8B,default,0,,conceptual physics,neutral,54,0,82,136,39.71
+llama3,8B,default,0,,diff,neutral,13,0,37,50,26.0
+llama3,8B,default,0,,econometrics,neutral,25,0,60,85,29.41
+llama3,8B,default,0,,electrical engineering,neutral,22,0,45,67,32.84
+llama3,8B,default,0,,elementary mathematics,neutral,74,0,230,304,24.34
+llama3,8B,default,0,,formal logic,neutral,30,0,68,98,30.61
+llama3,8B,default,0,,fund,neutral,10,0,57,67,14.93
+llama3,8B,default,0,,global facts,neutral,16,0,68,84,19.05
+llama3,8B,default,0,,high school biology,neutral,82,0,58,140,58.57
+llama3,8B,default,0,,high school chemistry,neutral,45,0,70,115,39.13
+llama3,8B,default,0,,high school computer science,neutral,25,0,37,62,40.32
+llama3,8B,default,0,,high school european history,neutral,19,0,50,69,27.54
+llama3,8B,default,0,,high school geography,neutral,30,0,35,65,46.15
+llama3,8B,default,0,,high school government and politics,neutral,24,0,27,51,47.06
+llama3,8B,default,0,,high school macroeconomics,neutral,83,0,133,216,38.43
+llama3,8B,default,0,,high school mathematics,neutral,36,0,206,242,14.88
+llama3,8B,default,0,,high school microeconomics,neutral,56,0,87,143,39.16
+llama3,8B,default,0,,high school physics,neutral,27,0,100,127,21.26
+llama3,8B,default,0,,high school psychology,neutral,88,0,81,169,52.07
+llama3,8B,default,0,,high school statistics,neutral,46,0,97,143,32.17
+llama3,8B,default,0,,high school us history,neutral,31,0,52,83,37.35
+llama3,8B,default,0,,high school world history,neutral,46,0,38,84,54.76
+llama3,8B,default,0,,human aging,neutral,35,0,51,86,40.7
+llama3,8B,default,0,,human sexuality,neutral,21,0,32,53,39.62
+llama3,8B,default,0,,international law,neutral,24,0,31,55,43.64
+llama3,8B,default,0,,jurisprudence,neutral,17,0,26,43,39.53
+llama3,8B,default,0,,logical fallacies,neutral,38,0,35,73,52.05
+llama3,8B,default,0,,machine learning,neutral,28,0,62,90,31.11
+llama3,8B,default,0,,management,neutral,19,0,18,37,51.35
+llama3,8B,default,0,,marketing,neutral,36,0,39,75,48.0
+llama3,8B,default,0,,matter,neutral,7,0,40,47,14.89
+llama3,8B,default,0,,medical genetics,neutral,30,0,24,54,55.56
+llama3,8B,default,0,,miscellaneous,neutral,113,0,152,265,42.64
+llama3,8B,default,0,,moral disputes,neutral,54,0,85,139,38.85
+llama3,8B,default,0,,nutrition,neutral,101,0,78,179,56.42
+llama3,8B,default,0,,philosophy,neutral,45,0,85,130,34.62
+llama3,8B,default,0,,prehistory,neutral,64,0,81,145,44.14
+llama3,8B,default,0,,professional accounting,neutral,50,0,145,195,25.64
+llama3,8B,default,0,,professional law,neutral,277,0,726,1003,27.62
+llama3,8B,default,0,,professional medicine,neutral,140,0,114,254,55.12
+llama3,8B,default,0,,professional psychology,neutral,123,0,201,324,37.96
+llama3,8B,default,0,,public relations,neutral,21,0,31,52,40.38
+llama3,8B,default,0,,quan,neutral,12,0,20,32,37.5
+llama3,8B,default,0,,security studies,neutral,40,0,47,87,45.98
+llama3,8B,default,0,,sociology,neutral,26,0,26,52,50.0
+llama3,8B,default,0,,stat,neutral,21,0,50,71,29.58
+llama3,8B,default,0,,thermo,neutral,13,0,42,55,23.64
+llama3,8B,default,0,,us foreign policy,neutral,8,0,12,20,40.0
+llama3,8B,default,0,,virology,neutral,27,0,19,46,58.7
+llama3,8B,default,0,,world religions,neutral,26,0,33,59,44.07

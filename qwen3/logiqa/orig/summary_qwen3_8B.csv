@@ -1,0 +1,2 @@
+model,size,suite,refusal_enabled,refusal_label,task,role,correct,E_count,invalid,total,accuracy_percentage
+qwen3,8B,default,0,,MRC-test,neutral,1055,0,517,1572,67.11

@@ -1,0 +1,1291 @@
+{
+  "data": [
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which statement best explains the purpose of Hart's distinction between 'being obliged' and 'having an obligation'?\nA) It refutes the natural lawyer' view of the role of morality in law.\nB) It illuminates the concept of a rule.\nC) It differentiates between formal and substantive justice.\nD) It highlights the importance of individual rights in law.\nE) It clarifies the relationship between law and society.\nF) It explains the nature of power-conferring rules.\nG) It distinguishes between legal and ethical obligations.\nH) It provides a guideline for the application of laws.\nI) It explains the role of judicial discretion in the law.\n",
+      "label": 1,
+      "num_options": 9,
+      "answer_neutral": "B",
+      "prob_neutral": 0.5507234334945679,
+      "softmax_neutral": [
+        0.07001662999391556,
+        0.5507234334945679,
+        0.0024718891363590956,
+        0.004075455944985151,
+        0.002114319009706378,
+        0.15778489410877228,
+        0.14822520315647125,
+        0.05122525990009308,
+        0.013362905941903591
+      ],
+      "logits_neutral": [
+        7.9375,
+        10.0,
+        4.59375,
+        5.09375,
+        4.4375,
+        8.75,
+        8.6875,
+        7.625,
+        6.28125
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Maine's famous aphorism that 'the movement of progressive societies has hitherto been a movement from Status to Contract' is often misunderstood. In what way?\nA) His concept of status is misrepresented.\nB) It is misinterpreted as a prediction.\nC) His idea is considered inapplicable to Western legal systems.\nD) It is incorrectly related to economic progression.\nE) It is taken literally.\nF) His use of the word 'progressive' is often misconstrued.\nG) His concept of 'contract' is often misinterpreted.\n",
+      "label": 1,
+      "num_options": 7,
+      "answer_neutral": "F",
+      "prob_neutral": 0.38265708088874817,
+      "softmax_neutral": [
+        0.048649393022060394,
+        0.23209325969219208,
+        0.017346473410725594,
+        0.013509447686374187,
+        0.24706199765205383,
+        0.38265708088874817,
+        0.05868236720561981
+      ],
+      "logits_neutral": [
+        7.9375,
+        9.5,
+        6.90625,
+        6.65625,
+        9.5625,
+        10.0,
+        8.125
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Maine's famous aphorism that 'the movement of progressive societies has hitherto been a movement from Status to Contract' is often misunderstood. In what way?\nA) His concept of status is misrepresented.\nB) It is wrongly considered to be a universal rule.\nC) It is misinterpreted as a prediction.\nD) His idea is considered inapplicable to Western legal systems.\nE) It is incorrectly related to economic progression.\nF) It is taken literally.\nG) The historical context of the aphorism is often overlooked.\nH) His use of the word 'progressive' is often misconstrued.\nI) His concept of 'contract' is often misinterpreted.\nJ) It is mistakenly thought to apply to all types of societies.\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.5327558517456055,
+      "softmax_neutral": [
+        0.024150697514414787,
+        0.010716807097196579,
+        0.10490584373474121,
+        0.003821195336058736,
+        0.0019214176572859287,
+        0.018808582797646523,
+        0.05274997279047966,
+        0.23640897870063782,
+        0.013760652393102646,
+        0.5327558517456055
+      ],
+      "logits_neutral": [
+        6.84375,
+        6.03125,
+        8.3125,
+        5.0,
+        4.3125,
+        6.59375,
+        7.625,
+        9.125,
+        6.28125,
+        9.9375
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which of the following purposes does the 'internal point of view' play in Hart's concept of law?\nA) It distinguishes social rules from mere group habits.\nB) It defines the judicial function.\nC) It illustrates the authority of the legislature.\nD) It stresses the relationship between law and justice.\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9402134418487549,
+      "softmax_neutral": [
+        0.9402134418487549,
+        0.0114713991060853,
+        0.0015047200722619891,
+        0.04681047052145004
+      ],
+      "logits_neutral": [
+        10.875,
+        6.46875,
+        4.4375,
+        7.875
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which statement below best represents Durkheim's view of the function of punishment?\nA) Vengeance.\nB) Deterrence.\nC) Restoration.\nD) Moral education.\nE) Indemnification.\nF) Rehabilitation.\nG) Social control.\nH) Incapacitation.\nI) Desert.\n",
+      "label": 0,
+      "num_options": 9,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9252802133560181,
+      "softmax_neutral": [
+        0.007520229090005159,
+        0.00208829203620553,
+        0.0016779899597167969,
+        0.9252802133560181,
+        0.0015763257397338748,
+        0.005168572999536991,
+        0.01920357719063759,
+        0.0037814087700098753,
+        0.03370333090424538
+      ],
+      "logits_neutral": [
+        5.875,
+        4.59375,
+        4.375,
+        10.6875,
+        4.3125,
+        5.5,
+        6.8125,
+        5.1875,
+        7.375
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which proposition below is the most consistent with what Rawls claims the POP would opt for in respect of 'social primary goods'?\nA) The POP will choose wealth over a compassionate society.\nB) The POP will choose equality over power.\nC) The POP will be unselfish.\nD) The POP will choose to protect the disabled.\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.7449329495429993,
+      "softmax_neutral": [
+        0.0032407157123088837,
+        0.7449329495429993,
+        0.00998210720717907,
+        0.2418442964553833
+      ],
+      "logits_neutral": [
+        6.4375,
+        11.875,
+        7.5625,
+        10.75
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "The ________ School of jurisprudence believes that the law is an aggregate of social traditions and customs that have developed over the centuries.\nA) Command\nB) Sociological\nC) Historical\nD) Interpretive\nE) Analytical\nF) Natural\nG) Functional\nH) Positivist\nI) Realist\nJ) Pragmatic\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9510577321052551,
+      "softmax_neutral": [
+        0.00992517825216055,
+        0.004404271021485329,
+        0.9510577321052551,
+        0.0023574363440275192,
+        0.0001507058768766001,
+        0.0040101343765854836,
+        0.0004096610355190933,
+        0.0021464701276272535,
+        0.00019351016089785844,
+        0.025344831869006157
+      ],
+      "logits_neutral": [
+        7.375,
+        6.5625,
+        11.9375,
+        5.9375,
+        3.1875,
+        6.46875,
+        4.1875,
+        5.84375,
+        3.4375,
+        8.3125
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which of the following statements is correct concerning the \"reasonable person\" standard in tort law?\nA) The reasonable person standard applies only to people with a high level of education.\nB) The reasonable person standard applies only to people without disabilities.\nC) The reasonable person standard varies from person to person.\nD) The reasonable person standard requires that a person act as would the average person in the community.\nE) A person with a mental disability must act as would a person with the same mental disability.\nF) A person with a physical disability must act as would a reasonable person with the same disability.\nG) The reasonable person standard focuses on the defendant's subjective mental state rather than on the defendant's behavior\nH) The reasonable person standard is based solely on the defendant's age.\nI) A person with a mental disability is not subject to the reasonable person standard.\n",
+      "label": 5,
+      "num_options": 9,
+      "answer_neutral": "F",
+      "prob_neutral": 0.9739917516708374,
+      "softmax_neutral": [
+        0.0022680102847516537,
+        0.00016174693882931024,
+        0.0006104266503825784,
+        0.019592616707086563,
+        5.677852459484711e-05,
+        0.9739917516708374,
+        0.0003371095808688551,
+        0.0022680102847516537,
+        0.0007136610220186412
+      ],
+      "logits_neutral": [
+        5.8125,
+        3.171875,
+        4.5,
+        7.96875,
+        2.125,
+        11.875,
+        3.90625,
+        5.8125,
+        4.65625
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which of the following propositions would be rejected by those who describe themselves as critical legal theorists?\nA) Law is unstable.\nB) Law is determinate.\nC) Law reflects economic power.\nD) Law is politics.\nE) Law is a social construct.\n",
+      "label": 1,
+      "num_options": 5,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9331804513931274,
+      "softmax_neutral": [
+        0.01508345641195774,
+        0.9331804513931274,
+        0.006094267591834068,
+        0.007124920375645161,
+        0.03851695731282234
+      ],
+      "logits_neutral": [
+        8.875,
+        13.0,
+        7.96875,
+        8.125,
+        9.8125
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which of the following is the strongest argument against ethical relativism's hostility to human rights?\nA) Cognitivism.\nB) Social Contract Theory\nC) Utilitarianism\nD) Empiricism\nE) Nihilism\nF) Positivism.\nG) Rationalism\nH) Communitarianism.\nI) Existentialism\nJ) Deontological Ethics\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.7537027597427368,
+      "softmax_neutral": [
+        0.1394209861755371,
+        0.012569183483719826,
+        0.06186769902706146,
+        0.004080616869032383,
+        0.002985442755743861,
+        0.002475018845871091,
+        0.0008290275000035763,
+        0.004343793727457523,
+        0.017725389450788498,
+        0.7537027597427368
+      ],
+      "logits_neutral": [
+        9.5,
+        7.09375,
+        8.6875,
+        5.96875,
+        5.65625,
+        5.46875,
+        4.375,
+        6.03125,
+        7.4375,
+        11.1875
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "The distinction between general and particular jurisprudence was recognized by\nA) Kelsen\nB) Hart\nC) Roscoe Pound\nD) Dworkin\nE) Austin\nF) Holland\nG) Blackstone\nH) Holmes\nI) Salmond\n",
+      "label": 4,
+      "num_options": 9,
+      "answer_neutral": "F",
+      "prob_neutral": 0.44941771030426025,
+      "softmax_neutral": [
+        0.22598141431808472,
+        0.00621336605399847,
+        0.02381826564669609,
+        0.1553145945072174,
+        0.0029349864926189184,
+        0.44941771030426025,
+        0.003325775032863021,
+        0.08849558979272842,
+        0.04449838027358055
+      ],
+      "logits_neutral": [
+        10.6875,
+        7.09375,
+        8.4375,
+        10.3125,
+        6.34375,
+        11.375,
+        6.46875,
+        9.75,
+        9.0625
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which of the following most accurately describes Hart's response to Fuller's argument concerning the invalidity of Nazi law?\nA) The Nazi law in question was validly enacted.\nB) The Nazi rule of recognition was unclear.\nC) Hart agreed with Fuller's argument.\nD) The court misunderstood the legislation.\nE) Fuller misconstrued the purpose of the law.\nF) Hart argued that the law should be disregarded due to its origin.\nG) Hart claimed the law was invalid due to a lack of enforcement.\nH) Hart contended Fuller's argument was irrelevant to the validity of the law.\nI) Hart believed the Nazi law was morally justified.\nJ) Hart suggested that the Nazi law was not truly a law.\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "H",
+      "prob_neutral": 0.9732758402824402,
+      "softmax_neutral": [
+        0.0009156853193417192,
+        0.001104527385905385,
+        0.008687781170010567,
+        0.0009747420554049313,
+        0.00010435492004035041,
+        0.0012515935814008117,
+        0.00030671615968458354,
+        0.9732758402824402,
+        0.0003368617908563465,
+        0.01304190419614315
+      ],
+      "logits_neutral": [
+        5.28125,
+        5.46875,
+        7.53125,
+        5.34375,
+        3.109375,
+        5.59375,
+        4.1875,
+        12.25,
+        4.28125,
+        7.9375
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which of the following criticisms of Llewellyn's distinction between the grand and formal styles of legal reasoning is the most compelling?\nA) There is no distinction between the two forms of legal reasoning.\nB) Judges are appointed to interpret the law, not to make it.\nC) It is misleading to pigeon-hole judges in this way.\nD) Judicial reasoning is always formal.\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.4523630738258362,
+      "softmax_neutral": [
+        0.0651690810918808,
+        0.10744564980268478,
+        0.37502214312553406,
+        0.4523630738258362
+      ],
+      "logits_neutral": [
+        9.625,
+        10.125,
+        11.375,
+        11.5625
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which of the following criticisms of Llewellyn's distinction between the grand and formal styles of legal reasoning is the most compelling?\nA) The distinction is too simplistic to capture the complexity of legal reasoning.\nB) It overemphasizes the role of judges while ignoring the role of juries.\nC) Judges are appointed to interpret the law, not to make it.\nD) It is misleading to pigeon-hole judges in this way.\nE) Legal reasoning is always grand.\nF) It does not consider the role of precedent in legal reasoning.\nG) Llewellyn's distinction lacks empirical evidence.\nH) The distinction does not take into account the influence of personal biases.\nI) There is no distinction between the two forms of legal reasoning.\nJ) Judicial reasoning is always formal.\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.456408828496933,
+      "softmax_neutral": [
+        0.456408828496933,
+        0.003948709927499294,
+        0.006115881726145744,
+        0.03519447147846222,
+        0.0006247767014428973,
+        0.004474475048482418,
+        0.018838243559002876,
+        0.3339157998561859,
+        0.001281958306208253,
+        0.13919682800769806
+      ],
+      "logits_neutral": [
+        11.875,
+        7.125,
+        7.5625,
+        9.3125,
+        5.28125,
+        7.25,
+        8.6875,
+        11.5625,
+        6.0,
+        10.6875
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which statement best describes one of Dworkin's central arguments in Justice for Hedgehogs?\nA) The law is the only guide for ethical behaviour.\nB) The law dictates what moral values should affect our ethical behaviour.\nC) Morality plays no role in the concept of law.\nD) Moral arguments operate only in hard cases.\nE) Morality only applies to specific, complex cases.\nF) Legal principles should not be influenced by moral values.\nG) Moral values are both independent and objective.\nH) Law and morality are entirely separate entities with no overlap.\nI) Morality is subjective and changes over time.\nJ) Ethical behaviour is independent of moral values.\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.7567840218544006,
+      "softmax_neutral": [
+        0.0052610356360673904,
+        0.001460936851799488,
+        0.006969739682972431,
+        0.10902508348226547,
+        0.000231153768254444,
+        0.03430626168847084,
+        0.7567840218544006,
+        0.03325076773762703,
+        0.0012111591640859842,
+        0.05149979889392853
+      ],
+      "logits_neutral": [
+        6.03125,
+        4.75,
+        6.3125,
+        9.0625,
+        2.90625,
+        7.90625,
+        11.0,
+        7.875,
+        4.5625,
+        8.3125
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Kelsen’s theory of law is called pure theory because Kelsen :\nA) Purely discussed jurisprudence only\nB) Defined law in according with morality and purity\nC) Separated law from religion, ethics, sociology and history\nD) Discussed law purely in terms of justice\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.7616944909095764,
+      "softmax_neutral": [
+        0.1925865262746811,
+        0.002747099380940199,
+        0.7616944909095764,
+        0.042971864342689514
+      ],
+      "logits_neutral": [
+        10.125,
+        5.875,
+        11.5,
+        8.625
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Bill purchased a can of Sipep from the Ajax Minimart. After he finished drinking the Sipep, Bill noticed that the can contained dead insects stuck on the inside bottom of the can. In a strict product liability tort action against Ajax, Bill must prove, among other things, that:\nA) Ajax is a merchant selling Sipep.\nB) Ajax knew or should have known of the defective condition\nC) Ajax had prior notice of other similar problems with Sipep products.\nD) Ajax actually placed the dead insects into the can.\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.726557195186615,
+      "softmax_neutral": [
+        0.726557195186615,
+        0.2215874344110489,
+        0.0039336481131613255,
+        0.04792163893580437
+      ],
+      "logits_neutral": [
+        9.625,
+        8.4375,
+        4.40625,
+        6.90625
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Bill purchased a can of Sipep from the Ajax Minimart. After he finished drinking the Sipep, Bill noticed that the can contained dead insects stuck on the inside bottom of the can. In a strict product liability tort action against Ajax, Bill must prove, among other things, that:\nA) Ajax failed to warn Bill about the potential for insects in the Sipep can.\nB) Ajax had prior notice of other similar problems with Sipep products.\nC) Ajax actually placed the dead insects into the can.\nD) The insects in the can caused Bill physical harm.\nE) Ajax is a merchant selling Sipep.\nF) Ajax knew or should have known of the defective condition\nG) The Sipep can was sealed when Bill purchased it.\nH) Bill consumed the entire can of Sipep before noticing the defects.\nI) Ajax had a duty to inspect each can of Sipep before selling it.\nJ) Ajax is the manufacturer of the Sipep.\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.3912698030471802,
+      "softmax_neutral": [
+        0.015171176753938198,
+        0.009346690960228443,
+        0.005494636483490467,
+        0.3912698030471802,
+        0.31439411640167236,
+        0.05636776238679886,
+        0.02277463488280773,
+        0.03754902258515358,
+        0.008120546117424965,
+        0.13951154053211212
+      ],
+      "logits_neutral": [
+        4.0625,
+        3.578125,
+        3.046875,
+        7.3125,
+        7.09375,
+        5.375,
+        4.46875,
+        4.96875,
+        3.4375,
+        6.28125
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Leopold Pospisil identifies four elements manifested by law: authority, universality, 'obligatio' - and fourthly?\nA) Integrity.\nB) Hierarchy.\nC) Dispute.\nD) Justice.\nE) Harmony.\nF) Regulation.\nG) Punishment.\nH) Sanction.\nI) Order.\nJ) Equality.\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "H",
+      "prob_neutral": 0.9664457440376282,
+      "softmax_neutral": [
+        0.0016723840963095427,
+        0.0011494115460664034,
+        0.0009381223935633898,
+        0.002510545775294304,
+        0.0003021936281584203,
+        0.0009235781617462635,
+        0.0010465511586517096,
+        0.9664457440376282,
+        0.007854802533984184,
+        0.017156466841697693
+      ],
+      "logits_neutral": [
+        3.203125,
+        2.828125,
+        2.625,
+        3.609375,
+        1.4921875,
+        2.609375,
+        2.734375,
+        9.5625,
+        4.75,
+        5.53125
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which of the following quotations best describes the central thesis of difference feminism?\nA) 'Difference feminism argues that men and women are fundamentally the same.'\nB) Men are unable to comprehend their differences from women.'\nC) 'Men and women differ only in physical attributes, not in their thought processes.'\nD) 'Men are more inclined towards justice, while women tend to focus on fairness.'\nE) There are fundamental differences between individual women.'\nF) 'Women are more focused on equality, while men prioritize freedom.'\nG) 'Feminism is about eradicating differences between men and women.'\nH) Men and women have different conceptions of the feminist project.'\nI) 'Women and men have identical perspectives on justice.'\nJ) Women look to context, whereas men appeal to neutral, abstract notions of justice.'\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.971900999546051,
+      "softmax_neutral": [
+        0.0018184853252023458,
+        0.00020402840164024383,
+        0.00022761014406569302,
+        0.002729869680479169,
+        0.0002240813773823902,
+        0.008408591151237488,
+        0.0004894387093372643,
+        0.013023481704294682,
+        0.0009733651531860232,
+        0.971900999546051
+      ],
+      "logits_neutral": [
+        4.84375,
+        2.65625,
+        2.765625,
+        5.25,
+        2.75,
+        6.375,
+        3.53125,
+        6.8125,
+        4.21875,
+        11.125
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which of the following quotations best describes the central thesis of difference feminism? \nA) Men are unable to comprehend their differences from women.'\nB) Men and women have different conceptions of the feminist project.'\nC) Women look to context, whereas men appeal to neutral, abstract notions of justice.'\nD) 'Women and men have identical perspectives on justice.'\nE) 'Feminism is about eradicating differences between men and women.'\nF) 'Difference feminism argues that men and women are fundamentally the same.'\nG) 'Men and women differ only in physical attributes, not in their thought processes.'\nH) 'Men are more inclined towards justice, while women tend to focus on fairness.'\nI) There are fundamental differences between individual women.'\nJ) 'Women are more focused on equality, while men prioritize freedom.'\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.8525393009185791,
+      "softmax_neutral": [
+        0.007851614616811275,
+        0.003376937471330166,
+        0.8525393009185791,
+        0.004336073528975248,
+        0.005926710553467274,
+        0.04518292844295502,
+        0.0039480398409068584,
+        0.007375909946858883,
+        0.005744364112615585,
+        0.06371814012527466
+      ],
+      "logits_neutral": [
+        4.5625,
+        3.71875,
+        9.25,
+        3.96875,
+        4.28125,
+        6.3125,
+        3.875,
+        4.5,
+        4.25,
+        6.65625
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Tom and Jerry entered into a contract whereby Tom agreed to sell Jerry $1,000 worth of heroin, an illegal substance. This is an example of a:\nA) quasi contract\nB) unilateral contract\nC) secondary party beneficiary contract\nD) express contract\nE) bilateral contract\nF) implied contract\nG) void contract\nH) voidable contract\nI) unconscionable contract\nJ) contract of adhesion\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.6203851103782654,
+      "softmax_neutral": [
+        0.019328689202666283,
+        0.0006877381820231676,
+        0.0016627376899123192,
+        0.19521284103393555,
+        0.0006311041070148349,
+        0.006082042120397091,
+        0.6203851103782654,
+        0.011362750083208084,
+        0.0018261600052937865,
+        0.14282076060771942
+      ],
+      "logits_neutral": [
+        4.71875,
+        1.3828125,
+        2.265625,
+        7.03125,
+        1.296875,
+        3.5625,
+        8.1875,
+        4.1875,
+        2.359375,
+        6.71875
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "‘Law consists of set of principles or body of rules recognized and applied by the State in the administration of justice’. The statement is made by :\nA) Blackstone\nB) Bentham\nC) Gray\nD) Austin\nE) Kelsen\nF) Dworkin\nG) Salmond\nH) H.L.A. Hart\nI) Roscoe Pound\nJ) Holland\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.6515756845474243,
+      "softmax_neutral": [
+        0.04719998687505722,
+        0.0018017682014033198,
+        0.0072383517399430275,
+        0.023003434762358665,
+        0.005637234076857567,
+        0.003017393872141838,
+        0.13657768070697784,
+        0.12052937597036362,
+        0.00341915525496006,
+        0.6515756845474243
+      ],
+      "logits_neutral": [
+        7.0625,
+        3.796875,
+        5.1875,
+        6.34375,
+        4.9375,
+        4.3125,
+        8.125,
+        8.0,
+        4.4375,
+        9.6875
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Catharine MacKinnon argues that since men dominate women, the question is ultimately one of power. Which proposition below is the most inconsistent with this argument?\nA) The power dynamic is determined by individual strength and not gender.\nB) The idea of 'woman' needs to be redefined.\nC) Women inherently possess more power than men.\nD) Gender-based inequality is a myth.\nE) Men and women share equal power in society.\nF) Equality is impossible because men define women as different.\nG) Women can achieve equality through political pressure.\nH) Men and women are inherently equal in all aspects.\nI) The concept of power is subjective and varies from person to person.\nJ) The world is phallocentric and oppressive.\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.6525925397872925,
+      "softmax_neutral": [
+        0.011228474788367748,
+        0.0009509469382464886,
+        0.27204105257987976,
+        0.002211017766967416,
+        0.004536714404821396,
+        0.6525925397872925,
+        0.0012997904559597373,
+        0.007026600651443005,
+        0.0008392077288590372,
+        0.04727364704012871
+      ],
+      "logits_neutral": [
+        8.375,
+        5.90625,
+        11.5625,
+        6.75,
+        7.46875,
+        12.4375,
+        6.21875,
+        7.90625,
+        5.78125,
+        9.8125
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Donny threw a knife at Sally, intending to injure her severely. However, Donny missed Sally. Sally saw the knife just as it whizzed by her head, missing it by about one inch. As a result, Sally was very scared. Sally sued Donny for assault and battery. Which of the following is most correct?\nA) Donny will be liable for battery, but not assault.\nB) Donny will not be liable for either assault or battery because he did not actually hit Sally with the knife.\nC) Donny will be liable for assault, but not battery because he missed Sally with the knife.\nD) Donny will be liable for assault and for battery.\nE) Donny will not be liable for either assault or battery because this is only a criminal matter.\nF) Donny will not be liable for either assault or battery because Sally was not physically harmed.\nG) Donny will be liable for assault and battery because he intended to cause harm.\nH) Donny will be liable for both assault and battery because Sally was terrified.\nI) Donny will be liable for battery, but not assault because Sally was able to dodge the knife.\nJ) Donny will be liable for assault, but not battery.\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.6797198057174683,
+      "softmax_neutral": [
+        0.0016458273166790605,
+        0.0010139646474272013,
+        0.2661820948123932,
+        0.037167347967624664,
+        0.00013938617485109717,
+        0.0011049561435356736,
+        0.003350738203153014,
+        0.0026923934929072857,
+        0.006983538158237934,
+        0.6797198057174683
+      ],
+      "logits_neutral": [
+        1.8515625,
+        1.3671875,
+        6.9375,
+        4.96875,
+        -0.6171875,
+        1.453125,
+        2.5625,
+        2.34375,
+        3.296875,
+        7.875
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Hume's attack on natural law is founded on his argument that:\nA) We cannot objectively know what is morally right or wrong.\nB) Natural law is backward-looking.\nC) There is no such thing as a social contract.\nD) Natural law fails to protect the state against attacks.\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.7821423411369324,
+      "softmax_neutral": [
+        0.7821423411369324,
+        0.11994541436433792,
+        0.010158254764974117,
+        0.08775393664836884
+      ],
+      "logits_neutral": [
+        11.3125,
+        9.4375,
+        6.96875,
+        9.125
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Hume's attack on natural law is founded on his argument that:\nA) There is no universal agreement on what constitutes natural law.\nB) Natural law is an arbitrary concept.\nC) Natural law does not apply to all cultures and societies.\nD) Natural law is backward-looking.\nE) There is no such thing as a social contract.\nF) We cannot objectively know what is morally right or wrong.\nG) Natural law is an outdated concept.\nH) Natural law is not based on empirical evidence.\nI) Natural law fails to protect the state against attacks.\nJ) Natural law does not give adequate consideration to individual rights.\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "H",
+      "prob_neutral": 0.8190977573394775,
+      "softmax_neutral": [
+        0.06316203624010086,
+        0.0012314636260271072,
+        0.0018486458575353026,
+        0.019263332709670067,
+        0.0007239401456899941,
+        0.043410591781139374,
+        0.0019073283765465021,
+        0.8190977573394775,
+        0.0031446528155356646,
+        0.046210333704948425
+      ],
+      "logits_neutral": [
+        9.4375,
+        5.5,
+        5.90625,
+        8.25,
+        4.96875,
+        9.0625,
+        5.9375,
+        12.0,
+        6.4375,
+        9.125
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which statement is closest to characterizing the principal difference between the positions adopted by Hobbes and Locke?\nA) They adopt different attitudes towards the role of the courts in maintaining order.\nB) They disagree about the role of law in society.\nC) They have opposing views about the nature of contractual obligations.\nD) They differ in respect of their account of life before the social contract.\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.769108235836029,
+      "softmax_neutral": [
+        0.16633130609989166,
+        0.030768202617764473,
+        0.03379225358366966,
+        0.769108235836029
+      ],
+      "logits_neutral": [
+        6.65625,
+        4.96875,
+        5.0625,
+        8.1875
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which statement is closest to characterizing the principal difference between the positions adopted by Hobbes and Locke?\nA) They differ in their views about the necessity of a social contract.\nB) They disagree about the role of law in society.\nC) They have contrasting views on the role of religion in society.\nD) They have different ideas about the importance of education.\nE) They have different perspectives on economic policies.\nF) They have opposing views about the nature of contractual obligations.\nG) They differ in respect of their account of life before the social contract.\nH) They hold opposing views on the subject of individual rights.\nI) They disagree on the structure and role of government in society.\nJ) They adopt different attitudes towards the role of the courts in maintaining order.\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "H",
+      "prob_neutral": 0.5149547457695007,
+      "softmax_neutral": [
+        0.005374034866690636,
+        0.0018572168191894889,
+        0.0009338672389276326,
+        0.0003544560167938471,
+        0.00038325830246321857,
+        0.15222032368183136,
+        0.15705232322216034,
+        0.5149547457695007,
+        0.10140059143304825,
+        0.0654691532254219
+      ],
+      "logits_neutral": [
+        4.0,
+        2.9375,
+        2.25,
+        1.28125,
+        1.359375,
+        7.34375,
+        7.375,
+        8.5625,
+        6.9375,
+        6.5
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "In which of the following the idea of ‘natural law’ first appeared\nA) French Revolution\nB) American War of Independence\nC) Roman Law\nD) Greek Thinking\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.8863382935523987,
+      "softmax_neutral": [
+        0.017829399555921555,
+        0.0024129468947649,
+        0.8863382935523987,
+        0.09341936558485031
+      ],
+      "logits_neutral": [
+        6.90625,
+        4.90625,
+        10.8125,
+        8.5625
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Why is it important to separate the concept of punishment from its justification?\nA) Because the concept of punishment has evolved over time.\nB) Because punishment can be justified in multiple ways.\nC) Because any definition of punishment should be value-neutral.\nD) Because the practice of punishment is separate from its justification.\nE) Because the justification of punishment varies across cultures.\nF) Because the concept of punishment is often misunderstood.\nG) Because the concept of punishment is controversial.\nH) Because the justification of punishment is a matter of personal opinion.\nI) Because its justification depends on the concept employed.\n",
+      "label": 2,
+      "num_options": 9,
+      "answer_neutral": "I",
+      "prob_neutral": 0.6386405229568481,
+      "softmax_neutral": [
+        0.07165347784757614,
+        0.030817780643701553,
+        0.20095717906951904,
+        0.02326248027384281,
+        0.0013123793760314584,
+        0.01000506803393364,
+        0.002822058741003275,
+        0.020529067143797874,
+        0.6386405229568481
+      ],
+      "logits_neutral": [
+        6.25,
+        5.40625,
+        7.28125,
+        5.125,
+        2.25,
+        4.28125,
+        3.015625,
+        5.0,
+        8.4375
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Lyotard's dictum 'I define postmodern as incredulity toward meta-narratives' means:\nA) Postmodernism disregards individual stories.\nB) Universal values are meaningless.\nC) Literature reproduces repression.\nD) The concept of truth is objective and undeniable.\nE) The law is static.\nF) Individual stories are suspect.\nG) Postmodernism promotes the acceptance of all narratives.\nH) Postmodernism rejects all forms of authority.\n",
+      "label": 1,
+      "num_options": 8,
+      "answer_neutral": "B",
+      "prob_neutral": 0.3711234927177429,
+      "softmax_neutral": [
+        0.0881495550274849,
+        0.3711234927177429,
+        0.002579988446086645,
+        0.15470728278160095,
+        0.0011096391826868057,
+        0.05022609978914261,
+        0.06058425083756447,
+        0.2715197205543518
+      ],
+      "logits_neutral": [
+        8.8125,
+        10.25,
+        5.28125,
+        9.375,
+        4.4375,
+        8.25,
+        8.4375,
+        9.9375
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Hart argues that secondary rules are 'power-conferring' but this seems unconvincing in the case of the rule of recognition because:\nA) It is not a social rule.\nB) It both confers power and imposes duties on judges to decide cases.\nC) It is a primary rule, not a secondary rule.\nD) It is applicable only in the case of federal constitutions.\nE) It fails to specify the source of authority.\nF) It does not confer power but only recognizes it.\nG) It applies only in the case of unitary constitutions.\nH) It is more of a procedural rule than a power-conferring rule.\nI) It only imposes duties on judges without conferring power.\nJ) It confers power on the legislature, not the judiciary.\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.9505046010017395,
+      "softmax_neutral": [
+        0.0016192984767258167,
+        0.0009821541607379913,
+        0.0010133309988304973,
+        0.0005957066314294934,
+        0.0004426915547810495,
+        0.9505046010017395,
+        0.000272734381724149,
+        0.032524481415748596,
+        0.0024308545980602503,
+        0.009614217095077038
+      ],
+      "logits_neutral": [
+        5.25,
+        4.75,
+        4.78125,
+        4.25,
+        3.953125,
+        11.625,
+        3.46875,
+        8.25,
+        5.65625,
+        7.03125
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Why does Parfit oppose equality?\nA) He claims that by giving priority to the needs of the poor, we can increase equality.\nB) He rejects the idea of equality altogether.\nC) He believes that equality is not a realistic goal.\nD) He argues than an unequal society is inevitable.\nE) He suggests that societal structures inherently support inequality.\nF) He asserts that we are each responsible for our poverty.\nG) He posits that striving for equality undermines individual freedoms.\nH) He argues that inequality is necessary for competition and progress.\nI) He contends that inequality is a natural human condition.\n",
+      "label": 0,
+      "num_options": 9,
+      "answer_neutral": "H",
+      "prob_neutral": 0.46199268102645874,
+      "softmax_neutral": [
+        0.05873578041791916,
+        0.3175226151943207,
+        0.004123899154365063,
+        0.005815629381686449,
+        0.00011698601156240329,
+        0.016828082501888275,
+        0.13236311078071594,
+        0.46199268102645874,
+        0.0025012711994349957
+      ],
+      "logits_neutral": [
+        9.375,
+        11.0625,
+        6.71875,
+        7.0625,
+        3.15625,
+        8.125,
+        10.1875,
+        11.4375,
+        6.21875
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "“Natural law is based on the nature of man and on his inward need of living in society.” Who said it?\nA) Spinoza\nB) Rousseau\nC) Aristotle\nD) Kant\nE) Socrates\nF) Hobbes\nG) Hugo Grotius\nH) Plato\nI) Descartes\nJ) Locke\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.6205101013183594,
+      "softmax_neutral": [
+        0.021232690662145615,
+        0.002699433360248804,
+        0.025611512362957,
+        0.0011610117508098483,
+        0.0001865915983216837,
+        0.002382241655141115,
+        0.6205101013183594,
+        0.09515830874443054,
+        0.002785122487694025,
+        0.22827289998531342
+      ],
+      "logits_neutral": [
+        7.6875,
+        5.625,
+        7.875,
+        4.78125,
+        2.953125,
+        5.5,
+        11.0625,
+        9.1875,
+        5.65625,
+        10.0625
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Who said that “Jurisprudence is the eye of law”\nA) Pound\nB) Austin\nC) Savigny\nD) Hart\nE) Bentham\nF) Dworkin\nG) Blackstone\nH) Laski\nI) Kelsen\nJ) Maine\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.42079293727874756,
+      "softmax_neutral": [
+        0.08285903185606003,
+        0.009591629728674889,
+        0.37134844064712524,
+        0.011936976574361324,
+        0.03676847368478775,
+        0.0045307655818760395,
+        0.030482139438390732,
+        0.014855807647109032,
+        0.01683383621275425,
+        0.42079293727874756
+      ],
+      "logits_neutral": [
+        9.0625,
+        6.90625,
+        10.5625,
+        7.125,
+        8.25,
+        6.15625,
+        8.0625,
+        7.34375,
+        7.46875,
+        10.6875
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Who said that “Jurisprudence is the eye of law” \nA) Savigny\nB) Kelsen\nC) Austin\nD) Hart\nE) Bentham\nF) Dworkin\nG) Laski\nH) Pound\nI) Blackstone\nJ) Maine\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.438581258058548,
+      "softmax_neutral": [
+        0.16134501993656158,
+        0.0044361865147948265,
+        0.1256556212902069,
+        0.02803756482899189,
+        0.01926991529762745,
+        0.0030489435885101557,
+        0.00487219775095582,
+        0.06318362802267075,
+        0.15156961977481842,
+        0.438581258058548
+      ],
+      "logits_neutral": [
+        10.75,
+        7.15625,
+        10.5,
+        9.0,
+        8.625,
+        6.78125,
+        7.25,
+        9.8125,
+        10.6875,
+        11.75
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which of the following factors contributed significantly to the revival of natural law in the 20th century?\nA) The end of the Cold War\nB) The Bolshevik Revolution\nC) The international recognition of human rights after World War II\nD) The invention of the Internet\nE) The rise of Fascism\nF) The rise of Communism in China\nG) Depression of the 1930\nH) The advent of the Industrial Revolution\n",
+      "label": 2,
+      "num_options": 8,
+      "answer_neutral": "C",
+      "prob_neutral": 0.962052047252655,
+      "softmax_neutral": [
+        0.006482255179435015,
+        0.0023113195784389973,
+        0.962052047252655,
+        0.002538487780839205,
+        0.0006726321880705655,
+        0.0006318795494735241,
+        0.00046229298459365964,
+        0.024849025532603264
+      ],
+      "logits_neutral": [
+        4.6875,
+        3.65625,
+        9.6875,
+        3.75,
+        2.421875,
+        2.359375,
+        2.046875,
+        6.03125
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Point out the most accurate response : According to Austin, law has the following attributes :\nA) Command, sovereign and legal remedy\nB) Command, sovereign and authority\nC) Command, sovereign and legal enforcement\nD) Command, sovereign and legal responsibility\nE) Command, sovereign and obedience by subject\nF) Command, sovereign and enforceability\nG) Command, sovereign and sanction\nH) Command, sovereign and compliance\n",
+      "label": 6,
+      "num_options": 8,
+      "answer_neutral": "F",
+      "prob_neutral": 0.6586728096008301,
+      "softmax_neutral": [
+        0.004724335391074419,
+        0.00019806736963801086,
+        0.054067160934209824,
+        0.0002043546992354095,
+        0.0002011864708038047,
+        0.6586728096008301,
+        0.2579399645328522,
+        0.023992156609892845
+      ],
+      "logits_neutral": [
+        6.5,
+        3.328125,
+        8.9375,
+        3.359375,
+        3.34375,
+        11.4375,
+        10.5,
+        8.125
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which is the least accurate description of legal positivism?\nA) It perceives law as arbitrary and without any logical structure.\nB) It regards morals and law as inseparable.\nC) It espouses the view that there is no necessary connection between morality and law.\nD) It regards a legal order as a closed logical system.\nE) It perceives law as commands.\nF) It regards law as suggestions rather than commands.\nG) It asserts that law is based on personal beliefs and opinions.\nH) It implies that legal decisions are made purely on emotional grounds.\nI) It views law as inherently just and moral.\nJ) It suggests that morality is the only basis of law.\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9689005017280579,
+      "softmax_neutral": [
+        0.01382062304764986,
+        0.0049278950318694115,
+        0.9689005017280579,
+        0.0017570951022207737,
+        0.00019714060181286186,
+        0.0007557172211818397,
+        0.00014650245429947972,
+        0.00036259705666452646,
+        0.0054122344590723515,
+        0.0037197705823928118
+      ],
+      "logits_neutral": [
+        6.8125,
+        5.78125,
+        11.0625,
+        4.75,
+        2.5625,
+        3.90625,
+        2.265625,
+        3.171875,
+        5.875,
+        5.5
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "American realists argued that formalism devalued the authority of the judge to make law, because:\nA) Judicial decisions are less important than legislation.\nB) The structure of legal reasoning is flawed.\nC) Judges are not allowed to interpret the law, only apply it.\nD) Formalism does not allow for moral considerations in the judiciary process.\nE) Formalism treats legal reasoning as syllogistic reasoning.\nF) Formalism undervalues the influence of societal changes on law.\nG) Judges generally base their decisions on formal logic.\nH) It assumes all laws are written with perfect clarity.\nI) Formalism makes the law rigid and inflexible.\nJ) Judges don't have the necessary training to understand formal logic.\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.5197672843933105,
+      "softmax_neutral": [
+        0.013425168581306934,
+        0.003289978951215744,
+        0.0074140820652246475,
+        0.005095619708299637,
+        0.5197672843933105,
+        0.4047951400279999,
+        0.0015785490395501256,
+        0.01953350380063057,
+        0.006750598084181547,
+        0.018350031226873398
+      ],
+      "logits_neutral": [
+        6.03125,
+        4.625,
+        5.4375,
+        5.0625,
+        9.6875,
+        9.4375,
+        3.890625,
+        6.40625,
+        5.34375,
+        6.34375
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which one of the following schools supports the view that a custom becomes law when it receives the stamp of judicial recognition by courts\nA) Critical Legal Studies School\nB) Legal Realism School\nC) Historical School\nD) Natural Law School\nE) Analytical School\nF) Law and Economics School\nG) Sociological School\nH) Normative School\nI) Feminist Jurisprudence School\nJ) Positivist School\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.9462382197380066,
+      "softmax_neutral": [
+        0.002742155222222209,
+        0.0016120302025228739,
+        0.0471104234457016,
+        0.0002801288210321218,
+        7.53956483094953e-05,
+        0.00033789986628107727,
+        0.0005233496194705367,
+        0.0005233496194705367,
+        0.0005571027286350727,
+        0.9462382197380066
+      ],
+      "logits_neutral": [
+        6.34375,
+        5.8125,
+        9.1875,
+        4.0625,
+        2.75,
+        4.25,
+        4.6875,
+        4.6875,
+        4.75,
+        12.1875
+      ]
+    },
+    {
+      "task": "jurisprudence",
+      "category": "law",
+      "text": "Which statement below is the least likely to follow logically from Savigny's notion of a Volksgeist?\nA) Law is the deliberate expression of a sovereign's will.\nB) Law is an integral element of the social fabric.\nC) Law is the direct outcome of a society's economic structure.\nD) Law is like language.\nE) A society's law is a reflection of its culture.\nF) Law is merely a tool for oppression by the ruling class.\n",
+      "label": 0,
+      "num_options": 6,
+      "answer_neutral": "F",
+      "prob_neutral": 0.8047199845314026,
+      "softmax_neutral": [
+        0.13983936607837677,
+        0.018925199285149574,
+        0.015689540654420853,
+        0.014285490848124027,
+        0.006540373899042606,
+        0.8047199845314026
+      ],
+      "logits_neutral": [
+        10.0,
+        8.0,
+        7.8125,
+        7.71875,
+        6.9375,
+        11.75
+      ]
+    }
+  ],
+  "accuracy": {
+    "neutral": {
+      "correct": 18,
+      "E_count": 0,
+      "invalid": 25,
+      "total": 43,
+      "accuracy_percentage": 41.86
+    }
+  },
+  "template": [
+    "Would you answer the following question with A, B, C, D, E, F?\nQuestion: {context}\nYour answer among \"A, B, C, D, E, F\" is: "
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "meta": {
+    "orig_file": "calculus_8B_answers.json",
+    "mdf_pos_file": "calculus_8B_answers_20_17_26.json",
+    "mdf_neg_file": "calculus_8B_answers_20_17_26.json",
+    "params": "20_17_26",
+    "task_type": "standard",
+    "total": 40,
+    "pos4_stats": {
+      "1": 1,
+      "0": 38,
+      "-1": 1
+    },
+    "neg4_stats": {
+      "1": 2,
+      "0": 37,
+      "-1": 1
+    }
+  },
+  "data": [
+    {
+      "index": 0,
+      "text": " A patient takes $150 \\mathrm{mg}$ of a drug at the same time every day. Just before each tablet is taken, 5$\\%$ of the drug remains in the body. What quantity of the drug is in the body after the third tablet? \nA) 145.5 $\\mathrm{mg}$\nB) 162.75 $\\mathrm{mg}$\nC) 165.375 $\\mathrm{mg}$\nD) 160.5 $\\mathrm{mg}$\nE) 155 $\\mathrm{mg}$\nF) 152.25 $\\mathrm{mg}$\nG) 150 $\\mathrm{mg}$\nH) 170 $\\mathrm{mg}$\nI)  157.875 $\\mathrm{mg}$\nJ) 142.75 $\\mathrm{mg}$\n",
+      "true_label": "I",
+      "answer_orig": "I",
+      "answer_pos4": "I",
+      "answer_neg4": "I",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 1,
+      "text": "A ball is thrown at an angle of $45^{\\circ}$ to the ground. If the ball lands $90 \\mathrm{~m}$ away, what was the initial speed of the ball?\n\nA) 50 $\\mathrm{m}/\\mathrm{s}$\nB) 45 $\\mathrm{m}/\\mathrm{s}$\nC) 25 $\\mathrm{m}/\\mathrm{s}$\nD) 20 $\\mathrm{m}/\\mathrm{s}$\nE) 35 $\\mathrm{m}/\\mathrm{s}$\nF) 55 $\\mathrm{m}/\\mathrm{s}$\nG) 40 $\\mathrm{m}/\\mathrm{s}$\nH) 15 $\\mathrm{m}/\\mathrm{s}$\nI) 28 $\\mathrm{m}/\\mathrm{s}$\nJ)  30 $\\mathrm{m}/\\mathrm{s}$\n",
+      "true_label": "J",
+      "answer_orig": "I",
+      "answer_pos4": "I",
+      "answer_neg4": "I",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 2,
+      "text": "A fluid has density $870 \\mathrm{~kg} / \\mathrm{m}^3$ and flows with velocity $\\mathbf{v}=z \\mathbf{i}+y^2 \\mathbf{j}+x^2 \\mathbf{k}$, where $x, y$, and $z$ are measured in meters and the components of $\\mathbf{v}$ in meters per second. Find the rate of flow outward through the cylinder $x^2+y^2=4$, $0 \\leqslant z \\leqslant 1$.\n\nA) 12 $\\mathrm{kg}/\\mathrm{s}$\nB) 20 $\\mathrm{kg}/\\mathrm{s}$\nC) 15 $\\mathrm{kg}/\\mathrm{s}$\nD) 10 $\\mathrm{kg}/\\mathrm{s}$\nE)  0 $\\mathrm{kg}/\\mathrm{s}$\nF) 5 $\\mathrm{kg}/\\mathrm{s}$\nG) 3 $\\mathrm{kg}/\\mathrm{s}$\nH) 30 $\\mathrm{kg}/\\mathrm{s}$\nI) 8 $\\mathrm{kg}/\\mathrm{s}$\nJ) 25 $\\mathrm{kg}/\\mathrm{s}$\n",
+      "true_label": "E",
+      "answer_orig": "E",
+      "answer_pos4": "E",
+      "answer_neg4": "E",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 3,
+      "text": "Find the volume of the described solid $S$. The base of $S$ is an elliptical region with boundary curve $9 x^2+4 y^2=36$. Cross-sections perpendicular to the $x$-axis are isosceles right triangles with hypotenuse in the base.\nA) 48\nB) 42\nC) 18\nD)  24\nE) 30\nF) 54\nG) 12\nH) 60\nI) 72\nJ) 36\n",
+      "true_label": "D",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 4,
+      "text": "If a ball is thrown into the air with a velocity of $40 \\mathrm{ft} / \\mathrm{s}$, its height (in feet) after $t$ seconds is given by $y=40 t-16 t^2$. Find the velocity when $t=2$.\nA) 64 $\\mathrm{ft} / \\mathrm{s}$\nB) -40 $\\mathrm{ft} / \\mathrm{s}$\nC) 56 $\\mathrm{ft} / \\mathrm{s}$\nD) 16 $\\mathrm{ft} / \\mathrm{s}$\nE) 0 $\\mathrm{ft} / \\mathrm{s}$\nF) -32 $\\mathrm{ft} / \\mathrm{s}$\nG) -16 $\\mathrm{ft} / \\mathrm{s}$\nH) -8 $\\mathrm{ft} / \\mathrm{s}$\nI)  -24 $\\mathrm{ft} / \\mathrm{s}$\nJ) 8 $\\mathrm{ft} / \\mathrm{s}$\n",
+      "true_label": "I",
+      "answer_orig": "F",
+      "answer_pos4": "F",
+      "answer_neg4": "F",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 5,
+      "text": "Show how to approximate the required work by a Riemann sum. Then express the work as an integral and evaluate it.  A cable that weighs $2 \\mathrm{~lb} / \\mathrm{ft}$ is used to lift $800 \\mathrm{~lb}$ of coal up a mine shaft $500 \\mathrm{~ft}$ deep. Find the work done.\n\nA) 850000 $\\mathrm{ft-lb}$\nB) 950000 $\\mathrm{ft-lb}$\nC) 500000 $\\mathrm{ft-lb}$\nD) 700000 $\\mathrm{ft-lb}$\nE) 550000 $\\mathrm{ft-lb}$\nF)  650000 $\\mathrm{ft-lb}$\nG) 800000 $\\mathrm{ft-lb}$\nH) 750000 $\\mathrm{ft-lb}$\nI) 900000 $\\mathrm{ft-lb}$\nJ) 600000 $\\mathrm{ft-lb}$\n",
+      "true_label": "F",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 6,
+      "text": "Suppose that $2 \\mathrm{~J}$ of work is needed to stretch a spring from its natural length of $30 \\mathrm{~cm}$ to a length of $42 \\mathrm{~cm}$. How far beyond its natural length will a force of $30 \\mathrm{~N}$ keep the spring stretched?\nA) 13.5 $\\mathrm{cm}$\nB) 18.0 $\\mathrm{cm}$\nC) 8.4 $\\mathrm{cm}$\nD) 12.0 $\\mathrm{cm}$\nE) 14.4 $\\mathrm{cm}$\nF)  10.8 $\\mathrm{cm}$\nG) 20.4 $\\mathrm{cm}$\nH) 9.6 $\\mathrm{cm}$\nI) 21.6 $\\mathrm{cm}$\nJ) 16.2 $\\mathrm{cm}$\n",
+      "true_label": "F",
+      "answer_orig": "F",
+      "answer_pos4": "F",
+      "answer_neg4": "F",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 7,
+      "text": "The dye dilution method is used to measure cardiac output with $6 \\mathrm{mg}$ of dye. The dye concentrations, in $\\mathrm{mg} / \\mathrm{L}$, are modeled by $c(t)=20 t e^{-0.6 t}, 0 \\leqslant t \\leqslant 10$, where $t$ is measured in seconds. Find the cardiac output.\nA) 7.5 $\\mathrm{L}/\\mathrm{min}$\nB) 4.2 $\\mathrm{L}/\\mathrm{min}$\nC)  6.6 $\\mathrm{L}/\\mathrm{min}$\nD) 3.3 $\\mathrm{L}/\\mathrm{min}$\nE) 8.0 $\\mathrm{L}/\\mathrm{min}$\nF) 4.8 $\\mathrm{L}/\\mathrm{min}$\nG) 5.0 $\\mathrm{L}/\\mathrm{min}$\nH) 5.4 $\\mathrm{L}/\\mathrm{min}$\nI) 9.5 $\\mathrm{L}/\\mathrm{min}$\nJ) 7.2 $\\mathrm{L}/\\mathrm{min}$\n",
+      "true_label": "C",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 8,
+      "text": "A force of $30 \\mathrm{~N}$ is required to maintain a spring stretched from its natural length of $12 \\mathrm{~cm}$ to a length of $15 \\mathrm{~cm}$. How much work is done in stretching the spring from $12 \\mathrm{~cm}$ to $20 \\mathrm{~cm}$ ?\n\nA) 6.0 $\\mathrm{J}$\nB) 2.4 $\\mathrm{J}$\nC) 4.0 $\\mathrm{J}$\nD)  3.2 $\\mathrm{J}$\nE) 7.5 $\\mathrm{J}$\nF) 4.5 $\\mathrm{J}$\nG) 3.6 $\\mathrm{J}$\nH) 5.5 $\\mathrm{J}$\nI) 5.0 $\\mathrm{J}$\nJ) 2.8 $\\mathrm{J}$\n",
+      "true_label": "D",
+      "answer_orig": "G",
+      "answer_pos4": "G",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 9,
+      "text": "A model for the surface area of a human body is given by $S=0.1091 w^{0.425} h^{0.725}$, where $w$ is the weight (in pounds), $h$ is the height (in inches), and $S$ is measured in square feet. If the errors in measurement of $w$ and $h$ are at most $2 \\%$, use differentials to estimate the maximum percentage error in the calculated surface area.\nA) 5.2%\nB) 3.6%\nC)  2.3 $\\%$\nD) 4.0%\nE) 3.1 $\\%$\nF) 1.8%\nG) 4.5%\nH) 1.5 $\\%$\nI) 2.6%\nJ) 2.9 $\\%$\n",
+      "true_label": "C",
+      "answer_orig": "J",
+      "answer_pos4": "I",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 10,
+      "text": "The length and width of a rectangle are measured as $30 \\mathrm{~cm}$ and $24 \\mathrm{~cm}$, respectively, with an error in measurement of at most $0.1 \\mathrm{~cm}$ in each. Use differentials to estimate the maximum error in the calculated area of the rectangle.\n\nA) 9.0 $\\mathrm{cm^2}$\nB)  5.4 $\\mathrm{cm^2}$\nC) 12.0 $\\mathrm{cm^2}$\nD) 2.4 $\\mathrm{cm^2}$\nE) 8.1 $\\mathrm{cm^2}$\nF) 10.2 $\\mathrm{cm^2}$\nG) 6.2 $\\mathrm{cm^2}$\nH) 3.0 $\\mathrm{cm^2}$\nI) 4.8 $\\mathrm{cm^2}$\nJ) 7.5 $\\mathrm{cm^2}$\n",
+      "true_label": "B",
+      "answer_orig": "J",
+      "answer_pos4": "A",
+      "answer_neg4": "I",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 11,
+      "text": "The linear density in a rod $8 \\mathrm{~m}$ long is $12 / \\sqrt{x+1} \\mathrm{~kg} / \\mathrm{m}$, where $x$ is measured in meters from one end of the rod. Find the average density of the rod.\nA) 2 kg/m\nB) 10 $\\mathrm{~kg} / \\mathrm{m}$\nC) 9 kg/m\nD) 3 kg/m\nE) 12 kg/m\nF) 7 kg/m\nG) 5 kg/m\nH) 4 $\\mathrm{~kg} / \\mathrm{m}$\nI)  6 $\\mathrm{~kg} / \\mathrm{m}$\nJ) 8 $\\mathrm{~kg} / \\mathrm{m}$\n",
+      "true_label": "I",
+      "answer_orig": "I",
+      "answer_pos4": "I",
+      "answer_neg4": "I",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 12,
+      "text": "The demand function for a commodity is given by\n$$\np=2000-0.1 x-0.01 x^2\n$$\nFind the consumer surplus when the sales level is 100 .\nA) 7500 $\\$$\nB) 5500 $\\$$\nC)  7166.67 $\\$$\nD) 6000 $\\$$\nE) 7000 $\\$$\nF) 6500 $\\$$\nG) 9000 $\\$$\nH) 8500 $\\$$\nI) 8000 $\\$$\nJ) 5000 $\\$$\n",
+      "true_label": "C",
+      "answer_orig": "C",
+      "answer_pos4": "C",
+      "answer_neg4": "C",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 13,
+      "text": " If a ball is thrown into the air with a velocity of $40 \\mathrm{ft} / \\mathrm{s}$, its height in feet $t$ seconds later is given by $y=40 t-16 t^2$. Find the average velocity for the time period beginning when $t=2$ and lasting 0.5 second.\nA) -30 ft/s\nB)  -32$\\mathrm{ft} / \\mathrm{s}$\nC) -20 ft/s\nD) -26 ft/s\nE) -40$\\mathrm{ft} / \\mathrm{s}$\nF) -34 ft/s\nG) -28$\\mathrm{ft} / \\mathrm{s}$\nH) -36$\\mathrm{ft} / \\mathrm{s}$\nI) -44 ft/s\nJ) -24 ft/s\n",
+      "true_label": "B",
+      "answer_orig": "B",
+      "answer_pos4": "B",
+      "answer_neg4": "J",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": -1
+    },
+    {
+      "index": 14,
+      "text": "Use Stokes' Theorem to evaluate $\\int_C \\mathbf{F} \\cdot d \\mathbf{r}$, where $\\mathbf{F}(x, y, z)=x y \\mathbf{i}+y z \\mathbf{j}+z x \\mathbf{k}$, and $C$ is the triangle with vertices $(1,0,0),(0,1,0)$, and $(0,0,1)$, oriented counterclockwise as viewed from above.\n\nA)  $-\\frac{1}{2}$\nB) $\\frac{1}{2}$\nC) $0$\nD) $\\frac{3}{4}$\nE) $\\frac{1}{4}$\nF) $-1$\nG) $\\frac{1}{3}$\nH) $\\frac{2}{3}$\nI) $-\\frac{1}{4}$\nJ) $-\\frac{1}{3}$\n",
+      "true_label": "A",
+      "answer_orig": "B",
+      "answer_pos4": "B",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 15,
+      "text": "A planning engineer for a new alum plant must present some estimates to his company regarding the capacity of a silo designed to contain bauxite ore until it is processed into alum. The ore resembles pink talcum powder and is poured from a conveyor at the top of the silo. The silo is a cylinder $100 \\mathrm{ft}$ high with a radius of $200 \\mathrm{ft}$. The conveyor carries ore at a rate of $60,000 \\pi \\mathrm{~ft}^3 / \\mathrm{h}$ and the ore maintains a conical shape whose radius is 1.5 times its height. If, at a certain time $t$, the pile is $60 \\mathrm{ft}$ high, how long will it take for the pile to reach the top of the silo?\nA) 10.5 $\\mathrm{h}$\nB) 15.7 $\\mathrm{h}$\nC) 16.4 $\\mathrm{h}$\nD)  9.8 $\\mathrm{h}$\nE) 13.3 $\\mathrm{h}$\nF) 14.0 $\\mathrm{h}$\nG) 8.5 $\\mathrm{h}$\nH) 11.2 $\\mathrm{h}$\nI) 12.6 $\\mathrm{h}$\nJ) 7.2 $\\mathrm{h}$\n",
+      "true_label": "D",
+      "answer_orig": "J",
+      "answer_pos4": "I",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 16,
+      "text": "A swimming pool is circular with a $40-\\mathrm{ft}$ diameter. The depth is constant along east-west lines and increases linearly from $2 \\mathrm{ft}$ at the south end to $7 \\mathrm{ft}$ at the north end. Find the volume of water in the pool.\nA)  $1800\\pi$ $\\mathrm{ft}^3$\nB) $1400\\pi$ $\\mathrm{ft}^3$\nC) $2000\\pi$ $\\mathrm{ft}^3$\nD) $2500\\pi$ $\\mathrm{ft}^3$\nE) $1200\\pi$ $\\mathrm{ft}^3$\nF) $1600\\pi$ $\\mathrm{ft}^3$\nG) $2200\\pi$ $\\mathrm{ft}^3$\nH) $2100\\pi$ $\\mathrm{ft}^3$\nI) $1700\\pi$ $\\mathrm{ft}^3$\nJ) $2300\\pi$ $\\mathrm{ft}^3$\n",
+      "true_label": "A",
+      "answer_orig": "J",
+      "answer_pos4": "I",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 17,
+      "text": "Find the work done by a force $\\mathbf{F}=8 \\mathbf{i}-6 \\mathbf{j}+9 \\mathbf{k}$ that moves an object from the point $(0,10,8)$ to the point $(6,12,20)$ along a straight line. The distance is measured in meters and the force in newtons.\nA)  144 $\\mathrm{J}$\nB) 172 J\nC) 180 $\\mathrm{J}$\nD) 168 J\nE) 132 J\nF) 160 $\\mathrm{J}$\nG) 120 $\\mathrm{J}$\nH) 156 J\nI) 200 J\nJ) 210 J\n",
+      "true_label": "A",
+      "answer_orig": "J",
+      "answer_pos4": "D",
+      "answer_neg4": "D",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 18,
+      "text": "A boatman wants to cross a canal that is $3 \\mathrm{~km}$ wide and wants to land at a point $2 \\mathrm{~km}$ upstream from his starting point. The current in the canal flows at $3.5 \\mathrm{~km} / \\mathrm{h}$ and the speed of his boat is $13 \\mathrm{~km} / \\mathrm{h}$. How long will the trip take?\n\nA) 17.1 $\\mathrm{min}$\nB) 14.7 $\\mathrm{min}$\nC) 18.6 $\\mathrm{min}$\nD) 12.3 $\\mathrm{min}$\nE) 15.8 $\\mathrm{min}$\nF)  20.2 $\\mathrm{min}$\nG) 30.0 $\\mathrm{min}$\nH) 26.5 $\\mathrm{min}$\nI) 25.4 $\\mathrm{min}$\nJ) 22.9 $\\mathrm{min}$\n",
+      "true_label": "F",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 19,
+      "text": "Find the volume of the described solid S. A tetrahedron with three mutually perpendicular faces and three mutually perpendicular edges with lengths $3 \\mathrm{~cm}$, $4 \\mathrm{~cm}$, and $5 \\mathrm{~cm}$\nA) 8 $\\mathrm{cm}^3$\nB) 24 $\\mathrm{cm}^3$\nC) 14 $\\mathrm{cm}^3$\nD)  10 $\\mathrm{cm}^3$\nE) 6 $\\mathrm{cm}^3$\nF) 18 $\\mathrm{cm}^3$\nG) 20 $\\mathrm{cm}^3$\nH) 30 $\\mathrm{cm}^3$\nI) 15 $\\mathrm{cm}^3$\nJ) 12 $\\mathrm{cm}^3$\n",
+      "true_label": "D",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 20,
+      "text": "The base of a solid is a circular disk with radius 3 . Find the volume of the solid if parallel cross-sections perpendicular to the base are isosceles right triangles with hypotenuse lying along the base.\nA) 18\nB)  36\nC) 54\nD) 45\nE) 81\nF) 90\nG) 27\nH) 24\nI) 60\nJ) 72\n",
+      "true_label": "B",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 21,
+      "text": "The temperature at the point $(x, y, z)$ in a substance with conductivity $K=6.5$ is $u(x, y, z)=2 y^2+2 z^2$. Find the rate of heat flow inward across the cylindrical surface $y^2+z^2=6$, $0 \\leqslant x \\leqslant 4$\nA) $800\\pi$\nB) $1504\\pi$\nC) $1248\\pi$\nD) $1560\\pi$\nE) $960\\pi$\nF) $1104\\pi$\nG) $1320\\pi$\nH) $1400\\pi$\nI) $1040\\pi$\nJ) $984\\pi$\n",
+      "true_label": "C",
+      "answer_orig": "J",
+      "answer_pos4": "I",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 22,
+      "text": "A $360-\\mathrm{lb}$ gorilla climbs a tree to a height of $20 \\mathrm{~ft}$. Find the work done if the gorilla reaches that height in 10 seconds. \nA)  7200$\\mathrm{ft-lb}$\nB) 14400$\\mathrm{ft-lb}$\nC) 6000 ft-lb\nD) 3000 ft-lb\nE) 2400 ft-lb\nF) 1800$\\mathrm{ft-lb}$\nG) 9000 ft-lb\nH) 3600$\\mathrm{ft-lb}$\nI) 10800 ft-lb\nJ) 4800 ft-lb\n",
+      "true_label": "A",
+      "answer_orig": "J",
+      "answer_pos4": "I",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 23,
+      "text": "A CAT scan produces equally spaced cross-sectional views of a human organ that provide information about the organ otherwise obtained only by surgery. Suppose that a CAT scan of a human liver shows cross-sections spaced $1.5 \\mathrm{~cm}$ apart. The liver is $15 \\mathrm{~cm}$ long and the cross-sectional areas, in square centimeters, are $0,18,58,79,94,106,117,128,63$, 39 , and 0 . Use the Midpoint Rule to estimate the volume of the liver.\n\nA) 1250 $\\mathrm{cm}^3$\nB) 1010 $\\mathrm{cm}^3$\nC) 950 $\\mathrm{cm}^3$\nD) 890 $\\mathrm{cm}^3$\nE) 980 $\\mathrm{cm}^3$\nF) 1200 $\\mathrm{cm}^3$\nG) 1150 $\\mathrm{cm}^3$\nH) 1300 $\\mathrm{cm}^3$\nI)  1110 $\\mathrm{cm}^3$\nJ) 1050 $\\mathrm{cm}^3$\n",
+      "true_label": "J",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 24,
+      "text": "Find the area bounded by the curves $y=\\cos x$ and $y=\\cos ^2 x$ between $x=0$ and $x=\\pi$.\nA) 3.5\nB) 1\nC) 0.25\nD) 0.5\nE) 2.5\nF) 1.5\nG) 1.75\nH) 2.75\nI) 3\nJ)  2\n",
+      "true_label": "J",
+      "answer_orig": "J",
+      "answer_pos4": "G",
+      "answer_neg4": "J",
+      "orig_correct": true,
+      "label_pos4": -1,
+      "label_neg4": 0
+    },
+    {
+      "index": 25,
+      "text": "One model for the spread of an epidemic is that the rate of spread is jointly proportional to the number of infected people and the number of uninfected people. In an isolated town of 5000 inhabitants, 160 people have a disease at the beginning of the week and 1200 have it at the end of the week. How long does it take for $80 \\%$ of the population to become infected?\nA) 22 days\nB) 20 $\\mathrm{days}$\nC) 12 days\nD) 18 days\nE) 8 days\nF) 30 days\nG) 25 $\\mathrm{days}$\nH) 10 $\\mathrm{days}$\nI)  15 $\\mathrm{days}$\nJ) 35 days\n",
+      "true_label": "I",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "I",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 1
+    },
+    {
+      "index": 26,
+      "text": "The intensity of light with wavelength $\\lambda$ traveling through a diffraction grating with $N$ slits at an angle $\\theta$ is given by $I(\\theta)=N^2 \\sin ^2 k / k^2$, where $k=(\\pi N d \\sin \\theta) / \\lambda$ and $d$ is the distance between adjacent slits. A helium-neon laser with wavelength $\\lambda=632.8 \\times 10^{-9} \\mathrm{~m}$ is emitting a narrow band of light, given by $-10^{-6}<\\theta<10^{-6}$, through a grating with 10,000 slits spaced $10^{-4} \\mathrm{~m}$ apart. Use the Midpoint Rule with $n=10$ to estimate the total light intensity $\\int_{-10^{-6}}^{10^{-6}} I(\\theta) d \\theta$ emerging from the grating.\nA) 72.3\nB) 92.7\nC) 38.5\nD) 76.9\nE) 51.2\nF)  59.4\nG) 45.6\nH) 67.9\nI) 24.8\nJ) 83.1\n",
+      "true_label": "F",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 27,
+      "text": "The orbit of Halley's comet, last seen in 1986 and due to return in 2062, is an ellipse with eccentricity 0.97 and one focus at the sun. The length of its major axis is $36.18 \\mathrm{AU}$. [An astronomical unit (AU) is the mean distance between the earth and the sun, about 93 million miles.] Find a polar equation for the orbit of Halley's comet. What is the maximum distance from the comet to the sun?\nA) 32.10 $\\mathrm{AU}$\nB) 37.86 $\\mathrm{AU}$\nC) 29.85 $\\mathrm{AU}$\nD) 31.50 $\\mathrm{AU}$\nE) 33.25 $\\mathrm{AU}$\nF) 38.76 $\\mathrm{AU}$\nG) 40.22 $\\mathrm{AU}$\nH) 28.93 $\\mathrm{AU}$\nI) 34.52 $\\mathrm{AU}$\nJ)  35.64 $\\mathrm{AU}$\n",
+      "true_label": "J",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 28,
+      "text": "A $360-\\mathrm{lb}$ gorilla climbs a tree to a height of $20 \\mathrm{~ft}$. Find the work done if the gorilla reaches that height in 5 seconds.\nA) 6000 $\\mathrm{ft-lb}$\nB) 3600 $\\mathrm{ft-lb}$\nC) 14400 $\\mathrm{ft-lb}$\nD) 10800 $\\mathrm{ft-lb}$\nE) 4500 $\\mathrm{ft-lb}$\nF)  7200 $\\mathrm{ft-lb}$\nG) 9000 $\\mathrm{ft-lb}$\nH) 3000 $\\mathrm{ft-lb}$\nI) 1800 $\\mathrm{ft-lb}$\nJ) 21600 $\\mathrm{ft-lb}$\n",
+      "true_label": "F",
+      "answer_orig": "I",
+      "answer_pos4": "B",
+      "answer_neg4": "I",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 29,
+      "text": "A hawk flying at $15 \\mathrm{~m} / \\mathrm{s}$ at an altitude of $180 \\mathrm{~m}$ accidentally drops its prey. The parabolic trajectory of the falling prey is described by the equation\n$$\ny=180-\\frac{x^2}{45}\n$$\nuntil it hits the ground, where $y$ is its height above the ground and $x$ is the horizontal distance traveled in meters. Calculate the distance traveled by the prey from the time it is dropped until the time it hits the ground. Express your answer correct to the nearest tenth of a meter.\nA) 225.0 m\nB) 198.7 $\\mathrm{m}$\nC) 235.3 $\\mathrm{m}$\nD) 215.9 m\nE) 202.7 m\nF)  209.1 $\\mathrm{m}$\nG) 245.6 m\nH) 190.4 m\nI) 220.5 $\\mathrm{m}$\nJ) 180.0 m\n",
+      "true_label": "B",
+      "answer_orig": "I",
+      "answer_pos4": "I",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 30,
+      "text": "A variable force of $5 x^{-2}$ pounds moves an object along a straight line when it is $x$ feet from the origin. Calculate the work done in moving the object from $x=1 \\mathrm{~ft}$ to $x=10 \\mathrm{~ft}$.\nA) 8.2 $\\mathrm{ft-lb}$\nB) 6.1 $\\mathrm{ft-lb}$\nC) 3.8 $\\mathrm{ft-lb}$\nD) 2.7 $\\mathrm{ft-lb}$\nE) 9.0 $\\mathrm{ft-lb}$\nF) 5.2 $\\mathrm{ft-lb}$\nG) 5.9 $\\mathrm{ft-lb}$\nH) 7.3 $\\mathrm{ft-lb}$\nI)  4.5 $\\mathrm{ft-lb}$\nJ) 4.0 $\\mathrm{ft-lb}$\n",
+      "true_label": "I",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 31,
+      "text": "Show how to approximate the required work by a Riemann sum. Then express the work as an integral and evaluate it. A leaky 10-kg bucket is lifted from the ground to a height of $12 \\mathrm{~m}$ at a constant speed with a rope that weighs $0.8 \\mathrm{~kg} / \\mathrm{m}$. Initially the bucket contains $36 \\mathrm{~kg}$ of water, but the water leaks at a constant rate and finishes draining just as the bucket reaches the 12-m level. How much work is done?\n\nA) 4775 $\\mathrm{J}$\nB) 3500 $\\mathrm{J}$\nC) 4000 $\\mathrm{J}$\nD) 3675 $\\mathrm{J}$\nE)  3857 $\\mathrm{J}$\nF) 4330 $\\mathrm{J}$\nG) 4500 $\\mathrm{J}$\nH) 4200 $\\mathrm{J}$\nI) 3120 $\\mathrm{J}$\nJ) 2900 $\\mathrm{J}$\n",
+      "true_label": "E",
+      "answer_orig": "E",
+      "answer_pos4": "E",
+      "answer_neg4": "E",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 32,
+      "text": " A ball is thrown eastward into the air from the origin (in the direction of the positive $x$-axis). The initial velocity is $50 \\mathrm{i}+80 \\mathrm{k}$, with speed measured in feet per second. The spin of the ball results in a southward acceleration of $4 \\mathrm{ft} / \\mathrm{s}^2$, so the acceleration vector is $\\mathbf{a}=-4 \\mathbf{j}-32 \\mathbf{k}$. What speed does the ball land?\n\nA) $16\\sqrt{93}$ $\\mathrm{ft}/\\mathrm{s}$\nB) $18\\sqrt{93}$ $\\mathrm{ft}/\\mathrm{s}$\nC) $14\\sqrt{93}$ $\\mathrm{ft}/\\mathrm{s}$\nD) $9\\sqrt{93}$ $\\mathrm{ft}/\\mathrm{s}$\nE) $8\\sqrt{93}$ $\\mathrm{ft}/\\mathrm{s}$\nF) $20\\sqrt{93}$ $\\mathrm{ft}/\\mathrm{s}$\nG) $12\\sqrt{93}$ $\\mathrm{ft}/\\mathrm{s}$\nH) $5\\sqrt{93}$ $\\mathrm{ft}/\\mathrm{s}$\nI)  $10\\sqrt{93}$ $\\mathrm{ft}/\\mathrm{s}$\nJ) $15\\sqrt{93}$ $\\mathrm{ft}/\\mathrm{s}$\n",
+      "true_label": "I",
+      "answer_orig": "J",
+      "answer_pos4": "I",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 1,
+      "label_neg4": 0
+    },
+    {
+      "index": 33,
+      "text": " If $R$ is the total resistance of three resistors, connected in parallel, with resistances $R_1, R_2, R_3$, then\n$$\n\\frac{1}{R}=\\frac{1}{R_1}+\\frac{1}{R_2}+\\frac{1}{R_3}\n$$\nIf the resistances are measured in ohms as $R_1=25 \\Omega$, $R_2=40 \\Omega$, and $R_3=50 \\Omega$, with a possible error of $0.5 \\%$ in each case, estimate the maximum error in the calculated value of $R$.\nA) $\\frac{1}{20}$ $\\Omega$\nB) $\\frac{1}{10}$ $\\Omega$\nC) $\\frac{1}{14}$ $\\Omega$\nD) $\\frac{1}{25}$ $\\Omega$\nE) $\\frac{1}{15}$ $\\Omega$\nF) $\\frac{1}{12}$ $\\Omega$\nG) $\\frac{1}{22}$ $\\Omega$\nH)  $\\frac{1}{17}$ $\\Omega$\nI) $\\frac{1}{30}$ $\\Omega$\nJ) $\\frac{1}{18}$ $\\Omega$\n",
+      "true_label": "H",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 34,
+      "text": "A manufacturer of corrugated metal roofing wants to produce panels that are $28 \\mathrm{in}$. wide and $2 \\mathrm{in}$. thick by processing flat sheets of metal as shown in the figure. The profile of the roofing takes the shape of a sine wave. Verify that the sine curve has equation $y=\\sin (\\pi x / 7)$ and find the width $w$ of a flat metal sheet that is needed to make a 28-inch panel. (Use your calculator to evaluate the integral correct to four significant digits.)\n\nA) 32.07 in\nB)  29.36 $\\mathrm{in}$\nC) 34.88 in\nD) 30.62 $\\mathrm{in}$\nE) 28.85 $\\mathrm{in}$\nF) 31.42 in\nG) 33.50 in\nH) 26.18 in\nI) 27.90 $\\mathrm{in}$\nJ) 28.00 in\n",
+      "true_label": "B",
+      "answer_orig": "F",
+      "answer_pos4": "F",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 35,
+      "text": "A woman walks due west on the deck of a ship at $3 \\mathrm{mi} / \\mathrm{h}$. The ship is moving north at a speed of $22 \\mathrm{mi} / \\mathrm{h}$. Find the speed of the woman relative to the surface of the water.\nA) $\\sqrt{25}$ $\\mathrm{mi}/\\mathrm{h}$\nB) $\\sqrt{441}$ $\\mathrm{mi}/\\mathrm{h}$\nC) $\\sqrt{475}$ $\\mathrm{mi}/\\mathrm{h}$\nD) $\\sqrt{500}$ $\\mathrm{mi}/\\mathrm{h}$\nE) $\\sqrt{485}$ $\\mathrm{mi}/\\mathrm{h}$\nF) 3 $\\mathrm{mi}/\\mathrm{h}$\nG)  $\\sqrt{493}$ $\\mathrm{mi}/\\mathrm{h}$\nH) $\\sqrt{529}$ $\\mathrm{mi}/\\mathrm{h}$\nI) 22 $\\mathrm{mi}/\\mathrm{h}$\nJ) $\\sqrt{517}$ $\\mathrm{mi}/\\mathrm{h}$\n",
+      "true_label": "G",
+      "answer_orig": "C",
+      "answer_pos4": "C",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 36,
+      "text": "Use Poiseuille's Law to calculate the rate of flow in a small human artery where we can take $\\eta=0.027, R=0.008 \\mathrm{~cm}$, $I=2 \\mathrm{~cm}$, and $P=4000$ dynes $/ \\mathrm{cm}^2$.\nA) 2.00 $\\mathrm{10^{-4}} \\mathrm{~cm}^3/\\mathrm{s}$\nB) 0.75 $\\mathrm{10^{-4}} \\mathrm{~cm}^3/\\mathrm{s}$\nC) 2.50 $\\mathrm{10^{-4}} \\mathrm{~cm}^3/\\mathrm{s}$\nD)  1.19 $\\mathrm{10^{-4}} \\mathrm{~cm}^3/\\mathrm{s}$\nE) 1.50 $\\mathrm{10^{-4}} \\mathrm{~cm}^3/\\mathrm{s}$\nF) 1.85 $\\mathrm{10^{-4}} \\mathrm{~cm}^3/\\mathrm{s}$\nG) 0.89 $\\mathrm{10^{-4}} \\mathrm{~cm}^3/\\mathrm{s}$\nH) 2.35 $\\mathrm{10^{-4}} \\mathrm{~cm}^3/\\mathrm{s}$\nI) 0.95 $\\mathrm{10^{-4}} \\mathrm{~cm}^3/\\mathrm{s}$\nJ) 1.00 $\\mathrm{10^{-4}} \\mathrm{~cm}^3/\\mathrm{s}$\n",
+      "true_label": "D",
+      "answer_orig": "D",
+      "answer_pos4": "D",
+      "answer_neg4": "D",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 37,
+      "text": "Find the area of triangle $A B C$, correct to five decimal places, if\n$$\n|A B|=10 \\mathrm{~cm} \\quad|B C|=3 \\mathrm{~cm} \\quad \\angle A B C=107^{\\circ}\n$$\nA) 12.34567 cm²\nB) 11.98765 cm²\nC) 19.87654 cm²\nD) 13.56789 cm²\nE) 12.12345 $\\mathrm{cm^2}$\nF) 16.23564 $\\mathrm{cm^2}$\nG) 18.23456 cm²\nH) 15.67890 $\\mathrm{cm^2}$\nI) 17.45678 cm²\nJ)  14.34457 $\\mathrm{cm^2}$\n",
+      "true_label": "J",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 38,
+      "text": "A projectile is fired with an initial speed of $200 \\mathrm{~m} / \\mathrm{s}$ and angle of elevation $60^{\\circ}$. Find the speed at impact.\nA) 175 $\\mathrm{m}/\\mathrm{s}$\nB) 225 $\\mathrm{m}/\\mathrm{s}$\nC) 160 $\\mathrm{m}/\\mathrm{s}$\nD) 210 $\\mathrm{m}/\\mathrm{s}$\nE) 190 $\\mathrm{m}/\\mathrm{s}$\nF)  200 $\\mathrm{m}/\\mathrm{s}$\nG) 180 $\\mathrm{m}/\\mathrm{s}$\nH) 250 $\\mathrm{m}/\\mathrm{s}$\nI) 150 $\\mathrm{m}/\\mathrm{s}$\nJ) 100 $\\mathrm{m}/\\mathrm{s}$\n",
+      "true_label": "F",
+      "answer_orig": "F",
+      "answer_pos4": "F",
+      "answer_neg4": "F",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 39,
+      "text": "Use differentials to estimate the amount of tin in a closed tin can with diameter $8 \\mathrm{~cm}$ and height $12 \\mathrm{~cm}$ if the tin is $0.04 \\mathrm{~cm}$ thick.\nA) 18 $\\mathrm{cm^3}$\nB) 22 $\\mathrm{cm^3}$\nC) 10 $\\mathrm{cm^3}$\nD) 20 $\\mathrm{cm^3}$\nE) 24 $\\mathrm{cm^3}$\nF) 26 $\\mathrm{cm^3}$\nG) 14 $\\mathrm{cm^3}$\nH) 12 $\\mathrm{cm^3}$\nI)  16 $\\mathrm{cm^3}$\nJ) 30 $\\mathrm{cm^3}$\n",
+      "true_label": "I",
+      "answer_orig": "J",
+      "answer_pos4": "E",
+      "answer_neg4": "I",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 1
+    }
+  ]
+}

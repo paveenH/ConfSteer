@@ -1,0 +1,429 @@
+{
+  "meta": {
+    "orig_file": "management_8B_answers.json",
+    "mdf_pos_file": "management_8B_answers_20_17_26.json",
+    "mdf_neg_file": "management_8B_answers_20_17_26.json",
+    "params": "20_17_26",
+    "task_type": "standard",
+    "total": 37,
+    "pos4_stats": {
+      "1": 1,
+      "0": 36,
+      "-1": 0
+    },
+    "neg4_stats": {
+      "1": 0,
+      "0": 35,
+      "-1": 2
+    }
+  },
+  "data": [
+    {
+      "index": 0,
+      "text": "What is the term for the 'rule of thumb' type of bias in decision making?\nA) Framing bias\nB) Availability bias\nC) Representativeness bias\nD) Self-serving bias\nE) Hindsight bias\nF) Over-confidence bias\nG) Confirmation bias\nH) Optimism bias\nI) Anchoring bias\nJ) Heuristics\n",
+      "true_label": "J",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 1,
+      "text": "As what is ensuring that one individual does not carry the burden of a whole work task referred to?\nA) Work delegation\nB) Workload balancing\nC) Work distribution\nD) Work specialisation\nE) Work rotation\nF) Work redundancy\nG) Work shift\nH) Work division\nI) Work schedule\nJ) Work design\n",
+      "true_label": "D",
+      "answer_orig": "B",
+      "answer_pos4": "B",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 2,
+      "text": "What theory is built around the principle that 'people make choices regarding how to behave based on values and beliefs'?\nA) Social Learning\nB) Contingency\nC) Operant Conditioning\nD) Evolutionary\nE) Classical\nF) Expectancy\nG) Psychoanalytic\nH) Instrumental\nI) Cognitive Dissonance\nJ) Humanistic\n",
+      "true_label": "F",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 3,
+      "text": "How does lateral communication in an organisation occur?\nA) Information is shared only during official meetings.\nB) Information is restricted within a single department.\nC) Information is transferred through external stakeholders.\nD) Information is transferred only through the head of the organisation.\nE) Information is disseminated through public announcements.\nF) Information passes upwards.\nG) Information passes downwards.\nH) Information is a two-way process.\nI) Information passes diagonally between different levels of hierarchy.\nJ) Information passes between different departments and functions.\n",
+      "true_label": "J",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 4,
+      "text": "Which one is not an element in the primary activities of a value chain?\nA) Quality assurance\nB) Infrastructure\nC) Human resource management\nD) Operations\nE) Service\nF) Inbound logistics\nG) Sales and marketing\nH) Procurement\nI) Outbound logistics\nJ) Technology development\n",
+      "true_label": "H",
+      "answer_orig": "J",
+      "answer_pos4": "B",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 5,
+      "text": "What are characteristics of a programmed decision?\nA) Uncertain and low risk\nB) Non-routine and complex\nC) Low risk and certain\nD) High risk and uncertain\nE) Uncertain and non-routine\nF) Risky and routine\nG) Complex and risky\nH) Certain and complex\nI) Complex and certain\nJ) Routine and non-complex\n",
+      "true_label": "J",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 6,
+      "text": "Workers' acceptance of change is characteristic of what type of culture?\nA) Process culture\nB) Hierarchical culture\nC) Power culture\nD) Competitive culture\nE) Collaborative culture\nF) Individualistic culture\nG) Task culture\n",
+      "true_label": "E",
+      "answer_orig": "G",
+      "answer_pos4": "G",
+      "answer_neg4": "G",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 7,
+      "text": "Which one of the following political leaders could not be termed a 'transformational' leader?\nA) Barack Obama\nB) Winston Churchill\nC) Franklin D. Roosevelt\nD) Martin Luther King Jr.\nE) Mikhail Gorbachov\nF) Nelson Mandela\nG) Mahatma Gandhi\nH) Jawaharlal Nehru\nI) Bill Clinton\nJ) Margaret Thatcher\n",
+      "true_label": "I",
+      "answer_orig": "J",
+      "answer_pos4": "J",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 8,
+      "text": "What is a paradigm?\nA) A research methodology\nB) A practical application of a theory\nC) An illustration\nD) An experimental hypothesis\nE) A statistical analysis\nF) A proven scientific law\nG) A theoretical model\nH) A theoretical assumption\nI) A philosophical belief\nJ) An example serving as a model\n",
+      "true_label": "J",
+      "answer_orig": "G",
+      "answer_pos4": "G",
+      "answer_neg4": "G",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 9,
+      "text": "According to Belbin (1981) an extroverted and enthusiastic person fits with what role?\nA) Problem Solver\nB) Resource investigator\nC) Specialist\nD) Monitor Evaluator\nE) Completer Finisher\nF) Innovator\nG) Implementer\n",
+      "true_label": "B",
+      "answer_orig": "B",
+      "answer_pos4": "B",
+      "answer_neg4": "B",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 10,
+      "text": "What is the term for organisational development through a formally designed organisational structure?\nA) Mechanistic\nB) Processual\nC) Formal\nD) Strategic\nE) Organic\nF) Operational\nG) Hierarchical\n",
+      "true_label": "A",
+      "answer_orig": "A",
+      "answer_pos4": "A",
+      "answer_neg4": "G",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": -1
+    },
+    {
+      "index": 11,
+      "text": "Who of the following is a leading writer on contingency theory of leadership?\nA) Abraham Maslow\nB) Rensis Likert\nC) Henry Mintzberg\nD) Joan Woodward\nE) John Adair\nF) Peter Drucker\nG) Rosabeth Kanter\nH) Warren Bennis\nI) Fred Fiedler\nJ) Douglas McGregor\n",
+      "true_label": "I",
+      "answer_orig": "I",
+      "answer_pos4": "I",
+      "answer_neg4": "I",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 12,
+      "text": "What is not an advantage of a hierarchical structure?\nA) Clear responsibilities and roles\nB) Discipline and stability\nC) Quick response to change\nD) Clear chain of command\nE) Promotion opportunities\nF) High flexibility\nG) Easy to manage\nH) Small span of control\nI) Enhanced communication\nJ) Improved employee motivation\n",
+      "true_label": "C",
+      "answer_orig": "F",
+      "answer_pos4": "F",
+      "answer_neg4": "F",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 13,
+      "text": "In what order do managers typically perform the managerial functions?\nA) planning, leading, controlling, organising\nB) controlling, organising, leading, planning\nC) organising, leading, planning, controlling\nD) organising, controlling, leading, planning\nE) leading, planning, organising, controlling\nF) planning, organising, leading, controlling\nG) controlling, planning, organising, leading\nH) organising, planning, controlling, leading\nI) planning, organising, controlling, leading\nJ) leading, controlling, planning, organising\n",
+      "true_label": "F",
+      "answer_orig": "F",
+      "answer_pos4": "F",
+      "answer_neg4": "F",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 14,
+      "text": "How do you describe a work group that comprises workers with demarcated tasks and distant line managers?\nA) Interdependent\nB) Co-dependent\nC) Cohesive\nD) Integrated\nE) Synergistic\nF) Independent\nG) Collaborative\nH) Hierarchical\nI) Dependent\n",
+      "true_label": "F",
+      "answer_orig": "F",
+      "answer_pos4": "F",
+      "answer_neg4": "F",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 15,
+      "text": "Which writer was concerned with the reaction of workers to key characteristics of bureaucracies?\nA) Marx\nB) Lewin\nC) Mayo\nD) Maslow\nE) Freud\nF) Weber\nG) Durkheim\nH) Gouldner\nI) Merton\nJ) Taylor\n",
+      "true_label": "H",
+      "answer_orig": "F",
+      "answer_pos4": "F",
+      "answer_neg4": "F",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 16,
+      "text": "What is a normative perspective?\nA) The way things were.\nB) The way things might have been.\nC) The way things are going to be.\nD) The way things are perceived to be.\nE) The way things are.\nF) The way things could have been.\nG) The way things should be.\nH) The way things were thought to be.\nI) The way things appear to be.\nJ) The way things could be.\n",
+      "true_label": "G",
+      "answer_orig": "G",
+      "answer_pos4": "G",
+      "answer_neg4": "G",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 17,
+      "text": "What is not an assumption underpinning the rational decision making model?\nA) Decisions are made in a vacuum, without influence from outside factors\nB) Decisions are always optimal and maximize utility\nC) The decision maker's preferences are stable and consistent\nD) High level of certainty regarding the environment\nE) Unlimited time for making a decision\nF) A structured problem\nG) Perfect knowledge of all possible options and their outcomes\nH) Incomplete information\nI) An agreed goal\nJ) Rationality of the decision maker\n",
+      "true_label": "H",
+      "answer_orig": "H",
+      "answer_pos4": "H",
+      "answer_neg4": "H",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 18,
+      "text": "What type of organisational culture is most likely to deliver stability and efficiency?\nA) Power culture\nB) Clan culture\nC) Network culture\nD) Role culture\nE) Task culture\nF) People culture\n",
+      "true_label": "D",
+      "answer_orig": "D",
+      "answer_pos4": "D",
+      "answer_neg4": "D",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 19,
+      "text": "Specialisation is a feature of which organisational structure?\nA) Hierarchical\nB) Network\nC) Functional\nD) Flat\nE) Decentralized\nF) Divisional\nG) Matrix\nH) Horizontal\nI) Multi-divisional\nJ) Centralized\n",
+      "true_label": "C",
+      "answer_orig": "G",
+      "answer_pos4": "G",
+      "answer_neg4": "G",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 20,
+      "text": "What do you call a style of leadership that takes account of others' views, opinions and ideas?\nA) Task-oriented\nB) Servant\nC) Transactional\nD) Laissez-faire\nE) Bureaucratic\nF) Democratic\nG) Charismatic\nH) People-oriented\nI) Autocratic\nJ) Transformational\n",
+      "true_label": "F",
+      "answer_orig": "F",
+      "answer_pos4": "F",
+      "answer_neg4": "F",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 21,
+      "text": "What does PEST stand for?\nA) Political, environmental, strategic, social\nB) Political, economic, strategic, testing\nC) Political, economic, social, testing\nD) Political, environmental, social, testing\nE) Political, environmental, strategic, testing\nF) Political, economic, strategic, technological\nG) Political, economic, social, strategic\nH) Political, environmental, social, technological\nI) Political, economic, social, technological\nJ) Political, environmental, strategic, technological\n",
+      "true_label": "I",
+      "answer_orig": "J",
+      "answer_pos4": "F",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 22,
+      "text": "What is the term for a sub-optimal but acceptable outcome of negotiations between parties?\nA) Accepting\nB) Settling\nC) Negotiating\nD) Mediating\nE) Bargaining\nF) Satisficing\nG) Conceding\nH) Collaborating\nI) Arbitrating\nJ) Compromising\n",
+      "true_label": "F",
+      "answer_orig": "F",
+      "answer_pos4": "F",
+      "answer_neg4": "F",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 23,
+      "text": "In the 'five forces model', what is the type of competitive activity that exists between organisations?\nA) The threat of industry regulation\nB) The potential for mergers and acquisitions\nC) The level of market saturation\nD) The power of suppliers\nE) The level of rivalry\nF) The threat of substitute products\nG) The potential for entry into the industry\nH) The power of shareholders\nI) The potential for innovation\nJ) The power of customers\n",
+      "true_label": "E",
+      "answer_orig": "E",
+      "answer_pos4": "E",
+      "answer_neg4": "E",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 24,
+      "text": "What does situational theory of leadership emphasise?\nA) Individual skills\nB) Cultural influences\nC) Economic conditions\nD) Political situation\nE) Personality traits\nF) Organizational structure\nG) Social trends\nH) Events\n",
+      "true_label": "H",
+      "answer_orig": "H",
+      "answer_pos4": "H",
+      "answer_neg4": "H",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 25,
+      "text": "What is not a component of an agile organisation?\nA) Market focus and position\nB) Flexibility and adaptability\nC) Frequent software updates\nD) Resistance to change\nE) Traditional hierarchy structure\nF) Human resources: multi-skilling\nG) Organisational structure\nH) Long-term strategic planning\nI) Project-based culture\nJ) Customer satisfaction metrics\n",
+      "true_label": "I",
+      "answer_orig": "D",
+      "answer_pos4": "D",
+      "answer_neg4": "D",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 26,
+      "text": "What does the acronym SMART stand for?\nA) Standardised, measurable, achievable, rewarded, and timely\nB) Standardized, measurable, actionable, rewarded and timely\nC) Specific, measurable, actionable, rewarded and time-limited\nD) Specific, measurable, achievable, resourced and time-bound\nE) Suitable, measurable, achievable, resourced and timely\nF) Specific, measurable, achievable, rewarded and timely\nG) Specific, manageable, actionable, rewarded and timely\nH) Suitable, measurable, actionable, rewarded and timely\nI) Specific, measurable, actionable, resourced and timely\n",
+      "true_label": "F",
+      "answer_orig": "F",
+      "answer_pos4": "F",
+      "answer_neg4": "F",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 27,
+      "text": "What one of the following is not a characteristic of the job characteristics model?\nA) Skill variety\nB) Job rotation\nC) Task significance\nD) Feedback\nE) Reward\nF) Task identity\nG) Autonomy\nH) Job enrichment\nI) Job enlargement\n",
+      "true_label": "E",
+      "answer_orig": "E",
+      "answer_pos4": "E",
+      "answer_neg4": "E",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 28,
+      "text": "Enhancement of job satisfaction and productivity are key characteristics of which theoretical perspective of work design?\nA) Human Relations theory\nB) Process improvement\nC) Job enrichment theory\nD) Job enlargement theory\nE) Time and Motion study\nF) Techno-structural change model\nG) Scientific management theory\nH) Socio-technical systems\nI) Motivational theory\nJ) Job characteristics model\n",
+      "true_label": "H",
+      "answer_orig": "J",
+      "answer_pos4": "C",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 29,
+      "text": "What are the key characteristics of transactional leaders?\nA) Guiding, demonstrating and motivating\nB) Guiding, commanding and motivating\nC) Demonstrating, mentoring and guiding\nD) Guiding, mentoring and motivating\nE) Mentoring, demonstrating and commanding\nF) Demonstrating, commanding and guiding\nG) Guiding, commanding and demonstrating\nH) Commanding, mentoring and motivating\nI) Commanding, demonstrating and motivating\nJ) Guiding, mentoring and demonstrating\n",
+      "true_label": "D",
+      "answer_orig": "G",
+      "answer_pos4": "G",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 30,
+      "text": "Of what is individual freedom to schedule work an example?\nA) Job design\nB) Job planning\nC) Job specification\nD) Job satisfaction\nE) Job rate\nF) Job security\nG) Job enrichment\nH) Job analysis\nI) Job evaluation\nJ) Job rotation\n",
+      "true_label": "G",
+      "answer_orig": "G",
+      "answer_pos4": "G",
+      "answer_neg4": "G",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 31,
+      "text": "Which of these does not form part of the key streams identified by March (1988) in decision making in highly ambiguous environments?\nA) Innovations\nB) Goals\nC) Outcomes\nD) Choice opportunities\nE) Problems\nF) Expectations\nG) Uncertainties\nH) Solutions\nI) Risks\nJ) Constraints\n",
+      "true_label": "F",
+      "answer_orig": "G",
+      "answer_pos4": "G",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 32,
+      "text": "Vertical integration forwards is when a firm mergers or acquires another\nA) Towards the consumer\nB) With a competitor\nC) At the same stage of the supply chain\nD) In a different country\nE) Towards the manufacturer\nF) Towards the source of supply\nG) In another industry\nH) At a different stage of the supply chain\nI) Towards the supplier of raw materials\n",
+      "true_label": "A",
+      "answer_orig": "A",
+      "answer_pos4": "A",
+      "answer_neg4": "A",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 33,
+      "text": "Which of the following is not part of Schein's model of the formation of culture?\nA) Group dynamics\nB) Norms\nC) Leadership style\nD) Communication methods\nE) Shared values\nF) Pre-conceptions\nG) Decision-making processes\nH) Shared beliefs\n",
+      "true_label": "F",
+      "answer_orig": "F",
+      "answer_pos4": "F",
+      "answer_neg4": "F",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 34,
+      "text": "How can you describe the thinking and outlook of transformational leaders?\nA) Functional\nB) Tactical\nC) Narrow-minded\nD) Transactional\nE) Operational\nF) Procedural\nG) Strategic\nH) Micromanaging\nI) Reactive\nJ) Developmental\n",
+      "true_label": "G",
+      "answer_orig": "G",
+      "answer_pos4": "G",
+      "answer_neg4": "G",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": 0
+    },
+    {
+      "index": 35,
+      "text": "By which principle is utilitarianism defined?\nA) Maximising personal pleasure\nB) Maximisation of outcomes for individuals\nC) The least worst outcome for everybody\nD) Equality of opportunity for everyone\nE) Equality for everyone\nF) The best outcome for the minority of people\nG) Ensuring no harm is done to any individual\nH) The best outcome for the majority of people\nI) The least worst outcome for the majority of people\nJ) Maximising wealth and resources for everyone\n",
+      "true_label": "H",
+      "answer_orig": "H",
+      "answer_pos4": "H",
+      "answer_neg4": "J",
+      "orig_correct": true,
+      "label_pos4": 0,
+      "label_neg4": -1
+    },
+    {
+      "index": 36,
+      "text": "From what does a chain of command extend?\nA) Bottom to top\nB) Top to bottom\nC) Horizontally\nD) Randomly\nE) Inside to outside\nF) Diagonally\nG) Circularly\nH) Laterally\nI) Outside to inside\nJ) Vertically from bottom to top\n",
+      "true_label": "B",
+      "answer_orig": "J",
+      "answer_pos4": "B",
+      "answer_neg4": "J",
+      "orig_correct": false,
+      "label_pos4": 1,
+      "label_neg4": 0
+    }
+  ]
+}

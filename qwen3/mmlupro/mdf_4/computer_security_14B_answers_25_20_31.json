@@ -1,0 +1,1384 @@
+{
+  "data": [
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Which among them has the strongest wireless security?\nA) WPA\nB) WPA2-Enterprise\nC) WEP\nD) WEP+\nE) WPA-PSK\nF) WEP2\nG) WPA2\nH) WPA3\nI) WPA4\nJ) WPA2-PSK\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "H",
+      "prob_neutral": 0.5475921630859375,
+      "softmax_neutral": [
+        0.010347871109843254,
+        0.16123689711093903,
+        0.0011429993901401758,
+        0.0028735001105815172,
+        0.0012951878597959876,
+        0.0010407126974314451,
+        0.07668065279722214,
+        0.5475921630859375,
+        0.19678136706352234,
+        0.0010086933616548777
+      ],
+      "logits_neutral": [
+        -2.015625,
+        0.73046875,
+        -4.21875,
+        -3.296875,
+        -4.09375,
+        -4.3125,
+        -0.01275634765625,
+        1.953125,
+        0.9296875,
+        -4.34375
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Encryption and decryption provide secrecy, or condentiality, but not\nA) Privacy\nB) Integrity\nC) Security\nD) Reliability\nE) Confidentiality\nF) All of the above\nG) Authentication\nH) Anonymity\n",
+      "label": 1,
+      "num_options": 8,
+      "answer_neutral": "G",
+      "prob_neutral": 0.4707895815372467,
+      "softmax_neutral": [
+        0.0461164154112339,
+        0.3933594226837158,
+        0.0042024231515824795,
+        0.00506909005343914,
+        0.02928476780653,
+        0.011694267392158508,
+        0.4707895815372467,
+        0.03948400542140007
+      ],
+      "logits_neutral": [
+        -0.2294921875,
+        1.9140625,
+        -2.625,
+        -2.4375,
+        -0.68359375,
+        -1.6015625,
+        2.09375,
+        -0.384765625
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Encapsulating Security Payload (ESP) belongs to which Internet Security Protocol?\nA) Secure File Transfer Protocol\nB) Secure IP Protocol\nC) Secure Socket Layer Protocol\nD) Internet Key Exchange Protocol\nE) Transport Layer Security Protocol\nF) Secure Shell Protocol\nG) Secure Http Protocol\nH) Point-to-Point Tunneling Protocol\nI) Hypertext Transfer Protocol Secure\nJ) Network Security Protocol\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.7649802565574646,
+      "softmax_neutral": [
+        0.007798353210091591,
+        0.7649802565574646,
+        0.001809363136999309,
+        0.017369115725159645,
+        0.005529860034584999,
+        0.000778197543695569,
+        0.0024731061421334743,
+        0.000526554707903415,
+        0.19341729581356049,
+        0.005318014416843653
+      ],
+      "logits_neutral": [
+        -1.5546875,
+        3.03125,
+        -3.015625,
+        -0.75390625,
+        -1.8984375,
+        -3.859375,
+        -2.703125,
+        -4.25,
+        1.65625,
+        -1.9375
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "A/an ___________ is a program that steals your logins & passwords for instant messaging applications.\nA) Banking Trojan\nB) Rootkit Trojan\nC) Worm-Downloader\nD) Keylogging Malware\nE) Backdoor Trojans\nF) Email Spyware\nG) Trojan-Downloader\nH) IM – Trojans\nI) Ransom Trojan\nJ) Infostealer Trojan\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.7889425754547119,
+      "softmax_neutral": [
+        0.006746169179677963,
+        0.0005263407365418971,
+        0.00036744505632668734,
+        0.7889425754547119,
+        0.004059916362166405,
+        0.0006058145081624389,
+        0.0018954259576275945,
+        0.08059555292129517,
+        0.10511641949415207,
+        0.011144297197461128
+      ],
+      "logits_neutral": [
+        -0.41796875,
+        -2.96875,
+        -3.328125,
+        4.34375,
+        -0.92578125,
+        -2.828125,
+        -1.6875,
+        2.0625,
+        2.328125,
+        0.083984375
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "What are the types of scanning?\nA) Network, vulnerability, and port \nB) Interface, system, and application\nC) Passive, active, and interactive\nD) Application, interface, and active\nE) Interactive, network, and server\nF) Port, network, and services\nG) Server, client, and network\nH) Active, passive, and server\nI) Client, server, and passive\nJ) Passive, interactive, and vulnerability\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.5516171455383301,
+      "softmax_neutral": [
+        0.1438979208469391,
+        0.006224413402378559,
+        0.5516171455383301,
+        0.0064471326768398285,
+        0.002917323959991336,
+        0.0010321089066565037,
+        0.0023441356606781483,
+        0.002325893146917224,
+        0.2817384898662567,
+        0.0014555068919435143
+      ],
+      "logits_neutral": [
+        2.359375,
+        -0.78125,
+        3.703125,
+        -0.74609375,
+        -1.5390625,
+        -2.578125,
+        -1.7578125,
+        -1.765625,
+        3.03125,
+        -2.234375
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "The digest created by a hash function is normally called a\nA) Message authentication code (MAC)\nB) Message digest\nC) Message integrity code (MIC)\nD) Message alteration detection\nE) Data authentication algorithm (DAA)\nF) Hash output code (HOC)\nG) Modication detection code (MDC)\nH) Message authentication cipher\nI) Modify authentication connection\nJ) Message authentication control\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.842460572719574,
+      "softmax_neutral": [
+        0.00889550056308508,
+        0.842460572719574,
+        0.0034161508083343506,
+        0.0016011175466701388,
+        0.0008981454884633422,
+        0.0003802987339440733,
+        0.024441629648208618,
+        0.00015127236838452518,
+        0.11763384938240051,
+        0.00012155078002251685
+      ],
+      "logits_neutral": [
+        -0.83203125,
+        3.71875,
+        -1.7890625,
+        -2.546875,
+        -3.125,
+        -3.984375,
+        0.1787109375,
+        -4.90625,
+        1.75,
+        -5.125
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "When the data must arrive at the receiver exactly as they were sent, its called\nA) Message Security\nB) Message Clarity\nC) Message Integrity\nD) Message Authenticity\nE) Message Splashing\nF) Message Reliability\nG) Message Sending\nH) Message Stability\nI) Message Condentiality\nJ) Message Completion\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.8445308804512024,
+      "softmax_neutral": [
+        0.004867260809987783,
+        0.00036377538344822824,
+        0.8445308804512024,
+        0.001847403822466731,
+        0.00025795536930672824,
+        0.00022411550162360072,
+        0.0009289329755119979,
+        0.00011810057912953198,
+        0.14675746858119965,
+        0.00010422339255455881
+      ],
+      "logits_neutral": [
+        -0.625,
+        -3.21875,
+        4.53125,
+        -1.59375,
+        -3.5625,
+        -3.703125,
+        -2.28125,
+        -4.34375,
+        2.78125,
+        -4.46875
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Which of the following is a remote Trojan?\nA) Troya\nB) DaCryptic\nC) BankerA\nD) Game-Troj\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.35145777463912964,
+      "softmax_neutral": [
+        0.25215861201286316,
+        0.11835761368274689,
+        0.2780259847640991,
+        0.35145777463912964
+      ],
+      "logits_neutral": [
+        0.83203125,
+        0.07568359375,
+        0.9296875,
+        1.1640625
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "A session symmetric key between two parties is used\nA) Twice\nB) Until one of the parties terminates the session\nC) For a predetermined length of time\nD) Until a new key is generated\nE) Only when both parties agree\nF) Conditions dependant\nG) For a specific number of transactions\nH) Multiple times\nI) Until the key is compromised\nJ) Only once\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.4272099435329437,
+      "softmax_neutral": [
+        0.02895865961909294,
+        0.4076465964317322,
+        0.004389215726405382,
+        0.009006085805594921,
+        0.005171759985387325,
+        0.0014249696396291256,
+        0.012358038686215878,
+        0.007763730827718973,
+        0.4272099435329437,
+        0.09607104957103729
+      ],
+      "logits_neutral": [
+        -0.14453125,
+        2.5,
+        -2.03125,
+        -1.3125,
+        -1.8671875,
+        -3.15625,
+        -0.99609375,
+        -1.4609375,
+        2.546875,
+        1.0546875
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "The message must be encrypted at the sender site and decrypted at the\nA) Data center\nB) Sender Site\nC) Server site\nD) Conferencing\nE) Site\nF) Client site\nG) Network hub\nH) Receiver site\nI) Cloud storage\nJ) Security firewall\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "H",
+      "prob_neutral": 0.9345905184745789,
+      "softmax_neutral": [
+        0.010965961031615734,
+        0.0026664112228900194,
+        0.0003781775594688952,
+        0.0012595235602930188,
+        0.0017215644475072622,
+        0.0025843745097517967,
+        0.00765547389164567,
+        0.9345905184745789,
+        0.03753466159105301,
+        0.0006433016969822347
+      ],
+      "logits_neutral": [
+        -0.7890625,
+        -2.203125,
+        -4.15625,
+        -2.953125,
+        -2.640625,
+        -2.234375,
+        -1.1484375,
+        3.65625,
+        0.44140625,
+        -3.625
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Consider the paper Native Client: A Sandbox for Portable, Untrusted x86 Native Code by Yee et al. Ben Bitdiddle notes that NaCl uses Intel x86 segmentation to ensure that the sandboxed module does not read or write memory outside its own data area, and does not execute instructions outside its own code. Ben thinks that with these restrictions alone, executing the sandboxed module must be safe; that is, he thinks validation is not needed. Ben is wrong. Circle the types of x86 machine instructions that the validator always forbids in sandboxed code. Please ignore trampoline and springboard code.\nA) all instructions that modify segment state\nB) all loads or stores to addresses that are not 0 mod 32\nC) all indirect loads or stores (via an address in a register or variable)\nD) all indirect jumps (via an address in a register or variable)\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.6694932579994202,
+      "softmax_neutral": [
+        0.6694932579994202,
+        0.005483993329107761,
+        0.01367946993559599,
+        0.31134331226348877
+      ],
+      "logits_neutral": [
+        2.8125,
+        -1.9921875,
+        -1.078125,
+        2.046875
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "An integer overflow occurs when\nA) an integer expression's result \"wraps around\"; instead of creating a very large number, a very small (or negative) number ends up getting created\nB) an integer is used as if it was a pointer\nC) an integer is used to access a buffer outside of the buffer's bounds\nD) there is no more space to hold integers in the program\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9930999279022217,
+      "softmax_neutral": [
+        0.9930999279022217,
+        0.000786790216807276,
+        0.0006943398038856685,
+        0.005418905522674322
+      ],
+      "logits_neutral": [
+        3.28125,
+        -3.859375,
+        -3.984375,
+        -1.9296875
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "A packet filter firewall filters at the\nA) Network or transport layer\nB) Application layer only\nC) Physical Layer\nD) Data link layer\nE) Application or transport\nF) Session layer\nG) Transport layer only\nH) Network interface layer\nI) All layers of the OSI model\nJ) Presentation layer\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9364290237426758,
+      "softmax_neutral": [
+        0.9364290237426758,
+        0.0003672632738016546,
+        0.00019658186647575349,
+        0.0013860370963811874,
+        0.0020166721660643816,
+        0.0006345740403048694,
+        0.0026926107238978148,
+        0.0003044719633180648,
+        0.055799294263124466,
+        0.00017348288383800536
+      ],
+      "logits_neutral": [
+        4.28125,
+        -3.5625,
+        -4.1875,
+        -2.234375,
+        -1.859375,
+        -3.015625,
+        -1.5703125,
+        -3.75,
+        1.4609375,
+        -4.3125
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Let I = (S,V)I=(S,V) be a MAC. Suppose S(k,m)S(k,m) is always 5 bits long. Can this MAC be secure?\nA) Yes, the attacker cannot generate a valid tag for any message\nB) Yes, the PRG is pseudorandom\nC) No, an attacker can simply guess the tag for messages\nD) No, the attacker can simply guess the key\nE) Yes, the key length is sufficiently long\nF) No, the key length is not long enough\nG) Yes, the tag length is sufficiently long\nH) It depends on the complexity of the PRG\nI) It depends on the details of the MAC\nJ) It depends on the encryption algorithm used in the MAC\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.6604942679405212,
+      "softmax_neutral": [
+        0.0207397248595953,
+        0.0007152403704822063,
+        0.17776961624622345,
+        0.0014003727119415998,
+        0.0014675778802484274,
+        0.004172583110630512,
+        0.12804263830184937,
+        0.004197103902697563,
+        0.6604942679405212,
+        0.001000801334157586
+      ],
+      "logits_neutral": [
+        1.1953125,
+        -2.171875,
+        3.34375,
+        -1.5,
+        -1.453125,
+        -0.408203125,
+        3.015625,
+        -0.40234375,
+        4.65625,
+        -1.8359375
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Which of the following is not an example of presentation layer issues?\nA) Poor handling of unexpected input can lead to the execution of arbitrary instructions\nB) Unintentional or ill-directed use of superficially supplied input\nC) Cryptographic flaws in the system may get exploited to evade privacy\nD) Weak or non-existent authentication mechanisms\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.5747333765029907,
+      "softmax_neutral": [
+        0.21985508501529694,
+        0.0388067327439785,
+        0.1666048765182495,
+        0.5747333765029907
+      ],
+      "logits_neutral": [
+        0.671875,
+        -1.0625,
+        0.39453125,
+        1.6328125
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "What does EXE do when the STP solver times out on a constraint query for a particular path?\nA) Assume that the query is not satisfiable and stop executing the path\nB) Remove a subset of the constraints and retry the query.\nC) Pause the execution until the query is resolved.\nD) Skip the query and continue executing the path.\nE) Assume that the query is satisfiable and continue executing the path.\nF) Assume that the query is satisfiable and stop executing the path.\nG) Restart STP and retry the query, up to a limited number of retries.\nH) Execute the next path without resolving the query.\nI) Retry the query until it is resolved, regardless of the number of retries.\nJ) Send an error message and terminate the program.\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.6229541301727295,
+      "softmax_neutral": [
+        0.6229541301727295,
+        0.019868992269039154,
+        0.0019367964705452323,
+        0.0096975676715374,
+        0.03514466807246208,
+        0.0014281041221693158,
+        0.17847932875156403,
+        0.004347622394561768,
+        0.1245986670255661,
+        0.0015441487776115537
+      ],
+      "logits_neutral": [
+        4.0625,
+        0.6171875,
+        -1.7109375,
+        -0.10009765625,
+        1.1875,
+        -2.015625,
+        2.8125,
+        -0.90234375,
+        2.453125,
+        -1.9375
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "What tool can be used to perform SNMP enumeration?\nA) Whois\nB) Nslookup\nC) Wireshark\nD) Netstat\nE) Ping\nF) Traceroute\nG) IP Network Browser\nH) Nmap\nI) DNSlookup\nJ) Tcpdump\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.44335615634918213,
+      "softmax_neutral": [
+        0.012430518865585327,
+        0.0024765674024820328,
+        0.3095124661922455,
+        0.0022549401037395,
+        0.00113385496661067,
+        0.00164974934887141,
+        0.44335615634918213,
+        0.1260351687669754,
+        0.10048399120569229,
+        0.0006665590335614979
+      ],
+      "logits_neutral": [
+        -0.62109375,
+        -2.234375,
+        2.59375,
+        -2.328125,
+        -3.015625,
+        -2.640625,
+        2.953125,
+        1.6953125,
+        1.46875,
+        -3.546875
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Which of the following is not a block cipher operating mode?\nA) ECB\nB) CFB\nC) CBF\nD) CBC\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9582280516624451,
+      "softmax_neutral": [
+        0.00803523138165474,
+        0.001582230906933546,
+        0.9582280516624451,
+        0.032154567539691925
+      ],
+      "logits_neutral": [
+        -2.125,
+        -3.75,
+        2.65625,
+        -0.73828125
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "_______________ is a popular tool used for network analysis in multiprotocol diverse network.\nA) Nessus\nB) EtterPeak\nC) Snort\nD) Kismet\nE) Aircrack\nF) SuperScan\nG) Burp Suit\nH) Nmap\nI) Wireshark\nJ) NetStumbler\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.9031281471252441,
+      "softmax_neutral": [
+        0.004029954317957163,
+        0.003314950270578265,
+        0.005622423719614744,
+        0.005649943836033344,
+        0.00044775434071198106,
+        0.00010635096987243742,
+        0.0005073720822110772,
+        0.07530070841312408,
+        0.9031281471252441,
+        0.0018924942705780268
+      ],
+      "logits_neutral": [
+        -0.162109375,
+        -0.357421875,
+        0.1708984375,
+        0.17578125,
+        -2.359375,
+        -3.796875,
+        -2.234375,
+        2.765625,
+        5.25,
+        -0.91796875
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Three of the following are classic security properties; which one is not?\nA) Confidentiality\nB) Availability\nC) Correctness\nD) Integrity\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.87505042552948,
+      "softmax_neutral": [
+        0.007810988929122686,
+        0.005452948622405529,
+        0.87505042552948,
+        0.1116856038570404
+      ],
+      "logits_neutral": [
+        -2.328125,
+        -2.6875,
+        2.390625,
+        0.33203125
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "The AH Protocol provides source authentication and data integrity, but not\nA) Both C & D\nB) Integrity\nC) Security\nD) Privacy\nE) Both A & C\nF) Confidentiality\nG) Availability\nH) Nonrepudiation\nI) Both A & B\nJ) Both B & C\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.40675362944602966,
+      "softmax_neutral": [
+        0.23176124691963196,
+        0.004810050595551729,
+        0.0016623091651126742,
+        0.14390380680561066,
+        0.029008319601416588,
+        0.13624539971351624,
+        0.027842598035931587,
+        0.012476323172450066,
+        0.40675362944602966,
+        0.005536334589123726
+      ],
+      "logits_neutral": [
+        1.75,
+        -2.125,
+        -3.1875,
+        1.2734375,
+        -0.328125,
+        1.21875,
+        -0.369140625,
+        -1.171875,
+        2.3125,
+        -1.984375
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Which of the following is not a security exploit?\nA) Malware\nB) Keylogging\nC) Data breach\nD) Authentication\nE) Eavesdropping\nF) Cross-site scripting\nG) Phishing\nH) SQL Injection\n",
+      "label": 3,
+      "num_options": 8,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9882558584213257,
+      "softmax_neutral": [
+        0.006110472604632378,
+        0.0007355156121775508,
+        0.0007355156121775508,
+        0.9882558584213257,
+        0.0015091800596565008,
+        0.000529772078152746,
+        0.0010701690334826708,
+        0.001053577521815896
+      ],
+      "logits_neutral": [
+        -0.7109375,
+        -2.828125,
+        -2.828125,
+        4.375,
+        -2.109375,
+        -3.15625,
+        -2.453125,
+        -2.46875
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Suppose Unix did not provide a way of passing file descriptors between processes, but still allowed inheriting file descriptors from a parent on fork and exec. What aspects of the OKWS design would break without file descriptor passing?\n1. It would be impossible for services to get a TCP connection to the client web browser.\n2. It would be impossible for okd to run as a non-root user.\nA) True, False\nB) Partially false, True\nC) Partially false, False\nD) True, True\nE) Partially true, True\nF) True, Partially true\nG) Partially true, False\nH) False, True\nI) False, Partially true\nJ) False, False\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.4373428225517273,
+      "softmax_neutral": [
+        0.4373428225517273,
+        0.024136969819664955,
+        0.023110514506697655,
+        0.08954845368862152,
+        0.05804311856627464,
+        0.01260183472186327,
+        0.1131998598575592,
+        0.010570436716079712,
+        0.22337287664413452,
+        0.008073038421571255
+      ],
+      "logits_neutral": [
+        2.8125,
+        -0.08447265625,
+        -0.1279296875,
+        1.2265625,
+        0.79296875,
+        -0.734375,
+        1.4609375,
+        -0.91015625,
+        2.140625,
+        -1.1796875
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "When does a buffer overflow occur, generally speaking?\nA) when copying a buffer from the stack to the heap\nB) when writing to a pointer that has been freed\nC) when the program runs out of memory\nD) when a pointer is used to access memory not allocated to it\nE) when a buffer is not initialized before being used\nF) when reading from a buffer that has been freed\nG) when a program tries to access a buffer that has not been declared\nH) when a buffer is empty and a read operation is attempted\nI) when the program notices a buffer has filled up, and so starts to reject requests\n",
+      "label": 3,
+      "num_options": 9,
+      "answer_neutral": "A",
+      "prob_neutral": 0.41715922951698303,
+      "softmax_neutral": [
+        0.41715922951698303,
+        0.09986113011837006,
+        0.006091567687690258,
+        0.24909713864326477,
+        0.008197099901735783,
+        0.005950456485152245,
+        0.06298162043094635,
+        0.019396809861063957,
+        0.13126498460769653
+      ],
+      "logits_neutral": [
+        3.296875,
+        1.8671875,
+        -0.9296875,
+        2.78125,
+        -0.6328125,
+        -0.953125,
+        1.40625,
+        0.228515625,
+        2.140625
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Let F: K \\times R \\to MF:K×R→M be a secure PRF. For m \\in Mm∈M define E(k,m) = \\big[ r \\gets R,\\ \\text{output } \\big(r,\\ F(k,r) \\oplus m\\big)\\ \\big]E(k,m)=[r←R, output (r, F(k,r)⊕m) ] Is EE symantically secure under CPA?\nA) It depends on the size of R\nB) Yes, but only if R is large enough so r never repeats (w.h.p)\nC) Yes, but only if M is small enough so m never repeats (w.h.p)\nD) No, unless F is a weak PRF\nE) No, unless F is a strong PRF\nF) Yes, but only if K is large enough so k never repeats (w.h.p)\nG) It depends on the size of K\nH) No, there is always a CPA attack on this system\nI) It depends on what F is used\nJ) Yes, whenever F is a secure PRF\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.632719874382019,
+      "softmax_neutral": [
+        0.0351422019302845,
+        0.04288926348090172,
+        0.0007886188686825335,
+        0.0008936221129260957,
+        0.0053472924046218395,
+        0.0005171888042241335,
+        0.0021774463821202517,
+        0.007395036518573761,
+        0.2721294164657593,
+        0.632719874382019
+      ],
+      "logits_neutral": [
+        0.625,
+        0.82421875,
+        -3.171875,
+        -3.046875,
+        -1.2578125,
+        -3.59375,
+        -2.15625,
+        -0.93359375,
+        2.671875,
+        3.515625
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Can a stream cipher have perfect secrecy?\nA) Yes, if the PRG is really “secure”\nB) No, because perfect secrecy is not possible in any cipher\nC) Yes, if the stream cipher is implemented correctly\nD) No, since the key is shorter than the message\nE) Yes, every cipher has perfect secrecy\nF) Yes, if the key is longer than the message\nG) No, only block ciphers can have perfect secrecy\nH) Yes, if the key is used only once\nI) No, since the key is reused for the stream cipher\nJ) No, there are no ciphers with perfect secrecy\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.36339807510375977,
+      "softmax_neutral": [
+        0.18560558557510376,
+        0.008091477677226067,
+        0.0028626532293856144,
+        0.05572890490293503,
+        0.00802851002663374,
+        0.07100045680999756,
+        0.015935441479086876,
+        0.2874715328216553,
+        0.36339807510375977,
+        0.0018773737829178572
+      ],
+      "logits_neutral": [
+        2.015625,
+        -1.1171875,
+        -2.15625,
+        0.8125,
+        -1.125,
+        1.0546875,
+        -0.439453125,
+        2.453125,
+        2.6875,
+        -2.578125
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Suppose Unix did not provide a way of passing file descriptors between processes, but still allowed inheriting file descriptors from a parent on fork and exec. What aspects of the OKWS design would break without file descriptor passing?\n1. It would be impossible for services to send messages to oklogd.\n2. It would be impossible for services to get a TCP connection to a database proxy.\nA) False, True\nB) False, False\nC) True, True\nD) True, False\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.5940216779708862,
+      "softmax_neutral": [
+        0.5940216779708862,
+        0.0122325848788023,
+        0.28059595823287964,
+        0.11314979195594788
+      ],
+      "logits_neutral": [
+        1.8203125,
+        -2.0625,
+        1.0703125,
+        0.162109375
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "How do you prevent SQL injection?\nA) Merge tables\nB) Escape queries\nC) Use a different programming language\nD) Regularly restart the server\nE) Interrupt requests\nF) Use unfiltered user input directly in queries\nG) Use antivirus software\nH) Use a stronger password for the database\nI) Write all SQL queries in uppercase\nJ) All of the above\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9027957320213318,
+      "softmax_neutral": [
+        0.009060586802661419,
+        0.9027957320213318,
+        0.0007152460748329759,
+        0.0018264446407556534,
+        0.000671911402605474,
+        0.0008627513307146728,
+        0.002273047110065818,
+        0.0010737114353105426,
+        0.08012767136096954,
+        0.000592959753703326
+      ],
+      "logits_neutral": [
+        -1.2109375,
+        3.390625,
+        -3.75,
+        -2.8125,
+        -3.8125,
+        -3.5625,
+        -2.59375,
+        -3.34375,
+        0.96875,
+        -3.9375
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "The sub key length at each round of DES is__________\nA) 58\nB) 52\nC) 44\nD) 32\nE) 40\nF) 48\nG) 64\nH) 56\nI) 60\nJ) 50\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.9643705487251282,
+      "softmax_neutral": [
+        0.001320124021731317,
+        0.0015554862329736352,
+        9.268723806599155e-05,
+        0.0009810328483581543,
+        0.0004219369438942522,
+        0.9643705487251282,
+        0.0006235823384486139,
+        0.00212609744630754,
+        0.028446869924664497,
+        6.174301961436868e-05
+      ],
+      "logits_neutral": [
+        -1.90625,
+        -1.7421875,
+        -4.5625,
+        -2.203125,
+        -3.046875,
+        4.6875,
+        -2.65625,
+        -1.4296875,
+        1.1640625,
+        -4.96875
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "The openSSL implementation described in “Remote Timing Attacks are Practical” (by Brumley and Boneh) uses the following performance optimizations: Chinese Remainder (CR), Montgomery Representation (MR), Karatsuba Multiplication (KM), and Repeated squaring and Sliding windows (RS). Which of the following options would close the timing channel attack described in the paper if you turned the listed optimizations off?\n1. CR and MR\n2. CR\nA) KM and RS\nB) True, True\nC) False, True\nD) True, False\nE) False, False\nF) MR and CR\nG) KM, MR, RS, CR\nH) RS and MR\nI) KM, RS, CR\nJ) MR, KM, RS\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.4539915919303894,
+      "softmax_neutral": [
+        0.3024236261844635,
+        0.0027852249331772327,
+        0.0036898236721754074,
+        0.018592646345496178,
+        0.09045001864433289,
+        0.021993234753608704,
+        0.07440216094255447,
+        0.01093005295842886,
+        0.4539915919303894,
+        0.020741596817970276
+      ],
+      "logits_neutral": [
+        2.0,
+        -2.6875,
+        -2.40625,
+        -0.7890625,
+        0.79296875,
+        -0.62109375,
+        0.59765625,
+        -1.3203125,
+        2.40625,
+        -0.6796875
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Assume that a TLS connection has been established successfully between a client and a server. Establishing the session included checking the server certificate and executing a DiffieHelmann exchange, but the client did not provide a client certificate. Further, assume that the client and server are honest, that the client and server don’t leak their keys, and that the cryptography is good. Which of the following attacks does TLS protect against?\n1. An attacker replaying bytes that a client sent earlier.\n2. An attacker impersonating the server.\nA) True, True\nB) True for the first attack, but only if the server leaks its keys\nC) True, True for both attacks but only if the client provides a client certificate\nD) True for the first attack, False for the second attack\nE) False, False for both attacks\nF) False, False\nG) False for the first attack, but True for the second attack if the cryptography is not good\nH) False, True\nI) True, False\nJ) False for the first attack, True for the second attack\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.9010840654373169,
+      "softmax_neutral": [
+        0.038673751056194305,
+        0.0011955407680943608,
+        0.0007365511846728623,
+        0.02742379531264305,
+        0.0025909796822816133,
+        0.0009457505657337606,
+        0.006799708586186171,
+        0.013254807330667973,
+        0.9010840654373169,
+        0.007295023184269667
+      ],
+      "logits_neutral": [
+        1.0390625,
+        -2.4375,
+        -2.921875,
+        0.6953125,
+        -1.6640625,
+        -2.671875,
+        -0.69921875,
+        -0.03173828125,
+        4.1875,
+        -0.62890625
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "In Message Condentiality, the transmitted message must make sense to only intended\nA) Network Provider\nB) Relay station\nC) Receiver\nD) Sender\nE) Interceptor\nF) Translator\nG) Router\nH) Third-party eavesdropper\nI) Modulor\nJ) Decoder\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.8511594533920288,
+      "softmax_neutral": [
+        0.007479937747120857,
+        0.001279666437767446,
+        0.8511594533920288,
+        0.012284252792596817,
+        0.0020449012517929077,
+        0.0005678485031239688,
+        0.002211065264418721,
+        0.0005418449291028082,
+        0.12166690081357956,
+        0.0007641237461939454
+      ],
+      "logits_neutral": [
+        -1.03125,
+        -2.796875,
+        3.703125,
+        -0.53515625,
+        -2.328125,
+        -3.609375,
+        -2.25,
+        -3.65625,
+        1.7578125,
+        -3.3125
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Let HH be a Merkle-Damgard hash function is H:X^{\\leq L} \\to TH:X^≤L  →T. Construct a MAC from this HH as follows: \\ \\ S(k,m) = H(k \\| m)  S(k,m)=H(k∥m). This mac is insecure because:\nA) Given H(k \\| m)H(k∥m) anyone can compute H(w \\| k \\| m \\| \\text{PB})H(w∥k∥m∥PB) for any ww\nB) Given H(k \\| m)H(k∥m) anyone can compute H(k \\| m \\| w)H(k∥m∥w) for any ww\nC) Given H(k \\| m)H(k∥m) anyone can compute H(k \\| m \\| \\text{PB} \\| w)H(k∥m∥PB∥w) for any ww\nD) Anyone can compute H( k \\| m )H(k∥m) for any mm\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.5390275716781616,
+      "softmax_neutral": [
+        0.11166998744010925,
+        0.5390275716781616,
+        0.10347975790500641,
+        0.24582268297672272
+      ],
+      "logits_neutral": [
+        -0.15234375,
+        1.421875,
+        -0.228515625,
+        0.63671875
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Based on the paper “SoK: SSL and HTTPS: Revisiting past challenges and evaluating certificates trust model enhancements”, which of the following statements are false?\nA) Valid DV certificates provide more confidence to a user that she is connecting to the intended party than valid EV certificates.\nB) OCSP stapling allows a server to prove to a browser that its certificate hasn’t been revoked.\nC) DANE makes it difficult for an adversary to launch a SSL stripping attack.\nD) Server key-pinning makes it harder for an adversary to convince a CA to mint a certificate for a site and launch an MITM attack on that site.\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.7912489175796509,
+      "softmax_neutral": [
+        0.7912489175796509,
+        0.05742993578314781,
+        0.023158514872193336,
+        0.12816263735294342
+      ],
+      "logits_neutral": [
+        2.203125,
+        -0.419921875,
+        -1.328125,
+        0.3828125
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Failed sessions allow brute-force attacks on access credentials. This type of attacks are done in which layer of the OSI model?\nA) Data-link Layer\nB) Transport layer\nC) Interface layer\nD) Security layer\nE) Application layer\nF) Physical layer\nG) Network layer\nH) Communication layer\nI) Presentation layer\nJ) Session layer\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.880990207195282,
+      "softmax_neutral": [
+        0.014749403111636639,
+        0.0005608350620605052,
+        0.0004949351423420012,
+        0.0007314668036997318,
+        0.0014099390245974064,
+        0.00035096160718239844,
+        0.005362787749618292,
+        0.0010315334657207131,
+        0.0943179503083229,
+        0.880990207195282
+      ],
+      "logits_neutral": [
+        -0.85546875,
+        -4.125,
+        -4.25,
+        -3.859375,
+        -3.203125,
+        -4.59375,
+        -1.8671875,
+        -3.515625,
+        1.0,
+        3.234375
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "MIT’s Kerberos KDC server has a maximum ticket lifetime of 24 hours (for most user principals). What ensures that an expired Kerberos ticket can no longer be used?\nA) When a client connects to a server, the server compares the ticket’s expiration time to the server’s current clock, and refuses to authenticate the user if the ticket expiration time is in the past.\nB) The server maintains a database of all active and expired tickets, and refuses to authenticate the user if the ticket is found in the expired list.\nC) When a client connects to a server, the server sets a 24-hour timer to terminate the connection, which ensures a client cannot remain connected past the ticket’s maximum lifetime.\nD) The client's system automatically disconnects from the server once the ticket lifetime is over.\nE) The client needs to manually disconnect from the server after the ticket's maximum lifetime is reached.\nF) The Kerberos server (KDC) refuses to establish new connections between clients and servers for expired tickets.\nG) The Kerberos server (KDC) sends an alert to the client and server to terminate the connection once the ticket is expired.\n",
+      "label": 0,
+      "num_options": 7,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9950120449066162,
+      "softmax_neutral": [
+        0.9950120449066162,
+        0.0005417935899458826,
+        0.00012868725752923638,
+        0.00040896725840866566,
+        0.00029456804622896016,
+        0.00033378932857885957,
+        0.0032802217174321413
+      ],
+      "logits_neutral": [
+        5.1875,
+        -2.328125,
+        -3.765625,
+        -2.609375,
+        -2.9375,
+        -2.8125,
+        -0.52734375
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Buffer-overflow may remain as a bug in apps if __________ are not done fully.\nA) boundary hacks\nB) system updates\nC) firewall settings\nD) server resets\nE) software installations\nF) buffer checks\nG) boundary checks\nH) virus scans\nI) memory checks\nJ) data backups\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.9816208481788635,
+      "softmax_neutral": [
+        0.002661923412233591,
+        8.069772593444213e-05,
+        7.700231799390167e-05,
+        9.144250361714512e-05,
+        0.00011741450725821778,
+        0.00666598416864872,
+        0.9816208481788635,
+        5.3756280976813287e-05,
+        0.008592793717980385,
+        3.8118909287732095e-05
+      ],
+      "logits_neutral": [
+        -0.37890625,
+        -3.875,
+        -3.921875,
+        -3.75,
+        -3.5,
+        0.5390625,
+        5.53125,
+        -4.28125,
+        0.79296875,
+        -4.625
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "What are the port states determined by Nmap?\nA) Closed, unused, half-closed\nB) Open, half-open, closed \nC) Open, blocked, filtered\nD) Active, passive, blocked\nE) Closed, filtered, unfiltered\nF) Open, filtered, unfiltered\nG) Active, inactive, standby\nH) Open, unused, blocked\nI) Active, closed, unused\nJ) Active, passive, filtered\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.6997151970863342,
+      "softmax_neutral": [
+        0.007049926556646824,
+        0.0006686787237413228,
+        0.0008321841014549136,
+        0.000563083915039897,
+        0.25342002511024475,
+        0.6997151970863342,
+        0.00037509476533159614,
+        0.000245993142016232,
+        0.037083547562360764,
+        4.6220742660807446e-05
+      ],
+      "logits_neutral": [
+        0.40234375,
+        -1.953125,
+        -1.734375,
+        -2.125,
+        3.984375,
+        5.0,
+        -2.53125,
+        -2.953125,
+        2.0625,
+        -4.625
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Which of the following styles of fuzzer is more likely to explore paths covering every line of code in the following program?\nA) Syntax-based\nB) Mutation-based\nC) Greybox\nD) Evolutionary\nE) Coverage-based\nF) Protocol-based\nG) Generational\nH) Blackbox\nI) Random\nJ) Whitebox\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.8625540137290955,
+      "softmax_neutral": [
+        0.002671270165592432,
+        0.00023616437101736665,
+        0.0006125638028606772,
+        0.00043437277781777084,
+        0.8625540137290955,
+        0.0005239535821601748,
+        0.0012471179943531752,
+        0.00023988343309611082,
+        0.11492419242858887,
+        0.016556400805711746
+      ],
+      "logits_neutral": [
+        -0.80859375,
+        -3.234375,
+        -2.28125,
+        -2.625,
+        4.96875,
+        -2.4375,
+        -1.5703125,
+        -3.21875,
+        2.953125,
+        1.015625
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Which of the following is true of mutation-based fuzzing?\nA) It only works for network-based fuzzing, not file-based fuzzing\nB) It modifies the target program's code to test its robustness\nC) It requires an initial error-free program to start the process\nD) It uses a random number generator to create new inputs\nE) It uses a fixed set of inputs to test the program\nF) It works by making small mutations to the target program to induce faults\nG) Each input is mutation that follows a given grammar\nH) It generates each different input by modifying a prior input\nI) It only makes sense for file-based fuzzing, not network-based fuzzing\nJ) It creates a completely new input for each test\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.7846267223358154,
+      "softmax_neutral": [
+        0.013213297352194786,
+        0.004248041659593582,
+        0.0014008553698658943,
+        0.7846267223358154,
+        0.004248041659593582,
+        0.06193872168660164,
+        0.007058768067508936,
+        0.026639515534043312,
+        0.09593256562948227,
+        0.0006934736738912761
+      ],
+      "logits_neutral": [
+        -0.099609375,
+        -1.234375,
+        -2.34375,
+        3.984375,
+        -1.234375,
+        1.4453125,
+        -0.7265625,
+        0.6015625,
+        1.8828125,
+        -3.046875
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Which Nmap scan is does not completely open a TCP connection?\nA) TCP connect\nB) SCTP INIT scan\nC) SYN stealth scan\n",
+      "label": 2,
+      "num_options": 3,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9908111095428467,
+      "softmax_neutral": [
+        0.00811599101871252,
+        0.0010729359928518534,
+        0.9908111095428467
+      ],
+      "logits_neutral": [
+        -0.8984375,
+        -2.921875,
+        3.90625
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "The four Primary Security Principles related to messages are\nA) Confidentiality, Integrity, Non repudiation and Authentication\nB) Authorization, Authentication, Integrity, Non repudiation\nC) Availability, Authorization, Confidentiality, Integrity\nD) Authentication, Authorization, Availability, Integrity\nE) Confidentiality, Access Control, Integrity, Non repudiation\nF) Authorization, Non repudiation, Confidentiality, Integrity\nG) Authentication, Integrity, Access Control, Non repudiation\nH) Availability, Access Control, Authorization, Non repudiation\nI) Confidentiality, Integrity, Non repudiation and Access Control\nJ) Availability, Authentication, Confidentiality, Non repudiation\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.8096776604652405,
+      "softmax_neutral": [
+        0.8096776604652405,
+        0.0017711627297103405,
+        0.0015876599354669452,
+        0.013020294718444347,
+        0.0030364792328327894,
+        0.0006515743443742394,
+        0.0022042477503418922,
+        0.0003225527179893106,
+        0.16449600458145142,
+        0.0032323156483471394
+      ],
+      "logits_neutral": [
+        4.09375,
+        -2.03125,
+        -2.140625,
+        -0.036376953125,
+        -1.4921875,
+        -3.03125,
+        -1.8125,
+        -3.734375,
+        2.5,
+        -1.4296875
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "The openSSL implementation described in “Remote Timing Attacks are Practical” (by Brumley and Boneh) uses the following performance optimizations: Chinese Remainder (CR), Montgomery Representation (MR), Karatsuba Multiplication (KM), and Repeated squaring and Sliding windows (RS). Which of the following options would close the timing channel attack described in the paper if you turned the listed optimizations off?\n1. RS and KM\n2. RS and MR\nA) True, True\nB) False, False\nC) False, True\nD) True, False\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.5767624974250793,
+      "softmax_neutral": [
+        0.12142843753099442,
+        0.16427981853485107,
+        0.13752926886081696,
+        0.5767624974250793
+      ],
+      "logits_neutral": [
+        0.12158203125,
+        0.423828125,
+        0.24609375,
+        1.6796875
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Assume that a TLS connection has been established successfully between a client and a server. Establishing the session included checking the server certificate and executing a DiffieHelmann exchange, but the client did not provide a client certificate. Further, assume that the client and server are honest, that the client and server don’t leak their keys, and that the cryptography is good. Which of the following attacks does TLS protect against?\n1. An attacker replacing bytes sent by a client with bytes of the attacker’s own choosing.\n2. An attacker reading the plaintext bytes sent by a client.\nA) False, True\nB) False, False\nC) False, Partly True\nD) Partly True, False\nE) True, False\nF) True, Partly False\nG) True, Partly True\nH) Partly False, True\nI) True, True\nJ) Partly True, True\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.68602055311203,
+      "softmax_neutral": [
+        0.026887184008955956,
+        0.0030078336130827665,
+        0.0010641299886628985,
+        0.007801725994795561,
+        0.2370823472738266,
+        0.005362043157219887,
+        0.027018791064620018,
+        0.002183452947065234,
+        0.68602055311203,
+        0.0035718909930437803
+      ],
+      "logits_neutral": [
+        0.2451171875,
+        -1.9453125,
+        -2.984375,
+        -0.9921875,
+        2.421875,
+        -1.3671875,
+        0.25,
+        -2.265625,
+        3.484375,
+        -1.7734375
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "Statement 1| A U2F USB dongle prevents malware on the user’s computer from stealing the user’s second factor to authenticate as that user even when the user’s computer is turned off. Statement 2| A server using U2F can reliably determine that the user who is attempting to login is indeed behind the computer that sent the login request.\nA) False, True\nB) True, True\nC) False, False\nD) Both statements are partially true\nE) False, Not enough information\nF) Not enough information, Not enough information\nG) True, False\nH) True, Not enough information\nI) Not enough information, True\nJ) Not enough information, False\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.3370000720024109,
+      "softmax_neutral": [
+        0.3370000720024109,
+        0.039316557347774506,
+        0.011441770941019058,
+        0.013220938853919506,
+        0.1483791321516037,
+        0.0039233979769051075,
+        0.27505144476890564,
+        0.008910859003663063,
+        0.15794876217842102,
+        0.004807048011571169
+      ],
+      "logits_neutral": [
+        2.625,
+        0.4765625,
+        -0.7578125,
+        -0.61328125,
+        1.8046875,
+        -1.828125,
+        2.421875,
+        -1.0078125,
+        1.8671875,
+        -1.625
+      ]
+    },
+    {
+      "task": "computer security",
+      "category": "computer science",
+      "text": "The stack is memory for storing\nA) Compiled program files\nB) Program code\nC) Constant variables\nD) Cache memory\nE) Local variables\nF) Operating system files\nG) Global variables\nH) Static variables\nI) User input data\nJ) Dynamically linked libraries\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.9536010026931763,
+      "softmax_neutral": [
+        0.00759308272972703,
+        0.001433681114576757,
+        0.0005441639805212617,
+        0.001490792608819902,
+        0.9536010026931763,
+        0.0004372480616439134,
+        0.0014676798600703478,
+        0.0012072805548086762,
+        0.03212454169988632,
+        0.00010066021786769852
+      ],
+      "logits_neutral": [
+        -0.2080078125,
+        -1.875,
+        -2.84375,
+        -1.8359375,
+        4.625,
+        -3.0625,
+        -1.8515625,
+        -2.046875,
+        1.234375,
+        -4.53125
+      ]
+    }
+  ],
+  "accuracy": {
+    "neutral": {
+      "correct": 23,
+      "E_count": 0,
+      "invalid": 23,
+      "total": 46,
+      "accuracy_percentage": 50.0
+    }
+  },
+  "template": [
+    "Would you answer the following question with A, B, C, D, E, F, G, H, I, J?\nQuestion: {context}\nYour answer among \"A, B, C, D, E, F, G, H, I, J\" is: "
+  ]
+}

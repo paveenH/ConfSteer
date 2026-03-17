@@ -1,0 +1,4 @@
+model,size,alpha,start,end,TOP,task,role,correct,E_count,invalid,total,accuracy_percentage,suite,refusal_enabled,refusal_label
+llama3,70B,-4,17,30,40,GPQA (gpqa_diamond),neutral,73,0,125,198,36.87,default,0,
+llama3,70B,-4,17,30,40,GPQA (gpqa_extended),neutral,260,0,286,546,47.62,default,0,
+llama3,70B,-4,17,30,40,GPQA (gpqa_main),neutral,218,0,230,448,48.66,default,0,

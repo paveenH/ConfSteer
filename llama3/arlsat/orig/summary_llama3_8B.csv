@@ -1,0 +1,4 @@
+model,size,suite,refusal_enabled,refusal_label,task,role,correct,E_count,invalid,total,accuracy_percentage
+llama3,8B,default,0,,AR-LSAT-dev,neutral,68,0,163,231,29.44
+llama3,8B,default,0,,AR-LSAT-test,neutral,55,0,175,230,23.91
+llama3,8B,default,0,,AR-LSAT-train,neutral,357,0,1273,1630,21.9

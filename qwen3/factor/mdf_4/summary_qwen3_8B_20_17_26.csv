@@ -1,0 +1,10 @@
+model,size,alpha,start,end,TOP,task,role,correct,E_count,invalid,total,accuracy_percentage,suite,refusal_enabled,refusal_label
+qwen3,8B,4,17,26,20,FACTOR Expert (MC4),non expert,207,0,29,236,87.71,default,0,
+qwen3,8B,4,17,26,20,FACTOR Expert (MC4),expert,210,0,26,236,88.98,default,0,
+qwen3,8B,4,17,26,20,FACTOR Expert (MC4),neutral,206,0,30,236,87.29,default,0,
+qwen3,8B,4,17,26,20,FACTOR News (MC4),non expert,762,0,274,1036,73.55,default,0,
+qwen3,8B,4,17,26,20,FACTOR News (MC4),expert,765,0,271,1036,73.84,default,0,
+qwen3,8B,4,17,26,20,FACTOR News (MC4),neutral,765,0,271,1036,73.84,default,0,
+qwen3,8B,4,17,26,20,FACTOR Wiki (MC4),non expert,2015,0,979,2994,67.3,default,0,
+qwen3,8B,4,17,26,20,FACTOR Wiki (MC4),expert,2029,0,965,2994,67.77,default,0,
+qwen3,8B,4,17,26,20,FACTOR Wiki (MC4),neutral,2091,0,903,2994,69.84,default,0,

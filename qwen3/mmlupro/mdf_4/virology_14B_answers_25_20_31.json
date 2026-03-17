@@ -1,0 +1,1328 @@
+{
+  "data": [
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Polio can be eradicated by which of the following?\nA) Herbal remedies\nB) Use of antibiotics\nC) Regular intake of vitamins\nD) Administration of tetanus vaccine\nE) Attention to sewage control and hygiene\nF) Natural immunity acquired through exposure\nG) Use of antiviral drugs\n",
+      "label": 4,
+      "num_options": 7,
+      "answer_neutral": "E",
+      "prob_neutral": 0.9551970958709717,
+      "softmax_neutral": [
+        0.0028559877537190914,
+        0.000504111812915653,
+        0.0004886019160039723,
+        0.0013385744532570243,
+        0.9551970958709717,
+        0.0014028139412403107,
+        0.038212694227695465
+      ],
+      "logits_neutral": [
+        -0.78125,
+        -2.515625,
+        -2.546875,
+        -1.5390625,
+        5.03125,
+        -1.4921875,
+        1.8125
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Which disease do polyomaviruses predominantly cause?\nA) Tumours\nB) Brain pathology\nC) No disease at all\nD) Kidney infections\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.5652426481246948,
+      "softmax_neutral": [
+        0.23747624456882477,
+        0.046036869287490845,
+        0.15124419331550598,
+        0.5652426481246948
+      ],
+      "logits_neutral": [
+        0.7734375,
+        -0.8671875,
+        0.322265625,
+        1.640625
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Who discovered the first virus?\nA) The microscopist Antonie van Leeuwenhoek\nB) The virologist Jonas Salk\nC) The physician Edward Jenner\nD) The microbiologist Louis Pasteur\nE) The bacteriologist Charles Chamberland\nF) The biologist Robert Hooke\nG) The biologist Gregor Mendel\nH) The geneticist James Watson\nI) The botanist Dmitri Iwanowsky\nJ) The physicist Albert Einstein\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.9978671073913574,
+      "softmax_neutral": [
+        0.0017016471829265356,
+        3.0178371162037365e-05,
+        3.2124706194736063e-05,
+        0.00020623172167688608,
+        6.695363845210522e-05,
+        2.07412685995223e-05,
+        2.6632314984453842e-05,
+        1.425525169906905e-05,
+        0.9978671073913574,
+        3.4196571505162865e-05
+      ],
+      "logits_neutral": [
+        0.0322265625,
+        -4.0,
+        -3.9375,
+        -2.078125,
+        -3.203125,
+        -4.375,
+        -4.125,
+        -4.75,
+        6.40625,
+        -3.875
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Poliovirus can most easily become more virulent by which of the following processes?\nA) Altering its mode of transmission\nB) Increasing its replication speed\nC) Recombining with another enterovirus\nD) Multiple nucleotide deletions and substitutions\nE) Developing resistance to antiviral medications\nF) Mutation of the RNA genome at only a few positions\nG) Developing a secondary protein coat\nH) Increasing the complexity of its RNA genome\nI) Altering its protein coat\nJ) Merging with a bacteriophage\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.5700781941413879,
+      "softmax_neutral": [
+        0.012805505655705929,
+        0.0021212880965322256,
+        0.5700781941413879,
+        0.1793830841779709,
+        0.012705851346254349,
+        0.020603502169251442,
+        0.006090383976697922,
+        0.0006886814371682703,
+        0.1939593404531479,
+        0.0015641399659216404
+      ],
+      "logits_neutral": [
+        0.1884765625,
+        -1.609375,
+        3.984375,
+        2.828125,
+        0.1806640625,
+        0.6640625,
+        -0.5546875,
+        -2.734375,
+        2.90625,
+        -1.9140625
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "How do viruses of the calcivirus family replicate?\nA) By integrating their DNA into the host cell's genome\nB) As negative strand RNA viruses\nC) Via DNA replication\nD) As positive strand RNA viruses\nE) Using genetic reassortment\nF) Through binary fission\nG) As single-stranded DNA viruses\nH) Retroviruses\nI) As double-stranded RNA viruses\nJ) Through a process called transduction\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.8977878093719482,
+      "softmax_neutral": [
+        0.011660227552056313,
+        0.0009875124087557197,
+        0.0009276820346713066,
+        0.8977878093719482,
+        0.004289558157324791,
+        0.00033077519037760794,
+        0.003162922104820609,
+        0.00023455475457012653,
+        0.08030815422534943,
+        0.0003107345546595752
+      ],
+      "logits_neutral": [
+        -0.59375,
+        -3.0625,
+        -3.125,
+        3.75,
+        -1.59375,
+        -4.15625,
+        -1.8984375,
+        -4.5,
+        1.3359375,
+        -4.21875
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Viruses have encouraged us to change our world, as we have now:\nA) Developed a universal vaccine for all types of flu\nB) Eradicated polio\nC) Created a vaccine for the common cold\nD) Found a cure for all types of cancer\nE) Eradicated smallpox\nF) Completely stopped the spread of all infectious diseases\nG) Developed immunity to all types of viruses\nH) Eradicated HIV/AIDS\n",
+      "label": 4,
+      "num_options": 8,
+      "answer_neutral": "E",
+      "prob_neutral": 0.9875274300575256,
+      "softmax_neutral": [
+        0.002447835635393858,
+        0.008345870301127434,
+        0.0002703816571738571,
+        0.00025400007143616676,
+        0.9875274300575256,
+        0.0002172577806049958,
+        0.0004320686566643417,
+        0.0005051394691690803
+      ],
+      "logits_neutral": [
+        -2.078125,
+        -0.8515625,
+        -4.28125,
+        -4.34375,
+        3.921875,
+        -4.5,
+        -3.8125,
+        -3.65625
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Newborn infants in countries with limited access to safe water and low levels of education should be:\nA) Exclusively formula fed for six months\nB) Exclusively breast fed for six months\nC) Should receive both breast milk and other foods as tolerated in the first 6\nD) months\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9170790314674377,
+      "softmax_neutral": [
+        0.03542038053274155,
+        0.9170790314674377,
+        0.0016631170874461532,
+        0.04583737626671791
+      ],
+      "logits_neutral": [
+        -0.89453125,
+        2.359375,
+        -3.953125,
+        -0.63671875
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "The noroviruses typically cause which of the following?\nA) High fever and cough\nB) Severe headache and muscle pain\nC) Disease of the central nervous system\nD) Loss of taste and smell\nE) Projectile vomiting and diarrhoea\nF) Rash\nG) Rash and fever\nH) Diarrhoea\nI) Breathlessness and chest pain\nJ) Persistent hiccups and diarrhoea\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.9829633235931396,
+      "softmax_neutral": [
+        0.0018391836201772094,
+        0.00023750819673296064,
+        0.00020315151778049767,
+        0.00028204795671626925,
+        0.9829633235931396,
+        0.0002412483881926164,
+        0.00048733517178334296,
+        0.00021625366935040802,
+        0.013497249223291874,
+        3.264942279201932e-05
+      ],
+      "logits_neutral": [
+        -1.78125,
+        -3.828125,
+        -3.984375,
+        -3.65625,
+        4.5,
+        -3.8125,
+        -3.109375,
+        -3.921875,
+        0.2119140625,
+        -5.8125
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "How are new polyomaviruses detailed\nA) Shot gun sequencing\nB) Cultivation in human neural cells\nC) Deep pyro sequencing (NGS)\nD) Monoclonal antibody techniques\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9083568453788757,
+      "softmax_neutral": [
+        0.053810324519872665,
+        0.00616846326738596,
+        0.9083568453788757,
+        0.03166436776518822
+      ],
+      "logits_neutral": [
+        0.314453125,
+        -1.8515625,
+        3.140625,
+        -0.2158203125
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Describe the coronavirus structure.\nA) Club shaped glycoprotein spikes protrude through a lipid bilayer\nB) An icosahedral structure with an envelope\nC) An icosahedral large pleomorphic virus\nD) Large regimented barrel shaped virus\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9586741924285889,
+      "softmax_neutral": [
+        0.9586741924285889,
+        0.025547802448272705,
+        0.001558425952680409,
+        0.014219492673873901
+      ],
+      "logits_neutral": [
+        2.4375,
+        -1.1875,
+        -3.984375,
+        -1.7734375
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Disease can most often be prevented by which of the following:\nA) Sunscreen\nB) Vaccines\nC) Antivirals\nD) Pain Relievers\nE) Hand Sanitizer\nF) Antibiotics\nG) mosquito nets\nH) Surgical Masks\nI) Insect Repellent\nJ) Hygiene\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.8542109727859497,
+      "softmax_neutral": [
+        0.010422095656394958,
+        0.8542109727859497,
+        0.000868970004376024,
+        0.00293968734331429,
+        0.002761580515652895,
+        0.0008422344690188766,
+        0.0051593114621937275,
+        0.0009543768246658146,
+        0.11788497865200043,
+        0.00395578145980835
+      ],
+      "logits_neutral": [
+        -1.484375,
+        2.921875,
+        -3.96875,
+        -2.75,
+        -2.8125,
+        -4.0,
+        -2.1875,
+        -3.875,
+        0.94140625,
+        -2.453125
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "The chance of acquiring HIV infection from factor VIII in the United States in 2011 is 0% primarily because:\nA) The use of Factor VIII has been completely discontinued in the United States\nB) Factor VIII is only distributed to hospitals with strict infection control protocols\nC) Factor VIII is only used by individuals who are already HIV positive\nD) Factor VIII is irradiated to kill any potential HIV\nE) Factor VIII is important from countries with no reported HIV\nF) Factor VIII is heat-treated to inactivate any potential HIV\nG) All donors for factor VIII are screened\nH) Factor VIII is made synthetically\nI) Factor VIII is derived from animals, which cannot carry HIV\nJ) Factor VIII is subject to detergent “washing” prior to release\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.40333500504493713,
+      "softmax_neutral": [
+        0.03002742864191532,
+        0.004111673217266798,
+        0.0016483379295095801,
+        0.018626254051923752,
+        0.01025630347430706,
+        0.2645135521888733,
+        0.40333500504493713,
+        0.05208580568432808,
+        0.2092474400997162,
+        0.006148288492113352
+      ],
+      "logits_neutral": [
+        0.69921875,
+        -1.2890625,
+        -2.203125,
+        0.2216796875,
+        -0.375,
+        2.875,
+        3.296875,
+        1.25,
+        2.640625,
+        -0.88671875
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "What is urban yellow fever (YF)?\nA) A YF species that has adapted to new mosquitoes\nB) Part of a cycle of mosquitoes biting humans and monkeys in forested areas\nC) A YF virus that is transmitted through contaminated water in cities\nD) A YF species that has adapted to colder climates in urban areas\nE) A mutant of the YF virus\nF) Part of a cycle of mosquitoes biting only animals in cities\nG) A YF species that has adapted to rats in urban areas\nH) A YF virus that has lost its virulence in urban areas\nI) Part of a cycle of mosquitoes biting humans in cities\nJ) A YF virus that only affects humans in rural areas\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.8986762166023254,
+      "softmax_neutral": [
+        0.038270253688097,
+        0.03887291997671127,
+        0.006470989901572466,
+        0.003701490117236972,
+        0.002427496248856187,
+        0.0007119824294932187,
+        0.0044648488983511925,
+        0.004327479749917984,
+        0.8986762166023254,
+        0.002076347591355443
+      ],
+      "logits_neutral": [
+        1.0625,
+        1.078125,
+        -0.71484375,
+        -1.2734375,
+        -1.6953125,
+        -2.921875,
+        -1.0859375,
+        -1.1171875,
+        4.21875,
+        -1.8515625
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "The major risk group for HIV infection among Latinos is:\nA) Healthcare workers\nB) Pregnant women\nC) Injection drug users\nD) Heterosexual males\nE) Elderly individuals\nF) Individuals with no sexual activity\nG) Vegetarians\nH) Females\nI) Children under the age of 12\nJ) Homosexual males\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.6142252683639526,
+      "softmax_neutral": [
+        0.007377882953733206,
+        0.0037682538386434317,
+        0.6142252683639526,
+        0.009812361560761929,
+        0.002889220369979739,
+        0.0007536982884630561,
+        0.003457944141700864,
+        0.005070740357041359,
+        0.18732813000679016,
+        0.16531649231910706
+      ],
+      "logits_neutral": [
+        -1.03125,
+        -1.703125,
+        3.390625,
+        -0.74609375,
+        -1.96875,
+        -3.3125,
+        -1.7890625,
+        -1.40625,
+        2.203125,
+        2.078125
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Public health ethics is:\nA) Primarily concerned with the health of healthcare workers\nB) Subject-centered\nC) Patient-centered\nD) Population-centered\nE) Centered around the health of the elderly population\nF) Based on the principle of \"first do no harm\"\nG) Concerned with the health of individual families\nH) Solely focused on the prevention of disease\nI) Focused on the health of animals\n",
+      "label": 3,
+      "num_options": 9,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9874903559684753,
+      "softmax_neutral": [
+        0.0012117211008444428,
+        0.00018010626081377268,
+        0.00018294250185135752,
+        0.9874903559684753,
+        0.0011294481810182333,
+        0.00018294250185135752,
+        0.00022067080135457218,
+        1.868875369837042e-05,
+        0.00938316062092781
+      ],
+      "logits_neutral": [
+        -0.984375,
+        -2.890625,
+        -2.875,
+        5.71875,
+        -1.0546875,
+        -2.875,
+        -2.6875,
+        -5.15625,
+        1.0625
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Most pandemics have arisen from influenza viruses from which of the following animals?\nA) Wild birds\nB) Cats\nC) Fish\nD) Humans\nE) Dogs\nF) Horses\nG) Pigs\nH) Cows\nI) Chickens\nJ) Bats\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.6784607768058777,
+      "softmax_neutral": [
+        0.23446977138519287,
+        0.0006483670440502465,
+        0.00037524610524997115,
+        0.0008862126851454377,
+        0.0009001684957183897,
+        0.00025790257495827973,
+        0.6784607768058777,
+        0.00015642584185115993,
+        0.08360277116298676,
+        0.00024227704852819443
+      ],
+      "logits_neutral": [
+        2.8125,
+        -3.078125,
+        -3.625,
+        -2.765625,
+        -2.75,
+        -4.0,
+        3.875,
+        -4.5,
+        1.78125,
+        -4.0625
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Which of the following HPV viruses are known to cause cervical cancer?\nA) Viruses of all 5 clades\nB) Types 14, 16, 18, 31, 45\nC) None are oncogenic per se\nD) Types 1-180\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.8690803647041321,
+      "softmax_neutral": [
+        0.07050734013319016,
+        0.8690803647041321,
+        0.012890596874058247,
+        0.04752165824174881
+      ],
+      "logits_neutral": [
+        -0.89453125,
+        1.6171875,
+        -2.59375,
+        -1.2890625
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "How does the papilloma family of viruses cause cancer?\nA) Alters the host's immune response to cancer cells\nB) Mutates the host's DNA, leading to uncontrolled cell growth\nC) Stimulates cell division, leading to overgrowth and cancer formation\nD) Acts as a co factor for a cellular oncogene\nE) Produces toxins that damage cellular DNA\nF) Causes inflammation and cell death, leading to cancer\nG) Integrates viral genome into cellular DNA\n",
+      "label": 6,
+      "num_options": 7,
+      "answer_neutral": "G",
+      "prob_neutral": 0.7803072333335876,
+      "softmax_neutral": [
+        0.013063784688711166,
+        0.15852904319763184,
+        0.007428997196257114,
+        0.03565003722906113,
+        0.004392946604639292,
+        0.0006279390072450042,
+        0.7803072333335876
+      ],
+      "logits_neutral": [
+        0.06640625,
+        2.5625,
+        -0.498046875,
+        1.0703125,
+        -1.0234375,
+        -2.96875,
+        4.15625
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "If the human norovirus cannot be cultured in cell cultures how can it best be studied?\nA) Volunteer studies\nB) Animal studies using non-human primates\nC) Through computer simulation models of the virus\nD) By studying the virus's effect on plant cells\nE) In cells using replicon systems\nF) Animal models\nG) By isolating the virus in a laboratory setting\nH) In cells using non-replicon systems\nI) Deductions from the 3 human ORF's of the virus genome\n",
+      "label": 0,
+      "num_options": 9,
+      "answer_neutral": "E",
+      "prob_neutral": 0.7489882111549377,
+      "softmax_neutral": [
+        0.05597880855202675,
+        0.029730120673775673,
+        0.0026284109335392714,
+        0.0022047150414437056,
+        0.7489882111549377,
+        0.020917754620313644,
+        0.007962779141962528,
+        0.0014346354873850942,
+        0.13015463948249817
+      ],
+      "logits_neutral": [
+        2.15625,
+        1.5234375,
+        -0.90234375,
+        -1.078125,
+        4.75,
+        1.171875,
+        0.2060546875,
+        -1.5078125,
+        3.0
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Picornavirus replication as a positive strand RNA virus is particularly typified by which of the following?\nA) Virions carry RNA transcriptase enzyme into the cell\nB) The virion RNA is translated into a single large polyprotein\nC) The virion RNA acting as mRNA\nD) The virus exits by apoptosis of the cell\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.6340563297271729,
+      "softmax_neutral": [
+        0.046654194593429565,
+        0.6340563297271729,
+        0.30185607075691223,
+        0.017433399334549904
+      ],
+      "logits_neutral": [
+        -0.984375,
+        1.625,
+        0.8828125,
+        -1.96875
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Which of the following drugs inhibit herpes viruses?\nA) Amantadine\nB) Acyclovir\nC) Oseltamivir\nD) Azidothymidine\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9830439686775208,
+      "softmax_neutral": [
+        0.011534485965967178,
+        0.9830439686775208,
+        0.0011783220106735826,
+        0.004243300296366215
+      ],
+      "logits_neutral": [
+        -3.5625,
+        0.8828125,
+        -5.84375,
+        -4.5625
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Why do vigorous CD8 cell responses in chronically infected HIV-positive individuals fail to eliminate the virus?\nA) Inadequate MHC Class I presentation\nB) Suboptimal CTL\nC) Overproduction of interferon gamma\nD) Overactive T-helper cells\nE) Absence of dendritic cells\nF) CTL exhaustion\nG) Presence of neutralizing antibodies\nH) Epitope escape\nI) Insufficient natural killer cell activity\nJ) Lack of B cell response\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.8063939213752747,
+      "softmax_neutral": [
+        0.036986060440540314,
+        0.0027108434587717056,
+        0.0011212535900995135,
+        0.0029311205726116896,
+        0.0030478835105895996,
+        0.8063939213752747,
+        0.009954663924872875,
+        0.05617713928222656,
+        0.07984381169080734,
+        0.0008332449360750616
+      ],
+      "logits_neutral": [
+        0.71484375,
+        -1.8984375,
+        -2.78125,
+        -1.8203125,
+        -1.78125,
+        3.796875,
+        -0.59765625,
+        1.1328125,
+        1.484375,
+        -3.078125
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "The group that permits analysis of the entire natural history of HIV/AIDS is:\nA) Non-seroconverters\nB) Seroconverters\nC) Short-term survivors with low levels of CD4+ cells\nD) Long-term survivors\nE) Long-term survivors with high levels of CD4+ cells\nF) Persistent seronegatives\nG) Short-term survivors\nH) Seroconverters with fluctuating levels of CD4+ cells\nI) Persistent seropositives\nJ) Long-term survivors with low levels of CD4+ cells\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.8076348304748535,
+      "softmax_neutral": [
+        0.02152273990213871,
+        0.8076348304748535,
+        0.00078396569006145,
+        0.00404400285333395,
+        0.03948020562529564,
+        0.00078396569006145,
+        0.00226847967132926,
+        0.005357432644814253,
+        0.11726338416337967,
+        0.0008610178483650088
+      ],
+      "logits_neutral": [
+        -0.640625,
+        2.984375,
+        -3.953125,
+        -2.3125,
+        -0.033935546875,
+        -3.953125,
+        -2.890625,
+        -2.03125,
+        1.0546875,
+        -3.859375
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "The basic code of ethical research (respect for persons, beneficence, and justice) was first established by the:\nA) World Medical Association (WMA)\nB) United Nations Educational, Scientific and Cultural Organization (UNESCO)\nC) Geneva Convention\nD) World Health Organization (WHO)\nE) Declaration of Helsinki\nF) Nuremberg Code\nG) CIOMS\nH) International Committee of Medical Journal Editors (ICMJE)\nI) Belmont Report\nJ) American Psychological Association (APA)\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.9075164198875427,
+      "softmax_neutral": [
+        0.0022983604576438665,
+        0.00018178812752012163,
+        5.5442247685277835e-05,
+        9.284829866373911e-05,
+        0.03464268520474434,
+        0.05450059473514557,
+        0.0003818506083916873,
+        0.00010197389201493934,
+        0.9075164198875427,
+        0.00022801340674050152
+      ],
+      "logits_neutral": [
+        0.427734375,
+        -2.109375,
+        -3.296875,
+        -2.78125,
+        3.140625,
+        3.59375,
+        -1.3671875,
+        -2.6875,
+        6.40625,
+        -1.8828125
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "How are antibody producing cells stimulated?\nA) Interacting with a virus short peptide\nB) Interacting with a T helper cell.\nC) Interacting with a plasma cell\nD) Interacting with a virus infected cell\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.963300883769989,
+      "softmax_neutral": [
+        0.0152096226811409,
+        0.963300883769989,
+        0.001182038919068873,
+        0.0203075110912323
+      ],
+      "logits_neutral": [
+        -1.2890625,
+        2.859375,
+        -3.84375,
+        -1.0
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "The replication of hepatitis B includes which of the following stages?\nA) Movement of intact virus to the cellular cytoplasm for replication\nB) Conversion of relaxed circular viral DNA in to covalently closed circular (CCC) DNA in the nucleus\nC) Virions produced in the cytoplasm by cellular DNA polymerase\nD) Oncogenic activity to transform liver cells.\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9702960252761841,
+      "softmax_neutral": [
+        0.017841147258877754,
+        0.9702960252761841,
+        0.001577318413183093,
+        0.010285409167408943
+      ],
+      "logits_neutral": [
+        -0.96484375,
+        3.03125,
+        -3.390625,
+        -1.515625
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "The three countries with the most drug injectors are:\nA) India, Brazil, and South Africa\nB) Canada, Mexico, and Japan\nC) Australia, New Zealand, and Indonesia\nD) China, the U.S. and Russia\nE) Afghanistan, Iraq and Myanmar\nF) Lithuania, Estonia and Latvia\nG) Brazil, Argentina, and Colombia\nH) Germany, France, and the UK\nI) Nigeria, Egypt, and South Africa\nJ) Bolivia, Argentina, Thailand\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9605704545974731,
+      "softmax_neutral": [
+        0.003574328264221549,
+        0.0002470665203873068,
+        0.00021465511235874146,
+        0.9605704545974731,
+        0.0020207420457154512,
+        0.0001836042501963675,
+        0.0003539064200595021,
+        3.291842949693091e-05,
+        0.032740771770477295,
+        6.1499718867708e-05
+      ],
+      "logits_neutral": [
+        -1.3125,
+        -3.984375,
+        -4.125,
+        4.28125,
+        -1.8828125,
+        -4.28125,
+        -3.625,
+        -6.0,
+        0.90234375,
+        -5.375
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Lassa and Ebola are emergent viruses in W. Africa. What is their origin?\nA) Reptiles\nB) Birds\nC) Primates\nD) Humans\nE) Cattle\nF) Amphibians\nG) Insects\nH) Pigs\n",
+      "label": 2,
+      "num_options": 8,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9907440543174744,
+      "softmax_neutral": [
+        0.002745008561760187,
+        0.0006456606206484139,
+        0.9907440543174744,
+        0.0008964109583757818,
+        0.0009467986528761685,
+        0.0002933045325335115,
+        0.002859937958419323,
+        0.0008688312373124063
+      ],
+      "logits_neutral": [
+        -0.294921875,
+        -1.7421875,
+        5.59375,
+        -1.4140625,
+        -1.359375,
+        -2.53125,
+        -0.25390625,
+        -1.4453125
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "There are 57 serotypes of adenovirus currently recognised. Which has the most important clinical impact?\nA) Eye infections\nB) Urinary tract infections\nC) Diarrhoea\nD) Skin infections\nE) Gastrointestinal infections\nF) Respiratory tract infections\nG) Haemorrhagic cystitis\nH) Bone and joint infections\nI) Bloodstream infections\nJ) Central nervous system infections\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.9246475696563721,
+      "softmax_neutral": [
+        0.007515087258070707,
+        0.0005529639893211424,
+        0.0003741541877388954,
+        0.0008564473246224225,
+        0.004232081584632397,
+        0.9246475696563721,
+        0.010722897946834564,
+        0.00044431909918785095,
+        0.05056009441614151,
+        9.460098954150453e-05
+      ],
+      "logits_neutral": [
+        0.21875,
+        -2.390625,
+        -2.78125,
+        -1.953125,
+        -0.35546875,
+        5.03125,
+        0.57421875,
+        -2.609375,
+        2.125,
+        -4.15625
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Genetic characteristics of the bunyavirus family include which one of the following?\nA) Emerging viruses via arthropod vector\nB) Single-stranded DNA viruses\nC) Viruses that primarily infect plants\nD) Viruses using a DNA-dependent RNA polymerase\nE) Viruses with a positive-sense RNA\nF) Three segmented negative stranded RNA viruses with anti-sense expression\nG) Viruses that only infect bacteria\nH) Highly mutable RNA viruses\nI) Use an RT enzyme\nJ) Double-stranded RNA viruses\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.9244985580444336,
+      "softmax_neutral": [
+        0.017402175813913345,
+        0.0008170961518771946,
+        0.0002571107179392129,
+        0.0014795699389651418,
+        0.002152761910110712,
+        0.9244985580444336,
+        0.0010168926091864705,
+        0.000804428244009614,
+        0.05134802311658859,
+        0.00022338167764246464
+      ],
+      "logits_neutral": [
+        0.68359375,
+        -2.375,
+        -3.53125,
+        -1.78125,
+        -1.40625,
+        4.65625,
+        -2.15625,
+        -2.390625,
+        1.765625,
+        -3.671875
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Most surveillance systems use which of the following study designs?\nA) Cohort\nB) Serial cross-sectional\nC) Mortality\nD) Syndromic\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.6450710892677307,
+      "softmax_neutral": [
+        0.07014822959899902,
+        0.28126081824302673,
+        0.0035198666155338287,
+        0.6450710892677307
+      ],
+      "logits_neutral": [
+        -1.0703125,
+        0.318359375,
+        -4.0625,
+        1.1484375
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "In a study, a group of people are exposed to an environmental toxin but are not treated observed over time on a standard set of measures to ascertain the potential effects of the toxin. This type of study design is called\nA) Longitudinal\nB) Prospective cohort\nC) Randomized controlled trial\nD) Clinical trial\nE) Retrospective cohort\nF) Cross-sectional\nG) Observational\nH) Case-control\nI) Experimental\nJ) Double-blind\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.6506763100624084,
+      "softmax_neutral": [
+        0.1261393427848816,
+        0.6506763100624084,
+        0.0010577428620308638,
+        0.00163826416246593,
+        0.01359698735177517,
+        0.0024786146823316813,
+        0.021411962807178497,
+        0.0020709598902612925,
+        0.18068629503250122,
+        0.00024350623425561935
+      ],
+      "logits_neutral": [
+        2.296875,
+        3.9375,
+        -2.484375,
+        -2.046875,
+        0.0693359375,
+        -1.6328125,
+        0.5234375,
+        -1.8125,
+        2.65625,
+        -3.953125
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Antivirals can be used prophylactically or therapeutically in persons in which of the following circumstances?\nA) If administered within 4 days of clinical signs\nB) If used within 48 hours of first clinical signs\nC) Used for the obese\nD) Used in children under the age of 2 years where high virus spread is noted\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.5616524815559387,
+      "softmax_neutral": [
+        0.5616524815559387,
+        0.07857758551836014,
+        0.016438616439700127,
+        0.34333130717277527
+      ],
+      "logits_neutral": [
+        1.671875,
+        -0.294921875,
+        -1.859375,
+        1.1796875
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "What is the biggest risk factor for infection with Ebola?\nA) Working in a category IV laboratory\nB) Attending a funeral of a victim outside\nC) Nursing a patient at home\nD) Attending football matches or large gatherings\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9236451387405396,
+      "softmax_neutral": [
+        0.04527264088392258,
+        0.9236451387405396,
+        0.01626906357705593,
+        0.014813151210546494
+      ],
+      "logits_neutral": [
+        -1.3359375,
+        1.6796875,
+        -2.359375,
+        -2.453125
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Which of the following coronaviruses has caused thousands of deaths around the world as an 'emergent' virus?\nA) 229E\nB) MHV\nC) OC43\nD) TGEV\nE) MERS\nF) PHEV\nG) NL63\nH) HKU1\n",
+      "label": 4,
+      "num_options": 8,
+      "answer_neutral": "E",
+      "prob_neutral": 0.9924393892288208,
+      "softmax_neutral": [
+        0.003415387589484453,
+        0.0004997816286049783,
+        0.001162027008831501,
+        0.0008501571719534695,
+        0.9924393892288208,
+        0.0006028517382219434,
+        0.0007271779468283057,
+        0.00030313286697492003
+      ],
+      "logits_neutral": [
+        -2.015625,
+        -3.9375,
+        -3.09375,
+        -3.40625,
+        3.65625,
+        -3.75,
+        -3.5625,
+        -4.4375
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "What is the most common way for a virus to kill a cell?\nA) Directly destroys the cell nucleus\nB) Fragments cellular DNA\nC) Depletes the cell's energy resources\nD) Changes the cell's genetic code\nE) Dissolves the cellular membrane\nF) Prevents cell division by blocking mitosis\nG) Introduces toxic substances into the cell\nH) Causes the cell to explode through rapid replication\nI) Induces apoptosis via caspases\nJ) Totally blocks cellular transcription\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.9966637492179871,
+      "softmax_neutral": [
+        0.0013563592219725251,
+        8.998731209430844e-05,
+        0.00011199101572856307,
+        0.00019964556850027293,
+        0.00016811843670438975,
+        4.056045872857794e-05,
+        0.00017618660058360547,
+        0.0008537758840247989,
+        0.9966637492179871,
+        0.00033960858127102256
+      ],
+      "logits_neutral": [
+        -0.255859375,
+        -2.96875,
+        -2.75,
+        -2.171875,
+        -2.34375,
+        -3.765625,
+        -2.296875,
+        -0.71875,
+        6.34375,
+        -1.640625
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "What happens during the 'incubation period'?\nA) The virus mutates and becomes more virulent\nB) This period commonly lasts for a few hours\nC) Virus replication happens at an intracellular level\nD) Symptoms of the disease start appearing in the host\nE) The virus is spread to others without any symptoms in the host\nF) The host's body becomes immune to the virus\nG) The virus is cleared from the body by the immune system\nH) This period commonly lasts for a few years\nI) The virus is dormant and does not replicate\n",
+      "label": 2,
+      "num_options": 9,
+      "answer_neutral": "C",
+      "prob_neutral": 0.645133376121521,
+      "softmax_neutral": [
+        0.010291039012372494,
+        0.001525896368548274,
+        0.645133376121521,
+        0.003973365295678377,
+        0.007779470644891262,
+        0.0002867074217647314,
+        0.00111636973451823,
+        0.00039188264054246247,
+        0.3295018970966339
+      ],
+      "logits_neutral": [
+        0.11181640625,
+        -1.796875,
+        4.25,
+        -0.83984375,
+        -0.16796875,
+        -3.46875,
+        -2.109375,
+        -3.15625,
+        3.578125
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Which of the following is the most special characteristic of the adaptive immune system?\nA) Innate immune response\nB) T cells\nC) Antigen-presenting cells\nD) Natural killer cells\nE) Clonal expansion of pre-existing antibodies and/or T cells\nF) Memory B cells\nG) Antibodies\nH) Clonal expansion of new antibodies and/or T cells\nI) White blood cells\n",
+      "label": 4,
+      "num_options": 9,
+      "answer_neutral": "E",
+      "prob_neutral": 0.6275237798690796,
+      "softmax_neutral": [
+        0.011928027495741844,
+        0.010629748925566673,
+        0.0020606706384569407,
+        0.0021260834764689207,
+        0.6275237798690796,
+        0.023081863299012184,
+        0.01738910749554634,
+        0.18549567461013794,
+        0.11976499855518341
+      ],
+      "logits_neutral": [
+        -0.197265625,
+        -0.3125,
+        -1.953125,
+        -1.921875,
+        3.765625,
+        0.462890625,
+        0.1796875,
+        2.546875,
+        2.109375
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "The three key intervention strategies according to Professor Shoptaw are:\nA) Behavioral intervention, treatment and structural interventions\nB) Condoms, drug therapy and regulation of commercial sex establishments\nC) Drug replacement therapy, community intervention and needle exchange\nD) HIV testing, drug therapy and condom use\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9081147909164429,
+      "softmax_neutral": [
+        0.9081147909164429,
+        0.018267450854182243,
+        0.0044072275049984455,
+        0.0692104697227478
+      ],
+      "logits_neutral": [
+        3.171875,
+        -0.734375,
+        -2.15625,
+        0.59765625
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Which member of the paramyxovirus family can cause very serious croup?\nA) Meta pneumo virus\nB) Measles\nC) Ebola\nD) Nipah virus\nE) Newcastle disease virus\nF) Mumps\nG) Hendra\nH) Parainfluenza\nI) Rabies\nJ) Respiratory syncytial virus (RSV)\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "H",
+      "prob_neutral": 0.6923425793647766,
+      "softmax_neutral": [
+        0.04725273698568344,
+        0.07072723656892776,
+        0.003521302016451955,
+        0.008123558945953846,
+        0.003633080283179879,
+        0.001562568242661655,
+        0.003466709516942501,
+        0.6923425793647766,
+        0.16834546625614166,
+        0.0010247572790831327
+      ],
+      "logits_neutral": [
+        0.1279296875,
+        0.53125,
+        -2.46875,
+        -1.6328125,
+        -2.4375,
+        -3.28125,
+        -2.484375,
+        2.8125,
+        1.3984375,
+        -3.703125
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "What is the essential pathology of astroviruses?\nA) Sequence diversity allows widespread replication\nB) Causes widespread replication in the liver\nC) Can cause infection of the central nervous system\nD) Very restricted replication in the gut\nE) Causes infection in the circulatory system\nF) Can cause infection in the upper respiratory tract\nG) Causes infection primarily in the urinary tract\nH) Limited replication due to lack of sequence diversity\nI) Can cause infection in the endocrine system\nJ) Can cause infection in the skeletal system\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.8937299847602844,
+      "softmax_neutral": [
+        0.01917499117553234,
+        0.0013648283202201128,
+        0.0009091718238778412,
+        0.8937299847602844,
+        0.011466694995760918,
+        0.00043622535304166377,
+        0.001430327887646854,
+        0.0030044401064515114,
+        0.06784860044717789,
+        0.000634704134427011
+      ],
+      "logits_neutral": [
+        0.439453125,
+        -2.203125,
+        -2.609375,
+        4.28125,
+        -0.07470703125,
+        -3.34375,
+        -2.15625,
+        -1.4140625,
+        1.703125,
+        -2.96875
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Achieving effective change in a community is usually dependent on which of the following segments of society?\nA) The elderly\nB) Early adapters\nC) Early rejectors\nD) Late adapters\nE) Children\nF) Middle adapters\nG) The poor\nH) The wealthy\nI) Innovators\nJ) Late rejectors\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.755390465259552,
+      "softmax_neutral": [
+        0.007791365031152964,
+        0.2303810864686966,
+        0.0006470929947681725,
+        0.0012669467832893133,
+        0.0014582466101273894,
+        0.0005039565148763359,
+        0.0009866990149021149,
+        0.0004734233662020415,
+        0.755390465259552,
+        0.0011007423745468259
+      ],
+      "logits_neutral": [
+        -0.19921875,
+        3.1875,
+        -2.6875,
+        -2.015625,
+        -1.875,
+        -2.9375,
+        -2.265625,
+        -3.0,
+        4.375,
+        -2.15625
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "Which virus infection was not first identified by clinical observation?\nA) HIV\nB) Rubella teratogenicity\nC) Microcephaly and Zika\nD) Hepatitis C\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.8440447449684143,
+      "softmax_neutral": [
+        0.04951462149620056,
+        0.06928341835737228,
+        0.03715724125504494,
+        0.8440447449684143
+      ],
+      "logits_neutral": [
+        0.7578125,
+        1.09375,
+        0.470703125,
+        3.59375
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "How is the parvovirus family targeted to reduce disease?\nA) By limiting exposure to outdoor environments\nB) Social distancing\nC) Through the use of probiotics\nD) Through the use of antifungal medication\nE) Through the use of antibiotics\nF) By maintaining a high protein diet\nG) Transfusion blood is screened\nH) A range of new antivirals\n",
+      "label": 6,
+      "num_options": 8,
+      "answer_neutral": "G",
+      "prob_neutral": 0.9516684412956238,
+      "softmax_neutral": [
+        0.008371375501155853,
+        0.004321858286857605,
+        0.0012825389858335257,
+        0.001097013708204031,
+        0.001925318967550993,
+        0.0005022495170123875,
+        0.9516684412956238,
+        0.030831260606646538
+      ],
+      "logits_neutral": [
+        -0.1396484375,
+        -0.80078125,
+        -2.015625,
+        -2.171875,
+        -1.609375,
+        -2.953125,
+        4.59375,
+        1.1640625
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "A quasi species virus such as influenza and HIV has which of the following characteristics?\nA) Possesses only RNA\nB) A stable and unchanging genome\nC) Possesses only DNA\nD) Has a single, unsegmented genome\nE) Possesses RNA and DNA\nF) A very large genome\nG) A fragmented or segmented genome\nH) Co-existence of innumerable genetic variants\nI) Cannot mutate or evolve\nJ) Only exists in one form or variant\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "H",
+      "prob_neutral": 0.5136080384254456,
+      "softmax_neutral": [
+        0.015585534274578094,
+        0.0009761250112205744,
+        0.0005475564976222813,
+        0.0016604445409029722,
+        0.0026951676700264215,
+        0.0007602068944834173,
+        0.446230411529541,
+        0.5136080384254456,
+        0.01743793487548828,
+        0.0004985558916814625
+      ],
+      "logits_neutral": [
+        0.2392578125,
+        -2.53125,
+        -3.109375,
+        -2.0,
+        -1.515625,
+        -2.78125,
+        3.59375,
+        3.734375,
+        0.3515625,
+        -3.203125
+      ]
+    },
+    {
+      "task": "virology",
+      "category": "health",
+      "text": "What is the morphology of the Dane particle?\nA) Spherical with a lipid membrane\nB) Numerous small particles\nC) Lipid membrane free icosahedron\nD) Double shelled icosahedron\nE) Flexuous and filamentous morphology\nF) Double shelled dodecahedron\nG) Amorphous and irregular morphology\nH) Numerous large particles\nI) Cylindrical and filamentous morphology\n",
+      "label": 4,
+      "num_options": 9,
+      "answer_neutral": "D",
+      "prob_neutral": 0.5000577569007874,
+      "softmax_neutral": [
+        0.09770092368125916,
+        0.005426454823464155,
+        0.11784980446100235,
+        0.5000577569007874,
+        0.15735015273094177,
+        0.0008519082912243903,
+        0.004677896853536367,
+        0.0009653385495766997,
+        0.1151198223233223
+      ],
+      "logits_neutral": [
+        1.3828125,
+        -1.5078125,
+        1.5703125,
+        3.015625,
+        1.859375,
+        -3.359375,
+        -1.65625,
+        -3.234375,
+        1.546875
+      ]
+    }
+  ],
+  "accuracy": {
+    "neutral": {
+      "correct": 30,
+      "E_count": 0,
+      "invalid": 16,
+      "total": 46,
+      "accuracy_percentage": 65.22
+    }
+  },
+  "template": [
+    "Would you answer the following question with A, B, C, D, E, F, G, H, I?\nQuestion: {context}\nYour answer among \"A, B, C, D, E, F, G, H, I\" is: "
+  ]
+}

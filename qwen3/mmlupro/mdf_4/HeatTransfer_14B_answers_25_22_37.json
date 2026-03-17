@@ -1,0 +1,1966 @@
+{
+  "data": [
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Compute the natural convective heat transfer coefficient for a vertical plate at a distance of 8 in. from the bottom of the plate. The plate is heated to a temperature of 200°F on one side and the other side is in contact with air at 68°F and at atmospheric pressure.\nA) 0.81 Btu/hr-ft^2-°F\nB) 1.08 Btu/hr-ft^2-°F\nC) 0.536 Btu/hr-ft^2-°F\nD) 0.0181 Btu/hr-ft^2-°F\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.7348867654800415,
+      "softmax_neutral": [
+        0.7348867654800415,
+        0.16526147723197937,
+        0.09270327538251877,
+        0.007148509845137596
+      ],
+      "logits_neutral": [
+        3.296875,
+        1.8046875,
+        1.2265625,
+        -1.3359375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Steam condenses on the outside of a vertical cylinder of length 2.54 cm. and diameter 30.5 cm. The saturated steam is at a pressure of 68.9 kPa. The surface temperature of the cylinder is maintained at 86°C. Assuming laminar flow, calculate the average coefficient of heat transfer.\nA) 13,500 W/m^2-C\nB) 15,200 W/m^2-C\nC) 12,850 W/m^2-C\nD) 12,500 W/m^2-C\nE) 10,500 W/m^2-C\nF) 13,146 W/m^2-C\nG) 14,000 W/m^2-C\nH) 14,500 W/m^2-C\nI) 13,000 W/m^2-C\nJ) 11,800 W/m^2-C\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.7013012170791626,
+      "softmax_neutral": [
+        0.7013012170791626,
+        0.005699836183339357,
+        0.005611468572169542,
+        0.00645876070484519,
+        0.005611468572169542,
+        0.08343193680047989,
+        0.01549376267939806,
+        0.004235758446156979,
+        0.16399115324020386,
+        0.00816463865339756
+      ],
+      "logits_neutral": [
+        3.0,
+        -1.8125,
+        -1.828125,
+        -1.6875,
+        -1.828125,
+        0.87109375,
+        -0.8125,
+        -2.109375,
+        1.546875,
+        -1.453125
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Steam, at 212°F, is condensing at 198°F on the outer surface of a bank of pipes with 20 pipes horizontally placed in a row. The diameter of each 3 ft long pipe is 1 in. Calculate the rate of condensate.\nA) 300 lbm/hr\nB) 350 lbm/hr\nC) 275 lbm/hr\nD) 220 lbm/hr\nE) 280 lbm/hr\nF) 325 lbm/hr\nG) 200 lbm/hr\nH) 400 lbm/hr\nI) 250 lbm/hr\nJ) 180 lbm/hr\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.5025776028633118,
+      "softmax_neutral": [
+        0.5025776028633118,
+        0.022517241537570953,
+        0.1509011685848236,
+        0.015415523201227188,
+        0.08382526785135269,
+        0.0068405973725020885,
+        0.06477513909339905,
+        0.03150728717446327,
+        0.11479955166578293,
+        0.0068405973725020885
+      ],
+      "logits_neutral": [
+        2.203125,
+        -0.90234375,
+        1.0,
+        -1.28125,
+        0.412109375,
+        -2.09375,
+        0.154296875,
+        -0.56640625,
+        0.7265625,
+        -2.09375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A bare steel wire (k = 13 Btu/hr ft°F) is carrying a current of 1000 amp. The diameter of the wire is 0.75 in. The air temperature is 70°F and the surface heat transfer coefficient is 5.0 Btu/hr ft^2 °F. The electrical resistance of the wire per foot length is 0.0001 ohm. Find the centerline temperature of the wire.\nA) 600°F\nB) 560°F\nC) 500°F\nD) 480°F\nE) 420°F\nF) 418°F\nG) 390°F\nH) 330°F\nI) 450°F\nJ) 350°F\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.5633914470672607,
+      "softmax_neutral": [
+        0.2703181803226471,
+        0.04285416379570961,
+        0.0068738521076738834,
+        0.006982098799198866,
+        0.011784523725509644,
+        0.5633914470672607,
+        0.05818985402584076,
+        0.005788364447653294,
+        0.03190877288579941,
+        0.0019087997497990727
+      ],
+      "logits_neutral": [
+        1.546875,
+        -0.294921875,
+        -2.125,
+        -2.109375,
+        -1.5859375,
+        2.28125,
+        0.010986328125,
+        -2.296875,
+        -0.58984375,
+        -3.40625
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A plate is cooled by a stream of air, which moves at the speed of 655 ft/sec. The plate length is 1 in., and the static temperature is 65°F. Considering (a) a surface temperature of 95°F, calculate the adiabatic wall temperature (b) a surface temperature of 300°F, calculate the rate of heat transfer at the plate.\nA) 95°F, 12,361 Btu/hr-ft^2\nB) 100°F, 10,000 Btu/hr-ft^2\nC) 90°F, 15,000 Btu/hr-ft^2\nD) 85°F, 13,000 Btu/hr-ft^2\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9121124744415283,
+      "softmax_neutral": [
+        0.9121124744415283,
+        0.061587002128362656,
+        0.0062669795006513596,
+        0.0200334619730711
+      ],
+      "logits_neutral": [
+        4.0625,
+        1.3671875,
+        -0.91796875,
+        0.244140625
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Forced convective heat transfer occurs when water is flowing at a rate of 1.27 ft^3/hr through a pipe, 0.0492 ft dia and 3.28 ft long, at 140°F. The temperature of water at the inlet and outlet are 68°F and 86°F, respectively. Assuming laminar flow, calculate the heat transfer coefficient by a) Sieder and Tate's formula, and b) Hausen's formula.\nA) Sieder and Tate's formula: 70.50 Btu/hr-ft^2-°F, Hausen's formula: 45.66 Btu/hr-ft^2-°F\nB) Sieder and Tate's formula: 65.73 Btu/hr-ft^2-°F, Hausen's formula: 40.66 Btu/hr-ft^2-°F\nC) Sieder and Tate's formula: 64.73 Btu/hr-ft^2-°F, Hausen's formula: 49.66 Btu/hr-ft^2-°F\nD) Sieder and Tate's formula: 60.73 Btu/hr-ft^2-°F, Hausen's formula: 52.66 Btu/hr-ft^2-°F\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.5047816038131714,
+      "softmax_neutral": [
+        0.2460109144449234,
+        0.5047816038131714,
+        0.23110586404800415,
+        0.018101608380675316
+      ],
+      "logits_neutral": [
+        1.734375,
+        2.453125,
+        1.671875,
+        -0.875
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A tube is heated by means of forced convection from an airstream. The tube has a length of 1000 ft., and the wall surface temperature is 60°F. The flow is measured at a speed of 30 ft/sec, and it moves through an area measuring 3 in. across. If the air is at a mean bulk temperature of 70°F and a pressure of 29.4psia, calculate (a) the pressure drop over the tube length, (b) the rate of heat flow from the air, and (c) the coefficient of heat transfer by which this occurs. Neglect the effects of any disturbance at the pipe entrance.\nA) (a) 1.0 psi, (b) 85000 Btu/hr, (c) 11.2 Btu/hr-ft^2-°F\nB) (a) 0.5 psi, (b) 75000 Btu/hr, (c) 8.5 Btu/hr-ft^2-°F\nC) (a) 1.071 psi, (b) 80928 Btu/hr, (c) 10.3 Btu/hr-ft^2-°F\nD) (a) 1.5 psi, (b) 80000 Btu/hr, (c) 9.0 Btu/hr-ft^2-°F\nE) (a) 1.3 psi, (b) 82000 Btu/hr, (c) 10.5 Btu/hr-ft^2-°F\nF) (a) 0.7 psi, (b) 76000 Btu/hr, (c) 8.8 Btu/hr-ft^2-°F\nG) (a) 0.976 psi, (b) 79000 Btu/hr, (c) 9.6 Btu/hr-ft^2-°F\nH) (a) 1.2 psi, (b) 83000 Btu/hr, (c) 11 Btu/hr-ft^2-°F\nI) (a) 0.85 psi, (b) 77000 Btu/hr, (c) 9.8 Btu/hr-ft^2-°F\nJ) (a) 0.9 psi, (b) 81000 Btu/hr, (c) 10 Btu/hr-ft^2-°F\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.5585131049156189,
+      "softmax_neutral": [
+        0.31329745054244995,
+        0.005518414545804262,
+        0.5585131049156189,
+        0.0015687481500208378,
+        0.004005939234048128,
+        0.0003726103459484875,
+        0.05423067882657051,
+        0.0023184597957879305,
+        0.056611690670251846,
+        0.0035629563499242067
+      ],
+      "logits_neutral": [
+        2.734375,
+        -1.3046875,
+        3.3125,
+        -2.5625,
+        -1.625,
+        -4.0,
+        0.98046875,
+        -2.171875,
+        1.0234375,
+        -1.7421875
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Consider a double layered wall. Theemissivitiesof the outer andinner layer are 0.85 and 0.46, respectively. The ambient temperatureis 110°F and the temperature inside the room is 60°F.Calculate the radiant heat flux per unit area. Also, calculatethe radiant heat flux when an aluminium radiation shieldhaving\\epsilon_s= 0.05 is used.\nA) 21.64 Btu/hr ft^2 and 1.66 Btu/hr ft^2\nB) 25.64 Btu/hr ft^2 and 1.46 Btu/hr ft^2\nC) 27.64 Btu/hr ft^2 and 2.06 Btu/hr ft^2\nD) 18.64 Btu/hr ft^2 and 0.96 Btu/hr ft^2\nE) 19.64 Btu/hr ft^2 and 1.06 Btu/hr ft^2\nF) 22.64 Btu/hr ft^2 and 1.56 Btu/hr ft^2\nG) 26.64 Btu/hr ft^2 and 1.76 Btu/hr ft^2\nH) 23.64 Btu/hr ft^2 and 1.36 Btu/hr ft^2\nI) 20.64 Btu/hr ft^2 and 1.26 Btu/hr ft^2\nJ) 24.64 Btu/hr ft^2 and 1.86 Btu/hr ft^2\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.8087507486343384,
+      "softmax_neutral": [
+        0.8087507486343384,
+        0.004113362170755863,
+        0.008116737939417362,
+        0.004178138449788094,
+        0.010260517708957195,
+        0.00179699482396245,
+        0.06103859469294548,
+        0.0044476049952209,
+        0.0914510041475296,
+        0.005846266634762287
+      ],
+      "logits_neutral": [
+        2.953125,
+        -2.328125,
+        -1.6484375,
+        -2.3125,
+        -1.4140625,
+        -3.15625,
+        0.369140625,
+        -2.25,
+        0.7734375,
+        -1.9765625
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Compute the convective heat transfer coefficient between thesurface of the pipe insulation at 56°c and the surrounding airat 20°c. Steam flows through the pipe having outer diameterof insulation 10 cm. Use:k = 0.0266 W/m k,\\rho = 1.14 kg/m^3 \\beta = 0.00322 k^-1,\\mu = 1.92 × 10^-5Pa.s C_p = 1000 J/kg \\bullet k\nA) 5.00 W/m^2 K\nB) 4.20 W/m^2 K\nC) 4.98 W/m^2 K\nD) 3.14 W/m^2 K\nE) 5.81 W/m^2 K\nF) 6.35 W/m^2 K\nG) 7.89 W/m^2 K\nH) 2.65 W/m^2 K\nI) 9.22 W/m^2 K\nJ) 8.34 W/m^2 K\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.5388416647911072,
+      "softmax_neutral": [
+        0.5388416647911072,
+        0.017870863899588585,
+        0.3506309688091278,
+        0.010024646297097206,
+        0.02303645759820938,
+        0.0010565898846834898,
+        0.007108539342880249,
+        0.007334188092499971,
+        0.04295378923416138,
+        0.0011424461845308542
+      ],
+      "logits_neutral": [
+        2.234375,
+        -1.171875,
+        1.8046875,
+        -1.75,
+        -0.91796875,
+        -4.0,
+        -2.09375,
+        -2.0625,
+        -0.294921875,
+        -3.921875
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "The surface temperature of a 3 ft square panel is maintained at200°F. Calculate the heat lost by the panel (a)whenattached to the ceiling, facing downwards in a room at80°F, and (b)whenattached to the floor, facing upwards in the same room. The condition through the back of the panel may be neglected. Take \\epsilon = 0.9 for the panel surface.\nA) 200.5 Btu/hr.ft.^2 and 350.5 Btu/hr.ft^2\nB) 205.0 Btu/hr.ft.^2 and 305.0 Btu/hr.ft.^2\nC) 210.7 Btu/hr.ft.^2 and 310.5 Btu/hr.ft^2\nD) 180.7 Btu/hr.ft.^2 and 290.5 Btu/hr.ft^2\nE) 197.7 Btu/hr.ft.^2 and 300.5 Btu/hr.ft^2\nF) 220.5 Btu/hr.ft.^2 and 330.5 Btu/hr.ft.^2\nG) 215.8 Btu/hr.ft.^2 and 315.8 Btu/hr.ft.^2\nH) 195.3 Btu/hr.ft.^2 and 295.3 Btu/hr.ft.^2\nI) 187.9 Btu/hr.ft.^2 and 287.9 Btu/hr.ft.^2\nJ) 190.5 Btu/hr.ft.^2 and 280.5 Btu/hr.ft.^2\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.4038001000881195,
+      "softmax_neutral": [
+        0.4038001000881195,
+        0.009204291738569736,
+        0.05128731578588486,
+        0.005582686048001051,
+        0.07411421835422516,
+        0.0006772566703148186,
+        0.28410884737968445,
+        0.07085855305194855,
+        0.09442396461963654,
+        0.005942738149315119
+      ],
+      "logits_neutral": [
+        2.203125,
+        -1.578125,
+        0.1396484375,
+        -2.078125,
+        0.5078125,
+        -4.1875,
+        1.8515625,
+        0.462890625,
+        0.75,
+        -2.015625
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A sailboat, 100 ft. long, is moving at a speed of 10 ft per sec. Assume it to act as a flat plate, and the water as the medium through which the transfer of heat occurs. Find the maximum thickness of the boundary layer. Take the density of water as 62.4lbm/ft^3 and the viscosity as 3.0lbm/hr-ft.\nA) 2.5 ft\nB) 0.75 ft\nC) 1.05 ft\nD) 2.0 ft\nE) 1.8 ft\nF) 0.45 ft\nG) 0.6 ft\nH) 0.987 ft\nI) 1.2 ft\nJ) 1.5 ft\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.4231921136379242,
+      "softmax_neutral": [
+        0.4231921136379242,
+        0.015780320391058922,
+        0.05886048451066017,
+        0.013082346878945827,
+        0.036121517419815063,
+        0.0051633017137646675,
+        0.035147204995155334,
+        0.32447266578674316,
+        0.08422116190195084,
+        0.0039588408544659615
+      ],
+      "logits_neutral": [
+        1.59375,
+        -1.6953125,
+        -0.37890625,
+        -1.8828125,
+        -0.8671875,
+        -2.8125,
+        -0.89453125,
+        1.328125,
+        -0.0206298828125,
+        -3.078125
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A droplet of molten lead of average 1/8 india, at 750°F, falls froma height of 60 ft, and solidifies by the cooling effect of thesurrounding air. The surrounding temperature is 70°F. If thelead solidifies at 621°F, calculate the coefficient of heat transfer. For lead, C_p= 0.031 Btu/lbm-°F \\rho= 710lbm/ft^3 h_fusion= 10.6 Btu/lbm\nA) 59.2 Btu/hr-ft^2-°F\nB) 45.7 Btu/hr-ft^2-°F\nC) 52.8 Btu/hr-ft^2-°F\nD) 63.4 Btu/hr-ft^2-°F\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.950572669506073,
+      "softmax_neutral": [
+        0.950572669506073,
+        0.01477596815675497,
+        0.031649451702833176,
+        0.0030019201803952456
+      ],
+      "logits_neutral": [
+        4.03125,
+        -0.1328125,
+        0.62890625,
+        -1.7265625
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A heat exchanger that is used for cooling oil is constructed with a bank of 200 tubes of outside diameter d_0 = 0.5 in, inside diameterd_i= 0.428 in, and length L = 4 ft. The tubes are enclosed inside a shell of inside diameter D_i = 10 in. Water at 65°F is flowing at a rate of 10,000 gal/hr inside the tubes, and oil at 190°F is flowing at 1,500 gal/hr in the shell side. Determine the exit temperature of the oil.\nA) 190°F\nB) 150°F\nC) 160°F\nD) 145°F\nE) 167°F\nF) 170°F\nG) 165°F\nH) 180°F\nI) 175°F\nJ) 155°F\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.8537626266479492,
+      "softmax_neutral": [
+        0.07577573508024216,
+        0.002738651819527149,
+        0.00387723371386528,
+        0.003355466527864337,
+        0.8537626266479492,
+        0.0006063203327357769,
+        0.03158802539110184,
+        0.00660829059779644,
+        0.018862074241042137,
+        0.0028255858924239874
+      ],
+      "logits_neutral": [
+        2.015625,
+        -1.3046875,
+        -0.95703125,
+        -1.1015625,
+        4.4375,
+        -2.8125,
+        1.140625,
+        -0.423828125,
+        0.625,
+        -1.2734375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A 3mm thick aluminium alloy plate at 200°C is suddenly quenchedinto water at 10°C. Determine the time required forthe plate to reach the temperature of 30°C. The following datamay be used. Density of aluminium \\rho = 3000kg/m^3 Specific heat of aluminium C_p = 0.2kcal/kg°C Plate dimensions = 20 cm × 20 cm Heat transfer coefficient h = 5000 kcal/m.^2hr. °C\nA) 4.0 seconds\nB) 2.8 seconds\nC) 6.3 seconds\nD) 5.5 seconds\nE) 3.2 seconds\nF) 1.45 seconds\nG) 2.5 seconds\nH) 3.6 seconds\nI) 0.98 seconds\nJ) 0.75 seconds\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.4938414990901947,
+      "softmax_neutral": [
+        0.4938414990901947,
+        0.04889693111181259,
+        0.313904732465744,
+        0.028745023533701897,
+        0.01612449623644352,
+        0.004692495800554752,
+        0.037600573152303696,
+        0.009045022539794445,
+        0.04313558712601662,
+        0.004013704136013985
+      ],
+      "logits_neutral": [
+        2.46875,
+        0.15625,
+        2.015625,
+        -0.375,
+        -0.953125,
+        -2.1875,
+        -0.1064453125,
+        -1.53125,
+        0.0308837890625,
+        -2.34375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Air is flowing over a 5-row tube bank. The air enters the enclosing duct at a temperature of 60°F, and it leaves at 100°F. The air flow is 500 ft^3/min, and is at atmospheric pressure. The tubes have a diameter of 1 in. and a length of 4 ft. They are staggered, with the longitudinal and transverse spacing ratio of Z. The outside wall surface temperature is 227°F. If the minimum free flow cross-sectional area is 1.667 ft^2, calculate the coefficient of heat transfer. Table 1: Ratio of mean heat-transfer coefficient for bank of tubes N rows deep to the coefficient for tubes in a single row. N 1 2 3 4 5 6 7 8 9 10 Triangular grid 1 1.10 1.22 1.31 1.35 1.40 1.42 1.44 1.46 1.47 Square grid 1 1.25 1.36 1.41 1.44 1.47 1.50 1.53 1.55 1.56\nA) 5.83 Btu/hr-ft^2-°F\nB) 7.062 Btu/hr-ft^2-°F\nC) 4.58 Btu/hr-ft^2-°F\nD) 6.49 Btu/hr-ft^2-°F\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.8651167750358582,
+      "softmax_neutral": [
+        0.8651167750358582,
+        0.12659455835819244,
+        0.003144569229334593,
+        0.005144172348082066
+      ],
+      "logits_neutral": [
+        4.15625,
+        2.234375,
+        -1.4609375,
+        -0.96875
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Compute the rate of heat transfer by natural convection from thesurface of a horizontal, 7 in. square, plate at a temperatureof 300°F. The ambient air temperature is 80°F. EMPIRICAL EQUATIONS FOR NATURAL CONVECTION FROM HORIZONTAL PLATES TO ROOM TEMPERATURE AIR AT ATMOSPMERIC PRESSURE Configuration Equation Turbulent Region Range of X 2 × 10^7 - 3 × 10^10 Laminar Region Range of X 10^5 - 2 × 10^7 Heated horizontal plates facing upward h = 0.22\\Deltat^1/3 h = 0.27(\\Deltat/ L)^1/4 Hasted horizontal plates facing downward ... h = 0.12(\\Deltat/ L)^1/4 Cooled horizontal plates facing upward ... h = 0.12(\\Deltat/ L)^1/4 Cooled horizontal plates facing upward h = 0.22\\Deltat^1/3 h = 0.27(\\Deltat/ L)^1/4\nA) 6.88 Btu/hr\nB) 13.88 Btu/hr\nC) 10.88 Btu/hr\nD) 7.88 Btu/hr\nE) 8.88 Btu/hr\nF) 14.88 Btu/hr\nG) 12.88 Btu/hr\nH) 9.88 Btu/hr\nI) 5.88 Btu/hr\nJ) 11.88 Btu/hr\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.8530969619750977,
+      "softmax_neutral": [
+        0.8530969619750977,
+        0.018555166199803352,
+        0.010908018797636032,
+        0.0057481215335428715,
+        0.01743096485733986,
+        0.0007779236766509712,
+        0.01073890458792448,
+        0.0025507137179374695,
+        0.07571665197610855,
+        0.004476641770452261
+      ],
+      "logits_neutral": [
+        1.75,
+        -2.078125,
+        -2.609375,
+        -3.25,
+        -2.140625,
+        -5.25,
+        -2.625,
+        -4.0625,
+        -0.671875,
+        -3.5
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Twocounterflowheat exchangers connected in series are used to heat 283.2 L^3/sec of air from 22°C to 30°C, using water at 35°C. Determine the effectiveness and the quantity UA for each exchanger.\nA) Effectiveness = 0.700, UA = 250 W/°C\nB) Effectiveness = 0.825, UA = 400 W/°C\nC) Effectiveness = 0.480, UA = 175 W/°C\nD) Effectiveness = 0.540, UA = 290 W/°C\nE) Effectiveness = 0.375, UA = 150 W/°C\nF) Effectiveness = 0.615, UA = 324 W/°C\nG) Effectiveness = 0.444, UA = 162 W/°C\nH) Effectiveness = 0.5, UA = 200 W/°C\nI) Effectiveness = 0.650, UA = 210 W/°C\nJ) Effectiveness = 0.955, UA = 339.5 W/°C\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.5766797661781311,
+      "softmax_neutral": [
+        0.28997281193733215,
+        0.014924292452633381,
+        0.013931361958384514,
+        0.0058330330066382885,
+        0.003977783489972353,
+        0.028155870735645294,
+        0.5766797661781311,
+        0.02904963493347168,
+        0.03422883152961731,
+        0.003246571868658066
+      ],
+      "logits_neutral": [
+        3.125,
+        0.158203125,
+        0.08935546875,
+        -0.78125,
+        -1.1640625,
+        0.79296875,
+        3.8125,
+        0.82421875,
+        0.98828125,
+        -1.3671875
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Nucleate boiling occurs on a surface at temperature 242°F. If the substance is water, find (a) the maximum heat flux per unit area, and (b) the coefficient of heat transfer.\nA) Maximum heat flux: 250,000 Btu/hr-ft^2, Coefficient of heat transfer: 8,000 Btu/hr-ft^2-°F\nB) Maximum heat flux: 420,000 Btu/hr-ft^2, Coefficient of heat transfer: 12,500 Btu/hr-ft^2-°F\nC) Maximum heat flux: 300,000 Btu/hr-ft^2, Coefficient of heat transfer: 10,000 Btu/hr-ft^2-°F\nD) Maximum heat flux: 350,000 Btu/hr-ft^2, Coefficient of heat transfer: 11,500 Btu/hr-ft^2-°F\nE) Maximum heat flux: 390,000 Btu/hr-ft^2, Coefficient of heat transfer: 10,800 Btu/hr-ft^2-°F\nF) Maximum heat flux: 346,729 Btu/hr-ft^2, Coefficient of heat transfer: 11,558 Btu/hr-ft^2-°F\nG) Maximum heat flux: 410,000 Btu/hr-ft^2, Coefficient of heat transfer: 11,000 Btu/hr-ft^2-°F\nH) Maximum heat flux: 375,000 Btu/hr-ft^2, Coefficient of heat transfer: 9,500 Btu/hr-ft^2-°F\nI) Maximum heat flux: 400,000 Btu/hr-ft^2, Coefficient of heat transfer: 12,000 Btu/hr-ft^2-°F\nJ) Maximum heat flux: 265,000 Btu/hr-ft^2, Coefficient of heat transfer: 13,000 Btu/hr-ft^2-°F\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.4939568340778351,
+      "softmax_neutral": [
+        0.4939568340778351,
+        0.011526348069310188,
+        0.009118092246353626,
+        0.006073958706110716,
+        0.019606979563832283,
+        0.36422088742256165,
+        0.009706158190965652,
+        0.0018816246883943677,
+        0.08190606534481049,
+        0.002002979163080454
+      ],
+      "logits_neutral": [
+        1.1328125,
+        -2.625,
+        -2.859375,
+        -3.265625,
+        -2.09375,
+        0.828125,
+        -2.796875,
+        -4.4375,
+        -0.6640625,
+        -4.375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "The maximum heat dissipation from a rectangular profile fin, designed for minimum weight, is 500 k cal per hour per meter width of the fin. The fin base temperature and the ambient air temperature are 110°C and 10°C, respectively. The heat transfer coefficient on the fin surface is 90 kcal/m^2-hr-°C and the thermal conductivity of the fin material is 35 k cal/m-hr-°C. Determine the height and thickness of the fin required. Assume the thermal gradient at the fin base is zero.\nA) Thickness of the fin = 6.14, Length of the fin = 44.85 mm\nB) Thickness of the fin = 4.14, Length of the fin = 40.85 mm\nC) Thickness of the fin = 4.14, Length of the fin = 42.85 mm\nD) Thickness of the fin = 5.14, Length of the fin = 44.85 mm\nE) Thickness of the fin = 7.14, Length of the fin = 48.85 mm\nF) Thickness of the fin = 5.14, Length of the fin = 42.85 mm\nG) Thickness of the fin = 5.14, Length of the fin = 47.85 mm\nH) Thickness of the fin = 4.50, Length of the fin = 43.85 mm\nI) Thickness of the fin = 6.14, Length of the fin = 46.85 mm\nJ) Thickness of the fin = 5.00, Length of the fin = 45.00 mm\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9106728434562683,
+      "softmax_neutral": [
+        0.9106728434562683,
+        0.023521941155195236,
+        0.015380938537418842,
+        0.015730319544672966,
+        0.005855074152350426,
+        0.001600688206963241,
+        0.002701672725379467,
+        0.0006569210672751069,
+        0.022444793954491615,
+        0.0014348475961014628
+      ],
+      "logits_neutral": [
+        3.9375,
+        0.28125,
+        -0.1435546875,
+        -0.12109375,
+        -1.109375,
+        -2.40625,
+        -1.8828125,
+        -3.296875,
+        0.234375,
+        -2.515625
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A flat plate is cooled by a flow of air, with the transfer of heat accomplished by means of forced convection. The air is measured at a speed of 33 ft/sec, and has a temperature and pressure of 68°F and 1 atm, respectively. The temperature distribution across the plate is as follows: from0-2 in. T = 122°F 2-3.2 in.176°F 3.2-4.75 in. 212°F At a point 4 in. from the leading edge, calculate the heat flow per unit time and area. Also, find the local heat transfer coefficient.\nA) 1590 Btu/hr-ft^2, 11.04 Btu/hr-ft^2-°F\nB) 1400 Btu/hr-ft^2, 10.50 Btu/hr-ft^2-°F\nC) 1500 Btu/hr-ft^2, 10.00 Btu/hr-ft^2-°F\nD) 1700 Btu/hr-ft^2, 12.00 Btu/hr-ft^2-°F\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9813262224197388,
+      "softmax_neutral": [
+        0.9813262224197388,
+        0.015373649075627327,
+        0.0018361203838139772,
+        0.0014638828579336405
+      ],
+      "logits_neutral": [
+        4.875,
+        0.71875,
+        -1.40625,
+        -1.6328125
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Water, used as a cooling agent, is flowing at a speed of 0.02 m/sec through a pipe of 3.0 m length and 2.54 cm diameter. The wall surface temperature is maintained at 80°C. If the water enters at 60°C, calculate the temperature at the exit.\nA) 72.95°C\nB) 73.95°C\nC) 70.95°C\nD) 71.95°C\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.5345545411109924,
+      "softmax_neutral": [
+        0.4501400887966156,
+        0.5345545411109924,
+        0.005666427314281464,
+        0.009638918563723564
+      ],
+      "logits_neutral": [
+        2.8125,
+        2.984375,
+        -1.5625,
+        -1.03125
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A flat piece of plastic, area A = 1 ft^2 and thickness b = 0.252 inch, was tested and found to conduct heat at a rate of 3.0 watts in steady state with temperatures of T_0 = 24°C and T_1 = 26°C on the two main sides of the panel. Find the thermal conductivity of the plastic in cal sec^-1cm^-1 (°K)^-1 at 25°C.\nA) 2.47 × 10^-4 cal sec^-1 cm^-1 (°C)^-1\nB) 2.47 × 10^-4 cal sec^-1 cm^-1 (°K)^-1\nC) 1.47 × 10^-4 cal sec^-1 cm^-1 (°K)^-1\nD) 2.47 × 10^-3 cal sec^-1 cm^-1 (°K)^-1\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.6387667655944824,
+      "softmax_neutral": [
+        0.6387667655944824,
+        0.35276052355766296,
+        0.0019098781049251556,
+        0.0065627810545265675
+      ],
+      "logits_neutral": [
+        2.671875,
+        2.078125,
+        -3.140625,
+        -1.90625
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Estimate the depth to which a water pipe line is to be laid suchthat the water flowing in the pipe does not freeze due to lowtemperatures at the surface. The mean temperature duringcold season is 5°C and minimum temperature goes downto - 10°C and exists for a maximum period of 48 hours. Assume the properties of the earth as k = 0.52 W/m - °K,\\rho = 1840 kg/m^3 C_p = 2050 J/kg - °K. Table 1: The Complimentary Error Function erfc (\\eta) = 1- {2 / \\surd\\pi}^\\eta\\int_oe^-(u)2 du \\eta erfc (\\eta) \\eta erfc (\\eta) 0.0 1.0000 1.1 0.11980 0.05 0.9436 1.2 0.08969 0.1 0.8875 1.3 0.06599 0.15 0.8320 1.4 0.04772 0.2 0.7773 1.5 0.03390 0.2S 0.7237 1.6 0.02365 0.3 0.6714 1.7 0.01621 0.35 0.6206 1.8 0.01091 0.4 0.5716 1.9 0.00721 0.45 0.5245 2.0 0.00468 0.5 0.4795 2.1 0.00298 0.55 0.4367 2.2 0.00186 0.6 0.3961 2.3 0.001143 0.65 0.3580 2.4 0.000689 0.7 0.3222 2.5 0.000407 0.75 0.2889 2.6 0.000236 0.8 0.2579 2.7 0.000134 0.85 0.2293 2.8 0.000075 0.9 0.2031 2.9 0.000041 0.95 0.1791 3.0 0.000022 1.00 0.1573\nA) 25 cm\nB) 35 cm\nC) 15 cm\nD) 50 cm\nE) 5 cm\nF) 45 cm\nG) 10 cm\nH) 20 cm\nI) 40 cm\nJ) 30 cm\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.7538789510726929,
+      "softmax_neutral": [
+        0.7538789510726929,
+        0.04671110212802887,
+        0.02072792500257492,
+        0.01665535569190979,
+        0.015283813700079918,
+        0.00175546167884022,
+        0.032865364104509354,
+        0.03235583379864693,
+        0.07409941405057907,
+        0.005666699260473251
+      ],
+      "logits_neutral": [
+        2.21875,
+        -0.5625,
+        -1.375,
+        -1.59375,
+        -1.6796875,
+        -3.84375,
+        -0.9140625,
+        -0.9296875,
+        -0.10107421875,
+        -2.671875
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Determine the average surface conductance per unit length ofa long rod, 0.33 in. diameter, exposed to hot air blast at 110°F.The temperature of the rod has increased from 50°F to70°F in 60 seconds. Assume the thermal conductivity for rodmaterial as k = 300 Btu/hr.ft.°F, \\rho = 600lbm/ft^3, and Cp = 0.18 Btu/lbm.°F.\nA) 18.06 Btu/hr. ft^2.°F\nB) 16.06 Btu/hr. ft^2.°F\nC) 22.06 Btu/hr. ft^2.°F\nD) 20.06 Btu/hr. ft^2.°F\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.8775519132614136,
+      "softmax_neutral": [
+        0.8775519132614136,
+        0.08894991874694824,
+        0.008273632265627384,
+        0.025224599987268448
+      ],
+      "logits_neutral": [
+        3.625,
+        1.3359375,
+        -1.0390625,
+        0.07568359375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Laminar film condensation of super-saturated steam occurs on a vertical surface. The steam is at a pressure of 1.43 psi and a saturation temperature of 114°F. If the wall temperature is 105°F, what is the coefficient of heat transfer at a point 3 in. from the top?\nA) 1,486 Btu/hr-ft^2-°F\nB) 1,071.6 Btu/hr-ft^2-°F\nC) 1,567 Btu/hr-ft^2-°F\nD) 0.3656 Btu/hr-ft^2-°F\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.663814902305603,
+      "softmax_neutral": [
+        0.663814902305603,
+        0.28550323843955994,
+        0.008162625133991241,
+        0.042519234120845795
+      ],
+      "logits_neutral": [
+        3.09375,
+        2.25,
+        -1.3046875,
+        0.345703125
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Steam at 230°F in the shell side of a multi-pass regenerator is used to heat oil flowing at 550lbm/hr in 0.625 in OD steel pipes, 16-gage and 8 ft long. The oil is heated from 80 to 130°F. Assume that the thermal conductivity K and the specific heat C_P of the oil remains stable at 0.080 Btu/hr-ft-°F and 0.50 Btu/lbm-°F, respectively. The viscosity \\mu of the oil will differ with an increase in temperature as shown in the table. Determine the required number of passes to effectively heat the oil. T, °F 68 80 90 100 110 120 130 140 220 \\mu,lbm/ft.hr 55.66 48.4 43.56 39.2 36.3 32.67 29.04 26.62 8.71\nA) 7\nB) 6\nC) 2\nD) 12\nE) 9\nF) 10\nG) 3\nH) 4\nI) 5\nJ) 8\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.6722418069839478,
+      "softmax_neutral": [
+        0.14767193794250488,
+        0.0032752668485045433,
+        0.029078327119350433,
+        0.006726977881044149,
+        0.009740019217133522,
+        0.000934721261728555,
+        0.6722418069839478,
+        0.10309162735939026,
+        0.024678457528352737,
+        0.0025607638526707888
+      ],
+      "logits_neutral": [
+        2.890625,
+        -0.91796875,
+        1.265625,
+        -0.1982421875,
+        0.171875,
+        -2.171875,
+        4.40625,
+        2.53125,
+        1.1015625,
+        -1.1640625
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A plate at 60°C, is cooled by forced convection from an airstream. The steady flow velocity of the air stream is observed to be 2m/sec with the temperature and pressure as 27°C and 1 atm., respectively. Find the heat transfer per unit width from the leading edge to a distance of (a) 20 cm, and (b) 40 cm. Also find (c) the drag force over the 40 cm distance.\nA) 75 W, 105 W, 0.004 N\nB) 81.19 W, 114.8 W, 0.0055 N\nC) 85 W, 120 W, 0.005 N\nD) 90 W, 130 W, 0.007 N\nE) 82 W, 115 W, 0.005 N\nF) 83 W, 118 W, 0.0065 N\nG) 86 W, 125 W, 0.0058 N\nH) 78 W, 112 W, 0.0045 N\nI) 80 W, 110 W, 0.006 N\nJ) 79.5 W, 108 W, 0.0075 N\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.7858844995498657,
+      "softmax_neutral": [
+        0.16344839334487915,
+        0.7858844995498657,
+        0.0032623077277094126,
+        0.0022421490866690874,
+        0.015262572094798088,
+        0.0006945853820070624,
+        0.0034727081656455994,
+        0.0006838168483227491,
+        0.024532847106456757,
+        0.0005161719745956361
+      ],
+      "logits_neutral": [
+        1.5390625,
+        3.109375,
+        -2.375,
+        -2.75,
+        -0.83203125,
+        -3.921875,
+        -2.3125,
+        -3.9375,
+        -0.357421875,
+        -4.21875
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Oil flows through a tube, and heat is transferred to it by forced convection. The tube is 15 ft. long, and its internal diameter measures 0.0303 ft. The flow is measured at 80 lbm/hr, and the wall surface temperature is constant at 350°F. Properties of the oil are: C_p = 0.5 Btu/lbm-°Fk = 0.083 Btu/hr-ft-°F The viscosity-temperature profile is given by the following data: T(°F) (lbm/ft-hr) 150 15.73 200 12.22 250 9.2 300 6.82 350 4.72 Calculate the heat transfer coefficient and the mean exit temperature of the oil, assuming that is enters the tube at a temperature of 150°F.\nA) Heat transfer coefficient is 21 Btu/hr-ft^2-°F, average outlet temperature is 260°F\nB) Heat transfer coefficient is 20.05 Btu/hr-ft^2-°F, average outlet temperature is 252.5°F\nC) Heat transfer coefficient is 18 Btu/hr-ft^2-°F, average outlet temperature is 260°F\nD) Heat transfer coefficient is 22 Btu/hr-ft^2-°F, average outlet temperature is 245°F\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.7412770390510559,
+      "softmax_neutral": [
+        0.25617846846580505,
+        0.7412770390510559,
+        0.00042966450564563274,
+        0.002114882692694664
+      ],
+      "logits_neutral": [
+        2.90625,
+        3.96875,
+        -3.484375,
+        -1.890625
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Calculate the safe thickness of the shield coating necessary ona radioactive waste spherical ball of 1 ft. radius to be dumpedin the ocean with ambient water temperature of 50°F.The waste ball gives off heat at the rate of 440 Btu/hr. The thermal conductivity of the shielding material is k = 0.02 Btu/hrft°F.\nA) 4 ft\nB) 3 ft or 36 in\nC) 1.5 ft or 18 in\nD) 0.5 ft\nE) 0.1 ft or 1.2 in\nF) 0.75 ft or 9 in\nG) 0.25 ft or 3 in\nH) 0.05 ft or 0.6 in\nI) 1 ft\nJ) 2 ft\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.25798073410987854,
+      "softmax_neutral": [
+        0.25798073410987854,
+        0.10796327888965607,
+        0.18563516438007355,
+        0.021011553704738617,
+        0.05846977233886719,
+        0.02271890826523304,
+        0.14122378826141357,
+        0.04809592291712761,
+        0.15018519759178162,
+        0.00671569537371397
+      ],
+      "logits_neutral": [
+        0.4140625,
+        -0.45703125,
+        0.0849609375,
+        -2.09375,
+        -1.0703125,
+        -2.015625,
+        -0.1884765625,
+        -1.265625,
+        -0.126953125,
+        -3.234375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Compute the heat absorbed by a body which is exposed to anelectric heater releasing energy at the rate of 1850 W/m. The absorbing body accepts 95% of the radiation falling bove2.7\\mum and 30% of radiation below 2.7\\mum. The dia-meterof the heating element is 25 mm while the two bodiesare 10 cm apart.\nA) 1000 W/m^2\nB) 1875 W/m^2\nC) 3122 W/m^2\nD) 2615 W/m^2\nE) 3500 W/m^2\nF) 2168\\mumK\nG) 803K\nH) 2944 W/m^2\nI) 2500 μmK\nJ) 1785 W/m^2\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.3034447729587555,
+      "softmax_neutral": [
+        0.3034447729587555,
+        0.04545678570866585,
+        0.0981779471039772,
+        0.05398126319050789,
+        0.019247613847255707,
+        0.0013942924560979009,
+        0.0965261459350586,
+        0.24192725121974945,
+        0.1323065310716629,
+        0.007537473924458027
+      ],
+      "logits_neutral": [
+        1.1640625,
+        -0.734375,
+        0.03564453125,
+        -0.5625,
+        -1.59375,
+        -4.21875,
+        0.0186767578125,
+        0.9375,
+        0.333984375,
+        -2.53125
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Compute the surface area required in a heat exchanger to cool the fluid from 177°C to 77°C, carrying heat at the rate of 100W/K. The heat exchanger gains solar energy by irra-diation at the rate of 100W/m^2. Assume the value of trans-fer factor f as 0.9.\nA) 11.05m^2\nB) 6.89m^2\nC) 14.21m^2\nD) 9.54m^2\nE) 10.23m^2\nF) 5.67m^2\nG) 8.76m^2\nH) 12.34m^2\nI) 4.82m^2\nJ) 7.89m^2\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9109228253364563,
+      "softmax_neutral": [
+        0.9109228253364563,
+        0.016170816496014595,
+        0.010119438171386719,
+        0.013406077399849892,
+        0.01694687083363533,
+        0.0007445934461429715,
+        0.004153009038418531,
+        0.004025234375149012,
+        0.021422849968075752,
+        0.002088263863697648
+      ],
+      "logits_neutral": [
+        1.890625,
+        -2.140625,
+        -2.609375,
+        -2.328125,
+        -2.09375,
+        -5.21875,
+        -3.5,
+        -3.53125,
+        -1.859375,
+        -4.1875
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Compute the rate of heat loss per unit area from a circular hotair duct (a) by convection and (b) by simultaneous convectionand radiation. Assume the duct has a diameter of 3 ft. and is made of a polished metal (emissivity \\epsilon = 0.1). The surfacetemperature of the metal is 150°F, and the ambient temperatureis 65°F. (c) Repeat part (b), assuming the metal ispainted white on the outside (\\epsilon = 0.95).\nA) 82.3 Btu/ft^2-hr, 92.0 Btu/ft^2-hr, 185.4 Btu/ft^2-hr\nB) 84.6 Btu/ft^2-hr, 95.2 Btu/ft^2-hr, 190.9 Btu/ft^2-hr\nC) 65.9 Btu/ft^2-hr, 75.6 Btu/ft^2-hr, 155.7 Btu/ft^2-hr\nD) 68.7 Btu/ft^2-hr, 78.9 Btu/ft^2-hr, 160.6 Btu/ft^2-hr\nE) 72.5 Btu/ft^2-hr, 82.8 Btu/ft^2-hr, 165.3 Btu/ft^2-hr\nF) 77.4 Btu/ft^2-hr, 88.1 Btu/ft^2-hr, 179.2 Btu/ft^2-hr\nG) 79.2 Btu/ft^2-hr, 89.5 Btu/ft^2-hr, 174.8 Btu/ft^2-hr\nH) 70.4 Btu/ft^2-hr, 80.1 Btu/ft^2-hr, 170.2 Btu/ft^2-hr\nI) 75.4 Btu/ft^2-hr, 85.1 Btu/ft^2-hr, 175.2 Btu/ft^2-hr\nJ) 80.7 Btu/ft^2-hr, 90.3 Btu/ft^2-hr, 180.5 Btu/ft^2-hr\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.8255957961082458,
+      "softmax_neutral": [
+        0.8255957961082458,
+        0.0339767187833786,
+        0.02153373695909977,
+        0.0077232117764651775,
+        0.01205576304346323,
+        0.018454790115356445,
+        0.0233746524900198,
+        0.0010130649898201227,
+        0.05226566269993782,
+        0.004006749484688044
+      ],
+      "logits_neutral": [
+        3.21875,
+        0.0283203125,
+        -0.427734375,
+        -1.453125,
+        -1.0078125,
+        -0.58203125,
+        -0.345703125,
+        -3.484375,
+        0.458984375,
+        -2.109375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "What is steady state heat transfer?\nA) Steady state heat transfer is when the rate of energy in equals the rate of energy out, with no accumulation of energy.\nB) Steady state heat transfer is when the rate of energy in is less than the rate of energy out\nC) Steady state heat transfer is when the temperature within the system is not uniform\nD) Steady state heat transfer occurs only when there is no heat transfer\nE) Steady state heat transfer is when energy is not conserved\nF) Steady state heat transfer is when the temperature of the system continuously increases over time\nG) Steady state heat transfer is when the rate of energy out is twice the rate of energy in\nH) Steady state heat transfer is when the system only absorbs energy without releasing any\nI) Steady state heat transfer is when the rate of energy in is zero, but the system continues to emit energy\nJ) Steady state heat transfer is when energy accumulates\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9968878626823425,
+      "softmax_neutral": [
+        0.9968878626823425,
+        0.00038491346640512347,
+        3.9940608985489234e-05,
+        0.00044303268077783287,
+        0.00062477623578161,
+        0.0001309602230321616,
+        0.00012693098688032478,
+        4.669530244427733e-05,
+        0.0012620826018974185,
+        5.291270645102486e-05
+      ],
+      "logits_neutral": [
+        4.5,
+        -3.359375,
+        -5.625,
+        -3.21875,
+        -2.875,
+        -4.4375,
+        -4.46875,
+        -5.46875,
+        -2.171875,
+        -5.34375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "200 Kg of water at T_i = 35°C is kept in an auxiliary reservoir tobe heated by solar energy. The solar collector used has a surfacearea of A = 5m^2. The heat removal factor and the overallheat transfer coefficient are F_R = 0.80 and U_L = 8.0 W/m^2.°C, respectively. The ambient temperature T_a = 30°C. The product of the heat transfer coefficient and reservoirarea is (UA) = 1.80 W/°C. During an emergency, thewater will be used at a rate ṁ = 15 kg/hr and is refilled at atemperatureT_rf= 20°C. Determine the efficiency of this operationfrom 7 am to 5 pm. Refer to table 1 for hourly solar data. Table 1 I_T S T_a U_L(T_i - T_a) q = F_r S - U_L(T_i - T_a) \\eta = (q / I_T) Time MJ/m^2 MJ/m^2 °C MJ/m^2 MJ/m^2 7 - 8 0.03 - - 12 1.35 - - 8 - 9 0.49 0.40 - 9 1.27 0 0 9 - 10 1.12 0.92 - 3 1.09 0 0 10 - 11 4.02 3.26 3 1.01 1.80 0.45 11 - 12 3.45 3.08 4 0.89 1.75 0.51 12 - 1 4.15 3.39 7 0.81 2.20 0.53 1 - 2 3.96 3.20 8 0.78 1.94 0.49 2 - 3 1.98 1.58 9 0.75 0.67 0.34 3 - 4 1.27 1.01 10 0.72 0.23 0.18 4 - 5 0.04 - 8 0.78 - - \\sumI_T20.51 \\sum_q = 8.59 I_T - energy gained per hour by the solar panel. T_a - ambient temperature each hour. S - Incident heat flux on the solar panel. The overall efficiency is \\eta_day= [(\\sumq) / (\\sumI_T)] = [(8.59) / (20.42)] = 0.42 or 42% Table 2 I_T S T_a T_s^+ Q Loss Load Time MJ/m^2 MJ/m^2 °C °C MJ MJ MJ Begin 35.0 7 - 8 0.03 - - 12 33.2 0 0.021 0.83 8 - 9 0.49 0.40 - 9 31 .5 0 0.01 0.72 9 - 10 1.12 0.92 - 3 30.0 0 0 0.63 10 - 11 4.02 3.26 3 39.8 8.75 0.064 1.24 11 - 12 3.45 3.08 4 45.4 6.12 0.10 1.60 12 - 1 4.15 3.39 7 52.8 7.85 0.15 2.06 1 - 2 3.96 3.20 8 57.9 5.42 0.18 2.38 2 - 3 1.98 1.58 9 54.3 0 0.16 2.15 3 - 4 1.27 1.01 10 51 .6 0 0.14 1.98 4 - 5 0.04 - 8 48.6 0 0.12 1.80 \\sumI_T \\sumQ Losses \\sumLoads = 20.51 = 28.14 = 0.945 = 15.39\nA) 55%\nB) 50%\nC) 42%\nD) 30%\nE) 35%\nF) 40%\nG) 22.2%\nH) 18.7%\nI) 33.3%\nJ) 27.5%\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9839504957199097,
+      "softmax_neutral": [
+        0.010930702090263367,
+        0.0007555574993602931,
+        0.9839504957199097,
+        0.0003799181431531906,
+        0.0003459193976595998,
+        0.00011230358359171078,
+        0.0012263909447938204,
+        6.398866389645264e-05,
+        0.0019293834920972586,
+        0.00030527281342074275
+      ],
+      "logits_neutral": [
+        -1.546875,
+        -4.21875,
+        2.953125,
+        -4.90625,
+        -5.0,
+        -6.125,
+        -3.734375,
+        -6.6875,
+        -3.28125,
+        -5.125
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Compute the temperature of the filler metal point which is envelopedby an inert gas at 80°F. The area of the point and itsemissivity are 0.014 ft^2 and 0.88, respectively. Assume theconvective heat transfer coefficient between point and theinert gas as 2.0 Btu/hr^2 ft °F. The rate of heat generation atthe point is 68.2 Btu/hr^2.\nA) 784°F\nB) 800°F\nC) 820°F\nD) 750°F\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.7783998250961304,
+      "softmax_neutral": [
+        0.7783998250961304,
+        0.1757318079471588,
+        0.04109284654259682,
+        0.004775459878146648
+      ],
+      "logits_neutral": [
+        2.125,
+        0.63671875,
+        -0.81640625,
+        -2.96875
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Steam at 15.3 KN/m^2 pressure condenses at a rate of 25 kg/hr on a vertical pipe, 56 mm OD. The temperature drop across the film is 5°C. Calculate a) the coefficient of heat transfer, and b) the required length of the pipe\nA) Coefficient of heat transfer = 6000 W/m^2-°C, Length of the pipe = 4.2 m\nB) Coefficient of heat transfer = 5000 W/m^2-°C, Length of the pipe = 3.0 m\nC) Coefficient of heat transfer = 4595 W/m^2-°C, Length of the pipe = 2.5 m\nD) Coefficient of heat transfer = 5514 W/m^2-°C, Length of the pipe = 3.4 m\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.3641965091228485,
+      "softmax_neutral": [
+        0.2881031334400177,
+        0.016095712780952454,
+        0.3641965091228485,
+        0.3316047191619873
+      ],
+      "logits_neutral": [
+        2.421875,
+        -0.462890625,
+        2.65625,
+        2.5625
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Saturated steam, at 100°F, condenses on the outer surface ofa vertical pipe, 1 ft long and 6 in OD, maintained at 80°F. Calculate a)theaverage coefficient of heat transfer, b)therate of heat transfer, and c)themass flow rate of the condensate, assuming laminar flow.\nA) a) 1,250 Btu/hr-ft^2-°F, b) 41,000 Btu/hr, c) 42lbm/hr\nB) a) 1,500 Btu/hr-ft^2-°F, b) 45,000 Btu/hr, c) 45lbm/hr\nC) a) 1,357.2 Btu/hr-ft^2-°F, b) 42,638 Btu/hr, c) 41lbm/hr\nD) a) 1,200 Btu/hr-ft^2-°F, b) 40,000 Btu/hr, c) 40lbm/hr\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.8783873319625854,
+      "softmax_neutral": [
+        0.1161230206489563,
+        0.0021435485687106848,
+        0.8783873319625854,
+        0.0033460319973528385
+      ],
+      "logits_neutral": [
+        1.9296875,
+        -2.0625,
+        3.953125,
+        -1.6171875
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Steam condenses on the outside of a pipe, while cool wa-ter flowsinside it. The bulk mean water temperature is 65°F, andthe water side coefficient of heat transfer is 300 Btu/hr-ft^2-°F.The steam is at a pressure of 3 in. Hg abs., andthe steam side coefficient of heat transfer is 1,500 Btu/hr-ft^2-°F.The pipe is a 3/4 in. 18-gage standard size, and it is made of brass. If the thermal conductivity of brassis 66 Btu/hr-ft-°F, calculate the mass flow rate of steamcondensed per unit length of pipe.\nA) 4 lbm/hr-ft\nB) 3.5 lbm/hr-ft\nC) 2.11lbm/hr-ft\nD) 3lbm/hr-ft\nE) 0.75 lbm/hr-ft\nF) 1.25 lbm/hr-ft\nG) 1.85 lbm/hr-ft\nH) 1.5lbm/hr-ft\nI) 2.5lbm/hr-ft\nJ) 2.8 lbm/hr-ft\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.5646170973777771,
+      "softmax_neutral": [
+        0.25054731965065,
+        0.01691727712750435,
+        0.5646170973777771,
+        0.012090231291949749,
+        0.03210334852337837,
+        0.0012350949691608548,
+        0.047353096306324005,
+        0.014813262037932873,
+        0.05536137521266937,
+        0.004961820784956217
+      ],
+      "logits_neutral": [
+        1.328125,
+        -1.3671875,
+        2.140625,
+        -1.703125,
+        -0.7265625,
+        -3.984375,
+        -0.337890625,
+        -1.5,
+        -0.181640625,
+        -2.59375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "The inner sphere of a Dewar flask containingliquified oxygenis 1.2 ft diameter and the outer sphere is 1.8 ft diameter. Both spheres are plated for which \\epsilon = 0.04. Determine the rate at which liquid oxygen would evaporate atits boiling point - 297°F when the outer sphere temperatureis 25°F. Assume other modes of heat transfer areabsent except radiation.\nA) - 11.37 Btu/hr\nB) - 8.37 Btu/hr\nC) - 12.37 Btu/hr\nD) - 10.37 Btu/hr\nE) - 9.37 Btu/hr\nF) - 7.37 Btu/hr\nG) - 14.37 Btu/hr\nH) - 16.37 Btu/hr\nI) - 15.37 Btu/hr\nJ) - 13.37 Btu/hr\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.8628091812133789,
+      "softmax_neutral": [
+        0.8628091812133789,
+        0.006237042136490345,
+        0.010527001693844795,
+        0.02883979305624962,
+        0.02335517480969429,
+        0.0008507121237926185,
+        0.03376656025648117,
+        0.0027461324352771044,
+        0.029122810810804367,
+        0.0017455479828640819
+      ],
+      "logits_neutral": [
+        3.125,
+        -1.8046875,
+        -1.28125,
+        -0.2734375,
+        -0.484375,
+        -3.796875,
+        -0.11572265625,
+        -2.625,
+        -0.263671875,
+        -3.078125
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Steam condenses on the outside surface of a pipe, and its coefficient of heat transfer is known to be 2000 Btu/hr-ft^2-°F. Oil is used as a coolant inside, and it flows at the rate of 10 ft/min. The pipe is 2 ft. long and has an inside diameter of 1 in. If the oil entrance temperature is 70°F, what is the rate at which heat is transferred to the oil? Assume that the flow is fully developed, and that the resistance of the pipe itself is small enough to be neglected.\nA) 880 Btu/hr\nB) 900 Btu/hr\nC) 829 Btu/hr\nD) 850 Btu/hr\nE) 810 Btu/hr\nF) 800 Btu/hr\nG) 950 Btu/hr\nH) 700 Btu/hr\nI) 750 Btu/hr\nJ) 875 Btu/hr\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.6271075010299683,
+      "softmax_neutral": [
+        0.27396300435066223,
+        0.009086073376238346,
+        0.6271075010299683,
+        0.006442992016673088,
+        0.026705458760261536,
+        0.0039694118313491344,
+        0.006858528591692448,
+        0.003671105718240142,
+        0.040641505271196365,
+        0.0015544439665973186
+      ],
+      "logits_neutral": [
+        1.5625,
+        -1.84375,
+        2.390625,
+        -2.1875,
+        -0.765625,
+        -2.671875,
+        -2.125,
+        -2.75,
+        -0.345703125,
+        -3.609375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A stream of air is flowing over a flat plate with a velocity of 33 ft/sec, at atmospheric pressure and 60°F. Calculate the boundary layer thickness on the plate at 4 in. from the leading edge.\nA) 0.150 in\nB) 1.25 in\nC) 0.045 in\nD) 0.5 in\nE) 0.225 in\nF) 68,750 in\nG) 4.64 in\nH) 0.0177 in\nI) 0.0035 in\nJ) 0.0708 in\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.5817935466766357,
+      "softmax_neutral": [
+        0.5817935466766357,
+        0.011080404743552208,
+        0.028074610978364944,
+        0.0061671738512814045,
+        0.23323653638362885,
+        0.0014648321084678173,
+        0.04289235919713974,
+        0.04583737999200821,
+        0.044340431690216064,
+        0.005112766288220882
+      ],
+      "logits_neutral": [
+        2.25,
+        -1.7109375,
+        -0.78125,
+        -2.296875,
+        1.3359375,
+        -3.734375,
+        -0.357421875,
+        -0.291015625,
+        -0.32421875,
+        -2.484375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "The surface of a space ship, at temperature 40°F and emissivity0.1, is exposed to space. Consider the space as a perfectblack body at temperature 0°R,and the space ship as agray infinite cylinder. Calculate the net radiant heat loss persquare foot.\nA) 17.2 Btu/hr-ft^2\nB) 6.5 Btu/hr-ft^2\nC) 14.2 Btu/hr-ft^2\nD) 11.5 Btu/hr-ft^2\nE) 15.4 Btu/hr-ft^2\nF) 9.8 Btu/hr-ft^2\nG) 10.71 Btu/hr-ft^2\nH) 13.7 Btu/hr-ft^2\nI) 12.3 Btu/hr-ft^2\nJ) 8.5 Btu/hr-ft^2\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.7397372722625732,
+      "softmax_neutral": [
+        0.21866591274738312,
+        0.0018336252542212605,
+        0.006500766146928072,
+        0.0024674125015735626,
+        0.0037918630987405777,
+        0.0007293657399713993,
+        0.7397372722625732,
+        0.01257959846407175,
+        0.012050516903400421,
+        0.0016436510486528277
+      ],
+      "logits_neutral": [
+        2.265625,
+        -2.515625,
+        -1.25,
+        -2.21875,
+        -1.7890625,
+        -3.4375,
+        3.484375,
+        -0.58984375,
+        -0.6328125,
+        -2.625
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Water enters a single-pass heat exchanger at 61.4°F and leavesat 69.9°F. The average water velocity through the 0.902 in. diameter tube is 7 ft/sec.Computethe average film heattransfer coefficient on the water side.\nA) 2800 Btu hr^-1 ft^-2 F^-1\nB) 1000 Btu hr^-1ft^-2F^-1\nC) 850 Btu hr^-1 ft^-2 F^-1\nD) 1670 Btu hr^-1ft^-2F^-1\nE) 2150 Btu hr^-1 ft^-2 F^-1\nF) 1267 Btu hr^-1ft^-2F^-1\nG) 1900 Btu hr^-1 ft^-2 F^-1\nH) 1325 Btu hr^-1 ft^-2 F^-1\nI) 1450 Btu hr^-1 ft^-2 F^-1\nJ) 2367 Btu hr^-1ft^-2F^-1\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.7811204791069031,
+      "softmax_neutral": [
+        0.7811204791069031,
+        0.0053460304625332355,
+        0.00975633505731821,
+        0.06493746489286423,
+        0.06436922401189804,
+        0.0031922608613967896,
+        0.023959247395396233,
+        0.0075391121208667755,
+        0.0385870561003685,
+        0.0011928605381399393
+      ],
+      "logits_neutral": [
+        2.734375,
+        -2.25,
+        -1.6484375,
+        0.2470703125,
+        0.23828125,
+        -2.765625,
+        -0.75,
+        -1.90625,
+        -0.2734375,
+        -3.75
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A steel cylinder contains liquid at a mean bulk temperature of 80°F. Steam condensing at 212°F on the outside surface is used for heating the liquid. The coefficient of heat transfer on the steam side is 1,000 Btu/hr-ft^2-°F. The liquid is agitated by the stirring action of a turbine impeller. Its diameter is 2 ft., and it moves at an angular velocity of 100 rpm. The cylinder is 6 ft. long, with a diameter of 6 ft. and a wall thickness of 1/8 in. The thermal conductivity of steel may be taken as 9.4 Btu/hr-ft^2-°F. Properties of the liquid, taken as constant, are: c_p = 0.6 Btu/lbm-°Fk = 0.1 Btu/hr-ft-°F \\rho = 60lbm/ft^3 The viscosity at 130°F is 653.4lbm/ft-hr, and at 212°F is 113.74lbm/ft-hr. Calculate the time required to raise the mean bulk temperature of the liquid to 180°F.\nA) 3.5 hr\nB) 1.92 hr\nC) 4.0 hr\nD) 1.75 hr\nE) 2.0 hr\nF) 3.0 hr\nG) 2.5 hr\nH) 1.5 hr\nI) 2.75 hr\nJ) 2.15 hr\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.5041736960411072,
+      "softmax_neutral": [
+        0.5041736960411072,
+        0.10005632787942886,
+        0.020487111061811447,
+        0.01375439390540123,
+        0.08727068454027176,
+        0.016333745792508125,
+        0.05731741338968277,
+        0.015585770830512047,
+        0.1783696860074997,
+        0.0066511910408735275
+      ],
+      "logits_neutral": [
+        2.234375,
+        0.6171875,
+        -0.96875,
+        -1.3671875,
+        0.48046875,
+        -1.1953125,
+        0.06005859375,
+        -1.2421875,
+        1.1953125,
+        -2.09375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Water at 57°C is flowing at a rate of 12 liters/min through a standard (1/2) in. schedule 40 pipe. Calculate the heat transfer coefficient.\nA) 5422.8 W/m^2-°C\nB) 5622.8 W/m^2-°C\nC) 5322.8 W/m^2-°C\nD) 5822.8 W/m^2-°C\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.7382960319519043,
+      "softmax_neutral": [
+        0.7382960319519043,
+        0.06867223232984543,
+        0.17812220752239227,
+        0.014909537509083748
+      ],
+      "logits_neutral": [
+        3.53125,
+        1.15625,
+        2.109375,
+        -0.37109375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A ventilating duct with non-gray interior surfaces, at temperatureT_w= 600°K, has a uniform thickness of 12 mm andabsorption coefficient 120/m. A vapor at 1100°K is flowingthrough the channel. The black bodyradiosityof the vaporincreases linearly, at each wall over the boundary layerthickness of 2 mm, and reaches a constant value at the outletof the duct. Calculate the resultant radiant heat transferat the wall.\nA) 4.5 × 10^4 W/m^2\nB) 8.0 × 10^3 W/m^2\nC) 1.5 × 10^4 W/m^2\nD) 2.5 × 10^4 W/m^2\nE) 2.0 × 10^4 W/m^2\nF) 3.5 × 10^4 W/m^2\nG) 5.0 × 10^3 W/m^2\nH) 6.0 × 10^4 W/m^2\nI) 1.0 × 10^4 W/m^2\nJ) 7.5 × 10^4 W/m^2\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.7097070813179016,
+      "softmax_neutral": [
+        0.7097070813179016,
+        0.029870864003896713,
+        0.06790927052497864,
+        0.027951680123806,
+        0.04090845212340355,
+        0.0013073174050077796,
+        0.024475309997797012,
+        0.007641565054655075,
+        0.08728242665529251,
+        0.0029460855294018984
+      ],
+      "logits_neutral": [
+        2.59375,
+        -0.57421875,
+        0.2470703125,
+        -0.640625,
+        -0.259765625,
+        -3.703125,
+        -0.7734375,
+        -1.9375,
+        0.498046875,
+        -2.890625
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Steam condenses on the outer surface of a pipe. The coefficient of heat transfer is known to be 10,500 W/m^2-°K and the temperature is 107.8°C. Meanwhile, the interior is cooled by a flow of water, measured at a velocity of 2.44 m/sec and a mean bulk temperature of 65.6°C. It is a 2.54 cm schedule 40 steel pipe, with a length of 0.305 m. Find (a) the coefficient of heat transfer from forced convection of the water, (b) the overall heat transfer coefficient based on the inside surface area, and (c) the rate of heat transfer to the water.\nA) (a) 11,000 W/m^2-°K, (b) 4500 W/m^2-°K, (c) 4800 W\nB) (a) 10,697 W/m^2-°K, (b) 4492 W/m^2-°K, (c) 4834 W\nC) (a) 12,000 W/m^2-°K, (b) 5000 W/m^2-°K, (c) 5000 W\nD) (a) 10,500 W/m^2-°K, (b) 4400 W/m^2-°K, (c) 4700 W\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9552702307701111,
+      "softmax_neutral": [
+        0.04099937155842781,
+        0.9552702307701111,
+        0.0012873930390924215,
+        0.0024430423509329557
+      ],
+      "logits_neutral": [
+        0.3203125,
+        3.46875,
+        -3.140625,
+        -2.5
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "The surface temperature of a long circular duct, 8 in OD, is 115°F and the ambient air temperature is 65°F. Determine the rate of heat loss from the surface of the duct if it is placed horizontally.\nA) 110.75 Btu/hr-ft\nB) 78.50 Btu/hr-ft\nC) 88.47 Btu/hr-ft\nD) 120.32 Btu/hr-ft\nE) 70.15 Btu/hr-ft\nF) 65.20 Btu/hr-ft\nG) 93.64 Btu/hr-ft\nH) 100.22 Btu/hr-ft\nI) 102.90 Btu/hr-ft\nJ) 85.30 Btu/hr-ft\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.35761672258377075,
+      "softmax_neutral": [
+        0.2964746654033661,
+        0.017105886712670326,
+        0.35761672258377075,
+        0.007137761451303959,
+        0.012284865602850914,
+        0.0004671227652579546,
+        0.2873530983924866,
+        0.004608485382050276,
+        0.015620785765349865,
+        0.0013307087356224656
+      ],
+      "logits_neutral": [
+        2.65625,
+        -0.1962890625,
+        2.84375,
+        -1.0703125,
+        -0.52734375,
+        -3.796875,
+        2.625,
+        -1.5078125,
+        -0.287109375,
+        -2.75
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "0.228 era thick circumferential fins with a radial depth of 2.54 cm are welded to a 15.24 cm dia. steel barrel. The fins arespaced at a distance of 0.456 cm apart. The barrel wall temperatureis 393°K, and the ambient air temperature is 293°K.Determine the rate at which heat is rejected from the finnedbarrel. Also, find the rate of heat rejection, assuming thatthe barrel is not finned. The convective heat transfer coefficientis 284 W/m^2 °K, and the thermal conductivity of steelmay be taken as 48 W/m-°K. Table 1: Selected values of the modified Bessel functions of the first and secondkinds,orderszero and one. x I_o(x) I_1(x) (2/\\pi)K_o(x) (2/ \\pi)K_1(x) 0.0 1.000 0.0000 + \\infty + \\infty 02 1.0100 0.1005 1.1158 3.0405 0.4 1.0404 0.2040 0.70953 1.3906 0.6 1.0920 03137 0.49498 0.32941 0.8 1.1665 0.4329 0.35991 0.54862 1.0 1.2661 0.5652 0.26803 0.38318 1.2 1.3937 0.7147 0.20276 0.27667 1.4 1.5534 0.8861 0.15512 0.20425 1.6 1.7500 1.0848 0.11966 0.15319 1.8 1.9896 1.3172 0.92903 × 10^-1 0.11626 2.0 2.2796 1.5906 0.72507 0.89041 × 10^-1 2.2 2.6291 1.9141 0.56830 0.68689 2.4 3.0493 2.2981 0.44702 0.53301 2.6 3.5533 2.7554 0.35268 0.41561 2.8 4.1573 3.3011 0.27896 0.32539 3.0 4.8808 3.9534 0.22116 0.25564 3.2 5.7472 4.7343 0.17568 0.20144 3.4 6.7848 5.6701 0.13979 0.15915 3.6 8.0277 6.7028 0.11141 0.12602 3.8 9.5169 8.1404 0.8891 × 10^-2 0.9999 × 10^-3 4.0 11.3019 9.7595 0.7105 0.7947 4.2 13.4425 11.7056 0.5684 0.6327 4.4 16.0104 14.0462 0.4551 0.5044 4.6 19.0926 16.8626 0.3648 0.4027 4.8 22.7937 20.2528 0.2927 0.3218 5.0 27.2399 24.3356 0.2350 0.2575 5.2 32.5836 29.2543 0.1888 0.2062 5.4 39.0088 35.1821 0.1518 0.1653 5.6 46.7376 42.3283 0.1221 0.1326 5.8 56.0381 50.9462 0.9832 × 10-3 0.1064 6.0 67.2344 61.3419 0.7920 0.8556 × 10^-3 6.2 80.7179 73.8859 0.6382 0.6879 6.4 96.9616 89.0261 0.5146 0.5534 6.6 116.537 107.305 0.4151 0.4455 6.8 140.136 129.378 0.3350 0.3588 7.0 168.593 156.039 0.2704 0.2891 7.2 202.921 188.250 0.2184 0.2331 7.4 244.341 227.175 0.1764 0.1880\nA) 435 W, 90 W\nB) 450 W, 100 W\nC) 430 W, 110 W\nD) 385 W, 85 W\nE) 410 W, 105 W\nF) 414 W, 92.8 W\nG) 400 W, 80 W\nH) 420 W, 95 W\nI) 390 W, 75 W\nJ) 450 W, 120 W\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.5404715538024902,
+      "softmax_neutral": [
+        0.38325172662734985,
+        0.0011639472795650363,
+        0.001518073258921504,
+        0.0013822214677929878,
+        0.003999590408056974,
+        0.5404715538024902,
+        0.02488628961145878,
+        0.0010271798819303513,
+        0.04025660455226898,
+        0.0020427913405001163
+      ],
+      "logits_neutral": [
+        2.1875,
+        -3.609375,
+        -3.34375,
+        -3.4375,
+        -2.375,
+        2.53125,
+        -0.546875,
+        -3.734375,
+        -0.06591796875,
+        -3.046875
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Air at a velocity of 10 ft/sec flows through a wide duct with an innerwall temperature of 1,200°F. A thermocouple of diameter1/25 in and emissivity 0.5, is placed in the duct, normalto the airstream. The thermocouple indicates a temperatureof 1,400°F Find the true value of the air temperature. For calculating theconvectionbetween the thermocoupleand the air, take theNusseltnumber as Nu = 0.8 Re^0.38, andthe diameter of the thermocouple as the characteristic lineardimension. Also, the values of k and \\mu are to be taken atthe mean film temperature. If the air velocity is doubled, whatwould be the approximate reading of the thermocouple ?\nA) 1,522°F and 1,400°F\nB) 1,450°F and 1,400°F\nC) 1,500°F and 1,400°F\nD) 1,550°F and 1,389°F\nE) 1,522°F and 1,380°F\nF) 1,522°F and 1,419°F\nG) 1,500°F and 1,419°F\nH) 1,600°F and 1,450°F\nI) 1,570°F and 1,460°F\nJ) 1,480°F and 1,430°F\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.46408939361572266,
+      "softmax_neutral": [
+        0.46408939361572266,
+        0.005319222807884216,
+        0.007385009899735451,
+        0.01968626119196415,
+        0.3140186071395874,
+        0.04586140811443329,
+        0.04135148599743843,
+        0.0012634261511266232,
+        0.09804138541221619,
+        0.0029838134068995714
+      ],
+      "logits_neutral": [
+        2.65625,
+        -1.8125,
+        -1.484375,
+        -0.50390625,
+        2.265625,
+        0.341796875,
+        0.23828125,
+        -3.25,
+        1.1015625,
+        -2.390625
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A thick brick wall has a surface which experiences a daily temperature variation from 50°F to 130°F. The properties of the brick are: k = 0.4 Btu/hr. ft.^2(°F/ft) C_p = 0.3 Btu/lb. °F \\rho = 120 lb/ft^3 \\alpha = (k / c\\rho) = 0.01111 ft^2/hr Assume the variation to be cosine in nature, and the cement between the bricks has the same properties as of the bricks. Find (a) the temperature lag at a point 4 in. below the surface; (b) the amplitude at this depth; (c) the temperature deviation from the mean after 3 hours; (d) the heat flow during the half period.\nA) (a) 6.37 hrs, (b) 11.74°F, (c) 13.84°F, (d) 700 Btu/hrft^2\nB) (a) 7.37 hrs, (b) 6.50°F, (c) 5.50°F, (d) 530 Btu/hrft^2\nC) (a) 4.00 hrs, (b) 8.50°F, (c) 9.50°F, (d) 550 Btu/hrft^2\nD) (a) 4.37 hrs, (b) 12.74°F, (c) 11.84°F, (d) 594 Btu/hrft^2\nE) (a) 5.37 hrs, (b) 10.74°F, (c) 10.84°F, (d) 500 Btu/hrft^2\nF) (a) 3.00 hrs, (b) 13.74°F, (c) 14.84°F, (d) 620 Btu/hrft^2\nG) (a) 6.00 hrs, (b) 7.74°F, (c) 6.84°F, (d) 560 Btu/hrft^2\nH) (a) 2.37 hrs, (b) 14.50°F, (c) 13.00°F, (d) 600 Btu/hrft^2\nI) (a) 3.37 hrs, (b) 15.74°F, (c) 12.84°F, (d) 650 Btu/hrft^2\nJ) (a) 5.00 hrs, (b) 9.74°F, (c) 8.84°F, (d) 580 Btu/hrft^2\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.8854057788848877,
+      "softmax_neutral": [
+        0.8854057788848877,
+        0.020976459607481956,
+        0.00483126612380147,
+        0.008446079678833485,
+        0.02119200862944126,
+        0.0005212873220443726,
+        0.005648322403430939,
+        0.0003696480707731098,
+        0.04860382899641991,
+        0.0040052602998912334
+      ],
+      "logits_neutral": [
+        3.75,
+        0.007354736328125,
+        -1.4609375,
+        -0.90234375,
+        0.017578125,
+        -3.6875,
+        -1.3046875,
+        -4.03125,
+        0.84765625,
+        -1.6484375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "On a pipe, heat transfer is accomplished through a straight fin extending into an air stream. The fin may be idealized as a flat square plate with a 5.1 cm side. The flow is measured at 12.2m/s, and is at a temperature and pressure of 15.6°C and 1atmabs., respectively. If the plate surface temperature is 82.2°C, calculate the heat transfer coefficient assuming (a) laminar flow, and (b) a rough leading edge, making the adjacent boundary layer completely turbulent.\nA) 60.67 W/m -°K for laminar flow, 77.18 W/m^2-°K for turbulent flow\nB) 70.67 W/m -°K for laminar flow, 65.18 W/m^2-°K for turbulent flow\nC) 50.67 W/m -°K for laminar flow, 85.18 W/m^2-°K for turbulent flow\nD) 45.67 W/m -°K for laminar flow, 90.18 W/m^2-°K for turbulent flow\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9906043410301208,
+      "softmax_neutral": [
+        0.9906043410301208,
+        0.0022010623943060637,
+        0.005077797453850508,
+        0.002116741146892309
+      ],
+      "logits_neutral": [
+        4.5625,
+        -1.546875,
+        -0.7109375,
+        -1.5859375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A 3.5m × 2m vertical plate is subjected to a constant heat flux of 800 W/m^2. The back of the plate is insulated and the ambient air temperature is 30°C. Determine the average surface temperature of the plate, assuming that all the incident radiation is lost by free convection to the surrounding air. Physical Properties of Air at Atmopheric Pressure (SI Units) T (°C) T (K) \\rho (kg/m^3) C_p (kJ/kg\\bulletK) \\mu × 105 (Pa\\bullets,or kg/m\\bullets) k (W/m\\bulletk) Pr \\beta×10^3 (1/K) g\\beta\\rho^2/\\mu^2 (1/K\\bulletm^3) - 17.8 255.4 1.379 1.0048 1.62 0.02250 0.720 3.92 2.79 × 10^8 0 273.2 1.293 1.0048 1.72 0.02423 0.715 3.65 2.04 × 10^8 10.0 283.2 1.246 1.0048 1.78 0.02492 0.713 3.53 1.72 × 10^8 37.8 311.0 1.137 1.0048 1.90 0.02700 0.705 3.22 1.12 × 108 65.6 338.8 1.043 1.0090 2.03 0.02925 0.702 2.95 0.775 × 10^8 93.3 366.5 0.964 1.0090 2.15 0.03115 0.694 2.74 0.534 × 10^8 121.1 394.3 0.895 1.0132 2.27 0.03323 0.692 2.54 0.386 × 10^8 148.9 422.1 0.838 1.0174 2.37 0.03531 0.689 2.38 0.289 × 10^8 176.7 449.9 0.785 1.0216 2.50 0.03721 0.687 2.21 0.214 × 10^8 204.4 477.6 0.740 1.0258 2.60 0.03894 0.686 2.09 0.168 × 10^8 232.2 505.4 0.700 1.0300 2.71 0.04084 0.684 1.98 0.130 × 10^8 260.0 533.2 0.662 1.0341 2.80 0.04258 0.680 1.87 1.104 × 10^8\nA) 185°C\nB) 80°C\nC) 104°C\nD) 70°C\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.6946548819541931,
+      "softmax_neutral": [
+        0.6946548819541931,
+        0.007838442921638489,
+        0.2941353917121887,
+        0.0033712720032781363
+      ],
+      "logits_neutral": [
+        3.359375,
+        -1.125,
+        2.5,
+        -1.96875
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Compute the surface temperature of a 1/12 in. diameter resistance wire generating heat at the rate of 236.77 Btu/hr per foot length. The ambient air temperature is 66°F. Neglect the radiation heat loss.\nA) 550°F\nB) 650°F\nC) 1700°F\nD) 229.77 Btu/hr per ft. length\nE) 1200°F\nF) 883°F\nG) 450°F\nH) 325°F\nI) 236.77 Btu/hr per foot length\nJ) 750°F\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.5023291110992432,
+      "softmax_neutral": [
+        0.5023291110992432,
+        0.031003475189208984,
+        0.005324828904122114,
+        0.0030339958611875772,
+        0.009717642329633236,
+        0.3912142813205719,
+        0.0255027636885643,
+        0.005408682860434055,
+        0.02500949427485466,
+        0.0014557269169017673
+      ],
+      "logits_neutral": [
+        2.09375,
+        -0.69140625,
+        -2.453125,
+        -3.015625,
+        -1.8515625,
+        1.84375,
+        -0.88671875,
+        -2.4375,
+        -0.90625,
+        -3.75
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Water film boiling occurs on top of a horizontal plate. The wateris at a pressure of 1 atm. and the surface temperature ofthe plate is 554°C. Calculate the heat flux given off by waterassuming a characteristic length (L_c) of 1 cm.\nA) 70,830 W/m^2 or 7.083 W/cm^2\nB) 65,830 W/m^2 or 6.583 W/cm^2\nC) 45,830 W/m^2 or 4.583 W/cm^2\nD) 80,000 W/m^2 or 8.000 W/cm^2\nE) 40,000 W/m^2 or 4.000 W/cm^2\nF) 48,500 W/m^2 or 4.850 W/cm^2\nG) 75,000 W/m^2 or 7.500 W/cm^2\nH) 68,500 W/m^2 or 6.850 W/cm^2\nI) 52,000 W/m^2 or 5.200 W/cm^2\nJ) 59,830 W/m^2 or 5.983 W/cm^2\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9084883332252502,
+      "softmax_neutral": [
+        0.9084883332252502,
+        0.00259194104000926,
+        0.002551756566390395,
+        0.002251917263492942,
+        0.002653407398611307,
+        0.0004101046361029148,
+        0.0684322714805603,
+        0.001956499880179763,
+        0.009781884029507637,
+        0.0008818635833449662
+      ],
+      "logits_neutral": [
+        3.859375,
+        -2.0,
+        -2.015625,
+        -2.140625,
+        -1.9765625,
+        -3.84375,
+        1.2734375,
+        -2.28125,
+        -0.671875,
+        -3.078125
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Air flows through a tube, and heat is transferred by means of forced convection. The tube is 1 ft. long, with an internal diameter of 2 in. The wall surface temperature is constant at 80°F, and the pressure drop over the length is 0.02 in. of water. The air flow velocity is 20 ft/sec, and the entrance temperature is 300°F. Calculate the exit temperature, given the density of air to be 0.08lbm/ft^3.\nA) 260°F\nB) 280°F\nC) 295°F\nD) 265°F\nE) 270°F\nF) 290°F\nG) 285°F\nH) 275°F\nI) 278°F\nJ) 282°F\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.35398411750793457,
+      "softmax_neutral": [
+        0.35398411750793457,
+        0.030795158818364143,
+        0.023761821910738945,
+        0.005169053561985493,
+        0.029284682124853134,
+        0.007462400011718273,
+        0.12138163298368454,
+        0.0783698707818985,
+        0.32738181948661804,
+        0.022409530356526375
+      ],
+      "logits_neutral": [
+        2.328125,
+        -0.11376953125,
+        -0.373046875,
+        -1.8984375,
+        -0.1640625,
+        -1.53125,
+        1.2578125,
+        0.8203125,
+        2.25,
+        -0.431640625
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Water cools the inside of a pipe, with the transfer of heat accomplished by the mechanism of forced convection. The mass flow rate is 200 lbm/hr. The pipe is 10 ft. long and has a 4 in. internal diameter. If the water has an entrance temperature of 40°F and an exit temperature of 100°F, what is the temperature of the inside wall surface?\nA) 191.2°F\nB) 210°F\nC) 187.3°F\nD) 185°F\nE) 200°F\nF) 175°F\nG) 195.7°F\nH) 190.2°F\nI) 180.5°F\nJ) 205°F\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.6164742708206177,
+      "softmax_neutral": [
+        0.6164742708206177,
+        0.004670210648328066,
+        0.048474982380867004,
+        0.0022583662066608667,
+        0.010361314751207829,
+        0.000553436460904777,
+        0.2735588252544403,
+        0.021914159879088402,
+        0.021275615319609642,
+        0.00045881487312726676
+      ],
+      "logits_neutral": [
+        3.34375,
+        -1.5390625,
+        0.80078125,
+        -2.265625,
+        -0.7421875,
+        -3.671875,
+        2.53125,
+        0.006866455078125,
+        -0.022705078125,
+        -3.859375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A pipe is cooled internally by forced convection from the flow of a non-Newtonian fluid. The pipe is 5 ft. long, with a diameter of 1 in. The flow is measured at 600Ibm/hr, and the wall surface temperature is 200°F. Assume it is a laminar flow of a power-law fluid. Physical and flow properties are: \\rho = 65lbm/ft^3c_p = 0.5 Btu/lbm-°F k = 0.7 Btu/hr-ft-°F n = n' = 0.4 (constant) K = 94 lbm-sec^n-2/ft at 100°F = 42 lbm-sec^n-2/ft at 200°F A plot of log K vs. T°F is a straight line. If the fluid enters the section at 100°F, at what temperature does it leave?\nA) 140°F\nB) 170°F\nC) 120°F\nD) 160°F\nE) 115°F\nF) 110°F\nG) 200°F\nH) 100°F\nI) 150°F\nJ) 130°F\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.6432636976242065,
+      "softmax_neutral": [
+        0.6432636976242065,
+        0.026602573692798615,
+        0.010276256129145622,
+        0.02639554813504219,
+        0.023248540237545967,
+        0.0016451057745143771,
+        0.0490252785384655,
+        0.010236193425953388,
+        0.20559944212436676,
+        0.0037073034327477217
+      ],
+      "logits_neutral": [
+        3.390625,
+        0.205078125,
+        -0.74609375,
+        0.197265625,
+        0.0703125,
+        -2.578125,
+        0.81640625,
+        -0.75,
+        2.25,
+        -1.765625
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Air flows through a pipe 5 ft. long with an internal diameter of 0.5 in. The air is flowing at a uniform speed of 80 ft/sec. The wall surface temperature is maintained at 210°F. If air enters at a temperature of 60°F and at atmospheric pressure, calculate the coefficient of heat transfer.\nA) 20.4 Btu/hr-ft^2-°F\nB) 17.1 Btu/hr-ft^2-°F\nC) 15.2 Btu/hr-ft^2-°F\nD) 18.6 Btu/hr-ft^2-°F\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.5041672587394714,
+      "softmax_neutral": [
+        0.5041672587394714,
+        0.47362130880355835,
+        0.008880390785634518,
+        0.013331045396625996
+      ],
+      "logits_neutral": [
+        2.421875,
+        2.359375,
+        -1.6171875,
+        -1.2109375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Air flows through a pipe, and cooling is achieved by means of forced convection. Air flowing at a speed of 100 ft/sec enters the pipe at a temperature and pressure of 68°F and 14.2 psi, respectively. The pipe is 3 ft. in length, with a 0.8 in. diameter. The wall surface temperature is 200°F. If the pressure drop over the length is 3.2 in. of water, calculate the heat transferred from the pipe to the air.\nA) 1750 Btu/hr\nB) 1650 Btu/hr\nC) 1571.56 Btu/hr\nD) 1500 Btu/hr\nE) 1600 Btu/hr\nF) 1432.22 Btu/hr\nG) 1325 Btu/hr\nH) 1725 Btu/hr\nI) 1890 Btu/hr\nJ) 1475.78 Btu/hr\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.8580188155174255,
+      "softmax_neutral": [
+        0.08562168478965759,
+        0.002907012589275837,
+        0.8580188155174255,
+        0.0020775485318154097,
+        0.003617835696786642,
+        0.001193035626783967,
+        0.0092384684830904,
+        0.0019516762113198638,
+        0.02823503501713276,
+        0.007138934917747974
+      ],
+      "logits_neutral": [
+        1.7890625,
+        -1.59375,
+        4.09375,
+        -1.9296875,
+        -1.375,
+        -2.484375,
+        -0.4375,
+        -1.9921875,
+        0.6796875,
+        -0.6953125
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Hydrogen gas is to be heated by means of forced convection in a pipe. This experiment will first be modeled on a smaller scale, using air as the flow component. The prototype specifications are: G_H = 4210lbm/ft^2-hrd_iH= 0.1727 ft L_H = 18.5 ft\\mu_H= 0.0242lbm/ft-hr C_pH= 3.4 Btu/lbm-°F while the model will use d_iA= 0.0358 ft\\mu_A= 0.047lbm/ft-hr C_pA= 0.24 Btu/lbm-°F Using appropriate relations of similitude, find the required values of L_A, G_A and the ratio (h_H/h_A).\nA) L_A = 5.84 ft, G_A = 59,444lbm/ft^2-hr, h_H/h_A = 3.01\nB) L_A = 3.34 ft, G_A = 34,444lbm/ft^2-hr, h_H/h_A = 1.01\nC) L_A = 4.22 ft, G_A = 42,222lbm/ft^2-hr, h_H/h_A = 2.21\nD) L_A = 2.84 ft, G_A = 29,444lbm/ft^2-hr, h_H/h_A = 0.51\nE) L_A = 7.00 ft, G_A = 70,000lbm/ft^2-hr, h_H/h_A = 4.00\nF) L_A = 3.14 ft, G_A = 31,415lbm/ft^2-hr, h_H/h_A = 1.11\nG) L_A = 3.84 ft, G_A = 39,444lbm/ft^2-hr, h_H/h_A = 1.51\nH) L_A = 4.84 ft, G_A = 49,444lbm/ft^2-hr, h_H/h_A = 2.51\nI) L_A = 6.28 ft, G_A = 62,832lbm/ft^2-hr, h_H/h_A = 3.14\nJ) L_A = 2.50 ft, G_A = 25,000lbm/ft^2-hr, h_H/h_A = 0.91\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9550972580909729,
+      "softmax_neutral": [
+        0.9550972580909729,
+        0.004122668877243996,
+        0.003812845330685377,
+        0.0019022992346435785,
+        0.0018728065770119429,
+        0.00041140103712677956,
+        0.002189532620832324,
+        0.0002963210572488606,
+        0.029410285875201225,
+        0.0008846511482261121
+      ],
+      "logits_neutral": [
+        4.09375,
+        -1.3515625,
+        -1.4296875,
+        -2.125,
+        -2.140625,
+        -3.65625,
+        -1.984375,
+        -3.984375,
+        0.61328125,
+        -2.890625
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "What is Newton's Law of cooling as applied to convective heattransfer?\nA) q = hA\\DeltaT\nB) q = h^2A\\DeltaT\nC) q = hA(T^2 - T_0^2)\nD) q = h\\DeltaT / A\nE) q = hA/T\nF) q = hA\\DeltaT / k\nG) q = h/A\\DeltaT\nH) q = \\DeltaT / hA\nI) q = hA\\DeltaT^2\nJ) q = kA\\DeltaT\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9911988377571106,
+      "softmax_neutral": [
+        0.9911988377571106,
+        0.0006409300840459764,
+        0.00011137694673379883,
+        0.00031236439826898277,
+        0.000726268975995481,
+        0.00011491243640193716,
+        0.00012232364679221064,
+        4.7902631195029244e-05,
+        0.00667864503338933,
+        4.642882413463667e-05
+      ],
+      "logits_neutral": [
+        4.1875,
+        -3.15625,
+        -4.90625,
+        -3.875,
+        -3.03125,
+        -4.875,
+        -4.8125,
+        -5.75,
+        -0.8125,
+        -5.78125
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "From economy considerations, suggest the use of either aluminium alloy or copper alloy fins. The following data is given: Density of the aluminium alloy = 2400 kg/m^3 Density of the copper allow = 8400 kg/m^3 Conductivity of the aluminium alloy = 78 kCal/m-hr°C Conductivity of the copper alloy = 190 kCal/m-hr°C The cost of aluminium alloy is twice the cost of copper alloy.\nA) copper alloy for the core structure, with aluminium alloy as a decorative finish\nB) aluminium alloy for low-temperature applications, copper alloy for high-temperature applications\nC) copper alloy\nD) aluminium alloy, but with increased thickness to match copper alloy performance\nE) a composite material that blends both aluminium and copper alloys\nF) equal amount of both alloys\nG) copper alloy with a coating of aluminium for enhanced conductivity\nH) alternating layers of aluminium and copper alloys\nI) neither alloy\nJ) aluminium alloy\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.9620126485824585,
+      "softmax_neutral": [
+        0.021336810663342476,
+        0.0012763795675709844,
+        0.002898924984037876,
+        0.002403293503448367,
+        0.0011990476632490754,
+        0.00011152880324516445,
+        0.0009634618763811886,
+        0.00013039038458373398,
+        0.007667544297873974,
+        0.9620126485824585
+      ],
+      "logits_neutral": [
+        0.50390625,
+        -2.3125,
+        -1.4921875,
+        -1.6796875,
+        -2.375,
+        -4.75,
+        -2.59375,
+        -4.59375,
+        -0.51953125,
+        4.3125
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Consider an example of forced convection within a pipe. The local heat transfer coefficient is valid at the point it is evaluated at, and in its immediate vicinity. When the length of pipe as a whole is of concern, the average heat transfer coefficient applies. The average temperature difference is defined as (T_s - T)_av= [{(T_s - T_in) + (T_s - T_out)} / 2] where T_s = wall surface temperature T_in = bulk fluid temperature at entrance T_out = bulk fluid temperature at exit. Derive the average heat transfer coefficienth_avin terms of the local coefficienth_x.\nA) h_av= [{^L\\int_0h_x(T_s - T)dx} / 2\\piR^ L]\nB) h_av= [{^L\\int_0h_x(T_s - T)dx} / (T_s -T_av)]\nC) h_av= [{^L\\int_0h_xdx} / (T_s - T_av)]\nD) h_av= [{^L\\int_0h_x(T_s - T)^2dx} / (T_s - T_av)]\nE) h_av= [{^L\\int_0h_x(T_s - T)dx} / (T_s + T_av)]\nF) h_av= [{^L\\int_0h_x(T_s - T)dx} / (T_in - T_out)]\nG) h_av= [{^L\\int_0(h_x + T)dx} / (T_s - T_av)]\nH) h_av= [{^L\\int_0h_x(T_s - T)dx} / {(T_s - T_in) + (T_s - T_out)}]\nI) h_av= [{^L\\int_0h_x(T_s + T)dx} / (T_s -T_av)]\nJ) h_av= [{^L\\int_0h_x(T_s - T)dx} / L]\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.5657891631126404,
+      "softmax_neutral": [
+        0.5657891631126404,
+        0.07657123357057571,
+        0.005634150933474302,
+        0.00839204341173172,
+        0.00770097179338336,
+        0.0045271678827703,
+        0.011470562778413296,
+        0.26106879115104675,
+        0.04328945651650429,
+        0.015556390397250652
+      ],
+      "logits_neutral": [
+        2.25,
+        0.25,
+        -2.359375,
+        -1.9609375,
+        -2.046875,
+        -2.578125,
+        -1.6484375,
+        1.4765625,
+        -0.3203125,
+        -1.34375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "Air is flowing perpendicularly to a pipe, transferring heat by forced convection. The pipe has a diameter 4 in. and a surface temperature of 90°F. The cooling air with flow velocity of 15 ft/sec, has a bulk temperature of 75°F. Calculate the rate of heat transfer per unit length of pipe.\nA) 78 Btu/hr-ft\nB) 80 Btu/hr-ft\nC) 71 Btu/hr-ft\nD) 65 Btu/hr-ft\nE) 60 Btu/hr-ft\nF) 92 Btu/hr-ft\nG) 85 Btu/hr-ft\nH) 95 Btu/hr-ft\nI) 75 Btu/hr-ft\nJ) 68 Btu/hr-ft\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.468887597322464,
+      "softmax_neutral": [
+        0.468887597322464,
+        0.030986951664090157,
+        0.3027365803718567,
+        0.007461362984031439,
+        0.012791750952601433,
+        0.0025386009365320206,
+        0.0956331342458725,
+        0.005544813349843025,
+        0.06345703452825546,
+        0.009962226264178753
+      ],
+      "logits_neutral": [
+        2.515625,
+        -0.201171875,
+        2.078125,
+        -1.625,
+        -1.0859375,
+        -2.703125,
+        0.92578125,
+        -1.921875,
+        0.515625,
+        -1.3359375
+      ]
+    },
+    {
+      "task": "HeatTransfer",
+      "category": "engineering",
+      "text": "A flat plate loses heat to the atmosphere by forced convection. Air at 70°F flows over the plate at the rate of 50 ft/sec. The plate is initially at 212°F. Find (a) the length of the laminar boundary layer thickness on the plate; (b) the local coefficient of heat transfer; (c) the thickness of the velocity boundary layer; and (d) the thickness of the thermal boundary layer. Also find (e) the average coefficient of heat transfer over the laminar region.\nA) (a) 2.1 ft, (b) 1.64 Btu/hr-ft^2-°F, (c) 0.0148 ft, (d) 0.0165 ft, (e) 3.28 Btu/hr-ft^2-°F\nB) (a) 1.9 ft, (b) 1.5 Btu/hr-ft^2-°F, (c) 0.015 ft, (d) 0.017 ft, (e) 3.5 Btu/hr-ft^2-°F\nC) (a) 2.6 ft, (b) 1.9 Btu/hr-ft^2-°F, (c) 0.019 ft, (d) 0.021 ft, (e) 3.80 Btu/hr-ft^2-°F\nD) (a) 1.7 ft, (b) 1.60 Btu/hr-ft^2-°F, (c) 0.012 ft, (d) 0.014 ft, (e) 3.30 Btu/hr-ft^2-°F\nE) (a) 2.2 ft, (b) 1.7 Btu/hr-ft^2-°F, (c) 0.017 ft, (d) 0.019 ft, (e) 3.6 Btu/hr-ft^2-°F\nF) (a) 2.4 ft, (b) 1.85 Btu/hr-ft^2-°F, (c) 0.020 ft, (d) 0.022 ft, (e) 3.75 Btu/hr-ft^2-°F\nG) (a) 2.0 ft, (b) 1.70 Btu/hr-ft^2-°F, (c) 0.016 ft, (d) 0.018 ft, (e) 3.40 Btu/hr-ft^2-°F\nH) (a) 2.3 ft, (b) 1.72 Btu/hr-ft^2-°F, (c) 0.018 ft, (d) 0.020 ft, (e) 3.60 Btu/hr-ft^2-°F\nI) (a) 2.5 ft, (b) 1.8 Btu/hr-ft^2-°F, (c) 0.016 ft, (d) 0.018 ft, (e) 3.7 Btu/hr-ft^2-°F\nJ) (a) 1.8 ft, (b) 1.55 Btu/hr-ft^2-°F, (c) 0.013 ft, (d) 0.015 ft, (e) 3.45 Btu/hr-ft^2-°F\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.88149493932724,
+      "softmax_neutral": [
+        0.88149493932724,
+        0.00603299867361784,
+        0.0038049649447202682,
+        0.002594760386273265,
+        0.00466194050386548,
+        0.0004952186718583107,
+        0.06904400885105133,
+        0.0017016854835674167,
+        0.029121099039912224,
+        0.0010483779478818178
+      ],
+      "logits_neutral": [
+        3.703125,
+        -1.28125,
+        -1.7421875,
+        -2.125,
+        -1.5390625,
+        -3.78125,
+        1.15625,
+        -2.546875,
+        0.29296875,
+        -3.03125
+      ]
+    }
+  ],
+  "accuracy": {
+    "neutral": {
+      "correct": 23,
+      "E_count": 0,
+      "invalid": 43,
+      "total": 66,
+      "accuracy_percentage": 34.85
+    }
+  },
+  "template": [
+    "Would you answer the following question with A, B, C, D, E, F, G, H, I, J?\nQuestion: {context}\nYour answer among \"A, B, C, D, E, F, G, H, I, J\" is: "
+  ]
+}

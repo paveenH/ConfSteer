@@ -1,0 +1,10 @@
+model,size,alpha,start,end,TOP,task,role,correct,E_count,invalid,total,accuracy_percentage,suite,refusal_enabled,refusal_label
+qwen3,8B,4,17,26,20,GPQA (gpqa_diamond),non expert,65,0,133,198,32.83,default,0,
+qwen3,8B,4,17,26,20,GPQA (gpqa_diamond),expert,70,0,128,198,35.35,default,0,
+qwen3,8B,4,17,26,20,GPQA (gpqa_diamond),neutral,68,0,130,198,34.34,default,0,
+qwen3,8B,4,17,26,20,GPQA (gpqa_extended),non expert,181,0,365,546,33.15,default,0,
+qwen3,8B,4,17,26,20,GPQA (gpqa_extended),expert,185,0,361,546,33.88,default,0,
+qwen3,8B,4,17,26,20,GPQA (gpqa_extended),neutral,185,0,361,546,33.88,default,0,
+qwen3,8B,4,17,26,20,GPQA (gpqa_main),non expert,148,0,300,448,33.04,default,0,
+qwen3,8B,4,17,26,20,GPQA (gpqa_main),expert,163,0,285,448,36.38,default,0,
+qwen3,8B,4,17,26,20,GPQA (gpqa_main),neutral,162,0,286,448,36.16,default,0,

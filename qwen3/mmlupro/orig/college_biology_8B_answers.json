@@ -1,0 +1,2406 @@
+{
+  "data": [
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "A frameshift mutation is created when\nA) a base pair is moved from one location in a gene to another\nB) a codon's nucleotide sequence changes so that it calls for production of a different amino acid than the original one\nC) telomeric sequences are removed from DNA\nD) a base pair is either inserted or deleted in a gene\nE) a large portion of a chromosome is deleted\nF) a gene is duplicated within the DNA sequence\nG) a codon's nucleotide sequence is changed so that it no longer codes for any amino acid\nH) a base pair is replaced with a different base pair in a gene\nI) a codon's nucleotide sequence is changed so that it codes for the same amino acid\nJ) a codon's nucleotide sequence is changed so that instead of coding for a given amino acid it acts to terminate translation\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9761557579040527,
+      "softmax_neutral": [
+        0.00793372094631195,
+        0.0008936226950027049,
+        0.0004204717988613993,
+        0.9761557579040527,
+        0.0016436236910521984,
+        0.0007437387830577791,
+        0.003493170253932476,
+        0.00015228477423079312,
+        0.004945439286530018,
+        0.0036181609611958265
+      ],
+      "logits_neutral": [
+        1.4375,
+        -0.74609375,
+        -1.5,
+        6.25,
+        -0.13671875,
+        -0.9296875,
+        0.6171875,
+        -2.515625,
+        0.96484375,
+        0.65234375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Cell motility, as viewed in a cultured fibroblast, encompasses all of the following EXCEPT\nA) adhesion plaques\nB) vinculin\nC) clathrin\nD) lamellipodia\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.6567561626434326,
+      "softmax_neutral": [
+        0.07602503895759583,
+        0.05064360052347183,
+        0.6567561626434326,
+        0.21657519042491913
+      ],
+      "logits_neutral": [
+        2.9375,
+        2.53125,
+        5.09375,
+        3.984375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Mouse sperm contain receptor proteins that bind to a glycoprotein (ZP3) in the zona pellucida of mouse eggs. Binding of ZP3 receptors to ZP3 initiates the sperm’s acrosomal reaction. All of the following experimental observations would be expected EXCEPT:\nA) Injecting eggs with antibodies that bind to ZP3 blocks in vitro fertilization.\nB) Incubating sperm with purified ZP3 prior to mixing sperm and eggs blocks in vitro fertilization.\nC) Incubating eggs with antibodies that bind to ZP3 blocks in vitro fertilization.\nD) Coating synthetic beads with a different glycoprotein, ZP2, fails to lead to sperm aggregation on the beads.\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.8941059708595276,
+      "softmax_neutral": [
+        0.01520471554249525,
+        0.01729663275182247,
+        0.07339269667863846,
+        0.8941059708595276
+      ],
+      "logits_neutral": [
+        0.61328125,
+        0.7421875,
+        2.1875,
+        4.6875
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Cancer cells grown in culture are similar to normal cells grown in culture in that they\nA) do not have the ability to metastasize\nB) divide an indefinite number of times\nC) undergo programmed cell death\nD) can grow without a nutrient supply\nE) do not require oxygen to survive\nF) proliferate to the same cell density\nG) are able to repair DNA damage efficiently\nH) are not susceptible to mutations\nI) require a surface for attachment in order to grow\nJ) do not display contact inhibition\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.7081795930862427,
+      "softmax_neutral": [
+        0.00749957375228405,
+        0.004310850519686937,
+        0.006551832426339388,
+        0.002408740110695362,
+        0.005783913191407919,
+        0.021721936762332916,
+        0.02330423705279827,
+        0.0008555143722333014,
+        0.7081795930862427,
+        0.21938379108905792
+      ],
+      "logits_neutral": [
+        0.1396484375,
+        -0.4140625,
+        0.004547119140625,
+        -0.99609375,
+        -0.1201171875,
+        1.203125,
+        1.2734375,
+        -2.03125,
+        4.6875,
+        3.515625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Which of the following is a second messenger that stimulates release of calcium ions into the cytoplasm?\nA) Adenosine triphosphate\nB) Nitric oxide\nC) Guanosine triphosphate\nD) Cyclic GMP\nE) Prostaglandins\nF) Cyclic AMP\nG) Calmodulin\nH) Diacylglycerol\nI) Inositol triphosphate\n",
+      "label": 8,
+      "num_options": 9,
+      "answer_neutral": "I",
+      "prob_neutral": 0.9553371071815491,
+      "softmax_neutral": [
+        0.003989032469689846,
+        0.001200066413730383,
+        0.0006373503711074591,
+        0.0009794655488803983,
+        0.002025495283305645,
+        0.0202975831925869,
+        0.013787783682346344,
+        0.0017460861708968878,
+        0.9553371071815491
+      ],
+      "logits_neutral": [
+        -0.322265625,
+        -1.5234375,
+        -2.15625,
+        -1.7265625,
+        -1.0,
+        1.3046875,
+        0.91796875,
+        -1.1484375,
+        5.15625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "In one taxonomic classification, Archaea, Eukarya, and Bacteria represent the three major domains of life. Eukarya utilize the general transcription factors TBP (TATA-binding protein) and TFIIB in transcription, whereas Bacteria do not. At least one member of Archaea has a protein similar to TBP and a protein similar to TFIIB. Based on this observation, which of the following scenarios is most likely?\nA) Bacteria, Archaea and Eukarya have always been separate and did not diverge from a common ancestor.\nB) Bacteria and Archaea diverged simultaneously from Eukarya.\nC) Archaea and Eukarya diverged after their common ancestor diverged from Bacteria.\nD) Archaea and Bacteria diverged from Eukarya simultaneously.\nE) Bacteria and Eukarya diverged from Archaea simultaneously.\nF) Eukarya and Bacteria diverged after their common ancestor diverged from Archaea.\nG) Archaea and Bacteria diverged after their common ancestor diverged from Eukarya.\nH) Archaea and Eukarya diverged simultaneously from Bacteria.\nI) Bacteria and Eukarya diverged after their common ancestor diverged from Archaea.\nJ) Archaea, Eukarya, and Bacteria diverged simultaneously from a common ancestor.\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.9234535694122314,
+      "softmax_neutral": [
+        0.0006282304530031979,
+        0.0009394089574925601,
+        0.0021005161106586456,
+        0.000512746802996844,
+        0.0005331722786650062,
+        0.026608895510435104,
+        0.03311530128121376,
+        0.00048356628394685686,
+        0.011624564416706562,
+        0.9234535694122314
+      ],
+      "logits_neutral": [
+        -0.63671875,
+        -0.234375,
+        0.5703125,
+        -0.83984375,
+        -0.80078125,
+        3.109375,
+        3.328125,
+        -0.8984375,
+        2.28125,
+        6.65625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "A rise in intracellular free calcium in the sea urchin oocyte causes the release of proteolytic enzymes which act to prevent polyspermy. The events just described entail the\nA) polyspermy reaction\nB) enzymatic reaction\nC) proteolytic reaction\nD) acrosomal reaction\nE) oocyte reaction\nF) fertilization reaction\nG) calcium reaction\nH) cortical reaction\nI) zona reaction\nJ) intracellular reaction\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.37510204315185547,
+      "softmax_neutral": [
+        0.05036948248744011,
+        0.007846052758395672,
+        0.0029780257027596235,
+        0.003823861014097929,
+        0.008718780241906643,
+        0.06518296152353287,
+        0.37510204315185547,
+        0.2921297550201416,
+        0.09049757570028305,
+        0.10335148125886917
+      ],
+      "logits_neutral": [
+        1.0859375,
+        -0.7734375,
+        -1.7421875,
+        -1.4921875,
+        -0.66796875,
+        1.34375,
+        3.09375,
+        2.84375,
+        1.671875,
+        1.8046875
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "The members of a bird species capable of nesting in treetops or on the ledges of nearby cliffs make their homes only in the treetops due to the established presence of a more aggressive bird species on the cliff ledges. With respect to habitat, the treetop-nesting birds are utilizing\nA) their potential niche only\nB) their ecological niche only\nC) their primary habitat only\nD) both their fundamental niche and their realistic niche\nE) their realistic niche only\nF) their fundamental niche only\nG) their secondary habitat only\nH) their dominant niche only\nI) their survival niche only\nJ) neither their fundamental niche nor their realistic niche\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.4401519298553467,
+      "softmax_neutral": [
+        0.0046023777686059475,
+        0.0022872593253850937,
+        0.0012905759504064918,
+        0.4401519298553467,
+        0.18348261713981628,
+        0.30251169204711914,
+        0.007283105980604887,
+        0.00021483605087269098,
+        0.027272257953882217,
+        0.030903516337275505
+      ],
+      "logits_neutral": [
+        0.408203125,
+        -0.291015625,
+        -0.86328125,
+        4.96875,
+        4.09375,
+        4.59375,
+        0.8671875,
+        -2.65625,
+        2.1875,
+        2.3125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "A DNA strand with the sequence 5′ CGA TTG 3′ would be complementary to the sequence\nA) 5′ TCG AAT 3′\nB) 5′ GTT AGC 3′\nC) 5′ GCU AAC 3′\nD) 5′ GTT CGA 3′\nE) 5′ TTA CGC 3′\nF) 5′ AGC TTA 3′\nG) 5′ CGA TTG 3′\nH) 5′ GCT AAC 3′\nI) 5′ CAA TCG 3′\nJ) 5′ ACG TTA 3′\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.4228685200214386,
+      "softmax_neutral": [
+        0.02385661005973816,
+        0.06587021052837372,
+        0.005535178352147341,
+        0.04319873824715614,
+        0.034711167216300964,
+        0.4228685200214386,
+        0.05129977688193321,
+        0.008669874630868435,
+        0.12115385383367538,
+        0.22283606231212616
+      ],
+      "logits_neutral": [
+        1.03125,
+        2.046875,
+        -0.4296875,
+        1.625,
+        1.40625,
+        3.90625,
+        1.796875,
+        0.01904296875,
+        2.65625,
+        3.265625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Nerve outgrowth from a developing neuron begins at the growth cone, located at the tip of the axon. Microspikes of the growth cone extend and retract in order to move the growth cone forward. Exposure of the neuron to cytochasalin B at this stage of development causes\nA) microtubules in the growth cone to undergo reversible dissociation\nB) microtubules in the axon to undergo irreversible dissociation\nC) microfilaments in the growth cone to undergo irreversible depolymerization\nD) microfilaments in the axon to undergo reversible depolymerization\nE) microfilaments in the microspike to undergo reversible depolymerization\nF) microtubules in the microspike to undergo irreversible depolymerization\nG) microfilaments in the axon to undergo irreversible depolymerization\nH) microtubules in the microspike to undergo reversible depolymerization\nI) microfilaments in the microspike to undergo irreversible depolymerization\nJ) microtubules in the axon to undergo reversible dissociation\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.47807320952415466,
+      "softmax_neutral": [
+        0.04883824661374092,
+        0.013247732073068619,
+        0.03863424062728882,
+        0.031043482944369316,
+        0.03228011354804039,
+        0.1266767829656601,
+        0.07105923444032669,
+        0.018828822299838066,
+        0.1413181722164154,
+        0.47807320952415466
+      ],
+      "logits_neutral": [
+        2.03125,
+        0.7265625,
+        1.796875,
+        1.578125,
+        1.6171875,
+        2.984375,
+        2.40625,
+        1.078125,
+        3.09375,
+        4.3125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Which of the following statements concerning the Golgi apparatus of a eukaryote is correct?\nA) It is typically associated with small secretory vesicles located near its cis face.\nB) Glycosylation of certain secretory proteins occurs prior to the protein's entry into its lumen.\nC) It is typically associated with large lysosomes located near its trans face.\nD) Its trans face is closest to the endoplasmic reticulum.\nE) It is located in the nucleus of the cell.\nF) It is responsible for the synthesis of ATP.\nG) Its cisternae are not involved in protein processing.\nH) Its composite flattened cisternae are continuous with one another.\nI) Glycosylation of certain proteins occurs outside the Golgi apparatus.\nJ) It is oriented in the cytoplasm so that its cis face is closest to the endoplasmic reticulum.\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.9746916890144348,
+      "softmax_neutral": [
+        0.002857907908037305,
+        0.0043070195242762566,
+        0.002018659608438611,
+        0.00392158655449748,
+        0.00046110531548038125,
+        0.002034492092207074,
+        0.004549119621515274,
+        0.00035354169085621834,
+        0.004804828204214573,
+        0.9746916890144348
+      ],
+      "logits_neutral": [
+        0.85546875,
+        1.265625,
+        0.5078125,
+        1.171875,
+        -0.96875,
+        0.515625,
+        1.3203125,
+        -1.234375,
+        1.375,
+        6.6875
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "The polytene chromosomes seen in Drosophila silvarentis with the aid of a light microscope are\nA) multiple copies of a single chromosome\nB) not visible even under a light microscope\nC) produced only during mitosis\nD) produced by repeated rounds of nuclear division without DNA replication\nE) single copies of multiple chromosomes\nF) not actively carrying out transcription\nG) produced by single round of DNA replication without nuclear division\nH) produced only during meiosis\nI) produced by repeated rounds of DNA replication followed by nuclear division\n",
+      "label": 0,
+      "num_options": 9,
+      "answer_neutral": "I",
+      "prob_neutral": 0.5167836546897888,
+      "softmax_neutral": [
+        0.12084385752677917,
+        0.006817544810473919,
+        0.006530807353556156,
+        0.04111505299806595,
+        0.02760334126651287,
+        0.029154937714338303,
+        0.24795550107955933,
+        0.003195318626239896,
+        0.5167836546897888
+      ],
+      "logits_neutral": [
+        2.09375,
+        -0.78125,
+        -0.82421875,
+        1.015625,
+        0.6171875,
+        0.671875,
+        2.8125,
+        -1.5390625,
+        3.546875
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "A behavioral response called a fixed action pattern shown by animals\nA) is a learned behavior that can be unlearned\nB) occurs the second time an animal is exposed to the correct stimulus at the appropriate time in its life\nC) only occurs during the animal's sleep cycle\nD) is a response that only occurs in the presence of other animals\nE) is a response that is influenced by the animal's diet\nF) is a response that develops as the animal ages\nG) is triggered by a number of sensory signals in the animal's environment\nH) is a motor response which once released may be terminated spontaneously\nI) occurs in the absence of sensory feedback\nJ) is a reflex action triggered by external stimuli\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.7522425055503845,
+      "softmax_neutral": [
+        0.002933463081717491,
+        0.003538432065397501,
+        0.0011668510269373655,
+        0.0026501633692532778,
+        0.003871056716889143,
+        0.013044559396803379,
+        0.11536012589931488,
+        0.04344502091407776,
+        0.06174783036112785,
+        0.7522425055503845
+      ],
+      "logits_neutral": [
+        -1.234375,
+        -1.046875,
+        -2.15625,
+        -1.3359375,
+        -0.95703125,
+        0.2578125,
+        2.4375,
+        1.4609375,
+        1.8125,
+        4.3125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "To prevent desiccation and injury, the embryos of terrestrial vertebrates are encased within a fluid secreted by the\nA) blastoderm\nB) mesoderm\nC) amnion\nD) zona pellucida\nE) ectoderm\nF) chorion\nG) yolk sac\nH) vitelline membrane\nI) endoderm\nJ) allantois\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9703451991081238,
+      "softmax_neutral": [
+        0.0017597150290384889,
+        0.00028726557502523065,
+        0.9703451991081238,
+        0.00216448656283319,
+        0.000850942509714514,
+        0.0013812159886583686,
+        0.005614250898361206,
+        0.0003659858484752476,
+        0.009220247156918049,
+        0.008010690100491047
+      ],
+      "logits_neutral": [
+        -0.40625,
+        -2.21875,
+        5.90625,
+        -0.19921875,
+        -1.1328125,
+        -0.6484375,
+        0.75390625,
+        -1.9765625,
+        1.25,
+        1.109375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Which of the following is NOT a source of atmospheric carbon?\nA) Respiration\nB) Photosynthesis\nC) Bacterial decomposition\nD) Combustion of fossil fuels\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.8679929971694946,
+      "softmax_neutral": [
+        0.03696360066533089,
+        0.8679929971694946,
+        0.01679147221148014,
+        0.07825194299221039
+      ],
+      "logits_neutral": [
+        1.8125,
+        4.96875,
+        1.0234375,
+        2.5625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "An embryologist studying the development of a vertebrate organism from the zygote stage to fetus would be justified in drawing which of the following conclusions?\nA) The development of a vertebrate organism from the zygote stage to fetus does not follow a consistent pattern.\nB) The development of a vertebrate organism from the zygote stage to fetus displays a random pattern of evolutionary history.\nC) The zygote stage of a vertebrate organism is identical to the fetus stage.\nD) Ontogeny recapitulates phylogeny.\nE) Early embryos display identical features of their class and order, but not their species.\nF) An early human embryo has features in common with early fish and avian embryos.\nG) Early embryos display identical features of their class, order, and species.\nH) A human embryo displays features of adult fish and birds in the course of its development.\nI) An early human embryo has features that are identical to adult fish and avian features.\nJ) A vertebrate organism develops identical features of its class, order, and species only during the fetus stage.\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.9476933479309082,
+      "softmax_neutral": [
+        0.001392133766785264,
+        0.0006273306789807975,
+        0.00025346450274810195,
+        0.004857837688177824,
+        0.002735665300861001,
+        0.9476933479309082,
+        0.004354537930339575,
+        0.00010003661009250209,
+        0.008459423668682575,
+        0.02952628955245018
+      ],
+      "logits_neutral": [
+        0.039306640625,
+        -0.7578125,
+        -1.6640625,
+        1.2890625,
+        0.71484375,
+        6.5625,
+        1.1796875,
+        -2.59375,
+        1.84375,
+        3.09375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "A stem-boring beetle has laid its eggs in the center of a 5-year-old wood twig, and the eggs have matured into larvae. In proper order (inside to outside), what tissues and tissue regions would the larvae encounter as they eat their way toward the outside of the twig? (For simplicity, assume that the epidermis has already fallen off completely.)\nA) Pith; primary xylem; secondary xylem; vascular cambium; primary phloem; secondary phloem; cortex\nB) Pith; primary xylem; vascular cambium; secondary xylem; primary phloem; secondary phloem; cortex\nC) Pith; secondary xylem; primary xylem; vascular cambium; primary phloem; secondary phloem; cortex\nD) Pith; vascular cambium; primary xylem; secondary xylem; primary phloem; secondary phloem; cortex\nE) Pith; primary xylem; secondary xylem; vascular cambium; primary phloem; cortex; secondary phloem\nF) Pith; primary xylem; secondary xylem; vascular cambium; secondary phloem; primary phloem; cortex\nG) Pith; secondary xylem; primary xylem; vascular cambium; secondary phloem; primary phloem; cortex\nH) Pith; secondary xylem; vascular cambium; primary xylem; secondary phloem; primary phloem; cortex\nI) Vascular cambium; primary xylem; secondary xylem; pith; secondary phloem; primary phloem; cortex\nJ) Pith; primary xylem; vascular cambium; secondary xylem; secondary phloem; primary phloem; cortex\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.41178739070892334,
+      "softmax_neutral": [
+        0.09780807793140411,
+        0.0699002742767334,
+        0.016732988879084587,
+        0.07558021694421768,
+        0.02622205577790737,
+        0.06314964592456818,
+        0.08300863206386566,
+        0.0019369840156286955,
+        0.15387369692325592,
+        0.41178739070892334
+      ],
+      "logits_neutral": [
+        1.828125,
+        1.4921875,
+        0.0625,
+        1.5703125,
+        0.51171875,
+        1.390625,
+        1.6640625,
+        -2.09375,
+        2.28125,
+        3.265625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "In humans, a hereditary disorder called xeroderma pigmentosum (XP) can result in the inability to repair ultraviolet damage to DNA. Which of the following molecular lesions is most likely to accrue in individuals with XP?\nA) Pyrimidine dimer\nB) Double strand DNA breaks\nC) Deletion of guanine\nD) Single strand DNA breaks\nE) Addition of uracil\nF) Depurination\nG) Thymine dimers\nH) Methylation of adenine\nI) DNA crosslinks\nJ) Deamination of cytosine\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.89943927526474,
+      "softmax_neutral": [
+        0.0810869112610817,
+        0.0003696852072607726,
+        0.00021064028260298073,
+        0.0004529477737378329,
+        0.0004529477737378329,
+        0.0018794802017509937,
+        0.89943927526474,
+        9.795682854019105e-05,
+        0.009609086439013481,
+        0.006401031278073788
+      ],
+      "logits_neutral": [
+        3.78125,
+        -1.609375,
+        -2.171875,
+        -1.40625,
+        -1.40625,
+        0.0167236328125,
+        6.1875,
+        -2.9375,
+        1.6484375,
+        1.2421875
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Which of the following factors does NOT promote linkage disequilibrium?\nA) Asexual reproduction\nB) Coadapted gene complexes\nC) Epistasis\nD) Random mating\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9977906942367554,
+      "softmax_neutral": [
+        0.0016283623408526182,
+        0.0004975933698005974,
+        8.331877324962988e-05,
+        0.9977906942367554
+      ],
+      "logits_neutral": [
+        0.89453125,
+        -0.291015625,
+        -2.078125,
+        7.3125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Which of the following plant cells undergoes programmed cell death to become functional?\nA) Epidermal cell\nB) Stomatal guard cell\nC) Root cap cell\nD) Xylem vessel member\nE) Phloem sieve tube member\nF) Mesophyll cell\nG) Sclerenchyma cell\nH) Collenchyma cell\nI) Parenchyma cell\nJ) Tracheid\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.7868261933326721,
+      "softmax_neutral": [
+        0.005229603033512831,
+        0.028660142794251442,
+        0.017383255064487457,
+        0.7868261933326721,
+        0.013538091443479061,
+        0.00867282785475254,
+        0.022146841511130333,
+        0.00047795314458198845,
+        0.012230646796524525,
+        0.1048344299197197
+      ],
+      "logits_neutral": [
+        0.486328125,
+        2.1875,
+        1.6875,
+        5.5,
+        1.4375,
+        0.9921875,
+        1.9296875,
+        -1.90625,
+        1.3359375,
+        3.484375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "If the activity of an enzyme is constant over a broad range of pH values, it is likely that\nA) the enzyme is inactive at all pH values\nB) no ionizing groups on the enzyme or substrate participate in the reaction\nC) only ionizing groups on the substrate participate in the reaction\nD) ionizing groups on both the enzyme and substrate participate in the reaction\nE) only non-ionizing groups on the substrate participate in the reaction\nF) the enzyme and substrate are both inactive at all pH values\nG) the substrate is inactive at all pH values\nH) non-ionizing groups on both the enzyme and substrate participate in the reaction\nI) only ionizing groups on the enzyme participate in the reaction\nJ) only non-ionizing groups on the enzyme participate in the reaction\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.2673660218715668,
+      "softmax_neutral": [
+        0.009882514365017414,
+        0.24727314710617065,
+        0.018698854371905327,
+        0.21483463048934937,
+        0.02438790537416935,
+        0.017497465014457703,
+        0.07660163938999176,
+        0.006654272321611643,
+        0.11680357158184052,
+        0.2673660218715668
+      ],
+      "logits_neutral": [
+        0.0458984375,
+        3.265625,
+        0.68359375,
+        3.125,
+        0.94921875,
+        0.6171875,
+        2.09375,
+        -0.349609375,
+        2.515625,
+        3.34375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Which of the following depicts the correct sequence of membranes of the chloroplast, beginning with the innermost membrane and ending with the outermost membrane?\nA) Outer membrane, inner membrane, thylakoid membrane\nB) Thylakoid membrane, inner membrane, outer membrane\nC) Inner membrane, thylakoid membrane, outer membrane\nD) Thylakoid membrane, outer membrane, inner membrane\nE) Strama, outer membrane, inner membrane\nF) Inner membrane, strama, outer membrane\nG) Inner membrane, outer membrane, thylakoid membrane\nH) Outer membrane, thylakoid membrane, inner membrane\nI) Strama, thylakoid membrane, outer membrane\nJ) Outer membrane, strama, thylakoid membrane\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.5674492120742798,
+      "softmax_neutral": [
+        0.01647903211414814,
+        0.023976849392056465,
+        0.035159725695848465,
+        0.014542694203555584,
+        0.009878592565655708,
+        0.023421427235007286,
+        0.5674492120742798,
+        0.0033283589873462915,
+        0.06170723959803581,
+        0.24405686557292938
+      ],
+      "logits_neutral": [
+        1.4609375,
+        1.8359375,
+        2.21875,
+        1.3359375,
+        0.94921875,
+        1.8125,
+        5.0,
+        -0.138671875,
+        2.78125,
+        4.15625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Many marine birds drink seawater yet maintain their internal osmolarity at a constant level that is hypoosmotic to seawater. Which of the following physiological strategies best explains how the birds maintain their tissue osmolarity?\nA) Marine birds excrete salts and nitrogenous wastes through specialized nasal glands.\nB) Marine birds absorb water from the environment through their feathers and produce large volumes of dilute urine in the kidneys.\nC) Marine birds excrete salts through specialized salt-exchange glands and excrete small volumes of urine.\nD) Marine birds excrete salts through their feathers and excrete large volumes of concentrated urine.\nE) Marine birds absorb water and salts from the environment through their skin and produce large volumes of dilute urine in the kidneys.\nF) Marine birds excrete salts and nitrogenous wastes through their skin.\nG) Marine birds excrete salts through specialized salt-exchange glands and produce large volumes of concentrated urine in the kidneys.\nH) Marine birds absorb salts from the environment through specialized salt-exchange glands and produce large volumes of concentrated urine in the kidneys.\nI) Marine birds absorb salts from the environment through their feathers and produce small volumes of concentrated urine in the kidneys.\nJ) Marine birds absorb water from the environment through specialized salt-exchange glands and produce large volumes of dilute urine in the kidneys.\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.4797039031982422,
+      "softmax_neutral": [
+        0.10374324023723602,
+        0.02473762072622776,
+        0.1792522519826889,
+        0.015180991031229496,
+        0.01044392678886652,
+        0.028584269806742668,
+        0.08736056089401245,
+        0.0018853371730074286,
+        0.06910790503025055,
+        0.4797039031982422
+      ],
+      "logits_neutral": [
+        2.421875,
+        0.98828125,
+        2.96875,
+        0.5,
+        0.1259765625,
+        1.1328125,
+        2.25,
+        -1.5859375,
+        2.015625,
+        3.953125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "The soils of which of the following biomes has the highest rate of leaching and cycling of nutrients?\nA) Wetlands\nB) Tropical rain forest\nC) Alpine\nD) Desert\nE) Chaparral\nF) Temperate deciduous forest\nG) Savanna\nH) Tundra\nI) Grasslands\nJ) Taiga\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.904453694820404,
+      "softmax_neutral": [
+        0.021437540650367737,
+        0.904453694820404,
+        0.0020254028495401144,
+        0.0026416233740746975,
+        0.0017597004771232605,
+        0.006621612701565027,
+        0.008832382969558239,
+        0.0003081884060520679,
+        0.033725980669260025,
+        0.0181938037276268
+      ],
+      "logits_neutral": [
+        1.3828125,
+        5.125,
+        -0.9765625,
+        -0.7109375,
+        -1.1171875,
+        0.2080078125,
+        0.49609375,
+        -2.859375,
+        1.8359375,
+        1.21875
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "A healthy person sitting at rest consciously begins to breathe too fast. Which of the following describes the change in the person’s blood caused by this hyperventilation?\nA) No change in both partial pressure of carbon dioxide and concentration of hydrogen ions\nB) A decrease in partial pressure of carbon dioxide and a decrease in concentration of hydrogen ions\nC) No change in partial pressure of carbon dioxide and an increase in concentration of hydrogen ions\nD) A decrease in partial pressure of carbon dioxide and an increase in concentration of hydrogen ions\nE) An increase in partial pressure of carbon dioxide and a decrease in concentration of hydrogen ions\nF) A decrease in partial pressure of carbon dioxide and no change in concentration of hydrogen ions\nG) An increase in both partial pressure of carbon dioxide and concentration of hydrogen ions, but at different rates\nH) An increase in partial pressure of carbon dioxide and no change in concentration of hydrogen ions\nI) No change in partial pressure of carbon dioxide and a decrease in concentration of hydrogen ions\nJ) An increase in partial pressure of carbon dioxide and an increase in concentration of hydrogen ions\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.4130673408508301,
+      "softmax_neutral": [
+        0.008742026053369045,
+        0.4130673408508301,
+        0.003331084968522191,
+        0.08261866867542267,
+        0.00994478352367878,
+        0.02589576691389084,
+        0.01626857928931713,
+        0.0012544980272650719,
+        0.21429651975631714,
+        0.2245808243751526
+      ],
+      "logits_neutral": [
+        -0.38671875,
+        3.46875,
+        -1.3515625,
+        1.859375,
+        -0.2578125,
+        0.69921875,
+        0.234375,
+        -2.328125,
+        2.8125,
+        2.859375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "In an experiment, the first cleavage plane of an amphibian zygote was manipulated so that the gray crescent was contained in only one of the two blastomeres that result from the first cleavage. The two blastomeres were then separated. What is the expected fate of the blastomeres?\nA) Both blastomeres will form incomplete embryos.\nB) The blastomere without the gray crescent will form a complete, but small, embryo.\nC) The blastomere with the gray crescent will grow in size more quickly than the one without the gray crescent.\nD) The blastomere without the gray crescent will stop dividing and die before the second cleavage.\nE) The blastomere with the gray crescent will form an abnormal embryo.\nF) The blastomere with the gray crescent will form a complete, but small, embryo.\nG) The blastomere without the gray crescent will form a complete, but abnormal, embryo.\nH) The blastomere without the gray crescent will grow in size more quickly than the one with the gray crescent.\nI) Both blastomeres will grow at the same rate.\nJ) The blastomere with the gray crescent will stop dividing and die before the second cleavage.\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.6494225859642029,
+      "softmax_neutral": [
+        0.004621739964932203,
+        0.0064669763669371605,
+        0.0020669696386903524,
+        0.004731341265141964,
+        0.00626800861209631,
+        0.6494225859642029,
+        0.17478972673416138,
+        0.00046120330807752907,
+        0.027226988226175308,
+        0.12394446134567261
+      ],
+      "logits_neutral": [
+        1.4609375,
+        1.796875,
+        0.65625,
+        1.484375,
+        1.765625,
+        6.40625,
+        5.09375,
+        -0.84375,
+        3.234375,
+        4.75
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Approximately what fraction of the human genome encodes proteins?\nA) 50%\nB) 5%\nC) 60%\nD) 25%\nE) 90%\nF) 10%\nG) 80%\nH) 75%\nI) 2%\nJ) 35%\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.6198022961616516,
+      "softmax_neutral": [
+        0.019461985677480698,
+        0.6198022961616516,
+        0.00639598211273551,
+        0.012763481587171555,
+        0.01128575298935175,
+        0.12790341675281525,
+        0.01045802142471075,
+        0.0007605416467413306,
+        0.0728771761059761,
+        0.11829132586717606
+      ],
+      "logits_neutral": [
+        1.0078125,
+        4.46875,
+        -0.10498046875,
+        0.5859375,
+        0.462890625,
+        2.890625,
+        0.38671875,
+        -2.234375,
+        2.328125,
+        2.8125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "The amino acid ornithine is regenerated during each turn of the urea cycle in a similar manner to which of the following participants in the citric acid cycle?\nA) Alpha-ketoglutarate\nB) Glutamate\nC) Acetyl CoA\nD) Oxaloacetate\nE) Citrate\nF) Aspartate\nG) Fumarate\nH) Malate\nI) Succinate\nJ) Isocitrate\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.462308794260025,
+      "softmax_neutral": [
+        0.001584789832122624,
+        0.0008125994936563075,
+        0.00032831987482495606,
+        0.012514126487076283,
+        0.0022436589933931828,
+        0.3954336941242218,
+        0.462308794260025,
+        0.0008959590340964496,
+        0.01407000981271267,
+        0.10980796813964844
+      ],
+      "logits_neutral": [
+        -0.23828125,
+        -0.90625,
+        -1.8125,
+        1.828125,
+        0.109375,
+        5.28125,
+        5.4375,
+        -0.80859375,
+        1.9453125,
+        4.0
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "In eukaryotic photosynthetic cells, which of the following occurs when electrons flow cyclically through the electron transport chain associated with photosystem I?\nA) Reduction of NADP+ to NADPH\nB) Synthesis of water\nC) Release of O2\nD) Release of CO2\nE) Production of glucose from carbon dioxide\nF) Absorption of light energy\nG) Reduction of CO2 to sugar\nH) Breakdown of glucose to CO2\nI) Synthesis of ATP\nJ) Conversion of ADP to ATP\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.8812133073806763,
+      "softmax_neutral": [
+        0.004276670049875975,
+        0.00027988184592686594,
+        0.002269105287268758,
+        0.0001418372121406719,
+        0.0005522799328900874,
+        0.003788919886574149,
+        0.01153472624719143,
+        0.00011576416727621108,
+        0.09582750499248505,
+        0.8812133073806763
+      ],
+      "logits_neutral": [
+        0.765625,
+        -1.9609375,
+        0.1318359375,
+        -2.640625,
+        -1.28125,
+        0.64453125,
+        1.7578125,
+        -2.84375,
+        3.875,
+        6.09375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "A competitive inhibitor of an enzyme exerts its effect by\nA) reversibly modifying some of the amino acid residues that help to comprise the enzyme's active site\nB) irreversibly forming covalent links with the enzyme, effectively preventing the enzyme's dissociation from it\nC) irreversibly modifying some of the amino acid residues that help to comprise the enzyme's active site\nD) reversibly increasing the number of enzyme molecules that are available to bind substrates\nE) irreversibly decreasing the number of enzyme molecules that are available to bind substrates\nF) competing with the product molecule for the same enzyme but a different binding site than the product binding site\nG) competing with the substrate molecule for the same enzyme but a different binding site than the substrate binding site\nH) irreversibly forming covalent links with the substrate, effectively preventing the enzyme's dissociation from it\nI) reversibly decreasing the number of enzyme molecules that are available to bind substrates\nJ) competing with the substrate molecule for the same enzyme and the same binding site as the substrate binding site\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.6960598826408386,
+      "softmax_neutral": [
+        0.003112043021246791,
+        0.0004228176549077034,
+        0.00019207355217076838,
+        0.00025051116244867444,
+        0.00021427356114145368,
+        0.0025598967913538218,
+        0.2901609241962433,
+        4.1864619561238214e-05,
+        0.006985756102949381,
+        0.6960598826408386
+      ],
+      "logits_neutral": [
+        0.96484375,
+        -1.03125,
+        -1.8203125,
+        -1.5546875,
+        -1.7109375,
+        0.76953125,
+        5.5,
+        -3.34375,
+        1.7734375,
+        6.375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Which of the following is a correct statement about the cohesion-tension theory for the ascent of water in the xylem?\nA) Living cells of the phloem provide the main conduit for an ascent of water.\nB) Water moves from a sink region with high hydrostatic pressure to a source region with low hydrostatic pressure.\nC) The cohesion of water molecules is responsible for the formation of embolisms (air bubbles) in the water column.\nD) The cohesion of water molecules prevents tension in the water column.\nE) The evaporation of water from leaf mesophyll cells prevents tension in the water column.\nF) Living cells of the xylem provide the main conduit for an ascent of water.\nG) The cohesion-tension theory states that water rises in the xylem due to the gravitational pull.\nH) The evaporation of water from leaf mesophyll cells generates tension in the water column.\n",
+      "label": 7,
+      "num_options": 8,
+      "answer_neutral": "H",
+      "prob_neutral": 0.7158028483390808,
+      "softmax_neutral": [
+        0.012172582559287548,
+        0.010911431163549423,
+        0.004157721996307373,
+        0.0043743085116147995,
+        0.0062904320657253265,
+        0.10312118381261826,
+        0.1431695818901062,
+        0.7158028483390808
+      ],
+      "logits_neutral": [
+        0.39453125,
+        0.28515625,
+        -0.6796875,
+        -0.62890625,
+        -0.265625,
+        2.53125,
+        2.859375,
+        4.46875
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "In order for the Hardy-Weinberg law to operate with respect to a population of organisms, each of the following conditions must be met EXCEPT:\nA) Genes are exchanged with other populations.\nB) Population size is large.\nC) Natural selection does not take place.\nD) Matings are random.\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9731976985931396,
+      "softmax_neutral": [
+        0.9731976985931396,
+        0.019730186089873314,
+        0.00228393473662436,
+        0.004788102116435766
+      ],
+      "logits_neutral": [
+        5.1875,
+        1.2890625,
+        -0.8671875,
+        -0.126953125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Which of the following is a benefit that mycorrhizal fungi confer to many plants?\nA) They fix nitrogen, which is particularly important for plants in nitrogen-limited habitats.\nB) They provide plants with access to unlimited water resources.\nC) They provide carbon to plants in exchange for fixed nitrogen.\nD) They help plants create their own food through photosynthesis.\nE) They enhance plant growth by releasing growth hormones.\nF) They protect plant roots from desiccation in extremely dry habitats.\nG) They increase plant resistance to pests and diseases.\nH) They assist in the absorption of carbon dioxide from the atmosphere.\nI) They provide plants with access to potassium, an element abundant in all kinds of soils.\nJ) They provide access to phosphorus, an essential element that is limited in many kinds of soils.\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.9699850082397461,
+      "softmax_neutral": [
+        0.0007843996863812208,
+        0.00018832342175301164,
+        8.356801845366135e-05,
+        0.00011877409997396171,
+        0.00022539363999385387,
+        0.0038421442732214928,
+        0.022811859846115112,
+        0.00010984809341607615,
+        0.0018506960477679968,
+        0.9699850082397461
+      ],
+      "logits_neutral": [
+        0.1298828125,
+        -1.296875,
+        -2.109375,
+        -1.7578125,
+        -1.1171875,
+        1.71875,
+        3.5,
+        -1.8359375,
+        0.98828125,
+        7.25
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "All of the following statements about plant embryogenesis are correct EXCEPT:\nA) The suspensor is derived from the basal cell.\nB) Cotyledons are derived from the apical cell.\nC) Shoot apical meristem formation occurs after seed formation.\nD) Precursors of all three plant tissue systems are formed during embryogenesis.\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.6922037601470947,
+      "softmax_neutral": [
+        0.029477592557668686,
+        0.06388393044471741,
+        0.6922037601470947,
+        0.21443471312522888
+      ],
+      "logits_neutral": [
+        0.90625,
+        1.6796875,
+        4.0625,
+        2.890625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "In the formation of the earliest cells, which of the following components most likely arose first?\nA) Lysosome\nB) Chloroplast\nC) Ribosome\nD) Golgi apparatus\nE) Plasma membrane\nF) Endoplasmic reticulum\nG) Nucleus\nH) Mitochondrion\nI) Flagellum\nJ) Cell wall\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.9934408068656921,
+      "softmax_neutral": [
+        0.00039344659307971597,
+        4.1712661186465994e-05,
+        5.975063322694041e-05,
+        5.701444752048701e-05,
+        0.9934408068656921,
+        0.0003509653324726969,
+        0.00011472334153950214,
+        1.71188403328415e-05,
+        0.0007778906146995723,
+        0.004746580496430397
+      ],
+      "logits_neutral": [
+        0.291015625,
+        -1.953125,
+        -1.59375,
+        -1.640625,
+        8.125,
+        0.1767578125,
+        -0.94140625,
+        -2.84375,
+        0.97265625,
+        2.78125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "All of the following environmental conditions increase the rate of transpiration from plants EXCEPT\nA) high temperature\nB) high relative humidity\nC) low relative humidity\nD) wind\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.988089382648468,
+      "softmax_neutral": [
+        0.005005897954106331,
+        0.988089382648468,
+        0.003474263474345207,
+        0.003430435433983803
+      ],
+      "logits_neutral": [
+        0.52734375,
+        5.8125,
+        0.162109375,
+        0.1494140625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Which of the following is the symplastic pathway for the movement of sucrose from the site of photosynthesis in mesophyll cells into the phloem?\nA) Bundle sheath, companion cell, phloem parenchyma, fibers\nB) Phloem parenchyma, bundle sheath, fibers, companion cell\nC) Bundle sheath, phloem parenchyma, companion cell, sieve tube\nD) Bundle sheath, fibers, companion cell, sieve tube\nE) Fibers, bundle sheath, companion cell, sieve tube\nF) Fibers, phloem parenchyma, bundle sheath, tracheids\nG) Phloem parenchyma, fibers, bundle sheath, tracheids\nH) Companion cells, phloem parenchyma, fibers, sieve tube\nI) Fibers, phloem parenchyma, companion cell, sieve tube\nJ) Companion cell, bundle sheath, fibers, sieve tube\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.7641119360923767,
+      "softmax_neutral": [
+        0.009506688453257084,
+        0.004561359062790871,
+        0.0048118773847818375,
+        0.008324334397912025,
+        0.009250260889530182,
+        0.013302248902618885,
+        0.022894617170095444,
+        0.005553330760449171,
+        0.7641119360923767,
+        0.15768340229988098
+      ],
+      "logits_neutral": [
+        0.64453125,
+        -0.08984375,
+        -0.036376953125,
+        0.51171875,
+        0.6171875,
+        0.98046875,
+        1.5234375,
+        0.10693359375,
+        5.03125,
+        3.453125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Based on the characteristic population curves that result from plotting population growth of a species, the most effective means of controlling the mosquito population is to\nA) opt for zero population control once the K value of the curve has been reached\nB) maintain the population at the highest point of its logistic curve\nC) reduce the carrying capacity cif the environment to lower the K value\nD) decrease the mortality rate\nE) increase the birth rate of the species\nF) drastically reduce the population below the K value\nG) maintain the population at a point corresponding to the midpoint of its logistic curve\nH) increase the carrying capacity of the environment to raise the K value\nI) opt for zero population control at the beginning of the logistic curve\n",
+      "label": 2,
+      "num_options": 9,
+      "answer_neutral": "G",
+      "prob_neutral": 0.4715878665447235,
+      "softmax_neutral": [
+        0.00941254012286663,
+        0.0045161861926317215,
+        0.06584842503070831,
+        0.0064817857928574085,
+        0.004435327835381031,
+        0.39096006751060486,
+        0.4715878665447235,
+        0.0015009607886895537,
+        0.04525691270828247
+      ],
+      "logits_neutral": [
+        0.8359375,
+        0.1015625,
+        2.78125,
+        0.462890625,
+        0.08349609375,
+        4.5625,
+        4.75,
+        -1.0,
+        2.40625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "The first point of entry of water at the roots of a monocot plant is through the cytoplasm of cells of the\nA) parenchyma\nB) phloem\nC) endoderm\nD) pericycle\nE) cortex\nF) epidermis\nG) root cap\nH) Casparian strip\nI) xylem\nJ) root hair cells\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.6052098274230957,
+      "softmax_neutral": [
+        0.0013820170424878597,
+        0.0001863064826466143,
+        0.0005286685773171484,
+        0.0005297021707519889,
+        0.01799241453409195,
+        0.36707833409309387,
+        0.001590691739693284,
+        9.972265979740769e-05,
+        0.005402302835136652,
+        0.6052098274230957
+      ],
+      "logits_neutral": [
+        0.69921875,
+        -1.3046875,
+        -0.26171875,
+        -0.259765625,
+        3.265625,
+        6.28125,
+        0.83984375,
+        -1.9296875,
+        2.0625,
+        6.78125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "In garden peas, the allele for tall plants (D) is completely dominant to the allele for dwarf plants (d) and the allele for violet flower color (W) is completely dominant to the allele for white flower color (w). In a cross between a tall violet plant, with the genotype DDWw, and a dwarf white plant, what phenotypic ratio of the progeny would be expected from this cross?\nA) All dwarf white\nB) 1 tall violet: 2 tall white: 1 dwarf white\nC) 1 tall violet: 1 dwarf violet: 1 tall white: 1 dwarf white\nD) All dwarf violet\nE) 1 tall violet: 1 tall white: 1 dwarf violet: 1 dwarf white\nF) All tall violet\nG) 1 tall violet: 1 dwarf violet\nH) 2 tall violet: 1 dwarf violet: 1 dwarf white\nI) 1 tall violet: 1 dwarf white\nJ) 1 tall violet: 1 tall white\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.6631501317024231,
+      "softmax_neutral": [
+        0.00999104231595993,
+        0.009132551960647106,
+        0.005759828723967075,
+        0.0038556531071662903,
+        0.036261312663555145,
+        0.1729930341243744,
+        0.032504428178071976,
+        0.0017092657508328557,
+        0.0646427795290947,
+        0.6631501317024231
+      ],
+      "logits_neutral": [
+        1.0546875,
+        0.96484375,
+        0.50390625,
+        0.1025390625,
+        2.34375,
+        3.90625,
+        2.234375,
+        -0.7109375,
+        2.921875,
+        5.25
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "How do cyanobacteria differ from green unicellular algae?\nA) Cyanobacteria reduce sulfur compounds.\nB) Cyanobacteria have no nuclei.\nC) Green algae cannot reduce nitrogen compounds.\nD) Green algae cannot photosynthesize.\nE) Green algae produce cell membranes.\nF) Green algae have no chlorophyll.\nG) Cyanobacteria lack cell walls.\nH) Cyanobacteria can photosynthesize.\n",
+      "label": 1,
+      "num_options": 8,
+      "answer_neutral": "B",
+      "prob_neutral": 0.8210234045982361,
+      "softmax_neutral": [
+        0.029213007539510727,
+        0.8210234045982361,
+        0.025380702689290047,
+        0.010736375115811825,
+        0.007978596724569798,
+        0.012762217782437801,
+        0.06481189280748367,
+        0.02809387817978859
+      ],
+      "logits_neutral": [
+        1.1328125,
+        4.46875,
+        0.9921875,
+        0.1318359375,
+        -0.1650390625,
+        0.3046875,
+        1.9296875,
+        1.09375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Gene flow between populations results in\nA) disruption of Hardy-Weinberg equilibrium in the metapopulation\nB) an increased likelihood of speciation\nC) a decrease in the likelihood of speciation\nD) an increased likelihood of genetic drift in the metapopulation\nE) a decrease in genetic diversity in the metapopulation\nF) an increase in the rate of genetic diseases in the metapopulation\nG) an increase in the rate of deleterious mutations in the metapopulation\nH) an increase in genetic homogeneity in the metapopulation\nI) a decrease in the rate of beneficial mutations in the metapopulation\nJ) stabilization of Hardy-Weinberg equilibrium in the metapopulation\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "H",
+      "prob_neutral": 0.3296844959259033,
+      "softmax_neutral": [
+        0.15331754088401794,
+        0.015449694357812405,
+        0.051354940980672836,
+        0.003605682635679841,
+        0.00841627549380064,
+        0.013747954741120338,
+        0.15331754088401794,
+        0.3296844959259033,
+        0.16067540645599365,
+        0.11043047904968262
+      ],
+      "logits_neutral": [
+        2.53125,
+        0.236328125,
+        1.4375,
+        -1.21875,
+        -0.37109375,
+        0.11962890625,
+        2.53125,
+        3.296875,
+        2.578125,
+        2.203125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Synthesis of an RNA/DNA hybrid from a single-stranded RNA template requires\nA) RNase only\nB) a DNA primer and RNase\nC) a DNA or RNA primer and DNA polymerase\nD) a DNA or RNA primer and reverse transcriptase\nE) a RNA primer and DNA polymerase\nF) DNA polymerase only\nG) a RNA primer and reverse transcriptase\nH) reverse transcriptase and RNase\nI) reverse transcriptase only\nJ) a DNA primer, RNA primer and reverse transcriptase\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9075390696525574,
+      "softmax_neutral": [
+        0.0008921973058022559,
+        0.00040332466596737504,
+        0.0011994107626378536,
+        0.9075390696525574,
+        0.005230394192039967,
+        0.0015827663009986281,
+        0.010240614414215088,
+        0.0002484811411704868,
+        0.024565957486629486,
+        0.04809781163930893
+      ],
+      "logits_neutral": [
+        -0.1123046875,
+        -0.90625,
+        0.18359375,
+        6.8125,
+        1.65625,
+        0.4609375,
+        2.328125,
+        -1.390625,
+        3.203125,
+        3.875
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "During the mammalian cardiac cycle, a volume of blood equivalent to ventricular stroke volume is transferred from the more compliant venous side to the less compliant arterial side of the circulation. In terms of pressures within the venous and arterial compartments, this transfer results in\nA) an equal increase in both venous and arterial pressure\nB) little effect on venous pressure and a large increase in arterial pressure\nC) an increase in venous pressure and an equal but opposite decrease in arterial pressure\nD) a small decrease in venous pressure and a large increase in arterial pressure\nE) a large increase in venous pressure and a small increase in arterial pressure\nF) a decrease in venous pressure and no change in arterial pressure\nG) an increase in both venous and arterial pressure\nH) no change in pressure in either compartment\nI) no effect on venous pressure and a small increase in arterial pressure\nJ) a decrease in both venous and arterial pressure\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.291861891746521,
+      "softmax_neutral": [
+        0.009173507802188396,
+        0.019939186051487923,
+        0.16118144989013672,
+        0.188440203666687,
+        0.027147386223077774,
+        0.06165739521384239,
+        0.08493664860725403,
+        0.0018618921749293804,
+        0.15380041301250458,
+        0.291861891746521
+      ],
+      "logits_neutral": [
+        -0.1787109375,
+        0.59765625,
+        2.6875,
+        2.84375,
+        0.90625,
+        1.7265625,
+        2.046875,
+        -1.7734375,
+        2.640625,
+        3.28125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Which of the following statements about mitochondria and chloroplasts is generally true?\nA) Plants, animals, and fungi all have both chloroplasts and mitochondria.\nB) Plants and fungi have chloroplasts but no mitochondria; animals have only mitochondria.\nC) Animals have both chloroplasts and mitochondria; plants and fungi have only chloroplasts.\nD) Plants and animals have chloroplasts but no mitochondria; fungi have only mitochondria.\nE) Plants and animals have mitochondria but no chloroplasts; fungi have only chloroplasts.\nF) Plants have chloroplasts but no mitochondria; fungi have mitochondria but no chloroplasts.\nG) Plants have chloroplasts but no mitochondria; animals have mitochondria but no chloroplasts.\nH) Animals and fungi have both chloroplasts and mitochondria; plants have only mitochondria.\nI) Plants have both chloroplasts and mitochondria; animals and fungi have only mitochondria.\nJ) Plants and fungi have mitochondria but no chloroplasts; animals have only chloroplasts.\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.4937017560005188,
+      "softmax_neutral": [
+        0.009439474903047085,
+        0.001158636761829257,
+        0.0006398599944077432,
+        0.001419591368176043,
+        0.004024341236799955,
+        0.01899392157793045,
+        0.4937017560005188,
+        0.00033455854281783104,
+        0.3844952881336212,
+        0.08579250425100327
+      ],
+      "logits_neutral": [
+        0.69921875,
+        -1.3984375,
+        -1.9921875,
+        -1.1953125,
+        -0.1533203125,
+        1.3984375,
+        4.65625,
+        -2.640625,
+        4.40625,
+        2.90625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "A female fruit fly bearing linked genes that produce the phenotype gray body and normal wings mates with a male fruit fly of phenotype black body and vestigial wings. The presence of gray-bodied, vestigialwinged flies among the progeny is best explained by\nA) penetrance\nB) independent assortment\nC) genetic drift\nD) incomplete dominance\nE) crossing over\nF) mutation\nG) codominance\nH) non-disjunction\nI) transcription error\nJ) segregation of alleles\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.9957701563835144,
+      "softmax_neutral": [
+        0.0002131621295120567,
+        0.00014144300075713545,
+        4.5207889343146235e-05,
+        6.375335215125233e-05,
+        0.9957701563835144,
+        0.0017502637347206473,
+        0.00010429352551000193,
+        2.2032569177099504e-05,
+        0.0012029374483972788,
+        0.000686753133777529
+      ],
+      "logits_neutral": [
+        -0.79296875,
+        -1.203125,
+        -2.34375,
+        -2.0,
+        7.65625,
+        1.3125,
+        -1.5078125,
+        -3.0625,
+        0.9375,
+        0.376953125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Targeting of a newly synthesized protein is most likely to require two different signal peptides for which of the following destinations?\nA) Ribosome\nB) Mitochondrion\nC) Chloroplast\nD) Lysosome\nE) Endoplasmic reticulum\nF) Peroxisome\nG) Nucleus\nH) Cytosol\nI) Plasma membrane\nJ) Golgi apparatus\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.18926730751991272,
+      "softmax_neutral": [
+        0.012667740695178509,
+        0.14740151166915894,
+        0.11479642987251282,
+        0.032889727503061295,
+        0.18926730751991272,
+        0.05134013667702675,
+        0.13632412254810333,
+        0.0017984232399612665,
+        0.13847090303897858,
+        0.17504365742206573
+      ],
+      "logits_neutral": [
+        -0.1416015625,
+        2.3125,
+        2.0625,
+        0.8125,
+        2.5625,
+        1.2578125,
+        2.234375,
+        -2.09375,
+        2.25,
+        2.484375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "All of the following might be found in connective tissue EXCEPT\nA) thrombin\nB) glycosaminoglycans\nC) collagens\nD) fibroblasts\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.8521474599838257,
+      "softmax_neutral": [
+        0.8521474599838257,
+        0.05709032714366913,
+        0.007696213200688362,
+        0.083065927028656
+      ],
+      "logits_neutral": [
+        5.09375,
+        2.390625,
+        0.38671875,
+        2.765625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Aggressive ants live in the swollen thorns of a small tropical tree and feed on oil-rich bodies that the tree produces at the tips of its leaflets. Which of the following experiments best tests the hypothesis that ants defend the plant by either killing or chasing away leaf-feeding insects?\nA) Remove oil-rich bodies and measure subsequent ant density.\nB) Remove leaf-feeding insects and measure subsequent ant density.\nC) Add more oil-rich bodies and measure subsequent leaf damage.\nD) Remove leaf-feeding insects and measure subsequent leaf damage.\nE) Remove ants and measure subsequent thorn growth.\nF) Add more leaf-feeding insects and measure subsequent ant density.\nG) Remove the thorns and measure subsequent density of ants.\nH) Remove the tree and measure subsequent ant density.\nI) Remove ants and measure subsequent leaf damage.\nJ) Add more ants and measure subsequent leaf damage.\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.8738797903060913,
+      "softmax_neutral": [
+        0.005980880465358496,
+        0.0026852842420339584,
+        0.0013555303448811173,
+        0.0027382466942071915,
+        0.0010723129380494356,
+        0.0032327508088201284,
+        0.004470731597393751,
+        0.0002144760510418564,
+        0.8738797903060913,
+        0.10437006503343582
+      ],
+      "logits_neutral": [
+        0.203125,
+        -0.59765625,
+        -1.28125,
+        -0.578125,
+        -1.515625,
+        -0.412109375,
+        -0.087890625,
+        -3.125,
+        5.1875,
+        3.0625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "A plant that grows along a trellis exhibits\nA) heliotropism\nB) hydrotropism\nC) thigmotropism\nD) negative gravidotropism\nE) chemotropism\nF) negative phototropism\nG) gravidotropism\nH) positive phototropism\nI) phototropism\n",
+      "label": 2,
+      "num_options": 9,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9466487765312195,
+      "softmax_neutral": [
+        0.004349738359451294,
+        0.0006516016437672079,
+        0.9466487765312195,
+        0.0028862538747489452,
+        0.0015046980697661638,
+        0.0023191701620817184,
+        0.005762466695159674,
+        0.0019301846623420715,
+        0.033947087824344635
+      ],
+      "logits_neutral": [
+        1.2109375,
+        -0.6875,
+        6.59375,
+        0.80078125,
+        0.1494140625,
+        0.58203125,
+        1.4921875,
+        0.3984375,
+        3.265625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Hardy-Weinberg equilibrium generally assumes all of the following EXCEPT\nA) a large population\nB) genetic drift\nC) random mating\nD) absence of selection\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9982506632804871,
+      "softmax_neutral": [
+        0.001324459444731474,
+        0.9982506632804871,
+        8.466986037092283e-05,
+        0.0003401493013370782
+      ],
+      "logits_neutral": [
+        -0.78125,
+        5.84375,
+        -3.53125,
+        -2.140625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "In the presence of alcohol dehydrogenase, the rate of reduction of acetaldehyde to ethanol increases as the concentration of acetaldehyde is increased. Eventually, the rate of the reaction reaches a maximum, after which point further increases in the concentration of acetaldehyde have no effect. Which of the following is true at the maximal rate of reaction?\nA) The enzyme's catalytic activity has been reduced.\nB) The change in free energy of the reaction decreases.\nC) The concentration of acetaldehyde has surpassed the enzyme's affinity for it.\nD) The enzyme starts interacting with other molecules instead of acetaldehyde.\nE) The enzyme is no longer specific for acetaldehyde.\nF) The enzyme has been denatured.\nG) Nearly all of the enzyme molecules are interacting with acetaldehyde molecules.\nH) The enzyme molecules are completely saturated with ethanol.\nI) The activation energy of the reaction decreases.\nJ) The reaction has reached a state of equilibrium.\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.9924778342247009,
+      "softmax_neutral": [
+        0.00057079060934484,
+        8.55058606248349e-05,
+        0.0001205825901706703,
+        0.00017004871915560216,
+        8.822010568110272e-05,
+        0.0001648168545216322,
+        0.9924778342247009,
+        1.9078937839367427e-05,
+        0.001175770303234458,
+        0.005127302370965481
+      ],
+      "logits_neutral": [
+        -0.3671875,
+        -2.265625,
+        -1.921875,
+        -1.578125,
+        -2.234375,
+        -1.609375,
+        7.09375,
+        -3.765625,
+        0.35546875,
+        1.828125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Which of the following adaptations would limit pollination by bees and promote hummingbird pollination?\nA) Flowers with a narrow opening that only small insects can access\nB) Pendant (hanging) red-colored flowers\nC) Modified petals to provide a landing space\nD) Flowers with a strong sweet fragrance\nE) Bright blue flowers that open in the early morning\nF) Small, white, night-blooming flowers\nG) Flowers producing large amounts of nectar with low sugar concentration\nH) Flowers with spiky petals and deep tubes\nI) Patterns of ultraviolet color on the petals\nJ) Nectar with high sugar concentration produced in limited amounts\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.6312433481216431,
+      "softmax_neutral": [
+        0.03293600305914879,
+        0.011858941055834293,
+        0.0009198372717946768,
+        0.0033254255540668964,
+        0.0030160301830619574,
+        0.011404631659388542,
+        0.09382594376802444,
+        0.15229454636573792,
+        0.0591752789914608,
+        0.6312433481216431
+      ],
+      "logits_neutral": [
+        1.359375,
+        0.337890625,
+        -2.21875,
+        -0.93359375,
+        -1.03125,
+        0.298828125,
+        2.40625,
+        2.890625,
+        1.9453125,
+        4.3125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Keystone species are thought to have profound effects on the structure and composition of ecological communities because they\nA) are more abundant than most other species in their communities\nB) tend to reduce diversity by eliminating food resources for other species\nC) are the largest species in their communities\nD) are the most aggressive species in their communities\nE) are the only species capable of reproduction\nF) have no predators within their communities\nG) provide the foundation for food webs\nH) are the only species that can adapt to environmental changes\nI) can prevent superior competitors from driving inferior competitors to local extinction\nJ) consume more resources than other species in their communities\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.9487345218658447,
+      "softmax_neutral": [
+        0.0008719192701391876,
+        0.00024786501307971776,
+        0.00021874011144973338,
+        0.0001600336836418137,
+        0.00025176830240525305,
+        0.0014042508555576205,
+        0.009862333536148071,
+        0.0002943469735328108,
+        0.9487345218658447,
+        0.03795415908098221
+      ],
+      "logits_neutral": [
+        -1.5234375,
+        -2.78125,
+        -2.90625,
+        -3.21875,
+        -2.765625,
+        -1.046875,
+        0.90234375,
+        -2.609375,
+        5.46875,
+        2.25
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Charles Darwin's proposed conditions for natural selection encompass all of the following with regard to a given population EXCEPT\nA) inheritance of both \"fit\" and \"unfit\" genes\nB) differential survival and reproductive success\nC) competition for limited resources\nD) overproduction of offspring\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.8910157084465027,
+      "softmax_neutral": [
+        0.8910157084465027,
+        0.04232961684465408,
+        0.005065435543656349,
+        0.061589233577251434
+      ],
+      "logits_neutral": [
+        5.125,
+        2.078125,
+        -0.044921875,
+        2.453125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Adaptations of plants to minimize water loss in environments with high temperatures include which of the following?\nA) Thick, lush foliage\nB) Smooth, glossy leaves\nC) High rates of transpiration\nD) Shallow root systems\nE) Spines instead of leaves\nF) Numerous stomata\nG) Thin cuticles\nH) Large surface-to-volume ratios\nI) Absence of stomata\nJ) Broad, flat leaves\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.9930242300033569,
+      "softmax_neutral": [
+        0.0003610056301113218,
+        7.789683877490461e-05,
+        6.308277806965634e-05,
+        8.292075654026121e-05,
+        0.9930242300033569,
+        0.0007960039656609297,
+        0.00012843016884289682,
+        1.2325069292273838e-05,
+        0.0012670514406636357,
+        0.0041870856657624245
+      ],
+      "logits_neutral": [
+        -0.01336669921875,
+        -1.546875,
+        -1.7578125,
+        -1.484375,
+        7.90625,
+        0.77734375,
+        -1.046875,
+        -3.390625,
+        1.2421875,
+        2.4375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Which of the following statements concerning a sarcomere of a striated muscle (such as skeletal muscle) is correct?\nA) The A band shortens during muscle contraction.\nB) During contraction H zones become elongated.\nC) The proteins troponin and tropomyosin constitute the thick and thin filaments, respectively.\nD) Myosin filaments are found in the I band.\nE) Troponin and tropomyosin are located in the H zone.\nF) Tropomyosin binds to myosin, blocking the actin-binding site.\nG) The thin filaments are composed entirely of myosin.\nH) In the relaxed position tropomyosin impedes myosin's access to the binding site of actin.\n",
+      "label": 7,
+      "num_options": 8,
+      "answer_neutral": "H",
+      "prob_neutral": 0.5548001527786255,
+      "softmax_neutral": [
+        0.03229324519634247,
+        0.009293767623603344,
+        0.0019393600523471832,
+        0.007290532812476158,
+        0.024376217275857925,
+        0.14932245016098022,
+        0.2206842601299286,
+        0.5548001527786255
+      ],
+      "logits_neutral": [
+        1.25,
+        0.004486083984375,
+        -1.5625,
+        -0.23828125,
+        0.96875,
+        2.78125,
+        3.171875,
+        4.09375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Hybrids between some related species of plants are sterile because the parent plants had different chromosome numbers. Occasionally the chromosome number of such a hybrid plant doubles spontaneously. Which of the following best describes the descendants of those plants with the double chromosome number?\nA) The descendants would have a reduced lifespan due to the increased chromosome number.\nB) The descendants would have a higher rate of mutation due to the increased chromosome number.\nC) The descendants would have a decreased ability to reproduce due to chromosomal abnormalities.\nD) The descendants would be genetically identical to the parent plant.\nE) The descendants would be at a selective advantage because of the increased ability to introgress.\nF) The plant with the double chromosome number would be more susceptible to disease, impacting the survival of its descendants.\nG) The plant with the double chromosome number would be genetically defective and have no descendants.\nH) The descendants would be reproductively successful because they could backcross with the parental species.\nI) The descendants would be reproductively isolated because of the increased chromosome number.\nJ) The descendants would regain the ability to reproduce sexually because chromosomes could pair normally.\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.9940326809883118,
+      "softmax_neutral": [
+        0.00015875115059316158,
+        7.92038845247589e-05,
+        7.797595026204363e-05,
+        0.00012267337297089398,
+        0.0001065804754034616,
+        0.00031571436556987464,
+        0.0004593616758938879,
+        4.374053605715744e-05,
+        0.004603284411132336,
+        0.9940326809883118
+      ],
+      "logits_neutral": [
+        -1.9921875,
+        -2.6875,
+        -2.703125,
+        -2.25,
+        -2.390625,
+        -1.3046875,
+        -0.9296875,
+        -3.28125,
+        1.375,
+        6.75
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "An organism belonging to the nekton is which one of the following?\nA) Sponge\nB) Protist\nC) Clam\nD) Starfish\nE) Coral\nF) Barnacle\nG) Whale\nH) Seaweed\nI) Cyanobacterium\nJ) Algae\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.9760259389877319,
+      "softmax_neutral": [
+        0.001898951013572514,
+        0.00032108736922964454,
+        0.0003529899986460805,
+        0.002784627489745617,
+        0.0003652636369224638,
+        0.001197653473354876,
+        0.9760259389877319,
+        0.0001435991289326921,
+        0.0013784904731437564,
+        0.015531405806541443
+      ],
+      "logits_neutral": [
+        1.8203125,
+        0.04296875,
+        0.1376953125,
+        2.203125,
+        0.171875,
+        1.359375,
+        8.0625,
+        -0.76171875,
+        1.5,
+        3.921875
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Double fertilization is a unique feature of flowering plants. In this process, one sperm unites with the egg to yield a zygote. The second sperm unites with the polar nuclei to initiate the formation of the\nA) megagametophyte\nB) embryo\nC) microgametophyte\nD) perisperm\nE) seed coat\nF) cotyledon\nG) endosperm\nH) epidermis\nI) endodermis\nJ) seed embryo\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.9988284707069397,
+      "softmax_neutral": [
+        0.0002129831991624087,
+        5.777325350209139e-05,
+        1.3196653526392765e-05,
+        0.0001379157620249316,
+        2.665797364898026e-05,
+        6.246777775231749e-05,
+        0.9988284707069397,
+        5.6758103710308205e-06,
+        0.000262999179540202,
+        0.00039173607365228236
+      ],
+      "logits_neutral": [
+        0.546875,
+        -0.7578125,
+        -2.234375,
+        0.1123046875,
+        -1.53125,
+        -0.6796875,
+        9.0,
+        -3.078125,
+        0.7578125,
+        1.15625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Cellular uptake of cholesterol occurs through internalization of low density lipoproteincholesterol complexes. Cholesterol uptake involves all of the following EXCEPT\nA) cell-surface receptors\nB) adhesion plaques\nC) endosome formation\nD) receptor-mediated endocytosis\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9462021589279175,
+      "softmax_neutral": [
+        0.015056823380291462,
+        0.9462021589279175,
+        0.002621598541736603,
+        0.03611943870782852
+      ],
+      "logits_neutral": [
+        1.390625,
+        5.53125,
+        -0.357421875,
+        2.265625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Which of the following is typically NOT found in normal somatic cells of a human male?\nA) The entire genetic information possessed by the original zygote\nB) An inactivated X chromosome\nC) Forty-four autosomes\nD) A diploid nucleus\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.35166752338409424,
+      "softmax_neutral": [
+        0.31034550070762634,
+        0.35166752338409424,
+        0.07664993405342102,
+        0.2613371014595032
+      ],
+      "logits_neutral": [
+        2.984375,
+        3.109375,
+        1.5859375,
+        2.8125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "The following pairs were placed in solution together. Which two could be separated by performing low-speed centrifugation?\nA) Golgi apparatus and endoplasmic reticulum\nB) Lysosomes and endosomes\nC) Plasma membrane and cytoskeleton\nD) DNA and mRNA\nE) Proteins and lipids\nF) Nuclei and secretory vesicles\nG) DNA and proteins\n",
+      "label": 5,
+      "num_options": 7,
+      "answer_neutral": "F",
+      "prob_neutral": 0.9815588593482971,
+      "softmax_neutral": [
+        0.0031119068153202534,
+        0.006310828495770693,
+        0.00036733425804413855,
+        0.0009307211730629206,
+        0.001651208964176476,
+        0.9815588593482971,
+        0.0060690646059811115
+      ],
+      "logits_neutral": [
+        0.62109375,
+        1.328125,
+        -1.515625,
+        -0.5859375,
+        -0.01263427734375,
+        6.375,
+        1.2890625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "A marine ecosystem region characterized by penetrance of solar radiation and upwelling of nutrients is the\nA) limnetic zone\nB) euphotic zone\nC) pelagic zone\nD) neritic zone\nE) aphotic zone\nF) benthyl zone\nG) hadal zone\nH) littoral zone\nI) bathyl zone\nJ) abyssal zone\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.6112954616546631,
+      "softmax_neutral": [
+        0.002650919370353222,
+        0.32720285654067993,
+        0.0007501031504943967,
+        0.6112954616546631,
+        0.004047106951475143,
+        0.0024540952872484922,
+        0.004740797448903322,
+        0.001256186398677528,
+        0.02771102637052536,
+        0.01789158210158348
+      ],
+      "logits_neutral": [
+        0.028076171875,
+        4.84375,
+        -1.234375,
+        5.46875,
+        0.451171875,
+        -0.049072265625,
+        0.609375,
+        -0.71875,
+        2.375,
+        1.9375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "The first groups of animals to develop lung tissue adequate to support their respiratory requirements without the use of supplementary gas exchange organs were the\nA) arachnids\nB) mammals\nC) reptiles\nD) crustaceans\nE) birds\nF) insects\nG) fish\nH) trematoda\nI) amphibians\nJ) mollusks\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.6975528001785278,
+      "softmax_neutral": [
+        0.0079328753054142,
+        0.005826531909406185,
+        0.024244826287031174,
+        0.006202311255037785,
+        0.025408359244465828,
+        0.06694211065769196,
+        0.03583152964711189,
+        0.0010244343429803848,
+        0.6975528001785278,
+        0.12903428077697754
+      ],
+      "logits_neutral": [
+        1.1171875,
+        0.80859375,
+        2.234375,
+        0.87109375,
+        2.28125,
+        3.25,
+        2.625,
+        -0.9296875,
+        5.59375,
+        3.90625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "In chloroplasts, a certain protein is found in the lumen of the thylakoid (thylakoid space). It is transcribed in the nucleus and synthesized on cytoplasmic ribosomes. How many membrane bilayers must this protein cross to reach its final location?\nA) Four\nB) Nine\nC) Three\nD) Eight\nE) One\nF) Zero\nG) Five\nH) Two\nI) Seven\nJ) Six\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.2548498213291168,
+      "softmax_neutral": [
+        0.026238739490509033,
+        0.007201347034424543,
+        0.21460507810115814,
+        0.014950382523238659,
+        0.03847656771540642,
+        0.2548498213291168,
+        0.08536399900913239,
+        0.020919349044561386,
+        0.15948094427585602,
+        0.1779138445854187
+      ],
+      "logits_neutral": [
+        1.6328125,
+        0.33984375,
+        3.734375,
+        1.0703125,
+        2.015625,
+        3.90625,
+        2.8125,
+        1.40625,
+        3.4375,
+        3.546875
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "The target of digestion of a nucleosome dimer to nucleosome monomers by DNase is\nA) histones H2A, H2B, H3, and H4\nB) linker DNA\nC) histone H2A and H2B only\nD) the nucleosome linker\nE) histone H3 only\nF) the nucleosome head\nG) the nucleosome core\nH) all histones and the nucleosome core\nI) the nucleosome tail\nJ) the H1 histone\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.4911598861217499,
+      "softmax_neutral": [
+        0.011709979735314846,
+        0.02166452258825302,
+        0.0029898020438849926,
+        0.024453409016132355,
+        0.00567364739254117,
+        0.015362445265054703,
+        0.4911598861217499,
+        0.0019761386793106794,
+        0.10789350420236588,
+        0.3171166479587555
+      ],
+      "logits_neutral": [
+        0.357421875,
+        0.97265625,
+        -1.0078125,
+        1.09375,
+        -0.3671875,
+        0.62890625,
+        4.09375,
+        -1.421875,
+        2.578125,
+        3.65625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Which of the following statements about embryonic cleavage is NOT true?\nA) The presence of yolk inhibits cleavage.\nB) Telolecithal eggs undergo meroblastic cleavage.\nC) The vegetal pole undergoes cleavage more readily than does the animal pole\nD) The rapid mitotic divisions of cleavage directly give rise to blastomeres.\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.6794933676719666,
+      "softmax_neutral": [
+        0.6794933676719666,
+        0.11092425882816315,
+        0.11092425882816315,
+        0.09865806996822357
+      ],
+      "logits_neutral": [
+        3.90625,
+        2.09375,
+        2.09375,
+        1.9765625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Mitochondria isolated and placed in a buffered solution with a low pH begin to manufacture ATP. Which of the following is the best explanation for the effect of low external pH?\nA) It increases the acid concentration in the mitochondria matrix.\nB) It decreases the acid concentration in the mitochondria matrix.\nC) It increases the concentration of H+ in the mitochondria matrix.\nD) It decreases the OH- concentration in the mitochondria matrix.\nE) It increases diffusion of H+ from the intermembrane space to the matrix.\nF) It increases the OH- concentration in the mitochondria matrix.\nG) It increases the concentration of OH-, causing the mitochondria to pump H+ to the intermembrane space.\nH) It decreases diffusion of H+ from the intermembrane space to the matrix.\nI) It decreases the H+ concentration in the mitochondria matrix.\nJ) It increases the concentration of H+, causing the mitochondria to pump OH- to the intermembrane space.\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.41210588812828064,
+      "softmax_neutral": [
+        0.020723950117826462,
+        0.0077269780449569225,
+        0.41210588812828064,
+        0.012014618143439293,
+        0.1435369998216629,
+        0.01786080189049244,
+        0.04659964144229889,
+        0.0013962362427264452,
+        0.12087027728557587,
+        0.217164546251297
+      ],
+      "logits_neutral": [
+        0.025634765625,
+        -0.9609375,
+        3.015625,
+        -0.51953125,
+        1.9609375,
+        -0.123046875,
+        0.8359375,
+        -2.671875,
+        1.7890625,
+        2.375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Which of the following characteristics is predicted for an early-successional plant community?\nA) High detrital biomass\nB) High number of predatory species\nC) High presence of fully matured plant species\nD) High frequency of R-selected species\nE) High rates of soil nutrient depletion\nF) High diversity of plant species\nG) High ratios of primary production to standing-crop biomass\nH) High frequency of K-selected species\nI) Low rates of photosynthesis\nJ) High niche divergence among co-occurring species\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.957075834274292,
+      "softmax_neutral": [
+        0.0030106736812740564,
+        0.0002767737605609,
+        0.00016656535444781184,
+        0.957075834274292,
+        0.0011575610842555761,
+        0.00042533958912827075,
+        0.03174174204468727,
+        5.241212420514785e-05,
+        0.003242623060941696,
+        0.0028504482470452785
+      ],
+      "logits_neutral": [
+        0.95703125,
+        -1.4296875,
+        -1.9375,
+        6.71875,
+        0.00118255615234375,
+        -1.0,
+        3.3125,
+        -3.09375,
+        1.03125,
+        0.90234375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Cleavage symmetry arising from early cell divisions that occur at an oblique angle to the polar axis is known as\nA) rotational cleavage\nB) radial cleavage\nC) transverse cleavage\nD) holoblastic cleavage\nE) concentric cleavage\nF) superficial cleavage\nG) bilateral cleavage\nH) spiral cleavage\nI) meroblastic cleavage\nJ) oblique cleavage\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.9902498126029968,
+      "softmax_neutral": [
+        0.0001374005078105256,
+        0.00018060955335386097,
+        0.00012316500942688435,
+        8.077358506852761e-05,
+        7.952131272759289e-05,
+        0.0011326043168082833,
+        0.0010849685641005635,
+        0.004514670465141535,
+        0.002416528994217515,
+        0.9902498126029968
+      ],
+      "logits_neutral": [
+        -1.2890625,
+        -1.015625,
+        -1.3984375,
+        -1.8203125,
+        -1.8359375,
+        0.8203125,
+        0.77734375,
+        2.203125,
+        1.578125,
+        7.59375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "All of the following may serve as intracellular messengers EXCEPT\nA) calcium ions\nB) cAMP\nC) acetylcholine\nD) inositol 1,4,5-triphosphate\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9878042936325073,
+      "softmax_neutral": [
+        0.006760586053133011,
+        0.002127312822267413,
+        0.9878042936325073,
+        0.003307742066681385
+      ],
+      "logits_neutral": [
+        1.296875,
+        0.140625,
+        6.28125,
+        0.58203125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Fungi participate in each of the following EXCEPT\nA) photosynthesis to produce glucose\nB) fermentation to produce alcohol\nC) association with humans to produce ringworm\nD) association with the roots of plants to form mycorrhizae\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9983537197113037,
+      "softmax_neutral": [
+        0.9983537197113037,
+        0.0011896815849468112,
+        0.00013961140939500183,
+        0.0003170867566950619
+      ],
+      "logits_neutral": [
+        6.34375,
+        -0.388671875,
+        -2.53125,
+        -1.7109375
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "A species of small rodent eats seeds from only one species of pine. In normal years, a pair of these rodents will have a litter of two or three. It is unusual for small rodents to have such small litter sizes. The rodents are most likely to exhibit which other characteristic?\nA) Precocial young\nB) Nocturnal behavior\nC) Herbivorous diet\nD) High birth rate\nE) Solitary behavior\nF) High parental investment\nG) Large body size\nH) Frequent extrapair matings\nI) Moderate sexual size dimorphism\nJ) Low survival rate\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.9558587670326233,
+      "softmax_neutral": [
+        0.0017444822005927563,
+        0.002473363419994712,
+        0.0027431161142885685,
+        0.01231782790273428,
+        0.001265740254893899,
+        0.01203248556703329,
+        0.0026022077072411776,
+        0.00022737839026376605,
+        0.008734648115932941,
+        0.9558587670326233
+      ],
+      "logits_neutral": [
+        -0.11865234375,
+        0.23046875,
+        0.333984375,
+        1.8359375,
+        -0.439453125,
+        1.8125,
+        0.28125,
+        -2.15625,
+        1.4921875,
+        6.1875
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "The ability of the brain to detect differences in stimulus intensity is best explained by the fact that which of the following varies with the stimulus intensity?\nA) The number of synapses crossed\nB) The speed of the action potential\nC) The amplitude of the action potential\nD) The number of neurons activated\nE) The refractory period of the neuron\nF) The number of action potentials per second\nG) The duration of the action potential\nH) The permeability of the neuron's membrane\nI) The resting potential of the neuron\nJ) The threshold potential\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.7727662324905396,
+      "softmax_neutral": [
+        0.0026490348391234875,
+        0.0007861180929467082,
+        0.0013346225023269653,
+        0.7727662324905396,
+        0.0010537132620811462,
+        0.04640822112560272,
+        0.00700659304857254,
+        0.0002512584032956511,
+        0.005763466469943523,
+        0.16198059916496277
+      ],
+      "logits_neutral": [
+        0.29296875,
+        -0.921875,
+        -0.392578125,
+        5.96875,
+        -0.62890625,
+        3.15625,
+        1.265625,
+        -2.0625,
+        1.0703125,
+        4.40625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Mutation of homeotic cluster genes often results in which of the following developmental defects in Drosophila?\nA) Complete absence of segmentation\nB) Hindrance in the development of the nervous system\nC) Inability to undergo metamorphosis\nD) Absence of a group of contiguous segments\nE) Tumor formation in imaginal discs\nF) Formation of extra segments\nG) Polarity defects in every segment along the anterior-posterior axis\nH) Transformation of one segment into another\nI) Transformation of the posterior segment into the anterior\nJ) Inability to form imaginal discs\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.4518214464187622,
+      "softmax_neutral": [
+        0.010129332542419434,
+        0.0039243209175765514,
+        0.0009140792535617948,
+        0.4518214464187622,
+        0.00695498613640666,
+        0.019620371982455254,
+        0.0527123399078846,
+        0.29171785712242126,
+        0.10565319657325745,
+        0.05655208230018616
+      ],
+      "logits_neutral": [
+        0.1865234375,
+        -0.76171875,
+        -2.21875,
+        3.984375,
+        -0.189453125,
+        0.84765625,
+        1.8359375,
+        3.546875,
+        2.53125,
+        1.90625
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Two xylem plant cell types that provide support and conduct water and minerals are the\nA) parenchyma and companion cells\nB) tracheids and vessel elements\nC) parenchyma and collenchyma\nD) sieve tube members and companion cells\nE) collenchyma and vessel elements\nF) vessel elements and companion cells\nG) sieve tube members and tracheids\nH) collenchyma and sclerenchyma\nI) vessel elements and sclerenchyma\nJ) tracheids and companion cells\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.8882685303688049,
+      "softmax_neutral": [
+        0.001879622577689588,
+        0.8882685303688049,
+        0.0006715102354064584,
+        0.0016171743627637625,
+        0.01639680564403534,
+        0.001872294582426548,
+        0.010753287933766842,
+        0.00250840000808239,
+        0.06849591434001923,
+        0.007536386605352163
+      ],
+      "logits_neutral": [
+        -0.408203125,
+        5.75,
+        -1.4375,
+        -0.55859375,
+        1.7578125,
+        -0.412109375,
+        1.3359375,
+        -0.11962890625,
+        3.1875,
+        0.98046875
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Brood parasites such as the cuckoo successfully trick other species of birds into rearing their young by exploiting the host birds' instinctive response to the loud begging cues of a fledgling in their nest. The genes that allow the host bird species to be duped into rearing the cuckoo fledglings to the detriment of their own offspring most likely remain in the gene pool of the population because\nA) the host birds learn from the experience and are less likely to be duped in the future\nB) on average, the host birds' response allows them to rear their own young efficiently by feeding only those who indicate they are hungry\nC) the cuckoo fledglings share some of their genes with the host birds\nD) the cuckoo fledglings contribute to the survival of the host bird species by increasing genetic diversity\nE) the maximum fitness of the duped bird is not compromised when the bird rears an interloper of another species\nF) the maximum fitness of the cuckoo would then be reduced\nG) on average, little energy is spent on rearing a fledgling bird, whether it is an interloper or one's own\nH) the cuckoo fledglings help to protect the nest from predators\nI) the genes that allow the host birds to be duped are necessary for the survival of the cuckoo species\n",
+      "label": 1,
+      "num_options": 9,
+      "answer_neutral": "E",
+      "prob_neutral": 0.6149743795394897,
+      "softmax_neutral": [
+        0.054582078009843826,
+        0.03310570493340492,
+        0.014519416727125645,
+        0.01710805483162403,
+        0.6149743795394897,
+        0.04385793209075928,
+        0.1707722395658493,
+        0.004393711686134338,
+        0.046686530113220215
+      ],
+      "logits_neutral": [
+        1.859375,
+        1.359375,
+        0.53515625,
+        0.69921875,
+        4.28125,
+        1.640625,
+        3.0,
+        -0.66015625,
+        1.703125
+      ]
+    },
+    {
+      "task": "college biology",
+      "category": "biology",
+      "text": "Proteins were shown to move about in a plane of the plasma membrane when mouse cellsurface proteins and human cell-surface proteins were observed to integrate along a fused mouse-human cell plasma membrane. Which of the following cell culture techniques was most likely employed in order to yield these results?\nA) Inserting a bacterial plasmid into a mammalian cell\nB) Producing a hybrid cell\nC) Injecting a fluorescent marker into the cell membrane\nD) Producing a heterokaryon\nE) Isolating an immortal variant cell from culture and using it to create a cell line\nF) Inserting a tumor-inducing virus into a normal cell to initiate transformation\nG) Using a method called cell fusion to combine the mouse and human cells\nH) Using a technique called transfection to insert new genes\nI) Using a process called somatic cell nuclear transfer\nJ) Inducing pluripotency in somatic cells to create stem cells\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.9937165379524231,
+      "softmax_neutral": [
+        0.0009349164902232587,
+        0.00043308152817189693,
+        0.0001235961972270161,
+        0.00020820103236474097,
+        8.169209468178451e-05,
+        0.00033761380473151803,
+        0.9937165379524231,
+        3.3526364859426394e-05,
+        0.001425577444024384,
+        0.0027052706573158503
+      ],
+      "logits_neutral": [
+        1.21875,
+        0.44921875,
+        -0.8046875,
+        -0.283203125,
+        -1.21875,
+        0.2001953125,
+        8.1875,
+        -2.109375,
+        1.640625,
+        2.28125
+      ]
+    }
+  ],
+  "template": [
+    "Would you answer the following question with A, B, C, D, E, F, G, H, I, J?\nQuestion: {context}\nYour answer among \"A, B, C, D, E, F, G, H, I, J\" is: "
+  ]
+}

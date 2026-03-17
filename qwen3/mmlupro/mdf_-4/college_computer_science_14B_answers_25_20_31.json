@@ -1,0 +1,2332 @@
+{
+  "data": [
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following is NOT a property of bitmap graphics?\nA) They can support millions of colors\nB) Realistic lighting and shading can be done.\nC) Bitmaps can be made transparent\nD) Fast hardware exists to move blocks of pixels efficiently.\nE) Bitmap graphics can be created in multiple layers\nF) All line segments can be displayed as straight.\nG) Polygons can be filled with solid colors and textures.\n",
+      "label": 5,
+      "num_options": 7,
+      "answer_neutral": "E",
+      "prob_neutral": 0.6009790301322937,
+      "softmax_neutral": [
+        0.014899003319442272,
+        0.006598493084311485,
+        0.004395543597638607,
+        0.011809123679995537,
+        0.6009790301322937,
+        0.12597204744815826,
+        0.2353467494249344
+      ],
+      "logits_neutral": [
+        0.490234375,
+        -0.32421875,
+        -0.73046875,
+        0.2578125,
+        4.1875,
+        2.625,
+        3.25
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Two expressions E and F are said to be unifiable if there are substitutions for the variables of E and F that make the expressions lexically identical. In the following three expressions, only w, x, y, and z are variables.\nI. f(w,w)\nII. f(x,1)\nIII. f(y,g(z))\nWhich pairs of these expressions is (are) pairs of unifiable expressions?\nA) (I, III) and (II, III) only\nB) (II, III) only\nC) (I, II) and (I, III) only\nD) (I, II) only\nE) Only single expressions are unifiable, not pairs\nF) None of the pairs are unifiable\nG) (I, II), (I, III), and (II, III)\nH) All three expressions are unifiable\nI) (I, II) and (II, III) only\nJ) (I, III) only\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.491901159286499,
+      "softmax_neutral": [
+        0.026583988219499588,
+        0.003755711717531085,
+        0.02046242728829384,
+        0.011305943131446838,
+        0.006338963750749826,
+        0.010492089204490185,
+        0.14093203842639923,
+        0.007950841449201107,
+        0.2802768349647522,
+        0.491901159286499
+      ],
+      "logits_neutral": [
+        0.80078125,
+        -1.15625,
+        0.5390625,
+        -0.05419921875,
+        -0.6328125,
+        -0.12890625,
+        2.46875,
+        -0.40625,
+        3.15625,
+        3.71875
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "A particular disk unit uses a bit string to record the occupancy or vacancy of its tracks, with O denoting vacant and 1 denoting occupied. A 32-bit segment of this string has the hexadecimal value D4FE2003. The percentage of occupied tracks for the corresponding part of the disk, to the nearest percent, is\nA) 69%\nB) 38%\nC) 12%\nD) 50%\nE) 25%\nF) 75%\nG) 44%\nH) 62%\nI) 56%\nJ) 81%\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.3170054256916046,
+      "softmax_neutral": [
+        0.07156725227832794,
+        0.013290425762534142,
+        0.0198347307741642,
+        0.05235971882939339,
+        0.05154795944690704,
+        0.02405410259962082,
+        0.3170054256916046,
+        0.0588696151971817,
+        0.2711490988731384,
+        0.12032168358564377
+      ],
+      "logits_neutral": [
+        0.99609375,
+        -0.6875,
+        -0.287109375,
+        0.68359375,
+        0.66796875,
+        -0.09423828125,
+        2.484375,
+        0.80078125,
+        2.328125,
+        1.515625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Array A contains 256 elements of 4 bytes each. Its first element is stored at physical address 4,096.\nArray B contains 512 elements of 4 bytes each. Its first element is stored at physical address 8,192.\nAssume that only arrays A and B can be cached in an initially empty, physically addressed, physically tagged, direct-mapped, 2K-byte cache with an 8-byte block size. The following loop is then executed.\nfor (i = 0; i < 256; i++)\n        A[i] = A[i] + B[2*i];\nDuring the execution of the loop, how many bytes will be written to memory if the cache has a write-through policy?\nA) 1024\nB) 512\nC) 1536\nD) 2048\nE) 0\nF) 16384\nG) 3072\nH) 4096\nI) 8192\nJ) 256\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.34726014733314514,
+      "softmax_neutral": [
+        0.030821088701486588,
+        0.01284814067184925,
+        0.010183587670326233,
+        0.020531274378299713,
+        0.1517067402601242,
+        0.0091642364859581,
+        0.18299324810504913,
+        0.010283524170517921,
+        0.2242080122232437,
+        0.34726014733314514
+      ],
+      "logits_neutral": [
+        1.46875,
+        0.59375,
+        0.361328125,
+        1.0625,
+        3.0625,
+        0.255859375,
+        3.25,
+        0.37109375,
+        3.453125,
+        3.890625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following is NOT a reasonable justification for choosing to busy-wait on an asynchronous event?\nA) There is no other work for the processor to do.\nB) A busy-wait loop is easier to code than an interrupt handler.\nC) The program executes on a time-sharing system.\nD) The program requires immediate response upon completion of the event.\nE) The wait is expected to be short.\nF) The event being waited on is a high-priority task.\nG) The system has ample power resources.\n",
+      "label": 2,
+      "num_options": 7,
+      "answer_neutral": "G",
+      "prob_neutral": 0.5896790027618408,
+      "softmax_neutral": [
+        0.0525418221950531,
+        0.08106110990047455,
+        0.08169687539339066,
+        0.05295391008257866,
+        0.06826028972864151,
+        0.07380697876214981,
+        0.5896790027618408
+      ],
+      "logits_neutral": [
+        0.97265625,
+        1.40625,
+        1.4140625,
+        0.98046875,
+        1.234375,
+        1.3125,
+        3.390625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Many cryptographic protocols base their security on assumptions about the computational difficulty of integer factorization. Integer factorization serves this purpose because we believe that\nA) testing primality is computationally intractable\nB) integer multiplication is a function whose inverse, factorization, remains difficult for a large class of inputs\nC) only prime numbers can be factored efficiently\nD) even if P = NP, integer factorization is still likely not to be polynomial-time computable\nE) P = NP\nF) integer factorization is a NP-complete problem\nG) integer multiplication is a function whose inverse, factorization, is easy for a large class of inputs\nH) all integers can be factored in polynomial time\n",
+      "label": 1,
+      "num_options": 8,
+      "answer_neutral": "B",
+      "prob_neutral": 0.7188241481781006,
+      "softmax_neutral": [
+        0.02947448380291462,
+        0.7188241481781006,
+        0.007385301869362593,
+        0.049108050763607025,
+        0.013636814430356026,
+        0.005075837951153517,
+        0.15545661747455597,
+        0.021038765087723732
+      ],
+      "logits_neutral": [
+        -0.037841796875,
+        3.15625,
+        -1.421875,
+        0.47265625,
+        -0.80859375,
+        -1.796875,
+        1.625,
+        -0.375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "In multiprogrammed systems it is advantageous if some programs such as editors and compilers can be shared by several users. Which of the following must be true of multiprogrammed systems in order that a single copy of a program can be shared by several users?\nI. The program is a macro.\nII. The program is recursive.\nIII. The program is reentrant.\nA) I and III only\nB) II and III are true but not necessary for sharing a program\nC) None of the statements must be true\nD) II and III only\nE) I only\nF) I, II, and III all must be true\nG) I and II only\nH) II only\nI) The program is non-recursive and reentrant\nJ) III only\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.8711510300636292,
+      "softmax_neutral": [
+        0.004772088956087828,
+        0.00042520466377027333,
+        0.0010360758751630783,
+        0.0007232975913211703,
+        0.0006901753949932754,
+        0.00036369686131365597,
+        0.006855757441371679,
+        0.001484110252931714,
+        0.11249855905771255,
+        0.8711510300636292
+      ],
+      "logits_neutral": [
+        -0.55078125,
+        -2.96875,
+        -2.078125,
+        -2.4375,
+        -2.484375,
+        -3.125,
+        -0.1884765625,
+        -1.71875,
+        2.609375,
+        4.65625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following statements about circuits is (are) true?\nI. Combinational circuits may have feedback; sequential circuits do not.\nII. Combinational circuits have a \"memoryless\" property; sequential circuits do not.\nIII. Both sequential and combinational circuits must be controlled by an external clock.\nA) II and III\nB) I and III only\nC) I and II only\nD) I only\nE) None of the above\nF) II only\nG) I, II, and III\nH) All of the above\nI) II and III only\nJ) III only\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.46822014451026917,
+      "softmax_neutral": [
+        0.014702258631587029,
+        0.0028725166339427233,
+        0.008710799738764763,
+        0.0050414246506989,
+        0.2585757374763489,
+        0.18335764110088348,
+        0.024534642696380615,
+        0.0054510789923369884,
+        0.46822014451026917,
+        0.028533734381198883
+      ],
+      "logits_neutral": [
+        -0.5234375,
+        -2.15625,
+        -1.046875,
+        -1.59375,
+        2.34375,
+        2.0,
+        -0.0113525390625,
+        -1.515625,
+        2.9375,
+        0.1396484375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "To compute the matrix product M_1M_2, where M_1 has p rows and q columns and where M_2 has q rows and r columns, takes time proportional to pqr, and the result is a matrix of p rows and r columns. Consider the product of three matrices N_1N_2N_3 that have, respectively, w rows and x columns, x rows and y columns, and y rows and z columns. Under what condition will it take less time to compute the product as (N_1N_2)N_3 (i.e., multiply the first two matrices first) than to compute it as N_1(N_2 N_3)?\nA) w > z\nB) 1/w + 1/y > 1/x + 1/z\nC) y > z\nD) 1/x + 1/z < 1/w + 1/y\nE) 1/w + 1/z > 1/x + 1/y\nF) There is no such condition; i.e., they will always take the same time.\nG) x > y\nH) 1/w + 1/x < 1/y + 1/z\nI) 1/x + 1/y > 1/w + 1/z\nJ) x < y\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.48202112317085266,
+      "softmax_neutral": [
+        0.011458481661975384,
+        0.01708403043448925,
+        0.005251200404018164,
+        0.072207972407341,
+        0.20093630254268646,
+        0.007791145704686642,
+        0.04735514521598816,
+        0.01340941060334444,
+        0.48202112317085266,
+        0.14248517155647278
+      ],
+      "logits_neutral": [
+        0.1357421875,
+        0.53515625,
+        -0.64453125,
+        1.9765625,
+        3.0,
+        -0.25,
+        1.5546875,
+        0.29296875,
+        3.875,
+        2.65625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following problems can be solved by a standard greedy algorithm?\nI. Finding a minimum spanning tree in an undirected graph with positive-integer edge weights\nII. Finding a maximum clique in an undirected graph\nIII. Finding a maximum flow from a source node to a sink node in a directed graph with positive-integer edge capacities\nA) None of the above\nB) III only\nC) I, II and III\nD) III, and II, but not always I\nE) I, and II, but not always III\nF) I and II only\nG) II only\nH) II and III only\nI) I only\nJ) I and III only\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.8235605955123901,
+      "softmax_neutral": [
+        0.009550618007779121,
+        0.00048487563617527485,
+        0.000427901279181242,
+        0.000566877075470984,
+        0.0022245945874601603,
+        0.0005242755869403481,
+        0.008073904551565647,
+        0.00460486626252532,
+        0.8235605955123901,
+        0.1499815136194229
+      ],
+      "logits_neutral": [
+        0.85546875,
+        -2.125,
+        -2.25,
+        -1.96875,
+        -0.6015625,
+        -2.046875,
+        0.6875,
+        0.1259765625,
+        5.3125,
+        3.609375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "\"Magic memory\"' has two operations: Read and Clear. Both are indivisible and mutually exclusive. Clear sets the magic memory to zero. Read returns a value that represents the number of Read operations since the last Clear operation. Which of the following is (are) true of \"Magic memory\"?\nI. It can provide the functionality of an atomic Test-and-Set.\nII. It can be used to coordinate processes running on a shared-memory multiprocessor.\nIII. It is only useful on a multiprocessor.\nA) I only\nB) II only\nC) II and III\nD) Only II and III\nE) I, II and III\nF) None of the above\nG) All of the above\nH) I and III\nI) I and II\nJ) III only\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.723035991191864,
+      "softmax_neutral": [
+        0.0198023933917284,
+        0.0062554869800806046,
+        0.003706253133714199,
+        0.007130051031708717,
+        0.016577865928411484,
+        0.028476636856794357,
+        0.037431832402944565,
+        0.029960066080093384,
+        0.723035991191864,
+        0.12762343883514404
+      ],
+      "logits_neutral": [
+        0.55859375,
+        -0.59375,
+        -1.1171875,
+        -0.462890625,
+        0.380859375,
+        0.921875,
+        1.1953125,
+        0.97265625,
+        4.15625,
+        2.421875
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Consider the following equations concerning a stack module that has the operations Push, Pop, Top, and IsEmpty. Which of the equations does NOT represent the conventional semantics of a stack?\nA) IsEmpty(Push(Push(Stack,Elem1),Elem2)) = false\nB) Pop(Push(Stack,Elem)) = Stack\nC) IsEmpty(Push(Stack,Elem)) = true\nD) Top(Push(Stack,Elem)) = Elem\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.46414557099342346,
+      "softmax_neutral": [
+        0.10096840560436249,
+        0.05900949239730835,
+        0.3758765459060669,
+        0.46414557099342346
+      ],
+      "logits_neutral": [
+        0.232421875,
+        -0.3046875,
+        1.546875,
+        1.7578125
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Let G = (V, E) be a finite directed acyclic graph with |E| > 0. Which of the following must be true?\nI. G has a vertex with no incoming edge.\nII. G has a vertex with no outgoing edge.\nIII. G has an isolated vertex, that is, one with neither an incoming edge nor an outgoing edge.\nA) I and III only\nB) None of the above\nC) I and II only\nD) II and III only\nE) I, II, and a vertex with one outgoing edge\nF) I, II, and a vertex with one incoming edge\nG) All of the above (I, II, III)\nH) II only\nI) I only\nJ) III only\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.7488089203834534,
+      "softmax_neutral": [
+        0.016511064022779465,
+        0.009763393551111221,
+        0.07019634544849396,
+        0.005898710340261459,
+        0.009537223726511002,
+        0.004085917957127094,
+        0.04031037166714668,
+        0.01839246042072773,
+        0.7488089203834534,
+        0.07649563997983932
+      ],
+      "logits_neutral": [
+        -0.064453125,
+        -0.58984375,
+        1.3828125,
+        -1.09375,
+        -0.61328125,
+        -1.4609375,
+        0.828125,
+        0.04345703125,
+        3.75,
+        1.46875
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Consider the following grammar.\nS → ( S )\nS → x\nWhich of the following statements is (are) true?\nI. The grammar is ambiguous.\nII. The grammar is suitable for top-down parsing.\nIII. The grammar is suitable for bottom-up parsing.\nA) III only and not II\nB) II only and not III\nC) I only\nD) I and II only\nE) III only\nF) Neither I, II, nor III\nG) II and III only\nH) II only\nI) I and III only\nJ) I, II, and III\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.5375055074691772,
+      "softmax_neutral": [
+        0.035452328622341156,
+        0.0020797578617930412,
+        0.00610082084313035,
+        0.006418630015105009,
+        0.11444152891635895,
+        0.015917319804430008,
+        0.07989306002855301,
+        0.013508854433894157,
+        0.5375055074691772,
+        0.1886821985244751
+      ],
+      "logits_neutral": [
+        1.53125,
+        -1.3046875,
+        -0.228515625,
+        -0.177734375,
+        2.703125,
+        0.73046875,
+        2.34375,
+        0.56640625,
+        4.25,
+        3.203125
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "An Euler circuit of an undirected graph is a circuit in which each edge of the graph appears exactly once. Which of the following undirected graphs must have an Euler circuit?\nI. A complete graph with 12 vertices\nII. A complete graph with 13 vertices\nIII. A tree with 13 vertices\nA) A complete graph with 11 vertices\nB) III only\nC) I and II\nD) None of the above\nE) II and III\nF) All of the above\nG) I only\nH) II only\nI) I and III\nJ) A tree with 12 vertices\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.33090656995773315,
+      "softmax_neutral": [
+        0.011728154495358467,
+        0.006867746822535992,
+        0.004331433214247227,
+        0.33090656995773315,
+        0.041579920798540115,
+        0.0021275286562740803,
+        0.24590887129306793,
+        0.025072157382965088,
+        0.30129387974739075,
+        0.030183786526322365
+      ],
+      "logits_neutral": [
+        -0.60546875,
+        -1.140625,
+        -1.6015625,
+        2.734375,
+        0.66015625,
+        -2.3125,
+        2.4375,
+        0.154296875,
+        2.640625,
+        0.33984375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Let M be a single-tape, deterministic Turing machine with tape alphabet {blank,0,1}, and let C denote the (possibly infinite) computation of M starting with a blank tape. The input to each problem below is M, together with a positive integer n. Which of the following problems is (are) decidable?\nI. The computation C lasts for at least n steps.\nII. The computation C lasts for at least n steps, and M prints a 1 at some point after the nth step.\nIII. M scans at least n distinct tape squares during the computation C.\nA) III only\nB) II and III only\nC) Only when M prints a 1 at some point before the nth step.\nD) I only\nE) All are decidable\nF) I and II only\nG) None\nH) II only\nI) I, II, and III\nJ) I and III only\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.3260260820388794,
+      "softmax_neutral": [
+        0.021005617454648018,
+        0.0015577265294268727,
+        0.0011219882871955633,
+        0.010913546197116375,
+        0.009065335616469383,
+        0.03228095546364784,
+        0.3260260820388794,
+        0.01289073284715414,
+        0.3062731623649597,
+        0.27886489033699036
+      ],
+      "logits_neutral": [
+        0.7578125,
+        -1.84375,
+        -2.171875,
+        0.10302734375,
+        -0.08251953125,
+        1.1875,
+        3.5,
+        0.26953125,
+        3.4375,
+        3.34375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Mergesort works by splitting a list of n numbers in half, sorting each half recursively, and merging the two halves. Which of the following data structures will allow mergesort to work in O(n log n) time?\nI. A singly linked list\nII. A doubly linked list\nIII. An array\nA) nan\nB) III only\nC) I and II only\nD) I, II, and III\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9385284781455994,
+      "softmax_neutral": [
+        0.012576289474964142,
+        0.026211237534880638,
+        0.02268393523991108,
+        0.9385284781455994
+      ],
+      "logits_neutral": [
+        -1.453125,
+        -0.71875,
+        -0.86328125,
+        2.859375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following statements about Ethernets is typically FALSE?\nA) Ethernet protocols use a collision-detection method to ensure that messages are transmitted properly.\nB) Ethernets use circuit switching to send messages.\nC) Networks connected by Ethernets are limited in length to a few hundred meters.\nD) Ethernets use buses with multiple masters.\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.5981433391571045,
+      "softmax_neutral": [
+        0.10766091197729111,
+        0.25625529885292053,
+        0.03794045373797417,
+        0.5981433391571045
+      ],
+      "logits_neutral": [
+        -0.12890625,
+        0.73828125,
+        -1.171875,
+        1.5859375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following decimal numbers has an exact representation in binary notation?\nA) 0.8\nB) 0.3\nC) 0.9\nD) 0.2\nE) 0.1\nF) 0.7\nG) 0.6\nH) 0.5\nI) 0.4\n",
+      "label": 7,
+      "num_options": 9,
+      "answer_neutral": "I",
+      "prob_neutral": 0.49951171875,
+      "softmax_neutral": [
+        0.023169349879026413,
+        0.0007748242933303118,
+        0.001447562244720757,
+        0.006337241269648075,
+        0.0028564187232404947,
+        0.002386627020314336,
+        0.029532935470342636,
+        0.43398329615592957,
+        0.49951171875
+      ],
+      "logits_neutral": [
+        0.11669921875,
+        -3.28125,
+        -2.65625,
+        -1.1796875,
+        -1.9765625,
+        -2.15625,
+        0.359375,
+        3.046875,
+        3.1875
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Assume that a debugger places a breakpoint at a load instruction at virtual address 0x77E81234 (hexadecimal notation) in a debugged process P. If the text segment of P begins at 0x77E80000 in P’s virtual address space and if the debugger has mapped this same text segment at 0x01000000 in its virtual address space, which of the following is the virtual address used by the debugger in its WRITE operation, along with a description of how the debugger has mapped the virtual memory page containing this address?\nA) 0x76E81234; page mapped with READ-ONLY access\nB) 0x77E81234; page mapped with READ/WRITE access\nC) 0x76E81234; page mapped with COPY-ON-WRITE access\nD) 0x01000000; page mapped with COPY-ON-WRITE access\nE) 0x01000000; page mapped with READ/WRITE access\nF) 0x01001234; page mapped with COPY-ON-WRITE access\nG) 0x76E81234; page mapped with READ/WRITE access\nH) 0x01001234; page mapped with READ-ONLY access\nI) 0x77E81234; page mapped with COPY-ON-WRITE access\nJ) 0x01001234; page mapped with READ/WRITE access\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.8434746265411377,
+      "softmax_neutral": [
+        0.002902739215642214,
+        0.0007454850128851831,
+        0.00039902940625324845,
+        0.0015905697364360094,
+        0.002074494259431958,
+        0.0055084312334656715,
+        0.010824551805853844,
+        0.005134421866387129,
+        0.12734562158584595,
+        0.8434746265411377
+      ],
+      "logits_neutral": [
+        -1.265625,
+        -2.625,
+        -3.25,
+        -1.8671875,
+        -1.6015625,
+        -0.625,
+        0.050537109375,
+        -0.6953125,
+        2.515625,
+        4.40625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Hash tables can contribute to an efficient average-case solution for all of the problems described below EXCEPT:\nA) Key comparison: Given two keys, determine if they are identical or different.\nB) Counting distinct values: Given a set of n keys, determine the number of distinct key values.\nC) Dynamic dictionary: Support the operations of insert, delete, and search in a dictionary.\nD) Range search: Given values a and b, find all the records whose key value is in the range a, b.\nE) Symbol table lookup: Given a program identifier, find its type and address.\nF) Frequency count: Given a set of n keys, determine how many times each key appears.\nG) Unique key identification: Given a key, find if it is unique in the set.\nH) Sequential search: Given a key value, find the first occurrence of the key in the set.\n",
+      "label": 3,
+      "num_options": 8,
+      "answer_neutral": "G",
+      "prob_neutral": 0.38401928544044495,
+      "softmax_neutral": [
+        0.0677834302186966,
+        0.015912406146526337,
+        0.01350468210875988,
+        0.3134273886680603,
+        0.030111778527498245,
+        0.012637016363441944,
+        0.38401928544044495,
+        0.16260400414466858
+      ],
+      "logits_neutral": [
+        0.78125,
+        -0.66796875,
+        -0.83203125,
+        2.3125,
+        -0.0301513671875,
+        -0.8984375,
+        2.515625,
+        1.65625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Let G = (V, E) be a connected, undirected graph, and let a and b be two distinct vertices in V. Let P_1 be the problem of finding a shortest simple path between a and b, and let P_2 be the problem of finding a longest simple path between a and b. Which of the following statements about P_1 and P_2 is true?\nA) Both P_1 and P_2 are known to not be solvable in polynomial time.\nB) Both P_1 and P_2 can be solved in polynomial time.\nC) P_1 is not known to be solvable in polynomial time but P_2 can be solved in polynomial time.\nD) P_2 can be solved in polynomial time and P_1 is known to not be solvable in polynomial time.\nE) P_2 can be solved in polynomial time but P_1 is not known to be solvable in polynomial time.\nF) It is known that either P_1 or P_2 can be solved in polynomial time.\nG) P_1 can be solved in polynomial time but P_2 is not known to be solvable in polynomial time.\nH) It is not known whether either P_1 or P_2 can be solved in polynomial time.\nI) P_1 is known to not be solvable in polynomial time but P_2 can be solved in polynomial time.\nJ) P_1 can be solved in polynomial time and P_2 is known to not be solvable in polynomial time.\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.7621985673904419,
+      "softmax_neutral": [
+        0.004158979281783104,
+        0.0009801567066460848,
+        0.0003334814973641187,
+        0.0013397152069956064,
+        0.0028808407951146364,
+        0.0005165062611922622,
+        0.7621985673904419,
+        0.0013292895164340734,
+        0.053514741361141205,
+        0.1727476865053177
+      ],
+      "logits_neutral": [
+        -0.2734375,
+        -1.71875,
+        -2.796875,
+        -1.40625,
+        -0.640625,
+        -2.359375,
+        4.9375,
+        -1.4140625,
+        2.28125,
+        3.453125
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following statements about floating-point arithmetic is NOT true?\nA) It is inherently nonassociative because some numbers have no exact representation.\nB) All operations in floating-point arithmetic are commutative.\nC) It is inherently nonassociative because there have to be upper and lower bounds on the size of numbers.\nD) Associativity can be achieved with appropriate roundoff conventions.\nE) Some rational numbers have no exact representation.\n",
+      "label": 3,
+      "num_options": 5,
+      "answer_neutral": "E",
+      "prob_neutral": 0.43008044362068176,
+      "softmax_neutral": [
+        0.08112600445747375,
+        0.10457553714513779,
+        0.033196646720170975,
+        0.351021409034729,
+        0.43008044362068176
+      ],
+      "logits_neutral": [
+        0.81640625,
+        1.0703125,
+        -0.0771484375,
+        2.28125,
+        2.484375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Suppose sharing of tiles in a multilevel directory structure is achieved with directory entries that are links pointing to a node containing information about a shared file. Information in this node includes (1) the owner of the file, (2) a count of the number of links to the tile, and (3) the disk block numbers of the file. What is a primary drawback to this approach to sharing?\nA) If the owner modifies the file, another user who does not share will see the changes.\nB) If the owner changes the permissions of the file, other users will not be able to access it.\nC) If the owner changes the count of the number of links to the file, other users will lose access.\nD) If the owner renames the file, other users will not be able to access it.\nE) If the owner encrypts the file, other users will lose access.\nF) If the owner moves the file to a new disk block, all links to the file will become invalid.\nG) If the owner is allowed to delete a file, dangling links may result.\nH) If any user who shares the file appends to it, others who share it will not be able to access the new disk blocks.\nI) If any user who shares the file modifies it, the owner will not be able to see the changes.\nJ) If the owner logs out of the system, all links to the file will become invalid.\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.8898786902427673,
+      "softmax_neutral": [
+        0.004706279840320349,
+        0.0011760706547647715,
+        0.0018702013185247779,
+        0.0035248403437435627,
+        0.0026763249188661575,
+        0.007009982131421566,
+        0.8898786902427673,
+        0.007579598110169172,
+        0.05428294837474823,
+        0.027295181527733803
+      ],
+      "logits_neutral": [
+        0.7265625,
+        -0.66015625,
+        -0.1962890625,
+        0.4375,
+        0.162109375,
+        1.125,
+        5.96875,
+        1.203125,
+        3.171875,
+        2.484375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Of the following problems concerning a given undirected graph G, which is currently known to be solvable in polynomial time?\nA) Finding the longest path in G\nB) Finding a longest simple cycle in G\nC) Finding all Hamiltonian cycles in G\nD) Finding a largest clique in G\nE) Finding a minimum vertex cover in G\nF) Finding a maximum independent set in G\nG) Finding a minimum dominating set in G\nH) Finding a maximum clique in G\nI) Finding a shortest cycle in G\n",
+      "label": 8,
+      "num_options": 9,
+      "answer_neutral": "I",
+      "prob_neutral": 0.9383446574211121,
+      "softmax_neutral": [
+        0.0048429099842906,
+        0.0006458857096731663,
+        0.0006663883686996996,
+        0.0014218088472262025,
+        0.03112051635980606,
+        0.0011514158686622977,
+        0.007220540661364794,
+        0.014585892669856548,
+        0.9383446574211121
+      ],
+      "logits_neutral": [
+        0.2021484375,
+        -1.8125,
+        -1.78125,
+        -1.0234375,
+        2.0625,
+        -1.234375,
+        0.6015625,
+        1.3046875,
+        5.46875
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "The IP protocol is primarily concerned with\nA) Reliable delivery of large (multi-packet) messages between machines that are not necessarily directly connected\nB) Providing a user interface for network management\nC) Coordinating the hardware components of the network\nD) Routing packets through the network\nE) Controlling the power consumption of network devices\nF) Reliable delivery of packets between directly connected machines\nG) Ensuring compatibility between different network technologies\nH) Monitoring the network traffic speed\nI) Dealing with differences among operating system architectures\nJ) Managing the security of data transmission\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.5236680507659912,
+      "softmax_neutral": [
+        0.03036230057477951,
+        0.003340667113661766,
+        0.0060966103337705135,
+        0.5236680507659912,
+        0.023738732561469078,
+        0.023098422214388847,
+        0.12634079158306122,
+        0.01011068094521761,
+        0.2115810215473175,
+        0.04166277125477791
+      ],
+      "logits_neutral": [
+        0.90234375,
+        -1.3046875,
+        -0.703125,
+        3.75,
+        0.65625,
+        0.62890625,
+        2.328125,
+        -0.197265625,
+        2.84375,
+        1.21875
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "In which of the following representations of numbers by 8-bit words is the addition of the integers 109 and -42 within range?\nI. One's complement\nII. Two's complement\nIII. Sign and magnitude\nA) I and II only\nB) I, II, and III\nC) III only\nD) II and III only\nE) I and III only\nF) I only\nG) II only\nH) All are out of range\nI) None of the above\nJ) Only in signed magnitude and one's complement\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.5482262372970581,
+      "softmax_neutral": [
+        0.029282808303833008,
+        0.002479980234056711,
+        0.0027883166912943125,
+        0.005128499586135149,
+        0.02504691295325756,
+        0.0041208649054169655,
+        0.25099629163742065,
+        0.005721254274249077,
+        0.5482262372970581,
+        0.1262088418006897
+      ],
+      "logits_neutral": [
+        0.8984375,
+        -1.5703125,
+        -1.453125,
+        -0.84375,
+        0.7421875,
+        -1.0625,
+        3.046875,
+        -0.734375,
+        3.828125,
+        2.359375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following considerations applies (apply) to choosing the page size in a paging system?\nI. An advantage of larger pages is that they lead to smaller page tables.\nII. An advantage of smaller pages is that they lead to less waste due to internal fragmentation.\nIII. Normally, the dominant factor in disk access time is not dependent on page length, so longer pages can be used advantageously.\nA) III only\nB) II only\nC) Only II and I apply, not III\nD) I only\nE) I and III only\nF) I and II only\nG) I, II, and III\nH) Only III and I apply, not II\nI) II and III only\nJ) None of the above considerations apply\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.36143240332603455,
+      "softmax_neutral": [
+        0.008890621364116669,
+        0.004996936768293381,
+        0.008925417438149452,
+        0.004078380763530731,
+        0.016871433705091476,
+        0.13934458792209625,
+        0.10436427593231201,
+        0.011561634950339794,
+        0.33953431248664856,
+        0.36143240332603455
+      ],
+      "logits_neutral": [
+        -0.470703125,
+        -1.046875,
+        -0.466796875,
+        -1.25,
+        0.169921875,
+        2.28125,
+        1.9921875,
+        -0.2080078125,
+        3.171875,
+        3.234375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "In the NoNicks operating system, the time required by a single file-read operation has four nonoverlapping components:\ndisk seek time-25 msec\ndisk latency time-8 msec\ndisk transfer time- 1 msec per 1,000 bytes\noperating system overhead-1 msec per 1,000 bytes + 10 msec\nIn version 1 of the system, the file read retrieved blocks of 1,000 bytes. In version 2, the file read (along with the underlying layout on disk) was modified to retrieve blocks of 4,000 bytes. The ratio of-the time required to read a large file under version 2 to the time required to read the same large file under version 1 is approximately\nA) 1:4\nB) 1:2\nC) 1:1\nD) 1:1.5\nE) 1:3.5\nF) 3:1\nG) 1.1:1\nH) 2:1\nI) 1.5:1\nJ) 1:2.5\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.49636751413345337,
+      "softmax_neutral": [
+        0.016591310501098633,
+        0.009077981114387512,
+        0.008046573027968407,
+        0.035956744104623795,
+        0.0682339072227478,
+        0.007898648269474506,
+        0.16114692389965057,
+        0.032995764166116714,
+        0.49636751413345337,
+        0.1636846363544464
+      ],
+      "logits_neutral": [
+        0.5546875,
+        -0.04833984375,
+        -0.1689453125,
+        1.328125,
+        1.96875,
+        -0.1875,
+        2.828125,
+        1.2421875,
+        3.953125,
+        2.84375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Any set of Boolean operators that is sufficient to represent all Boolean expressions is said to be complete. Which of the following is NOT complete?\nA) {NAND}\nB) {NOT, NAND}\nC) {AND, OR}\nD) {NOT, OR}\nE) {XOR, NOT}\nF) {AND, NOT}\nG) {OR, NOR}\nH) {NOR}\n",
+      "label": 2,
+      "num_options": 8,
+      "answer_neutral": "G",
+      "prob_neutral": 0.7664892077445984,
+      "softmax_neutral": [
+        0.04094104468822479,
+        0.010311161167919636,
+        0.06341073662042618,
+        0.046756140887737274,
+        0.028932487592101097,
+        0.012882671318948269,
+        0.7664892077445984,
+        0.030276603996753693
+      ],
+      "logits_neutral": [
+        0.3984375,
+        -0.98046875,
+        0.8359375,
+        0.53125,
+        0.05126953125,
+        -0.7578125,
+        3.328125,
+        0.0966796875
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following statements describe(s) properties of a purely segmented memory system?\nI. It divides memory into units of equal size.\nII. It permits implementation of virtual memory.\nIII. It suffers from internal fragmentation.\nA) I only\nB) II only\nC) III only\nD) I and III\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9497307538986206,
+      "softmax_neutral": [
+        0.04511900246143341,
+        0.001982390647754073,
+        0.0031678511295467615,
+        0.9497307538986206
+      ],
+      "logits_neutral": [
+        -0.515625,
+        -3.640625,
+        -3.171875,
+        2.53125
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following is usually NOT represented in a subroutine's activation record frame for a stack-based programming language?\nA) Register values for the calling activation record\nB) Values of local variables\nC) The return address\nD) A heap area\nE) Stack pointer for the calling activation record\nF) Address of the subroutine's instruction set\n",
+      "label": 3,
+      "num_options": 6,
+      "answer_neutral": "D",
+      "prob_neutral": 0.8027071356773376,
+      "softmax_neutral": [
+        0.036673422902822495,
+        0.00448388559743762,
+        0.004699071403592825,
+        0.8027071356773376,
+        0.12700670957565308,
+        0.024429768323898315
+      ],
+      "logits_neutral": [
+        1.4453125,
+        -0.65625,
+        -0.609375,
+        4.53125,
+        2.6875,
+        1.0390625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following statements about a remote procedure call is true?\nA) It is used to call procedures with addresses that are farther than 2^16 bytes away.\nB) It cannot return a value.\nC) It cannot pass parameters by reference.\nD) It cannot call procedures implemented in a different language.\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.7471175193786621,
+      "softmax_neutral": [
+        0.18380562961101532,
+        0.03413369134068489,
+        0.03494315221905708,
+        0.7471175193786621
+      ],
+      "logits_neutral": [
+        0.53515625,
+        -1.1484375,
+        -1.125,
+        1.9375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "A particular parallel program computation requires 100 seconds when executed on a single processor. If 40 percent of this computation is \"inherently sequential\" (i.e., will not benefit from additional processors), then the theoretically best possible elapsed times for this program running with 2 and 4 processors, respectively, are\nA) 100 and 50 seconds\nB) 40 and 20 seconds\nC) 60 and 30 seconds\nD) 20 and 10 seconds\nE) 80 and 40 seconds\nF) 70 and 55 seconds\nG) 30 and 15 seconds\nH) 50 and 25 seconds\nI) 110 and 55 seconds\nJ) 90 and 45 seconds\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.3870822489261627,
+      "softmax_neutral": [
+        0.030676010996103287,
+        0.004541805945336819,
+        0.039082251489162445,
+        0.008892424404621124,
+        0.036714375019073486,
+        0.08981030434370041,
+        0.23477725684642792,
+        0.04275611415505409,
+        0.3870822489261627,
+        0.12566719949245453
+      ],
+      "logits_neutral": [
+        0.44921875,
+        -1.4609375,
+        0.69140625,
+        -0.7890625,
+        0.62890625,
+        1.5234375,
+        2.484375,
+        0.78125,
+        2.984375,
+        1.859375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "At time 0, five jobs are available for execution on a single processor, with service times of 25, 15, 5, 3, and 2 time units. Which of the following is the minimum value of the average completion time of these jobs?\nA) 40\nB) 10\nC) 76/5\nD) 100/5\nE) 60\nF) 208/5\nG) 92/5\nH) 30\nI) 20\nJ) 50\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.536088764667511,
+      "softmax_neutral": [
+        0.01134561188519001,
+        0.0029828923288732767,
+        0.03244713693857193,
+        0.006782014388591051,
+        0.0170984398573637,
+        0.013264363631606102,
+        0.536088764667511,
+        0.01411984208971262,
+        0.3201132118701935,
+        0.045757800340652466
+      ],
+      "logits_neutral": [
+        0.51953125,
+        -0.81640625,
+        1.5703125,
+        0.004974365234375,
+        0.9296875,
+        0.67578125,
+        4.375,
+        0.73828125,
+        3.859375,
+        1.9140625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "For all strings x, the function x^M is defined recursively as follows.\ne^M= e, and\nif w is a string and a is a string with length 1, then\n(aw)^M = aw^Ma.\nLet a be a string with length 1, and let x and y be arbitrary strings. Which of the following is true?\nA) a^M = a\nB) (ax)^M = (xa)^M\nC) (xy)^M = y^Mx^M\nD) None of the above\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.8760246634483337,
+      "softmax_neutral": [
+        0.09125661104917526,
+        0.012593826279044151,
+        0.020124876871705055,
+        0.8760246634483337
+      ],
+      "logits_neutral": [
+        0.75390625,
+        -1.2265625,
+        -0.7578125,
+        3.015625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Let T (n) be defined by T(1) = 7 and T(n + 1) = 3n + T(n) for all integers n ≥ 1. Which of the following represents the order of growth of T(n) as a function of n?\nA) Θ(n^3 log n)\nB) Θ(n log n^2)\nC) Θ(sqrt(n))\nD) Θ(n log n)\nE) Θ(log n)\nF) Θ(n^3)\nG) Θ(n)\nH) Θ(n^2 sqrt(n))\nI) Θ(n^2 log n)\nJ) Θ(n^2)\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.4247024357318878,
+      "softmax_neutral": [
+        0.013113019987940788,
+        0.0020134029909968376,
+        0.0013730213977396488,
+        0.09402646869421005,
+        0.0069727785885334015,
+        0.003561346558853984,
+        0.4247024357318878,
+        0.005803260952234268,
+        0.2657720148563385,
+        0.182662233710289
+      ],
+      "logits_neutral": [
+        -0.009033203125,
+        -1.8828125,
+        -2.265625,
+        1.9609375,
+        -0.640625,
+        -1.3125,
+        3.46875,
+        -0.82421875,
+        3.0,
+        2.625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Consider an object-oriented language in which all entities are objects. Two relationships arise: (1) the instance relationship, between an object and the class of which that object is a member, and (2) the subclass relationship, between a class and the superclass from which that class inherits properties. In such a language, when a message is sent to an object requesting execution of one of its methods (procedures), the method is located by following\nA) one or more instance links and then one or more subclass links\nB) one or more subclass links\nC) one or more subclass links and then one or more instance links\nD) one instance link and then zero or more subclass links\nE) one or more instance links\nF) one subclass link only\nG) zero or more instance links\nH) zero or more instance links and then one or more subclass links\nI) one subclass link and then one or more instance links\nJ) one instance link only\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.6139302253723145,
+      "softmax_neutral": [
+        0.010323595255613327,
+        0.0014749605907127261,
+        0.0016073208535090089,
+        0.10668507218360901,
+        0.03573502600193024,
+        0.0016583427786827087,
+        0.02739899419248104,
+        0.008004769682884216,
+        0.19318172335624695,
+        0.6139302253723145
+      ],
+      "logits_neutral": [
+        -0.08544921875,
+        -2.03125,
+        -1.9453125,
+        2.25,
+        1.15625,
+        -1.9140625,
+        0.890625,
+        -0.33984375,
+        2.84375,
+        4.0
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "The language {ww | w in (0 + 1)*} is\nA) accepted by some Turing machine, but by no pushdown automaton\nB) context-free, but not regular\nC) accepted by some finite automaton, but not pushdown automaton\nD) accepted by some Turing machine and some pushdown automaton\nE) accepted by any context-free grammar, but not regular\nF) accepted by some context-free grammar, but not Turing machine\nG) regular, but not context-free\nH) accepted by some pushdown automaton, but not context-free\nI) not accepted by any Turing machine\n",
+      "label": 0,
+      "num_options": 9,
+      "answer_neutral": "A",
+      "prob_neutral": 0.5759180784225464,
+      "softmax_neutral": [
+        0.5759180784225464,
+        0.0068104988895356655,
+        0.0043290164321660995,
+        0.012034786865115166,
+        0.015139292925596237,
+        0.0024859453551471233,
+        0.07855334132909775,
+        0.015139292925596237,
+        0.2895897924900055
+      ],
+      "logits_neutral": [
+        3.90625,
+        -0.53125,
+        -0.984375,
+        0.0380859375,
+        0.267578125,
+        -1.5390625,
+        1.9140625,
+        0.267578125,
+        3.21875
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Of the following, which best approximates the ratio of the number of nonterminal nodes to the total number of nodes in a complete K-ary tree of depth N?\nA) N/K\nB) (N-1)/K\nC) K-1/K\nD) N-1/m\nE) log_10 (1/N)\nF) 1/N\nG) (K-1)/N\nH) K/N\nI) 1/(K-1)\nJ) 1/K\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.5015740394592285,
+      "softmax_neutral": [
+        0.016574064269661903,
+        0.0061196270398795605,
+        0.10513562709093094,
+        0.01988990418612957,
+        0.009150833822786808,
+        0.004547720775008202,
+        0.12195944786071777,
+        0.021674787625670433,
+        0.5015740394592285,
+        0.19337400794029236
+      ],
+      "logits_neutral": [
+        -0.019287109375,
+        -1.015625,
+        1.828125,
+        0.1630859375,
+        -0.61328125,
+        -1.3125,
+        1.9765625,
+        0.2490234375,
+        3.390625,
+        2.4375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Two alternatives for interconnecting a set of processors with bidirectional links are (1) the fully interconnected network, in which each processor is directly connected to every other processor, and (2) the ring network, in which each processor is connected to two other processors. The worst-case path length for a network is the maximum, over all pairs of nodes in the network, of the minimum length paths (measured in number of links) between the nodes. For each type of interconnection of n processors, a figure of merit can be formed as the product of the number of links required for the network times the worst-case path length connecting any two processors. The ratio of this figure of merit for the fully interconnected network compared to that of the ring network, for even n > 2, is\nA) (n-1)/n\nB) 1/(2n)\nC) 1/(n^2)\nD) n/(n-1)\nE) 1/(n(n-1))\nF) 1/n\nG) 1/(n+1)\nH) n^2\nI) (n+1)/n\nJ) 2n\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.31052252650260925,
+      "softmax_neutral": [
+        0.025118587538599968,
+        0.011310783214867115,
+        0.010625497438013554,
+        0.0404147133231163,
+        0.06768191605806351,
+        0.08966396003961563,
+        0.13355407118797302,
+        0.023921554908156395,
+        0.31052252650260925,
+        0.2871864140033722
+      ],
+      "logits_neutral": [
+        0.1259765625,
+        -0.671875,
+        -0.734375,
+        0.6015625,
+        1.1171875,
+        1.3984375,
+        1.796875,
+        0.0771484375,
+        2.640625,
+        2.5625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Array A contains 256 elements of 4 bytes each. Its first element is stored at physical address 4,096.\nArray B contains 512 elements of 4 bytes each. Its first element is stored at physical address 8,192.\nAssume that only arrays A and B can be cached in an initially empty, physically addressed, physically tagged, direct-mapped, 2K-byte cache with an 8-byte block size. The following loop is then executed.\nfor (i = 0; i < 256; i++)\n        A[i] = A[i] + B[2*i];\nDuring the execution of the loop, how many bytes will be written to memory if the cache has a write-back policy?\nA) 512\nB) 1028\nC) 4096\nD) 1024\nE) 2000\nF) 5000\nG) 2048\nH) 1500\nI) 256\nJ) 0\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.45882925391197205,
+      "softmax_neutral": [
+        0.011308482848107815,
+        0.0017478135414421558,
+        0.002011721022427082,
+        0.014295262284576893,
+        0.00458244513720274,
+        0.0017753374995663762,
+        0.09468475729227066,
+        0.005849600303918123,
+        0.40491539239883423,
+        0.45882925391197205
+      ],
+      "logits_neutral": [
+        0.703125,
+        -1.1640625,
+        -1.0234375,
+        0.9375,
+        -0.2001953125,
+        -1.1484375,
+        2.828125,
+        0.0439453125,
+        4.28125,
+        4.40625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Let k >= 2. Let L be the set of strings in {0, 1}^* such that x \\in L if and only if the number of 0's in x is divisible by k and the number of 1's in x is odd. The minimum number of states in a deterministic finite automaton (DFA) that recognizes L is\nA) k - 2\nB) 2k\nC) k^2\nD) k log k\nE) k^2 + 2\nF) 2k + 1\nG) 2^k\nH) k + 2\nI) k^3\nJ) k + log k\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.3094829320907593,
+      "softmax_neutral": [
+        0.01528833992779255,
+        0.02435922808945179,
+        0.09365244209766388,
+        0.013282740488648415,
+        0.046270858496427536,
+        0.21270431578159332,
+        0.16436512768268585,
+        0.057472649961709976,
+        0.3094829320907593,
+        0.06312136352062225
+      ],
+      "logits_neutral": [
+        -0.6171875,
+        -0.1513671875,
+        1.1953125,
+        -0.7578125,
+        0.490234375,
+        2.015625,
+        1.7578125,
+        0.70703125,
+        2.390625,
+        0.80078125
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "In the Internet Protocol (IP) suite of protocols, which of the following best describes the purpose of the Address Resolution Protocol?\nA) To determine the host name of a given hardware address\nB) To translate Web addresses to host names\nC) To determine the IP address of a given hardware address\nD) To translate hardware addresses to IP addresses\nE) To determine the hardware address of a given IP address\nF) To translate IP addresses to host names\nG) To determine the host name of a given IP address\nH) To translate host names to Web addresses\nI) To determine the IP address of a given host name\nJ) To determine the hardware address of a given host name\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.7986327409744263,
+      "softmax_neutral": [
+        0.007663101889193058,
+        0.0011279491009190679,
+        0.01290869526565075,
+        0.029204050078988075,
+        0.7986327409744263,
+        0.0032638295087963343,
+        0.02153371460735798,
+        0.0035567195154726505,
+        0.10808318108320236,
+        0.014025948010385036
+      ],
+      "logits_neutral": [
+        -0.458984375,
+        -2.375,
+        0.0625,
+        0.87890625,
+        4.1875,
+        -1.3125,
+        0.57421875,
+        -1.2265625,
+        2.1875,
+        0.1455078125
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "A starvation-free job-scheduling policy guarantees that no job waits indefinitely for service. Which of the following job-scheduling policies is starvation-free?\nA) Youngest job first\nB) Least frequently used\nC) Round-robin\nD) Most recently used\nE) Longest job first\nF) Random job selection\nG) Priority queuing\nH) Shortest job first\n",
+      "label": 2,
+      "num_options": 8,
+      "answer_neutral": "C",
+      "prob_neutral": 0.8039405941963196,
+      "softmax_neutral": [
+        0.03065892495214939,
+        0.005332927219569683,
+        0.8039405941963196,
+        0.017692115157842636,
+        0.009071615524590015,
+        0.0051688505336642265,
+        0.09452840685844421,
+        0.03360653668642044
+      ],
+      "logits_neutral": [
+        -0.2197265625,
+        -1.96875,
+        3.046875,
+        -0.76953125,
+        -1.4375,
+        -2.0,
+        0.90625,
+        -0.1279296875
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "The access matrix approach to protection has the difficulty that\nA) it requires an extensive amount of computational power\nB) it is not capable of expressing complex protection requirements\nC) the matrix, if stored directly, is large and can be clumsy to manage\nD) the matrix cannot be modified once it is created\nE) it does not allow for the sharing of resources between processes\nF) there is no way to express who has rights to change the access matrix itself\nG) it does not provide sufficient protection against external threats\nH) there is no way to express the hierarchy of access rights within the matrix\nI) deciding whether a process has access to a resource is undecidable\nJ) the matrix, if not stored directly, can cause system failure\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.5178666710853577,
+      "softmax_neutral": [
+        0.014100383967161179,
+        0.010283374227583408,
+        0.5178666710853577,
+        0.009755135513842106,
+        0.011598660610616207,
+        0.040880583226680756,
+        0.032087542116642,
+        0.01916034333407879,
+        0.2997182011604309,
+        0.044549137353897095
+      ],
+      "logits_neutral": [
+        0.333984375,
+        0.018310546875,
+        3.9375,
+        -0.034423828125,
+        0.138671875,
+        1.3984375,
+        1.15625,
+        0.640625,
+        3.390625,
+        1.484375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "An internal hash table has 5 buckets, numbered 0, 1, 2, 3, 4. Keys are integers, and the hash function h(i) = i mod 5 is used, with linear resolution of collisions (i.e., if bucket h(i) is filled, the buckets h(i) + 1, h(i) + 2, ... are tried successively with all bucket numbers computed modulo 5). If elements with keys 13, 8, 24, 10, and 3 are inserted, m that order, into an initially blank hash table, then the content of the bucket numbered 2 is\nA) 10\nB) 8\nC) 10 and 24\nD) Empty\nE) 24\nF) 3\nG) 10 and 3\nH) 3 and 8\nI) 13\nJ) 13 and 8\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.47949886322021484,
+      "softmax_neutral": [
+        0.04956129938364029,
+        0.0041810148395597935,
+        0.0076900627464056015,
+        0.009835741482675076,
+        0.057717129588127136,
+        0.01699463464319706,
+        0.23736914992332458,
+        0.018724288791418076,
+        0.47949886322021484,
+        0.11842785775661469
+      ],
+      "logits_neutral": [
+        0.91796875,
+        -1.5546875,
+        -0.9453125,
+        -0.69921875,
+        1.0703125,
+        -0.15234375,
+        2.484375,
+        -0.055419921875,
+        3.1875,
+        1.7890625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following is (are) true about virtual memory systems that use pages?\nI. The virtual address space can be larger than the amount of physical memory.\nII. Programs must be resident in main memory throughout their execution.\nIII. Pages correspond to semantic characteristics of the program.\nA) I and III\nB) None of the above\nC) All of the above\nD) I and II and not III\nE) I, II and III\nF) III only\nG) I only\nH) II and III\nI) I and II\nJ) II only\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.6700519919395447,
+      "softmax_neutral": [
+        0.014919481240212917,
+        0.003078809008002281,
+        0.00171361502725631,
+        0.02623569592833519,
+        0.00804845616221428,
+        0.0016351430676877499,
+        0.6700519919395447,
+        0.005196474026888609,
+        0.22095969319343567,
+        0.04816066846251488
+      ],
+      "logits_neutral": [
+        -0.1328125,
+        -1.7109375,
+        -2.296875,
+        0.431640625,
+        -0.75,
+        -2.34375,
+        3.671875,
+        -1.1875,
+        2.5625,
+        1.0390625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following conditions can be expressed by a Boolean formula in the Boolean variables p_1, p_2, p_3, p_4 and the connectives ∧,∨ (without ¬)?\nI. At least three of p_1, p_2, p_3, p_4 are true.\nII. Exactly three of p_1, p_2, p_3, p_4 are true.\nIII. An even number of p_1, p_2, p_3, p_4 are true.\nA) None of the above\nB) All of the above\nC) I and III\nD) Only II and III\nE) III only\nF) Only I and II\nG) I only\nH) II and III\nI) II only\nJ) I and II\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.4115014672279358,
+      "softmax_neutral": [
+        0.020891530439257622,
+        0.0025049031246453524,
+        0.014613152481615543,
+        0.005557370372116566,
+        0.035123664885759354,
+        0.12163960188627243,
+        0.15618833899497986,
+        0.011719086207449436,
+        0.4115014672279358,
+        0.2202608436346054
+      ],
+      "logits_neutral": [
+        0.64453125,
+        -1.4765625,
+        0.287109375,
+        -0.6796875,
+        1.1640625,
+        2.40625,
+        2.65625,
+        0.06640625,
+        3.625,
+        3.0
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Function signatures describe the types of the arguments to a function as well as the return value of the function. For instance, the addition function on reals has a signature of\nadd : real x real -> real\nsince it takes two real numbers and returns a real number. But, for a language that allows functions as return values, addition could be considered to have the signature\nadd : real -> (real -> real)\nwhich means that add takes a single real (the first operand) and returns a new function that itself takes a single real (the second operand) and returns a real (the result). This process of reducing a function with multiple arguments to a function with fewer arguments is called currying. Which of the following is correct?\nA) Currying can be applied to any function to the point where it has exactly one input argument.\nB) Currying cannot be applied to functions of more than two arguments.\nC) Currying cannot be applied to functions that return functions as arguments.\nD) Currying cannot be applied w functions that haw arguments that are functions.\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.5643184185028076,
+      "softmax_neutral": [
+        0.5643184185028076,
+        0.029329311102628708,
+        0.02302083931863308,
+        0.38333141803741455
+      ],
+      "logits_neutral": [
+        0.98046875,
+        -1.9765625,
+        -2.21875,
+        0.59375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "In systems with support for automatic memory management, a garbage collector typically has the responsibility for reclaiming allocated memory objects whose contents cannot affect any future legal computation. Such objects are identified by determining that they cannot be reached from a root set. Which of the following is NOT part of the root set in a typical garbage collector?\nA) Newly created objects awaiting assignment\nB) Return addresses on the call stack\nC) Objects referenced by CPU instructions\nD) Temporary variables in the active procedures\nE) Global variables of the program\nF) Local variables on the call stack\nG) Dynamically allocated objects on the heap\nH) Static variables in the program\nI) Actual parameters of the active procedures\nJ) Objects stored in registers\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.30517154932022095,
+      "softmax_neutral": [
+        0.24141055345535278,
+        0.01204262301325798,
+        0.008260615170001984,
+        0.020425260066986084,
+        0.02883237972855568,
+        0.009072510525584221,
+        0.15586638450622559,
+        0.01563003472983837,
+        0.30517154932022095,
+        0.20328809320926666
+      ],
+      "logits_neutral": [
+        2.65625,
+        -0.341796875,
+        -0.71875,
+        0.1865234375,
+        0.53125,
+        -0.625,
+        2.21875,
+        -0.0810546875,
+        2.890625,
+        2.484375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Two computers communicate with each other by sending data packets across a local area network. The size of these packets is 1,000 bytes. The network has the capacity to carry 1,000 packets per second. The CPU time required to execute the network protocol to send one packet is 10 milliseconds. The maximum rate at which one computer can send data to another is approximately\nA) 10,000 bytes/second\nB) 200,000 bytes/second\nC) 750,000 bytes/second\nD) 50,000 bytes/second\nE) 1,000,000 bytes/second\nF) 25,000 bytes/ second\nG) 2,500,000 bytes/second\nH) 100,000 bytes/ second\nI) 5,000,000 bytes/second\nJ) 500,000 bytes/ second\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.3322376012802124,
+      "softmax_neutral": [
+        0.03698594123125076,
+        0.010805650614202023,
+        0.014231528155505657,
+        0.04767676442861557,
+        0.03742191940546036,
+        0.01603221893310547,
+        0.17783395946025848,
+        0.0680275559425354,
+        0.2587468922138214,
+        0.3322376012802124
+      ],
+      "logits_neutral": [
+        0.6484375,
+        -0.58203125,
+        -0.306640625,
+        0.90234375,
+        0.66015625,
+        -0.1875,
+        2.21875,
+        1.2578125,
+        2.59375,
+        2.84375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "An integer c is a common divisor of two integers x and y if and only if c is a divisor of x and c is a divisor of y. Which of the following sets of integers could possibly be the set of all common divisors of two integers?\nA) {-10, -5, -2, -1, 0, 1, 2, 5, 10}\nB) {-6, -2, -1, 0, 1, 2, 6}\nC) {-6, -3, -2, -1, 1, 2, 3, 6}\nD) {-6, -3, -2, -1, 0, 1, 2, 3, 6}\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.44851550459861755,
+      "softmax_neutral": [
+        0.1468971073627472,
+        0.0179428793489933,
+        0.38664454221725464,
+        0.44851550459861755
+      ],
+      "logits_neutral": [
+        0.1806640625,
+        -1.921875,
+        1.1484375,
+        1.296875
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "You want to cluster 7 points into 3 clusters using the k-Means Clustering algorithm. Suppose after the first iteration, clusters C1, C2 and C3 contain the following two-dimensional points: C1 contains the 2 points: {(0,6), (6,0)} C2 contains the 3 points: {(2,2), (4,4), (6,6)} C3 contains the 2 points: {(5,5), (7,7)} What are the cluster centers computed for these 3 clusters?\nA) C1: (3,3), C2: (6,6), C3: (12,12)\nB) C1: (6,6), C2: (12,12), C3: (12,12)\nC) C1: (3,3), C2: (4,4), C3: (6,6)\nD) C1: (1,1), C2: (4,4), C3: (6,6)\nE) C1: (0,0), C2: (4,4), C3: (6,6)\nF) C1: (6,0), C2: (4,4), C3: (7,7)\nG) C1: (3,3), C2: (2,2), C3: (7,7)\nH) C1: (2,2), C2: (5,5), C3: (7,7)\nI) C1: (0,0), C2: (48,48), C3: (35,35)\nJ) C1: (0,6), C2: (2,2), C3: (5,5)\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.44152742624282837,
+      "softmax_neutral": [
+        0.03179727867245674,
+        0.009344345889985561,
+        0.18695448338985443,
+        0.029987690970301628,
+        0.02773408405482769,
+        0.014192876406013966,
+        0.14334295690059662,
+        0.022569678723812103,
+        0.44152742624282837,
+        0.09254917502403259
+      ],
+      "logits_neutral": [
+        0.275390625,
+        -0.94921875,
+        2.046875,
+        0.216796875,
+        0.138671875,
+        -0.53125,
+        1.78125,
+        -0.0673828125,
+        2.90625,
+        1.34375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Let P be a procedure that for some inputs calls itself (i.e., is recursive). If P is guaranteed to terminate, which of the following statements must be true?\nI. P has a local variable.\nII. P has an execution path where it does not call itself.\nIII. P either refers to a global variable or has at least one parameter.\nA) II only\nB) I and II only\nC) II and III only\nD) P has an execution path where it does not call itself and refers to a global variable\nE) I and III only\nF) None of the above\nG) I only\nH) III only\nI) I, II and III\nJ) P has a local variable and refers to a global variable\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.47796934843063354,
+      "softmax_neutral": [
+        0.1731090098619461,
+        0.013193218037486076,
+        0.017073292285203934,
+        0.010234829969704151,
+        0.024408642202615738,
+        0.197696715593338,
+        0.04359818249940872,
+        0.0174100324511528,
+        0.47796934843063354,
+        0.02530672214925289
+      ],
+      "logits_neutral": [
+        1.75,
+        -0.82421875,
+        -0.56640625,
+        -1.078125,
+        -0.208984375,
+        1.8828125,
+        0.37109375,
+        -0.546875,
+        2.765625,
+        -0.1728515625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following algorithms has running time Θ(n^2) in the worst case but Θ(n log n) on average?\nA) Counting Sort\nB) Shell Sort\nC) Insertion Sort\nD) Bubblesort\nE) Mergesort\nF) Selection Sort\nG) Bucket Sort\nH) Radix Sort\nI) Quicksort\nJ) Heapsort\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.9185696840286255,
+      "softmax_neutral": [
+        0.007989984937012196,
+        0.007755510974675417,
+        0.002725100377574563,
+        0.005894322879612446,
+        0.002725100377574563,
+        0.0009792853379622102,
+        0.0031121622305363417,
+        0.0034314196091145277,
+        0.9185696840286255,
+        0.046817414462566376
+      ],
+      "logits_neutral": [
+        -0.08837890625,
+        -0.1181640625,
+        -1.1640625,
+        -0.392578125,
+        -1.1640625,
+        -2.1875,
+        -1.03125,
+        -0.93359375,
+        4.65625,
+        1.6796875
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following statements about horizontal versus vertical microarchitecture is (are) true?\nI. Programs for horizontal architectures require more time steps than those for vertical architectures.\nII. Horizontal microinstructions are unencoded.\nIII. Horizontal microinstructions usually have a single opcode and multiple operand specifiers.\nA) I and III only\nB) I, II and III\nC) III only\nD) I and II only\nE) All of the above\nF) II only\nG) II and III only\nH) I only\nI) None of the above\nJ) II and III\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.4278494417667389,
+      "softmax_neutral": [
+        0.009161604568362236,
+        0.0028828266076743603,
+        0.0029282246250659227,
+        0.013487187214195728,
+        0.007024446036666632,
+        0.016016431152820587,
+        0.21682356297969818,
+        0.005139194428920746,
+        0.4278494417667389,
+        0.29868704080581665
+      ],
+      "logits_neutral": [
+        -1.21875,
+        -2.375,
+        -2.359375,
+        -0.83203125,
+        -1.484375,
+        -0.66015625,
+        1.9453125,
+        -1.796875,
+        2.625,
+        2.265625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Assume that any assignment statement can be executed in unit time. If as many identical processors as needed are used, what is the minimum number of time units needed to execute the assignments\nA := B + C\nB := A - B\nC := A * E\nD := A/F\nE := B - C\nF := A + B\nwith the same result as if the assignments were executed in the order shown?\nA) 4\nB) 10\nC) 9\nD) 7\nE) 3\nF) 2\nG) 1\nH) 8\nI) 6\nJ) 5\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.4627189636230469,
+      "softmax_neutral": [
+        0.0382801853120327,
+        0.004082261584699154,
+        0.007169404532760382,
+        0.0317353829741478,
+        0.023768706247210503,
+        0.005673196632415056,
+        0.08426737785339355,
+        0.061651330441236496,
+        0.4627189636230469,
+        0.2806532382965088
+      ],
+      "logits_neutral": [
+        1.6640625,
+        -0.57421875,
+        -0.01104736328125,
+        1.4765625,
+        1.1875,
+        -0.2451171875,
+        2.453125,
+        2.140625,
+        4.15625,
+        3.65625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Two processors, M-5 and M-7, implement the same instruction set. Processor M-5 uses a 5-stage pipeline and a clock cycle of 10 nanoseconds. Processor M-7 uses a 7-stage pipeline and a clock cycle of 7.5 nanoseconds. Which of the following is (are) true?\nI. M-7’s pipeline has better maximum throughput than M-5’s pipeline.\nII. The latency of a single instruction is shorter on M-7’s pipeline than on M-5’s pipeline.\nIII. Programs executing on M-7 will always run faster than programs executing on M-5.\nA) All three statements are true\nB) None of the statements are true\nC) I only\nD) II only\nE) I and II\nF) I and II only\nG) II and III only\nH) II and III\nI) I and III\nJ) III only\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.4107372760772705,
+      "softmax_neutral": [
+        0.013516231440007687,
+        0.001993374200537801,
+        0.016755640506744385,
+        0.008359699510037899,
+        0.33523398637771606,
+        0.11953135579824448,
+        0.036312881857156754,
+        0.00773145817220211,
+        0.4107372760772705,
+        0.04982808604836464
+      ],
+      "logits_neutral": [
+        -0.3515625,
+        -2.265625,
+        -0.13671875,
+        -0.83203125,
+        2.859375,
+        1.828125,
+        0.63671875,
+        -0.91015625,
+        3.0625,
+        0.953125
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "A microcomputer used for data acquisition and control is required to digitize and process four analog input signals and to output their average continually; i.e., in real time. The time for an external analog-to-digital converter (which is triggered by a CPU instruction) to digitize one input is 12 microseconds, and only one digitization occurs at a time. Five CPU instructions, including the triggering instruction, must be executed for each signal digitized. Ten CPU instructions are executed in order to average each set of four samples and output this value. The time to convert the output from digital to analog form is to be ignored. If it is assumed that suitable data buffering is employed, then the maximum average instruction execution time that allows the microcomputer to keep up with the input-output data rates, is\nA) 3.0 microseconds\nB) 2.6 microseconds\nC) 2.4 microseconds\nD) 2.0 microseconds\nE) 0.6 microseconds\nF) 1.6 microseconds\nG) 0.8 microseconds\nH) 1.8 microseconds\nI) 1.2 microseconds\nJ) 1.0 microseconds\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.6452001333236694,
+      "softmax_neutral": [
+        0.021211031824350357,
+        0.00662887841463089,
+        0.018609313294291496,
+        0.03301309049129486,
+        0.018755266442894936,
+        0.01228799857199192,
+        0.14396360516548157,
+        0.01436612568795681,
+        0.6452001333236694,
+        0.08596459031105042
+      ],
+      "logits_neutral": [
+        -0.1181640625,
+        -1.28125,
+        -0.2490234375,
+        0.32421875,
+        -0.2412109375,
+        -0.6640625,
+        1.796875,
+        -0.5078125,
+        3.296875,
+        1.28125
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Bob writes down a number between 1 and 1,000. Mary must identify that number by asking \"yes/no\" questions of Bob. Mary knows that Bob always tells the truth. If Mary uses an optimal strategy, then she will determine the answer at the end of exactly how many questions in the worst case?\nA) 250\nB) 20\nC) 500\nD) 100\nE) 2\nF) 1,000\nG) 999\nH) 50\nI) 10\n",
+      "label": 8,
+      "num_options": 9,
+      "answer_neutral": "I",
+      "prob_neutral": 0.8125274181365967,
+      "softmax_neutral": [
+        0.02034122683107853,
+        0.023230409249663353,
+        0.004292999394237995,
+        0.006173505447804928,
+        0.009026364423334599,
+        0.0017498406814411283,
+        0.05276113003492355,
+        0.0698971375823021,
+        0.8125274181365967
+      ],
+      "logits_neutral": [
+        1.40625,
+        1.5390625,
+        -0.1494140625,
+        0.2138671875,
+        0.59375,
+        -1.046875,
+        2.359375,
+        2.640625,
+        5.09375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following instruction-set features is NOT generally considered an obstacle to aggressive pipelining of an integer unit?\nA) Condition codes set by every instruction\nB) Variable-length encoding of instructions\nC) Instructions requiring widely varying numbers of cycles to execute\nD) Several different classes (sets) of registers\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.6401849389076233,
+      "softmax_neutral": [
+        0.2014431357383728,
+        0.06523954123258591,
+        0.09313244372606277,
+        0.6401849389076233
+      ],
+      "logits_neutral": [
+        1.0625,
+        -0.06494140625,
+        0.291015625,
+        2.21875
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Of the following, which gives the best upper bound for the value of f(N) where f is a solution to the recurrence f(2N + 1) = f(2N) = f(N) + log N for N >= 1, with f(1) = 0?\nA) O(N log(log N))\nB) O(N^2)\nC) O(N)\nD) O(log N)\nE) O((log N)^2)\nF) O(N log N)\nG) O(2^N)\nH) O(1)\nI) O(log N) + 0(1)\nJ) O(N^2 log N)\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.3770635724067688,
+      "softmax_neutral": [
+        0.2673780918121338,
+        0.007525906432420015,
+        0.0060001760721206665,
+        0.016926800832152367,
+        0.23596036434173584,
+        0.02391728200018406,
+        0.026370804756879807,
+        0.010675598867237568,
+        0.3770635724067688,
+        0.028181444853544235
+      ],
+      "logits_neutral": [
+        3.046875,
+        -0.5234375,
+        -0.75,
+        0.287109375,
+        2.921875,
+        0.6328125,
+        0.73046875,
+        -0.173828125,
+        3.390625,
+        0.796875
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "One approach to handling fuzzy logic data might be to design a computer using ternary (base-3) logic so that data could be stored as “true,” “false,” and “unknown.” If each ternary logic element is called a flit, how many flits are required to represent at least 256 different values?\nA) 9\nB) 4\nC) 2\nD) 11\nE) 10\nF) 5\nG) 3\nH) 6\nI) 8\nJ) 7\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.3799361288547516,
+      "softmax_neutral": [
+        0.019364483654499054,
+        0.011295203119516373,
+        0.006093304604291916,
+        0.0059754494577646255,
+        0.03973333537578583,
+        0.010224315337836742,
+        0.22335290908813477,
+        0.026057757437229156,
+        0.3799361288547516,
+        0.2779671549797058
+      ],
+      "logits_neutral": [
+        0.7890625,
+        0.25,
+        -0.3671875,
+        -0.38671875,
+        1.5078125,
+        0.150390625,
+        3.234375,
+        1.0859375,
+        3.765625,
+        3.453125
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "A 3-way, set-associative cache is\nA) only effective when more than 3 processes are running alternately on the processor\nB) possible only with write-through\nC) one in which each main memory word can be stored at any of 4 cache locations\nD) possible only with write-back\nE) effective only if 3 or fewer processes are running alternately on the processor\nF) one in which each cache can store 3 main memory words\nG) one in which each main memory word can be stored at any of 3 cache locations\n",
+      "label": 6,
+      "num_options": 7,
+      "answer_neutral": "G",
+      "prob_neutral": 0.9773719906806946,
+      "softmax_neutral": [
+        0.007998093031346798,
+        0.0008372499141842127,
+        0.0019928282126784325,
+        0.004218817688524723,
+        0.004421282559633255,
+        0.0031597481574863195,
+        0.9773719906806946
+      ],
+      "logits_neutral": [
+        -0.2431640625,
+        -2.5,
+        -1.6328125,
+        -0.8828125,
+        -0.8359375,
+        -1.171875,
+        4.5625
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "TCP protocol is responsible (among other things) for\nA) Ensuring secure and encrypted communication between machines\nB) Enabling communication between different network protocols\nC) Routing packets through the network\nD) Managing the energy consumption of network devices\nE) Dealing with differences among operating system architectures\nF) Reliable delivery of large (multi-packet) messages between machines that are not necessarily directly connected\nG) Managing the physical layer of network communication\nH) Providing a user interface for network communication\nI) Reliable delivery of packets between directly connected machines\n",
+      "label": 5,
+      "num_options": 9,
+      "answer_neutral": "F",
+      "prob_neutral": 0.6075698137283325,
+      "softmax_neutral": [
+        0.007648174650967121,
+        0.004899604711681604,
+        0.002769985469058156,
+        0.002769985469058156,
+        0.008078082464635372,
+        0.6075698137283325,
+        0.019492192193865776,
+        0.005956404842436314,
+        0.3408157527446747
+      ],
+      "logits_neutral": [
+        -1.078125,
+        -1.5234375,
+        -2.09375,
+        -2.09375,
+        -1.0234375,
+        3.296875,
+        -0.142578125,
+        -1.328125,
+        2.71875
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following is not a sentence that is generated by the grammar A -> BC, B -> x|Bx, C -> B|D, D -> y|Ey, E -> z?\nA) xy\nB) xxzy\nC) xz\nD) xxxxy\nE) xyz\nF) xyzy\n",
+      "label": 4,
+      "num_options": 6,
+      "answer_neutral": "E",
+      "prob_neutral": 0.450480192899704,
+      "softmax_neutral": [
+        0.07706807553768158,
+        0.038338206708431244,
+        0.06976132839918137,
+        0.08464271575212479,
+        0.450480192899704,
+        0.27970951795578003
+      ],
+      "logits_neutral": [
+        0.515625,
+        -0.1826171875,
+        0.416015625,
+        0.609375,
+        2.28125,
+        1.8046875
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Two single-user workstations are attached to the same local area network. On one of these workstations, file pages are accessed over the network from a file server; the average access time per page is 0.1 second. On the other of these workstations, file pages are accessed from a local disk; the average access time per page is 0.05 second. A particular compilation requires 30 seconds of computation and 200 file page accesses. What is the ratio of the total time required by this compilation if run on the diskless (file server) workstation to the total time required if run on the workstation with the local disk, if it is assumed that computation is not overlapped with file access?\nA) 5/4\nB) 10/5\nC) 6/5\nD) 5/3\nE) 3/1\nF) 4/3\nG) 1/1\nH) 7/4\nI) 3/2\nJ) 2/1\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.4034273326396942,
+      "softmax_neutral": [
+        0.02163289487361908,
+        0.0019125432008877397,
+        0.020322224125266075,
+        0.018216723576188087,
+        0.02258269302546978,
+        0.09582239389419556,
+        0.0819612368941307,
+        0.014984669163823128,
+        0.3191372752189636,
+        0.4034273326396942
+      ],
+      "logits_neutral": [
+        0.99609375,
+        -1.4296875,
+        0.93359375,
+        0.82421875,
+        1.0390625,
+        2.484375,
+        2.328125,
+        0.62890625,
+        3.6875,
+        3.921875
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Let A be a finite set with m elements, and let B be a finite set with n elements. The number of distinct functions mapping A into B is\nA) m^n\nB) n!/m!\nC) (n + m)!\nD) m!/(m - n)!\nE) n!/(n - m)!\nF) m!/(n!(m - n)!)\nG) n!\nH) m!/n!\nI) n^m\nJ) n!/(m!(n - m)!)\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.9559436440467834,
+      "softmax_neutral": [
+        0.008174178190529346,
+        0.0006377549725584686,
+        0.00045935771777294576,
+        0.0011548250913619995,
+        0.0018167949747294188,
+        0.00048140273429453373,
+        0.006390972062945366,
+        0.004749367479234934,
+        0.9559436440467834,
+        0.02019181102514267
+      ],
+      "logits_neutral": [
+        -0.54296875,
+        -3.09375,
+        -3.421875,
+        -2.5,
+        -2.046875,
+        -3.375,
+        -0.7890625,
+        -1.0859375,
+        4.21875,
+        0.361328125
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "If p(x) is the minimal-degree interpolating polynomial for the real-valued function f(x) at the n + 1 distinct real numbers x0, .... xn what is the maximum possible degree of p(x)?\nA) 2n\nB) n + 1\nC) 2n + 1\nD) n³\nE) n² + 1\nF) n/2\nG) n\nH) n - 1\nI) n²\nJ) n + 2\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.7121274471282959,
+      "softmax_neutral": [
+        0.008894599974155426,
+        0.007911021821200848,
+        0.0019086227985098958,
+        0.00483591016381979,
+        0.0034560691565275192,
+        0.0006912573589943349,
+        0.7121274471282959,
+        0.08052514493465424,
+        0.16139937937259674,
+        0.018250536173582077
+      ],
+      "logits_neutral": [
+        -0.4453125,
+        -0.5625,
+        -1.984375,
+        -1.0546875,
+        -1.390625,
+        -3.0,
+        3.9375,
+        1.7578125,
+        2.453125,
+        0.2734375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Consider a computer system in which processes can request and release one or more resources. Once a process has been granted a resource, the process has exclusive use of that resource until it is released. If a process requests a resource that is already in use, the process enters a queue for that resource, waiting until the resource is available. Which of the following will NOT deal effectively with the problem of deadlock?\nA) Giving priorities to processes and ordering the wait queues by priority\nB) Numbering the resources and requiring that processes request resources in order of increasing number\nC) Having a process request all its required resources when it first begins, and restarting if it cannot obtain them all\nD) Allowing processes to request resources only in order of decreasing number\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.8517752289772034,
+      "softmax_neutral": [
+        0.12175492197275162,
+        0.01737000048160553,
+        0.009099870920181274,
+        0.8517752289772034
+      ],
+      "logits_neutral": [
+        1.5546875,
+        -0.392578125,
+        -1.0390625,
+        3.5
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Languages with a structure that implements abstract data types (e.g., a C++ class) can prevent access to components of this structure by all operations except those that are part of this structure. However, definitions of such a structure often contain declarations of components of the structure (e.g., the header file for a C++ class may contain declarations of its private components). For such a language, an object's name could be bound at run time to stack storage for its component values (direct representation) or to a stack pointer referencing heap storage for its component values (indirect representation). Which of the following statements about comparisons between direct and indirect representations is (are) true?\nI. Indirect representation noticeably increases compilation time.\nII. Direct representation decreases the time needed to access components of a variable.\nIII. When the storage size of some private component of a variable changes, indirect representation minimizes the number of recompilations of source modules that must be performed.\nA) All of the above\nB) I only\nC) I and III only\nD) II and III only\nE) I only and III only\nF) None of the above\nG) II only and III only\nH) III only\nI) II only\nJ) I and II only\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.5135623216629028,
+      "softmax_neutral": [
+        0.006515499670058489,
+        0.0009313421323895454,
+        0.0032507034484297037,
+        0.10433652251958847,
+        0.013672614470124245,
+        0.009742791764438152,
+        0.16672927141189575,
+        0.04085876792669296,
+        0.5135623216629028,
+        0.14040012657642365
+      ],
+      "logits_neutral": [
+        -0.5390625,
+        -2.484375,
+        -1.234375,
+        2.234375,
+        0.2021484375,
+        -0.13671875,
+        2.703125,
+        1.296875,
+        3.828125,
+        2.53125
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "A \"strictly binary tree\" is a binary tree in which every node that is not a leaf has two children. Suppose that for a class of strictly binary trees there exists c > 0 such that, for any tree in the class, the ratio of the lengths of any two root-to-leaf paths is bounded above by c. Which of the following best characterizes the height h of any tree in this class, where N is the number of nodes in the tree and N > 1 ?\nA) h <= log2(N)\nB) h = log2(cN)\nC) h > c log2(N)\nD) h < 1/c * log2(N)\nE) h < c log2(N)\nF) h > log2(N)\nG) h <= c log2(N)\nH) h > log2(cN)\nI) h = c log2(N)\nJ) h = 1/c * log2(N)\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.3000676929950714,
+      "softmax_neutral": [
+        0.03314470872282982,
+        0.004556287080049515,
+        0.004347639158368111,
+        0.025512393563985825,
+        0.2818875014781952,
+        0.008731164038181305,
+        0.3000676929950714,
+        0.010091304779052734,
+        0.21953417360782623,
+        0.11212709546089172
+      ],
+      "logits_neutral": [
+        1.140625,
+        -0.84375,
+        -0.890625,
+        0.87890625,
+        3.28125,
+        -0.193359375,
+        3.34375,
+        -0.048583984375,
+        3.03125,
+        2.359375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Which of the following pairs of 8-bit, two's-complement numbers will result in overflow when the members of the pairs are added?\nA) 11110000, 00001111\nB) 01111111, 10000000\nC) 00000001, 10000000\nD) 10000001, 10101010\nE) 11111111, 00000001\nF) 11111111, 10000001\nG) 00000000, 10000000\nH) 10000001, 00000001\nI) 10101010, 11111111\n",
+      "label": 3,
+      "num_options": 9,
+      "answer_neutral": "I",
+      "prob_neutral": 0.5489509701728821,
+      "softmax_neutral": [
+        0.04667298123240471,
+        0.032710518687963486,
+        0.01731526106595993,
+        0.0552094466984272,
+        0.052681226283311844,
+        0.10476912558078766,
+        0.10476912558078766,
+        0.036921367049217224,
+        0.5489509701728821
+      ],
+      "logits_neutral": [
+        0.97265625,
+        0.6171875,
+        -0.0189208984375,
+        1.140625,
+        1.09375,
+        1.78125,
+        1.78125,
+        0.73828125,
+        3.4375
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Company X shipped 5 computer chips, 1 of which was defective, and Company Y shipped 4 computer chips, 2 of which were defective. One computer chip is to be chosen uniformly at random from the 9 chips shipped by the companies. If the chosen chip is found to be defective, what is the probability that the chip came from Company Y?\nA) 3 / 9\nB) 4 / 9\nC) 5 / 9\nD) 5 / 6\nE) 3 / 4\nF) 1 / 3\nG) 1 / 2\nH) 2 / 9\nI) 2 / 3\nJ) 1 / 9\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.5301452875137329,
+      "softmax_neutral": [
+        0.017108190804719925,
+        0.0028257567901164293,
+        0.00685854209586978,
+        0.004176197573542595,
+        0.01632475107908249,
+        0.03693237900733948,
+        0.20122046768665314,
+        0.10117999464273453,
+        0.5301452875137329,
+        0.08322840183973312
+      ],
+      "logits_neutral": [
+        0.36328125,
+        -1.4375,
+        -0.55078125,
+        -1.046875,
+        0.31640625,
+        1.1328125,
+        2.828125,
+        2.140625,
+        3.796875,
+        1.9453125
+      ]
+    },
+    {
+      "task": "college computer science",
+      "category": "computer science",
+      "text": "Suppose that a certain software product has a mean time between failures of 10,000 hours and has a mean time to repair of 20 hours. If the product is used by 100 customers, what is its availability?\nA) 90%\nB) 97%\nC) 100%\nD) 75%\nE) 85%\nF) 99%\nG) 80%\nH) 95%\nI) 98%\nJ) 99.80%\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.44975194334983826,
+      "softmax_neutral": [
+        0.02015046775341034,
+        0.003830790752544999,
+        0.0012436755932867527,
+        0.005402280483394861,
+        0.003952392842620611,
+        0.009630606509745121,
+        0.10273303836584091,
+        0.05303759127855301,
+        0.44975194334983826,
+        0.3502671420574188
+      ],
+      "logits_neutral": [
+        -0.85546875,
+        -2.515625,
+        -3.640625,
+        -2.171875,
+        -2.484375,
+        -1.59375,
+        0.7734375,
+        0.1123046875,
+        2.25,
+        2.0
+      ]
+    }
+  ],
+  "accuracy": {
+    "neutral": {
+      "correct": 30,
+      "E_count": 0,
+      "invalid": 46,
+      "total": 76,
+      "accuracy_percentage": 39.47
+    }
+  },
+  "template": [
+    "Would you answer the following question with A, B, C, D, E, F, G, H, I, J?\nQuestion: {context}\nYour answer among \"A, B, C, D, E, F, G, H, I, J\" is: "
+  ]
+}

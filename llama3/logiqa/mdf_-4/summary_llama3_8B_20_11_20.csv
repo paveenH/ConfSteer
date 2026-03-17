@@ -1,0 +1,6 @@
+model,size,alpha,start,end,TOP,task,role,correct,E_count,invalid,total,accuracy_percentage,suite,refusal_enabled,refusal_label
+llama3,8B,-4,11,20,20,MRC-test,non expert,752,0,820,1572,47.84,default,0,
+llama3,8B,-4,11,20,20,MRC-test,expert,840,0,732,1572,53.44,default,0,
+llama3,8B,-4,11,20,20,MRC-test,confident,856,0,716,1572,54.45,default,0,
+llama3,8B,-4,11,20,20,MRC-test,unconfident,603,0,969,1572,38.36,default,0,
+llama3,8B,-4,11,20,20,MRC-test,neutral,854,0,718,1572,54.33,default,0,

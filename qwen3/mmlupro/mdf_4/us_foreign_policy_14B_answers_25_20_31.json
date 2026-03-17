@@ -1,0 +1,644 @@
+{
+  "data": [
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "What was the significance of the Gulf of Tonkin resolution?\nA) It triggered a global protest against US involvement in Vietnam\nB) It resulted in a significant reduction of US troops in Vietnam\nC) It allowed the US to intensify its involvement in Vietnam\nD) It illustrated the influence of public opinion on US foreign policy\nE) It marked the beginning of diplomatic negotiations with Vietnam\nF) It enhanced Congressional control over the Vietnam War\nG) It curtailed US involvement in Vietnam\nH) It established the neutrality of the United States in the Vietnam War\nI) It isolated the US from its allies during the Vietnam War\nJ) It led to the immediate end of the Vietnam War\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9254840612411499,
+      "softmax_neutral": [
+        0.0033118417486548424,
+        0.0004112996975891292,
+        0.9254840612411499,
+        0.0008308482938446105,
+        0.0004961221711710095,
+        0.0004588380397763103,
+        0.003286068793386221,
+        0.00011421380622778088,
+        0.06548882275819778,
+        0.00011783934314735234
+      ],
+      "logits_neutral": [
+        -1.6015625,
+        -3.6875,
+        4.03125,
+        -2.984375,
+        -3.5,
+        -3.578125,
+        -1.609375,
+        -4.96875,
+        1.3828125,
+        -4.9375
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "The Strategic Arms Reduction Treaty was the first accord\nA) mandating the elimination of chemical weapons.\nB) focused on reducing short-range nuclear weapons.\nC) promoting the denuclearization of North Korea.\nD) focused on reducing nuclear submarines.\nE) on nuclear weapons signed between the United States and the Soviet Union.\nF) mandating the elimination of many long-range nuclear missiles.\nG) cutting conventional arms in Europe.\nH) signed between the United States and China.\nI) to be rejected by the U.S. Senate.\nJ) that allowed the inspection of military bases.\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.9755980968475342,
+      "softmax_neutral": [
+        0.0027943009044975042,
+        0.0024372325278818607,
+        0.00012422022700775415,
+        0.00016201370453927666,
+        0.9755980968475342,
+        0.0020363840740174055,
+        0.0008896302315406501,
+        0.00010625119466567412,
+        0.015524597838521004,
+        0.00032727670622989535
+      ],
+      "logits_neutral": [
+        -0.88671875,
+        -1.0234375,
+        -4.0,
+        -3.734375,
+        4.96875,
+        -1.203125,
+        -2.03125,
+        -4.15625,
+        0.828125,
+        -3.03125
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "What was unique about the NATO intervention in Kosovo?\nA) It was the first time the US became involved in the Balkans\nB) It was the first war won by airpower alone\nC) It was the first war where NATO suffered no casualties\nD) It was the first war in which NATO used drones\nE) It was the first time NATO used military force\nF) It was the first war to employ 'smart weapons'\nG) It was the first time NATO was involved in a civil war\nH) It was the first time NATO intervened in a non-member state\nI) It was the first war where NATO used cyber warfare\n",
+      "label": 1,
+      "num_options": 9,
+      "answer_neutral": "E",
+      "prob_neutral": 0.38869452476501465,
+      "softmax_neutral": [
+        0.016280079260468483,
+        0.03986305370926857,
+        0.008454246446490288,
+        0.002538425149396062,
+        0.38869452476501465,
+        0.002921709092333913,
+        0.014983272179961205,
+        0.2549121081829071,
+        0.27135249972343445
+      ],
+      "logits_neutral": [
+        -0.1259765625,
+        0.76953125,
+        -0.78125,
+        -1.984375,
+        3.046875,
+        -1.84375,
+        -0.208984375,
+        2.625,
+        2.6875
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "Which of the following is NOT a good predictor of which states will get nuclear weapons?\nA) Geographic location\nB) Age of the state\nC) Regime type\nD) Wealth/GDP\nE) Receipt of sensitive nuclear assistance\nF) Rivalry with a nuclear state\n",
+      "label": 2,
+      "num_options": 6,
+      "answer_neutral": "B",
+      "prob_neutral": 0.6776881217956543,
+      "softmax_neutral": [
+        0.07219922542572021,
+        0.6776881217956543,
+        0.013846912421286106,
+        0.024302083998918533,
+        0.14039620757102966,
+        0.07156744599342346
+      ],
+      "logits_neutral": [
+        -0.1298828125,
+        2.109375,
+        -1.78125,
+        -1.21875,
+        0.53515625,
+        -0.138671875
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "What is the structure of the United Nations Security Council?\nA) 5 permanent members without veto power, 10 rotating members with veto power\nB) 15 rotating members, none with veto power\nC) 10 permanent members with veto power, and 5 rotating members without veto power\nD) 15 members, all with veto power\nE) 20 members, 10 permanent with veto power, 10 rotating without veto power\nF) 10 permanent members without veto power, 5 rotating members with veto power\nG) 5 permanent members with veto power, 10 rotating members with no veto power\nH) 15 permanent members with veto power\nI) 7 permanent members with veto power, 8 rotating members without veto power\nJ) 5 permanent members and 10 rotating members, all with veto power\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.9839175939559937,
+      "softmax_neutral": [
+        0.0006166474777273834,
+        5.559245255426504e-05,
+        3.942095281672664e-05,
+        9.165645315079018e-05,
+        5.222427353146486e-05,
+        3.0701066862093285e-05,
+        0.9839175939559937,
+        3.478886719676666e-05,
+        0.01449449174106121,
+        0.0006667548441328108
+      ],
+      "logits_neutral": [
+        -3.03125,
+        -5.4375,
+        -5.78125,
+        -4.9375,
+        -5.5,
+        -6.03125,
+        4.34375,
+        -5.90625,
+        0.1259765625,
+        -2.953125
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "What was the significance of the Truman Doctrine?\nA) It outlined Truman's plan for economic recovery after World War II\nB) It led to the establishment of the United Nations\nC) It indicated that the US would now view all local revolts through a geopolitical lens\nD) It was a declaration of war against the Soviet Union\nE) It indicated the special place of Greece and Turkey in American interests\nF) It signaled the US's withdrawal from international affairs\nG) It marked the beginning of the Space Race\nH) It marked the end of the Cold War\nI) It was Truman's first statement on European affairs\nJ) It indicated US reluctance to get involved in incidents outside of its immediate sphere of influence\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.8381673693656921,
+      "softmax_neutral": [
+        0.00876416265964508,
+        0.0018623567884787917,
+        0.07735501229763031,
+        0.0012213635491207242,
+        0.8381673693656921,
+        0.0007524602115154266,
+        0.0014504051068797708,
+        0.0003903712204191834,
+        0.06934058666229248,
+        0.0006959119928069413
+      ],
+      "logits_neutral": [
+        -0.466796875,
+        -2.015625,
+        1.7109375,
+        -2.4375,
+        4.09375,
+        -2.921875,
+        -2.265625,
+        -3.578125,
+        1.6015625,
+        -3.0
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "Intergovernmental organizations SELDOM do which of the following?\nA) Implement economic sanctions\nB) Provide strong enforcement\nC) Regulate international trade\nD) Promote global standards\nE) Handle disputes between member nations\nF) Reduce transaction costs for agreements\nG) Monitor parties\nH) Facilitate international cooperation\nI) Act independently of national governments\nJ) Provide fora for discussion\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.5897762179374695,
+      "softmax_neutral": [
+        0.0404890775680542,
+        0.5897762179374695,
+        0.010307463817298412,
+        0.01627938263118267,
+        0.019407911226153374,
+        0.004831010475754738,
+        0.012050646357238293,
+        0.01149880513548851,
+        0.2919604182243347,
+        0.003399040549993515
+      ],
+      "logits_neutral": [
+        0.1494140625,
+        2.828125,
+        -1.21875,
+        -0.76171875,
+        -0.5859375,
+        -1.9765625,
+        -1.0625,
+        -1.109375,
+        2.125,
+        -2.328125
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "Historically, what has been the general pattern of defense spending in the United States?\nA) Defense spending is directly proportional to the country's GDP.\nB) Steady increases over time.\nC) Increased spending during wars, with demobilization bringing spending down but not back to prewar levels\nD) Decreased spending during wars, with increased spending during peacetime.\nE) Massive increase in defense spending after World War II, with steady decreases since then.\nF) Minimal spending on defense due to the country's neutral stance.\nG) Increased spending during wars, with further increases after the war to prepare for future engagements.\nH) Steady decreases over time.\nI) Unpredictable fluctuations.\nJ) Increased spending during wars, with spending returning to prewar levels after demobilization.\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.3548208475112915,
+      "softmax_neutral": [
+        0.007249902933835983,
+        0.0011293169809505343,
+        0.23636166751384735,
+        0.0005951083148829639,
+        0.2720505893230438,
+        0.0005170390359126031,
+        0.004066826775670052,
+        0.0005858819931745529,
+        0.3548208475112915,
+        0.12262280285358429
+      ],
+      "logits_neutral": [
+        -1.296875,
+        -3.15625,
+        2.1875,
+        -3.796875,
+        2.328125,
+        -3.9375,
+        -1.875,
+        -3.8125,
+        2.59375,
+        1.53125
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "Which is not a nonstate actor that poses a threat to the United States?\nA) Hackers\nB) Organized crime\nC) China\nD) Local militias\nE) Drug traffickers\nF) Pirates\nG) Non-governmental organizations\n",
+      "label": 2,
+      "num_options": 7,
+      "answer_neutral": "C",
+      "prob_neutral": 0.6466123461723328,
+      "softmax_neutral": [
+        0.019833490252494812,
+        0.005093661602586508,
+        0.6466123461723328,
+        0.0023687726352363825,
+        0.0042892927303910255,
+        0.0017061629332602024,
+        0.32009634375572205
+      ],
+      "logits_neutral": [
+        -0.375,
+        -1.734375,
+        3.109375,
+        -2.5,
+        -1.90625,
+        -2.828125,
+        2.40625
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "Who was the first American president to visit communist China?\nA) Richard Nixon\nB) John F. Kennedy\nC) Dwight D. Eisenhower\nD) Jimmy Carter\nE) Lyndon B. Johnson\nF) George H. W. Bush\nG) Bill Clinton\nH) Gerald Ford\nI) Ronald Reagan\nJ) George W. Bush\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9783625602722168,
+      "softmax_neutral": [
+        0.9783625602722168,
+        0.0001784414635039866,
+        0.0001265339378733188,
+        0.0007630973705090582,
+        0.0006629904382862151,
+        9.854473319137469e-05,
+        0.0003661380906123668,
+        4.955140684614889e-05,
+        0.019337616860866547,
+        5.4421572713181376e-05
+      ],
+      "logits_neutral": [
+        3.765625,
+        -4.84375,
+        -5.1875,
+        -3.390625,
+        -3.53125,
+        -5.4375,
+        -4.125,
+        -6.125,
+        -0.158203125,
+        -6.03125
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "Why did Franklin D. Roosevelt initially favour an 'isolationist' stance on the part of the US during the 1930s?\nA) All of the above\nB) He wanted to focus on strengthening the economy after the Great Depression\nC) He believed that German domination of Europe would be in US interests\nD) He believed that the European conflicts were not America's concern\nE) He believed that the US could benefit from staying neutral and trading with both sides\nF) He thought that America was not ready for another war\nG) He was under pressure from the Congress to maintain neutrality\nH) He was wary of the potential cost and casualties of war\nI) He believed that internal reform rather than international negotiation was the key to economic regeneration of the US\nJ) He always favoured isolationism\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.3600234389305115,
+      "softmax_neutral": [
+        0.3600234389305115,
+        0.15851618349552155,
+        0.0029721756000071764,
+        0.06379663199186325,
+        0.04484272375702858,
+        0.011940297670662403,
+        0.013165178708732128,
+        0.005640197545289993,
+        0.33821073174476624,
+        0.0008924088324420154
+      ],
+      "logits_neutral": [
+        2.328125,
+        1.5078125,
+        -2.46875,
+        0.59765625,
+        0.2451171875,
+        -1.078125,
+        -0.98046875,
+        -1.828125,
+        2.265625,
+        -3.671875
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "Who said \"Globalization is not something we can hold off or turn off. It is the economic equivalent of a force of nature-like wind or water\"?\nA) George W. Bush\nB) Bill Clinton\nC) Ronald Reagan\nD) Henry Kissinger\nE) Winston Churchill\nF) Al Gore\nG) Margaret Thatcher\nH) Tony Blair\nI) Barack Obama\nJ) George Soros\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.8583595752716064,
+      "softmax_neutral": [
+        0.07156801223754883,
+        0.007455330807715654,
+        0.000974113994743675,
+        0.0029081671964377165,
+        0.0037051013205200434,
+        0.014454975724220276,
+        0.012460967525839806,
+        0.00494695920497179,
+        0.8583595752716064,
+        0.023166757076978683
+      ],
+      "logits_neutral": [
+        1.328125,
+        -0.93359375,
+        -2.96875,
+        -1.875,
+        -1.6328125,
+        -0.271484375,
+        -0.419921875,
+        -1.34375,
+        3.8125,
+        0.2001953125
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "What is direct diplomacy?\nA) Diplomats negotiating on behalf of state leaders.\nB) The president consulting Congress on foreign policy issues\nC) Multilateral talks involving several nations\nD) State leaders communicating through written letters\nE) Use of social media by state leaders to address foreign policy issues\nF) Members of Congress negotiating directly with foreign governments\nG) Foreign policy decisions made without consulting with other nations\nH) Non-governmental organizations conducting negotiations with foreign entities\n",
+      "label": 5,
+      "num_options": 8,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9229645729064941,
+      "softmax_neutral": [
+        0.9229645729064941,
+        0.003461331594735384,
+        0.016626358032226562,
+        0.032079458236694336,
+        0.013832617551088333,
+        0.0019568593706935644,
+        0.0075307684019207954,
+        0.0015480032889172435
+      ],
+      "logits_neutral": [
+        4.21875,
+        -1.3671875,
+        0.2021484375,
+        0.859375,
+        0.0181884765625,
+        -1.9375,
+        -0.58984375,
+        -2.171875
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "What was meant by the term 'American multiplication table'?\nA) Increase in US international influence\nB) Increase in US technological advancements\nC) Increase in US geographical territory\nD) Increase in US education standards\nE) Increase in US agricultural production\nF) Increase in US military capability\nG) Increase in US finances\nH) Increase in the US population\nI) Increase in US political parties\nJ) Increase in US industrial output\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.40543654561042786,
+      "softmax_neutral": [
+        0.2819368541240692,
+        0.011774096637964249,
+        0.03225633129477501,
+        0.013551902025938034,
+        0.40543654561042786,
+        0.010720436461269855,
+        0.016093280166387558,
+        0.013551902025938034,
+        0.20707674324512482,
+        0.00760192796587944
+      ],
+      "logits_neutral": [
+        0.91015625,
+        -2.265625,
+        -1.2578125,
+        -2.125,
+        1.2734375,
+        -2.359375,
+        -1.953125,
+        -2.125,
+        0.6015625,
+        -2.703125
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "Why might the 'Philadelphian System' be linked to the idea of American exceptionalism?\nA) It promoted the expansion of overseas territories\nB) It encouraged the centralization of political power in the US\nC) It disapproved of the idea of a democratic form of government\nD) It created a large standing army\nE) It encouraged greater involvement in European politics\nF) It promoted the concept of a strong federal government\nG) It advocated for a monarchial system of government\nH) It encouraged isolationism in foreign affairs\nI) It suppressed the rights of the individual states\nJ) It was designed as the antithesis of European politics\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.41905173659324646,
+      "softmax_neutral": [
+        0.04869861900806427,
+        0.010207785293459892,
+        0.0029131777118891478,
+        0.0017125686863437295,
+        0.01255579013377428,
+        0.047943614423274994,
+        0.01599649153649807,
+        0.11456236988306046,
+        0.41905173659324646,
+        0.32635781168937683
+      ],
+      "logits_neutral": [
+        0.56640625,
+        -0.99609375,
+        -2.25,
+        -2.78125,
+        -0.7890625,
+        0.55078125,
+        -0.546875,
+        1.421875,
+        2.71875,
+        2.46875
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "What led Britain to impose new taxes on their American colonies?\nA) To increase the wealth of King George III\nB) The growing costs of war with France\nC) Anger at America's growing prosperity\nD) Pressure from rich merchants\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9650484323501587,
+      "softmax_neutral": [
+        0.024829242378473282,
+        0.9650484323501587,
+        0.0023094790522009134,
+        0.007812867872416973
+      ],
+      "logits_neutral": [
+        -3.21875,
+        0.44140625,
+        -5.59375,
+        -4.375
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "How many states in the international system are likely to have nuclear weapons right now?\nA) More than 25\nB) Between 16 and 25\nC) More than 100\nD) Exactly 7\nE) Between 36 and 50\nF) Fewer than 7\nG) Between 50 and 100\nH) Between 8 and 15\nI) Between 26 and 35\nJ) Exactly 15\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.3735206425189972,
+      "softmax_neutral": [
+        0.17782248556613922,
+        0.05205339938402176,
+        0.00414943927899003,
+        0.3735206425189972,
+        0.031510379165410995,
+        0.018742352724075317,
+        0.01948896050453186,
+        0.14857624471187592,
+        0.17235144972801208,
+        0.0017846517730504274
+      ],
+      "logits_neutral": [
+        1.5078125,
+        0.279296875,
+        -2.25,
+        2.25,
+        -0.22265625,
+        -0.7421875,
+        -0.703125,
+        1.328125,
+        1.4765625,
+        -3.09375
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "The president's principal civilian adviser on the military is the\nA) secretary of the treasury.\nB) chief of staff.\nC) secretary of defense.\nD) secretary of state.\nE) attorney general.\nF) secretary of veterans affairs.\nG) secretary of homeland security.\nH) vice president.\nI) national security adviser.\nJ) director of the CIA.\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.5478510856628418,
+      "softmax_neutral": [
+        0.002478283364325762,
+        0.0002802365052048117,
+        0.5478510856628418,
+        0.0005932606291025877,
+        0.0005573168746195734,
+        9.684712858870625e-05,
+        0.0004918303457088768,
+        9.386747115058824e-05,
+        0.447143018245697,
+        0.0004141626413911581
+      ],
+      "logits_neutral": [
+        -1.4453125,
+        -3.625,
+        3.953125,
+        -2.875,
+        -2.9375,
+        -4.6875,
+        -3.0625,
+        -4.71875,
+        3.75,
+        -3.234375
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "The dominant course for foreign policy throughout most of American history can be categorized as\nA) isolationism.\nB) liberalism.\nC) protectionism.\nD) neoconservatism.\nE) realism.\nF) containment.\nG) imperialism.\nH) interventionism.\nI) pacifism.\nJ) non-alignment.\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.6710867881774902,
+      "softmax_neutral": [
+        0.6710867881774902,
+        0.0021028078626841307,
+        0.0008765807142481208,
+        0.003690542420372367,
+        0.22130094468593597,
+        0.0012361768167465925,
+        0.0032568923197686672,
+        0.0010573581093922257,
+        0.09518034756183624,
+        0.00021148493397049606
+      ],
+      "logits_neutral": [
+        3.6875,
+        -2.078125,
+        -2.953125,
+        -1.515625,
+        2.578125,
+        -2.609375,
+        -1.640625,
+        -2.765625,
+        1.734375,
+        -4.375
+      ]
+    },
+    {
+      "task": "us foreign policy",
+      "category": "other",
+      "text": "What drives US foreign policy according to the Marxist perspective?\nA) Religious motivations\nB) Nationalist sentiments\nC) Humanitarian aid\nD) The search for new markets\nE) Military expansionism\nF) Superstructure\nG) Class consciousness\nH) Economic protectionism\nI) International relations theory\nJ) Promotion of democracy\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.4558960795402527,
+      "softmax_neutral": [
+        0.018025657162070274,
+        0.0038229210767894983,
+        0.0012029355857521296,
+        0.4558960795402527,
+        0.04823916032910347,
+        0.06883001327514648,
+        0.29898393154144287,
+        0.005104268901050091,
+        0.09859443455934525,
+        0.0013006833614781499
+      ],
+      "logits_neutral": [
+        -0.68359375,
+        -2.234375,
+        -3.390625,
+        2.546875,
+        0.30078125,
+        0.65625,
+        2.125,
+        -1.9453125,
+        1.015625,
+        -3.3125
+      ]
+    }
+  ],
+  "accuracy": {
+    "neutral": {
+      "correct": 9,
+      "E_count": 0,
+      "invalid": 11,
+      "total": 20,
+      "accuracy_percentage": 45.0
+    }
+  },
+  "template": [
+    "Would you answer the following question with A, B, C, D, E, F, G, H, I, J?\nQuestion: {context}\nYour answer among \"A, B, C, D, E, F, G, H, I, J\" is: "
+  ]
+}

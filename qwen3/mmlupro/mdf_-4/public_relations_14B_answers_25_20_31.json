@@ -1,0 +1,1578 @@
+{
+  "data": [
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which statement is true about focus group research?\nA) The participants should be selected at random.\nB) The information can be generalized to describe a larger population.\nC) The findings generate qualitative data that can be used to develop surveys.\nD) It is an example of a formal research tool for practitioners.\nE) The information collected cannot be used in decision making.\nF) It is exclusively used for market research.\nG) All participants in the focus group should have similar backgrounds and experiences.\nH) It is the most efficient way to gather quantitative data.\nI) The facilitator's role is to observe, not guide the discussion.\nJ) The group must consist of at least 20 participants for valid results.\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.7069568634033203,
+      "softmax_neutral": [
+        0.008812788873910904,
+        0.0034578852355480194,
+        0.7069568634033203,
+        0.007095119915902615,
+        0.004707942251116037,
+        0.0032995371147990227,
+        0.02784336358308792,
+        0.0030996280256658792,
+        0.20897604525089264,
+        0.02575090155005455
+      ],
+      "logits_neutral": [
+        -0.322265625,
+        -1.2578125,
+        4.0625,
+        -0.5390625,
+        -0.94921875,
+        -1.3046875,
+        0.828125,
+        -1.3671875,
+        2.84375,
+        0.75
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "As the single-person public relations staff of a public transit agency, you are tasked with increasing the number of people who ride your buses each month. Your target audiences are lower-income individuals, college students, people with basic educations and people for whom English is a Second Language. When preparing to craft a primary message, what should you do first?\nA) Consider which mediums would most effectively reach all of the target audiences.\nB) Consider how riding the bus could similarly affect all of the target audiences.\nC) Consider the public perception of bus transportation among the target audiences.\n",
+      "label": 1,
+      "num_options": 3,
+      "answer_neutral": "C",
+      "prob_neutral": 0.5229841470718384,
+      "softmax_neutral": [
+        0.23757624626159668,
+        0.23943959176540375,
+        0.5229841470718384
+      ],
+      "logits_neutral": [
+        1.3984375,
+        1.40625,
+        2.1875
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Newsletters generally fall in to which writing category?\nA) Creative writing\nB) Academic writing\nC) Legal writing\nD) Scientific writing\nE) Technical writing\nF) Personal writing\nG) Promotional writing\n",
+      "label": 6,
+      "num_options": 7,
+      "answer_neutral": "G",
+      "prob_neutral": 0.8093132376670837,
+      "softmax_neutral": [
+        0.007482690270990133,
+        0.0017293550772592425,
+        0.0012952270917594433,
+        0.009403743781149387,
+        0.14970789849758148,
+        0.02106785587966442,
+        0.8093132376670837
+      ],
+      "logits_neutral": [
+        0.19140625,
+        -1.2734375,
+        -1.5625,
+        0.419921875,
+        3.1875,
+        1.2265625,
+        4.875
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "You seek the counsel of one of your peers who designed and implemented a communication program that resulted in the successful permitting of an automotive recycling center, despite strong opposition from community organizations. You have to design a program to win approval for a similar project proposed by your company. Your peer gives you a brief piece of advice that succinctly describes the foundation of his successful program. What is most likely your peer's advice for a successful communication program?\nA) Kill them with kindness\nB) Ignore their concerns\nC) Expose them to ridicule\nD) Bribe them into agreement\nE) Use aggressive tactics\nF) Solve their problems\nG) Manipulate their emotions\nH) Overwhelm them with facts\nI) Overpower them with authority\nJ) Intimidate them with legal jargon\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.5070050954818726,
+      "softmax_neutral": [
+        0.0665045976638794,
+        0.009441572241485119,
+        0.0035108732990920544,
+        0.010698703117668629,
+        0.014495431445538998,
+        0.5070050954818726,
+        0.11855725198984146,
+        0.02584090083837509,
+        0.20167268812656403,
+        0.0422728955745697
+      ],
+      "logits_neutral": [
+        2.03125,
+        0.0791015625,
+        -0.91015625,
+        0.2041015625,
+        0.5078125,
+        4.0625,
+        2.609375,
+        1.0859375,
+        3.140625,
+        1.578125
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which traditional news criterion would you expect to be most important in public relations messages distributed through the mass media?\nA) Sensationalism\nB) Uniqueness\nC) Humor\nD) Relevance\nE) Impact\nF) Timeliness\nG) Prominence\nH) Controversy\nI) Proximity\nJ) Predictability\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.3520265817642212,
+      "softmax_neutral": [
+        0.011315875686705112,
+        0.0033588784281164408,
+        0.0018186267698183656,
+        0.3520265817642212,
+        0.11428628116846085,
+        0.16370756924152374,
+        0.10085729509592056,
+        0.007626854348927736,
+        0.18842622637748718,
+        0.05657581984996796
+      ],
+      "logits_neutral": [
+        1.15625,
+        -0.058349609375,
+        -0.671875,
+        4.59375,
+        3.46875,
+        3.828125,
+        3.34375,
+        0.76171875,
+        3.96875,
+        2.765625
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "What two elements do the planning models of Hendrix (2002), Kendall (1999), Merston (1963) and Parkinson and Ekachai (2006) have in common?\nA) Evaluation and implementation\nB) Research and strategy\nC) Implementation and research\nD) Research and evaluation\nE) Strategy and evaluation\nF) Objectives and implementation\nG) Strategy and implementation\nH) Strategy and objectives\nI) Strategy and research\nJ) Evaluation and objectives\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.3847429156303406,
+      "softmax_neutral": [
+        0.028755392879247665,
+        0.006267564371228218,
+        0.012081047520041466,
+        0.16291040182113647,
+        0.13934461772441864,
+        0.00867619551718235,
+        0.07939618080854416,
+        0.017441026866436005,
+        0.3847429156303406,
+        0.16038469970226288
+      ],
+      "logits_neutral": [
+        1.4375,
+        -0.0859375,
+        0.5703125,
+        3.171875,
+        3.015625,
+        0.2392578125,
+        2.453125,
+        0.9375,
+        4.03125,
+        3.15625
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "According to Macnamara's (2005) pyramid of evaluation, at which stage is the situation analysis done and used to form objectives and implementation plans?\nA) Reach\nB) Planning\nC) Evaluation\nD) Outputs\nE) Outcomes\nF) Inputs\nG) Feedback\nH) Impact\nI) Process\nJ) Outtakes\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.585362434387207,
+      "softmax_neutral": [
+        0.01182111632078886,
+        0.10828115791082382,
+        0.00573869189247489,
+        0.009535710327327251,
+        0.016348011791706085,
+        0.014258988201618195,
+        0.08499086648225784,
+        0.01795477792620659,
+        0.585362434387207,
+        0.14570821821689606
+      ],
+      "logits_neutral": [
+        -0.77734375,
+        1.4375,
+        -1.5,
+        -0.9921875,
+        -0.453125,
+        -0.58984375,
+        1.1953125,
+        -0.359375,
+        3.125,
+        1.734375
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "In which era did muckraking journalism led to the widespread introduction of public relations in business?\nA) The Cold War Era, 1947 - 1991\nB) Postwar Era, 1945 - 1965\nC) The New Deal Era, 1933 - 1939\nD) The Great Depression Era, 1929 - 1939\nE) Seedbed Era, 1900 ' 1917\nF) Roosevelt Era, 1930 - 1945\nG) Industrial Revolution Era, 1760 - 1840\nH) Booming Twenties Era, 1919 - 1929\nI) The Gilded Age, 1870 - 1900\nJ) The Progressive Era, 1890 - 1920\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.7677357792854309,
+      "softmax_neutral": [
+        0.0033661110792309046,
+        0.0015054179821163416,
+        0.0011452615726739168,
+        0.002359121572226286,
+        0.07030342519283295,
+        0.000979594187811017,
+        0.013055726885795593,
+        0.006137049291282892,
+        0.1334124654531479,
+        0.7677357792854309
+      ],
+      "logits_neutral": [
+        -0.5234375,
+        -1.328125,
+        -1.6015625,
+        -0.87890625,
+        2.515625,
+        -1.7578125,
+        0.83203125,
+        0.0771484375,
+        3.15625,
+        4.90625
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Louis owns a chemical company that has been irresponsibly disposing of chemical waste and contaminating the community's water supply. Although he knew the company was cutting costs in its waste disposal, he publicly claims to have had no knowledge of the irresponsible practices, blames it on the company's general manager and fires him. What image restoration strategy is Louis using?\nA) mortification\nB) minimization\nC) reducing the offensiveness\nD) good intentions\nE) attacking the accuser\nF) corrective action\nG) compensation\nH) bolstering\nI) denial\nJ) evasion of responsibility\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.5489412546157837,
+      "softmax_neutral": [
+        0.003944982774555683,
+        0.004648325499147177,
+        0.0010271021164953709,
+        0.003030636114999652,
+        0.010413965210318565,
+        0.002770225750282407,
+        0.015817491337656975,
+        0.007792084943503141,
+        0.5489412546157837,
+        0.40161392092704773
+      ],
+      "logits_neutral": [
+        -0.466796875,
+        -0.302734375,
+        -1.8125,
+        -0.73046875,
+        0.50390625,
+        -0.8203125,
+        0.921875,
+        0.2138671875,
+        4.46875,
+        4.15625
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "According to Esman (1972), which publics are related to the organisation through shared industrial interests?\nA) General\nB) Enabling\nC) Normative\nD) Collaborative\nE) Competitive\nF) Regulatory\nG) Functional\nH) Market-oriented\nI) Diffused\nJ) Strategic\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.37294304370880127,
+      "softmax_neutral": [
+        0.007923739030957222,
+        0.005278347991406918,
+        0.007443663664162159,
+        0.04891948774456978,
+        0.37294304370880127,
+        0.012272527441382408,
+        0.16420461237430573,
+        0.019008062779903412,
+        0.2124965488910675,
+        0.149509996175766
+      ],
+      "logits_neutral": [
+        -1.4765625,
+        -1.8828125,
+        -1.5390625,
+        0.34375,
+        2.375,
+        -1.0390625,
+        1.5546875,
+        -0.6015625,
+        1.8125,
+        1.4609375
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which factors are mentioned that influence media coverage of a story?\nA) Content, quality of source, relevance\nB) Timing, content, media liaison\nC) Content, quality of source, human interest angle\nD) Timing, relevance, political slant\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.622417688369751,
+      "softmax_neutral": [
+        0.08759061992168427,
+        0.05189573019742966,
+        0.2380959540605545,
+        0.622417688369751
+      ],
+      "logits_neutral": [
+        0.2890625,
+        -0.234375,
+        1.2890625,
+        2.25
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which communication model describes the encoding and decoding of messages?\nA) Uses and Gratifications model\nB) Westley and MacLean model\nC) Two-step flow model\nD) Osgood and Schramm model\nE) Gatekeeping model\nF) Cultivation Theory model\nG) Lasswell model\nH) Shannon and Weaver model\nI) Maletzke model\nJ) Hypodermic Needle model\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.5568058490753174,
+      "softmax_neutral": [
+        0.008504334837198257,
+        0.0028991110157221556,
+        0.003810809226706624,
+        0.5568058490753174,
+        0.011598534882068634,
+        0.00210452894680202,
+        0.03789111226797104,
+        0.15952754020690918,
+        0.19853521883487701,
+        0.01832294650375843
+      ],
+      "logits_neutral": [
+        -0.259765625,
+        -1.3359375,
+        -1.0625,
+        3.921875,
+        0.050537109375,
+        -1.65625,
+        1.234375,
+        2.671875,
+        2.890625,
+        0.5078125
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Where was the first British newspaper printed?\nA) Bristol\nB) Oxford\nC) Birmingham\nD) Edinburgh\nE) Cambridge\nF) York\nG) Liverpool\nH) London\nI) Leeds\nJ) Manchester\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.32111093401908875,
+      "softmax_neutral": [
+        0.04224416986107826,
+        0.021851874887943268,
+        0.011336603201925755,
+        0.04058616980910301,
+        0.11494375020265579,
+        0.09164115786552429,
+        0.11184334754943848,
+        0.1272311508655548,
+        0.32111093401908875,
+        0.11721081286668777
+      ],
+      "logits_neutral": [
+        -0.2392578125,
+        -0.8984375,
+        -1.5546875,
+        -0.279296875,
+        0.76171875,
+        0.53515625,
+        0.734375,
+        0.86328125,
+        1.7890625,
+        0.78125
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which of the following entities cannot sue for libel?\nA) A public figure\nB) An individual citizen\nC) A house of worship\nD) A politician\nE) A private educational institution\nF) A government institution\nG) A private corporation\nH) A publicly-traded company\nI) A celebrity\nJ) A non-profit organization\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.36962708830833435,
+      "softmax_neutral": [
+        0.04848453029990196,
+        0.02414262667298317,
+        0.06524305790662766,
+        0.021991506218910217,
+        0.04662710800766945,
+        0.07568327337503433,
+        0.11540321260690689,
+        0.02867008000612259,
+        0.36962708830833435,
+        0.2041274756193161
+      ],
+      "logits_neutral": [
+        0.78125,
+        0.083984375,
+        1.078125,
+        -0.00933837890625,
+        0.7421875,
+        1.2265625,
+        1.6484375,
+        0.255859375,
+        2.8125,
+        2.21875
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which of these qualities is NOT listed as something to consider when choosing an opinion leader for a public relations campaigns?\nA) Reputation\nB) Impact\nC) Familiarity with subject or issue\nD) Ability to reach people\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.714155912399292,
+      "softmax_neutral": [
+        0.0725293979048729,
+        0.17364946007728577,
+        0.03966527804732323,
+        0.714155912399292
+      ],
+      "logits_neutral": [
+        -0.333984375,
+        0.5390625,
+        -0.9375,
+        1.953125
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "According to Macnamara's (2005) pyramid of evaluation, at which stage are opinion polls most useful?\nA) Inputs\nB) Pre-evaluation\nC) Impact\nD) Outtakes\nE) Outputs\nF) Outcomes\nG) Input-Output\nH) Evaluation planning\nI) Process\nJ) Feedback\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.4192652106285095,
+      "softmax_neutral": [
+        0.014686682261526585,
+        0.017889373004436493,
+        0.008838602341711521,
+        0.014859804883599281,
+        0.05900169536471367,
+        0.030789555981755257,
+        0.06659702211618423,
+        0.03118293359875679,
+        0.4192652106285095,
+        0.3368890583515167
+      ],
+      "logits_neutral": [
+        -0.6171875,
+        -0.419921875,
+        -1.125,
+        -0.60546875,
+        0.7734375,
+        0.123046875,
+        0.89453125,
+        0.1357421875,
+        2.734375,
+        2.515625
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "What public relations pioneer is credited with being the first practitioner to insist on \"a place at the management table\"?\nA) Arthur Page\nB) Doris Fleischman\nC) Harold Burson\nD) Betsy Plank\nE) John W. Hill\nF) Sam Black\nG) Daniel Edelman\nH) Ivy Lee\nI) Carl Byoir\nJ) Edward Bernays\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.5714102983474731,
+      "softmax_neutral": [
+        0.14906126260757446,
+        0.009344859048724174,
+        0.004431474953889847,
+        0.01281038112938404,
+        0.022069603204727173,
+        0.0015434883534908295,
+        0.02097686193883419,
+        0.10905555635690689,
+        0.5714102983474731,
+        0.0992962196469307
+      ],
+      "logits_neutral": [
+        2.609375,
+        -0.16015625,
+        -0.90625,
+        0.1552734375,
+        0.69921875,
+        -1.9609375,
+        0.6484375,
+        2.296875,
+        3.953125,
+        2.203125
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which of the following Internet-related challenges is most significant in the public relations field?\nA) Overcoming language barriers in global communications\nB) Staying abreast of changing technology\nC) Ensuring security of online client information\nD) Adapting to the rapid advancement of digital marketing tools\nE) Finding stable, cost-effective Internet providers\nF) Representing clients using new social media environments\nG) Training staff to use social media\n",
+      "label": 1,
+      "num_options": 7,
+      "answer_neutral": "G",
+      "prob_neutral": 0.5385873913764954,
+      "softmax_neutral": [
+        0.04025361314415932,
+        0.01938948594033718,
+        0.11647769063711166,
+        0.09808403998613358,
+        0.09214144200086594,
+        0.09506632387638092,
+        0.5385873913764954
+      ],
+      "logits_neutral": [
+        1.53125,
+        0.80078125,
+        2.59375,
+        2.421875,
+        2.359375,
+        2.390625,
+        4.125
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "When an attitude is communicated, what does it become?\nA) A behaviour\nB) A stereotype\nC) A point of view\nD) An opinion\nE) A principle\nF) A value\nG) A belief\nH) A theory\nI) A fact\nJ) A perception\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.324872225522995,
+      "softmax_neutral": [
+        0.029982667416334152,
+        0.004597990773618221,
+        0.03424127772450447,
+        0.13972578942775726,
+        0.03045482188463211,
+        0.006716221570968628,
+        0.1939900517463684,
+        0.012137776240706444,
+        0.324872225522995,
+        0.22328118979930878
+      ],
+      "logits_neutral": [
+        1.3984375,
+        -0.4765625,
+        1.53125,
+        2.9375,
+        1.4140625,
+        -0.09765625,
+        3.265625,
+        0.494140625,
+        3.78125,
+        3.40625
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which author emphasised strategy as achieving competitive advantage for an organization?\nA) Steyn (2003)\nB) Gregory (2006)\nC) Cutlip et al (2006)\nD) Henry (2006)\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.724269449710846,
+      "softmax_neutral": [
+        0.1528564691543579,
+        0.07937836647033691,
+        0.04349575936794281,
+        0.724269449710846
+      ],
+      "logits_neutral": [
+        0.1396484375,
+        -0.515625,
+        -1.1171875,
+        1.6953125
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "In the Westley and MacLean model of communication, which role describes the way in which the public obtain or receive the message?\nA) The sender's role\nB) The noise role\nC) The channel's role\nD) The mediator's role\nE) The advocacy role\nF) The feedback role\nG) The receiver's role\nH) The gatekeeper role\nI) The interpreter's role\nJ) The behavioural role\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.9133996963500977,
+      "softmax_neutral": [
+        0.0022464722860604525,
+        0.0005212234100326896,
+        0.004830674733966589,
+        0.0012118808226659894,
+        0.0016435541911050677,
+        0.0008460290846414864,
+        0.9133996963500977,
+        0.00354802911169827,
+        0.05793727934360504,
+        0.013815171085298061
+      ],
+      "logits_neutral": [
+        -1.3828125,
+        -2.84375,
+        -0.6171875,
+        -2.0,
+        -1.6953125,
+        -2.359375,
+        4.625,
+        -0.92578125,
+        1.8671875,
+        0.43359375
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which common public relations tactic involves sending journalists on visits to appropriate locations?\nA) Publicity stunt\nB) Promotional days/weeks\nC) Media release\nD) Influencer engagement\nE) Social media campaign\nF) Media briefing\nG) Press room\nH) Press conference\nI) Sponsorship\nJ) Media tour\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.9242231845855713,
+      "softmax_neutral": [
+        0.0018264809623360634,
+        0.0005032484186813235,
+        0.00016084781964309514,
+        0.0006070333765819669,
+        0.0004582128894980997,
+        0.0004727581108454615,
+        0.009384972974658012,
+        0.005097540561109781,
+        0.05726579949259758,
+        0.9242231845855713
+      ],
+      "logits_neutral": [
+        -1.0703125,
+        -2.359375,
+        -3.5,
+        -2.171875,
+        -2.453125,
+        -2.421875,
+        0.56640625,
+        -0.0439453125,
+        2.375,
+        5.15625
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which statement is NOT true of both issues management and crisis management?\nA) They both are reactive approaches to handle issues.\nB) Both have the potential to damage an organisation's reputation.\nC) They both deal with acute risks.\nD) New organizational practices are developed as a result of each.\nE) Both require a swift response time.\nF) Both can lead to improvement in organizational practices.\nG) They both require research monitoring.\nH) Both are planned in advance and implemented when needed.\nI) Both require a change in organizational structure.\n",
+      "label": 2,
+      "num_options": 9,
+      "answer_neutral": "I",
+      "prob_neutral": 0.6859968304634094,
+      "softmax_neutral": [
+        0.038101281970739365,
+        0.01208313275128603,
+        0.05127088353037834,
+        0.03992980718612671,
+        0.03900482878088951,
+        0.011965706944465637,
+        0.07459869235754013,
+        0.04704880341887474,
+        0.6859968304634094
+      ],
+      "logits_neutral": [
+        1.421875,
+        0.2734375,
+        1.71875,
+        1.46875,
+        1.4453125,
+        0.263671875,
+        2.09375,
+        1.6328125,
+        4.3125
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which of these publics does NOT feature in Grunig and Hunt's (1984) situational theory of publics?\nA) Aware\nB) Latent\nC) Active\nD) Dormant\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.8028838038444519,
+      "softmax_neutral": [
+        0.08169998228549957,
+        0.05770809203386307,
+        0.05770809203386307,
+        0.8028838038444519
+      ],
+      "logits_neutral": [
+        -0.88671875,
+        -1.234375,
+        -1.234375,
+        1.3984375
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "What is the main purpose of licensing public relations practitioners?\nA) To achieve better wages for licensed practitioners\nB) To create an elite of public relations practitioners\nC) To regulate access to posts in the field\nD) To mandate continued professional education for practitioners\nE) To increase government control over public relations\nF) To provide a revenue stream for professional organizations\nG) To preserve the well-being of society\nH) To inflate the cost of public relations services\nI) To limit competition in the field\n",
+      "label": 6,
+      "num_options": 9,
+      "answer_neutral": "G",
+      "prob_neutral": 0.37314680218696594,
+      "softmax_neutral": [
+        0.006834422238171101,
+        0.0036155828274786472,
+        0.06586432456970215,
+        0.24092169106006622,
+        0.024041568860411644,
+        0.0038638319820165634,
+        0.37314680218696594,
+        0.004412634298205376,
+        0.2772991359233856
+      ],
+      "logits_neutral": [
+        0.09375,
+        -0.54296875,
+        2.359375,
+        3.65625,
+        1.3515625,
+        -0.4765625,
+        4.09375,
+        -0.34375,
+        3.796875
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Watson and Noble (2005) lay out a five-step model for circular evaluation. At which step should pre-testing of strategy and tactics be carried out?\nA) After the third step\nB) 2\nC) At the last step\nD) The pre-testing step is not included in the model\nE) 1\nF) 4\nG) 6\nH) 3\nI) At the beginning of the process\nJ) 5\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.6231639981269836,
+      "softmax_neutral": [
+        0.02612609788775444,
+        0.009573782794177532,
+        0.0062671541236341,
+        0.052776169031858444,
+        0.048809971660375595,
+        0.013137027621269226,
+        0.035156507045030594,
+        0.04375297948718071,
+        0.6231639981269836,
+        0.1412363499403
+      ],
+      "logits_neutral": [
+        1.453125,
+        0.44921875,
+        0.0255126953125,
+        2.15625,
+        2.078125,
+        0.765625,
+        1.75,
+        1.96875,
+        4.625,
+        3.140625
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which of these activities might secondary research involve?\nA) Examining public records\nB) Observing people\nC) Writing a novel\nD) Conducting a scientific experiment\nE) Conducting a survey\nF) Interviewing people\nG) Collecting soil samples\nH) Coding a computer program\nI) Designing a building\n",
+      "label": 0,
+      "num_options": 9,
+      "answer_neutral": "A",
+      "prob_neutral": 0.7373476028442383,
+      "softmax_neutral": [
+        0.7373476028442383,
+        0.004523605573922396,
+        0.0012759416131302714,
+        0.005456509534269571,
+        0.015788935124874115,
+        0.001799365971237421,
+        0.012538961134850979,
+        0.0033095404505729675,
+        0.21795952320098877
+      ],
+      "logits_neutral": [
+        3.34375,
+        -1.75,
+        -3.015625,
+        -1.5625,
+        -0.5,
+        -2.671875,
+        -0.73046875,
+        -2.0625,
+        2.125
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "According to Esman (1972), which publics help an organization to exist by lending authority or assistance?\nA) Collaborative\nB) Enabling\nC) Strategic\nD) Operational\nE) Normative\nF) Regulatory\nG) Diffused\nH) Functional\nI) Financial\nJ) Administrative\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.3525294065475464,
+      "softmax_neutral": [
+        0.0185379795730114,
+        0.10179352760314941,
+        0.006113176234066486,
+        0.030385401099920273,
+        0.16914544999599457,
+        0.03330671787261963,
+        0.10420749336481094,
+        0.07218241691589355,
+        0.3525294065475464,
+        0.11179831624031067
+      ],
+      "logits_neutral": [
+        -0.8046875,
+        0.8984375,
+        -1.9140625,
+        -0.310546875,
+        1.40625,
+        -0.21875,
+        0.921875,
+        0.5546875,
+        2.140625,
+        0.9921875
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "In public relations, ________ deals with an organization's ability to satisfy and create a positive experience for its consumers.\nA) community relations\nB) consumer relations\nC) employee relations\nD) public issues\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.7286126613616943,
+      "softmax_neutral": [
+        0.04241034388542175,
+        0.7286126613616943,
+        0.01047461573034525,
+        0.21850231289863586
+      ],
+      "logits_neutral": [
+        -1.6796875,
+        1.1640625,
+        -3.078125,
+        -0.040283203125
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "________ advertising campaigns are focused on gathering support for a particular message or cause.\nA) Idea-oriented\nB) Company-oriented\nC) Market-oriented\nD) Service-oriented\nE) Brand-oriented\nF) Product-oriented\nG) Person-oriented\nH) Consumer-oriented\nI) Profit-oriented\n",
+      "label": 0,
+      "num_options": 9,
+      "answer_neutral": "I",
+      "prob_neutral": 0.35944893956184387,
+      "softmax_neutral": [
+        0.19850656390190125,
+        0.006136531010270119,
+        0.007021840196102858,
+        0.014240022748708725,
+        0.029970010742545128,
+        0.007727060001343489,
+        0.3429885804653168,
+        0.03396046906709671,
+        0.35944893956184387
+      ],
+      "logits_neutral": [
+        3.0625,
+        -0.4140625,
+        -0.279296875,
+        0.427734375,
+        1.171875,
+        -0.18359375,
+        3.609375,
+        1.296875,
+        3.65625
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Why should a successful public relations counselor continually review present and future realities for an organization?\nA) to interpret the organization's business plan\nB) to interpret trends for management\nC) to manage the organization's social media presence\nD) to organize company events\nE) to create a new business strategy\nF) to design the organization's website\nG) to develop a vision statement\nH) to train the management team in public speaking\n",
+      "label": 1,
+      "num_options": 8,
+      "answer_neutral": "B",
+      "prob_neutral": 0.5359786152839661,
+      "softmax_neutral": [
+        0.02907945029437542,
+        0.5359786152839661,
+        0.008799714036285877,
+        0.05605210363864899,
+        0.04264219105243683,
+        0.006694468669593334,
+        0.28688865900039673,
+        0.03386478126049042
+      ],
+      "logits_neutral": [
+        0.1171875,
+        3.03125,
+        -1.078125,
+        0.7734375,
+        0.5,
+        -1.3515625,
+        2.40625,
+        0.26953125
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which statement is true about an open systems model of public relations in an organization?\nA) It discourages feedback from its publics.\nB) It aims at maintaining a static organizational environment.\nC) It supports non-transparency and secrecy for organizational success.\nD) It emphasizes on controlling the public perception rather than adapting to it.\nE) It adapts to changing organizational environments.\nF) It promotes a one-way communication from the organization to its publics.\nG) It encourages the organization to work in isolation.\nH) It focuses on removing communication barriers between its business divisions.\n",
+      "label": 4,
+      "num_options": 8,
+      "answer_neutral": "E",
+      "prob_neutral": 0.9774467349052429,
+      "softmax_neutral": [
+        0.003376957029104233,
+        0.0014695316785946488,
+        0.0009562424966134131,
+        0.004508829675614834,
+        0.9774467349052429,
+        0.0013070284621790051,
+        0.0036017796956002712,
+        0.00733286002650857
+      ],
+      "logits_neutral": [
+        -0.51171875,
+        -1.34375,
+        -1.7734375,
+        -0.22265625,
+        5.15625,
+        -1.4609375,
+        -0.447265625,
+        0.263671875
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "No-Wait Weight Loss, a diet pill brand, promises its potential consumers that if they take one pill once a day they will lose weight without having to change their diet or start exercising. However, many people who have used the product have complained that they haven't lost weight, and some have even gained weight. No-Wait Weight Loss has been unsuccessful in the ________ stage of the advertising campaign.\nA) distribution\nB) penetration\nC) participation\nD) identification\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.5095553994178772,
+      "softmax_neutral": [
+        0.1072266548871994,
+        0.3508966565132141,
+        0.03232128918170929,
+        0.5095553994178772
+      ],
+      "logits_neutral": [
+        -0.84765625,
+        0.337890625,
+        -2.046875,
+        0.7109375
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which of the following information about publications does the Audit Bureau of Circulation NOT provide?\nA) Traffic\nB) Circulation\nC) Readership\nD) Distribution\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.6490793824195862,
+      "softmax_neutral": [
+        0.6490793824195862,
+        0.04149426147341728,
+        0.0399046391248703,
+        0.26952168345451355
+      ],
+      "logits_neutral": [
+        1.65625,
+        -1.09375,
+        -1.1328125,
+        0.77734375
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "The second stage of the advertising campaign is to establish ________, or to become known as trustworthy and believable.\nA) identity\nB) authenticity\nC) influence\nD) legitimacy\nE) reliability\nF) agency\nG) resonance\nH) visibility\nI) recognition\n",
+      "label": 3,
+      "num_options": 9,
+      "answer_neutral": "D",
+      "prob_neutral": 0.3212357461452484,
+      "softmax_neutral": [
+        0.022378770634531975,
+        0.09203556925058365,
+        0.0064872028306126595,
+        0.3212357461452484,
+        0.20418985188007355,
+        0.004511141683906317,
+        0.08185813575983047,
+        0.01712491735816002,
+        0.25017863512039185
+      ],
+      "logits_neutral": [
+        0.5390625,
+        1.953125,
+        -0.69921875,
+        3.203125,
+        2.75,
+        -1.0625,
+        1.8359375,
+        0.271484375,
+        2.953125
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which common public relations tactic can provide a 'halo effect'?\nA) Placement on TV or radio\nB) Sponsorship\nC) Social Media Advertising\nD) Billboards and Posters\nE) Stunts\nF) Direct Mail\nG) Email Marketing\n",
+      "label": 1,
+      "num_options": 7,
+      "answer_neutral": "E",
+      "prob_neutral": 0.37320297956466675,
+      "softmax_neutral": [
+        0.023660846054553986,
+        0.29987701773643494,
+        0.007107744924724102,
+        0.0311471875756979,
+        0.37320297956466675,
+        0.016397394239902496,
+        0.24860680103302002
+      ],
+      "logits_neutral": [
+        -0.08642578125,
+        2.453125,
+        -1.2890625,
+        0.1884765625,
+        2.671875,
+        -0.453125,
+        2.265625
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which of these definitions best describes the 'spiral of silence'?\nA) When people remain silent to avoid conflict or confrontation\nB) When people hide their opinions if they do not agree with the majority\nC) When people become silent due to a traumatic event\nD) When people consciously decide not to share their opinions on public platforms\nE) When a quiet voice in a crowd goes unheard due to overpowering noise\nF) When victims of abuse remain silent about the abuse\nG) When a group of people conspire to keep a secret\nH) When people hide their opinions if they are in disagreement with their close peers or family members\nI) When public relations uses opinion poll results to generate support for a particular issue\n",
+      "label": 5,
+      "num_options": 9,
+      "answer_neutral": "B",
+      "prob_neutral": 0.3890882432460785,
+      "softmax_neutral": [
+        0.019599908962845802,
+        0.3890882432460785,
+        0.004156792536377907,
+        0.049082059413194656,
+        0.1926126629114151,
+        0.003187122754752636,
+        0.0516388863325119,
+        0.043314769864082336,
+        0.2473195344209671
+      ],
+      "logits_neutral": [
+        -0.16015625,
+        2.828125,
+        -1.7109375,
+        0.7578125,
+        2.125,
+        -1.9765625,
+        0.80859375,
+        0.6328125,
+        2.375
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Internet traffic is expected to grow by 400% in the next few years. What is predicted to be the main driver of this?\nA) Video\nB) Gaming\nC) Email communication\nD) Virtual Reality applications\nE) Online auctions\nF) Social media usage\nG) Online consumer goods purchases\nH) E-book downloads\nI) Online education platforms\nJ) Music\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.6772550344467163,
+      "softmax_neutral": [
+        0.6772550344467163,
+        0.0040905228815972805,
+        0.001678747241385281,
+        0.014615907333791256,
+        0.007179092150181532,
+        0.0026826306711882353,
+        0.026725711300969124,
+        0.006850337143987417,
+        0.23773887753486633,
+        0.021183108910918236
+      ],
+      "logits_neutral": [
+        2.875,
+        -2.234375,
+        -3.125,
+        -0.9609375,
+        -1.671875,
+        -2.65625,
+        -0.357421875,
+        -1.71875,
+        1.828125,
+        -0.58984375
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "In recent years social media has had a major impact on the practice of public relations. In which of the following areas has the impact been greatest and experienced most immediately?\nA) Retail business\nB) Healthcare\nC) Nonprofits\nD) Politics\nE) Education\nF) Financial services\nG) Real estate\nH) Sports marketing\nI) Tourism and hospitality\nJ) Automotive sales\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.6629186272621155,
+      "softmax_neutral": [
+        0.01118552964180708,
+        0.001982090761885047,
+        0.003519682912155986,
+        0.6629186272621155,
+        0.018369922414422035,
+        0.002077213255688548,
+        0.025704143568873405,
+        0.016791468486189842,
+        0.20217876136302948,
+        0.055272601544857025
+      ],
+      "logits_neutral": [
+        0.57421875,
+        -1.15625,
+        -0.58203125,
+        4.65625,
+        1.0703125,
+        -1.109375,
+        1.40625,
+        0.98046875,
+        3.46875,
+        2.171875
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "A 2008 survey showed that what percentage of the world's largest companies are reporting their corporate responsibility?\nA) 40%\nB) 90%\nC) 50%\nD) 100%\nE) 80%\nF) 70%\nG) 60%\nH) 20%\nI) 30%\nJ) 10%\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.3679581880569458,
+      "softmax_neutral": [
+        0.05218756943941116,
+        0.014351130463182926,
+        0.012251220643520355,
+        0.010759002529084682,
+        0.19695381820201874,
+        0.016876770183444023,
+        0.22669245302677155,
+        0.026037346571683884,
+        0.3679581880569458,
+        0.07593245804309845
+      ],
+      "logits_neutral": [
+        1.71875,
+        0.427734375,
+        0.26953125,
+        0.1396484375,
+        3.046875,
+        0.58984375,
+        3.1875,
+        1.0234375,
+        3.671875,
+        2.09375
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Approximately what proportion of nonprofit sector practitioners conduct audience research?\nA) One-half\nB) Less than 10%\nC) Nearly all\nD) More than 80%\nE) Approximately 90%\nF) Three quarters\nG) One-quarter\nH) One third\nI) Two thirds\n",
+      "label": 8,
+      "num_options": 9,
+      "answer_neutral": "I",
+      "prob_neutral": 0.4372555613517761,
+      "softmax_neutral": [
+        0.06201602518558502,
+        0.004616960883140564,
+        0.0077018095180392265,
+        0.02263687737286091,
+        0.02884012833237648,
+        0.055590808391571045,
+        0.3352554738521576,
+        0.046086397022008896,
+        0.4372555613517761
+      ],
+      "logits_neutral": [
+        2.234375,
+        -0.36328125,
+        0.1484375,
+        1.2265625,
+        1.46875,
+        2.125,
+        3.921875,
+        1.9375,
+        4.1875
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which of these should an objective NOT be?\nA) Achievable\nB) Specific\nC) Broad\nD) Measurable\nE) Relevant\nF) Realistic\nG) Detailed\nH) Time-bound\nI) Ambiguous\n",
+      "label": 2,
+      "num_options": 9,
+      "answer_neutral": "I",
+      "prob_neutral": 0.7639101147651672,
+      "softmax_neutral": [
+        0.0057197147980332375,
+        0.0022311401553452015,
+        0.1504228115081787,
+        0.004950000438839197,
+        0.004668294917792082,
+        0.001938448054715991,
+        0.05620890483260155,
+        0.009950569830834866,
+        0.7639101147651672
+      ],
+      "logits_neutral": [
+        -0.70703125,
+        -1.6484375,
+        2.5625,
+        -0.8515625,
+        -0.91015625,
+        -1.7890625,
+        1.578125,
+        -0.1533203125,
+        4.1875
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Early email was developed in which decade?\nA) 1900s\nB) 1920s\nC) 2000s\nD) 1990s\nE) 1960s\nF) 1930s\nG) 1970s\nH) 1950s\nI) 1980s\nJ) 1940s\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.49798446893692017,
+      "softmax_neutral": [
+        0.005575495772063732,
+        0.0013557013589888811,
+        0.0013139907969161868,
+        0.02321157045662403,
+        0.49798446893692017,
+        0.0024548580404371023,
+        0.17480899393558502,
+        0.017684318125247955,
+        0.23158429563045502,
+        0.044026318937540054
+      ],
+      "logits_neutral": [
+        -1.3828125,
+        -2.796875,
+        -2.828125,
+        0.04345703125,
+        3.109375,
+        -2.203125,
+        2.0625,
+        -0.228515625,
+        2.34375,
+        0.68359375
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "You are the vice president of public relations for a corporation that produces a well-known brand of food products. In the Albany, New York, market, one of your products has recently been found to have some contamination. While apparently not fatal, it has given a large number of consumers severe stomach cramps and other intestinal problems. The cause has been traced back to your product, which is sold throughout the nation. Your CEO wants to know what you would advise to keep the situation from becoming a public relations disaster. What should you recommend?\nA) Conduct an internal investigation but do not publicly acknowledge the issue.\nB) Issue a press release to the Albany, New York, market explaining how to treat the symptoms.\nC) Stop all sales of the product throughout the nation and issue a recall for that product.\nD) Quickly investigate to make certain your product is definitely the cause of the illness.\nE) Only recall the product in stores where complaints have been received.\nF) Continue sales but include warning labels on the product packaging.\nG) Offer free product vouchers as compensation to affected consumers.\nH) Deny any responsibility until more information is available.\nI) Stop sales of the product in the Albany, New York, market and issue a recall for that product.\nJ) Issue a press release downplaying the severity of the illness.\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.5772081613540649,
+      "softmax_neutral": [
+        0.014281774871051311,
+        0.007438286207616329,
+        0.08186552673578262,
+        0.02678629755973816,
+        0.02616579458117485,
+        0.005426046438515186,
+        0.10188329219818115,
+        0.013003704138100147,
+        0.5772081613540649,
+        0.14594107866287231
+      ],
+      "logits_neutral": [
+        0.76953125,
+        0.1171875,
+        2.515625,
+        1.3984375,
+        1.375,
+        -0.1982421875,
+        2.734375,
+        0.67578125,
+        4.46875,
+        3.09375
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which of the following is NOT one of the four categories of persuasive crisis communication strategies identified by W. Timothy Coombs?\nA) ingratiation\nB) downplaying\nC) distancing\nD) nonexistence\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.8424911499023438,
+      "softmax_neutral": [
+        0.10627718269824982,
+        0.0401172935962677,
+        0.011114363558590412,
+        0.8424911499023438
+      ],
+      "logits_neutral": [
+        0.9921875,
+        0.0179443359375,
+        -1.265625,
+        3.0625
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "In recent research, the 14,000 stories that could be accessed on Google News' front page in a day pertained to how many actual news events?\nA) 9,574\nB) 326\nC) 5,000\nD) 10,000\nE) 24\nF) 500\nG) 100\nH) 50\nI) 1,000\nJ) 18\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.4307103455066681,
+      "softmax_neutral": [
+        0.0260690376162529,
+        0.048703376203775406,
+        0.004898226819932461,
+        0.018485717475414276,
+        0.05307392776012421,
+        0.023459594696760178,
+        0.2305426299571991,
+        0.032697901129722595,
+        0.4307103455066681,
+        0.1313592493534088
+      ],
+      "logits_neutral": [
+        0.8515625,
+        1.4765625,
+        -0.8203125,
+        0.5078125,
+        1.5625,
+        0.74609375,
+        3.03125,
+        1.078125,
+        3.65625,
+        2.46875
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "The ________ phase of the PR process consists of making decisions about which strategies and tactics will be used to respond to the goals of the organization and executing those strategies and tactics.\nA) completion\nB) implementation\nC) initiation\nD) strategizing\nE) planning\nF) execution\nG) development\nH) monitoring\nI) evaluation\nJ) tactical\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.26882097125053406,
+      "softmax_neutral": [
+        0.00973459705710411,
+        0.21265488862991333,
+        0.00557920103892684,
+        0.12898170948028564,
+        0.1708730012178421,
+        0.04320346191525459,
+        0.05050995945930481,
+        0.012281672097742558,
+        0.26882097125053406,
+        0.09736049175262451
+      ],
+      "logits_neutral": [
+        -0.318359375,
+        2.765625,
+        -0.875,
+        2.265625,
+        2.546875,
+        1.171875,
+        1.328125,
+        -0.0859375,
+        3.0,
+        1.984375
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which type of writing employs the pyramid structure?\nA) Academic writing\nB) Personal writing\nC) Scientific writing\nD) Media writing\nE) Reflective writing\nF) Legal writing\nG) Promotional writing\nH) Technical writing\nI) Creative writing\n",
+      "label": 3,
+      "num_options": 9,
+      "answer_neutral": "D",
+      "prob_neutral": 0.7155203819274902,
+      "softmax_neutral": [
+        0.011187611147761345,
+        0.0013812793185934424,
+        0.002295206068083644,
+        0.7155203819274902,
+        0.012263212352991104,
+        0.002009749412536621,
+        0.08413183689117432,
+        0.009042325429618359,
+        0.16216836869716644
+      ],
+      "logits_neutral": [
+        0.466796875,
+        -1.625,
+        -1.1171875,
+        4.625,
+        0.55859375,
+        -1.25,
+        2.484375,
+        0.25390625,
+        3.140625
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Segmentation of the population into psychographics, demographics and geodemographics is especially important in which public relations specialisation?\nA) Employee relations\nB) Public affairs\nC) Crisis management\nD) Government relations\nE) Media relations\nF) Issues management\nG) Investor relations\nH) Community relations\nI) Corporate communications\nJ) Marketing communications\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.7243682146072388,
+      "softmax_neutral": [
+        0.0031145389657467604,
+        0.0018964569317176938,
+        0.000731149222701788,
+        0.0027701284270733595,
+        0.004259148612618446,
+        0.0018381091067567468,
+        0.013371323235332966,
+        0.016128895804286003,
+        0.23152200877666473,
+        0.7243682146072388
+      ],
+      "logits_neutral": [
+        -0.41796875,
+        -0.9140625,
+        -1.8671875,
+        -0.53515625,
+        -0.10498046875,
+        -0.9453125,
+        1.0390625,
+        1.2265625,
+        3.890625,
+        5.03125
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which guerrilla marketing technique involves the spreading of a message about a product issue or service through online peer-to peer communication?\nA) Ambient marketing\nB) Fan pages\nC) Flash mobs\nD) Stealth marketing\nE) Grassroots marketing\nF) Buzz marketing\nG) Experiential marketing\nH) Street activities\nI) Undercover marketing\nJ) Viral campaigns\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.6347828507423401,
+      "softmax_neutral": [
+        0.0033310349099338055,
+        0.0017281181644648314,
+        0.001073012943379581,
+        0.0035736786667257547,
+        0.023121964186429977,
+        0.1156025379896164,
+        0.02661321870982647,
+        0.005441233050078154,
+        0.1847323328256607,
+        0.6347828507423401
+      ],
+      "logits_neutral": [
+        -0.375,
+        -1.03125,
+        -1.5078125,
+        -0.3046875,
+        1.5625,
+        3.171875,
+        1.703125,
+        0.11572265625,
+        3.640625,
+        4.875
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "In the public relations field, what is the most common threat to a client-firm relationship?\nA) Resistance to outside advice\nB) Disagreements over the firm's strategic direction\nC) Personality conflicts\nD) The firm's inability to meet the client's expectations\nE) Lack of transparency from the firm\nF) Clients' questions about costs\nG) The client's dissatisfaction with the firm's performance\nH) Superficial grasp of the client's unique problems\nI) Inconsistent communication between the client and the firm\nJ) The client's lack of trust in the firm's expertise\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.2909095883369446,
+      "softmax_neutral": [
+        0.07588829100131989,
+        0.00622929073870182,
+        0.011809579096734524,
+        0.12126915156841278,
+        0.061456214636564255,
+        0.009271141141653061,
+        0.18491336703300476,
+        0.02541939541697502,
+        0.2909095883369446,
+        0.212833970785141
+      ],
+      "logits_neutral": [
+        2.09375,
+        -0.40625,
+        0.2333984375,
+        2.5625,
+        1.8828125,
+        -0.00860595703125,
+        2.984375,
+        1.0,
+        3.4375,
+        3.125
+      ]
+    },
+    {
+      "task": "public relations",
+      "category": "other",
+      "text": "Which fashion house sued for damages to its reputation after being accused of stealing a design?\nA) Gucci\nB) Chanel\nC) Versace\nD) Prada\nE) Dior\nF) Givenchy\nG) Louis Vuitton\nH) Lacroix\nI) Yves Saint Laurent\nJ) Dolce & Gabbana\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.4259803891181946,
+      "softmax_neutral": [
+        0.0312827005982399,
+        0.008568934164941311,
+        0.011307736858725548,
+        0.07230952382087708,
+        0.052082594484090805,
+        0.018762024119496346,
+        0.2175695151090622,
+        0.058558035641908646,
+        0.4259803891181946,
+        0.1035785973072052
+      ],
+      "logits_neutral": [
+        0.404296875,
+        -0.890625,
+        -0.61328125,
+        1.2421875,
+        0.9140625,
+        -0.10693359375,
+        2.34375,
+        1.03125,
+        3.015625,
+        1.6015625
+      ]
+    }
+  ],
+  "accuracy": {
+    "neutral": {
+      "correct": 20,
+      "E_count": 0,
+      "invalid": 32,
+      "total": 52,
+      "accuracy_percentage": 38.46
+    }
+  },
+  "template": [
+    "Would you answer the following question with A, B, C, D, E, F, G, H, I, J?\nQuestion: {context}\nYour answer among \"A, B, C, D, E, F, G, H, I, J\" is: "
+  ]
+}

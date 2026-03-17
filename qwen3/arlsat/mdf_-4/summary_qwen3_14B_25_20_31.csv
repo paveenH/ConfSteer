@@ -1,0 +1,4 @@
+model,size,alpha,start,end,TOP,task,role,correct,E_count,invalid,total,accuracy_percentage,suite,refusal_enabled,refusal_label
+qwen3,14B,-4,20,31,25,AR-LSAT-dev,neutral,53,0,178,231,22.94,default,0,
+qwen3,14B,-4,20,31,25,AR-LSAT-test,neutral,55,0,175,230,23.91,default,0,
+qwen3,14B,-4,20,31,25,AR-LSAT-train,neutral,407,0,1223,1630,24.97,default,0,

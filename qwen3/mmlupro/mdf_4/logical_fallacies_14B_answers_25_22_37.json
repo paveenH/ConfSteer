@@ -1,0 +1,2059 @@
+{
+  "data": [
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Another name for hasty conclusion is\nA) false cause\nB) red herring\nC) argumentum ad populum\nD) jumping to a conclusion\nE) ad novitatem\nF) slippery slope\nG) straw man fallacy\nH) post hoc ergo prompter hoc\nI) ad hominem\n",
+      "label": 3,
+      "num_options": 9,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9941735863685608,
+      "softmax_neutral": [
+        0.004534773528575897,
+        0.00012269076250959188,
+        3.515149364829995e-05,
+        0.9941735863685608,
+        0.0003084445488639176,
+        3.102108166785911e-05,
+        6.169278640300035e-05,
+        3.200579885742627e-05,
+        0.000700542121194303
+      ],
+      "logits_neutral": [
+        -0.01513671875,
+        -3.625,
+        -4.875,
+        5.375,
+        -2.703125,
+        -5.0,
+        -4.3125,
+        -4.96875,
+        -1.8828125
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "The fallacy of reprehensible personality is a specific type of\nA) the fallacy of accident\nB) False dilemma\nC) Begging the question\nD) Circular reasoning\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9383097887039185,
+      "softmax_neutral": [
+        0.9383097887039185,
+        0.009490869008004665,
+        0.02539888396859169,
+        0.026800382882356644
+      ],
+      "logits_neutral": [
+        3.453125,
+        -1.140625,
+        -0.15625,
+        -0.1025390625
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Arguing that someone couldn't have done something good because he is incapable of doing good commits the fallacy of\nA) Straw man\nB) Accident\nC) False dilemma\nD) Circular reasoning\nE) Red herring\nF) Ad hominem\nG) Hasty generalization\nH) Begging the question\nI) Slippery slope\nJ) False dichotomy\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.7565237283706665,
+      "softmax_neutral": [
+        0.13563722372055054,
+        0.7565237283706665,
+        0.0008192294044420123,
+        0.001068476471118629,
+        0.0034222437534481287,
+        0.07374467700719833,
+        0.006418616510927677,
+        0.0020435149781405926,
+        0.018791815266013145,
+        0.0015305220149457455
+      ],
+      "logits_neutral": [
+        2.3125,
+        4.03125,
+        -2.796875,
+        -2.53125,
+        -1.3671875,
+        1.703125,
+        -0.73828125,
+        -1.8828125,
+        0.3359375,
+        -2.171875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Another name for the fallacy of accident is\nA) False dichotomy\nB) Ad hominem\nC) Black-or-white fallacy\nD) Slippery slope\nE) Sweeping generalization\nF) Appeal to ignorance\nG) Straw man argument\nH) False dilemma\nI) Petitio principii\nJ) Red herring\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.9836345911026001,
+      "softmax_neutral": [
+        0.008476928807795048,
+        0.00015107249782886356,
+        0.00013125404075253755,
+        0.00016334830434061587,
+        0.9836345911026001,
+        0.00010881343041546643,
+        0.0001850978733273223,
+        0.0037469491362571716,
+        0.0033131358213722706,
+        8.881092799128965e-05
+      ],
+      "logits_neutral": [
+        0.46484375,
+        -3.5625,
+        -3.703125,
+        -3.484375,
+        5.21875,
+        -3.890625,
+        -3.359375,
+        -0.3515625,
+        -0.474609375,
+        -4.09375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Another name for hasty generalization is\nA) straw man\nB) ad populum\nC) post hoc fallacy\nD) secundum quid\nE) ad crumenam\nF) ad hominem\nG) anecdotal evidence\nH) red herring\nI) false criteria\nJ) circular reasoning\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.9962080717086792,
+      "softmax_neutral": [
+        0.0029902660753577948,
+        7.005015504546463e-05,
+        0.00016034638974815607,
+        3.8685368053847924e-05,
+        7.341192394960672e-05,
+        1.4231551176635548e-05,
+        0.9962080717086792,
+        5.991707439534366e-05,
+        0.00035574400681070983,
+        2.9201248253230006e-05
+      ],
+      "logits_neutral": [
+        0.53515625,
+        -3.21875,
+        -2.390625,
+        -3.8125,
+        -3.171875,
+        -4.8125,
+        6.34375,
+        -3.375,
+        -1.59375,
+        -4.09375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "If you argued something is flawed because it fails to do something, when it was never intended to do that, you may have committed which of the following fallacies?\nA) ad ignorantium\nB) Many questions\nC) Extension\nD) Compound proposition\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.6745283603668213,
+      "softmax_neutral": [
+        0.6745283603668213,
+        0.09499351680278778,
+        0.20411860942840576,
+        0.026359431445598602
+      ],
+      "logits_neutral": [
+        1.90625,
+        -0.053955078125,
+        0.7109375,
+        -1.3359375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following describes the straw person fallacy?\nA) arguing someone should do something only because it will make him or her better liked\nB) saying an opposing arguer has taken a position that you can easily defeat, when he or she has not taken that position, then going on to defeat that position and claim to have done significant damage to that arguer's overall argument\nC) attacking the character or background of an opposing arguer instead of responding to that person's arguments with good evidence and sound reasoni\nD) responding to an argument with an expression of derision instead of a counter argument\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9718197584152222,
+      "softmax_neutral": [
+        0.024954669177532196,
+        0.9718197584152222,
+        0.00022759111016057432,
+        0.002997925039380789
+      ],
+      "logits_neutral": [
+        0.134765625,
+        3.796875,
+        -4.5625,
+        -1.984375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "A valid disjunctive syllogism has a major premise that:\nA) affirms the antecedent or denies the consequent\nB) leads to an invalid conclusion\nC) generalizes a specific case\nD) includes three or more alternatives\nE) contradicts the conclusion\nF) includes two or more alternatives\nG) leads to a valid conclusion\nH) is based on a false premise\nI) denies the antecedent or affirms the consequent\nJ) classifies subjects\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.7479400634765625,
+      "softmax_neutral": [
+        0.16430063545703888,
+        0.0010729886125773191,
+        0.0002979582059197128,
+        0.0036870362237095833,
+        0.007744712755084038,
+        0.7479400634765625,
+        0.062361493706703186,
+        0.001294271438382566,
+        0.01050338800996542,
+        0.0007973774336278439
+      ],
+      "logits_neutral": [
+        2.1875,
+        -2.84375,
+        -4.125,
+        -1.609375,
+        -0.8671875,
+        3.703125,
+        1.21875,
+        -2.65625,
+        -0.5625,
+        -3.140625
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "The false analogy fallacy is\nA) a specific type of false cause fallacy that argues that since two event happened at the same time one event must have caused the other\nB) arguing that a statement is true because it has not been proven false\nC) a specific type of false cause fallacy that argues that since two events happened in sequence, the first event must have caused the second.\nD) arguing that a statement is false because it has not been proven true\nE) arguing that since a statement is popular, it must be true\nF) drawing a conclusion based on a comparison when the items being compared are not similar enough to support the conclusion.\nG) arguing that since something is new it is necessarily good\nH) drawing a conclusion based on a comparison when the items being compared are too similar to distinguish\nI) a fallacy of relevance where the premise of an argument is irrelevant to the conclusion\nJ) arguing that an event that preceded another event necessarily is the cause of the second event\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.9102314114570618,
+      "softmax_neutral": [
+        0.052160415798425674,
+        0.0006669426802545786,
+        0.0004306105838622898,
+        0.0010657713282853365,
+        0.002919789170846343,
+        0.9102314114570618,
+        0.0013900278136134148,
+        0.0005443427944555879,
+        0.028805717825889587,
+        0.0017848311690613627
+      ],
+      "logits_neutral": [
+        1.828125,
+        -2.53125,
+        -2.96875,
+        -2.0625,
+        -1.0546875,
+        4.6875,
+        -1.796875,
+        -2.734375,
+        1.234375,
+        -1.546875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "The _ad nauseam_ fallacy is\nA) reasoning that a conclusion is false because it's been claimed so rarely\nB) reasoning that a claim is true because it hasn't been disproven\nC) arguing that an act should be carried out because it will not have any significant consequences, when there is no evidence of the effects\nD) arguing that a conclusion is true because it's been disproven so often\nE) arguing that something should be done because that's the way it's been done in the past.\nF) reasoning that a conclusion is true because it's been claimed so often\nG) reasoning that a claim is false because so many people believe it is false\nH) arguing that an act should be avoided because it will have significant consequences, when there is no evidence of the effects\nI) reasoning that a claim is true because so many people believe it is true\nJ) arguing that something should not be done because it's never been done in the past\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.9656929969787598,
+      "softmax_neutral": [
+        0.021840879693627357,
+        0.0003670878359116614,
+        7.228388858493418e-05,
+        0.0012613984290510416,
+        0.0013323022285476327,
+        0.9656929969787598,
+        0.0014979476109147072,
+        0.00021245416428428143,
+        0.007599780801683664,
+        0.00012295902706682682
+      ],
+      "logits_neutral": [
+        0.9296875,
+        -3.15625,
+        -4.78125,
+        -1.921875,
+        -1.8671875,
+        4.71875,
+        -1.75,
+        -3.703125,
+        -0.1259765625,
+        -4.25
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "The Dean was showing a visitor around the campus. The visitor asked, \"About how many students do you have here?\" After a moment of reflection the Dean replied, \"Oh, I'd guess about one in a hundred.\"\nA) Appeal to Authority\nB) Red Herring\nC) Denying the Antecedent\nD) False Dilemma\nE) Slippery Slope\nF) Equivocation\nG) Straw Man\nH) Fallacy of Division\nI) Circular Reasoning\nJ) Ad Hominem\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "H",
+      "prob_neutral": 0.9655122756958008,
+      "softmax_neutral": [
+        0.023796388879418373,
+        0.0013011959381401539,
+        0.00022260838886722922,
+        0.0006645858520641923,
+        0.0005957309622317553,
+        0.00047868327237665653,
+        0.0012034096289426088,
+        0.9655122756958008,
+        0.005227372981607914,
+        0.0009976614965125918
+      ],
+      "logits_neutral": [
+        0.859375,
+        -2.046875,
+        -3.8125,
+        -2.71875,
+        -2.828125,
+        -3.046875,
+        -2.125,
+        4.5625,
+        -0.65625,
+        -2.3125
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following fallacies happens when someone concludes that someone couldn't have done something good because he or she has negative qualities?\nA) Laudatory personality\nB) Red herring\nC) Reprehensible personality\nD) Circular reasoning\nE) Straw man fallacy\nF) Appeal to authority\nG) False cause\nH) Slippery slope\nI) Guilt by association\n",
+      "label": 2,
+      "num_options": 9,
+      "answer_neutral": "C",
+      "prob_neutral": 0.7958288192749023,
+      "softmax_neutral": [
+        0.025482142344117165,
+        0.0011596684344112873,
+        0.7958288192749023,
+        0.0006711645983159542,
+        0.0030553194228559732,
+        0.00018931068188976496,
+        0.0013140765950083733,
+        0.00018931068188976496,
+        0.17211005091667175
+      ],
+      "logits_neutral": [
+        0.43359375,
+        -2.65625,
+        3.875,
+        -3.203125,
+        -1.6875,
+        -4.46875,
+        -2.53125,
+        -4.46875,
+        2.34375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "In a faulty analogy, the things being compared are...\nA) Completely unrelated in any way\nB) Similar in some ways, different in others\nC) Similar in appearance, but not in function\nD) Sufficiently similar\nE) Not sufficiently similar in relevant ways\nF) Different in appearance, but similar in function\nG) Completely identical in all ways\nH) Completely dissimilar in all ways\nI) Complete opposites\n",
+      "label": 4,
+      "num_options": 9,
+      "answer_neutral": "E",
+      "prob_neutral": 0.9790240526199341,
+      "softmax_neutral": [
+        0.01463522482663393,
+        0.003483816748484969,
+        0.00019611208699643612,
+        0.00048160486039705575,
+        0.9790240526199341,
+        0.00018713148892857134,
+        0.0002809176512528211,
+        6.268119614105672e-05,
+        0.0016484532970935106
+      ],
+      "logits_neutral": [
+        1.421875,
+        -0.013427734375,
+        -2.890625,
+        -1.9921875,
+        5.625,
+        -2.9375,
+        -2.53125,
+        -4.03125,
+        -0.76171875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following fallacies happen if someone argues that you are a reasonable and intelligent person, so of course you understand his claim is true?\nA) argument from authority\nB) ad hominem attack\nC) begging the question\nD) red herring\nE) significance\nF) false cause\nG) straw man\nH) appeal to pride\nI) slippery slope\nJ) bandwagon fallacy\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.46562397480010986,
+      "softmax_neutral": [
+        0.46562397480010986,
+        0.03974328562617302,
+        0.45129820704460144,
+        0.0033922840375453234,
+        0.0035829658154398203,
+        0.0007688406622037292,
+        0.00290157413110137,
+        0.00820149015635252,
+        0.022934358566999435,
+        0.0015531006501987576
+      ],
+      "logits_neutral": [
+        2.921875,
+        0.4609375,
+        2.890625,
+        -2.0,
+        -1.9453125,
+        -3.484375,
+        -2.15625,
+        -1.1171875,
+        -0.0888671875,
+        -2.78125
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "\" _Ad novitatem_ \" is a specific kind of fallacy of\nA) Division\nB) False sign\nC) False cause\nD) Hasty Generalization\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.967087984085083,
+      "softmax_neutral": [
+        0.012560279108583927,
+        0.0023600065615028143,
+        0.967087984085083,
+        0.017991770058870316
+      ],
+      "logits_neutral": [
+        -1.640625,
+        -3.3125,
+        2.703125,
+        -1.28125
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following best describes the fallacy of style over substance?\nA) Rejecting a claim simply because it has been poorly argued, or a fallacy has been made.\nB) Making a claim based on evidence that it just as likely to be false as true.\nC) Making assumptions about a group based on the characteristics or behavior of a few individuals from that group.\nD) Assuming that because two things occur together, they must be causally related.\nE) Changing the meaning of a word or phrase from one part of the argument to another.\nF) Confusing figurative language with literal language.\nG) Assuming that what is true of the whole must also be true of the parts.\nH) Reasoning that ideas presented in an appealing manner are correct, regardless of the content of the message.\nI) Believing in something simply because it is stated by an authority figure.\nJ) Using emotionally charged language to create an impression about the subject of a claim, without making an argument that the language fits the subject.\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "H",
+      "prob_neutral": 0.9400773048400879,
+      "softmax_neutral": [
+        0.0506068579852581,
+        0.00030565817723982036,
+        8.226677891798317e-05,
+        0.0003203270025551319,
+        0.0006572682759724557,
+        0.00025339951389469206,
+        0.0006078738369978964,
+        0.9400773048400879,
+        0.006742711644619703,
+        0.0003463560715317726
+      ],
+      "logits_neutral": [
+        2.328125,
+        -2.78125,
+        -4.09375,
+        -2.734375,
+        -2.015625,
+        -2.96875,
+        -2.09375,
+        5.25,
+        0.3125,
+        -2.65625
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "\"The minor premise must affirm the antecedent or deny the consequent\" is a way to determine the validity of which type of argument?\nA) Red herring argument\nB) Ad hominem argument\nC) Deductive argument\nD) Categorical syllogism\nE) Disjunctive syllogism\nF) Inductive argument\nG) Analogical argument\nH) Slippery slope argument\nI) Hypothetical syllogism\nJ) Toulmin model\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.4472050666809082,
+      "softmax_neutral": [
+        0.012271924875676632,
+        0.00045493184006772935,
+        0.0028306806925684214,
+        0.29790282249450684,
+        0.4472050666809082,
+        0.0003078222507610917,
+        0.0004842723428737372,
+        0.0007618673844262958,
+        0.23566050827503204,
+        0.0021200820337980986
+      ],
+      "logits_neutral": [
+        0.107421875,
+        -3.1875,
+        -1.359375,
+        3.296875,
+        3.703125,
+        -3.578125,
+        -3.125,
+        -2.671875,
+        3.0625,
+        -1.6484375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following is another name for evading the issue?\nA) hasty generalization\nB) slippery slope\nC) \"you too\" fallacy\nD) false cause\nE) argument against the person\nF) appeal to fear\nG) irrelevant conclusion\nH) appeal to ignorance\nI) begging the question\n",
+      "label": 6,
+      "num_options": 9,
+      "answer_neutral": "G",
+      "prob_neutral": 0.8886423707008362,
+      "softmax_neutral": [
+        0.004944562911987305,
+        0.00021471793297678232,
+        0.00020488527661655098,
+        0.00012044583854731172,
+        0.0014001366216689348,
+        8.812005398795009e-05,
+        0.8886423707008362,
+        0.0679914802312851,
+        0.036393214017152786
+      ],
+      "logits_neutral": [
+        -0.78515625,
+        -3.921875,
+        -3.96875,
+        -4.5,
+        -2.046875,
+        -4.8125,
+        4.40625,
+        1.8359375,
+        1.2109375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "\"To be valid, the minor premise must either agree with the antecedent, or disagree with the consequent\" is a requirement for\nA) a categorical enthymeme\nB) a conditional syllogism\nC) a disjunctive inference\nD) a distributive syllogism\nE) a hypothetical syllogism\nF) a conjunctive enthymeme\nG) disjunctive enthymeme\nH) a categorical syllogism\nI) a disjunctive syllogism\nJ) a conjunctive syllogism\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.5730389952659607,
+      "softmax_neutral": [
+        0.04815337806940079,
+        0.11641994118690491,
+        0.0014204216422513127,
+        0.001177571015432477,
+        0.5730389952659607,
+        0.0006503164186142385,
+        0.0023602473083883524,
+        0.0019720601849257946,
+        0.254284530878067,
+        0.0005225439090281725
+      ],
+      "logits_neutral": [
+        1.4453125,
+        2.328125,
+        -2.078125,
+        -2.265625,
+        3.921875,
+        -2.859375,
+        -1.5703125,
+        -1.75,
+        3.109375,
+        -3.078125
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "A valid disjunctive syllogism has which of the following characteristics?\nA) The minor premise must either accept an alternative or reject an alternative\nB) One of the premises is missing\nC) The major premise must either affirm the antecedent or deny the consequent\nD) It includes a conjunction in the major premise\nE) It reaches a contradictory conclusion\nF) It includes a hypothetical premise\nG) The major premise must either accept an alternative or reject an alternative\nH) The minor premise must either affirm the antecedent or deny the consequent\nI) The minor premise must either accept a conjunction or reject a conjunction\nJ) It reaches a truthful conclusion\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.9844673871994019,
+      "softmax_neutral": [
+        0.01471659541130066,
+        6.503047188743949e-05,
+        6.709476292598993e-05,
+        0.00010555487824603915,
+        0.00016348659119103104,
+        4.8326546675525606e-05,
+        0.9844673871994019,
+        2.586733717180323e-05,
+        0.00030305629479698837,
+        3.7636753404513e-05
+      ],
+      "logits_neutral": [
+        2.953125,
+        -2.46875,
+        -2.4375,
+        -1.984375,
+        -1.546875,
+        -2.765625,
+        7.15625,
+        -3.390625,
+        -0.9296875,
+        -3.015625
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Appeal to compassion is\nA) an appeal to emotion that argues a conclusion should be made based only on feeling sorry for someone\nB) an appeal to emotion that argues a conclusion should be made based solely on feeling disgusted by someone\nC) an appeal to emotion that argues a conclusion should be made based solely on fear\nD) arguing that an idea should be rejected based only on who originated the idea\nE) arguing that an idea should be accepted based only on who originated the idea\nF) an appeal to emotion that argues a conclusion should be made based solely on feeling happy for someone\nG) an appeal to emotion that argues an action should be taken based only on the need to be loyal to someone\nH) an appeal to emotion that argues an action should be taken based solely on anger towards someone\nI) arguing that an idea should be accepted based solely on the popularity of the idea\nJ) an appeal to emotion that argues against a position based only on negative personal feelings toward the position\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.995587944984436,
+      "softmax_neutral": [
+        0.995587944984436,
+        0.0006142879719845951,
+        6.178055627970025e-05,
+        0.0006642035441473126,
+        0.0005861576064489782,
+        0.00018734722107183188,
+        0.0004156480135861784,
+        7.000655023148283e-05,
+        0.001722813118249178,
+        8.989017806015909e-05
+      ],
+      "logits_neutral": [
+        5.1875,
+        -2.203125,
+        -4.5,
+        -2.125,
+        -2.25,
+        -3.390625,
+        -2.59375,
+        -4.375,
+        -1.171875,
+        -4.125
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "William Safire in American Heritage Magazine (December 1987): ...The greatness of Lincoln was his purposefulness. He saw something that few others saw: that the democratic experiment centered on the Union and that majority rule was everything. The minute you allowed secession, you made democracy an absurdity---because what would happen would be continued subdivision.\nA) Questionable Analogy\nB) Red Herring\nC) Appeal to Ignorance\nD) Appeal to Authority\nE) Ad Hominem\nF) Slippery Slope\nG) Circular Argument\nH) False Dilemma\nI) Straw Man\nJ) Hasty Generalization\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.5956844687461853,
+      "softmax_neutral": [
+        0.04264850914478302,
+        0.003379866247996688,
+        0.00047936695045791566,
+        0.5956844687461853,
+        0.002551256911829114,
+        0.33414870500564575,
+        0.0040136901661753654,
+        0.0046197292394936085,
+        0.00962834246456623,
+        0.002846132731065154
+      ],
+      "logits_neutral": [
+        0.30078125,
+        -2.234375,
+        -4.1875,
+        2.9375,
+        -2.515625,
+        2.359375,
+        -2.0625,
+        -1.921875,
+        -1.1875,
+        -2.40625
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "So, how long have you been beating your wife?\nA) Attacking the Person (ad hominem)\nB) False Dilemma\nC) Prejudicial Language\nD) Appeal to Force\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9963255524635315,
+      "softmax_neutral": [
+        0.9963255524635315,
+        0.0007075648754835129,
+        0.0003787321620620787,
+        0.002588164759799838
+      ],
+      "logits_neutral": [
+        3.984375,
+        -3.265625,
+        -3.890625,
+        -1.96875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "When someone changes the meaning of a word or phrase from one part of the argument to another that person may have committed which of the following fallacies?\nA) Hypostatization\nB) Appeal to authority\nC) Red herring fallacy\nD) False cause fallacy\nE) Straw man fallacy\nF) Special pleading\nG) Equivocation\nH) Slippery slope fallacy\nI) Ad hominem attack\nJ) Question begging epithets\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.99847811460495,
+      "softmax_neutral": [
+        0.0008470179163850844,
+        1.5423040167661384e-05,
+        1.6163208783837035e-05,
+        1.889670420496259e-05,
+        0.0004152294422965497,
+        6.134861450846074e-06,
+        0.99847811460495,
+        6.9517086558334995e-06,
+        0.00018936472770292312,
+        6.737827334291069e-06
+      ],
+      "logits_neutral": [
+        0.177734375,
+        -3.828125,
+        -3.78125,
+        -3.625,
+        -0.53515625,
+        -4.75,
+        7.25,
+        -4.625,
+        -1.3203125,
+        -4.65625
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following fallacies is a way of suppressing evidence that eliminates a source of evidence from consideration by claiming the source is flawed, when there is no true relationship between the alleged flaw and the reliability of the source?\nA) straw man\nB) snob appeal\nC) bandwagon fallacy\nD) appeal to anonymous authority\nE) false dilemma\nF) significance\nG) appeal to ignorance\nH) argumentum ad populum\nI) poisoning the well\nJ) cherry picking\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.9765253067016602,
+      "softmax_neutral": [
+        0.002340942155569792,
+        4.869157055509277e-05,
+        2.448365921736695e-05,
+        6.866612238809466e-05,
+        7.084582466632128e-05,
+        1.4850090337859001e-05,
+        0.00012433827214408666,
+        0.0001956115593202412,
+        0.9765253067016602,
+        0.020586296916007996
+      ],
+      "logits_neutral": [
+        0.029052734375,
+        -3.84375,
+        -4.53125,
+        -3.5,
+        -3.46875,
+        -5.03125,
+        -2.90625,
+        -2.453125,
+        6.0625,
+        2.203125
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following describes he fallacy of appeal to pride?\nA) arguing someone should accept a claim based only on the evidence that he or she has the favorable characteristics to understand the truth of the claim.\nB) arguing that a claim should be accepted based only on the evidence that it's in line with traditional or cultural beliefs.\nC) arguing that a claim should be accepted based only on the evidence that it's supported by a famous or respected figure.\nD) arguing that a claim should be accepted based only on the evidence that rejecting it will lead to negative consequences.\nE) arguing that an act or series of acts should be carried out because they will have no significant consequences, when there is no evidence for the lack of significant effects.\nF) arguing something should be done based only on evidence that it's been done that way in the past, or should be believed only because it's been believed for a long time.\nG) arguing that a claim should be accepted based only on the evidence that it's widely accepted by the public.\nH) arguing that a claim should be accepted based only on the evidence that it's appealing or desirable.\nI) arguing a claim should be accepted based only on evidence that unidentified authorities accept it.\nJ) arguing that a claim should be accepted based only on the evidence that it's been scientifically proven, without providing the actual proof.\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.7659545540809631,
+      "softmax_neutral": [
+        0.7659545540809631,
+        0.008311876095831394,
+        0.0035470733419060707,
+        0.0052422345615923405,
+        0.00871077086776495,
+        0.0024000699631869793,
+        0.011097810231149197,
+        0.16436021029949188,
+        0.02560238167643547,
+        0.004773108754307032
+      ],
+      "logits_neutral": [
+        3.1875,
+        -1.3359375,
+        -2.1875,
+        -1.796875,
+        -1.2890625,
+        -2.578125,
+        -1.046875,
+        1.6484375,
+        -0.2109375,
+        -1.890625
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following fallacies happens when someone concludes that someone couldn't have done something bad because he or she has good qualities?\nA) Hasty generalization\nB) Guilt by association\nC) Reprehensible personality\nD) Laudatory personality\nE) Ad hominem\nF) Circular reasoning\nG) Red herring\nH) Slippery slope\nI) Straw man fallacy\nJ) False cause\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.573005735874176,
+      "softmax_neutral": [
+        0.08190689980983734,
+        0.03296435996890068,
+        0.0033807011786848307,
+        0.573005735874176,
+        0.2836584150791168,
+        0.0010555064072832465,
+        0.0020665815100073814,
+        0.0009314811904914677,
+        0.018115973100066185,
+        0.002914346754550934
+      ],
+      "logits_neutral": [
+        1.4140625,
+        0.50390625,
+        -1.7734375,
+        3.359375,
+        2.65625,
+        -2.9375,
+        -2.265625,
+        -3.0625,
+        -0.0947265625,
+        -1.921875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Appeal to beliefs is another name for which of the following fallacies?\nA) ad nauseam\nB) appeal to tradition\nC) solid slope\nD) self evident truths\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9907483458518982,
+      "softmax_neutral": [
+        0.008052322082221508,
+        0.9907483458518982,
+        0.00037661209353245795,
+        0.0008225966012105346
+      ],
+      "logits_neutral": [
+        -1.8125,
+        3.0,
+        -4.875,
+        -4.09375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "The natural law fallacy is a specific type of\nA) false analogy\nB) false cause\nC) false criteria\nD) false sign\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.5444355607032776,
+      "softmax_neutral": [
+        0.5444355607032776,
+        0.4045901596546173,
+        0.034533750265836716,
+        0.016440531238913536
+      ],
+      "logits_neutral": [
+        1.5703125,
+        1.2734375,
+        -1.1875,
+        -1.9296875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "E.F. Schumacher, famous economist, in an article in the Atlantic (April 1979): Fifteen months [after I had advised that rural India should have a technology intermediate between the hoe and the tractor,] an all-India conference on intermediate technology was arranged. (They still didn't like the term [intermediate], so they called it appropriate technology. That's all right: when I come to India and somebody says, \"Oh, Mr. Schumacher, I don't believe in appropriate technology\", I just look him straight in the face and say, \"Oh, that's splendid. Do you believe in inappropriate technology?\")\nA) Equivocation\nB) Inconsistency\nC) Appeal to Authority\nD) Prejudicial Language\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9280641078948975,
+      "softmax_neutral": [
+        0.9280641078948975,
+        0.056612271815538406,
+        0.00772172911092639,
+        0.007602014113217592
+      ],
+      "logits_neutral": [
+        3.125,
+        0.328125,
+        -1.6640625,
+        -1.6796875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Arguing that what is true of an entire object is also true of each part of that object is the fallacy of\nA) appeal to ignorance\nB) straw man\nC) bandwagon\nD) division\nE) false cause\nF) slippery slope\nG) false criteria\nH) hasty generalization\nI) ad hominem\nJ) ad crumenam\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9876535534858704,
+      "softmax_neutral": [
+        0.008510526269674301,
+        0.00012974711717106402,
+        5.080970367998816e-05,
+        0.9876535534858704,
+        0.000537786865606904,
+        7.869560067774728e-05,
+        0.0002073352807201445,
+        0.00024239951744675636,
+        0.002525860909372568,
+        6.323369598248973e-05
+      ],
+      "logits_neutral": [
+        0.0272216796875,
+        -4.15625,
+        -5.09375,
+        4.78125,
+        -2.734375,
+        -4.65625,
+        -3.6875,
+        -3.53125,
+        -1.1875,
+        -4.875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following fallacies happens when someone attributes the cause of an event to a simple cause when the cause is actually more complicated?\nA) slippery slope\nB) complex cause\nC) red herring\nD) ad hominem\nE) hasty generalization\nF) appeal to authority\nG) post hoc\nH) false dichotomy\nI) division\nJ) appeal to ignorance\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9055324196815491,
+      "softmax_neutral": [
+        0.046879738569259644,
+        0.9055324196815491,
+        0.0008387421257793903,
+        0.0009068966028280556,
+        0.033242713660001755,
+        0.000428387604188174,
+        0.004177098628133535,
+        0.0013614129275083542,
+        0.006197513081133366,
+        0.0004351337265688926
+      ],
+      "logits_neutral": [
+        1.5703125,
+        4.53125,
+        -2.453125,
+        -2.375,
+        1.2265625,
+        -3.125,
+        -0.84765625,
+        -1.96875,
+        -0.453125,
+        -3.109375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "I don't know what the answer is to number 8. But Heather hasn't made the third option into the correct answer for a while, and even then only once, so I'm guessing that this is the fallacy of Composition!\nA) Gambler's Fallacy\nB) Equivocation\nC) Fallacy of Composition\nD) Appeal to Pity\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9875461459159851,
+      "softmax_neutral": [
+        0.010146190412342548,
+        0.0014616971602663398,
+        0.9875461459159851,
+        0.0008459654054604471
+      ],
+      "logits_neutral": [
+        -1.40625,
+        -3.34375,
+        3.171875,
+        -3.890625
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "When someone responds to your argument with a sarcastic statement such as, \"Yeah, right. Like that's ever going to happen,\" that person may have committed which fallacy?\nA) tu quoque\nB) appeal to ignorance\nC) argumentum ad populum\nD) false cause\nE) appeal to indignation\nF) appeal to spite\nG) horse laugh\nH) slippery slope\nI) straw man fallacy\nJ) argumentum ad hominem\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.4520471394062042,
+      "softmax_neutral": [
+        0.10570597648620605,
+        0.0028837716672569513,
+        0.0005634292610920966,
+        0.0011381583753973246,
+        0.0030697586480528116,
+        0.0009888490894809365,
+        0.16629883646965027,
+        0.005679330788552761,
+        0.2616247832775116,
+        0.4520471394062042
+      ],
+      "logits_neutral": [
+        2.4375,
+        -1.1640625,
+        -2.796875,
+        -2.09375,
+        -1.1015625,
+        -2.234375,
+        2.890625,
+        -0.486328125,
+        3.34375,
+        3.890625
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "I don't understand why everyone thinks they belong in college. After all, everyone knows that when you are intelligent you'll succeed. But so many people that elect to attend college don't have even the most basic intelligence. How do they expect to get anywhere here?\nA) Attacking the Person (ad hominem)\nB) Straw Man\nC) Denying the Antecedent\nD) Begging the Question\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9780431985855103,
+      "softmax_neutral": [
+        0.9780431985855103,
+        0.00316191790625453,
+        0.0018016065005213022,
+        0.01699330471456051
+      ],
+      "logits_neutral": [
+        3.671875,
+        -2.0625,
+        -2.625,
+        -0.380859375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following describes the fallacy of appeal to loyalty?\nA) arguing that someone should do something to be loyal to an opposing person or group\nB) arguing that someone should do something to be loyal to a person or a group\nC) arguing that someone should do something because it is the traditional thing to do\nD) arguing that someone should do something because it will make him or her better liked by others\nE) arguing that an idea should be rejected only because of who originated the idea\nF) responding to an argument with an expression of derision\nG) arguing that an idea should be accepted because it is the most recent or modern idea\nH) arguing that an idea should be accepted only because of who originated the idea\nI) arguing that someone should do something because it is the popular thing to do\nJ) arguing that an idea should be accepted because it has been around for a long time\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.762472927570343,
+      "softmax_neutral": [
+        0.20521681010723114,
+        0.762472927570343,
+        0.0005674752756021917,
+        0.0028151189908385277,
+        0.004569388926029205,
+        0.000751782616134733,
+        0.0023891604505479336,
+        0.0037294267676770687,
+        0.017202643677592278,
+        0.00028534448938444257
+      ],
+      "logits_neutral": [
+        2.359375,
+        3.671875,
+        -3.53125,
+        -1.9296875,
+        -1.4453125,
+        -3.25,
+        -2.09375,
+        -1.6484375,
+        -0.11962890625,
+        -4.21875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "\" _Ad lazarum_ \" is\nA) a specific type of false sign that argues there is necessarily an inverse relationship between cost and quality, so something is necessarily a better value because it costs less\nB) arguing that what is true of an entire object must also be true of every individual part of that object\nC) a specific type of false analogy that reasons what is true about nature must be true about humans\nD) drawing a conclusion without enough evidence to support that conclusion\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.6339170932769775,
+      "softmax_neutral": [
+        0.6339170932769775,
+        0.1948501467704773,
+        0.04737848415970802,
+        0.12385427206754684
+      ],
+      "logits_neutral": [
+        2.265625,
+        1.0859375,
+        -0.328125,
+        0.6328125
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following is the best explanation of the fallacy of loaded language?\nA) Using complex or technical language to make an argument seem more credible or sophisticated than it actually is.\nB) Using language that appeals to the audience's prejudices or biases to win an argument, rather than relying on logical reasoning.\nC) Using language that is intentionally misleading or deceptive to convince the audience of a particular point of view.\nD) Using language that is overly formal or academic to intimidate the audience and discourage them from questioning the argument.\nE) Using language and punctuation in a way that a statement can have multiple interpretations, so it's not really clear what is meant.\nF) Using language that is overly emotional or dramatic to distract from the lack of substantive evidence or logical reasoning.\nG) Using language that is intentionally vague or ambiguous to obscure the truth or mislead the audience.\nH) Confusing figurative language with literal language\nI) Using emotionally charged language to create an impression about the subject of a claim, without making an argument that the language fits the subject.\nJ) Referring to an act committed by an opponent in negative terms while referring to the same act committed by the arguer or supporters in favorable terms.\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.7728506922721863,
+      "softmax_neutral": [
+        0.012060427106916904,
+        0.20800994336605072,
+        0.00017002852109726518,
+        0.0004078772326465696,
+        0.0008175227558240294,
+        0.0004015536978840828,
+        0.0011000969680026174,
+        0.0006028034258633852,
+        0.7728506922721863,
+        0.003579008625820279
+      ],
+      "logits_neutral": [
+        0.93359375,
+        3.78125,
+        -3.328125,
+        -2.453125,
+        -1.7578125,
+        -2.46875,
+        -1.4609375,
+        -2.0625,
+        5.09375,
+        -0.28125
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following describes the fallacy of appeal to popularity?\nA) saying someone should do something because he or she dislikes someone else\nB) saying someone should do something to be better liked by others\nC) saying someone should do something because it will make him or her feel good\nD) saying someone should accept an idea because of the source of the idea\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.6106968522071838,
+      "softmax_neutral": [
+        0.12346625328063965,
+        0.6106968522071838,
+        0.0021514955442398787,
+        0.2636854350566864
+      ],
+      "logits_neutral": [
+        0.1904296875,
+        1.7890625,
+        -3.859375,
+        0.94921875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following best describes the fallacy of figure of speech?\nA) Assuming that a particular figure of speech is universally understood.\nB) Using an irrelevant figure of speech to divert attention from the argument.\nC) A form of loaded language that uses an emotionally charged restatement of the claim in place of support for the claim.\nD) Misinterpreting a figure of speech as a logical argument.\nE) Misusing a figure of speech in order to make a claim sound more persuasive.\nF) Confusing the meaning of a figure of speech with its literal translation.\nG) Treating something that exists in the mind as if it was a real object.\nH) Using a figure of speech in place of a factual claim.\nI) Using emotionally charged language to create an impression about the subject of a claim, without making an argument that the language fits the subject.\nJ) Confusing figurative language with literal language.\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.8022639155387878,
+      "softmax_neutral": [
+        0.03135112300515175,
+        0.0025335592217743397,
+        0.0008420319063588977,
+        0.10857461392879486,
+        0.012039813213050365,
+        0.002361536957323551,
+        0.0030204516369849443,
+        0.01407596655189991,
+        0.022936973720788956,
+        0.8022639155387878
+      ],
+      "logits_neutral": [
+        1.4765625,
+        -1.0390625,
+        -2.140625,
+        2.71875,
+        0.51953125,
+        -1.109375,
+        -0.86328125,
+        0.67578125,
+        1.1640625,
+        4.71875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "We must assume that he is a Communist, because he says that he is not, and we know that Communists are taught always to deny party membership.\nA) Argument from Ignorance\nB) Affirming the Consequent\nC) Denying the Antecedent\nD) Begging the Question\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9599959850311279,
+      "softmax_neutral": [
+        0.9599959850311279,
+        0.01768626645207405,
+        0.001273703877814114,
+        0.02104402333498001
+      ],
+      "logits_neutral": [
+        4.28125,
+        0.287109375,
+        -2.34375,
+        0.4609375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following describes the fallacy of appeal to spite?\nA) arguing that someone should do something because if he or she does it people will like him or her\nB) arguing that a position is correct based on personal feelings rather than facts\nC) saying someone shouldn't do something because if he or she does it people won't like him or her\nD) arguing a position is incorrect because it is held by a person or group disliked by others\nE) arguing someone should do something only because that person dislikes someone else\nF) arguing a position is correct because it is held by a person or group disliked by others\nG) arguing against a position based on the belief that it is generally unpopular\nH) arguing against a position based only on negative personal feelings toward the position\nI) arguing against a position solely based on the belief that it is old-fashioned or outdated\nJ) responding to an argument with an expression of derision instead of a counter argument\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.5259434580802917,
+      "softmax_neutral": [
+        0.08065604418516159,
+        0.0037723330315202475,
+        0.03133955970406532,
+        0.5259434580802917,
+        0.2950275242328644,
+        0.01657942496240139,
+        0.01638626866042614,
+        0.007923881523311138,
+        0.01792663149535656,
+        0.0044448948465287685
+      ],
+      "logits_neutral": [
+        1.3125,
+        -1.75,
+        0.3671875,
+        3.1875,
+        2.609375,
+        -0.26953125,
+        -0.28125,
+        -1.0078125,
+        -0.19140625,
+        -1.5859375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "\" _Ad crumenam_ \" is a specific kind of\nA) Slippery Slope\nB) Hasty Conclusion\nC) False sign\nD) False analogy\nE) Bandwagon Fallacy\nF) Circular Reasoning\nG) Hasty Generalization\nH) Straw Man Fallacy\nI) Red Herring\n",
+      "label": 2,
+      "num_options": 9,
+      "answer_neutral": "A",
+      "prob_neutral": 0.8907275199890137,
+      "softmax_neutral": [
+        0.8907275199890137,
+        0.004356748890131712,
+        0.00161532883066684,
+        0.00718306377530098,
+        0.010952864773571491,
+        0.005507446359843016,
+        0.057165175676345825,
+        0.002424895763397217,
+        0.02006686106324196
+      ],
+      "logits_neutral": [
+        3.34375,
+        -1.9765625,
+        -2.96875,
+        -1.4765625,
+        -1.0546875,
+        -1.7421875,
+        0.59765625,
+        -2.5625,
+        -0.44921875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "In a hypothetical syllogism, when the minor premise affirms the antecedent\nA) no valid conclusion can be drawn\nB) the conclusion must affirm the consequent\nC) the conclusion must deny the consequent\nD) the conclusion must deny the antecedent\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.957975447177887,
+      "softmax_neutral": [
+        0.040715914219617844,
+        0.957975447177887,
+        0.0002042720007011667,
+        0.001104283961467445
+      ],
+      "logits_neutral": [
+        0.388671875,
+        3.546875,
+        -4.90625,
+        -3.21875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "It's silly to pass laws against discrimination, since it is obvious that we can't live without it. We discriminate between pleasant and unpleasant tastes in selecting our food, between pleasant and unpleasant sounds in selecting our music, between harmonious and unharmonious colors in decorating our homes, between interesting and uninteresting people in choosing our friends, and so on. We can't live without discriminating.\nA) Prejudicial Language\nB) Equivocation\nC) Inconsistency\nD) Straw Man\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.6433184146881104,
+      "softmax_neutral": [
+        0.19543610513210297,
+        0.15765194594860077,
+        0.0035935472697019577,
+        0.6433184146881104
+      ],
+      "logits_neutral": [
+        0.90234375,
+        0.6875,
+        -3.09375,
+        2.09375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "All things that are spoiled are inedible. Timothy is spoiled. So, Timothy is inedible.\nA) Equivocation\nB) Attacking the Person (ad hominem)\nC) Fallacy of Division\nD) Questionable Cause\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.7590975165367126,
+      "softmax_neutral": [
+        0.7590975165367126,
+        0.0068290987983345985,
+        0.2209099531173706,
+        0.01316343154758215
+      ],
+      "logits_neutral": [
+        1.7890625,
+        -2.921875,
+        0.5546875,
+        -2.265625
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which fallacy happens when someone argues in favor of a two part proposition, only supports one part of the proposition, then asserts that the entire proposition has been supported.\nA) a priori\nB) Complex proposition\nC) Extension\nD) Appeal to ignorance\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9059962034225464,
+      "softmax_neutral": [
+        0.07201024889945984,
+        0.9059962034225464,
+        0.000852386758197099,
+        0.0211411751806736
+      ],
+      "logits_neutral": [
+        -0.0634765625,
+        2.46875,
+        -4.5,
+        -1.2890625
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "\" _Ad lazarum_ \" is a specific kind of\nA) Fallacy of composition\nB) Complex cause\nC) Red herring\nD) False sign\nE) Hasty generalization\nF) Anecdotal evidence\nG) False criteria\nH) Slippery slope argument\nI) Straw man argument\nJ) Informal fallacy\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.4408181607723236,
+      "softmax_neutral": [
+        0.3150385022163391,
+        0.01086457446217537,
+        0.008201010525226593,
+        0.015202272683382034,
+        0.025162408128380775,
+        0.002041392959654331,
+        0.027420438826084137,
+        0.061028290539979935,
+        0.09422294050455093,
+        0.4408181607723236
+      ],
+      "logits_neutral": [
+        1.6640625,
+        -1.703125,
+        -1.984375,
+        -1.3671875,
+        -0.86328125,
+        -3.375,
+        -0.77734375,
+        0.022705078125,
+        0.45703125,
+        2.0
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "In a conditional syllogism, when the minor premise denies the antecedent\nA) no valid conclusion can be drawn\nB) the conclusion must affirm the antecedent\nC) the conclusion must be a tautology\nD) the conclusion must affirm the consequent\nE) the conclusion must be an inverse statement\nF) the conclusion must be a conditional statement\nG) the conclusion must be a converse statement\nH) the conclusion must deny the consequent\nI) the conclusion must be a contradiction\nJ) the conclusion must deny the antecedent\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9544598460197449,
+      "softmax_neutral": [
+        0.9544598460197449,
+        0.0005797812482342124,
+        0.00013347322237677872,
+        0.0009121238836087286,
+        0.0029907391872256994,
+        0.0003802298160735518,
+        0.0011989643098786473,
+        0.034227192401885986,
+        0.004826087970286608,
+        0.00029153231298550963
+      ],
+      "logits_neutral": [
+        5.15625,
+        -2.25,
+        -3.71875,
+        -1.796875,
+        -0.609375,
+        -2.671875,
+        -1.5234375,
+        1.828125,
+        -0.130859375,
+        -2.9375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "John Stuart Mill: Each person's happiness is a good to that person, and the general happiness, therefore, a good to the aggregate of all persons.\nA) Fallacy of Composition\nB) Fallacy of Division\nC) Gambler's Fallacy\nD) Equivocation\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9952007532119751,
+      "softmax_neutral": [
+        0.9952007532119751,
+        0.0014277067966759205,
+        0.00010342272435082123,
+        0.0032680530566722155
+      ],
+      "logits_neutral": [
+        3.921875,
+        -2.625,
+        -5.25,
+        -1.796875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "When a claim is supported only by asserting that unidentified experts accept the claim the arguer has committed which of the following fallacies?\nA) snob appeal\nB) appeal to popularity\nC) post hoc ergo propter hoc\nD) appeal to anonymous authority\nE) straw man\nF) ad vericundiam\nG) false dichotomy\nH) slippery slope\nI) ad hominem\nJ) appeal to tradition\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.8970451951026917,
+      "softmax_neutral": [
+        0.02466428466141224,
+        0.010063066147267818,
+        0.00022016152797732502,
+        0.8970451951026917,
+        0.0021890797652304173,
+        0.05514928326010704,
+        0.0011717299930751324,
+        0.00018831413763109595,
+        0.008967773988842964,
+        0.0003409928176552057
+      ],
+      "logits_neutral": [
+        0.40625,
+        -0.490234375,
+        -4.3125,
+        4.0,
+        -2.015625,
+        1.2109375,
+        -2.640625,
+        -4.46875,
+        -0.60546875,
+        -3.875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following fallacies happens when someone concludes that a legitimate generalization necessarily applies to a particular case?\nA) False dilemma\nB) Circular reasoning\nC) Accident\nD) Bifurcation\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9811392426490784,
+      "softmax_neutral": [
+        0.014327086508274078,
+        0.0016455743461847305,
+        0.9811392426490784,
+        0.0028880725149065256
+      ],
+      "logits_neutral": [
+        -0.8984375,
+        -3.0625,
+        3.328125,
+        -2.5
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following describes the horse laugh fallacy?\nA) arguing actions should be taken to avoid negative results, when those results are exaggerated, unlikely, or irrelevant\nB) claiming that an argument is invalid based on the speaker's hypocrisy or inconsistency\nC) characterizing an opponent's position in such way to make it or its consequences appear to be ridiculous\nD) responding to an argument with an expression of derision instead of a counter argument\nE) arguing that since something has not been proven false, it must be true\nF) attacking an opponent's character or personal traits instead of their argument\nG) using personal feelings or prejudices to sway the argument, instead of logic\nH) using a misrepresentation or exaggeration of an opponent's argument to make it easier to attack\nI) attempts to gain agreement based solely the feelings aroused by the message\nJ) introducing a point that is irrelevant to the argument as a diversionary tactic\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.7336532473564148,
+      "softmax_neutral": [
+        0.021472787484526634,
+        0.0010042957728728652,
+        0.7336532473564148,
+        0.003260957542806864,
+        0.0012209131382405758,
+        0.0002385411353316158,
+        0.0011380159994587302,
+        0.23448966443538666,
+        0.0032292671967297792,
+        0.00029226671904325485
+      ],
+      "logits_neutral": [
+        1.40625,
+        -1.65625,
+        4.9375,
+        -0.478515625,
+        -1.4609375,
+        -3.09375,
+        -1.53125,
+        3.796875,
+        -0.48828125,
+        -2.890625
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "The _post hoc_ fallacy is\nA) arguing that since one event preceded another event the first event must have caused the second event\nB) drawing a conclusion about a causal relationship when there is no evidence of a causal relationship\nC) arguing that since two things happened at the same time one must have caused the other\nD) arguing that a single event caused another when there is no logical connection between them\nE) drawing a conclusion about a causal relationship based on a single instance\nF) arguing that an event must have caused another because they are correlated\nG) arguing that a single event caused another when the cause is really several events\nH) drawing a conclusion about a causal relationship based on hearsay or anecdotal evidence\nI) arguing that since two events are unrelated, one cannot have caused the other\n",
+      "label": 0,
+      "num_options": 9,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9934402108192444,
+      "softmax_neutral": [
+        0.9934402108192444,
+        0.0007451730780303478,
+        0.00012260026414878666,
+        0.0010591045720502734,
+        0.0012825242010876536,
+        0.0003957585140597075,
+        0.0006945776985958219,
+        8.693659765413031e-05,
+        0.0021731415763497353
+      ],
+      "logits_neutral": [
+        5.8125,
+        -1.3828125,
+        -3.1875,
+        -1.03125,
+        -0.83984375,
+        -2.015625,
+        -1.453125,
+        -3.53125,
+        -0.3125
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "At the end of the course, Professor Jones told us that we were the best class he had ever had. That's why I'm sure that the 0.0 the appeared on my grade report is a mistake. Surely, if we were as good a class as Professor Jones said we were, none of us deserved to fail.\nA) Appeal to Gallery (Provicialism)\nB) Fallacy of Composition\nC) Red Herring\nD) Appeal to Authority\nE) Straw Man\nF) Fallacy of Division\nG) Slippery Slope\nH) Appeal to Ignorance\nI) False Dilemma\nJ) Questionable Cause\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.8749942183494568,
+      "softmax_neutral": [
+        0.07071037590503693,
+        0.009095784276723862,
+        0.00042045925511047244,
+        0.8749942183494568,
+        0.002438552910462022,
+        0.001378632732667029,
+        0.0017980763223022223,
+        0.00086272630142048,
+        0.03611532598733902,
+        0.0021859046537429094
+      ],
+      "logits_neutral": [
+        1.546875,
+        -0.50390625,
+        -3.578125,
+        4.0625,
+        -1.8203125,
+        -2.390625,
+        -2.125,
+        -2.859375,
+        0.875,
+        -1.9296875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Arguing that someone couldn't have done something good because she holds a particular position commits the fallacy of\nA) Guilt by association\nB) False dilemma\nC) Reprehensible personality\nD) False dichotomy\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.6043615341186523,
+      "softmax_neutral": [
+        0.32602861523628235,
+        0.044469237327575684,
+        0.6043615341186523,
+        0.025140628218650818
+      ],
+      "logits_neutral": [
+        1.4140625,
+        -0.578125,
+        2.03125,
+        -1.1484375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Men are better drivers than women are. The proof of this is that men are more capable than women of managing cars on the road.\nA) False Dilemma\nB) Appeal to Pity\nC) Begging the question\nD) Appeal to Authority\nE) Bandwagon Fallacy\nF) Ad hominem (Attacking the Person)\nG) Appeal to Ignorance\nH) Straw Man Fallacy\nI) Slippery Slope\nJ) Red Herring\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9701465368270874,
+      "softmax_neutral": [
+        0.022461935877799988,
+        0.0003305729478597641,
+        0.9701465368270874,
+        0.00036878074752166867,
+        0.00027837036759592593,
+        8.89724979060702e-05,
+        0.0002740546187851578,
+        0.002461780095472932,
+        0.00346151040866971,
+        0.00012744724517688155
+      ],
+      "logits_neutral": [
+        1.734375,
+        -2.484375,
+        5.5,
+        -2.375,
+        -2.65625,
+        -3.796875,
+        -2.671875,
+        -0.4765625,
+        -0.1357421875,
+        -3.4375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "The fallacy that involves reasoning that determines the conclusion one wants first, then accepts only evidence supporting that conclusion, or interprets all evidence as support for that conclusion is known as\nA) ad ignorantium\nB) a priori\nC) plurium interrogationum\nD) Extension\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.8935584425926208,
+      "softmax_neutral": [
+        0.8935584425926208,
+        0.07508713752031326,
+        0.008229388855397701,
+        0.02312501333653927
+      ],
+      "logits_neutral": [
+        3.46875,
+        0.9921875,
+        -1.21875,
+        -0.185546875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Another name for the fallacy of accident is\nA) Red herring\nB) Slippery slope\nC) Either-or fallacy\nD) Straw man argument\nE) Hasty generalization\nF) Guilt by association\nG) Appeal to ignorance\nH) Dicto simpliciter\nI) False cause fallacy\nJ) Laudatory personality\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "H",
+      "prob_neutral": 0.9658385515213013,
+      "softmax_neutral": [
+        0.026555759832262993,
+        0.001045893644914031,
+        0.00029500783421099186,
+        0.0009979986352846026,
+        0.0009229978313669562,
+        0.00020275572023820132,
+        0.0008145427564159036,
+        0.9658385515213013,
+        0.0030740522779524326,
+        0.0002523335861042142
+      ],
+      "logits_neutral": [
+        0.78125,
+        -2.453125,
+        -3.71875,
+        -2.5,
+        -2.578125,
+        -4.09375,
+        -2.703125,
+        4.375,
+        -1.375,
+        -3.875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "John S. Knight, Detroit Free Press (3 July 1970): ...Capitalism is the economic system in which the means of production and distribution are privately owned and operated for profit. The alternative system is called socialism, the theory of the ownership and operation of the means of production by society, with all members sharing in the work and the products.\nA) Begging the Question\nB) False Dilemma\nC) Straw Man\nD) Appeal to Gallery (Provicialism)\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.927750825881958,
+      "softmax_neutral": [
+        0.06532944738864899,
+        0.927750825881958,
+        0.0011384164681658149,
+        0.005781355779618025
+      ],
+      "logits_neutral": [
+        0.1748046875,
+        2.828125,
+        -3.875,
+        -2.25
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "An arguer who threatens another to gain agreement commits the fallacy of\nA) red herring\nB) false analogy\nC) appeal to force\nD) appeal to tradition\nE) circular argument\nF) false cause\nG) straw person\nH) appeal to ridicule\nI) ignorance of refutation\nJ) tu quoque\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.992280900478363,
+      "softmax_neutral": [
+        0.004820404574275017,
+        0.00014316696615424007,
+        0.992280900478363,
+        0.0001524004474049434,
+        0.0001454215234844014,
+        4.366345456219278e-05,
+        9.839711856329814e-05,
+        2.5668423404567875e-05,
+        0.002257073065266013,
+        3.295890928711742e-05
+      ],
+      "logits_neutral": [
+        0.1103515625,
+        -3.40625,
+        5.4375,
+        -3.34375,
+        -3.390625,
+        -4.59375,
+        -3.78125,
+        -5.125,
+        -0.6484375,
+        -4.875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "\"Misuse of statistics,\" \"questionable statistics,\" and \"questionable use of statistics\" are all other names for the fallacy of\nA) appeal to a pride\nB) significance\nC) poisoning the well\nD) slippery slope\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.7013002038002014,
+      "softmax_neutral": [
+        0.0975416824221611,
+        0.16886641085147858,
+        0.7013002038002014,
+        0.032291725277900696
+      ],
+      "logits_neutral": [
+        -0.64453125,
+        -0.095703125,
+        1.328125,
+        -1.75
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following is another name for the fallacy of amphiboly?\nA) Reification\nB) Slippery slope\nC) Begging the question\nD) Misusing ambiguity\nE) False cause\nF) Red herring\nG) Appeal to ignorance\nH) Straw man argument\nI) Special pleading\n",
+      "label": 3,
+      "num_options": 9,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9912019968032837,
+      "softmax_neutral": [
+        0.005602074787020683,
+        0.0002146853948943317,
+        0.00012042758316965774,
+        0.9912019968032837,
+        0.0010322397574782372,
+        6.969814421609044e-05,
+        0.00023213025997392833,
+        5.961598435533233e-05,
+        0.0014671082608401775
+      ],
+      "logits_neutral": [
+        0.26171875,
+        -3.0,
+        -3.578125,
+        5.4375,
+        -1.4296875,
+        -4.125,
+        -2.921875,
+        -4.28125,
+        -1.078125
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Notice from the Hyatt Regency Hotel in New Orleans: We are pleased to confirm your reservation. It will be held on a space-available basis.\nA) Equivocation\nB) Affirming the Consequent\nC) Gambler's Fallacy\nD) Inconsistency\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9948142766952515,
+      "softmax_neutral": [
+        0.9948142766952515,
+        0.0015921033918857574,
+        0.0004025468078907579,
+        0.0031911092810332775
+      ],
+      "logits_neutral": [
+        3.921875,
+        -2.515625,
+        -3.890625,
+        -1.8203125
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following explanations best fits the fallacy of ignorance of refutation?\nA) asserting an argumentative opponent has taken an easily defeated position, which the opponent has not really taken, defeating the position, and acting as if you've done significant damage to that person's overall argument.\nB) causing confusion during refutation because of a real or feigned lack of the ability to engage in refutation\nC) characterizing an opposing argument in such a way to make it or its consequences appear to be ridiculous\nD) arguing an action should be taken based only on the need to be loyal to someone or to a group\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.4360509216785431,
+      "softmax_neutral": [
+        0.4360509216785431,
+        0.4292905628681183,
+        0.0035164307337254286,
+        0.13114216923713684
+      ],
+      "logits_neutral": [
+        1.2109375,
+        1.1953125,
+        -3.609375,
+        0.00946044921875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "When someone tries to support a proposition with information that really has nothing to do with the claim being made, that person has probably committed which of the following fallacies?\nA) straw person\nB) genetic fallacy\nC) irrelevant conclusion\n",
+      "label": 2,
+      "num_options": 3,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9097174406051636,
+      "softmax_neutral": [
+        0.07689423114061356,
+        0.013388337567448616,
+        0.9097174406051636
+      ],
+      "logits_neutral": [
+        0.263671875,
+        -1.484375,
+        2.734375
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following best describes the fallacy of poisoning the well?\nA) a way of suppressing evidence that eliminates a source of evidence from consideration by claiming the source is flawed, when there is no true relationship between the alleged flaw and the reliability of the source\nB) arguing that a claim should be accepted based on evidence that is not presented, but asserted to be well known or obvious.\nC) arguing something should be done based only on evidence that it's been done that way in the past, or should be believed only because it's been believed for a long time.\nD) reasoning that a claim is true based only on the evidence that it has been made so often.\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9931442737579346,
+      "softmax_neutral": [
+        0.9931442737579346,
+        0.000994640402495861,
+        9.251596202375367e-05,
+        0.005768652074038982
+      ],
+      "logits_neutral": [
+        4.21875,
+        -2.6875,
+        -5.0625,
+        -0.9296875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Whether someone is hypocritical regarding her claims is...\nA) Irrelevant to the truth of the claims\nB) Only relevant if the person is a public figure\nC) Only valid if the person is conscious of their hypocrisy\nD) A sign that the person is untrustworthy\nE) Direct evidence of the person's lying tendencies\nF) Evidence that the claims are false\nG) Relevant only in philosophical discussions\nH) A proof that the person lacks integrity\nI) Irrelevant to her character\nJ) Relevant only in court\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.9725366234779358,
+      "softmax_neutral": [
+        0.9725366234779358,
+        0.0011123447911813855,
+        0.00023868937569204718,
+        0.007981874980032444,
+        0.004662611521780491,
+        0.0009970994433388114,
+        0.002318325685337186,
+        0.004628586582839489,
+        0.005367287900298834,
+        0.0001565363199915737
+      ],
+      "logits_neutral": [
+        5.21875,
+        -1.5546875,
+        -3.09375,
+        0.416015625,
+        -0.12158203125,
+        -1.6640625,
+        -0.8203125,
+        -0.12890625,
+        0.0191650390625,
+        -3.515625
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Which of the following describes the fallacy of appeal to indignation?\nA) presenting two options as the only possible ones when more options exist\nB) attacking an argument by exaggerating, misrepresenting, or even completely fabricating parts of it\nC) arguing against a position only based on personal feelings toward the position\nD) responding to charges of wrongdoing by saying other people do the same thing\nE) arguing that a claim is true because it has not been proven false\nF) responding to an argument with an expression of derision instead of a counter argument\nG) making a claim based on popularity or majority opinion instead of evidence\nH) attacking the character or background of someone making an argument instead of his or her evidence and reasoning\nI) making a claim seem true or false based on irrelevant information or associations\n",
+      "label": 2,
+      "num_options": 9,
+      "answer_neutral": "H",
+      "prob_neutral": 0.462502121925354,
+      "softmax_neutral": [
+        0.05834295228123665,
+        0.007359751500189304,
+        0.34370237588882446,
+        0.012519358657300472,
+        0.003939391113817692,
+        0.00639426289126277,
+        0.01452271081507206,
+        0.462502121925354,
+        0.09071701020002365
+      ],
+      "logits_neutral": [
+        0.2578125,
+        -1.8125,
+        2.03125,
+        -1.28125,
+        -2.4375,
+        -1.953125,
+        -1.1328125,
+        2.328125,
+        0.69921875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "The universe, like a watch, must have a maker.\nA) Fallacy of Accident\nB) Questionable Analogy\nC) Questionable Cause\nD) Fallacy of Composition\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9848628640174866,
+      "softmax_neutral": [
+        0.009884224273264408,
+        0.9848628640174866,
+        0.00047325424384325743,
+        0.0047796983271837234
+      ],
+      "logits_neutral": [
+        -1.2421875,
+        3.359375,
+        -4.28125,
+        -1.96875
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "Tan ah Tiat, forty-nine years old, a native of Kuala Lumpar, Malaysia, was charged with possession of opium. Arguing for acquittal, he told the judge that his opium habit did no harm, as he was too old to work anyway. Asked how he lived, he replied that he lived on the earnings of his grandmother.\nA) Straw Man\nB) False Dilemma\nC) Inconsistency\nD) Appeal to Authority\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.5441523790359497,
+      "softmax_neutral": [
+        0.25206777453422546,
+        0.18060709536075592,
+        0.5441523790359497,
+        0.023172803223133087
+      ],
+      "logits_neutral": [
+        0.35546875,
+        0.0220947265625,
+        1.125,
+        -2.03125
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "\"Each term must be used twice, no more and no less\" is a requirement for\nA) a valid modus ponens\nB) a valid modus tollens\nC) a valid dilemma\nD) a valid disjunctive syllogism\nE) a valid conditional syllogism\nF) a materially true hypothetical syllogism\nG) an accurate deductive argument\nH) a true disjunctive proposition\nI) a proper logical fallacy\nJ) valid categorical syllogism\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.7068302631378174,
+      "softmax_neutral": [
+        0.034375809133052826,
+        0.0012818323448300362,
+        0.7068302631378174,
+        0.1843876838684082,
+        0.007093849591910839,
+        0.0005688096862286329,
+        0.0032225260511040688,
+        0.050016507506370544,
+        0.009592541493475437,
+        0.0026301490142941475
+      ],
+      "logits_neutral": [
+        1.0703125,
+        -2.21875,
+        4.09375,
+        2.75,
+        -0.5078125,
+        -3.03125,
+        -1.296875,
+        1.4453125,
+        -0.2060546875,
+        -1.5
+      ]
+    },
+    {
+      "task": "logical fallacies",
+      "category": "philosophy",
+      "text": "A slippery-slope pattern of argument is fallacious when...\nA) There is good reason to think that doing one action will inevitably lead to another undesirable action\nB) It is based on a logical progression\nC) There are more than two possible results\nD) It is based on a series of cause and effect situations\nE) It is grounded in established facts\nF) It is based on a hypothetical situation\nG) There is no good reason to think that doing one action will inevitably lead to another undesirable action\nH) There are only two possible results\nI) There is a significant amount of evidence supporting the pattern\nJ) It is hypothetical\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.9972589015960693,
+      "softmax_neutral": [
+        0.0024146949872374535,
+        2.539724482630845e-05,
+        1.7455255147069693e-05,
+        2.6203440938843414e-05,
+        7.348936196649447e-05,
+        1.4246563296183012e-05,
+        0.9972589015960693,
+        3.63798753824085e-05,
+        0.00011382254888303578,
+        1.9472743588266894e-05
+      ],
+      "logits_neutral": [
+        1.0078125,
+        -3.546875,
+        -3.921875,
+        -3.515625,
+        -2.484375,
+        -4.125,
+        7.03125,
+        -3.1875,
+        -2.046875,
+        -3.8125
+      ]
+    }
+  ],
+  "accuracy": {
+    "neutral": {
+      "correct": 45,
+      "E_count": 0,
+      "invalid": 28,
+      "total": 73,
+      "accuracy_percentage": 61.64
+    }
+  },
+  "template": [
+    "Would you answer the following question with A, B, C, D, E, F, G, H, I, J?\nQuestion: {context}\nYour answer among \"A, B, C, D, E, F, G, H, I, J\" is: "
+  ]
+}

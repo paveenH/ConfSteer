@@ -1,0 +1,565 @@
+{
+  "data": [
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "A gas of molecular weight 58 was found to contain 82.8% C and 17.2% H. What is the molecular formula of this com-pound?\nA) C_3H_6\nB) C_5H_10\nC) C_4H_8\nD) C_4H_9\nE) C_3H_8\nF) C_2H_5\nG) C_4H_10\nH) C_5H_12\nI) C_2H_6\nJ) C_6H_14\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.35633739829063416,
+      "softmax_neutral": [
+        0.21612957119941711,
+        0.026632387191057205,
+        0.13954372704029083,
+        0.15812376141548157,
+        0.024249065667390823,
+        0.030178450047969818,
+        0.35633739829063416,
+        0.033144544810056686,
+        0.008380251936614513,
+        0.0072808898985385895
+      ],
+      "logits_neutral": [
+        6.65625,
+        4.5625,
+        6.21875,
+        6.34375,
+        4.46875,
+        4.6875,
+        7.15625,
+        4.78125,
+        3.40625,
+        3.265625
+      ]
+    },
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "Calculate the pH of a solution whose hydrogen ion concentration is 2.7 × 10^-6 M.\nA) 4.70\nB) 5.57\nC) 5.00\nD) 5.70\nE) 6.43\nF) 5.43\nG) 6.57\nH) 6.00\nI) 4.57\nJ) 4.43\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.3659824728965759,
+      "softmax_neutral": [
+        0.3659824728965759,
+        0.09110023081302643,
+        0.031483400613069534,
+        0.04726218059659004,
+        0.07792215794324875,
+        0.22197958827018738,
+        0.05190735310316086,
+        0.0842539444565773,
+        0.015585414133965969,
+        0.012523232027888298
+      ],
+      "logits_neutral": [
+        4.9375,
+        3.546875,
+        2.484375,
+        2.890625,
+        3.390625,
+        4.4375,
+        2.984375,
+        3.46875,
+        1.78125,
+        1.5625
+      ]
+    },
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "Hemoglobin, the protein responsible for carrying oxygen from the lungs to the body tissues, contains 0.355 per cent iron. Hydrolysis of 100 g of hemoglobin gives 1.48 g of tryptphan ; calculate the minimum molecular weight of hemoglobin which is consistent with these results.\nA) 204\nB) 66,500\nC) 13,800\nD) 32,000\nE) 56\nF) 15,800\nG) 7,500\nH) 150,000\nI) 23,800\nJ) 2,200\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "H",
+      "prob_neutral": 0.5671489834785461,
+      "softmax_neutral": [
+        0.025709794834256172,
+        0.23642286658287048,
+        0.07439376413822174,
+        0.004830727353692055,
+        0.011408652178943157,
+        0.014198297634720802,
+        0.035141121596097946,
+        0.5671489834785461,
+        0.005826969631016254,
+        0.02491878531873226
+      ],
+      "logits_neutral": [
+        5.03125,
+        7.25,
+        6.09375,
+        3.359375,
+        4.21875,
+        4.4375,
+        5.34375,
+        8.125,
+        3.546875,
+        5.0
+      ]
+    },
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "A qualitative analysis ofAtebrin, anantimalarialdrug used extensively by Allied troops during the Second World War, showed carbon, hydrogen, nitrogen, chlorine and oxygen. A quantitative analysis showed 69.1% carbon, 7.5% hydrogen, 10.5% nitrogen, 8.9% chlorine and 4.0% oxygen. What is the empirical formula forAtebrin?\nA) C_23H_30N_2O_2\nB) C_21H_30ClNO\nC) C_25H_30ClNO\nD) C_23H_32ClN_2O\nE) H_2O\nF) C_10H_20N_2\nG) C_24H_28ClNO\nH) C_22H_30ClN_3O_2\nI) C_23H_30CIO\nJ) C_24H_30CIO\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.3101407289505005,
+      "softmax_neutral": [
+        0.3101407289505005,
+        0.20659826695919037,
+        0.07841585576534271,
+        0.20659826695919037,
+        0.0007335577975027263,
+        0.023179681971669197,
+        0.029763299971818924,
+        0.03268859162926674,
+        0.07366488128900528,
+        0.038216833025217056
+      ],
+      "logits_neutral": [
+        7.59375,
+        7.1875,
+        6.21875,
+        7.1875,
+        1.546875,
+        5.0,
+        5.25,
+        5.34375,
+        6.15625,
+        5.5
+      ]
+    },
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "The concentration of cholesterol dissolved in chloroform is 6.15 g per 100 ml of solution. (a) A portion of this solution in a 5-cmpolarimetertube causes an observed rotation of -1.2°. Calculate the specific rotation of cholesterol. (b) Predict the observed rotation if the same solution were placed in a 10-cm tube. (c) Predict the observed rotation if 10 ml of the solution were diluted to 20 ml and placed in a 5-cm tube.\nA) -39.0, -2.4, -0.6\nB) -41.0, -2.2, -0.4\nC) -42.0, -2.1, -0.3\nD) -37.0, -2.6, -0.8\nE) -38.5, -2.35, -0.65\nF) -38.0, -2.3, -0.6\nG) -40.5, -2.45, -0.55\nH) -40.0, -2.4, -0.5\nI) -39.0, -2.5, -0.7\nJ) -36.0, -2.7, -0.9\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.303793728351593,
+      "softmax_neutral": [
+        0.303793728351593,
+        0.013557961210608482,
+        0.1901092678308487,
+        0.18426020443439484,
+        0.01824423111975193,
+        0.08436047285795212,
+        0.02493690885603428,
+        0.057980041950941086,
+        0.020998980849981308,
+        0.10175815224647522
+      ],
+      "logits_neutral": [
+        5.9375,
+        2.828125,
+        5.46875,
+        5.4375,
+        3.125,
+        4.65625,
+        3.4375,
+        4.28125,
+        3.265625,
+        4.84375
+      ]
+    },
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "Would you expect He_2^\\oplus to be more stable than He_2? Than He?\nA) He_2^\\oplus is the most stable among He, He_2, and He_2^\\oplus\nB) He_2^\\oplus is more stable than He_2 but less stable than He\nC) He, He_2, and He_2^\\oplus have the same stability\nD) He_2^\\oplus is the least stable among He, He_2, and He_2^\\oplus\nE) He and He_2 have the same stability, both more stable than He_2^\\oplus\nF) He_2^\\oplus is more stable than He but less stable than He_2\nG) He_2^\\oplus is less stable than both He_2 and He\nH) He_2^\\oplus and He_2 have the same stability, both more stable than He\nI) He_2^\\oplus and He have the same stability, both less stable than He_2\n",
+      "label": 1,
+      "num_options": 9,
+      "answer_neutral": "B",
+      "prob_neutral": 0.4750751852989197,
+      "softmax_neutral": [
+        0.050072554498910904,
+        0.4750751852989197,
+        0.007213635835796595,
+        0.44629186391830444,
+        0.001609579659998417,
+        0.0014655390987172723,
+        0.00817412044852972,
+        0.009262491017580032,
+        0.0008350389543920755
+      ],
+      "logits_neutral": [
+        9.0625,
+        11.3125,
+        7.125,
+        11.25,
+        5.625,
+        5.53125,
+        7.25,
+        7.375,
+        4.96875
+      ]
+    },
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "Of what importance are proteins to biological systems?\nA) Proteins determine the rate of photosynthesis in plants.\nB) Proteins are used for insulation in cold environments\nC) Proteins are the main constituent of cell walls in bacteria.\nD) Proteins are responsible for coloration of organisms\nE) Proteins serve as structural material and biological regulators.\nF) Proteins are used primarily for water transport in plants.\n",
+      "label": 4,
+      "num_options": 6,
+      "answer_neutral": "E",
+      "prob_neutral": 0.8909397721290588,
+      "softmax_neutral": [
+        0.08032065629959106,
+        0.010211626067757607,
+        0.004675223026424646,
+        0.010211626067757607,
+        0.8909397721290588,
+        0.0036410673055797815
+      ],
+      "logits_neutral": [
+        7.84375,
+        5.78125,
+        5.0,
+        5.78125,
+        10.25,
+        4.75
+      ]
+    },
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "Suggest a reason for the fact that ultraviolet light causes Cl_2 (gas) to cleavehomolytically, to produce two chlorine radicals, rather thanheterolytically, to produceCl^+ andCl^-.\nA) The Cl-Cl bond is nonpolar, making heterolysis less favorable\nB) Ultraviolet light induces a change in the chlorine molecule's geometric structure, promoting homolysis\nC) Heterolysis is prevented by the high ionization energy of chlorine atoms\nD) A molecule will need less dissociation energy in homolysis\nE) Chlorine is more electronegative\nF) The formation of radicals is energetically more favorable under UV light conditions\nG) Cleavage occurs more easily by heterolysis\nH) Chlorine atoms have equal electronegativity, leading to equal sharing of electrons\nI) Ultraviolet light provides insufficient energy for heterolysis\n",
+      "label": 3,
+      "num_options": 9,
+      "answer_neutral": "F",
+      "prob_neutral": 0.5824716687202454,
+      "softmax_neutral": [
+        0.04353348910808563,
+        0.005891617387533188,
+        0.015522344969213009,
+        0.2751401364803314,
+        0.0002412836765870452,
+        0.5824716687202454,
+        0.0017415587790310383,
+        0.005891617387533188,
+        0.06956632435321808
+      ],
+      "logits_neutral": [
+        6.71875,
+        4.71875,
+        5.6875,
+        8.5625,
+        1.5234375,
+        9.3125,
+        3.5,
+        4.71875,
+        7.1875
+      ]
+    },
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "When 10.0 g of n-propylchloride is allowed to react with excess sodium in the Wurtz reaction, how many grams of hexane would be produced assuming a 70% yield?\nA) 8.67 g\nB) 3.82 g\nC) 5.11 g\nD) 3.00 g\nE) 4.45 g\nF) 9.50 g\nG) 4.20 g\nH) 7.90 g\nI) 2.56 g\nJ) 6.35 g\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.46286964416503906,
+      "softmax_neutral": [
+        0.2988511025905609,
+        0.007964111864566803,
+        0.06264259666204453,
+        0.009911498054862022,
+        0.0044674621894955635,
+        0.46286964416503906,
+        0.004131727386265993,
+        0.07098336517810822,
+        0.013547410257160664,
+        0.06463108211755753
+      ],
+      "logits_neutral": [
+        6.71875,
+        3.09375,
+        5.15625,
+        3.3125,
+        2.515625,
+        7.15625,
+        2.4375,
+        5.28125,
+        3.625,
+        5.1875
+      ]
+    },
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "What do the differences in properties between lithium acetyl acetone (m.p. very high, insoluble in chloroform) and beryllium acetyl acetone (m.p. 108°,b.p. 270°, soluble in chloroform) suggest about their structures?\nA) Both are non-ionic compounds\nB) Lithium acetylacetonate is non-ionic and beryllium acetylacetonate is ionic\nC) Both are ionic compounds\nD) Lithium acetylacetonate is soluble in chloroform due to its polar nature, while beryllium acetylacetonate is not\nE) Beryllium acetylacetonate is polymeric due to hydrogen bonding, whereas lithium acetylacetonate is not\nF) Both exhibit similar degrees of ionic character and solubility properties\nG) Beryllium acetylacetonate is a volatile liquid at room temperature, while lithium acetylacetonate is a high melting solid\nH) Lithium acetylacetonate is ionic or salt-like and beryllium acetylacetonate is non-ionic or covalent\nI) Lithium acetylacetonate is a polymeric compound, while beryllium acetylacetonate is monomeric\nJ) Both are polymeric in nature with extensive hydrogen bonding\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "H",
+      "prob_neutral": 0.826136589050293,
+      "softmax_neutral": [
+        0.056219298392534256,
+        0.0007533389725722373,
+        0.0012038323329761624,
+        0.0008273810963146389,
+        0.00018175150034949183,
+        0.000464118696982041,
+        0.0032723555341362953,
+        0.826136589050293,
+        0.07684267312288284,
+        0.034098729491233826
+      ],
+      "logits_neutral": [
+        8.0625,
+        3.75,
+        4.21875,
+        3.84375,
+        2.328125,
+        3.265625,
+        5.21875,
+        10.75,
+        8.375,
+        7.5625
+      ]
+    },
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "Without referring to a table, place the following hydro-carbons in order of increasing boiling points. (a) methane(d)neopentane (b) n-hexane(e) 2,3-dimethylbutane (c) n-undecane\nA) 2,3-dimethylbutane < neopentane < n-hexane < n-undecane < methane\nB) methane < 2,3-dimethylbutane < neopentane < n-hexane < n-undecane\nC) n-undecane < n-hexane < neopentane < 2,3-dimethylbutane < methane\nD) neopentane < 2,3-dimethylbutane < methane < n-undecane < n-hexane\nE) 2,3-dimethylbutane < methane < n-hexane < neopentane < n-undecane\nF) methane < neopentane < n-hexane < 2,3-dimethylbutane < n-undecane\nG) neopentane < methane < 2,3-dimethylbutane < n-hexane < n-undecane\nH) n-undecane < 2,3-dimethylbutane < n-hexane < methane < neopentane\nI) n-hexane < methane < neopentane < 2,3-dimethylbutane < n-undecane\nJ) n-hexane < neopentane < 2,3-dimethylbutane < methane < n-undecane\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.5408304333686829,
+      "softmax_neutral": [
+        0.5408304333686829,
+        0.028218582272529602,
+        0.033510398119688034,
+        0.018797630444169044,
+        0.0038189697079360485,
+        0.10649581253528595,
+        0.11696277558803558,
+        0.0666433796286583,
+        0.006808049976825714,
+        0.07791401445865631
+      ],
+      "logits_neutral": [
+        6.75,
+        3.796875,
+        3.96875,
+        3.390625,
+        1.796875,
+        5.125,
+        5.21875,
+        4.65625,
+        2.375,
+        4.8125
+      ]
+    },
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "The following projected synthesis for n-butane is not very efficient. Why? CH_3CH_2CH_2Br + CH_3Br + 2 Na \\rightarrow CH_3(CH_2)_2CH_3 + 2 NaBr\nA) Formation of only hexane\nB) Decrease in the production of n-butane due to formation of ethane and hexane\nC) Incomplete reaction due to insufficient sodium\nD) Formation of butadiene as a major product\nE) Formation of only ethane\nF) Side reactions leading to the production of bromoethane and tribromomethane\nG) Formation of n-butane only with 100% efficiency\nH) Formation of n-butane inhibited by the presence of a catalyst\nI) Increase in the production of n-butane\nJ) Reaction does not proceed due to the inertness of reactants\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9790499806404114,
+      "softmax_neutral": [
+        0.007475139107555151,
+        0.9790499806404114,
+        0.002075771102681756,
+        0.0036430915351957083,
+        0.0001651473285164684,
+        0.0015668742125853896,
+        0.00021205337543506175,
+        0.0004930388531647623,
+        0.0001813788403524086,
+        0.005137582775205374
+      ],
+      "logits_neutral": [
+        8.5,
+        13.375,
+        7.21875,
+        7.78125,
+        4.6875,
+        6.9375,
+        4.9375,
+        5.78125,
+        4.78125,
+        8.125
+      ]
+    },
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "(a) If a rocket were fueled withkerosineand liquid oxygen, what weight of oxygen would be required for every liter of kerosine ? (Assumekerosineto have the average composition of n-C_14H_30 and a density of 0.764 g/ml). (b) How much energy would be required to fragment the molecules in one liter ofkerosine? (Assume 157 kcal mole for each -CH_2- group and 186 kcal mole for each -CH_3- group.)\nA) 2,660 g, 8,710 kcal\nB) 2,500 g, 8,500 kcal\nC) 2,550 g, 9,100 kcal\nD) 2,400 g, 8,200 kcal\nE) 2,800 g, 8,800 kcal\nF) 3,000 g, 10,000 kcal\nG) 2,600 g, 8,650 kcal\nH) 2,700 g, 8,900 kcal\nI) 2,750 g, 9,250 kcal\nJ) 2,800 g, 9,000 kcal\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.7906845211982727,
+      "softmax_neutral": [
+        0.7906845211982727,
+        0.02541651390492916,
+        0.02622331865131855,
+        0.0015996327856555581,
+        0.013185912743210793,
+        0.014481892809271812,
+        0.0018701601075008512,
+        0.03263545036315918,
+        0.07587969303131104,
+        0.01802300475537777
+      ],
+      "logits_neutral": [
+        9.75,
+        6.3125,
+        6.34375,
+        3.546875,
+        5.65625,
+        5.75,
+        3.703125,
+        6.5625,
+        7.40625,
+        5.96875
+      ]
+    },
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "Although all electrons spin, only molecules containing unpairedelectrons - only free radicals - giveesrspectra. Why is this? (Hint: Consider the possibility (a)thatone electron of a pair has its spin reversed, or (b)thatboth electrons of a pair have their spins reversed.)\nA) Electron pairs have a net magnetic moment\nB) Only electrons in the outermost shell contribute to the magnetic moment, regardless of pairing\nC) Each electron of a pair has a unique magnetic moment\nD) Free radicals lack electron pairs, which is why they cannot generate a magnetic moment\nE) Electron pairs always spin in the same direction, enhancing the magnetic moment\nF) Electron pairs generate a magnetic moment of the same magnitude\nG) Electron pairs have spins that cancel only in the presence of an external magnetic field\nH) Each electron of an electron pair generates a magnetic moment but of equal and opposite magnitude; the electron pair therefore has no net magnetic moment.\nI) Electron pairs generate magnetic moments only at high temperatures\nJ) The magnetic moments of electron pairs reinforce each other, resulting in a double magnetic moment\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.5928948521614075,
+      "softmax_neutral": [
+        0.5928948521614075,
+        0.0034170139115303755,
+        0.0015644230879843235,
+        0.00387198431417346,
+        0.0003955480642616749,
+        0.0039948937483131886,
+        0.009288406930863857,
+        0.359608918428421,
+        0.0004922676016576588,
+        0.024471694603562355
+      ],
+      "logits_neutral": [
+        9.75,
+        4.59375,
+        3.8125,
+        4.71875,
+        2.4375,
+        4.75,
+        5.59375,
+        9.25,
+        2.65625,
+        6.5625
+      ]
+    },
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "Even though 1, 3, 5-trinitrobenzene (TNB) has more shattering power (more brisance) and is no more dangerous to handle, 2, 4, 6-trinitrotoluene (TNT) has always been the high ex-plosive in more general use. Can you suggest a reason (connected with manufacture) for the popularity of TNT? (Benzene and toluene are both readily available materials; for many years benzene was cheaper.)\nA) Toluene is more easily nitrated, and therefore more easily polynitrated than benzene.\nB) The nitrating agents required for TNB are less readily available than those needed for TNT.\nC) The production of TNB generates more harmful byproducts compared to TNT.\nD) TNT is more stable than TNB.\nE) Benzene is more easily nitrated than toluene.\nF) The cost of manufacturing TNT is lower.\nG) TNB is more sensitive to friction and shock, making it less safe to manufacture.\nH) The purification process for TNB is more costly and time-consuming than that for TNT.\nI) The chemical process for synthesizing TNB is more complex and requires higher temperatures than TNT.\nJ) TNB has a shorter shelf life than TNT, making it less suitable for long-term storage.\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.41056087613105774,
+      "softmax_neutral": [
+        0.07594612240791321,
+        0.20644298195838928,
+        0.04065103456377983,
+        0.0027663372457027435,
+        0.004560919478535652,
+        0.41056087613105774,
+        0.006636098492890596,
+        0.02624628134071827,
+        0.006431927438825369,
+        0.21975739300251007
+      ],
+      "logits_neutral": [
+        10.375,
+        11.375,
+        9.75,
+        7.0625,
+        7.5625,
+        12.0625,
+        7.9375,
+        9.3125,
+        7.90625,
+        11.4375
+      ]
+    },
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "ThepK_aof aspartic acid is 2.8 What is the aspartic acid concentration of a 1M aspartic acid solution maintained at pH 2.8? What is theaspartateion concentration if the pH is raised to 3.8?\nA) 0.9 M, 0.1 M\nB) 0.5 M, 1 M\nC) 0.6 M, 0.4 M\nD) 0.1 M, 0.9 M\nE) 1 M, 0.9 M\nF) 1 M, 0.1 M\nG) 0.7 M, 0.3 M\nH) 0.5 M, 0.8 M\nI) 0.5 M, 0.9 M\nJ) 0.8 M, 0.2 M\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "A",
+      "prob_neutral": 0.92909175157547,
+      "softmax_neutral": [
+        0.92909175157547,
+        0.005880886223167181,
+        0.0014411731390282512,
+        0.0011580153368413448,
+        0.00024273319286294281,
+        0.00043953300337307155,
+        0.00024273319286294281,
+        0.05939485505223274,
+        0.000795891450252384,
+        0.0013122030068188906
+      ],
+      "logits_neutral": [
+        10.9375,
+        5.875,
+        4.46875,
+        4.25,
+        2.6875,
+        3.28125,
+        2.6875,
+        8.1875,
+        3.875,
+        4.375
+      ]
+    },
+    {
+      "task": "OrganicChemistry",
+      "category": "chemistry",
+      "text": "Suggest a reason why liquid hydrogen fluoride is preferable to concentrated, aqueoushydrobromicacid in inducing propeneto react with benzene to produceisopropylbenzene.\nA) Hydrogen fluoride reacts more selectively with propene\nB) Hydrogen fluoride provides a better solvent environment for the reaction\nC) Hydrogen fluoride is less acidic\nD) Hydrogen fluoride has lower molecular weight, which speeds up the reaction\nE) Hydrogen fluoride will give a greater yield of product\nF) Hydrogen fluoride can be recycled more easily in the process\nG) Hydrogen fluoride is a stronger oxidizing agent\nH) Hydrogen fluoride is less reactive\nI) Hydrogen fluoride is more stable\nJ) Hydrogen fluoride has a higher boiling point, which aids in the reaction\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9462912678718567,
+      "softmax_neutral": [
+        0.020906297490000725,
+        0.9462912678718567,
+        0.0017705679638311267,
+        0.0004916690522804856,
+        0.0002982123114634305,
+        0.006179890129715204,
+        0.0010088392300531268,
+        0.0007380825700238347,
+        6.058550570742227e-05,
+        0.022254636511206627
+      ],
+      "logits_neutral": [
+        9.1875,
+        13.0,
+        6.71875,
+        5.4375,
+        4.9375,
+        7.96875,
+        6.15625,
+        5.84375,
+        3.34375,
+        9.25
+      ]
+    }
+  ],
+  "accuracy": {
+    "neutral": {
+      "correct": 7,
+      "E_count": 0,
+      "invalid": 10,
+      "total": 17,
+      "accuracy_percentage": 41.18
+    }
+  },
+  "template": [
+    "Would you answer the following question with A, B, C, D, E, F, G, H, I, J?\nQuestion: {context}\nYour answer among \"A, B, C, D, E, F, G, H, I, J\" is: "
+  ]
+}

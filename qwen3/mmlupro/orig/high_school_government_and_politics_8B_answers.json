@@ -1,0 +1,1528 @@
+{
+  "data": [
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "According to The Federalist Papers, federalism has which of the following effects on political factions?\nA) It eliminates any opportunity for factions to form.\nB) It allows factions to dominate state governments while limiting their influence on the national level.\nC) It results in a two-party system, limiting the number of factions.\nD) It encourages the formation of more factions to create a balance of power.\nE) It guarantees equal representation for all factions in the government.\nF) It limits the dangers of factionalism by diluting political power.\nG) It completely suppresses the formation of factions.\nH) It promotes a single dominant faction at the national level.\nI) It allows factions to dominate on the national level while limiting their influence on state governments.\nJ) It provides a structured environment in which factions may flourish.\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "F",
+      "prob_neutral": 0.953029990196228,
+      "softmax_neutral": [
+        0.0016363348113372922,
+        0.0009072067914530635,
+        0.00023573637008666992,
+        0.002343941479921341,
+        0.00043698621448129416,
+        0.953029990196228,
+        0.0011580710997805,
+        2.012125332839787e-05,
+        0.012770608998835087,
+        0.02746112458407879
+      ],
+      "logits_neutral": [
+        0.7578125,
+        0.16796875,
+        -1.1796875,
+        1.1171875,
+        -0.5625,
+        7.125,
+        0.412109375,
+        -3.640625,
+        2.8125,
+        3.578125
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Interest groups representing businesspeople and investors are often among the most successful lobbying groups in Washington, D.C., for all of the following reasons EXCEPT\nA) Such groups have the financial resources to mount sustained campaigns on their own behalf.\nB) These groups often have a higher level of political influence due to their financial status.\nC) Businesspeople and investors are often more educated about legislative processes.\nD) These groups' constituents contribute heavily to many legislators' campaigns, and in doing so, gain greater access to legislators.\nE) Businesspeople and investors have a more direct impact on the economy, thus gaining more attention from legislators.\nF) These groups are often more organized and efficient in their lobbying efforts.\nG) In many districts, these groups' constituents make up the majority of voters.\nH) These groups can use their resources to influence public opinion through media campaigns.\nI) Many such groups have been in existence for several decades or more, allowing them to master the legislative system and to develop close ties with legislators.\n",
+      "label": 6,
+      "num_options": 9,
+      "answer_neutral": "E",
+      "prob_neutral": 0.7713116407394409,
+      "softmax_neutral": [
+        0.009156817570328712,
+        0.004640449304133654,
+        0.06845779716968536,
+        0.010195236653089523,
+        0.7713116407394409,
+        0.01374601200222969,
+        0.048924580216407776,
+        0.0018243384547531605,
+        0.07174316048622131
+      ],
+      "logits_neutral": [
+        0.25390625,
+        -0.42578125,
+        2.265625,
+        0.361328125,
+        4.6875,
+        0.66015625,
+        1.9296875,
+        -1.359375,
+        2.3125
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "House members are more concerned about their committee assignments than are senators because\nA) House members may serve on only one committee at a time\nB) bills in the Senate must pass through all committees before reaching the floor\nC) Senate committees have relatively little power to alter legislation\nD) Senators are able to serve on multiple committees at once\nE) House members have less time to devote to committee work due to their shorter terms\nF) the rules make it extremely difficult for representatives to influence legislation on the House floor\nG) Senate committees do not have as much influence on the final legislative outcome as House committees\nH) Senators have more power in the legislative process than House members\n",
+      "label": 5,
+      "num_options": 8,
+      "answer_neutral": "G",
+      "prob_neutral": 0.5601212382316589,
+      "softmax_neutral": [
+        0.08325459063053131,
+        0.04121401160955429,
+        0.09733448177576065,
+        0.0988672748208046,
+        0.040893279016017914,
+        0.06795042753219604,
+        0.5601212382316589,
+        0.010364714078605175
+      ],
+      "logits_neutral": [
+        2.03125,
+        1.328125,
+        2.1875,
+        2.203125,
+        1.3203125,
+        1.828125,
+        3.9375,
+        -0.05224609375
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "The majority of Supreme Court justices\nA) have no prior judicial experience\nB) are appointed by presidents of the same political party\nC) have previously served as Vice President\nD) are appointed by the Senate\nE) are nominated by the Speaker of the House\nF) have a background in criminal law\nG) stay on the court for only a decade\nH) are required to have a degree in constitutional law\nI) are required to retire at age 70\nJ) switch party affiliation during their term\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.7984212636947632,
+      "softmax_neutral": [
+        0.06402021646499634,
+        0.7984212636947632,
+        0.005682116840034723,
+        0.008529867976903915,
+        0.0047848219983279705,
+        0.01363068912178278,
+        0.012705200351774693,
+        0.0002720583579503,
+        0.036548931151628494,
+        0.05540487542748451
+      ],
+      "logits_neutral": [
+        0.8359375,
+        3.359375,
+        -1.5859375,
+        -1.1796875,
+        -1.7578125,
+        -0.7109375,
+        -0.78125,
+        -4.625,
+        0.275390625,
+        0.69140625
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following statements best characterizes cooperative federalism?\nA) The federal government and state governments working against each other\nB) State and federal governments working on the same issue\nC) States having complete authority over all issues within their borders\nD) The federal government imposing policies on the states without their consent\nE) State governments making decisions without any federal government involvement\nF) Governments working with businesses to address an issue\nG) The federal government having complete control over all policy areas\nH) The federal government and state governments working independently on different issues\nI) The executive and legislative branches working on legislation together\nJ) The federal government granting power over a policy area to the states\n",
+      "label": 1,
+      "num_options": 10,
+      "answer_neutral": "B",
+      "prob_neutral": 0.6464657187461853,
+      "softmax_neutral": [
+        0.005462795030325651,
+        0.6464657187461853,
+        0.00045910337939858437,
+        0.00033588724909350276,
+        0.0002457402879372239,
+        0.0034795773681253195,
+        0.0020177618134766817,
+        3.124237628071569e-05,
+        0.016438812017440796,
+        0.3250633776187897
+      ],
+      "logits_neutral": [
+        0.0076904296875,
+        4.78125,
+        -2.46875,
+        -2.78125,
+        -3.09375,
+        -0.443359375,
+        -0.98828125,
+        -5.15625,
+        1.109375,
+        4.09375
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "What power was granted to the states by the Articles of Confederation but not by the Constitution?\nA) Enforcing national laws\nB) Authorizing constitutional amendments\nC) Establishing foreign diplomatic relations\nD) Coining money\nE) Having power to declare war\nF) Appealing to the president to adjudicate disputes\nG) Regulating interstate commerce\nH) The power to tax citizens directly\nI) Having representation in Congress\n",
+      "label": 3,
+      "num_options": 9,
+      "answer_neutral": "D",
+      "prob_neutral": 0.5463129878044128,
+      "softmax_neutral": [
+        0.012948818504810333,
+        0.021018005907535553,
+        0.06837908923625946,
+        0.5463129878044128,
+        0.1666160523891449,
+        0.02457253821194172,
+        0.0787038505077362,
+        0.008659533224999905,
+        0.07278915494680405
+      ],
+      "logits_neutral": [
+        1.2265625,
+        1.7109375,
+        2.890625,
+        4.96875,
+        3.78125,
+        1.8671875,
+        3.03125,
+        0.82421875,
+        2.953125
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "A presidential veto would most likely be overturned in which of the following situations?\nA) The majority of American citizens support the proposed legislation.\nB) More than half of the state governors support the proposed legislation.\nC) The Supreme Court has ruled in favor of the proposed legislation.\nD) The Vice President supports the proposed legislation.\nE) The chief justice of the Supreme Court was appointed by the president.\nF) The president's approval rating is exceptionally high.\nG) The president’s party has a majority in the House but not in the Senate.\nH) Approximately 30% of the senators and representatives are members of the presidential political party.\nI) The proposed legislation has been sponsored by a third-party senator.\nJ) The president's successful reelection campaign advocated bipartisanship.\n",
+      "label": 7,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.3625038266181946,
+      "softmax_neutral": [
+        0.06398572027683258,
+        0.011781392619013786,
+        0.2530684471130371,
+        0.013366373255848885,
+        0.01226267870515585,
+        0.02555137686431408,
+        0.3625038266181946,
+        0.004689747467637062,
+        0.04944433271884918,
+        0.20334620773792267
+      ],
+      "logits_neutral": [
+        1.6875,
+        -0.004638671875,
+        3.0625,
+        0.12158203125,
+        0.035400390625,
+        0.76953125,
+        3.421875,
+        -0.92578125,
+        1.4296875,
+        2.84375
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "The relative stability of American public policy is achieved largely through\nA) the implementation of direct democracy\nB) affirmative action programs\nC) the constitutional fragmentation of power\nD) social media influence\nE) cooperation between the two major political parties\nF) the role of the military\nG) the use of executive orders\nH) the influence of international organizations\nI) the dominance of one political party\nJ) judicial activism\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9149850010871887,
+      "softmax_neutral": [
+        0.005327656865119934,
+        0.0006009656935930252,
+        0.9149850010871887,
+        0.0023037372156977654,
+        0.009851834736764431,
+        0.003261505626142025,
+        0.004644596949219704,
+        0.00017489099991507828,
+        0.024193769320845604,
+        0.03465597331523895
+      ],
+      "logits_neutral": [
+        -0.05224609375,
+        -2.234375,
+        5.09375,
+        -0.890625,
+        0.5625,
+        -0.54296875,
+        -0.189453125,
+        -3.46875,
+        1.4609375,
+        1.8203125
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "An inherent power of the president is the power to\nA) dissolve the U.S. Congress\nB) approve a constitutional amendment without the approval of the U.S. Congress\nC) increase the federal budget without the approval of the U.S. Congress\nD) enact laws without the approval of the U.S. Congress\nE) declare a state of emergency following a natural disaster\nF) appoint a nominee for the U.S. Supreme Court\nG) declare war without the approval of the U.S. Congress\n",
+      "label": 4,
+      "num_options": 7,
+      "answer_neutral": "E",
+      "prob_neutral": 0.7815609574317932,
+      "softmax_neutral": [
+        0.0025765448808670044,
+        0.0037196772173047066,
+        0.0007016421295702457,
+        0.0032443602103739977,
+        0.7815609574317932,
+        0.1743898242712021,
+        0.03380700945854187
+      ],
+      "logits_neutral": [
+        0.34765625,
+        0.71484375,
+        -0.953125,
+        0.578125,
+        6.0625,
+        4.5625,
+        2.921875
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Incumbent members of the House of Representatives win reelection more often than incumbent senators for all of the following reasons EXCEPT\nA) representatives are more likely to secure party endorsements\nB) senators are more likely to face strong challengers from within their own party\nC) senators have more political power than representatives, and Senate races are accordingly contested more aggressively\nD) representatives more often run uncontested\nE) representatives' constituents more often belong largely to the representative's party\nF) senators have a larger geographic area to campaign in, making it more challenging\nG) representatives may use federal funds to publicize their achievements via direct mail to constituents\nH) representatives have shorter terms, allowing for more frequent engagement with constituents\nI) senators have less visibility and recognition among voters\nJ) senators are more prone to controversies due to their high-profile positions\n",
+      "label": 6,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.2975791394710541,
+      "softmax_neutral": [
+        0.050513602793216705,
+        0.034853339195251465,
+        0.044927727431058884,
+        0.04915108159184456,
+        0.09585797786712646,
+        0.08934946358203888,
+        0.10284058749675751,
+        0.010302627459168434,
+        0.22462448477745056,
+        0.2975791394710541
+      ],
+      "logits_neutral": [
+        0.6953125,
+        0.32421875,
+        0.578125,
+        0.66796875,
+        1.3359375,
+        1.265625,
+        1.40625,
+        -0.89453125,
+        2.1875,
+        2.46875
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following best describes the fate of most popular third-party movements?\nA) They displace one of the two major parties and become major parties themselves.\nB) They are ultimately abandoned by the public because their politics are perceived as too radical.\nC) Their supporters become frustrated and withdraw from the political process.\nD) They disintegrate when one or both of the major parties adopt the third party's goals.\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9934068918228149,
+      "softmax_neutral": [
+        0.001357218367047608,
+        0.002011723816394806,
+        0.003224157029762864,
+        0.9934068918228149
+      ],
+      "logits_neutral": [
+        -0.283203125,
+        0.1103515625,
+        0.58203125,
+        6.3125
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following is a significant difference between the Senate and the House of Representatives?\nA) The Senate allows unlimited debate, while the House does not.\nB) Only the House has the power to issue subpoenas.\nC) Only the Senate has the power to declare war.\nD) States are equally represented in the House, while representation in the Senate is proportional to population.\nE) Only the Senate may introduce revenue bills.\nF) The Senate has more members than the House.\nG) Only the House can propose amendments to the Constitution.\nH) Only the House can confirm or reject presidential appointments.\nI) The Senate has a term of six years, while the House has a term of four years.\n",
+      "label": 0,
+      "num_options": 9,
+      "answer_neutral": "A",
+      "prob_neutral": 0.620418906211853,
+      "softmax_neutral": [
+        0.620418906211853,
+        0.019329743459820747,
+        0.011143581941723824,
+        0.05378972366452217,
+        0.022776002064347267,
+        0.019826820120215416,
+        0.06191159412264824,
+        0.004520036280155182,
+        0.18628355860710144
+      ],
+      "logits_neutral": [
+        3.609375,
+        0.140625,
+        -0.41015625,
+        1.1640625,
+        0.3046875,
+        0.166015625,
+        1.3046875,
+        -1.3125,
+        2.40625
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following statements about the House of Representatives is true?\nA) All revenue bills must originate in the Senate before moving to the House.\nB) Representation in the House is allocated equally among the states, while representation in the Senate is allocated proportional to population.\nC) The Speaker of the House wields less power than the president pro tempore of the Senate.\nD) The House has a Committee on Ways and Means, while the Senate does not.\n",
+      "label": 3,
+      "num_options": 4,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9883424639701843,
+      "softmax_neutral": [
+        0.003764882916584611,
+        0.00556413596495986,
+        0.0023285553324967623,
+        0.9883424639701843
+      ],
+      "logits_neutral": [
+        1.4609375,
+        1.8515625,
+        0.98046875,
+        7.03125
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "People who join a political party other than the one to which their parents belong most often do so because of\nA) peer pressure\nB) economic issues\nC) religious beliefs\nD) pressure from their employers\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.8295830488204956,
+      "softmax_neutral": [
+        0.03191610425710678,
+        0.8295830488204956,
+        0.015194344334304333,
+        0.1233065128326416
+      ],
+      "logits_neutral": [
+        1.9609375,
+        5.21875,
+        1.21875,
+        3.3125
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following statements about presidential elections since 1972 is most accurate?\nA) Voters increasingly vote based on a party's platform.\nB) Voters increasingly vote based on a candidate's gender.\nC) Voters have become less interested in politics.\nD) Voters increasingly vote based on a candidate's personal life.\nE) Elections have become less competitive.\nF) Voters increasingly get their information from newspapers.\nG) Voters have become more focused on individual candidates.\n",
+      "label": 6,
+      "num_options": 7,
+      "answer_neutral": "G",
+      "prob_neutral": 0.9475589990615845,
+      "softmax_neutral": [
+        0.0036095266696065664,
+        0.0028890289831906557,
+        0.0009935585549101233,
+        0.028613802045583725,
+        0.003637836780399084,
+        0.01269729807972908,
+        0.9475589990615845
+      ],
+      "logits_neutral": [
+        1.0546875,
+        0.83203125,
+        -0.2353515625,
+        3.125,
+        1.0625,
+        2.3125,
+        6.625
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "The swift adoption of the Bill of Rights in the years following ratification of the Constitution demonstrates the\nA) Framers' unanimous agreement on all constitutional issues\nB) Framers' lack of commitment to individual rights\nC) states' indifference towards the national government\nD) states' fears of an overpowerful national government\nE) Framers' unqualified commitment to individual rights\nF) Northern states' support for abolitionism\nG) Northern and Southern states' compromise over representation\nH) small states' determination to receive equal representation in the legislature\nI) Southern states' support for slavery\nJ) large states' push for more representation in the legislature\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9469122886657715,
+      "softmax_neutral": [
+        0.0030226565431803465,
+        0.001203504391014576,
+        0.00017542501154821366,
+        0.9469122886657715,
+        0.01846184954047203,
+        0.0024815183132886887,
+        0.00105382374022156,
+        7.312803063541651e-05,
+        0.00327786011621356,
+        0.023337965831160545
+      ],
+      "logits_neutral": [
+        0.1279296875,
+        -0.79296875,
+        -2.71875,
+        5.875,
+        1.9375,
+        -0.0693359375,
+        -0.92578125,
+        -3.59375,
+        0.208984375,
+        2.171875
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Among the executive branch's checks on the legislative branch is the president's power to\nA) appoint members to Congress\nB) introduce bills to the floor of Congress\nC) limit the term of Congress members\nD) call special sessions of Congress\nE) dissolve Congress\nF) address Congress during its debate on bills\nG) decide the agenda for Congress\nH) cut funding for Congress initiatives\nI) vote on acts of Congress\n",
+      "label": 3,
+      "num_options": 9,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9278355836868286,
+      "softmax_neutral": [
+        0.012827670201659203,
+        0.0016181637765839696,
+        0.001405885093845427,
+        0.9278355836868286,
+        0.01673043705523014,
+        0.0063501568511128426,
+        0.02131512761116028,
+        0.002785035874694586,
+        0.009131780825555325
+      ],
+      "logits_neutral": [
+        1.125,
+        -0.9453125,
+        -1.0859375,
+        5.40625,
+        1.390625,
+        0.421875,
+        1.6328125,
+        -0.40234375,
+        0.78515625
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "All of the following contribute to lower voting rates among Americans in the 18-to-25 age bracket EXCEPT\nA) the belief that their vote will not make a difference\nB) the remoteness of most political issues to the daily lives of young people\nC) frequent relocation of one's primary residence\nD) the fact that the minimum voting age in some states is 21\nE) the fact that voting is not mandatory\nF) difficulty understanding the voting process\nG) a lack of interest in politics\nH) college attendance in a state other than one's home state\nI) the perception that all political candidates are the same\nJ) an inability to get to polling locations\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.5412817001342773,
+      "softmax_neutral": [
+        0.018960867077112198,
+        0.009142054244875908,
+        0.005737736821174622,
+        0.5412817001342773,
+        0.08172130584716797,
+        0.016377244144678116,
+        0.024251319468021393,
+        0.003912796266376972,
+        0.038905173540115356,
+        0.25970977544784546
+      ],
+      "logits_neutral": [
+        0.6015625,
+        -0.1279296875,
+        -0.59375,
+        3.953125,
+        2.0625,
+        0.455078125,
+        0.84765625,
+        -0.9765625,
+        1.3203125,
+        3.21875
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following is an example of devolution?\nA) Allowing states to decide how to meet federally mandated greenhouse gas emissions targets\nB) The federal government setting a minimum wage that all states must meet\nC) A state being prevented from implementing a fuel efficiency standard that is more stringent than that set by the federal government\nD) A \"race to the bottom\" in which states compete with one another to have the fewest environmental regulations\nE) A state being forced to comply with federal immigration policies\nF) The federal government establishing nationwide educational standards\nG) A state choosing to implement stricter gun control laws than those mandated by the federal government\nH) A state that decriminalizes all drug use, contrary to federal law\nI) A state that legalizes marijuana possession in conflict with federal law\nJ) The federal government overriding a state's decision to legalize same-sex marriage\n",
+      "label": 0,
+      "num_options": 10,
+      "answer_neutral": "G",
+      "prob_neutral": 0.6088326573371887,
+      "softmax_neutral": [
+        0.325884610414505,
+        0.0017574909143149853,
+        0.0012317284708842635,
+        0.002948997775092721,
+        0.0014513308415189385,
+        0.0014456725912168622,
+        0.6088326573371887,
+        0.00029256116249598563,
+        0.04341992735862732,
+        0.01273502316325903
+      ],
+      "logits_neutral": [
+        4.53125,
+        -0.69140625,
+        -1.046875,
+        -0.173828125,
+        -0.8828125,
+        -0.88671875,
+        5.15625,
+        -2.484375,
+        2.515625,
+        1.2890625
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "The opinions of congressional committees often fail to accurately mirror public opinion because\nA) committees are often influenced by external factors such as media and public relations\nB) committee members are not required to consult their constituents before making decisions\nC) committees often prioritize national interests over public opinion\nD) committee members are usually selected from the same political party\nE) most committees are too small to include representatives of all popular opinions\nF) the majority of committees are controlled by the executive branch\nG) the minority party controls nearly half of all committees\nH) the public does not have direct influence on the decision-making process of the committees\nI) the membership of committees often overrepresents constituencies with the greatest stake in the committee's business\nJ) committee members often lose track of their constituents' priorities because of their frequent contact with special-interest lobbyists\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.39061394333839417,
+      "softmax_neutral": [
+        0.025265464559197426,
+        0.02420283481478691,
+        0.011343640275299549,
+        0.014069217257201672,
+        0.2769867479801178,
+        0.0326959453523159,
+        0.04281044751405716,
+        0.036050014197826385,
+        0.14596176147460938,
+        0.39061394333839417
+      ],
+      "logits_neutral": [
+        0.66796875,
+        0.625,
+        -0.1328125,
+        0.08251953125,
+        3.0625,
+        0.92578125,
+        1.1953125,
+        1.0234375,
+        2.421875,
+        3.40625
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following statements is true regarding delegates to presidential nomination conventions?\nA) Delegates are often chosen at random from the general population.\nB) Delegates often switch party affiliations during the convention.\nC) Delegates typically have little interest in politics.\nD) The majority of delegates are not affiliated with any political party.\nE) Delegates are generally more likely to register as third party voters at some point.\nF) The majority of the general population is more educated than the delegates.\nG) Delegates are typically less educated than the general population.\nH) Delegates usually have no influence on the presidential nomination process.\nI) Typically, delegates have a lower level of political knowledge than the general population.\nJ) Typically, the general population is less ideological than the delegates.\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.6217531561851501,
+      "softmax_neutral": [
+        0.0023362773936241865,
+        0.0016469900729134679,
+        0.0006178439361974597,
+        0.001971188932657242,
+        0.0014032530598342419,
+        0.005234123207628727,
+        0.3328004777431488,
+        0.0002987698244396597,
+        0.031937893480062485,
+        0.6217531561851501
+      ],
+      "logits_neutral": [
+        -0.208984375,
+        -0.55859375,
+        -1.5390625,
+        -0.37890625,
+        -0.71875,
+        0.59765625,
+        4.75,
+        -2.265625,
+        2.40625,
+        5.375
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Failed felony prosecutions at the state level are sometimes retried at the federal level\nA) under the \"double jeopardy\" provision of the Constitution\nB) due to procedural errors in the state-level trial\nC) as a result of international law interventions\nD) under the \"ex post facto\" provision of the Constitution\nE) under the \"habeas corpus\" provision of the Constitution\nF) because new evidence has voided the state-level verdict\nG) due to a mistrial at the state level\nH) as civil liberties violations\nI) on appeal by state prosecutors\n",
+      "label": 7,
+      "num_options": 9,
+      "answer_neutral": "F",
+      "prob_neutral": 0.4485901892185211,
+      "softmax_neutral": [
+        0.00920172594487667,
+        0.1624685823917389,
+        0.002709420397877693,
+        0.008971028961241245,
+        0.012725524604320526,
+        0.4485901892185211,
+        0.23639044165611267,
+        0.001921266783028841,
+        0.11702173948287964
+      ],
+      "logits_neutral": [
+        0.33203125,
+        3.203125,
+        -0.890625,
+        0.306640625,
+        0.65625,
+        4.21875,
+        3.578125,
+        -1.234375,
+        2.875
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following is NOT part of the \"iron triangles\" that influence public policy-making?\nA) Bureaucratic agencies\nB) The courts\nC) House committees\nD) Interest groups\nE) Senate committees\n",
+      "label": 1,
+      "num_options": 5,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9883098602294922,
+      "softmax_neutral": [
+        0.007785369176417589,
+        0.9883098602294922,
+        0.0005339562776498497,
+        0.0017002271488308907,
+        0.0016706015449017286
+      ],
+      "logits_neutral": [
+        1.21875,
+        6.0625,
+        -1.4609375,
+        -0.302734375,
+        -0.3203125
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following plays the most significant role in forming a child's political views?\nA) The child's religion\nB) The child's educational institution\nC) The political events occurring during the child's formative years\nD) The geographical area in which the child grows up\nE) The child's cultural background\nF) The child's personal experiences\nG) The media to which the child is exposed\nH) The child's peer group\nI) The socioeconomic status of the child's family\nJ) The child's family\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.9944615960121155,
+      "softmax_neutral": [
+        0.00032524089328944683,
+        5.11599428136833e-05,
+        5.278392563923262e-05,
+        9.409752965439111e-05,
+        0.00010830559767782688,
+        0.0011374216992408037,
+        0.0016292812069877982,
+        4.806031574844383e-05,
+        0.0020920385140925646,
+        0.9944615960121155
+      ],
+      "logits_neutral": [
+        -0.462890625,
+        -2.3125,
+        -2.28125,
+        -1.703125,
+        -1.5625,
+        0.7890625,
+        1.1484375,
+        -2.375,
+        1.3984375,
+        7.5625
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following defines the salience of a political issue?\nA) The amount of coverage the issue receives in the major news media\nB) The number of social media posts about the issue\nC) The geographical area impacted by the issue\nD) The length of time the issue has been present\nE) The number of politicians who have publicly spoken about the issue\nF) The number of protests organized around the issue\nG) The amount of funding allocated to the issue by the government\nH) The degree to which public opinion on the issue is likely to shift quickly\nI) The importance of the issue to a particular individual or group\nJ) The number of people affected by the issue\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.8740419745445251,
+      "softmax_neutral": [
+        0.025185121223330498,
+        0.0010476671159267426,
+        0.00047592425835318863,
+        0.0011239827144891024,
+        0.0010979457292705774,
+        0.0010558839421719313,
+        0.007561944425106049,
+        0.0018676684703677893,
+        0.8740419745445251,
+        0.08654187619686127
+      ],
+      "logits_neutral": [
+        1.765625,
+        -1.4140625,
+        -2.203125,
+        -1.34375,
+        -1.3671875,
+        -1.40625,
+        0.5625,
+        -0.8359375,
+        5.3125,
+        3.0
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following is NOT true of executive orders?\nA) Presidents avoid using executive orders for controversial actions.\nB) Executive orders have the same effect as laws passed by Congress.\nC) Presidents have made increased use of executive orders since the 1970s.\nD) Executive orders bypass congressional approval.\n",
+      "label": 0,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.8755443692207336,
+      "softmax_neutral": [
+        0.12035802006721497,
+        0.8755443692207336,
+        0.00048424993292428553,
+        0.003613263601437211
+      ],
+      "logits_neutral": [
+        3.296875,
+        5.28125,
+        -2.21875,
+        -0.208984375
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following is an example of an implied power of the Congress?\nA) regulation of interstate commerce\nB) Power to create federal laws\nC) Power to impeach the President\nD) borrowing money on the credit of the United States\nE) declarations of war\nF) Power to impose an income tax\nG) oversight of executive branch agencies\nH) Power to regulate immigration\nI) Power to approve presidential nominations\n",
+      "label": 6,
+      "num_options": 9,
+      "answer_neutral": "F",
+      "prob_neutral": 0.6292495131492615,
+      "softmax_neutral": [
+        0.017033005133271217,
+        0.01434322725981474,
+        0.002415793715044856,
+        0.21077220141887665,
+        0.007647445425391197,
+        0.6292495131492615,
+        0.08650073409080505,
+        0.0016733714146539569,
+        0.030364613980054855
+      ],
+      "logits_neutral": [
+        1.640625,
+        1.46875,
+        -0.3125,
+        4.15625,
+        0.83984375,
+        5.25,
+        3.265625,
+        -0.6796875,
+        2.21875
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Divided government frequently results in\nA) amendments to the Constitution\nB) dissolution of political parties\nC) immediate passage of major legislation\nD) delays in the confirmation of those nominated to be ambassadors\nE) a smooth legislative process\nF) increased foreign policy collaboration\nG) reapportionment of voting districts\nH) quick approval of Supreme Court nominees\nI) reduction in national debt\n",
+      "label": 3,
+      "num_options": 9,
+      "answer_neutral": "D",
+      "prob_neutral": 0.9754083156585693,
+      "softmax_neutral": [
+        0.0019201193936169147,
+        0.0006456767441704869,
+        0.0008825354161672294,
+        0.9754083156585693,
+        0.0030207722447812557,
+        0.0023617874830961227,
+        0.005280951038002968,
+        0.0010655809892341495,
+        0.009414313361048698
+      ],
+      "logits_neutral": [
+        0.45703125,
+        -0.6328125,
+        -0.3203125,
+        6.6875,
+        0.91015625,
+        0.6640625,
+        1.46875,
+        -0.1318359375,
+        2.046875
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following best describes the balance the Supreme Court has struck between the establishment clause and the free-exercise clause?\nA) The government can restrict the free exercise of religion in the interest of national security.\nB) Freedom of speech is protected except in certain situations, such as yelling \"fire\" in a crowded theater.\nC) All religious practices are prohibited in public schools.\nD) The government can endorse a specific religion as long as it does not compel people to practice that religion.\nE) Once a church has been recognized by the federal government, its tax-exempt status can never be revoked.\nF) The government can fund religious activities as long as all religions are given equal opportunities.\nG) The government is allowed to promote a specific religion as long as it does not interfere with the free exercise of other religions.\nH) Once Congress has created an administrative agency, that agency can be dissolved only by a constitutional amendment.\nI) State-sponsored prayer during school hours is prohibited, but voluntary prayer by student groups before school is allowed.\nJ) The government can neither endorse nor restrict any religious activities.\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.8719401359558105,
+      "softmax_neutral": [
+        0.0026275007985532284,
+        0.0008171476074494421,
+        0.0006540366448462009,
+        0.0009914605179801583,
+        0.0013237735256552696,
+        0.0021112565882503986,
+        0.005104363430291414,
+        5.6704357120906934e-05,
+        0.11437366157770157,
+        0.8719401359558105
+      ],
+      "logits_neutral": [
+        0.5390625,
+        -0.62890625,
+        -0.8515625,
+        -0.435546875,
+        -0.146484375,
+        0.3203125,
+        1.203125,
+        -3.296875,
+        4.3125,
+        6.34375
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following statements does NOT accurately describe voting behavior in the United States?\nA) Registered voters between the ages of 35 and 45 are more likely to vote than are those under the age of 21.\nB) A registered voter who has attained his or her General Educational Development (GED) is less likely to vote than a high school dropout.\nC) Registered voters are more likely to vote in general elections than they are in primary elections.\nD) More women than men have voted in every presidential election since 1980.\n",
+      "label": 1,
+      "num_options": 4,
+      "answer_neutral": "B",
+      "prob_neutral": 0.5335351228713989,
+      "softmax_neutral": [
+        0.10505928099155426,
+        0.5335351228713989,
+        0.1209224984049797,
+        0.2404831200838089
+      ],
+      "logits_neutral": [
+        1.921875,
+        3.546875,
+        2.0625,
+        2.75
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "If no presidential candidate receives a majority of the electoral college vote, then who becomes the president?\nA) The candidate who wins the majority of votes in the state with the most electoral votes\nB) The candidate with the second highest number of electoral votes\nC) The candidate who wins the most votes in the electoral college\nD) The candidate who wins the majority of votes in the House\nE) Whomever is selected by the United States Congress\nF) The candidate chosen by a national popular vote after the electoral college deadlock\nG) The candidate who wins the popular national vote\nH) The incumbent vice president of the United States\nI) The candidate who wins the majority of votes in the Senate\nJ) Whomever is selected by the United States Supreme Court\n",
+      "label": 3,
+      "num_options": 10,
+      "answer_neutral": "D",
+      "prob_neutral": 0.5841819047927856,
+      "softmax_neutral": [
+        0.027322551235556602,
+        0.030719570815563202,
+        0.017640765756368637,
+        0.5841819047927856,
+        0.045047271996736526,
+        0.026481924578547478,
+        0.03480983152985573,
+        0.005908915773034096,
+        0.038231123238801956,
+        0.1896560788154602
+      ],
+      "logits_neutral": [
+        1.34375,
+        1.4609375,
+        0.90625,
+        4.40625,
+        1.84375,
+        1.3125,
+        1.5859375,
+        -0.1875,
+        1.6796875,
+        3.28125
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "When an appeal is made to the Supreme Court, the court usually\nA) rules in favor of the defendant\nB) orders the lower court to retry the case\nC) refuses to hear the appeal\nD) dismisses the case entirely\nE) rules in favor of the plaintiff\nF) declares a mistrial\nG) automatically accepts the appeal\nH) requires a jury decision\nI) requires the plaintiff to refile the case\nJ) orders a retrial in the Supreme Court\n",
+      "label": 2,
+      "num_options": 10,
+      "answer_neutral": "C",
+      "prob_neutral": 0.7901296615600586,
+      "softmax_neutral": [
+        0.009162927977740765,
+        0.008149676956236362,
+        0.7901296615600586,
+        0.006421790458261967,
+        0.004800314549356699,
+        0.01257325615733862,
+        0.0217246375977993,
+        0.0007669735350646079,
+        0.039338238537311554,
+        0.10693241655826569
+      ],
+      "logits_neutral": [
+        0.91796875,
+        0.80078125,
+        5.375,
+        0.5625,
+        0.271484375,
+        1.234375,
+        1.78125,
+        -1.5625,
+        2.375,
+        3.375
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following is true of court cases in which one private party is suing another?\nA) They are always resolved through arbitration, not court trials.\nB) They are always tried in the Supreme Court.\nC) They are tried in juvenile court.\nD) They are tried in international court.\nE) The federal court system has exclusive jurisdiction over them.\nF) The state court system has exclusive jurisdiction over them.\nG) They are exclusively tried in appellate court.\nH) The military court system has exclusive jurisdiction over them.\nI) They are tried in civil court.\nJ) They are tried in criminal court.\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.966401219367981,
+      "softmax_neutral": [
+        0.000747901969589293,
+        0.00011380191426724195,
+        0.00011203758185729384,
+        0.00019972858717665076,
+        0.0001708368945401162,
+        0.0008743859361857176,
+        0.0002974948438350111,
+        1.7726919395499863e-05,
+        0.966401219367981,
+        0.031064918264746666
+      ],
+      "logits_neutral": [
+        -0.7890625,
+        -2.671875,
+        -2.6875,
+        -2.109375,
+        -2.265625,
+        -0.6328125,
+        -1.7109375,
+        -4.53125,
+        6.375,
+        2.9375
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Under the Articles of Confederation, the national government had the power to\nA) abolish state governments\nB) regulate interstate commerce\nC) establish a federal judiciary\nD) negotiate treaties\nE) enforce its laws\nF) directly elect the President\nG) implement a federal education system\n",
+      "label": 3,
+      "num_options": 7,
+      "answer_neutral": "D",
+      "prob_neutral": 0.6833488345146179,
+      "softmax_neutral": [
+        0.006442669779062271,
+        0.04650247097015381,
+        0.003938324749469757,
+        0.6833488345146179,
+        0.2288931906223297,
+        0.010874064639210701,
+        0.020000463351607323
+      ],
+      "logits_neutral": [
+        1.6171875,
+        3.59375,
+        1.125,
+        6.28125,
+        5.1875,
+        2.140625,
+        2.75
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following most accurately states the impact of the Civil Rights Act of 1964 on school desegregation in the South?\nA) The Civil Rights Act of 1964 mandated a quota system for racial representation in all Southern public schools.\nB) The Civil Rights Act of 1964 immediately desegregated all schools in the South.\nC) Because it included no enforcement provisions, the Civil Rights Act of 1964 had no appreciable effect on school desegregation.\nD) The Civil Rights Act of 1964 made it illegal to segregate schools but did not provide any means for enforcement.\nE) The Civil Rights Act of 1964 only impacted desegregation in universities, not in primary and secondary schools.\nF) By overturning the \"separate but equal\" principle, the Civil Rights Act of 1964 ended segregation in public schools.\nG) The Civil Rights Act of 1964 increased segregation in schools due to backlash against the legislation.\nH) The Civil Rights Act of 1964 sent federal troops to every segregated public school in the South to force school desegregation.\nI) The Civil Rights Act of 1964 hastened school desegregation by cutting off federal funds to discriminatory school systems.\nJ) The Civil Rights Act of 1964 had no direct impact on school desegregation, but provided a basis for future legislation.\n",
+      "label": 8,
+      "num_options": 10,
+      "answer_neutral": "I",
+      "prob_neutral": 0.5171486139297485,
+      "softmax_neutral": [
+        0.017695855349302292,
+        0.003469240851700306,
+        0.005010879598557949,
+        0.07221012562513351,
+        0.00467065442353487,
+        0.016754096373915672,
+        0.007319322787225246,
+        0.0002905310830101371,
+        0.5171486139297485,
+        0.3554307222366333
+      ],
+      "logits_neutral": [
+        1.53125,
+        -0.09814453125,
+        0.26953125,
+        2.9375,
+        0.19921875,
+        1.4765625,
+        0.6484375,
+        -2.578125,
+        4.90625,
+        4.53125
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "The primary function of political action committees (PACs) is to\nA) determine the platforms of political parties\nB) conduct independent investigations into political corruption\nC) provide legal advice to candidates for election\nD) promote the defeat of incumbents in the federal and state legislatures\nE) provide candidates with campaign staff and resources\nF) organize protest demonstrations and other acts of civil disobedience\nG) coordinate local get-out-the-vote campaigns\nH) directly campaign for specific candidates\nI) lobby for legislation in Congress\nJ) contribute money to candidates for election\n",
+      "label": 9,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.9916696548461914,
+      "softmax_neutral": [
+        0.0003769622999243438,
+        0.0001204844011226669,
+        4.432372952578589e-05,
+        0.00014196531265042722,
+        0.0005884298589080572,
+        0.0009744296548888087,
+        0.0009640182252041996,
+        0.002419993979856372,
+        0.002699698321521282,
+        0.9916696548461914
+      ],
+      "logits_neutral": [
+        -0.90625,
+        -2.046875,
+        -3.046875,
+        -1.8828125,
+        -0.4609375,
+        0.04345703125,
+        0.03271484375,
+        0.953125,
+        1.0625,
+        6.96875
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Congress would be required to use the \"elastic clause\" of the Constitution to\nA) increase tax rates\nB) declare war\nC) amend the constitution\nD) establish post offices\nE) impose workplace safety standards\nF) change citizenship requirements\nG) authorize the treasury to print money\nH) regulate interstate commerce\nI) impeach the president\n",
+      "label": 4,
+      "num_options": 9,
+      "answer_neutral": "G",
+      "prob_neutral": 0.5423990488052368,
+      "softmax_neutral": [
+        0.02103109285235405,
+        0.008974968455731869,
+        0.0039055875968188047,
+        0.2332829087972641,
+        0.1371399611234665,
+        0.01770995557308197,
+        0.5423990488052368,
+        0.004956448450684547,
+        0.030600059777498245
+      ],
+      "logits_neutral": [
+        2.5625,
+        1.7109375,
+        0.87890625,
+        4.96875,
+        4.4375,
+        2.390625,
+        5.8125,
+        1.1171875,
+        2.9375
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Ruled unconstitutional in 1983, the legislative veto had allowed\nA) the Supreme Court to veto legislation passed by Congress\nB) the president to nullify decisions made by the Supreme Court\nC) federal district courts to overturn legislation\nD) state governments to veto federal laws\nE) the executive branch to nullify actions taken by Congress\nF) Congress to nullify resolutions approved by the executive branch\nG) state courts to overturn federal legislation\nH) Congress to overturn Supreme Court decisions\nI) the president to veto state laws\nJ) the executive branch to veto legislation approved by Congress\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.708564817905426,
+      "softmax_neutral": [
+        0.0008762787911109626,
+        0.000200160953681916,
+        0.00037688278825953603,
+        0.0006537438021041453,
+        0.01318218745291233,
+        0.26894086599349976,
+        0.0027848086319863796,
+        0.0001739028375595808,
+        0.004246325232088566,
+        0.708564817905426
+      ],
+      "logits_neutral": [
+        -0.5390625,
+        -2.015625,
+        -1.3828125,
+        -0.83203125,
+        2.171875,
+        5.1875,
+        0.6171875,
+        -2.15625,
+        1.0390625,
+        6.15625
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Filibusters are less likely to occur in the House of Representatives than in the Senate because\nA) the House has fewer members than the Senate\nB) House members are less politically diverse than Senate members\nC) the House meets for substantially fewer hours per day than does the Senate\nD) Senate decorum forbids one senator from attempting to stop another's speech\nE) the Speaker of the House has the power to end a filibuster at any time\nF) debate in the House is in most instances strictly regulated by the rules\n",
+      "label": 5,
+      "num_options": 6,
+      "answer_neutral": "F",
+      "prob_neutral": 0.9914747476577759,
+      "softmax_neutral": [
+        0.0005702137714251876,
+        0.00017872618627734482,
+        4.7173092752927914e-05,
+        0.0006177534232847393,
+        0.007111359853297472,
+        0.9914747476577759
+      ],
+      "logits_neutral": [
+        0.3203125,
+        -0.83984375,
+        -2.171875,
+        0.400390625,
+        2.84375,
+        7.78125
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following does the Supreme Court NOT have the power to override?\nA) State constitutions\nB) Federal regulations\nC) Decisions of lower federal courts\nD) Laws passed by state legislatures\nE) Federal budget allocations\nF) Treaties ratified by the Senate\nG) Laws passed by Congress\nH) Presidential executive orders\nI) Constitutional amendments\n",
+      "label": 8,
+      "num_options": 9,
+      "answer_neutral": "E",
+      "prob_neutral": 0.5971586108207703,
+      "softmax_neutral": [
+        0.031157582998275757,
+        0.0037798439152538776,
+        0.008961736224591732,
+        0.006898094434291124,
+        0.5971586108207703,
+        0.017614902928471565,
+        0.041277095675468445,
+        0.002120300428941846,
+        0.2910318672657013
+      ],
+      "logits_neutral": [
+        1.890625,
+        -0.21875,
+        0.64453125,
+        0.3828125,
+        4.84375,
+        1.3203125,
+        2.171875,
+        -0.796875,
+        4.125
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Given the structure of the electoral college system, presidential candidates tend to\nA) focus their campaigns only on the West Coast states\nB) spend more television advertising money in the Plains States\nC) spend most of their campaign budget on online advertising\nD) campaign equally in all states regardless of their political leaning\nE) avoid battleground states and focus their campaigns on \"safe\" states\nF) campaign more heavily in states with large populations\nG) ignore the battleground states and focus on states with a clear party preference\nH) campaign extensively in states that heavily favor one party over the other\n",
+      "label": 5,
+      "num_options": 8,
+      "answer_neutral": "F",
+      "prob_neutral": 0.49155211448669434,
+      "softmax_neutral": [
+        0.004146137740463018,
+        0.007761149201542139,
+        0.0008640004089102149,
+        0.002052487339824438,
+        0.02299019694328308,
+        0.49155211448669434,
+        0.4617704749107361,
+        0.008863511495292187
+      ],
+      "logits_neutral": [
+        0.349609375,
+        0.9765625,
+        -1.21875,
+        -0.353515625,
+        2.0625,
+        5.125,
+        5.0625,
+        1.109375
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "The Voting Rights Act of 1965\nA) prohibited the use of poll taxes in federal elections\nB) granted women the right to vote\nC) granted African-Americans the right to vote\nD) required states to provide bilingual ballots\nE) granted Native Americans the right to vote\nF) suspended the use of literacy tests at voting centers\nG) granted the right to vote to individuals 18 years and older\nH) banned age-based discrimination in voting\nI) allowed non-citizens to vote\n",
+      "label": 5,
+      "num_options": 9,
+      "answer_neutral": "F",
+      "prob_neutral": 0.8622934818267822,
+      "softmax_neutral": [
+        0.015307541936635971,
+        0.0015260482905432582,
+        0.04096510633826256,
+        0.0038103482220321894,
+        0.012690397910773754,
+        0.8622934818267822,
+        0.050981901586055756,
+        0.0006885159527882934,
+        0.011736699379980564
+      ],
+      "logits_neutral": [
+        2.0625,
+        -0.2431640625,
+        3.046875,
+        0.671875,
+        1.875,
+        6.09375,
+        3.265625,
+        -1.0390625,
+        1.796875
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Of the following interest groups, which has created the largest number of political action committees (PACs) since the 1970s?\nA) Environmental activists\nB) Labor unions\nC) For-profit business\nD) Religious institutions\n",
+      "label": 2,
+      "num_options": 4,
+      "answer_neutral": "C",
+      "prob_neutral": 0.8968051075935364,
+      "softmax_neutral": [
+        0.006161804776638746,
+        0.08341587334871292,
+        0.8968051075935364,
+        0.013617265969514847
+      ],
+      "logits_neutral": [
+        0.48828125,
+        3.09375,
+        5.46875,
+        1.28125
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "All of the following statements about gerrymandering are true EXCEPT that it\nA) is a practice that is universally disallowed in all democratic nations\nB) is a process that is only possible within a multi-party system\nC) is a strategy utilized by both major political parties in the United States\nD) can lead to an increase in voter turnout\nE) can divide like-minded voters into several districts to reduce their influence\nF) is a strategy used to increase the number of districts with a majority of minority voters\nG) has been allowed by the Supreme Court in some instances\nH) increases the control voters have over their elected officials\nI) favors incumbent candidates over challengers\n",
+      "label": 7,
+      "num_options": 9,
+      "answer_neutral": "A",
+      "prob_neutral": 0.630346953868866,
+      "softmax_neutral": [
+        0.630346953868866,
+        0.03852658346295357,
+        0.0041165705770254135,
+        0.022648610174655914,
+        0.03287317976355553,
+        0.03197086602449417,
+        0.10051760077476501,
+        0.02860257960855961,
+        0.11039698868989944
+      ],
+      "logits_neutral": [
+        2.859375,
+        0.064453125,
+        -2.171875,
+        -0.466796875,
+        -0.09423828125,
+        -0.1220703125,
+        1.0234375,
+        -0.2333984375,
+        1.1171875
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Among the following groups that have traditionally supposed the Democratic Party, which has the least liberal constituency?\nA) African Americans\nB) Urban residents\nC) Labor union members\nD) Hispanic and Latino Americans\nE) White Southerners\nF) Northern ethnic minorities\nG) College students\nH) LGBTQ+ community\nI) Environmental activists\nJ) Women's rights advocates\n",
+      "label": 4,
+      "num_options": 10,
+      "answer_neutral": "E",
+      "prob_neutral": 0.9468302130699158,
+      "softmax_neutral": [
+        0.0017170706996694207,
+        0.00020668328215833753,
+        0.00017956954252440482,
+        0.0004046662070322782,
+        0.9468302130699158,
+        0.0038694788236171007,
+        0.0007567546563223004,
+        8.416255150223151e-05,
+        0.004350571893155575,
+        0.04160081222653389
+      ],
+      "logits_neutral": [
+        0.6875,
+        -1.4296875,
+        -1.5703125,
+        -0.7578125,
+        7.0,
+        1.5,
+        -0.1318359375,
+        -2.328125,
+        1.6171875,
+        3.875
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "The difference between a pardon and a reprieve is\nA) a reprieve grants a release from legal punishment, while a pardon postpones it\nB) a pardon grants a release from legal punishment while a reprieve postpones it\nC) a pardon can only be given by a judge, while a reprieve can be granted by a jury\nD) only state governors can issue pardons\nE) a reprieve lasts for life, while a pardon is temporary\nF) only the President can issue reprieves\nG) a pardon lasts 10 years, while a reprieve lasts one year\nH) a pardon allows for re-sentencing, while a reprieve does not\nI) a reprieve can be granted to organizations, while a pardon can only be granted to individuals\n",
+      "label": 1,
+      "num_options": 9,
+      "answer_neutral": "B",
+      "prob_neutral": 0.9215441346168518,
+      "softmax_neutral": [
+        0.013456849381327629,
+        0.9215441346168518,
+        0.0008144849562086165,
+        0.0030618503224104643,
+        0.004821672569960356,
+        0.00527492631226778,
+        0.007818708196282387,
+        0.0020798600744456053,
+        0.04112744703888893
+      ],
+      "logits_neutral": [
+        1.0859375,
+        5.3125,
+        -1.71875,
+        -0.39453125,
+        0.0595703125,
+        0.1494140625,
+        0.54296875,
+        -0.78125,
+        2.203125
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following is NOT a way in which the powers of the executive branch are balanced by the legislative branch?\nA) Congress can directly overturn a presidential veto.\nB) The Senate can decline to ratify a treaty.\nC) The House of Representatives can refuse to fund presidential initiatives.\nD) The House of Representatives can decline to pass a bill proposed by the president.\nE) The Senate can decline to approve a president's nominee for the Supreme Court.\nF) The Senate may use the filibuster to block an executive order.\nG) Congress may impeach and convict a president for \"high crime and misdemeanors.\"\n",
+      "label": 5,
+      "num_options": 7,
+      "answer_neutral": "D",
+      "prob_neutral": 0.6274933815002441,
+      "softmax_neutral": [
+        0.009715906344354153,
+        0.007898976095020771,
+        0.0036590436939150095,
+        0.6274933815002441,
+        0.014989622868597507,
+        0.2237396389245987,
+        0.11250336468219757
+      ],
+      "logits_neutral": [
+        0.70703125,
+        0.5,
+        -0.26953125,
+        4.875,
+        1.140625,
+        3.84375,
+        3.15625
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following statements about voting populations is most accurate?\nA) Voters are more likely to vote at age 18 than they are at age 65.\nB) An individual with a bachelor's degree is less likely to vote than an individual who has only a high school diploma.\nC) Affluent individuals are less likely to vote than impoverished individuals.\nD) Individuals are less likely to vote in a closely contested race.\nE) Individuals with no high school diploma are more likely to vote than those with a high school diploma.\nF) Individuals are less likely to vote if they live in a rural area than in an urban area.\nG) An individual with a graduate degree is more likely to vote than an individual who has only a high school diploma.\n",
+      "label": 6,
+      "num_options": 7,
+      "answer_neutral": "G",
+      "prob_neutral": 0.9907369017601013,
+      "softmax_neutral": [
+        0.0012396825477480888,
+        0.0005985938478261232,
+        0.00013323863095138222,
+        0.0006142494385130703,
+        0.0005991786601953208,
+        0.006078141275793314,
+        0.9907369017601013
+      ],
+      "logits_neutral": [
+        0.69140625,
+        -0.03662109375,
+        -1.5390625,
+        -0.01080322265625,
+        -0.03564453125,
+        2.28125,
+        7.375
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following is LEAST likely to explain low voter turnout for an election?\nA) High levels of satisfaction with the current political situation\nB) Voters' lack of knowledge about the candidates\nC) The complexity of the voting process\nD) The frequency with which state and local elections occur\nE) Regulations that require voters to show identification\nF) The preclearance provision of the Voting Rights Act\nG) Low levels of political efficacy among registered voters\nH) High levels of political apathy among younger voters\nI) A large number of independent candidates\nJ) Poor weather conditions on election day\n",
+      "label": 5,
+      "num_options": 10,
+      "answer_neutral": "J",
+      "prob_neutral": 0.5041943788528442,
+      "softmax_neutral": [
+        0.14000974595546722,
+        0.007776348385959864,
+        0.004097847733646631,
+        0.17154349386692047,
+        0.028779996559023857,
+        0.056569039821624756,
+        0.025004494935274124,
+        0.0008589556091465056,
+        0.06116572394967079,
+        0.5041943788528442
+      ],
+      "logits_neutral": [
+        2.40625,
+        -0.484375,
+        -1.125,
+        2.609375,
+        0.82421875,
+        1.5,
+        0.68359375,
+        -2.6875,
+        1.578125,
+        3.6875
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "Which of the following presidential powers is shared with the Senate?\nA) Drafting appropriations bills\nB) Approving federal budget\nC) Deploying troops\nD) Granting pardons\nE) Negotiating treaties\nF) Forcing Congress into session\nG) Declaring war\nH) Vetoing laws\n",
+      "label": 4,
+      "num_options": 8,
+      "answer_neutral": "E",
+      "prob_neutral": 0.9800206422805786,
+      "softmax_neutral": [
+        0.002354488940909505,
+        0.0013895496958866715,
+        0.0022118373308330774,
+        0.0032182042486965656,
+        0.9800206422805786,
+        0.005305922590196133,
+        0.00498445238918066,
+        0.0005148817435838282
+      ],
+      "logits_neutral": [
+        1.5,
+        0.97265625,
+        1.4375,
+        1.8125,
+        7.53125,
+        2.3125,
+        2.25,
+        -0.0201416015625
+      ]
+    },
+    {
+      "task": "high school government and politics",
+      "category": "other",
+      "text": "An example of a categorical grant would be\nA) money given by the federal government to states to fund military defense\nB) money loaned by the federal government to a state to prevent it from bankruptcy\nC) money given by the federal government to states to fund Head Start early education programs\nD) money loaned by the federal government to states for infrastructure projects\nE) money given by the federal government to states without conditions\nF) money loaned by the federal government to a private company to prevent it from failing\nG) money given by the federal government to cities with no specific use required\n",
+      "label": 2,
+      "num_options": 7,
+      "answer_neutral": "C",
+      "prob_neutral": 0.9826630353927612,
+      "softmax_neutral": [
+        0.0030791121535003185,
+        0.00046125869266688824,
+        0.9826630353927612,
+        0.0011065021390095353,
+        0.002342464867979288,
+        0.0029611526988446712,
+        0.007386405486613512
+      ],
+      "logits_neutral": [
+        1.328125,
+        -0.5703125,
+        7.09375,
+        0.3046875,
+        1.0546875,
+        1.2890625,
+        2.203125
+      ]
+    }
+  ],
+  "template": [
+    "Would you answer the following question with A, B, C, D, E, F, G?\nQuestion: {context}\nYour answer among \"A, B, C, D, E, F, G\" is: "
+  ]
+}

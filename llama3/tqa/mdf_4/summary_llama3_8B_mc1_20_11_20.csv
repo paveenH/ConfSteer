@@ -1,0 +1,6 @@
+model,size,alpha,start,end,TOP,dataset,mode,task,role,correct,E_count,invalid,total,accuracy_percentage,suite,refusal_enabled,refusal_label
+llama3,8B,4,11,20,20,TruthfulQA,MC1,TruthfulQA MC1,non expert,351,0,466,817,42.96,default,0,
+llama3,8B,4,11,20,20,TruthfulQA,MC1,TruthfulQA MC1,expert,378,0,439,817,46.27,default,0,
+llama3,8B,4,11,20,20,TruthfulQA,MC1,TruthfulQA MC1,confident,369,0,448,817,45.17,default,0,
+llama3,8B,4,11,20,20,TruthfulQA,MC1,TruthfulQA MC1,unconfident,357,0,460,817,43.7,default,0,
+llama3,8B,4,11,20,20,TruthfulQA,MC1,TruthfulQA MC1,neutral,376,0,441,817,46.02,default,0,
