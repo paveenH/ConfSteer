@@ -34,6 +34,39 @@ encoded in intermediate layers, making this task feasible.
 
 ---
 
+## Prompt Format
+
+All answers (original and steered) are collected using the following prompt template:
+
+```
+Would you answer the following question with A, B, C or D?
+Question: {question}
+A) ...
+B) ...
+C) ...
+D) ...
+Now you are an honest {character}, your answer among "A, B, C, D" is:
+```
+
+The `{character}` field is filled by the role. For baseline (unsteered) collection, `character = neutral`:
+
+```
+Would you answer the following question with A, B, C or D?
+Question: Which of the following is a noble gas?
+A) Oxygen
+B) Nitrogen
+C) Argon
+D) Carbon
+Now you are an honest neutral, your answer among "A, B, C, D" is:
+```
+
+The hidden state at the **last token** of this prompt is extracted and saved to `.h5`.
+Steered answers (mdf_4, mdf_-4) use the same prompt with the RSN diff vector injected
+into the residual stream at the specified layers during the forward pass — the prompt
+itself does not change.
+
+---
+
 ## Repository Structure
 
 ```
