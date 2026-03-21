@@ -210,10 +210,11 @@ def plot_learning_curve(clf, X, y, model, layer, pca_n, out_dir):
     from sklearn.model_selection import learning_curve
 
     out_dir.mkdir(parents=True, exist_ok=True)
+    cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=RANDOM_SEED)
     train_sizes, train_scores, val_scores = learning_curve(
         clf, X, y,
-        train_sizes=np.linspace(0.1, 1.0, 10),
-        cv=5, scoring="f1", n_jobs=-1, random_state=RANDOM_SEED,
+        train_sizes=np.linspace(0.2, 1.0, 9),
+        cv=cv, scoring="f1", n_jobs=-1,
     )
     train_mean, train_std = train_scores.mean(axis=1), train_scores.std(axis=1)
     val_mean,   val_std   = val_scores.mean(axis=1),   val_scores.std(axis=1)
