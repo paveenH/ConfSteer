@@ -261,10 +261,10 @@ def main():
     parser.add_argument("--model",   default="llama3", choices=["llama3", "qwen3"])
     parser.add_argument("--layers",  default="all",
                         help="Layer range: 'all' or 'start-end', e.g. '10-25'")
-    parser.add_argument("--proj_dim",     type=int, default=128)
-    parser.add_argument("--cnn_channels", type=int, default=256)
+    parser.add_argument("--proj_dim",     type=int, default=64)
+    parser.add_argument("--cnn_channels", type=int, default=64)
     parser.add_argument("--kernel_size",  type=int, default=3)
-    parser.add_argument("--dropout",      type=float, default=0.3)
+    parser.add_argument("--dropout",      type=float, default=0.5)
     parser.add_argument("--epochs",  type=int,   default=20)
     parser.add_argument("--lr",      type=float, default=1e-3)
     parser.add_argument("--batch",   type=int,   default=64)
@@ -336,7 +336,7 @@ def main():
     print(f"\n[4] Model: {n_params:,} trainable parameters")
 
     criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-4)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-2)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=args.epochs)
 
     # ── Training loop ──
