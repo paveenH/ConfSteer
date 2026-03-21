@@ -317,8 +317,7 @@ def main():
     train_ds = TensorDataset(torch.tensor(X_train), torch.tensor(y_train))
     test_ds  = TensorDataset(torch.tensor(X_test),  torch.tensor(y_test))
 
-    sampler     = make_weighted_sampler(y_train)
-    train_loader = DataLoader(train_ds, batch_size=args.batch, sampler=sampler)
+    train_loader = DataLoader(train_ds, batch_size=args.batch, shuffle=True)
     test_loader  = DataLoader(test_ds,  batch_size=args.batch, shuffle=False)
 
     # ── Build model ──
@@ -336,11 +335,7 @@ def main():
     n_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"\n[4] Model: {n_params:,} trainable parameters")
 
-    # Class weights for loss (extra boost for neg/-1 which is fewest)
-    counts = np.bincount(y_train, minlength=3).astype(float)
-    class_weights = torch.tensor(1.0 / np.where(counts == 0, 1, counts),
-                                  dtype=torch.float).to(device)
-    criterion = nn.CrossEntropyLoss(weight=class_weights)
+    criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-4)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=args.epochs)
 
