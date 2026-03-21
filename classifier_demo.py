@@ -269,6 +269,8 @@ def main():
                         help="Use mock features (no h5 files needed)")
     parser.add_argument("--visualize", action="store_true",
                         help="Generate PCA/LDA separability plots and exit")
+    parser.add_argument("--pca", type=int, default=0,
+                        help="PCA components before LR (0=disabled, e.g. 50)")
     args = parser.parse_args()
 
     layer = args.layer
@@ -318,6 +320,14 @@ def main():
     scaler = StandardScaler()
     X_train = scaler.fit_transform(X_train)
     X_test  = scaler.transform(X_test)
+
+    if args.pca > 0:
+        print(f"  Applying PCA (n_components={args.pca})...")
+        pca = PCA(n_components=args.pca, random_state=RANDOM_SEED)
+        X_train = pca.fit_transform(X_train)
+        X_test  = pca.transform(X_test)
+        var = pca.explained_variance_ratio_.sum() * 100
+        print(f"  Explained variance: {var:.1f}%")
 
     clf = LogisticRegression(
         max_iter=1000,
