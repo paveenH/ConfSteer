@@ -77,6 +77,7 @@ def load_labels(model: str):
 # ==================== Feature extraction ====================
 
 def extract_features(model: str, label_files, layer: int):
+    """Load a single layer's hidden states. Shape: (N, hidden_dim)."""
     import h5py
     X, y = [], []
     skipped = 0
@@ -95,6 +96,26 @@ def extract_features(model: str, label_files, layer: int):
                 X.append(hs[s["index"], l, :])
                 y.append(cls)
     print(f"  Loaded {len(X)} samples ({skipped} files skipped)")
+    return np.array(X, dtype=np.float32), np.array(y)
+
+
+def extract_all_layers(model: str, label_files):
+    """Load all layers at once. Shape: (N, n_layers, hidden_dim). Used for layer sweep."""
+    import h5py
+    X, y = [], []
+    skipped = 0
+    for label_path, task, orig_stem, samples in label_files:
+        h5_path = get_h5_path(model, task, orig_stem)
+        if not h5_path.exists():
+            skipped += 1
+            continue
+        with h5py.File(h5_path, "r") as hf:
+            hs = hf["hidden_states"]   # (N_file, n_layers, hidden_dim)
+            for s in samples:
+                cls = assign_binary(s["label_pos4"])
+                X.append(hs[s["index"], :, :])   # all layers
+                y.append(cls)
+    print(f"  Loaded {len(X)} samples ({skipped} files skipped), shape: ({len(X)}, {X[0].shape[0]}, {X[0].shape[1]})")
     return np.array(X, dtype=np.float32), np.array(y)
 
 
@@ -154,27 +175,29 @@ def visualize(X_scaled, y, model, layer, pca_n, out_dir):
 
 def plot_layer_sweep(model: str, label_files, pca_n: int, ratio: float, C: float, out_dir: Path):
     import matplotlib.pyplot as plt
-    import h5py
 
-    # Determine available layers from first h5 file
-    n_layers = None
-    for _, task, orig_stem, _ in label_files:
-        h5_path = get_h5_path(model, task, orig_stem)
-        if h5_path.exists():
-            with h5py.File(h5_path, "r") as hf:
-                n_layers = hf["hidden_states"].shape[1]
-            break
-    if n_layers is None:
-        print("  [error] No h5 files found")
-        return
+    # Load all layers at once (single h5 read pass)
+    print("  Loading all layers into memory (one-time)...")
+    X_all, y_all = extract_all_layers(model, label_files)
+    n_layers = X_all.shape[1]
 
-    layers = list(range(0, n_layers))
+    # Apply balanced sampling using consistent indices across layers
+    rng = random.Random(RANDOM_SEED)
+    idx_pos  = np.where(y_all ==  1)[0].tolist()
+    idx_zero = np.where(y_all ==  0)[0].tolist()
+    n_keep   = int(ratio * len(idx_pos))
+    idx_zero_s = rng.sample(idx_zero, min(n_keep, len(idx_zero)))
+    keep = np.array(idx_pos + idx_zero_s)
+    X_bal = X_all[keep]   # (N_bal, n_layers, hidden_dim)
+    y_bal = y_all[keep]
+
+    layers = list(range(n_layers))
     cv_means, cv_stds, aucs = [], [], []
 
     print(f"  Sweeping {n_layers} layers (pca={pca_n})...")
     for layer in layers:
-        X, y = extract_features(model, label_files, layer)
-        X, y = balanced_sample(X, y, ratio=ratio)
+        X = X_bal[:, layer, :]   # (N_bal, hidden_dim) — no h5 re-read
+        y = y_bal
 
         scaler = StandardScaler()
         X_scaled = scaler.fit_transform(X)
