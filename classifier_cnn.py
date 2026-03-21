@@ -43,7 +43,7 @@ HIDDEN_DIR = BASE_DIR / "HiddenStates"
 
 # ==================== Config ====================
 RANDOM_SEED     = 42
-NO_CHANGE_RATIO = 1.0   # class-0 samples = ratio × max(|+1|, |-1|)
+NO_CHANGE_RATIO = 5.0   # class-0 samples = ratio × max(|+1|, |-1|)
 
 
 # ==================== H5 path mapping (same as classifier_demo) ====================
@@ -268,6 +268,8 @@ def main():
     parser.add_argument("--epochs",  type=int,   default=20)
     parser.add_argument("--lr",      type=float, default=1e-3)
     parser.add_argument("--batch",   type=int,   default=64)
+    parser.add_argument("--ratio",   type=float, default=NO_CHANGE_RATIO,
+                        help="class-0 downsample ratio (default: 5.0)")
     parser.add_argument("--device",  default="cuda" if torch.cuda.is_available() else "cpu")
     args = parser.parse_args()
 
@@ -296,7 +298,7 @@ def main():
 
     # ── Downsample class 0 ──
     print("\n[3] Balancing class 0...")
-    X, y = balanced_sample(X, y)
+    X, y = balanced_sample(X, y, ratio=args.ratio)
     print(f"  Balanced — +1: {(y==1).sum()}, -1: {(y==-1).sum()}, 0: {(y==0).sum()}")
     print(f"  Total samples: {len(y)}")
 
