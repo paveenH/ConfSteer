@@ -210,14 +210,45 @@ def plot_learning_curve(clf, X, y, model, layer, pca_n, out_dir):
     from sklearn.model_selection import learning_curve
 
     out_dir.mkdir(parents=True, exist_ok=True)
-    cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=RANDOM_SEED)
-    train_sizes, train_scores, val_scores = learning_curve(
-        clf, X, y,
-        train_sizes=np.linspace(0.4, 1.0, 7),
-        cv=cv, scoring="f1", n_jobs=-1,
-    )
-    train_mean, train_std = train_scores.mean(axis=1), train_scores.std(axis=1)
-    val_mean,   val_std   = val_scores.mean(axis=1),   val_scores.std(axis=1)
+    from sklearn.metrics import f1_score
+    rng = np.random.default_rng(RANDOM_SEED)
+    fracs = np.linspace(0.4, 1.0, 7)
+    n = len(y)
+    train_sizes_list, train_mean_list, train_std_list = [], [], []
+    val_mean_list, val_std_list = [], []
+
+    for frac in fracs:
+        size = int(frac * n)
+        fold_train_f1, fold_val_f1 = [], []
+        cv_obj = StratifiedKFold(n_splits=5, shuffle=True, random_state=RANDOM_SEED)
+        for train_idx, val_idx in cv_obj.split(X, y):
+            # subsample train_idx to `size` while keeping both classes
+            idx0 = train_idx[y[train_idx] == 0]
+            idx1 = train_idx[y[train_idx] == 1]
+            n_per = size // 2
+            s0 = idx0[rng.choice(len(idx0), min(n_per, len(idx0)), replace=False)]
+            s1 = idx1[rng.choice(len(idx1), min(n_per, len(idx1)), replace=False)]
+            sub = np.concatenate([s0, s1])
+            if len(np.unique(y[sub])) < 2:
+                continue
+            est = LogisticRegression(max_iter=1000, C=clf.C,
+                                     class_weight="balanced",
+                                     random_state=RANDOM_SEED, n_jobs=-1)
+            est.fit(X[sub], y[sub])
+            fold_train_f1.append(f1_score(y[sub], est.predict(X[sub])))
+            fold_val_f1.append(f1_score(y[val_idx], est.predict(X[val_idx])))
+
+        train_sizes_list.append(size)
+        train_mean_list.append(np.mean(fold_train_f1))
+        train_std_list.append(np.std(fold_train_f1))
+        val_mean_list.append(np.mean(fold_val_f1))
+        val_std_list.append(np.std(fold_val_f1))
+
+    train_sizes = np.array(train_sizes_list)
+    train_mean  = np.array(train_mean_list)
+    train_std   = np.array(train_std_list)
+    val_mean    = np.array(val_mean_list)
+    val_std     = np.array(val_std_list)
 
     fig, ax = plt.subplots(figsize=(8, 5))
     ax.plot(train_sizes, train_mean, "o-", color="#2ecc71", label="Train F1")
