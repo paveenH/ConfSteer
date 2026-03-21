@@ -211,9 +211,14 @@ def plot_learning_curve(clf, X, y, model, layer, pca_n, out_dir):
 
     out_dir.mkdir(parents=True, exist_ok=True)
     cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=RANDOM_SEED)
+    n_total = int(len(y) * 0.8)   # ~80% used for training in each fold
+    n_classes = len(np.unique(y))
+    min_size = n_classes * 5 * 2   # at least 5 samples/class/fold * 2 for safety
+    sizes = np.linspace(max(min_size, int(n_total * 0.1)), n_total, 10).astype(int)
+    sizes = np.unique(sizes)
     train_sizes, train_scores, val_scores = learning_curve(
         clf, X, y,
-        train_sizes=np.linspace(0.2, 1.0, 9),
+        train_sizes=sizes,
         cv=cv, scoring="f1", n_jobs=-1,
     )
     train_mean, train_std = train_scores.mean(axis=1), train_scores.std(axis=1)
@@ -237,7 +242,7 @@ def plot_learning_curve(clf, X, y, model, layer, pca_n, out_dir):
     print(f"  Saved: {out_path}")
 
     gap = val_mean[-1] - val_mean[0]
-    print(f"  Val F1: {val_mean[0]:.3f} (10%) → {val_mean[-1]:.3f} (100%)")
+    print(f"  Val F1: {val_mean[0]:.3f} (n={train_sizes[0]}) → {val_mean[-1]:.3f} (n={train_sizes[-1]})")
     if gap > 0.03:
         print(f"  → still rising (+{gap:.3f}): more data would help")
     else:
