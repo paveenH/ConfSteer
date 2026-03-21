@@ -150,6 +150,130 @@ def visualize(X_scaled, y, model, layer, pca_n, out_dir):
     print(f"  Saved: {out_path}")
 
 
+# ==================== Layer Sweep ====================
+
+def plot_layer_sweep(model: str, label_files, pca_n: int, ratio: float, C: float, out_dir: Path):
+    import matplotlib.pyplot as plt
+    import h5py
+
+    # Determine available layers from first h5 file
+    n_layers = None
+    for _, task, orig_stem, _ in label_files:
+        h5_path = get_h5_path(model, task, orig_stem)
+        if h5_path.exists():
+            with h5py.File(h5_path, "r") as hf:
+                n_layers = hf["hidden_states"].shape[1]
+            break
+    if n_layers is None:
+        print("  [error] No h5 files found")
+        return
+
+    layers = list(range(0, n_layers))
+    cv_means, cv_stds, aucs = [], [], []
+
+    print(f"  Sweeping {n_layers} layers (pca={pca_n})...")
+    for layer in layers:
+        X, y = extract_features(model, label_files, layer)
+        X, y = balanced_sample(X, y, ratio=ratio)
+
+        scaler = StandardScaler()
+        X_scaled = scaler.fit_transform(X)
+        if pca_n > 0:
+            pca = PCA(n_components=min(pca_n, X_scaled.shape[1]), random_state=RANDOM_SEED)
+            X_scaled = pca.fit_transform(X_scaled)
+
+        clf = LogisticRegression(max_iter=1000, C=C, class_weight="balanced",
+                                  random_state=RANDOM_SEED, n_jobs=-1)
+        cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=RANDOM_SEED)
+        f1_scores = cross_val_score(clf, X_scaled, y, cv=cv, scoring="f1")
+        auc_scores = cross_val_score(clf, X_scaled, y, cv=cv, scoring="roc_auc")
+
+        cv_means.append(f1_scores.mean())
+        cv_stds.append(f1_scores.std())
+        aucs.append(auc_scores.mean())
+        print(f"    layer {layer:2d}: F1={f1_scores.mean():.3f}±{f1_scores.std():.3f}  AUC={auc_scores.mean():.3f}")
+
+    cv_means = np.array(cv_means)
+    cv_stds  = np.array(cv_stds)
+    aucs     = np.array(aucs)
+    best_layer_f1  = int(np.argmax(cv_means))
+    best_layer_auc = int(np.argmax(aucs))
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 8), sharex=True)
+    fig.suptitle(f"Layer Sweep — {model}  pca={pca_n}", fontsize=13)
+
+    ax1.plot(layers, cv_means, "o-", color="#2ecc71", label="CV F1")
+    ax1.fill_between(layers, cv_means - cv_stds, cv_means + cv_stds,
+                     alpha=0.2, color="#2ecc71")
+    ax1.axvline(best_layer_f1, color="#2ecc71", linestyle="--",
+                label=f"best layer={best_layer_f1} ({cv_means[best_layer_f1]:.3f})")
+    ax1.set_ylabel("CV F1 (steer class)"); ax1.legend(); ax1.grid(True)
+
+    ax2.plot(layers, aucs, "o-", color="#3498db", label="CV AUC")
+    ax2.axvline(best_layer_auc, color="#3498db", linestyle="--",
+                label=f"best layer={best_layer_auc} ({aucs[best_layer_auc]:.3f})")
+    ax2.set_ylabel("CV ROC-AUC"); ax2.set_xlabel("Layer"); ax2.legend(); ax2.grid(True)
+
+    plt.tight_layout()
+    out_path = out_dir / f"layer_sweep_{model}_pca{pca_n}.png"
+    plt.savefig(out_path, dpi=150)
+    plt.close()
+    print(f"\n  Best layer by F1 : {best_layer_f1} (F1={cv_means[best_layer_f1]:.3f})")
+    print(f"  Best layer by AUC: {best_layer_auc} (AUC={aucs[best_layer_auc]:.3f})")
+    print(f"  Saved: {out_path}")
+
+
+# ==================== Learning Curve ====================
+
+def plot_learning_curve(clf, X, y, model, layer, pca_n, out_dir):
+    import matplotlib.pyplot as plt
+    from sklearn.model_selection import learning_curve
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    train_sizes, train_scores, val_scores = learning_curve(
+        clf, X, y,
+        train_sizes=np.linspace(0.1, 1.0, 10),
+        cv=5, scoring="f1",
+        n_jobs=-1, random_state=RANDOM_SEED,
+    )
+
+    train_mean = train_scores.mean(axis=1)
+    train_std  = train_scores.std(axis=1)
+    val_mean   = val_scores.mean(axis=1)
+    val_std    = val_scores.std(axis=1)
+
+    fig, ax = plt.subplots(figsize=(8, 5))
+    ax.plot(train_sizes, train_mean, "o-", color="#2ecc71", label="Train F1")
+    ax.fill_between(train_sizes, train_mean - train_std, train_mean + train_std,
+                    alpha=0.15, color="#2ecc71")
+    ax.plot(train_sizes, val_mean, "o-", color="#e74c3c", label="Val F1 (CV)")
+    ax.fill_between(train_sizes, val_mean - val_std, val_mean + val_std,
+                    alpha=0.15, color="#e74c3c")
+
+    ax.set_title(f"Learning Curve — {model}  layer={layer}  pca={pca_n}")
+    ax.set_xlabel("Training samples")
+    ax.set_ylabel("F1 (steer class)")
+    ax.legend(); ax.grid(True)
+    ax.set_ylim(0, 1)
+
+    plt.tight_layout()
+    out_path = out_dir / f"learning_curve_{model}_layer{layer}_pca{pca_n}.png"
+    plt.savefig(out_path, dpi=150)
+    plt.close()
+    print(f"  Saved: {out_path}")
+
+    # Print summary
+    print(f"  Samples: {train_sizes[0]:.0f} → {train_sizes[-1]:.0f}")
+    print(f"  Val F1 at 10%: {val_mean[0]:.3f} | at 100%: {val_mean[-1]:.3f}")
+    gap = val_mean[-1] - val_mean[0]
+    if gap > 0.03:
+        print(f"  → Val F1 still rising (+{gap:.3f}): more data would help")
+    else:
+        print(f"  → Val F1 plateaued ({gap:+.3f}): signal strength is the bottleneck")
+
+
 # ==================== Main ====================
 
 def main():
@@ -163,6 +287,10 @@ def main():
     parser.add_argument("--C",      type=float, default=1.0,
                         help="LR regularization strength")
     parser.add_argument("--visualize", action="store_true")
+    parser.add_argument("--learning_curve", action="store_true",
+                        help="Plot learning curve (train size vs CV F1)")
+    parser.add_argument("--layer_sweep", action="store_true",
+                        help="Sweep all layers and plot CV F1 / AUC per layer")
     args = parser.parse_args()
 
     print(f"\n{'='*50}")
@@ -176,6 +304,13 @@ def main():
     print("[1] Loading labels...")
     label_files = load_labels(args.model)
     print(f"  Found {len(label_files)} label files")
+
+    # ── Layer Sweep (early exit) ──
+    if args.layer_sweep:
+        print("\n[sweep] Sweeping all layers (this may take a few minutes)...")
+        plot_layer_sweep(args.model, label_files, args.pca, args.ratio, args.C,
+                         BASE_DIR / "plots")
+        return
 
     print("\n[2] Extracting features...")
     X, y = extract_features(args.model, label_files, args.layer)
@@ -236,6 +371,12 @@ def main():
     print("\nConfusion matrix (rows=true, cols=pred):")
     print("  labels: 0, +1")
     print(confusion_matrix(y_test, y_pred, labels=[0, 1]))
+
+    # ── Learning Curve ──
+    if args.learning_curve:
+        print("\n[6] Plotting learning curve...")
+        plot_learning_curve(clf, X_scaled, y, args.model, args.layer, pca_n,
+                            BASE_DIR / "plots")
 
 
 if __name__ == "__main__":
