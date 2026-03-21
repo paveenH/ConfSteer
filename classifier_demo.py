@@ -28,6 +28,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 # ==================== Paths ====================
 BASE_DIR = Path(__file__).parent
@@ -172,6 +174,90 @@ def balanced_sample(X, y, ratio=NO_CHANGE_RATIO, seed=RANDOM_SEED):
     return X[keep], y[keep]
 
 
+# ==================== Visualization ====================
+
+def visualize_separability(X, y, model: str, layer: int, out_dir: Path):
+    """PCA (2D/3D) + LDA (2D) plots to assess class separability."""
+    import matplotlib.pyplot as plt
+    import matplotlib.cm as cm
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    labels_map = {-1: "neg(-1)", 0: "no_change(0)", 1: "pos(+1)"}
+    colors     = {-1: "#e74c3c", 0: "#95a5a6", 1: "#2ecc71"}
+    classes    = [-1, 0, 1]
+
+    # Standardize before PCA/LDA
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(X)
+
+    fig, axes = plt.subplots(1, 3, figsize=(18, 5))
+    fig.suptitle(f"Separability — {model}  layer={layer}", fontsize=14)
+
+    # ── PCA 2D ──
+    pca2 = PCA(n_components=2, random_state=RANDOM_SEED)
+    X_pca2 = pca2.fit_transform(X_scaled)
+    ax = axes[0]
+    for cls in classes:
+        mask = y == cls
+        ax.scatter(X_pca2[mask, 0], X_pca2[mask, 1],
+                   c=colors[cls], label=labels_map[cls],
+                   alpha=0.4, s=10, rasterized=True)
+    ax.set_title(f"PCA 2D  (var: {pca2.explained_variance_ratio_.sum()*100:.1f}%)")
+    ax.set_xlabel("PC1"); ax.set_ylabel("PC2")
+    ax.legend(markerscale=2)
+
+    # ── PCA 3D (shown as PC1 vs PC3) ──
+    pca3 = PCA(n_components=3, random_state=RANDOM_SEED)
+    X_pca3 = pca3.fit_transform(X_scaled)
+    ax = axes[1]
+    for cls in classes:
+        mask = y == cls
+        ax.scatter(X_pca3[mask, 0], X_pca3[mask, 2],
+                   c=colors[cls], label=labels_map[cls],
+                   alpha=0.4, s=10, rasterized=True)
+    ax.set_title(f"PCA PC1 vs PC3  (var: {pca3.explained_variance_ratio_.sum()*100:.1f}%)")
+    ax.set_xlabel("PC1"); ax.set_ylabel("PC3")
+    ax.legend(markerscale=2)
+
+    # ── LDA 2D ──
+    lda = LinearDiscriminantAnalysis(n_components=2)
+    X_lda = lda.fit_transform(X_scaled, y)
+    ax = axes[2]
+    for cls in classes:
+        mask = y == cls
+        ax.scatter(X_lda[mask, 0], X_lda[mask, 1],
+                   c=colors[cls], label=labels_map[cls],
+                   alpha=0.4, s=10, rasterized=True)
+    ax.set_title("LDA 2D  (maximizes class separation)")
+    ax.set_xlabel("LD1"); ax.set_ylabel("LD2")
+    ax.legend(markerscale=2)
+
+    plt.tight_layout()
+    out_path = out_dir / f"separability_{model}_layer{layer}.png"
+    plt.savefig(out_path, dpi=150)
+    plt.close()
+    print(f"  Saved: {out_path}")
+
+    # ── PCA variance curve ──
+    pca_full = PCA(n_components=min(50, X_scaled.shape[1]), random_state=RANDOM_SEED)
+    pca_full.fit(X_scaled)
+    cumvar = np.cumsum(pca_full.explained_variance_ratio_) * 100
+
+    fig2, ax2 = plt.subplots(figsize=(7, 4))
+    ax2.plot(range(1, len(cumvar)+1), cumvar, marker="o", markersize=3)
+    ax2.axhline(80, color="red", linestyle="--", label="80%")
+    ax2.axhline(90, color="orange", linestyle="--", label="90%")
+    ax2.set_title(f"PCA Cumulative Variance — {model} layer={layer}")
+    ax2.set_xlabel("# Components"); ax2.set_ylabel("Cumulative Variance (%)")
+    ax2.legend(); ax2.grid(True)
+    plt.tight_layout()
+    var_path = out_dir / f"pca_variance_{model}_layer{layer}.png"
+    plt.savefig(var_path, dpi=150)
+    plt.close()
+    print(f"  Saved: {var_path}")
+
+
 # ==================== Main ====================
 
 def main():
@@ -181,6 +267,8 @@ def main():
                         help="Hidden state layer index (0-based)")
     parser.add_argument("--mock", action="store_true",
                         help="Use mock features (no h5 files needed)")
+    parser.add_argument("--visualize", action="store_true",
+                        help="Generate PCA/LDA separability plots and exit")
     args = parser.parse_args()
 
     layer = args.layer
@@ -205,6 +293,14 @@ def main():
         X, y = extract_features_real(args.model, label_files, layer)
 
     print(f"  Raw class dist — +1: {(y==1).sum()}, -1: {(y==-1).sum()}, 0: {(y==0).sum()}")
+
+    # Visualize separability and exit
+    if args.visualize:
+        print("\n[3] Generating separability plots...")
+        out_dir = BASE_DIR / "plots"
+        visualize_separability(X, y, args.model, layer, out_dir)
+        print("Done.")
+        return
 
     # Downsample class 0
     print("\n[3] Balancing classes...")
