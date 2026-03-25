@@ -1,4 +1,0 @@
-model,size,alpha,start,end,TOP,dataset,mode,task,role,correct,E_count,invalid,total,accuracy_percentage,suite,refusal_enabled,refusal_label
-qwen3,8B,-4,17,26,20,TruthfulQA,MC2,TruthfulQA MC2,non expert,580,0,237,817,70.99,default,0,
-qwen3,8B,-4,17,26,20,TruthfulQA,MC2,TruthfulQA MC2,expert,580,0,237,817,70.99,default,0,
-qwen3,8B,-4,17,26,20,TruthfulQA,MC2,TruthfulQA MC2,neutral,598,0,219,817,73.19,default,0,

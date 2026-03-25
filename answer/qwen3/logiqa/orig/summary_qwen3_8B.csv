@@ -1,0 +1,8 @@
+model,size,suite,refusal_enabled,refusal_label,task,role,correct,E_count,invalid,total,accuracy_percentage
+qwen3,8B,default,0,,MRC-test,neutral,1055,0,517,1572,67.11
+qwen3,8B,default,0,,MRC-test,confident,1041,0,531,1572,66.22
+qwen3,8B,default,0,,MRC-test,unconfident,1009,0,563,1572,64.19
+qwen3,8B,default,0,,MRC-test,expert,1038,0,534,1572,66.03
+qwen3,8B,default,0,,MRC-test,non expert,975,0,597,1572,62.02
+qwen3,8B,default,0,,MRC-test,student,1033,0,539,1572,65.71
+qwen3,8B,default,0,,MRC-test,person,1032,0,540,1572,65.65

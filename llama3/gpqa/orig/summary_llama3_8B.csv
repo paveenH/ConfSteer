@@ -1,4 +1,0 @@
-model,size,suite,refusal_enabled,refusal_label,task,role,correct,E_count,invalid,total,accuracy_percentage
-llama3,8B,default,0,,GPQA (gpqa_diamond),neutral,68,0,130,198,34.34
-llama3,8B,default,0,,GPQA (gpqa_extended),neutral,170,0,376,546,31.14
-llama3,8B,default,0,,GPQA (gpqa_main),neutral,144,0,304,448,32.14

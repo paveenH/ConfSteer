@@ -1,2 +1,0 @@
-model,size,alpha,start,end,TOP,task,role,correct,E_count,invalid,total,accuracy_percentage,suite,refusal_enabled,refusal_label
-qwen3,14B,4,22,37,25,MRC-test,neutral,1075,0,497,1572,68.38,default,0,

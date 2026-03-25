@@ -1,0 +1,22 @@
+model,size,suite,refusal_enabled,refusal_label,task,role,correct,E_count,invalid,total,accuracy_percentage
+llama3,8B,default,0,,GPQA (gpqa_diamond),neutral,68,0,130,198,34.34
+llama3,8B,default,0,,GPQA (gpqa_extended),neutral,170,0,376,546,31.14
+llama3,8B,default,0,,GPQA (gpqa_main),neutral,144,0,304,448,32.14
+llama3,8B,default,0,,GPQA (gpqa_diamond),confident,62,0,136,198,31.31
+llama3,8B,default,0,,GPQA (gpqa_diamond),unconfident,52,0,146,198,26.26
+llama3,8B,default,0,,GPQA (gpqa_extended),confident,182,0,364,546,33.33
+llama3,8B,default,0,,GPQA (gpqa_extended),unconfident,145,0,401,546,26.56
+llama3,8B,default,0,,GPQA (gpqa_main),confident,139,0,309,448,31.03
+llama3,8B,default,0,,GPQA (gpqa_main),unconfident,124,0,324,448,27.68
+llama3,8B,default,0,,GPQA (gpqa_diamond),expert,62,0,136,198,31.31
+llama3,8B,default,0,,GPQA (gpqa_diamond),non expert,44,0,154,198,22.22
+llama3,8B,default,0,,GPQA (gpqa_diamond),student,58,0,140,198,29.29
+llama3,8B,default,0,,GPQA (gpqa_diamond),person,60,0,138,198,30.3
+llama3,8B,default,0,,GPQA (gpqa_extended),expert,179,0,367,546,32.78
+llama3,8B,default,0,,GPQA (gpqa_extended),non expert,166,0,380,546,30.4
+llama3,8B,default,0,,GPQA (gpqa_extended),student,182,0,364,546,33.33
+llama3,8B,default,0,,GPQA (gpqa_extended),person,181,0,365,546,33.15
+llama3,8B,default,0,,GPQA (gpqa_main),expert,138,0,310,448,30.8
+llama3,8B,default,0,,GPQA (gpqa_main),non expert,135,0,313,448,30.13
+llama3,8B,default,0,,GPQA (gpqa_main),student,135,0,313,448,30.13
+llama3,8B,default,0,,GPQA (gpqa_main),person,141,0,307,448,31.47

@@ -1,2 +1,0 @@
-model,size,dataset,mode,task,role,correct,E_count,invalid,total,accuracy_percentage,suite,refusal_enabled,refusal_label
-llama3,8B,TruthfulQA,MC2,TruthfulQA MC2,neutral,488,0,329,817,59.73,default,0,

@@ -9,12 +9,14 @@ Label definition:
 
 Class 0 is downsampled to ratio × count(+1).
 
-Usage:
+Usage (from pre-extracted samples):
+  python classifier_binary.py --model llama3 --layer 19 --samples samples/llama3/samples_all.npz
+  python classifier_binary.py --model llama3 --layer 19 --samples samples/llama3/samples_all.npz --pca 50
+  python classifier_binary.py --model llama3 --samples samples/llama3/samples_all.npz --layer_sweep
+
+Usage (legacy: read H5 directly):
   python classifier_binary.py --model llama3 --layer 19
-  python classifier_binary.py --model llama3 --layer 19 --pca 50
-  python classifier_binary.py --model llama3 --layer 19 --pca 50 --visualize
   python classifier_binary.py --model llama3 --pca 50 --layer_sweep
-  python classifier_binary.py --model llama3 --layer 19 --pca 50 --learning_curve
 """
 
 import argparse
@@ -34,6 +36,7 @@ from sklearn.preprocessing import StandardScaler
 BASE_DIR   = Path(__file__).parent
 LABEL_DIR  = BASE_DIR / "labels"
 HIDDEN_DIR = BASE_DIR / "HiddenStates"
+SAMPLE_DIR = BASE_DIR / "samples"
 
 # ==================== Config ====================
 MIDDLE_LAYER    = 19
@@ -41,19 +44,32 @@ RANDOM_SEED     = 42
 NO_CHANGE_RATIO = 1.0
 
 
-# ==================== H5 path mapping ====================
+# ==================== Sample loading (from prepare_samples.py output) ====================
 
-def get_h5_path(model: str, task: str, orig_stem: str) -> Path:
+def load_samples(path: Path):
+    """Load pre-extracted samples from .npz file."""
+    data = np.load(path, allow_pickle=False)
+    X        = data["X"]          # (N, n_layers, hidden_dim)
+    y_binary = data["y_binary"]   # (N,) int8
+    roles    = list(data["roles"])
+    print(f"  Loaded samples: shape={X.shape}, roles={roles}")
+    print(f"  y_binary — steer(1): {(y_binary==1).sum()}, no_steer(0): {(y_binary==0).sum()}")
+    return X, y_binary.astype(np.int64)
+
+
+# ==================== H5 path mapping (legacy) ====================
+
+def get_h5_path(model: str, task: str, orig_stem: str, role: str = "neutral") -> Path:
     stem = orig_stem
     for suffix in ["_answers", "_mc1", "_mc2"]:
         if stem.endswith(suffix):
             stem = stem[: -len(suffix)]
             break
     h5_task = "truthfulqa" if task.startswith("tqa") else task
-    return HIDDEN_DIR / model / h5_task / f"neutral_{stem}.h5"
+    return HIDDEN_DIR / model / h5_task / f"{role}_{stem}.h5"
 
 
-# ==================== Label loading ====================
+# ==================== Label loading (legacy) ====================
 
 def assign_binary(lp: int) -> int:
     return 1 if lp == 1 else 0
@@ -72,46 +88,56 @@ def load_labels(model: str):
     return result
 
 
-# ==================== Feature extraction ====================
+# ==================== Feature extraction (legacy, reads H5 directly) ====================
 
 def extract_features(model: str, label_files, layer: int):
-    """Load a single layer. Returns (N, hidden_dim)."""
+    """Load a single layer from H5. Returns (N, hidden_dim)."""
     import h5py
     X, y = [], []
-    skipped = 0
+    skipped_paths = set()
     for _, task, orig_stem, samples in label_files:
-        h5_path = get_h5_path(model, task, orig_stem)
-        if not h5_path.exists():
-            print(f"  [skip] h5 not found: {h5_path}")
-            skipped += 1
-            continue
-        with h5py.File(h5_path, "r") as hf:
-            hs = hf["hidden_states"]
-            l = min(layer, hs.shape[1] - 1)
-            for s in samples:
-                X.append(hs[s["index"], l, :])
-                y.append(assign_binary(s["label_pos4"]))
-    print(f"  Loaded {len(X)} samples ({skipped} files skipped)")
+        # Group by role so each H5 is opened once
+        by_role = {}
+        for s in samples:
+            by_role.setdefault(s.get("role", "neutral"), []).append(s)
+        for role, role_samples in by_role.items():
+            h5_path = get_h5_path(model, task, orig_stem, role)
+            if not h5_path.exists():
+                if h5_path not in skipped_paths:
+                    print(f"  [skip] h5 not found: {h5_path}")
+                    skipped_paths.add(h5_path)
+                continue
+            with h5py.File(h5_path, "r") as hf:
+                hs = hf["hidden_states"]
+                l = min(layer, hs.shape[1] - 1)
+                for s in role_samples:
+                    X.append(hs[s["index"], l, :])
+                    y.append(assign_binary(s["label_pos4"]))
+    print(f"  Loaded {len(X)} samples ({len(skipped_paths)} H5 files skipped)")
     return np.array(X, dtype=np.float32), np.array(y)
 
 
 def extract_all_layers(model: str, label_files):
-    """Load all layers at once. Returns (N, n_layers, hidden_dim)."""
+    """Load all layers from H5. Returns (N, n_layers, hidden_dim)."""
     import h5py
     X, y = [], []
-    skipped = 0
+    skipped_paths = set()
     for _, task, orig_stem, samples in label_files:
-        h5_path = get_h5_path(model, task, orig_stem)
-        if not h5_path.exists():
-            skipped += 1
-            continue
-        with h5py.File(h5_path, "r") as hf:
-            hs = hf["hidden_states"]
-            for s in samples:
-                X.append(hs[s["index"], :, :])
-                y.append(assign_binary(s["label_pos4"]))
+        by_role = {}
+        for s in samples:
+            by_role.setdefault(s.get("role", "neutral"), []).append(s)
+        for role, role_samples in by_role.items():
+            h5_path = get_h5_path(model, task, orig_stem, role)
+            if not h5_path.exists():
+                skipped_paths.add(h5_path)
+                continue
+            with h5py.File(h5_path, "r") as hf:
+                hs = hf["hidden_states"]
+                for s in role_samples:
+                    X.append(hs[s["index"], :, :])
+                    y.append(assign_binary(s["label_pos4"]))
     X = np.array(X, dtype=np.float32)
-    print(f"  Loaded {X.shape[0]} samples ({skipped} skipped), shape: {X.shape}")
+    print(f"  Loaded {X.shape[0]} samples ({len(skipped_paths)} H5 files skipped), shape: {X.shape}")
     return X, np.array(y)
 
 
@@ -275,11 +301,9 @@ def plot_learning_curve(clf, X, y, model, layer, pca_n, out_dir):
         print(f"  → plateaued ({gap:+.3f}): signal strength is the bottleneck")
 
 
-def plot_layer_sweep(model: str, label_files, pca_n: int, ratio: float, C: float, out_dir: Path):
+def plot_layer_sweep_from_array(X_all, y_all, model: str, pca_n: int, ratio: float, C: float, out_dir: Path):
     import matplotlib.pyplot as plt
 
-    print("  Loading all layers (one-time h5 read)...")
-    X_all, y_all = extract_all_layers(model, label_files)
     n_layers = X_all.shape[1]
 
     keep  = balanced_indices(y_all, ratio=ratio)
@@ -334,17 +358,20 @@ def plot_layer_sweep(model: str, label_files, pca_n: int, ratio: float, C: float
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model",  default="llama3", choices=["llama3", "qwen3"])
-    parser.add_argument("--layer",  type=int, default=MIDDLE_LAYER)
-    parser.add_argument("--pca",    type=int, default=0,
+    parser.add_argument("--model",   default="llama3", choices=["llama3", "qwen3"])
+    parser.add_argument("--layer",   type=int, default=MIDDLE_LAYER)
+    parser.add_argument("--pca",     type=int, default=0,
                         help="PCA components (0=disabled)")
-    parser.add_argument("--ratio",  type=float, default=NO_CHANGE_RATIO,
+    parser.add_argument("--ratio",   type=float, default=NO_CHANGE_RATIO,
                         help="class-0 downsample ratio (default: 1.0)")
-    parser.add_argument("--C",      type=float, default=1.0,
+    parser.add_argument("--C",       type=float, default=1.0,
                         help="LR regularization strength")
-    parser.add_argument("--visualize",     action="store_true")
+    parser.add_argument("--samples", default=None,
+                        help="Path to pre-extracted .npz from prepare_samples.py "
+                             "(default: samples/{model}/samples_all.npz if it exists)")
+    parser.add_argument("--visualize",      action="store_true")
     parser.add_argument("--learning_curve", action="store_true")
-    parser.add_argument("--layer_sweep",   action="store_true",
+    parser.add_argument("--layer_sweep",    action="store_true",
                         help="Sweep all layers and plot CV F1 / AUC")
     args = parser.parse_args()
 
@@ -355,20 +382,45 @@ def main():
     print(f"  Ratio : {args.ratio}  C : {args.C}")
     print(f"{'='*50}\n")
 
-    print("[1] Loading labels...")
-    label_files = load_labels(args.model)
-    print(f"  Found {len(label_files)} label files")
+    # ── Resolve samples path ──
+    samples_path = None
+    if args.samples:
+        samples_path = Path(args.samples)
+    else:
+        default_npz = SAMPLE_DIR / args.model / "samples_all.npz"
+        if default_npz.exists():
+            samples_path = default_npz
+            print(f"  [auto] Using pre-extracted samples: {samples_path}")
 
-    # ── Layer Sweep (early exit) ──
+    # ── Layer Sweep ──
     if args.layer_sweep:
         print("\n[sweep] Sweeping all layers...")
-        plot_layer_sweep(args.model, label_files, args.pca, args.ratio, args.C,
-                         BASE_DIR / "plots")
+        if samples_path and samples_path.exists():
+            X_all, y_all = load_samples(samples_path)
+        else:
+            print("[1] Loading labels (legacy H5 mode)...")
+            label_files = load_labels(args.model)
+            print(f"  Found {len(label_files)} label files")
+            X_all, y_all = extract_all_layers(args.model, label_files)
+        plot_layer_sweep_from_array(X_all, y_all, args.model, args.pca, args.ratio, args.C,
+                                    BASE_DIR / "plots")
         return
 
     # ── Single layer flow ──
-    print("\n[2] Extracting features...")
-    X, y = extract_features(args.model, label_files, args.layer)
+    if samples_path and samples_path.exists():
+        print("[1] Loading pre-extracted samples...")
+        X_all, y_all = load_samples(samples_path)
+        layer = min(args.layer, X_all.shape[1] - 1)
+        X = X_all[:, layer, :]
+        y = y_all
+        print(f"  Using layer {layer} of {X_all.shape[1]}")
+    else:
+        print("[1] Loading labels (legacy H5 mode)...")
+        label_files = load_labels(args.model)
+        print(f"  Found {len(label_files)} label files")
+        print("\n[2] Extracting features...")
+        X, y = extract_features(args.model, label_files, args.layer)
+
     print(f"  Raw — steer(+1): {(y==1).sum()}, no_steer(0): {(y==0).sum()}")
 
     print("\n[3] Balancing...")

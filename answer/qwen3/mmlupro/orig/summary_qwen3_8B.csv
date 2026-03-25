@@ -1,0 +1,631 @@
+model,size,suite,refusal_enabled,refusal_label,task,role,correct,E_count,invalid,total,accuracy_percentage
+qwen3,8B,default,0,,Biology,neutral,296,0,55,351,84.33
+qwen3,8B,default,0,,Business,neutral,170,0,390,560,30.36
+qwen3,8B,default,0,,Chemistry,neutral,145,0,363,508,28.54
+qwen3,8B,default,0,,ComputerScience,neutral,40,0,20,60,66.67
+qwen3,8B,default,0,,EECS,neutral,21,0,55,76,27.63
+qwen3,8B,default,0,,Economics,neutral,261,0,139,400,65.25
+qwen3,8B,default,0,,ElectricCircuits,neutral,25,0,42,67,37.31
+qwen3,8B,default,0,,ElectricalMachines,neutral,44,0,58,102,43.14
+qwen3,8B,default,0,,Electromagnetics,neutral,31,0,69,100,31.0
+qwen3,8B,default,0,,ElectronicCommunications,neutral,43,0,72,115,37.39
+qwen3,8B,default,0,,Finance,neutral,28,0,46,74,37.84
+qwen3,8B,default,0,,FluidMechanics,neutral,19,0,46,65,29.23
+qwen3,8B,default,0,,Genetics,neutral,74,0,73,147,50.34
+qwen3,8B,default,0,,HeatTransfer,neutral,27,0,39,66,40.91
+qwen3,8B,default,0,,MachineDesign,neutral,17,0,53,70,24.29
+qwen3,8B,default,0,,Math,neutral,91,0,253,344,26.45
+qwen3,8B,default,0,,Mechanics,neutral,10,0,23,33,30.3
+qwen3,8B,default,0,,Optics,neutral,45,0,148,193,23.32
+qwen3,8B,default,0,,OrganicChemistry,neutral,5,0,12,17,29.41
+qwen3,8B,default,0,,PhysicalChemistry,neutral,70,0,146,216,32.41
+qwen3,8B,default,0,,Physics,neutral,148,0,347,495,29.9
+qwen3,8B,default,0,,Psychology,neutral,241,0,64,305,79.02
+qwen3,8B,default,0,,Thermodynamics,neutral,70,0,99,169,41.42
+qwen3,8B,default,0,,TransportPhenomena,neutral,53,0,95,148,35.81
+qwen3,8B,default,0,,abstract algebra,neutral,29,0,54,83,34.94
+qwen3,8B,default,0,,anatomy,neutral,35,0,44,79,44.3
+qwen3,8B,default,0,,astronomy,neutral,49,0,31,80,61.25
+qwen3,8B,default,0,,atkins,neutral,22,0,79,101,21.78
+qwen3,8B,default,0,,business ethics,neutral,19,0,24,43,44.19
+qwen3,8B,default,0,,calculus,neutral,13,0,27,40,32.5
+qwen3,8B,default,0,,chemmc,neutral,12,0,21,33,36.36
+qwen3,8B,default,0,,class,neutral,7,0,38,45,15.56
+qwen3,8B,default,0,,clinical knowledge,neutral,35,0,37,72,48.61
+qwen3,8B,default,0,,college biology,neutral,43,0,36,79,54.43
+qwen3,8B,default,0,,college chemistry,neutral,19,0,44,63,30.16
+qwen3,8B,default,0,,college computer science,neutral,37,0,39,76,48.68
+qwen3,8B,default,0,,college mathematics,neutral,21,0,53,74,28.38
+qwen3,8B,default,0,,college medicine,neutral,28,0,20,48,58.33
+qwen3,8B,default,0,,college physics,neutral,21,0,47,68,30.88
+qwen3,8B,default,0,,computer security,neutral,24,0,22,46,52.17
+qwen3,8B,default,0,,conceptual physics,neutral,78,0,58,136,57.35
+qwen3,8B,default,0,,diff,neutral,14,0,36,50,28.0
+qwen3,8B,default,0,,econometrics,neutral,38,0,47,85,44.71
+qwen3,8B,default,0,,electrical engineering,neutral,30,0,37,67,44.78
+qwen3,8B,default,0,,elementary mathematics,neutral,152,0,152,304,50.0
+qwen3,8B,default,0,,formal logic,neutral,37,0,61,98,37.76
+qwen3,8B,default,0,,fund,neutral,11,0,56,67,16.42
+qwen3,8B,default,0,,global facts,neutral,17,0,67,84,20.24
+qwen3,8B,default,0,,high school biology,neutral,97,0,43,140,69.29
+qwen3,8B,default,0,,high school chemistry,neutral,55,0,60,115,47.83
+qwen3,8B,default,0,,high school computer science,neutral,36,0,26,62,58.06
+qwen3,8B,default,0,,high school european history,neutral,21,0,48,69,30.43
+qwen3,8B,default,0,,high school geography,neutral,35,0,30,65,53.85
+qwen3,8B,default,0,,high school government and politics,neutral,35,0,16,51,68.63
+qwen3,8B,default,0,,high school macroeconomics,neutral,112,0,104,216,51.85
+qwen3,8B,default,0,,high school mathematics,neutral,58,0,184,242,23.97
+qwen3,8B,default,0,,high school microeconomics,neutral,88,0,55,143,61.54
+qwen3,8B,default,0,,high school physics,neutral,50,0,77,127,39.37
+qwen3,8B,default,0,,high school psychology,neutral,96,0,73,169,56.8
+qwen3,8B,default,0,,high school statistics,neutral,65,0,78,143,45.45
+qwen3,8B,default,0,,high school us history,neutral,23,0,60,83,27.71
+qwen3,8B,default,0,,high school world history,neutral,45,0,39,84,53.57
+qwen3,8B,default,0,,human aging,neutral,30,0,56,86,34.88
+qwen3,8B,default,0,,human sexuality,neutral,20,0,33,53,37.74
+qwen3,8B,default,0,,international law,neutral,18,0,37,55,32.73
+qwen3,8B,default,0,,jurisprudence,neutral,16,0,27,43,37.21
+qwen3,8B,default,0,,logical fallacies,neutral,40,0,33,73,54.79
+qwen3,8B,default,0,,machine learning,neutral,35,0,55,90,38.89
+qwen3,8B,default,0,,management,neutral,22,0,15,37,59.46
+qwen3,8B,default,0,,marketing,neutral,45,0,30,75,60.0
+qwen3,8B,default,0,,matter,neutral,5,0,42,47,10.64
+qwen3,8B,default,0,,medical genetics,neutral,36,0,18,54,66.67
+qwen3,8B,default,0,,miscellaneous,neutral,131,0,134,265,49.43
+qwen3,8B,default,0,,moral disputes,neutral,46,0,93,139,33.09
+qwen3,8B,default,0,,nutrition,neutral,100,0,79,179,55.87
+qwen3,8B,default,0,,philosophy,neutral,49,0,81,130,37.69
+qwen3,8B,default,0,,prehistory,neutral,73,0,72,145,50.34
+qwen3,8B,default,0,,professional accounting,neutral,58,0,137,195,29.74
+qwen3,8B,default,0,,professional law,neutral,253,0,750,1003,25.22
+qwen3,8B,default,0,,professional medicine,neutral,150,0,104,254,59.06
+qwen3,8B,default,0,,professional psychology,neutral,140,0,184,324,43.21
+qwen3,8B,default,0,,public relations,neutral,16,0,36,52,30.77
+qwen3,8B,default,0,,quan,neutral,8,0,24,32,25.0
+qwen3,8B,default,0,,security studies,neutral,41,0,46,87,47.13
+qwen3,8B,default,0,,sociology,neutral,20,0,32,52,38.46
+qwen3,8B,default,0,,stat,neutral,18,0,53,71,25.35
+qwen3,8B,default,0,,thermo,neutral,11,0,44,55,20.0
+qwen3,8B,default,0,,us foreign policy,neutral,7,0,13,20,35.0
+qwen3,8B,default,0,,virology,neutral,26,0,20,46,56.52
+qwen3,8B,default,0,,world religions,neutral,20,0,39,59,33.9
+qwen3,8B,default,0,,Biology,confident,303,0,48,351,86.32
+qwen3,8B,default,0,,Biology,unconfident,299,0,52,351,85.19
+qwen3,8B,default,0,,Business,confident,197,0,363,560,35.18
+qwen3,8B,default,0,,Business,unconfident,191,0,369,560,34.11
+qwen3,8B,default,0,,Chemistry,confident,168,0,340,508,33.07
+qwen3,8B,default,0,,Chemistry,unconfident,167,0,341,508,32.87
+qwen3,8B,default,0,,ComputerScience,confident,39,0,21,60,65.0
+qwen3,8B,default,0,,ComputerScience,unconfident,40,0,20,60,66.67
+qwen3,8B,default,0,,EECS,confident,24,0,52,76,31.58
+qwen3,8B,default,0,,EECS,unconfident,21,0,55,76,27.63
+qwen3,8B,default,0,,Economics,confident,253,0,147,400,63.25
+qwen3,8B,default,0,,Economics,unconfident,253,0,147,400,63.25
+qwen3,8B,default,0,,ElectricCircuits,confident,26,0,41,67,38.81
+qwen3,8B,default,0,,ElectricCircuits,unconfident,24,0,43,67,35.82
+qwen3,8B,default,0,,ElectricalMachines,confident,51,0,51,102,50.0
+qwen3,8B,default,0,,ElectricalMachines,unconfident,49,0,53,102,48.04
+qwen3,8B,default,0,,Electromagnetics,confident,37,0,63,100,37.0
+qwen3,8B,default,0,,Electromagnetics,unconfident,34,0,66,100,34.0
+qwen3,8B,default,0,,ElectronicCommunications,confident,50,0,65,115,43.48
+qwen3,8B,default,0,,ElectronicCommunications,unconfident,51,0,64,115,44.35
+qwen3,8B,default,0,,Finance,confident,25,0,49,74,33.78
+qwen3,8B,default,0,,Finance,unconfident,28,0,46,74,37.84
+qwen3,8B,default,0,,FluidMechanics,confident,20,0,45,65,30.77
+qwen3,8B,default,0,,FluidMechanics,unconfident,23,0,42,65,35.38
+qwen3,8B,default,0,,Genetics,confident,82,0,65,147,55.78
+qwen3,8B,default,0,,Genetics,unconfident,79,0,68,147,53.74
+qwen3,8B,default,0,,HeatTransfer,confident,30,0,36,66,45.45
+qwen3,8B,default,0,,HeatTransfer,unconfident,32,0,34,66,48.48
+qwen3,8B,default,0,,MachineDesign,confident,21,0,49,70,30.0
+qwen3,8B,default,0,,MachineDesign,unconfident,22,0,48,70,31.43
+qwen3,8B,default,0,,Math,confident,92,0,252,344,26.74
+qwen3,8B,default,0,,Math,unconfident,100,0,244,344,29.07
+qwen3,8B,default,0,,Mechanics,confident,12,0,21,33,36.36
+qwen3,8B,default,0,,Mechanics,unconfident,11,0,22,33,33.33
+qwen3,8B,default,0,,Optics,confident,57,0,136,193,29.53
+qwen3,8B,default,0,,Optics,unconfident,58,0,135,193,30.05
+qwen3,8B,default,0,,OrganicChemistry,confident,4,0,13,17,23.53
+qwen3,8B,default,0,,OrganicChemistry,unconfident,4,0,13,17,23.53
+qwen3,8B,default,0,,PhysicalChemistry,confident,77,0,139,216,35.65
+qwen3,8B,default,0,,PhysicalChemistry,unconfident,84,0,132,216,38.89
+qwen3,8B,default,0,,Physics,confident,168,0,327,495,33.94
+qwen3,8B,default,0,,Physics,unconfident,157,0,338,495,31.72
+qwen3,8B,default,0,,Psychology,confident,241,0,64,305,79.02
+qwen3,8B,default,0,,Psychology,unconfident,233,0,72,305,76.39
+qwen3,8B,default,0,,Thermodynamics,confident,78,0,91,169,46.15
+qwen3,8B,default,0,,Thermodynamics,unconfident,76,0,93,169,44.97
+qwen3,8B,default,0,,TransportPhenomena,confident,66,0,82,148,44.59
+qwen3,8B,default,0,,TransportPhenomena,unconfident,62,0,86,148,41.89
+qwen3,8B,default,0,,abstract algebra,confident,32,0,51,83,38.55
+qwen3,8B,default,0,,abstract algebra,unconfident,27,0,56,83,32.53
+qwen3,8B,default,0,,anatomy,confident,34,0,45,79,43.04
+qwen3,8B,default,0,,anatomy,unconfident,34,0,45,79,43.04
+qwen3,8B,default,0,,astronomy,confident,49,0,31,80,61.25
+qwen3,8B,default,0,,astronomy,unconfident,48,0,32,80,60.0
+qwen3,8B,default,0,,atkins,confident,22,0,79,101,21.78
+qwen3,8B,default,0,,atkins,unconfident,26,0,75,101,25.74
+qwen3,8B,default,0,,business ethics,confident,21,0,22,43,48.84
+qwen3,8B,default,0,,business ethics,unconfident,20,0,23,43,46.51
+qwen3,8B,default,0,,calculus,confident,13,0,27,40,32.5
+qwen3,8B,default,0,,calculus,unconfident,13,0,27,40,32.5
+qwen3,8B,default,0,,chemmc,confident,14,0,19,33,42.42
+qwen3,8B,default,0,,chemmc,unconfident,13,0,20,33,39.39
+qwen3,8B,default,0,,class,confident,7,0,38,45,15.56
+qwen3,8B,default,0,,class,unconfident,8,0,37,45,17.78
+qwen3,8B,default,0,,clinical knowledge,confident,37,0,35,72,51.39
+qwen3,8B,default,0,,clinical knowledge,unconfident,33,0,39,72,45.83
+qwen3,8B,default,0,,college biology,confident,44,0,35,79,55.7
+qwen3,8B,default,0,,college biology,unconfident,39,0,40,79,49.37
+qwen3,8B,default,0,,college chemistry,confident,18,0,45,63,28.57
+qwen3,8B,default,0,,college chemistry,unconfident,20,0,43,63,31.75
+qwen3,8B,default,0,,college computer science,confident,33,0,43,76,43.42
+qwen3,8B,default,0,,college computer science,unconfident,36,0,40,76,47.37
+qwen3,8B,default,0,,college mathematics,confident,24,0,50,74,32.43
+qwen3,8B,default,0,,college mathematics,unconfident,25,0,49,74,33.78
+qwen3,8B,default,0,,college medicine,confident,31,0,17,48,64.58
+qwen3,8B,default,0,,college medicine,unconfident,30,0,18,48,62.5
+qwen3,8B,default,0,,college physics,confident,23,0,45,68,33.82
+qwen3,8B,default,0,,college physics,unconfident,24,0,44,68,35.29
+qwen3,8B,default,0,,computer security,confident,24,0,22,46,52.17
+qwen3,8B,default,0,,computer security,unconfident,24,0,22,46,52.17
+qwen3,8B,default,0,,conceptual physics,confident,79,0,57,136,58.09
+qwen3,8B,default,0,,conceptual physics,unconfident,76,0,60,136,55.88
+qwen3,8B,default,0,,diff,confident,15,0,35,50,30.0
+qwen3,8B,default,0,,diff,unconfident,13,0,37,50,26.0
+qwen3,8B,default,0,,econometrics,confident,38,0,47,85,44.71
+qwen3,8B,default,0,,econometrics,unconfident,38,0,47,85,44.71
+qwen3,8B,default,0,,electrical engineering,confident,28,0,39,67,41.79
+qwen3,8B,default,0,,electrical engineering,unconfident,29,0,38,67,43.28
+qwen3,8B,default,0,,elementary mathematics,confident,151,0,153,304,49.67
+qwen3,8B,default,0,,elementary mathematics,unconfident,153,0,151,304,50.33
+qwen3,8B,default,0,,formal logic,confident,37,0,61,98,37.76
+qwen3,8B,default,0,,formal logic,unconfident,42,0,56,98,42.86
+qwen3,8B,default,0,,fund,confident,12,0,55,67,17.91
+qwen3,8B,default,0,,fund,unconfident,13,0,54,67,19.4
+qwen3,8B,default,0,,global facts,confident,17,0,67,84,20.24
+qwen3,8B,default,0,,global facts,unconfident,15,0,69,84,17.86
+qwen3,8B,default,0,,high school biology,confident,96,0,44,140,68.57
+qwen3,8B,default,0,,high school biology,unconfident,93,0,47,140,66.43
+qwen3,8B,default,0,,high school chemistry,confident,59,0,56,115,51.3
+qwen3,8B,default,0,,high school chemistry,unconfident,57,0,58,115,49.57
+qwen3,8B,default,0,,high school computer science,confident,38,0,24,62,61.29
+qwen3,8B,default,0,,high school computer science,unconfident,37,0,25,62,59.68
+qwen3,8B,default,0,,high school european history,confident,21,0,48,69,30.43
+qwen3,8B,default,0,,high school european history,unconfident,23,0,46,69,33.33
+qwen3,8B,default,0,,high school geography,confident,34,0,31,65,52.31
+qwen3,8B,default,0,,high school geography,unconfident,33,0,32,65,50.77
+qwen3,8B,default,0,,high school government and politics,confident,36,0,15,51,70.59
+qwen3,8B,default,0,,high school government and politics,unconfident,30,0,21,51,58.82
+qwen3,8B,default,0,,high school macroeconomics,confident,109,0,107,216,50.46
+qwen3,8B,default,0,,high school macroeconomics,unconfident,108,0,108,216,50.0
+qwen3,8B,default,0,,high school mathematics,confident,59,0,183,242,24.38
+qwen3,8B,default,0,,high school mathematics,unconfident,57,0,185,242,23.55
+qwen3,8B,default,0,,high school microeconomics,confident,92,0,51,143,64.34
+qwen3,8B,default,0,,high school microeconomics,unconfident,86,0,57,143,60.14
+qwen3,8B,default,0,,high school physics,confident,57,0,70,127,44.88
+qwen3,8B,default,0,,high school physics,unconfident,55,0,72,127,43.31
+qwen3,8B,default,0,,high school psychology,confident,94,0,75,169,55.62
+qwen3,8B,default,0,,high school psychology,unconfident,93,0,76,169,55.03
+qwen3,8B,default,0,,high school statistics,confident,65,0,78,143,45.45
+qwen3,8B,default,0,,high school statistics,unconfident,65,0,78,143,45.45
+qwen3,8B,default,0,,high school us history,confident,26,0,57,83,31.33
+qwen3,8B,default,0,,high school us history,unconfident,25,0,58,83,30.12
+qwen3,8B,default,0,,high school world history,confident,45,0,39,84,53.57
+qwen3,8B,default,0,,high school world history,unconfident,44,0,40,84,52.38
+qwen3,8B,default,0,,human aging,confident,32,0,54,86,37.21
+qwen3,8B,default,0,,human aging,unconfident,32,0,54,86,37.21
+qwen3,8B,default,0,,human sexuality,confident,20,0,33,53,37.74
+qwen3,8B,default,0,,human sexuality,unconfident,22,0,31,53,41.51
+qwen3,8B,default,0,,international law,confident,20,0,35,55,36.36
+qwen3,8B,default,0,,international law,unconfident,19,0,36,55,34.55
+qwen3,8B,default,0,,jurisprudence,confident,16,0,27,43,37.21
+qwen3,8B,default,0,,jurisprudence,unconfident,16,0,27,43,37.21
+qwen3,8B,default,0,,logical fallacies,confident,41,0,32,73,56.16
+qwen3,8B,default,0,,logical fallacies,unconfident,41,0,32,73,56.16
+qwen3,8B,default,0,,machine learning,confident,32,0,58,90,35.56
+qwen3,8B,default,0,,machine learning,unconfident,30,0,60,90,33.33
+qwen3,8B,default,0,,management,confident,20,0,17,37,54.05
+qwen3,8B,default,0,,management,unconfident,17,0,20,37,45.95
+qwen3,8B,default,0,,marketing,confident,42,0,33,75,56.0
+qwen3,8B,default,0,,marketing,unconfident,39,0,36,75,52.0
+qwen3,8B,default,0,,matter,confident,9,0,38,47,19.15
+qwen3,8B,default,0,,matter,unconfident,10,0,37,47,21.28
+qwen3,8B,default,0,,medical genetics,confident,36,0,18,54,66.67
+qwen3,8B,default,0,,medical genetics,unconfident,35,0,19,54,64.81
+qwen3,8B,default,0,,miscellaneous,confident,135,0,130,265,50.94
+qwen3,8B,default,0,,miscellaneous,unconfident,132,0,133,265,49.81
+qwen3,8B,default,0,,moral disputes,confident,42,0,97,139,30.22
+qwen3,8B,default,0,,moral disputes,unconfident,45,0,94,139,32.37
+qwen3,8B,default,0,,nutrition,confident,102,0,77,179,56.98
+qwen3,8B,default,0,,nutrition,unconfident,103,0,76,179,57.54
+qwen3,8B,default,0,,philosophy,confident,45,0,85,130,34.62
+qwen3,8B,default,0,,philosophy,unconfident,48,0,82,130,36.92
+qwen3,8B,default,0,,prehistory,confident,73,0,72,145,50.34
+qwen3,8B,default,0,,prehistory,unconfident,71,0,74,145,48.97
+qwen3,8B,default,0,,professional accounting,confident,62,0,133,195,31.79
+qwen3,8B,default,0,,professional accounting,unconfident,64,0,131,195,32.82
+qwen3,8B,default,0,,professional law,confident,279,0,724,1003,27.82
+qwen3,8B,default,0,,professional law,unconfident,280,0,723,1003,27.92
+qwen3,8B,default,0,,professional medicine,confident,157,0,97,254,61.81
+qwen3,8B,default,0,,professional medicine,unconfident,148,0,106,254,58.27
+qwen3,8B,default,0,,professional psychology,confident,138,0,186,324,42.59
+qwen3,8B,default,0,,professional psychology,unconfident,140,0,184,324,43.21
+qwen3,8B,default,0,,public relations,confident,19,0,33,52,36.54
+qwen3,8B,default,0,,public relations,unconfident,15,0,37,52,28.85
+qwen3,8B,default,0,,quan,confident,6,0,26,32,18.75
+qwen3,8B,default,0,,quan,unconfident,7,0,25,32,21.88
+qwen3,8B,default,0,,security studies,confident,41,0,46,87,47.13
+qwen3,8B,default,0,,security studies,unconfident,36,0,51,87,41.38
+qwen3,8B,default,0,,sociology,confident,24,0,28,52,46.15
+qwen3,8B,default,0,,sociology,unconfident,20,0,32,52,38.46
+qwen3,8B,default,0,,stat,confident,18,0,53,71,25.35
+qwen3,8B,default,0,,stat,unconfident,22,0,49,71,30.99
+qwen3,8B,default,0,,thermo,confident,15,0,40,55,27.27
+qwen3,8B,default,0,,thermo,unconfident,16,0,39,55,29.09
+qwen3,8B,default,0,,us foreign policy,confident,7,0,13,20,35.0
+qwen3,8B,default,0,,us foreign policy,unconfident,8,0,12,20,40.0
+qwen3,8B,default,0,,virology,confident,26,0,20,46,56.52
+qwen3,8B,default,0,,virology,unconfident,24,0,22,46,52.17
+qwen3,8B,default,0,,world religions,confident,22,0,37,59,37.29
+qwen3,8B,default,0,,world religions,unconfident,20,0,39,59,33.9
+qwen3,8B,default,0,,Biology,biology expert,303,0,48,351,86.32
+qwen3,8B,default,0,,Biology,non biology expert,298,0,53,351,84.9
+qwen3,8B,default,0,,Biology,biology student,302,0,49,351,86.04
+qwen3,8B,default,0,,Biology,person,300,0,51,351,85.47
+qwen3,8B,default,0,,Business,business expert,162,0,398,560,28.93
+qwen3,8B,default,0,,Business,non business expert,160,0,400,560,28.57
+qwen3,8B,default,0,,Business,business student,160,0,400,560,28.57
+qwen3,8B,default,0,,Business,person,173,0,387,560,30.89
+qwen3,8B,default,0,,Chemistry,chemistry expert,151,0,357,508,29.72
+qwen3,8B,default,0,,Chemistry,non chemistry expert,148,0,360,508,29.13
+qwen3,8B,default,0,,Chemistry,chemistry student,161,0,347,508,31.69
+qwen3,8B,default,0,,Chemistry,person,148,0,360,508,29.13
+qwen3,8B,default,0,,ComputerScience,computerscience expert,40,0,20,60,66.67
+qwen3,8B,default,0,,ComputerScience,non computerscience expert,42,0,18,60,70.0
+qwen3,8B,default,0,,ComputerScience,computerscience student,41,0,19,60,68.33
+qwen3,8B,default,0,,ComputerScience,person,41,0,19,60,68.33
+qwen3,8B,default,0,,EECS,eecs expert,22,0,54,76,28.95
+qwen3,8B,default,0,,EECS,non eecs expert,20,0,56,76,26.32
+qwen3,8B,default,0,,EECS,eecs student,22,0,54,76,28.95
+qwen3,8B,default,0,,EECS,person,22,0,54,76,28.95
+qwen3,8B,default,0,,Economics,economics expert,258,0,142,400,64.5
+qwen3,8B,default,0,,Economics,non economics expert,246,0,154,400,61.5
+qwen3,8B,default,0,,Economics,economics student,254,0,146,400,63.5
+qwen3,8B,default,0,,Economics,person,252,0,148,400,63.0
+qwen3,8B,default,0,,ElectricCircuits,electriccircuits expert,21,0,46,67,31.34
+qwen3,8B,default,0,,ElectricCircuits,non electriccircuits expert,19,0,48,67,28.36
+qwen3,8B,default,0,,ElectricCircuits,electriccircuits student,22,0,45,67,32.84
+qwen3,8B,default,0,,ElectricCircuits,person,25,0,42,67,37.31
+qwen3,8B,default,0,,ElectricalMachines,electricalmachines expert,43,0,59,102,42.16
+qwen3,8B,default,0,,ElectricalMachines,non electricalmachines expert,40,0,62,102,39.22
+qwen3,8B,default,0,,ElectricalMachines,electricalmachines student,45,0,57,102,44.12
+qwen3,8B,default,0,,ElectricalMachines,person,43,0,59,102,42.16
+qwen3,8B,default,0,,Electromagnetics,electromagnetics expert,31,0,69,100,31.0
+qwen3,8B,default,0,,Electromagnetics,non electromagnetics expert,24,0,76,100,24.0
+qwen3,8B,default,0,,Electromagnetics,electromagnetics student,31,0,69,100,31.0
+qwen3,8B,default,0,,Electromagnetics,person,29,0,71,100,29.0
+qwen3,8B,default,0,,ElectronicCommunications,electroniccommunications expert,47,0,68,115,40.87
+qwen3,8B,default,0,,ElectronicCommunications,non electroniccommunications expert,43,0,72,115,37.39
+qwen3,8B,default,0,,ElectronicCommunications,electroniccommunications student,46,0,69,115,40.0
+qwen3,8B,default,0,,ElectronicCommunications,person,43,0,72,115,37.39
+qwen3,8B,default,0,,Finance,finance expert,27,0,47,74,36.49
+qwen3,8B,default,0,,Finance,non finance expert,26,0,48,74,35.14
+qwen3,8B,default,0,,Finance,finance student,26,0,48,74,35.14
+qwen3,8B,default,0,,Finance,person,26,0,48,74,35.14
+qwen3,8B,default,0,,FluidMechanics,fluidmechanics expert,20,0,45,65,30.77
+qwen3,8B,default,0,,FluidMechanics,non fluidmechanics expert,19,0,46,65,29.23
+qwen3,8B,default,0,,FluidMechanics,fluidmechanics student,19,0,46,65,29.23
+qwen3,8B,default,0,,FluidMechanics,person,19,0,46,65,29.23
+qwen3,8B,default,0,,Genetics,genetics expert,81,0,66,147,55.1
+qwen3,8B,default,0,,Genetics,non genetics expert,76,0,71,147,51.7
+qwen3,8B,default,0,,Genetics,genetics student,83,0,64,147,56.46
+qwen3,8B,default,0,,Genetics,person,76,0,71,147,51.7
+qwen3,8B,default,0,,HeatTransfer,heattransfer expert,30,0,36,66,45.45
+qwen3,8B,default,0,,HeatTransfer,non heattransfer expert,27,0,39,66,40.91
+qwen3,8B,default,0,,HeatTransfer,heattransfer student,27,0,39,66,40.91
+qwen3,8B,default,0,,HeatTransfer,person,25,0,41,66,37.88
+qwen3,8B,default,0,,MachineDesign,machinedesign expert,19,0,51,70,27.14
+qwen3,8B,default,0,,MachineDesign,non machinedesign expert,18,0,52,70,25.71
+qwen3,8B,default,0,,MachineDesign,machinedesign student,20,0,50,70,28.57
+qwen3,8B,default,0,,MachineDesign,person,17,0,53,70,24.29
+qwen3,8B,default,0,,Math,math expert,91,0,253,344,26.45
+qwen3,8B,default,0,,Math,non math expert,84,0,260,344,24.42
+qwen3,8B,default,0,,Math,math student,86,0,258,344,25.0
+qwen3,8B,default,0,,Math,person,85,0,259,344,24.71
+qwen3,8B,default,0,,Mechanics,mechanics expert,10,0,23,33,30.3
+qwen3,8B,default,0,,Mechanics,non mechanics expert,10,0,23,33,30.3
+qwen3,8B,default,0,,Mechanics,mechanics student,11,0,22,33,33.33
+qwen3,8B,default,0,,Mechanics,person,10,0,23,33,30.3
+qwen3,8B,default,0,,Optics,optics expert,48,0,145,193,24.87
+qwen3,8B,default,0,,Optics,non optics expert,51,0,142,193,26.42
+qwen3,8B,default,0,,Optics,optics student,52,0,141,193,26.94
+qwen3,8B,default,0,,Optics,person,47,0,146,193,24.35
+qwen3,8B,default,0,,OrganicChemistry,organicchemistry expert,4,0,13,17,23.53
+qwen3,8B,default,0,,OrganicChemistry,non organicchemistry expert,3,0,14,17,17.65
+qwen3,8B,default,0,,OrganicChemistry,organicchemistry student,4,0,13,17,23.53
+qwen3,8B,default,0,,OrganicChemistry,person,3,0,14,17,17.65
+qwen3,8B,default,0,,PhysicalChemistry,physicalchemistry expert,75,0,141,216,34.72
+qwen3,8B,default,0,,PhysicalChemistry,non physicalchemistry expert,68,0,148,216,31.48
+qwen3,8B,default,0,,PhysicalChemistry,physicalchemistry student,76,0,140,216,35.19
+qwen3,8B,default,0,,PhysicalChemistry,person,68,0,148,216,31.48
+qwen3,8B,default,0,,Physics,physics expert,153,0,342,495,30.91
+qwen3,8B,default,0,,Physics,non physics expert,141,0,354,495,28.48
+qwen3,8B,default,0,,Physics,physics student,158,0,337,495,31.92
+qwen3,8B,default,0,,Physics,person,148,0,347,495,29.9
+qwen3,8B,default,0,,Psychology,psychology expert,240,0,65,305,78.69
+qwen3,8B,default,0,,Psychology,non psychology expert,236,0,69,305,77.38
+qwen3,8B,default,0,,Psychology,psychology student,239,0,66,305,78.36
+qwen3,8B,default,0,,Psychology,person,239,0,66,305,78.36
+qwen3,8B,default,0,,Thermodynamics,thermodynamics expert,77,0,92,169,45.56
+qwen3,8B,default,0,,Thermodynamics,non thermodynamics expert,68,0,101,169,40.24
+qwen3,8B,default,0,,Thermodynamics,thermodynamics student,73,0,96,169,43.2
+qwen3,8B,default,0,,Thermodynamics,person,73,0,96,169,43.2
+qwen3,8B,default,0,,TransportPhenomena,transportphenomena expert,61,0,87,148,41.22
+qwen3,8B,default,0,,TransportPhenomena,non transportphenomena expert,53,0,95,148,35.81
+qwen3,8B,default,0,,TransportPhenomena,transportphenomena student,57,0,91,148,38.51
+qwen3,8B,default,0,,TransportPhenomena,person,59,0,89,148,39.86
+qwen3,8B,default,0,,abstract algebra,abstract algebra expert,31,0,52,83,37.35
+qwen3,8B,default,0,,abstract algebra,non abstract algebra expert,31,0,52,83,37.35
+qwen3,8B,default,0,,abstract algebra,abstract algebra student,32,0,51,83,38.55
+qwen3,8B,default,0,,abstract algebra,person,29,0,54,83,34.94
+qwen3,8B,default,0,,anatomy,anatomy expert,36,0,43,79,45.57
+qwen3,8B,default,0,,anatomy,non anatomy expert,33,0,46,79,41.77
+qwen3,8B,default,0,,anatomy,anatomy student,34,0,45,79,43.04
+qwen3,8B,default,0,,anatomy,person,36,0,43,79,45.57
+qwen3,8B,default,0,,astronomy,astronomy expert,49,0,31,80,61.25
+qwen3,8B,default,0,,astronomy,non astronomy expert,48,0,32,80,60.0
+qwen3,8B,default,0,,astronomy,astronomy student,50,0,30,80,62.5
+qwen3,8B,default,0,,astronomy,person,49,0,31,80,61.25
+qwen3,8B,default,0,,atkins,atkins expert,24,0,77,101,23.76
+qwen3,8B,default,0,,atkins,non atkins expert,22,0,79,101,21.78
+qwen3,8B,default,0,,atkins,atkins student,23,0,78,101,22.77
+qwen3,8B,default,0,,atkins,person,22,0,79,101,21.78
+qwen3,8B,default,0,,business ethics,business ethics expert,20,0,23,43,46.51
+qwen3,8B,default,0,,business ethics,non business ethics expert,19,0,24,43,44.19
+qwen3,8B,default,0,,business ethics,business ethics student,21,0,22,43,48.84
+qwen3,8B,default,0,,business ethics,person,21,0,22,43,48.84
+qwen3,8B,default,0,,calculus,calculus expert,13,0,27,40,32.5
+qwen3,8B,default,0,,calculus,non calculus expert,11,0,29,40,27.5
+qwen3,8B,default,0,,calculus,calculus student,13,0,27,40,32.5
+qwen3,8B,default,0,,calculus,person,11,0,29,40,27.5
+qwen3,8B,default,0,,chemmc,chemmc expert,13,0,20,33,39.39
+qwen3,8B,default,0,,chemmc,non chemmc expert,13,0,20,33,39.39
+qwen3,8B,default,0,,chemmc,chemmc student,14,0,19,33,42.42
+qwen3,8B,default,0,,chemmc,person,14,0,19,33,42.42
+qwen3,8B,default,0,,class,class expert,6,0,39,45,13.33
+qwen3,8B,default,0,,class,non class expert,5,0,40,45,11.11
+qwen3,8B,default,0,,class,class student,5,0,40,45,11.11
+qwen3,8B,default,0,,class,person,6,0,39,45,13.33
+qwen3,8B,default,0,,clinical knowledge,clinical knowledge expert,37,0,35,72,51.39
+qwen3,8B,default,0,,clinical knowledge,non clinical knowledge expert,39,0,33,72,54.17
+qwen3,8B,default,0,,clinical knowledge,clinical knowledge student,37,0,35,72,51.39
+qwen3,8B,default,0,,clinical knowledge,person,35,0,37,72,48.61
+qwen3,8B,default,0,,college biology,college biology expert,45,0,34,79,56.96
+qwen3,8B,default,0,,college biology,non college biology expert,42,0,37,79,53.16
+qwen3,8B,default,0,,college biology,college biology student,43,0,36,79,54.43
+qwen3,8B,default,0,,college biology,person,41,0,38,79,51.9
+qwen3,8B,default,0,,college chemistry,college chemistry expert,21,0,42,63,33.33
+qwen3,8B,default,0,,college chemistry,non college chemistry expert,21,0,42,63,33.33
+qwen3,8B,default,0,,college chemistry,college chemistry student,20,0,43,63,31.75
+qwen3,8B,default,0,,college chemistry,person,20,0,43,63,31.75
+qwen3,8B,default,0,,college computer science,college computer science expert,36,0,40,76,47.37
+qwen3,8B,default,0,,college computer science,non college computer science expert,35,0,41,76,46.05
+qwen3,8B,default,0,,college computer science,college computer science student,37,0,39,76,48.68
+qwen3,8B,default,0,,college computer science,person,34,0,42,76,44.74
+qwen3,8B,default,0,,college mathematics,college mathematics expert,24,0,50,74,32.43
+qwen3,8B,default,0,,college mathematics,non college mathematics expert,21,0,53,74,28.38
+qwen3,8B,default,0,,college mathematics,college mathematics student,23,0,51,74,31.08
+qwen3,8B,default,0,,college mathematics,person,21,0,53,74,28.38
+qwen3,8B,default,0,,college medicine,college medicine expert,29,0,19,48,60.42
+qwen3,8B,default,0,,college medicine,non college medicine expert,29,0,19,48,60.42
+qwen3,8B,default,0,,college medicine,college medicine student,29,0,19,48,60.42
+qwen3,8B,default,0,,college medicine,person,30,0,18,48,62.5
+qwen3,8B,default,0,,college physics,college physics expert,27,0,41,68,39.71
+qwen3,8B,default,0,,college physics,non college physics expert,24,0,44,68,35.29
+qwen3,8B,default,0,,college physics,college physics student,26,0,42,68,38.24
+qwen3,8B,default,0,,college physics,person,24,0,44,68,35.29
+qwen3,8B,default,0,,computer security,computer security expert,24,0,22,46,52.17
+qwen3,8B,default,0,,computer security,non computer security expert,23,0,23,46,50.0
+qwen3,8B,default,0,,computer security,computer security student,25,0,21,46,54.35
+qwen3,8B,default,0,,computer security,person,24,0,22,46,52.17
+qwen3,8B,default,0,,conceptual physics,conceptual physics expert,83,0,53,136,61.03
+qwen3,8B,default,0,,conceptual physics,non conceptual physics expert,79,0,57,136,58.09
+qwen3,8B,default,0,,conceptual physics,conceptual physics student,81,0,55,136,59.56
+qwen3,8B,default,0,,conceptual physics,person,83,0,53,136,61.03
+qwen3,8B,default,0,,diff,diff expert,14,0,36,50,28.0
+qwen3,8B,default,0,,diff,non diff expert,13,0,37,50,26.0
+qwen3,8B,default,0,,diff,diff student,13,0,37,50,26.0
+qwen3,8B,default,0,,diff,person,13,0,37,50,26.0
+qwen3,8B,default,0,,econometrics,econometrics expert,39,0,46,85,45.88
+qwen3,8B,default,0,,econometrics,non econometrics expert,38,0,47,85,44.71
+qwen3,8B,default,0,,econometrics,econometrics student,39,0,46,85,45.88
+qwen3,8B,default,0,,econometrics,person,38,0,47,85,44.71
+qwen3,8B,default,0,,electrical engineering,electrical engineering expert,27,0,40,67,40.3
+qwen3,8B,default,0,,electrical engineering,non electrical engineering expert,26,0,41,67,38.81
+qwen3,8B,default,0,,electrical engineering,electrical engineering student,29,0,38,67,43.28
+qwen3,8B,default,0,,electrical engineering,person,26,0,41,67,38.81
+qwen3,8B,default,0,,elementary mathematics,elementary mathematics expert,153,0,151,304,50.33
+qwen3,8B,default,0,,elementary mathematics,non elementary mathematics expert,152,0,152,304,50.0
+qwen3,8B,default,0,,elementary mathematics,elementary mathematics student,150,0,154,304,49.34
+qwen3,8B,default,0,,elementary mathematics,person,150,0,154,304,49.34
+qwen3,8B,default,0,,formal logic,formal logic expert,39,0,59,98,39.8
+qwen3,8B,default,0,,formal logic,non formal logic expert,38,0,60,98,38.78
+qwen3,8B,default,0,,formal logic,formal logic student,39,0,59,98,39.8
+qwen3,8B,default,0,,formal logic,person,38,0,60,98,38.78
+qwen3,8B,default,0,,fund,fund expert,11,0,56,67,16.42
+qwen3,8B,default,0,,fund,non fund expert,12,0,55,67,17.91
+qwen3,8B,default,0,,fund,fund student,11,0,56,67,16.42
+qwen3,8B,default,0,,fund,person,11,0,56,67,16.42
+qwen3,8B,default,0,,global facts,global facts expert,16,0,68,84,19.05
+qwen3,8B,default,0,,global facts,non global facts expert,18,0,66,84,21.43
+qwen3,8B,default,0,,global facts,global facts student,15,0,69,84,17.86
+qwen3,8B,default,0,,global facts,person,18,0,66,84,21.43
+qwen3,8B,default,0,,high school biology,high school biology expert,101,0,39,140,72.14
+qwen3,8B,default,0,,high school biology,non high school biology expert,96,0,44,140,68.57
+qwen3,8B,default,0,,high school biology,high school biology student,99,0,41,140,70.71
+qwen3,8B,default,0,,high school biology,person,96,0,44,140,68.57
+qwen3,8B,default,0,,high school chemistry,high school chemistry expert,57,0,58,115,49.57
+qwen3,8B,default,0,,high school chemistry,non high school chemistry expert,58,0,57,115,50.43
+qwen3,8B,default,0,,high school chemistry,high school chemistry student,59,0,56,115,51.3
+qwen3,8B,default,0,,high school chemistry,person,60,0,55,115,52.17
+qwen3,8B,default,0,,high school computer science,high school computer science expert,38,0,24,62,61.29
+qwen3,8B,default,0,,high school computer science,non high school computer science expert,38,0,24,62,61.29
+qwen3,8B,default,0,,high school computer science,high school computer science student,37,0,25,62,59.68
+qwen3,8B,default,0,,high school computer science,person,39,0,23,62,62.9
+qwen3,8B,default,0,,high school european history,high school european history expert,18,0,51,69,26.09
+qwen3,8B,default,0,,high school european history,non high school european history expert,19,0,50,69,27.54
+qwen3,8B,default,0,,high school european history,high school european history student,17,0,52,69,24.64
+qwen3,8B,default,0,,high school european history,person,22,0,47,69,31.88
+qwen3,8B,default,0,,high school geography,high school geography expert,36,0,29,65,55.38
+qwen3,8B,default,0,,high school geography,non high school geography expert,35,0,30,65,53.85
+qwen3,8B,default,0,,high school geography,high school geography student,34,0,31,65,52.31
+qwen3,8B,default,0,,high school geography,person,35,0,30,65,53.85
+qwen3,8B,default,0,,high school government and politics,high school government and politics expert,34,0,17,51,66.67
+qwen3,8B,default,0,,high school government and politics,non high school government and politics expert,35,0,16,51,68.63
+qwen3,8B,default,0,,high school government and politics,high school government and politics student,31,0,20,51,60.78
+qwen3,8B,default,0,,high school government and politics,person,32,0,19,51,62.75
+qwen3,8B,default,0,,high school macroeconomics,high school macroeconomics expert,113,0,103,216,52.31
+qwen3,8B,default,0,,high school macroeconomics,non high school macroeconomics expert,110,0,106,216,50.93
+qwen3,8B,default,0,,high school macroeconomics,high school macroeconomics student,112,0,104,216,51.85
+qwen3,8B,default,0,,high school macroeconomics,person,113,0,103,216,52.31
+qwen3,8B,default,0,,high school mathematics,high school mathematics expert,52,0,190,242,21.49
+qwen3,8B,default,0,,high school mathematics,non high school mathematics expert,54,0,188,242,22.31
+qwen3,8B,default,0,,high school mathematics,high school mathematics student,53,0,189,242,21.9
+qwen3,8B,default,0,,high school mathematics,person,56,0,186,242,23.14
+qwen3,8B,default,0,,high school microeconomics,high school microeconomics expert,89,0,54,143,62.24
+qwen3,8B,default,0,,high school microeconomics,non high school microeconomics expert,89,0,54,143,62.24
+qwen3,8B,default,0,,high school microeconomics,high school microeconomics student,92,0,51,143,64.34
+qwen3,8B,default,0,,high school microeconomics,person,89,0,54,143,62.24
+qwen3,8B,default,0,,high school physics,high school physics expert,55,0,72,127,43.31
+qwen3,8B,default,0,,high school physics,non high school physics expert,50,0,77,127,39.37
+qwen3,8B,default,0,,high school physics,high school physics student,55,0,72,127,43.31
+qwen3,8B,default,0,,high school physics,person,53,0,74,127,41.73
+qwen3,8B,default,0,,high school psychology,high school psychology expert,92,0,77,169,54.44
+qwen3,8B,default,0,,high school psychology,non high school psychology expert,91,0,78,169,53.85
+qwen3,8B,default,0,,high school psychology,high school psychology student,92,0,77,169,54.44
+qwen3,8B,default,0,,high school psychology,person,93,0,76,169,55.03
+qwen3,8B,default,0,,high school statistics,high school statistics expert,65,0,78,143,45.45
+qwen3,8B,default,0,,high school statistics,non high school statistics expert,63,0,80,143,44.06
+qwen3,8B,default,0,,high school statistics,high school statistics student,67,0,76,143,46.85
+qwen3,8B,default,0,,high school statistics,person,64,0,79,143,44.76
+qwen3,8B,default,0,,high school us history,high school us history expert,25,0,58,83,30.12
+qwen3,8B,default,0,,high school us history,non high school us history expert,26,0,57,83,31.33
+qwen3,8B,default,0,,high school us history,high school us history student,26,0,57,83,31.33
+qwen3,8B,default,0,,high school us history,person,27,0,56,83,32.53
+qwen3,8B,default,0,,high school world history,high school world history expert,43,0,41,84,51.19
+qwen3,8B,default,0,,high school world history,non high school world history expert,41,0,43,84,48.81
+qwen3,8B,default,0,,high school world history,high school world history student,40,0,44,84,47.62
+qwen3,8B,default,0,,high school world history,person,43,0,41,84,51.19
+qwen3,8B,default,0,,human aging,human aging expert,33,0,53,86,38.37
+qwen3,8B,default,0,,human aging,non human aging expert,30,0,56,86,34.88
+qwen3,8B,default,0,,human aging,human aging student,32,0,54,86,37.21
+qwen3,8B,default,0,,human aging,person,30,0,56,86,34.88
+qwen3,8B,default,0,,human sexuality,human sexuality expert,21,0,32,53,39.62
+qwen3,8B,default,0,,human sexuality,non human sexuality expert,21,0,32,53,39.62
+qwen3,8B,default,0,,human sexuality,human sexuality student,22,0,31,53,41.51
+qwen3,8B,default,0,,human sexuality,person,21,0,32,53,39.62
+qwen3,8B,default,0,,international law,international law expert,21,0,34,55,38.18
+qwen3,8B,default,0,,international law,non international law expert,20,0,35,55,36.36
+qwen3,8B,default,0,,international law,international law student,18,0,37,55,32.73
+qwen3,8B,default,0,,international law,person,19,0,36,55,34.55
+qwen3,8B,default,0,,jurisprudence,jurisprudence expert,17,0,26,43,39.53
+qwen3,8B,default,0,,jurisprudence,non jurisprudence expert,17,0,26,43,39.53
+qwen3,8B,default,0,,jurisprudence,jurisprudence student,17,0,26,43,39.53
+qwen3,8B,default,0,,jurisprudence,person,17,0,26,43,39.53
+qwen3,8B,default,0,,logical fallacies,logical fallacies expert,40,0,33,73,54.79
+qwen3,8B,default,0,,logical fallacies,non logical fallacies expert,33,0,40,73,45.21
+qwen3,8B,default,0,,logical fallacies,logical fallacies student,43,0,30,73,58.9
+qwen3,8B,default,0,,logical fallacies,person,39,0,34,73,53.42
+qwen3,8B,default,0,,machine learning,machine learning expert,32,0,58,90,35.56
+qwen3,8B,default,0,,machine learning,non machine learning expert,32,0,58,90,35.56
+qwen3,8B,default,0,,machine learning,machine learning student,31,0,59,90,34.44
+qwen3,8B,default,0,,machine learning,person,32,0,58,90,35.56
+qwen3,8B,default,0,,management,management expert,22,0,15,37,59.46
+qwen3,8B,default,0,,management,non management expert,20,0,17,37,54.05
+qwen3,8B,default,0,,management,management student,21,0,16,37,56.76
+qwen3,8B,default,0,,management,person,22,0,15,37,59.46
+qwen3,8B,default,0,,marketing,marketing expert,43,0,32,75,57.33
+qwen3,8B,default,0,,marketing,non marketing expert,42,0,33,75,56.0
+qwen3,8B,default,0,,marketing,marketing student,41,0,34,75,54.67
+qwen3,8B,default,0,,marketing,person,40,0,35,75,53.33
+qwen3,8B,default,0,,matter,matter expert,6,0,41,47,12.77
+qwen3,8B,default,0,,matter,non matter expert,8,0,39,47,17.02
+qwen3,8B,default,0,,matter,matter student,9,0,38,47,19.15
+qwen3,8B,default,0,,matter,person,6,0,41,47,12.77
+qwen3,8B,default,0,,medical genetics,medical genetics expert,36,0,18,54,66.67
+qwen3,8B,default,0,,medical genetics,non medical genetics expert,36,0,18,54,66.67
+qwen3,8B,default,0,,medical genetics,medical genetics student,37,0,17,54,68.52
+qwen3,8B,default,0,,medical genetics,person,37,0,17,54,68.52
+qwen3,8B,default,0,,miscellaneous,miscellaneous expert,138,0,127,265,52.08
+qwen3,8B,default,0,,miscellaneous,non miscellaneous expert,137,0,128,265,51.7
+qwen3,8B,default,0,,miscellaneous,miscellaneous student,135,0,130,265,50.94
+qwen3,8B,default,0,,miscellaneous,person,131,0,134,265,49.43
+qwen3,8B,default,0,,moral disputes,moral disputes expert,41,0,98,139,29.5
+qwen3,8B,default,0,,moral disputes,non moral disputes expert,43,0,96,139,30.94
+qwen3,8B,default,0,,moral disputes,moral disputes student,44,0,95,139,31.65
+qwen3,8B,default,0,,moral disputes,person,43,0,96,139,30.94
+qwen3,8B,default,0,,nutrition,nutrition expert,102,0,77,179,56.98
+qwen3,8B,default,0,,nutrition,non nutrition expert,103,0,76,179,57.54
+qwen3,8B,default,0,,nutrition,nutrition student,103,0,76,179,57.54
+qwen3,8B,default,0,,nutrition,person,100,0,79,179,55.87
+qwen3,8B,default,0,,philosophy,philosophy expert,45,0,85,130,34.62
+qwen3,8B,default,0,,philosophy,non philosophy expert,51,0,79,130,39.23
+qwen3,8B,default,0,,philosophy,philosophy student,52,0,78,130,40.0
+qwen3,8B,default,0,,philosophy,person,47,0,83,130,36.15
+qwen3,8B,default,0,,prehistory,prehistory expert,76,0,69,145,52.41
+qwen3,8B,default,0,,prehistory,non prehistory expert,75,0,70,145,51.72
+qwen3,8B,default,0,,prehistory,prehistory student,74,0,71,145,51.03
+qwen3,8B,default,0,,prehistory,person,77,0,68,145,53.1
+qwen3,8B,default,0,,professional accounting,professional accounting expert,60,0,135,195,30.77
+qwen3,8B,default,0,,professional accounting,non professional accounting expert,61,0,134,195,31.28
+qwen3,8B,default,0,,professional accounting,professional accounting student,62,0,133,195,31.79
+qwen3,8B,default,0,,professional accounting,person,56,0,139,195,28.72
+qwen3,8B,default,0,,professional law,professional law expert,268,0,735,1003,26.72
+qwen3,8B,default,0,,professional law,non professional law expert,249,0,754,1003,24.83
+qwen3,8B,default,0,,professional law,professional law student,264,0,739,1003,26.32
+qwen3,8B,default,0,,professional law,person,257,0,746,1003,25.62
+qwen3,8B,default,0,,professional medicine,professional medicine expert,151,0,103,254,59.45
+qwen3,8B,default,0,,professional medicine,non professional medicine expert,149,0,105,254,58.66
+qwen3,8B,default,0,,professional medicine,professional medicine student,153,0,101,254,60.24
+qwen3,8B,default,0,,professional medicine,person,154,0,100,254,60.63
+qwen3,8B,default,0,,professional psychology,professional psychology expert,137,0,187,324,42.28
+qwen3,8B,default,0,,professional psychology,non professional psychology expert,141,0,183,324,43.52
+qwen3,8B,default,0,,professional psychology,professional psychology student,140,0,184,324,43.21
+qwen3,8B,default,0,,professional psychology,person,135,0,189,324,41.67
+qwen3,8B,default,0,,public relations,public relations expert,17,0,35,52,32.69
+qwen3,8B,default,0,,public relations,non public relations expert,14,0,38,52,26.92
+qwen3,8B,default,0,,public relations,public relations student,16,0,36,52,30.77
+qwen3,8B,default,0,,public relations,person,18,0,34,52,34.62
+qwen3,8B,default,0,,quan,quan expert,7,0,25,32,21.88
+qwen3,8B,default,0,,quan,non quan expert,7,0,25,32,21.88
+qwen3,8B,default,0,,quan,quan student,7,0,25,32,21.88
+qwen3,8B,default,0,,quan,person,8,0,24,32,25.0
+qwen3,8B,default,0,,security studies,security studies expert,37,0,50,87,42.53
+qwen3,8B,default,0,,security studies,non security studies expert,32,0,55,87,36.78
+qwen3,8B,default,0,,security studies,security studies student,39,0,48,87,44.83
+qwen3,8B,default,0,,security studies,person,36,0,51,87,41.38
+qwen3,8B,default,0,,sociology,sociology expert,22,0,30,52,42.31
+qwen3,8B,default,0,,sociology,non sociology expert,19,0,33,52,36.54
+qwen3,8B,default,0,,sociology,sociology student,24,0,28,52,46.15
+qwen3,8B,default,0,,sociology,person,20,0,32,52,38.46
+qwen3,8B,default,0,,stat,stat expert,19,0,52,71,26.76
+qwen3,8B,default,0,,stat,non stat expert,20,0,51,71,28.17
+qwen3,8B,default,0,,stat,stat student,18,0,53,71,25.35
+qwen3,8B,default,0,,stat,person,21,0,50,71,29.58
+qwen3,8B,default,0,,thermo,thermo expert,15,0,40,55,27.27
+qwen3,8B,default,0,,thermo,non thermo expert,12,0,43,55,21.82
+qwen3,8B,default,0,,thermo,thermo student,14,0,41,55,25.45
+qwen3,8B,default,0,,thermo,person,12,0,43,55,21.82
+qwen3,8B,default,0,,us foreign policy,us foreign policy expert,8,0,12,20,40.0
+qwen3,8B,default,0,,us foreign policy,non us foreign policy expert,7,0,13,20,35.0
+qwen3,8B,default,0,,us foreign policy,us foreign policy student,7,0,13,20,35.0
+qwen3,8B,default,0,,us foreign policy,person,7,0,13,20,35.0
+qwen3,8B,default,0,,virology,virology expert,24,0,22,46,52.17
+qwen3,8B,default,0,,virology,non virology expert,23,0,23,46,50.0
+qwen3,8B,default,0,,virology,virology student,24,0,22,46,52.17
+qwen3,8B,default,0,,virology,person,25,0,21,46,54.35
+qwen3,8B,default,0,,world religions,world religions expert,21,0,38,59,35.59
+qwen3,8B,default,0,,world religions,non world religions expert,20,0,39,59,33.9
+qwen3,8B,default,0,,world religions,world religions student,19,0,40,59,32.2
+qwen3,8B,default,0,,world religions,person,21,0,38,59,35.59

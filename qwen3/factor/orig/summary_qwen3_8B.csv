@@ -1,4 +1,0 @@
-model,size,suite,refusal_enabled,refusal_label,task,role,correct,E_count,invalid,total,accuracy_percentage
-qwen3,8B,default,0,,FACTOR Expert (MC4),neutral,209,0,27,236,88.56
-qwen3,8B,default,0,,FACTOR News (MC4),neutral,749,0,287,1036,72.3
-qwen3,8B,default,0,,FACTOR Wiki (MC4),neutral,2011,0,983,2994,67.17

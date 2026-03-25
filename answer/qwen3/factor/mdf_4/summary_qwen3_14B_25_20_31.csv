@@ -1,0 +1,4 @@
+model,size,alpha,start,end,TOP,task,role,correct,E_count,invalid,total,accuracy_percentage,suite,refusal_enabled,refusal_label
+qwen3,14B,4,20,31,25,FACTOR Expert (MC4),neutral,215,0,21,236,91.1,default,0,
+qwen3,14B,4,20,31,25,FACTOR News (MC4),neutral,774,0,262,1036,74.71,default,0,
+qwen3,14B,4,20,31,25,FACTOR Wiki (MC4),neutral,2240,0,754,2994,74.82,default,0,

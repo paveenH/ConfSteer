@@ -1,0 +1,8 @@
+model,size,dataset,mode,task,role,correct,E_count,invalid,total,accuracy_percentage,suite,refusal_enabled,refusal_label
+llama3,8B,TruthfulQA,MC1,TruthfulQA MC1,neutral,422,0,395,817,51.65,default,0,
+llama3,8B,TruthfulQA,MC1,TruthfulQA MC1,confident,395,0,422,817,48.35,default,0,
+llama3,8B,TruthfulQA,MC1,TruthfulQA MC1,unconfident,355,0,462,817,43.45,default,0,
+llama3,8B,TruthfulQA,MC1,TruthfulQA MC1,expert,408,0,409,817,49.94,default,0,
+llama3,8B,TruthfulQA,MC1,TruthfulQA MC1,non expert,356,0,461,817,43.57,default,0,
+llama3,8B,TruthfulQA,MC1,TruthfulQA MC1,student,374,0,443,817,45.78,default,0,
+llama3,8B,TruthfulQA,MC1,TruthfulQA MC1,person,364,0,453,817,44.55,default,0,

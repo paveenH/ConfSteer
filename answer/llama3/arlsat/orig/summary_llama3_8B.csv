@@ -1,0 +1,22 @@
+model,size,suite,refusal_enabled,refusal_label,task,role,correct,E_count,invalid,total,accuracy_percentage
+llama3,8B,default,0,,AR-LSAT-dev,neutral,68,0,163,231,29.44
+llama3,8B,default,0,,AR-LSAT-test,neutral,55,0,175,230,23.91
+llama3,8B,default,0,,AR-LSAT-train,neutral,357,0,1273,1630,21.9
+llama3,8B,default,0,,AR-LSAT-dev,confident,65,0,166,231,28.14
+llama3,8B,default,0,,AR-LSAT-dev,unconfident,48,0,183,231,20.78
+llama3,8B,default,0,,AR-LSAT-test,confident,50,0,180,230,21.74
+llama3,8B,default,0,,AR-LSAT-test,unconfident,39,0,191,230,16.96
+llama3,8B,default,0,,AR-LSAT-train,confident,345,0,1285,1630,21.17
+llama3,8B,default,0,,AR-LSAT-train,unconfident,317,0,1313,1630,19.45
+llama3,8B,default,0,,AR-LSAT-dev,expert,64,0,167,231,27.71
+llama3,8B,default,0,,AR-LSAT-dev,non expert,60,0,171,231,25.97
+llama3,8B,default,0,,AR-LSAT-dev,student,61,0,170,231,26.41
+llama3,8B,default,0,,AR-LSAT-dev,person,55,0,176,231,23.81
+llama3,8B,default,0,,AR-LSAT-test,expert,43,0,187,230,18.7
+llama3,8B,default,0,,AR-LSAT-test,non expert,48,0,182,230,20.87
+llama3,8B,default,0,,AR-LSAT-test,student,47,0,183,230,20.43
+llama3,8B,default,0,,AR-LSAT-test,person,45,0,185,230,19.57
+llama3,8B,default,0,,AR-LSAT-train,expert,374,0,1256,1630,22.94
+llama3,8B,default,0,,AR-LSAT-train,non expert,331,0,1299,1630,20.31
+llama3,8B,default,0,,AR-LSAT-train,student,338,0,1292,1630,20.74
+llama3,8B,default,0,,AR-LSAT-train,person,346,0,1284,1630,21.23

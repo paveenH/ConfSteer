@@ -1,0 +1,8 @@
+model,size,suite,refusal_enabled,refusal_label,task,role,correct,E_count,invalid,total,accuracy_percentage
+llama3,8B,default,0,,MRC-test,neutral,853,0,719,1572,54.26
+llama3,8B,default,0,,MRC-test,confident,838,0,734,1572,53.31
+llama3,8B,default,0,,MRC-test,unconfident,652,0,920,1572,41.48
+llama3,8B,default,0,,MRC-test,expert,844,0,728,1572,53.69
+llama3,8B,default,0,,MRC-test,non expert,792,0,780,1572,50.38
+llama3,8B,default,0,,MRC-test,student,833,0,739,1572,52.99
+llama3,8B,default,0,,MRC-test,person,832,0,740,1572,52.93

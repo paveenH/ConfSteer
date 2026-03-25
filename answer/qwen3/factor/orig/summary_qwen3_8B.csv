@@ -1,0 +1,22 @@
+model,size,suite,refusal_enabled,refusal_label,task,role,correct,E_count,invalid,total,accuracy_percentage
+qwen3,8B,default,0,,FACTOR Expert (MC4),neutral,209,0,27,236,88.56
+qwen3,8B,default,0,,FACTOR News (MC4),neutral,749,0,287,1036,72.3
+qwen3,8B,default,0,,FACTOR Wiki (MC4),neutral,2011,0,983,2994,67.17
+qwen3,8B,default,0,,FACTOR Expert (MC4),confident,209,0,27,236,88.56
+qwen3,8B,default,0,,FACTOR Expert (MC4),unconfident,202,0,34,236,85.59
+qwen3,8B,default,0,,FACTOR News (MC4),confident,759,0,277,1036,73.26
+qwen3,8B,default,0,,FACTOR News (MC4),unconfident,748,0,288,1036,72.2
+qwen3,8B,default,0,,FACTOR Wiki (MC4),confident,2035,0,959,2994,67.97
+qwen3,8B,default,0,,FACTOR Wiki (MC4),unconfident,1984,0,1010,2994,66.27
+qwen3,8B,default,0,,FACTOR Expert (MC4),expert,207,0,29,236,87.71
+qwen3,8B,default,0,,FACTOR Expert (MC4),non expert,204,0,32,236,86.44
+qwen3,8B,default,0,,FACTOR Expert (MC4),student,206,0,30,236,87.29
+qwen3,8B,default,0,,FACTOR Expert (MC4),person,206,0,30,236,87.29
+qwen3,8B,default,0,,FACTOR News (MC4),expert,730,0,306,1036,70.46
+qwen3,8B,default,0,,FACTOR News (MC4),non expert,707,0,329,1036,68.24
+qwen3,8B,default,0,,FACTOR News (MC4),student,742,0,294,1036,71.62
+qwen3,8B,default,0,,FACTOR News (MC4),person,713,0,323,1036,68.82
+qwen3,8B,default,0,,FACTOR Wiki (MC4),expert,1953,0,1041,2994,65.23
+qwen3,8B,default,0,,FACTOR Wiki (MC4),non expert,1894,0,1100,2994,63.26
+qwen3,8B,default,0,,FACTOR Wiki (MC4),student,1989,0,1005,2994,66.43
+qwen3,8B,default,0,,FACTOR Wiki (MC4),person,1925,0,1069,2994,64.3

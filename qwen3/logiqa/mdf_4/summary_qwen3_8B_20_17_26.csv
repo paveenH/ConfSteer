@@ -1,4 +1,0 @@
-model,size,alpha,start,end,TOP,task,role,correct,E_count,invalid,total,accuracy_percentage,suite,refusal_enabled,refusal_label
-qwen3,8B,4,17,26,20,MRC-test,non expert,1031,0,541,1572,65.59,default,0,
-qwen3,8B,4,17,26,20,MRC-test,expert,1059,0,513,1572,67.37,default,0,
-qwen3,8B,4,17,26,20,MRC-test,neutral,1061,0,511,1572,67.49,default,0,
