@@ -1,4 +1,0 @@
-model,size,alpha,start,end,TOP,task,role,correct,E_count,invalid,total,accuracy_percentage,suite,refusal_enabled,refusal_label
-qwen3,14B,4,22,37,25,GPQA (gpqa_diamond),neutral,88,0,110,198,44.44,default,0,
-qwen3,14B,4,22,37,25,GPQA (gpqa_extended),neutral,188,0,358,546,34.43,default,0,
-qwen3,14B,4,22,37,25,GPQA (gpqa_main),neutral,157,0,291,448,35.04,default,0,

@@ -1,4 +1,0 @@
-model,size,alpha,start,end,TOP,task,role,correct,E_count,invalid,total,accuracy_percentage,suite,refusal_enabled,refusal_label
-llama3,70B,4,17,30,40,FACTOR Expert (MC4),neutral,216,0,20,236,91.53,default,0,
-llama3,70B,4,17,30,40,FACTOR News (MC4),neutral,834,0,202,1036,80.5,default,0,
-llama3,70B,4,17,30,40,FACTOR Wiki (MC4),neutral,2271,0,723,2994,75.85,default,0,

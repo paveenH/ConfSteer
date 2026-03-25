@@ -1,2 +1,0 @@
-model,size,alpha,start,end,TOP,task,role,correct,E_count,invalid,total,accuracy_percentage,suite,refusal_enabled,refusal_label
-llama3,70B,-4,17,30,40,MRC-test,neutral,1041,0,531,1572,66.22,default,0,

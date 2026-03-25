@@ -1,8 +1,0 @@
-model,size,alpha,start,end,TOP,task,role,correct,E_count,invalid,total,accuracy_percentage,suite,refusal_enabled,refusal_label
-qwen3,8B,-4,17,26,20,MRC-test,non expert,758,0,814,1572,48.22,default,0,
-qwen3,8B,-4,17,26,20,MRC-test,expert,937,0,635,1572,59.61,default,0,
-qwen3,8B,-4,17,26,20,MRC-test,neutral,983,0,589,1572,62.53,default,0,
-qwen3,8B,-4,17,26,20,MRC-test,confident,999,0,573,1572,63.55,default,0,
-qwen3,8B,-4,17,26,20,MRC-test,unconfident,857,0,715,1572,54.52,default,0,
-qwen3,8B,-4,17,26,20,MRC-test,student,937,0,635,1572,59.61,default,0,
-qwen3,8B,-4,17,26,20,MRC-test,person,945,0,627,1572,60.11,default,0,
