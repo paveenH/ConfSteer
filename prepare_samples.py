@@ -1,15 +1,25 @@
 """
 prepare_samples.py — Pre-extract hidden states for all label entries.
 
-Reads labels/*.json + HiddenStates H5 files, then saves:
-  samples/{model}/binary_{layer_start}_{layer_end}.npz   (or all layers)
-    X : (N, n_layers, hidden_dim)  float32
-    y_binary : (N,)  int8   — 1 if label_pos4==1 else 0
-    y_three  : (N,)  int8   — 0=no_change, 1=pos4_works, 2=neg4_works (label_pos4: 0→0, 1→1, -1→2)
+Reads labels/*.json + HiddenStates H5 files, then saves TWO npz files:
+
+  samples/{model}/samples_binary_{roles}.npz
+    X        : (N, n_layers, hidden_dim)  float16
+    y        : (N,)  int8   — 1=steer(pos4 works), 0=no_steer(all others)
+    meta     : (N,)  JSON strings
+    roles    : role list
+    class0 = y==0 downsampled from (no_change + neg4_works), ratio × n_class1
+
+  samples/{model}/samples_three_{roles}.npz
+    X        : (N, n_layers, hidden_dim)  float16
+    y        : (N,)  int8   — 0=no_change, 1=pos4_works, 2=neg4_works
+    meta     : (N,)  JSON strings
+    roles    : role list
+    class0 = y==0 (no_change only) downsampled, ratio × max(n_class1, n_class2)
 
 Usage:
   python prepare_samples.py --model llama3
-  python prepare_samples.py --model qwen3
+  python prepare_samples.py --model qwen3 --ratio 1.0
   python prepare_samples.py --model llama3 --roles neutral confident expert
 """
 
@@ -82,14 +92,13 @@ def extract(model: str, label_files, roles_filter=None):
     """
     For each label entry, load the corresponding row from its role H5.
     Returns:
-      X        : (N, n_layers, hidden_dim) float32
-      y_binary : (N,) int8
-      y_three  : (N,) int8  — 0=no_change, 1=pos4_works, 2=neg4_works
-      meta     : list of dicts with task/orig_stem/role/index per row
+      X       : (N, n_layers, hidden_dim) float16
+      y_three : (N,) int8  — 0=no_change, 1=pos4_works, 2=neg4_works
+      meta    : list of dicts with task/orig_stem/role/index per row
     """
     import h5py
 
-    X_list, y_bin_list, y_thr_list, meta_list = [], [], [], []
+    X_list, y_thr_list, meta_list = [], [], []
     skipped_files = set()
 
     for task, orig_stem, entries in label_files:
@@ -114,7 +123,6 @@ def extract(model: str, label_files, roles_filter=None):
                         print(f"  [warn] index {idx} out of range for {h5_path.name} (len={hs.shape[0]})")
                         continue
                     X_list.append(hs[idx, :, :])          # (n_layers, hidden_dim)
-                    y_bin_list.append(1 if e["label_pos4"] == 1 else 0)
                     lp = e["label_pos4"]
                     y_thr_list.append(2 if lp == -1 else lp)  # -1→2, 0→0, 1→1
                     meta_list.append({
@@ -127,69 +135,73 @@ def extract(model: str, label_files, roles_filter=None):
     if not X_list:
         raise RuntimeError("No samples extracted — check H5 paths and label files.")
 
-    X        = np.array(X_list, dtype=np.float16)
-    y_binary = np.array(y_bin_list, dtype=np.int8)
-    y_three  = np.array(y_thr_list, dtype=np.int8)
+    X       = np.array(X_list, dtype=np.float16)
+    y_three = np.array(y_thr_list, dtype=np.int8)
     print(f"  Extracted {len(X)} samples, shape: {X.shape}")
-    print(f"  y_binary — steer(1): {(y_binary==1).sum()}, no_steer(0): {(y_binary==0).sum()}")
     print(f"  y_three  — 1(pos4): {(y_three==1).sum()}, 0(no_change): {(y_three==0).sum()}, 2(neg4): {(y_three==2).sum()}")
-    return X, y_binary, y_three, meta_list
+    return X, y_three, meta_list
 
 
-# ==================== Downsample class 0 ====================
+# ==================== Downsample ====================
 
-def downsample_class0(X, y_binary, y_three, meta_list, ratio: float, seed: int = 42):
+def downsample_binary(X, y_three, meta_list, ratio: float, seed: int):
     """
-    Keep all minority samples (class1=pos4, class2=neg4).
-    Randomly keep ratio × max(n_class1, n_class2) samples from class0.
-    Uses y_three to identify classes; y_binary is kept in sync.
+    Binary: class1 = pos4_works (y_three==1), class0 = everything else.
+    Downsample class0 to ratio × n_class1.
     """
     rng = np.random.default_rng(seed)
+    idx_c1 = np.where(y_three == 1)[0]
+    idx_c0 = np.where(y_three != 1)[0]   # no_change + neg4_works
 
-    idx_c1   = np.where(y_three == 1)[0]
-    idx_c2   = np.where(y_three == 2)[0]
-    idx_c0   = np.where(y_three == 0)[0]
+    n_keep = min(int(ratio * len(idx_c1)), len(idx_c0))
+    idx_c0_kept = rng.choice(idx_c0, size=n_keep, replace=False)
+    keep = np.sort(np.concatenate([idx_c1, idx_c0_kept]))
 
-    n_minority = max(len(idx_c1), len(idx_c2))
-    n_keep_c0  = int(ratio * n_minority)
-    n_keep_c0  = min(n_keep_c0, len(idx_c0))
+    y = (y_three[keep] == 1).astype(np.int8)
+    print(f"  [binary] class1(pos4): {len(idx_c1)}, class0(other): {len(idx_c0)} → {n_keep}  total: {len(keep)}")
+    return X[keep], y, [meta_list[i] for i in keep]
 
-    idx_c0_kept = rng.choice(idx_c0, size=n_keep_c0, replace=False)
-    keep = np.concatenate([idx_c1, idx_c2, idx_c0_kept])
-    keep.sort()
 
-    meta_kept = [meta_list[i] for i in keep]
-    print(f"  Downsampled class0: {len(idx_c0)} → {n_keep_c0}  (ratio={ratio})")
-    print(f"  Final — 1(pos4): {len(idx_c1)}, 2(neg4): {len(idx_c2)}, 0(no_change): {n_keep_c0}  total: {len(keep)}")
-    return X[keep], y_binary[keep], y_three[keep], meta_kept
+def downsample_three(X, y_three, meta_list, ratio: float, seed: int):
+    """
+    Three-class: 0=no_change, 1=pos4_works, 2=neg4_works.
+    Downsample class0 (no_change only) to ratio × max(n_class1, n_class2).
+    """
+    rng = np.random.default_rng(seed)
+    idx_c1 = np.where(y_three == 1)[0]
+    idx_c2 = np.where(y_three == 2)[0]
+    idx_c0 = np.where(y_three == 0)[0]
+
+    n_keep = min(int(ratio * max(len(idx_c1), len(idx_c2))), len(idx_c0))
+    idx_c0_kept = rng.choice(idx_c0, size=n_keep, replace=False)
+    keep = np.sort(np.concatenate([idx_c1, idx_c2, idx_c0_kept]))
+
+    print(f"  [three]  1(pos4): {len(idx_c1)}, 2(neg4): {len(idx_c2)}, 0(no_change): {len(idx_c0)} → {n_keep}  total: {len(keep)}")
+    return X[keep], y_three[keep], [meta_list[i] for i in keep]
 
 
 # ==================== Save / Load ====================
 
-def save_samples(out_path: Path, X, y_binary, y_three, meta_list, roles):
+def save_npz(out_path: Path, X, y, meta_list, roles):
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    # meta as JSON string array (npz can't store dicts natively)
-    meta_json = np.array([json.dumps(m) for m in meta_list])
-    roles_arr = np.array(roles if roles else ["all"])
     np.savez_compressed(
         out_path,
         X=X,
-        y_binary=y_binary,
-        y_three=y_three,
-        meta=meta_json,
-        roles=roles_arr,
+        y=y,
+        meta=np.array([json.dumps(m) for m in meta_list]),
+        roles=np.array(roles if roles else ["all"]),
     )
     print(f"  Saved → {out_path}  ({out_path.stat().st_size // 1024 // 1024} MB)")
 
 
 def load_samples(path: Path):
+    """Load a binary or three-class npz. Returns X, y, meta, roles."""
     data = np.load(path, allow_pickle=False)
-    X        = data["X"]
-    y_binary = data["y_binary"]
-    y_three  = data["y_three"]
-    meta     = [json.loads(s) for s in data["meta"]]
-    roles    = list(data["roles"])
-    return X, y_binary, y_three, meta, roles
+    X     = data["X"]
+    y     = data["y"]
+    meta  = [json.loads(s) for s in data["meta"]]
+    roles = list(data["roles"])
+    return X, y, meta, roles
 
 
 # ==================== Main ====================
@@ -209,17 +221,15 @@ def main():
     roles_filter = set(args.roles) if args.roles else None
     roles_tag    = "_".join(sorted(args.roles)) if args.roles else "all"
 
-    if args.out:
-        out_path = Path(args.out)
-    else:
-        out_path = SAMPLE_DIR / args.model / f"samples_{roles_tag}.npz"
+    out_dir = SAMPLE_DIR / args.model
 
     print(f"\n{'='*50}")
     print(f"  prepare_samples")
     print(f"  Model : {args.model}")
     print(f"  Roles : {roles_tag}")
     print(f"  Ratio : {args.ratio}  Seed: {args.seed}")
-    print(f"  Out   : {out_path}")
+    print(f"  Out   : {out_dir}/samples_binary_{roles_tag}.npz")
+    print(f"          {out_dir}/samples_three_{roles_tag}.npz")
     print(f"{'='*50}\n")
 
     print("[1] Loading labels...")
@@ -228,14 +238,19 @@ def main():
     print(f"  {len(label_files)} label files, {total_entries} entries")
 
     print("\n[2] Extracting hidden states...")
-    X, y_binary, y_three, meta = extract(args.model, label_files, roles_filter)
+    X, y_three, meta = extract(args.model, label_files, roles_filter)
 
-    print("\n[3] Downsampling class 0...")
-    X, y_binary, y_three, meta = downsample_class0(X, y_binary, y_three, meta, args.ratio, args.seed)
+    roles_list = args.roles if args.roles else []
+
+    print("\n[3a] Downsampling → binary...")
+    X_bin, y_bin, meta_bin = downsample_binary(X, y_three, meta, args.ratio, args.seed)
+
+    print("\n[3b] Downsampling → three-class...")
+    X_thr, y_thr, meta_thr = downsample_three(X, y_three, meta, args.ratio, args.seed)
 
     print("\n[4] Saving...")
-    save_samples(out_path, X, y_binary, y_three, meta,
-                 roles=args.roles if args.roles else [])
+    save_npz(out_dir / f"samples_binary_{roles_tag}.npz", X_bin, y_bin, meta_bin, roles_list)
+    save_npz(out_dir / f"samples_three_{roles_tag}.npz",  X_thr, y_thr, meta_thr, roles_list)
 
     print("\nDone.")
 
