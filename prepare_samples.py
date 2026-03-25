@@ -127,13 +127,41 @@ def extract(model: str, label_files, roles_filter=None):
     if not X_list:
         raise RuntimeError("No samples extracted — check H5 paths and label files.")
 
-    X        = np.array(X_list, dtype=np.float32)
+    X        = np.array(X_list, dtype=np.float16)
     y_binary = np.array(y_bin_list, dtype=np.int8)
     y_three  = np.array(y_thr_list, dtype=np.int8)
     print(f"  Extracted {len(X)} samples, shape: {X.shape}")
     print(f"  y_binary — steer(1): {(y_binary==1).sum()}, no_steer(0): {(y_binary==0).sum()}")
     print(f"  y_three  — 1(pos4): {(y_three==1).sum()}, 0(no_change): {(y_three==0).sum()}, 2(neg4): {(y_three==2).sum()}")
     return X, y_binary, y_three, meta_list
+
+
+# ==================== Downsample class 0 ====================
+
+def downsample_class0(X, y_binary, y_three, meta_list, ratio: float, seed: int = 42):
+    """
+    Keep all minority samples (class1=pos4, class2=neg4).
+    Randomly keep ratio × max(n_class1, n_class2) samples from class0.
+    Uses y_three to identify classes; y_binary is kept in sync.
+    """
+    rng = np.random.default_rng(seed)
+
+    idx_c1   = np.where(y_three == 1)[0]
+    idx_c2   = np.where(y_three == 2)[0]
+    idx_c0   = np.where(y_three == 0)[0]
+
+    n_minority = max(len(idx_c1), len(idx_c2))
+    n_keep_c0  = int(ratio * n_minority)
+    n_keep_c0  = min(n_keep_c0, len(idx_c0))
+
+    idx_c0_kept = rng.choice(idx_c0, size=n_keep_c0, replace=False)
+    keep = np.concatenate([idx_c1, idx_c2, idx_c0_kept])
+    keep.sort()
+
+    meta_kept = [meta_list[i] for i in keep]
+    print(f"  Downsampled class0: {len(idx_c0)} → {n_keep_c0}  (ratio={ratio})")
+    print(f"  Final — 1(pos4): {len(idx_c1)}, 2(neg4): {len(idx_c2)}, 0(no_change): {n_keep_c0}  total: {len(keep)}")
+    return X[keep], y_binary[keep], y_three[keep], meta_kept
 
 
 # ==================== Save / Load ====================
@@ -173,6 +201,9 @@ def main():
                         help="Roles to include (default: all). E.g. --roles neutral confident expert")
     parser.add_argument("--out",    default=None,
                         help="Output .npz path (default: samples/{model}/samples_{roles}.npz)")
+    parser.add_argument("--ratio",  type=float, default=1.0,
+                        help="class-0 downsample ratio relative to max(n_class1, n_class2) (default: 1.0)")
+    parser.add_argument("--seed",   type=int, default=42)
     args = parser.parse_args()
 
     roles_filter = set(args.roles) if args.roles else None
@@ -187,6 +218,7 @@ def main():
     print(f"  prepare_samples")
     print(f"  Model : {args.model}")
     print(f"  Roles : {roles_tag}")
+    print(f"  Ratio : {args.ratio}  Seed: {args.seed}")
     print(f"  Out   : {out_path}")
     print(f"{'='*50}\n")
 
@@ -198,7 +230,10 @@ def main():
     print("\n[2] Extracting hidden states...")
     X, y_binary, y_three, meta = extract(args.model, label_files, roles_filter)
 
-    print("\n[3] Saving...")
+    print("\n[3] Downsampling class 0...")
+    X, y_binary, y_three, meta = downsample_class0(X, y_binary, y_three, meta, args.ratio, args.seed)
+
+    print("\n[4] Saving...")
     save_samples(out_path, X, y_binary, y_three, meta,
                  roles=args.roles if args.roles else [])
 
