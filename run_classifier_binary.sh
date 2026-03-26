@@ -3,7 +3,7 @@ set -euo pipefail
 
 MODEL="llama3"
 LAYER=25
-PCA=50
+PCA=100
 RATIO=1.0
 SAMPLES="samples/${MODEL}/samples_binary_all.npz"
 
