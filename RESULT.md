@@ -189,146 +189,48 @@ Adding more samples does not improve performance — the ceiling is determined b
 
 ---
 
-### Single-Layer Results (No PCA)
+> **Known caveat**: train/test split is sample-level, not question-level — the same question may appear in both splits across roles, potentially inflating AUC. Applies equally to all classifiers; relative comparisons remain valid. Will be corrected with question-level split.
 
-#### Summary table
+### Results Summary
 
-| Model | Layer | CV F1 | CV AUC | Test Acc | Test AUC | Note |
-|---|---|---|---|---|---|---|
-| llama3-8B | 19 | 0.698 ± 0.006 | 0.750 | 0.68 | 0.748 | Best in PCA=50 sweep |
-| llama3-8B | 25 | 0.706 ± 0.007 | 0.756 | 0.70 | 0.750 | Best overall |
-| llama3-8B | 32 (last) | 0.700 ± 0.003 | 0.754 | 0.69 | 0.750 | Last layer |
-| qwen3-8B | 25 | 0.706 ± 0.004 | 0.768 | 0.70 | 0.765 | Best overall |
-| qwen3-8B | 36 (last) | 0.715 ± 0.005 | 0.775 | 0.71 | 0.784 | Last layer — best for qwen3 |
+| Model | Classifier | Layers used | CV F1 | CV AUC | Test Acc | Test AUC | F1 macro |
+|---|---|---|---|---|---|---|---|
+| llama3-8B | LR | 19 | 0.698 ± 0.006 | 0.750 | 0.68 | 0.748 | 0.68 |
+| llama3-8B | LR | 25 | 0.706 ± 0.007 | 0.756 | 0.70 | 0.750 | 0.70 |
+| llama3-8B | LR | 32 (last) | 0.700 ± 0.003 | 0.754 | 0.69 | 0.750 | 0.69 |
+| llama3-8B | CNN | all (0–32) | — | — | 0.75 | 0.821 | 0.75 |
+| qwen3-8B | LR | 25 | 0.706 ± 0.004 | 0.768 | 0.70 | 0.765 | 0.70 |
+| qwen3-8B | LR | 36 (last) | 0.715 ± 0.005 | 0.775 | 0.71 | 0.784 | 0.71 |
+| qwen3-8B | CNN | all (0–36) | — | — | 0.72 | 0.804 | 0.72 |
 
-> **llama3**: layer 25 is optimal; last layer (32) is slightly weaker.
-> **qwen3**: last layer (36) outperforms layer 25 across all metrics — qwen3's steering signal strengthens toward the final layer.
+**Observations**:
+- CNN outperforms single-layer LR for both models
+- llama3 benefits more from CNN (+0.07 AUC vs layer 25 LR) — steering signal is distributed across layers
+- qwen3 CNN gain is smaller (+0.02 vs last layer LR) — signal already concentrated in the last few layers
+- qwen3 LR last layer (0.784) ≈ llama3 CNN all layers (0.821), suggesting qwen3 representations are more linearly separable
 
-#### llama3-8B, Layer 32 (last)
+### Layer Sweep (PCA=50, for layer selection reference)
 
-| Class | Precision | Recall | F1 | Support |
+| Model | Best layer (F1) | Best layer (AUC) | Plateau range | Note |
 |---|---|---|---|---|
-| no_steer(0) | 0.70 | 0.66 | 0.68 | 2,322 |
-| steer(+1) | 0.68 | 0.71 | 0.69 | 2,321 |
-| **macro avg** | **0.69** | **0.69** | **0.69** | 4,643 |
+| llama3-8B | 19 | 23 | 18–25 | No-PCA favors layer 25 |
+| qwen3-8B | 25 | 32 | 25–36 | Sharp rise at layer 21→22 |
 
-Accuracy: 0.69 &nbsp; ROC-AUC: 0.750
+AUC with PCA=50 is ~0.06 lower than no-PCA — sweep used for relative comparison only.
 
-```
-              pred 0   pred +1
-true 0          1533      789
-true +1          666     1655
-```
+### CNN Training Details
 
-#### llama3-8B, Layer 19
+Architecture: Linear proj (D→64) → 1D-CNN (kernel=3, ch=64) → Layer Attention → MLP → 2 classes
+Training: 20 epochs, AdamW lr=1e-3, CosineAnnealingLR, batch=64, dropout=0.5, best checkpoint by val loss
 
-| Class | Precision | Recall | F1 | Support |
-|---|---|---|---|---|
-| no_steer(0) | 0.70 | 0.64 | 0.67 | 2,322 |
-| steer(+1) | 0.67 | 0.72 | 0.69 | 2,321 |
-| **macro avg** | **0.68** | **0.68** | **0.68** | 4,643 |
-
-Accuracy: 0.68 &nbsp; ROC-AUC: 0.748
-
-```
-              pred 0   pred +1
-true 0          1491      831
-true +1          645     1676
-```
-
-#### llama3-8B, Layer 25
-
-| Class | Precision | Recall | F1 | Support |
-|---|---|---|---|---|
-| no_steer(0) | 0.71 | 0.67 | 0.69 | 2,322 |
-| steer(+1) | 0.69 | 0.72 | 0.70 | 2,321 |
-| **macro avg** | **0.70** | **0.70** | **0.70** | 4,643 |
-
-Accuracy: 0.70 &nbsp; ROC-AUC: 0.750
-
-```
-              pred 0   pred +1
-true 0          1559      763
-true +1          646     1675
-```
-
-#### qwen3-8B, Layer 36 (last)
-
-| Class | Precision | Recall | F1 | Support |
-|---|---|---|---|---|
-| no_steer(0) | 0.72 | 0.69 | 0.71 | 2,047 |
-| steer(+1) | 0.71 | 0.73 | 0.72 | 2,046 |
-| **macro avg** | **0.71** | **0.71** | **0.71** | 4,093 |
-
-Accuracy: 0.71 &nbsp; ROC-AUC: 0.784
-
-```
-              pred 0   pred +1
-true 0          1422      625
-true +1          548     1498
-```
-
-#### qwen3-8B, Layer 25
-
-| Class | Precision | Recall | F1 | Support |
-|---|---|---|---|---|
-| no_steer(0) | 0.71 | 0.68 | 0.69 | 2,047 |
-| steer(+1) | 0.69 | 0.72 | 0.70 | 2,046 |
-| **macro avg** | **0.70** | **0.70** | **0.70** | 4,093 |
-
-Accuracy: 0.70 &nbsp; ROC-AUC: 0.765
-
-```
-              pred 0   pred +1
-true 0          1392      655
-true +1          582     1464
-```
+| Model | Best epoch | Val Loss | Val Acc |
+|---|---|---|---|
+| llama3-8B | 7 | 0.534 | 0.750 |
+| qwen3-8B | 5 | 0.531 | 0.721 |
 
 ---
 
-### Layer Sweep — All Roles (PCA=50)
+## 2025-03-26 — Resample (Question-Level Split)
 
-#### llama3-8B (33 layers)
-
-| Layer | CV F1 | CV AUC |
-|---|---|---|
-| 0 | 0.000 | 0.500 |
-| 1 | 0.594 | 0.612 |
-| 5 | 0.623 | 0.650 |
-| 10 | 0.630 | 0.653 |
-| 15 | 0.651 | 0.669 |
-| 18 | 0.668 | 0.687 |
-| **19** | **0.670** | 0.691 |
-| 23 | 0.666 | **0.694** |
-| 25 | 0.664 | 0.691 |
-| 32 | 0.655 | 0.683 |
-
-Best layer by F1: **19** (F1=0.670) &nbsp; Best by AUC: **23** (AUC=0.694)
-
-**Note**: Layer 18–25 is a plateau — F1 and AUC differ by <0.004 across this range. Layer 25 remains a valid choice.
-
-#### qwen3-8B (37 layers)
-
-| Layer | CV F1 | CV AUC |
-|---|---|---|
-| 3 | 0.537 | 0.548 |
-| 10 | 0.554 | 0.562 |
-| 21 | 0.562 | 0.574 |
-| 22 | 0.618 | 0.634 |
-| 24 | 0.632 | 0.646 |
-| **25** | **0.662** | 0.690 |
-| 32 | 0.657 | **0.691** |
-| 36 | 0.658 | 0.688 |
-
-Best layer by F1: **25** (F1=0.662) &nbsp; Best by AUC: **32** (AUC=0.691)
-
-**Note**: Sharp rise at layer 21→22 (AUC 0.574→0.634), then peaks at layer 25. Layers 25–36 form a plateau. Layer 25 confirmed as optimal for qwen3.
-
-#### Summary
-
-| Model | Best layer (F1) | Best layer (AUC) | Plateau range |
-|---|---|---|---|
-| llama3-8B | 19 | 23 | 18–25 |
-| qwen3-8B | 25 | 32 | 25–36 |
-
-**Takeaway**: Layer 25 is near-optimal for both models. AUC with PCA=50 is ~0.06 lower than no-PCA (PCA compresses signal) — sweep is for comparison purposes only.
+> Re-split by question ID to avoid data leakage across roles. Same question will not appear in both train and test sets.
+> To be updated after `prepare_samples.py` is modified to store question IDs.
