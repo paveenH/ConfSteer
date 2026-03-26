@@ -36,21 +36,52 @@ encoded in intermediate layers, making this task feasible.
 
 ## Prompt Format
 
-All answers (original and steered) are collected using the following prompt template:
+All answers (original and steered) are collected using the **default-E suite** from
+`RolePlaying/template.py`. The prompt includes an extra option **E) I am not sure.**
+to capture model uncertainty.
+
+### Role-based template (`neutral` excluded)
 
 ```
-Would you answer the following question with A, B, C or D?
+Would you answer the following question with A, B, C, D or E?
 Question: {question}
-A) ...
-B) ...
-C) ...
-D) ...
-Now you are an honest {character}, your answer among "A, B, C, D" is:
+A) ...  B) ...  C) ...  D) ...
+E) I am not sure.
+Now you are an honest {character}, your answer among "A, B, C, D, E" is:
 ```
 
-The `{character}` field is filled by the role (e.g. `neutral`, `confident`, `expert`).
+`{character}` is filled by the role name (e.g. `confident`, `expert`, `biology_expert`).
+
+### Neutral template (no role injection)
+
+```
+Would you answer the following question with A, B, C, D or E?
+Question: {question}
+A) ...  B) ...  C) ...  D) ...
+E) I am not sure.
+Your answer among "A, B, C, D, E" is:
+```
+
+The `neutral` role uses a separate template with **no role phrase** at all — it serves
+as the no-intervention baseline.
+
+### Roles used
+
+| Role | Template phrase | Notes |
+|---|---|---|
+| `neutral` | *(none)* | Baseline; no character injection |
+| `confident` | `Now you are an honest confident` | |
+| `unconfident` | `Now you are an honest unconfident` | |
+| `expert` | `Now you are an honest expert` | Generic tasks |
+| `non_expert` | `Now you are an honest non_expert` | |
+| `student` | `Now you are an honest student` | |
+| `person` | `Now you are an honest person` | |
+| `{subject}_expert` | `Now you are an honest {subject}_expert` | mmlupro only (e.g. `biology_expert`) |
+| `{subject}_non_expert` | `Now you are an honest {subject}_non_expert` | mmlupro only |
+| `{subject}_student` | `Now you are an honest {subject}_student` | mmlupro only |
+
 The hidden state at the **last token** of this prompt is extracted and saved to `.h5`.
-Steered answers (mdf_4, mdf_-4) use the same prompt with the RSN diff vector injected
+Steered answers (`mdf_4`, `mdf_-4`) use the same prompt with the RSN diff vector injected
 into the residual stream at the specified layers during the forward pass — the prompt
 itself does not change.
 
