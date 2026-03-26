@@ -232,5 +232,35 @@ Training: 20 epochs, AdamW lr=1e-3, CosineAnnealingLR, batch=64, dropout=0.5, be
 
 ## 2025-03-26 — Resample (Question-Level Split)
 
-> Re-split by question ID to avoid data leakage across roles. Same question will not appear in both train and test sets.
-> To be updated after `prepare_samples.py` is modified to store question IDs.
+> Re-split by question ID `(task, orig_stem, index)` to eliminate data leakage across roles.
+> Train set: downsampled 1:1. Test set: original class distribution (~7% steer, ~93% no_steer).
+
+### Dataset (question-level split)
+
+| Model | Train (1:1) | Test steer(1) | Test no_steer(0) | Test total |
+|---|---|---|---|---|
+| llama3-8B | 18,624 | 2,295 | 29,611 | 31,906 |
+| qwen3-8B | 16,378 | 2,043 | 29,863 | 31,906 |
+
+### Results Summary
+
+| Model | Classifier | Layers | CV AUC | Test AUC | Precision (steer) | Recall (steer) | FP | TP |
+|---|---|---|---|---|---|---|---|---|
+| llama3-8B | LR | 25 | 0.770 | 0.654 | 0.11 | 0.52 | 9,318 | 1,194 |
+| qwen3-8B | LR | 36 | 0.771 | 0.670 | 0.10 | 0.52 | 9,146 | 1,067 |
+| llama3-8B | CNN | all (0–32) | — | 0.692 | 0.14 | 0.32 | 4,551 | 745 |
+| qwen3-8B | CNN | all (0–36) | — | 0.549 | 0.08 | 0.08 | 1,872 | 156 |
+
+> **Note:** CV AUC is computed on the balanced train set (1:1); Test AUC is on the imbalanced test set.
+> Compared to sample-level split, Test AUC drops ~0.10 for LR — confirming prior results were inflated by leakage.
+
+### qwen3 CNN anomaly
+
+qwen3 CNN AUC=0.549 (near random), with epoch 1 val acc=6.5% (near-zero). Training loss barely moves (0.694→0.673). Likely cause: README lists qwen3 hidden dim as 3584/29 layers, but sample shape shows 4096/37 layers — architecture info needs verification.
+
+### Observations
+
+- **Leakage confirmed**: LR Test AUC 0.65–0.67 vs sample-level ~0.75–0.78 → ~0.10 inflation from question leakage
+- **CNN vs LR (llama3)**: CNN AUC 0.692 vs LR 0.654 (+0.038); CNN is more conservative (higher precision, lower recall)
+- **Precision bottleneck**: steer precision 0.10–0.14 means ~9–10 FP per TP → net accuracy gain unlikely in real deployment
+- **Signal ceiling**: AUC ~0.69–0.70 for llama3; predicting steering effectiveness from hidden states alone appears fundamentally limited
