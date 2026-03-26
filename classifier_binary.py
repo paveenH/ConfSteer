@@ -47,14 +47,14 @@ NO_CHANGE_RATIO = 1.0
 # ==================== Sample loading (from prepare_samples.py output) ====================
 
 def load_samples(path: Path):
-    """Load pre-extracted samples from .npz file."""
+    """Load pre-extracted samples from .npz file (output of prepare_samples.py)."""
     data = np.load(path, allow_pickle=False)
-    X        = data["X"]          # (N, n_layers, hidden_dim)
-    y_binary = data["y_binary"]   # (N,) int8
-    roles    = list(data["roles"])
+    X     = data["X"]      # (N, n_layers, hidden_dim)
+    y     = data["y"]      # (N,) int8
+    roles = list(data["roles"])
     print(f"  Loaded samples: shape={X.shape}, roles={roles}")
-    print(f"  y_binary — steer(1): {(y_binary==1).sum()}, no_steer(0): {(y_binary==0).sum()}")
-    return X, y_binary.astype(np.int64)
+    print(f"  y — steer(1): {(y==1).sum()}, no_steer(0): {(y==0).sum()}")
+    return X, y.astype(np.int64)
 
 
 # ==================== H5 path mapping (legacy) ====================
@@ -301,14 +301,18 @@ def plot_learning_curve(clf, X, y, model, layer, pca_n, out_dir):
         print(f"  → plateaued ({gap:+.3f}): signal strength is the bottleneck")
 
 
-def plot_layer_sweep_from_array(X_all, y_all, model: str, pca_n: int, ratio: float, C: float, out_dir: Path):
+def plot_layer_sweep_from_array(X_all, y_all, model: str, pca_n: int, ratio: float, C: float, out_dir: Path,
+                                already_balanced: bool = False):
     import matplotlib.pyplot as plt
 
     n_layers = X_all.shape[1]
 
-    keep  = balanced_indices(y_all, ratio=ratio)
-    X_bal = X_all[keep]
-    y_bal = y_all[keep]
+    if already_balanced:
+        X_bal, y_bal = X_all, y_all
+    else:
+        keep  = balanced_indices(y_all, ratio=ratio)
+        X_bal = X_all[keep]
+        y_bal = y_all[keep]
     print(f"  Balanced — steer(+1): {(y_bal==1).sum()}, no_steer(0): {(y_bal==0).sum()}")
 
     cv_means, cv_stds, aucs = [], [], []
@@ -387,7 +391,7 @@ def main():
     if args.samples:
         samples_path = Path(args.samples)
     else:
-        default_npz = SAMPLE_DIR / args.model / "samples_all.npz"
+        default_npz = SAMPLE_DIR / args.model / "samples_binary_all.npz"
         if default_npz.exists():
             samples_path = default_npz
             print(f"  [auto] Using pre-extracted samples: {samples_path}")
@@ -397,22 +401,27 @@ def main():
         print("\n[sweep] Sweeping all layers...")
         if samples_path and samples_path.exists():
             X_all, y_all = load_samples(samples_path)
+            X_all = X_all.astype(np.float32)
+            plot_layer_sweep_from_array(X_all, y_all, args.model, args.pca, args.ratio, args.C,
+                                        BASE_DIR / "plots", already_balanced=True)
         else:
             print("[1] Loading labels (legacy H5 mode)...")
             label_files = load_labels(args.model)
             print(f"  Found {len(label_files)} label files")
             X_all, y_all = extract_all_layers(args.model, label_files)
-        plot_layer_sweep_from_array(X_all, y_all, args.model, args.pca, args.ratio, args.C,
-                                    BASE_DIR / "plots")
+            plot_layer_sweep_from_array(X_all, y_all, args.model, args.pca, args.ratio, args.C,
+                                        BASE_DIR / "plots")
         return
 
     # ── Single layer flow ──
+    from_npz = False
     if samples_path and samples_path.exists():
         print("[1] Loading pre-extracted samples...")
         X_all, y_all = load_samples(samples_path)
         layer = min(args.layer, X_all.shape[1] - 1)
-        X = X_all[:, layer, :]
+        X = X_all[:, layer, :].astype(np.float32)
         y = y_all
+        from_npz = True
         print(f"  Using layer {layer} of {X_all.shape[1]}")
     else:
         print("[1] Loading labels (legacy H5 mode)...")
@@ -423,10 +432,13 @@ def main():
 
     print(f"  Raw — steer(+1): {(y==1).sum()}, no_steer(0): {(y==0).sum()}")
 
-    print("\n[3] Balancing...")
-    X, y = balanced_sample(X, y, ratio=args.ratio)
-    print(f"  Balanced — steer(+1): {(y==1).sum()}, no_steer(0): {(y==0).sum()}")
-    print(f"  Total: {len(y)}")
+    if not from_npz:
+        print("\n[3] Balancing...")
+        X, y = balanced_sample(X, y, ratio=args.ratio)
+        print(f"  Balanced — steer(+1): {(y==1).sum()}, no_steer(0): {(y==0).sum()}")
+        print(f"  Total: {len(y)}")
+    else:
+        print(f"\n[3] Skipping balance (already downsampled in npz)  Total: {len(y)}")
 
     print("\n[4] Training Logistic Regression...")
     clf, X_scaled, f1_mean, f1_std, auc_mean = run_lr(X, y, pca_n=args.pca, C=args.C)
