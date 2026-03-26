@@ -19,7 +19,7 @@ echo "=============================="
 python classifier_binary.py \
     --model   "${MODEL}" \
     --layer   "${LAYER}" \
-    --pca     "${PCA}" \
+    # --pca     "${PCA}" \
     --ratio   "${RATIO}" \
     --samples "${SAMPLES}" \
     --visualize
