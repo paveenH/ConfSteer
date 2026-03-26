@@ -197,8 +197,10 @@ def main():
     parser.add_argument("--kernel_size",  type=int,   default=3)
     parser.add_argument("--dropout",      type=float, default=0.5)
     parser.add_argument("--epochs",  type=int,   default=20)
-    parser.add_argument("--lr",      type=float, default=1e-3)
+    parser.add_argument("--lr",      type=float, default=3e-4)
     parser.add_argument("--batch",   type=int,   default=64)
+    parser.add_argument("--class_weight", action="store_true",
+                        help="Weight loss by inverse class frequency of test set")
     parser.add_argument("--device",  default="cuda" if torch.cuda.is_available() else "cpu")
     args = parser.parse_args()
 
@@ -293,7 +295,14 @@ def main():
     n_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"\n[3] Model: {n_params:,} trainable parameters")
 
-    criterion = nn.CrossEntropyLoss()
+    if args.class_weight:
+        n0 = (y_test == 0).sum()
+        n1 = (y_test == 1).sum()
+        w  = torch.tensor([1.0, n0 / n1], dtype=torch.float32).to(device)
+        print(f"  Class weights: no_steer=1.00, steer={n0/n1:.2f}")
+        criterion = nn.CrossEntropyLoss(weight=w)
+    else:
+        criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-2)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=args.epochs)
 
