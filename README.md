@@ -95,7 +95,7 @@ itself does not change.
 | `qwen3` | 8B | Qwen3-8B |
 
 Both models are loaded in `bfloat16`. Hidden states have shape `(N, 33, 4096)` for llama3
-and `(N, 29, 3584)` for qwen3 (33/29 layers including embedding, 4096/3584 hidden dim).
+and `(N, 37, 4096)` for qwen3 (33/37 layers including embedding, 4096 hidden dim).
 
 ---
 
