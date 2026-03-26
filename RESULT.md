@@ -182,25 +182,42 @@ Adding more samples does not improve performance — the ceiling is determined b
 
 ### Dataset Overview
 
-| Model | Class 1 (steer) | Class 0 (no_steer) | Total |
-|---|---|---|---|
-| llama3-8B | 11,607 | 11,607 | 23,214 |
-| qwen3-8B | 10,232 | 10,232 | 20,464 |
+| Model | Total layers | Class 1 (steer) | Class 0 (no_steer) | Total |
+|---|---|---|---|---|
+| llama3-8B | 33 | 11,607 | 11,607 | 23,214 |
+| qwen3-8B | 37 | 10,232 | 10,232 | 20,464 |
 
-### Binary Classification — llama3-8B, Layer 25, No PCA
+---
+
+### Single-Layer Results (No PCA)
+
+#### Summary table
+
+| Model | Layer | CV F1 | CV AUC | Test Acc | Test AUC | Note |
+|---|---|---|---|---|---|---|
+| llama3-8B | 19 | 0.698 ± 0.006 | 0.750 | 0.68 | 0.748 | Best in PCA=50 sweep |
+| **llama3-8B** | **25** | **0.706 ± 0.007** | **0.756** | **0.70** | **0.750** | Best overall |
+| **qwen3-8B** | **25** | **0.706 ± 0.004** | **0.768** | **0.70** | **0.765** | Best overall |
+
+> Layer 25 is optimal for both models under no-PCA setting. PCA=50 sweep slightly favored layer 19 for llama3, but full-dim comparison shows layer 25 is superior.
+
+#### llama3-8B, Layer 19
+
+| Class | Precision | Recall | F1 | Support |
+|---|---|---|---|---|
+| no_steer(0) | 0.70 | 0.64 | 0.67 | 2,322 |
+| steer(+1) | 0.67 | 0.72 | 0.69 | 2,321 |
+| **macro avg** | **0.68** | **0.68** | **0.68** | 4,643 |
+
+Accuracy: 0.68 &nbsp; ROC-AUC: 0.748
 
 ```
-python classifier_binary.py --model llama3 --layer 25 \
-  --samples samples/llama3/samples_binary_all.npz
+              pred 0   pred +1
+true 0          1491      831
+true +1          645     1676
 ```
 
-#### Cross-validation
-
-| CV F1 | CV AUC |
-|---|---|
-| 0.706 ± 0.007 | 0.756 |
-
-#### Test set (20% hold-out)
+#### llama3-8B, Layer 25
 
 | Class | Precision | Recall | F1 | Support |
 |---|---|---|---|---|
@@ -210,30 +227,13 @@ python classifier_binary.py --model llama3 --layer 25 \
 
 Accuracy: 0.70 &nbsp; ROC-AUC: 0.750
 
-#### Confusion matrix
-
 ```
               pred 0   pred +1
 true 0          1559      763
 true +1          646     1675
 ```
 
-### Binary Classification — qwen3-8B, Layer 25, No PCA
-
-```
-python classifier_binary.py --model qwen3 --layer 25 \
-  --samples samples/qwen3/samples_binary_all.npz
-```
-
-> qwen3 hidden state shape: (N, 37, 4096) — 37 layers
-
-#### Cross-validation
-
-| CV F1 | CV AUC |
-|---|---|
-| 0.706 ± 0.004 | 0.768 |
-
-#### Test set (20% hold-out)
+#### qwen3-8B, Layer 25
 
 | Class | Precision | Recall | F1 | Support |
 |---|---|---|---|---|
@@ -243,20 +243,11 @@ python classifier_binary.py --model qwen3 --layer 25 \
 
 Accuracy: 0.70 &nbsp; ROC-AUC: 0.765
 
-#### Confusion matrix
-
 ```
               pred 0   pred +1
 true 0          1392      655
 true +1          582     1464
 ```
-
-### Model Comparison (Layer 25, No PCA)
-
-| Model | Layers | CV F1 | CV AUC | Test AUC |
-|---|---|---|---|---|
-| llama3-8B | 33 | 0.706 ± 0.007 | 0.756 | 0.750 |
-| qwen3-8B | 37 | 0.706 ± 0.004 | 0.768 | 0.765 |
 
 ---
 
