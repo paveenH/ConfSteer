@@ -7,16 +7,18 @@ Label definition:
   +1 (steer)    : label_pos4 == +1  (wrong→correct under +4 steering)
    0 (no_steer) : all others        (already correct, or steering doesn't help)
 
-Class 0 is downsampled to ratio × count(+1).
+Usage (question-level split, recommended):
+  python classifier_binary.py --model llama3 --layer 25 \
+    --train samples/llama3/samples_binary_all_train.npz \
+    --test  samples/llama3/samples_binary_all_test.npz
 
-Usage (from pre-extracted samples):
-  python classifier_binary.py --model llama3 --layer 19 --samples samples/llama3/samples_all.npz
-  python classifier_binary.py --model llama3 --layer 19 --samples samples/llama3/samples_all.npz --pca 50
-  python classifier_binary.py --model llama3 --samples samples/llama3/samples_all.npz --layer_sweep
+  python classifier_binary.py --model llama3 --layer_sweep --pca 50 \
+    --train samples/llama3/samples_binary_all_train.npz \
+    --test  samples/llama3/samples_binary_all_test.npz
 
-Usage (legacy: read H5 directly):
-  python classifier_binary.py --model llama3 --layer 19
-  python classifier_binary.py --model llama3 --pca 50 --layer_sweep
+Usage (legacy: single npz, sample-level split):
+  python classifier_binary.py --model llama3 --layer 25 \
+    --samples samples/llama3/samples_binary_all.npz
 """
 
 import argparse
@@ -370,9 +372,12 @@ def main():
                         help="class-0 downsample ratio (default: 1.0)")
     parser.add_argument("--C",       type=float, default=1.0,
                         help="LR regularization strength")
+    parser.add_argument("--train",   default=None,
+                        help="Path to train .npz (question-level split, from prepare_samples.py)")
+    parser.add_argument("--test",    default=None,
+                        help="Path to test .npz (question-level split, from prepare_samples.py)")
     parser.add_argument("--samples", default=None,
-                        help="Path to pre-extracted .npz from prepare_samples.py "
-                             "(default: samples/{model}/samples_all.npz if it exists)")
+                        help="Legacy: single .npz with sample-level split fallback")
     parser.add_argument("--visualize",      action="store_true")
     parser.add_argument("--learning_curve", action="store_true")
     parser.add_argument("--layer_sweep",    action="store_true",
@@ -386,20 +391,33 @@ def main():
     print(f"  Ratio : {args.ratio}  C : {args.C}")
     print(f"{'='*50}\n")
 
-    # ── Resolve samples path ──
-    samples_path = None
-    if args.samples:
-        samples_path = Path(args.samples)
-    else:
-        default_npz = SAMPLE_DIR / args.model / "samples_binary_all.npz"
-        if default_npz.exists():
-            samples_path = default_npz
-            print(f"  [auto] Using pre-extracted samples: {samples_path}")
+    # ── Resolve paths ──
+    # Mode A: question-level split (train + test npz)
+    # Mode B: legacy single npz (sample-level split)
+    train_path = Path(args.train) if args.train else None
+    test_path  = Path(args.test)  if args.test  else None
+    use_split  = train_path and train_path.exists()
+
+    if not use_split:
+        # fallback to legacy single npz
+        if args.samples:
+            samples_path = Path(args.samples)
+        else:
+            samples_path = SAMPLE_DIR / args.model / "samples_binary_all.npz"
+            if samples_path.exists():
+                print(f"  [auto] Using legacy npz: {samples_path}")
+            else:
+                samples_path = None
 
     # ── Layer Sweep ──
     if args.layer_sweep:
         print("\n[sweep] Sweeping all layers...")
-        if samples_path and samples_path.exists():
+        if use_split:
+            X_all, y_all = load_samples(train_path)
+            X_all = X_all.astype(np.float32)
+            plot_layer_sweep_from_array(X_all, y_all, args.model, args.pca, args.ratio, args.C,
+                                        BASE_DIR / "plots", already_balanced=True)
+        elif samples_path and samples_path.exists():
             X_all, y_all = load_samples(samples_path)
             X_all = X_all.astype(np.float32)
             plot_layer_sweep_from_array(X_all, y_all, args.model, args.pca, args.ratio, args.C,
@@ -407,62 +425,80 @@ def main():
         else:
             print("[1] Loading labels (legacy H5 mode)...")
             label_files = load_labels(args.model)
-            print(f"  Found {len(label_files)} label files")
             X_all, y_all = extract_all_layers(args.model, label_files)
             plot_layer_sweep_from_array(X_all, y_all, args.model, args.pca, args.ratio, args.C,
                                         BASE_DIR / "plots")
         return
 
-    # ── Single layer flow ──
-    from_npz = False
-    if samples_path and samples_path.exists():
-        print("[1] Loading pre-extracted samples...")
+    # ── Single layer: load features ──
+    if use_split:
+        print("[1] Loading train/test samples (question-level split)...")
+        X_tr_all, y_train = load_samples(train_path)
+        X_te_all, y_test  = load_samples(test_path)
+        layer = min(args.layer, X_tr_all.shape[1] - 1)
+        X_train = X_tr_all[:, layer, :].astype(np.float32)
+        X_test  = X_te_all[:, layer, :].astype(np.float32)
+        print(f"  Using layer {layer} of {X_tr_all.shape[1]}")
+        print(f"  Train — steer(1): {(y_train==1).sum()}, no_steer(0): {(y_train==0).sum()}")
+        print(f"  Test  — steer(1): {(y_test==1).sum()},  no_steer(0): {(y_test==0).sum()}")
+    elif samples_path and samples_path.exists():
+        print("[1] Loading pre-extracted samples (legacy single npz)...")
         X_all, y_all = load_samples(samples_path)
         layer = min(args.layer, X_all.shape[1] - 1)
         X = X_all[:, layer, :].astype(np.float32)
-        y = y_all
-        from_npz = True
         print(f"  Using layer {layer} of {X_all.shape[1]}")
+        print(f"  Raw — steer(+1): {(y_all==1).sum()}, no_steer(0): {(y_all==0).sum()}")
+        print(f"\n[3] Skipping balance (already downsampled in npz)  Total: {len(y_all)}")
+        # fall through to legacy path below
+        X_train, X_test, y_train, y_test = train_test_split(
+            X, y_all, test_size=0.2, random_state=RANDOM_SEED, stratify=y_all
+        )
     else:
         print("[1] Loading labels (legacy H5 mode)...")
         label_files = load_labels(args.model)
         print(f"  Found {len(label_files)} label files")
         print("\n[2] Extracting features...")
         X, y = extract_features(args.model, label_files, args.layer)
-
-    print(f"  Raw — steer(+1): {(y==1).sum()}, no_steer(0): {(y==0).sum()}")
-
-    if not from_npz:
+        print(f"  Raw — steer(+1): {(y==1).sum()}, no_steer(0): {(y==0).sum()}")
         print("\n[3] Balancing...")
         X, y = balanced_sample(X, y, ratio=args.ratio)
-        print(f"  Balanced — steer(+1): {(y==1).sum()}, no_steer(0): {(y==0).sum()}")
-        print(f"  Total: {len(y)}")
-    else:
-        print(f"\n[3] Skipping balance (already downsampled in npz)  Total: {len(y)}")
+        X_train, X_test, y_train, y_test = train_test_split(
+            X, y, test_size=0.2, random_state=RANDOM_SEED, stratify=y
+        )
 
+    # ── Scale + PCA on train, apply to test ──
     print("\n[4] Training Logistic Regression...")
-    clf, X_scaled, f1_mean, f1_std, auc_mean = run_lr(X, y, pca_n=args.pca, C=args.C)
-    print(f"  5-fold CV F1 : {f1_mean:.3f} ± {f1_std:.3f}")
-    print(f"  5-fold CV AUC: {auc_mean:.3f}")
+    scaler = StandardScaler()
+    X_train_s = scaler.fit_transform(X_train)
+    X_test_s  = scaler.transform(X_test)
 
-    if args.visualize:
-        print("\n[viz] Generating plots...")
-        visualize(X_scaled, y, args.model, args.layer, args.pca, BASE_DIR / "plots")
+    if args.pca > 0:
+        pca = PCA(n_components=min(args.pca, X_train_s.shape[1]), random_state=RANDOM_SEED)
+        X_train_s = pca.fit_transform(X_train_s)
+        X_test_s  = pca.transform(X_test_s)
+        var = pca.explained_variance_ratio_.sum() * 100
+        print(f"  PCA({args.pca}): explained variance = {var:.1f}%")
 
-    # ── Hold-out evaluation ──
-    X_train, X_test, y_train, y_test = train_test_split(
-        X_scaled, y, test_size=0.2, random_state=RANDOM_SEED, stratify=y
-    )
-    clf_eval = LogisticRegression(
+    clf = LogisticRegression(
         max_iter=1000, C=args.C,
         class_weight="balanced",
         random_state=RANDOM_SEED, n_jobs=-1,
     )
-    clf_eval.fit(X_train, y_train)
+    cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=RANDOM_SEED)
+    f1_scores  = cross_val_score(clf, X_train_s, y_train, cv=cv, scoring="f1")
+    auc_scores = cross_val_score(clf, X_train_s, y_train, cv=cv, scoring="roc_auc")
+    print(f"  5-fold CV F1 : {f1_scores.mean():.3f} ± {f1_scores.std():.3f}")
+    print(f"  5-fold CV AUC: {auc_scores.mean():.3f}")
+
+    clf.fit(X_train_s, y_train)
+
+    if args.visualize:
+        print("\n[viz] Generating plots...")
+        visualize(X_train_s, y_train, args.model, args.layer, args.pca, BASE_DIR / "plots")
 
     print("\n[5] Evaluation on test set:")
-    y_pred = clf_eval.predict(X_test)
-    y_prob = clf_eval.predict_proba(X_test)[:, 1]
+    y_pred = clf.predict(X_test_s)
+    y_prob = clf.predict_proba(X_test_s)[:, 1]
     print(classification_report(y_test, y_pred,
                                  target_names=["no_steer(0)", "steer(+1)"]))
     print(f"  ROC-AUC: {roc_auc_score(y_test, y_prob):.3f}")
@@ -472,7 +508,7 @@ def main():
 
     if args.learning_curve:
         print("\n[6] Plotting learning curve...")
-        plot_learning_curve(clf, X_scaled, y, args.model, args.layer, args.pca,
+        plot_learning_curve(clf, X_train_s, y_train, args.model, args.layer, args.pca,
                             BASE_DIR / "plots")
 
 
