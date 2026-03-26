@@ -382,6 +382,8 @@ def main():
     parser.add_argument("--learning_curve", action="store_true")
     parser.add_argument("--layer_sweep",    action="store_true",
                         help="Sweep all layers and plot CV F1 / AUC")
+    parser.add_argument("--threshold", type=float, default=0.5,
+                        help="Decision threshold for steer class (default: 0.5)")
     args = parser.parse_args()
 
     print(f"\n{'='*50}")
@@ -497,8 +499,10 @@ def main():
         visualize(X_train_s, y_train, args.model, args.layer, args.pca, BASE_DIR / "plots")
 
     print("\n[5] Evaluation on test set:")
-    y_pred = clf.predict(X_test_s)
     y_prob = clf.predict_proba(X_test_s)[:, 1]
+    y_pred = (y_prob >= args.threshold).astype(int)
+    if args.threshold != 0.5:
+        print(f"  Using threshold: {args.threshold}")
     print(classification_report(y_test, y_pred,
                                  target_names=["no_steer(0)", "steer(+1)"]))
     print(f"  ROC-AUC: {roc_auc_score(y_test, y_prob):.3f}")
