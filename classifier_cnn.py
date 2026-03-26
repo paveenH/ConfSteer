@@ -15,12 +15,13 @@ Architecture:
     → Layer Attention: learned weighted sum over layers
     → MLP head → 2 classes
 
-Usage (from pre-extracted samples):
+Usage (question-level split, recommended):
   python classifier_cnn.py --model llama3 \
-    --samples samples/llama3/samples_binary_all.npz
-  python classifier_cnn.py --model qwen3 --epochs 30 --lr 3e-4 \
-    --samples samples/qwen3/samples_binary_all.npz
-  python classifier_cnn.py --model llama3 --layers 10-25 \
+    --train samples/llama3/samples_binary_all_train.npz \
+    --test  samples/llama3/samples_binary_all_test.npz
+
+Usage (legacy: single npz, sample-level split):
+  python classifier_cnn.py --model llama3 \
     --samples samples/llama3/samples_binary_all.npz
 """
 
@@ -72,11 +73,12 @@ def parse_layer_range(spec: str, n_layers: int):
 
 def scale_per_layer(X: np.ndarray):
     """
-    Per-layer StandardScaler.
+    Per-layer StandardScaler. Fits on X in-place.
     X: (N, L, D) — scale each layer independently.
-    Returns scaled X (float32) and list of fitted scalers.
+    Returns (scaled X as float32, list of fitted scalers).
     """
     _, L, _ = X.shape
+    X = X.astype(np.float32)
     scalers = []
     for l in range(L):
         sc = StandardScaler()
@@ -182,8 +184,12 @@ def evaluate(model, loader, criterion, device):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model",   default="llama3", choices=["llama3", "qwen3"])
+    parser.add_argument("--train",   default=None,
+                        help="Path to train .npz (question-level split)")
+    parser.add_argument("--test",    default=None,
+                        help="Path to test .npz (question-level split)")
     parser.add_argument("--samples", type=str, default=None,
-                        help="Path to .npz file (default: samples/{model}/samples_binary_all.npz)")
+                        help="Legacy: single .npz with sample-level split fallback")
     parser.add_argument("--layers",  default="all",
                         help="Layer range: 'all' or 'start-end', e.g. '10-25'")
     parser.add_argument("--proj_dim",     type=int,   default=64)
@@ -200,41 +206,71 @@ def main():
     np.random.seed(RANDOM_SEED)
     device = torch.device(args.device)
 
-    # ── Resolve samples path ──
-    if args.samples:
-        samples_path = Path(args.samples)
+    # ── Resolve paths ──
+    train_path = Path(args.train) if args.train else None
+    test_path  = Path(args.test)  if args.test  else None
+    use_split  = train_path and train_path.exists()
+
+    if not use_split:
+        if args.samples:
+            samples_path = Path(args.samples)
+        else:
+            samples_path = SAMPLE_DIR / args.model / "samples_binary_all.npz"
     else:
-        samples_path = SAMPLE_DIR / args.model / "samples_binary_all.npz"
+        samples_path = None
 
     print(f"\n{'='*55}")
     print(f"  ConfSteer CNN Classifier (Binary)")
     print(f"  Model   : {args.model}")
-    print(f"  Samples : {samples_path}")
+    if use_split:
+        print(f"  Train   : {train_path}")
+        print(f"  Test    : {test_path}")
+    else:
+        print(f"  Samples : {samples_path}")
     print(f"  Layers  : {args.layers}")
     print(f"  Device  : {device}")
     print(f"{'='*55}\n")
 
     # ── Load samples ──
-    print("[1] Loading pre-extracted samples...")
-    X, y = load_samples(samples_path)
-    # X: (N, n_layers, hidden_dim)
+    if use_split:
+        print("[1] Loading train/test samples (question-level split)...")
+        X_tr, y_train = load_samples(train_path)
+        X_te, y_test  = load_samples(test_path)
 
-    # ── Select layer subset ──
-    _, n_layers, D = X.shape
-    layer_indices = parse_layer_range(args.layers, n_layers)
-    X = X[:, layer_indices, :]
-    L = len(layer_indices)
-    print(f"  Using {L} layers: {layer_indices[0]}–{layer_indices[-1]}")
-    print(f"  Feature shape: {X.shape}")
+        _, n_layers, D = X_tr.shape
+        layer_indices = parse_layer_range(args.layers, n_layers)
+        X_tr = X_tr[:, layer_indices, :]
+        X_te = X_te[:, layer_indices, :]
+        L = len(layer_indices)
+        print(f"  Using {L} layers: {layer_indices[0]}–{layer_indices[-1]}")
+        print(f"  Train shape: {X_tr.shape}  steer(1): {(y_train==1).sum()}, no_steer(0): {(y_train==0).sum()}")
+        print(f"  Test  shape: {X_te.shape}  steer(1): {(y_test==1).sum()},  no_steer(0): {(y_test==0).sum()}")
 
-    # ── Per-layer scaling ──
-    print("\n[2] Scaling (per-layer StandardScaler)...")
-    X, _ = scale_per_layer(X)
+        # Per-layer scaling: fit on train, apply to test
+        print("\n[2] Scaling (per-layer StandardScaler, fit on train)...")
+        _, scalers = scale_per_layer(X_tr)
+        for l, sc in enumerate(scalers):
+            X_te[:, l, :] = sc.transform(X_te[:, l, :])
+        X_train, X_test = X_tr, X_te
 
-    # ── Train/test split ──
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=RANDOM_SEED, stratify=y
-    )
+    else:
+        print("[1] Loading pre-extracted samples (legacy single npz)...")
+        X, y = load_samples(samples_path)
+
+        _, n_layers, D = X.shape
+        layer_indices = parse_layer_range(args.layers, n_layers)
+        X = X[:, layer_indices, :]
+        L = len(layer_indices)
+        print(f"  Using {L} layers: {layer_indices[0]}–{layer_indices[-1]}")
+        print(f"  Feature shape: {X.shape}")
+
+        print("\n[2] Scaling (per-layer StandardScaler)...")
+        X, _ = scale_per_layer(X)
+
+        X_train, X_test, y_train, y_test = train_test_split(
+            X, y, test_size=0.2, random_state=RANDOM_SEED, stratify=y
+        )
+
     print(f"  Train: {len(y_train)}  Test: {len(y_test)}")
     print(f"  Train steer(1): {(y_train==1).sum()}  no_steer(0): {(y_train==0).sum()}")
 
