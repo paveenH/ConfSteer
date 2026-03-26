@@ -196,10 +196,29 @@ Adding more samples does not improve performance — the ceiling is determined b
 | Model | Layer | CV F1 | CV AUC | Test Acc | Test AUC | Note |
 |---|---|---|---|---|---|---|
 | llama3-8B | 19 | 0.698 ± 0.006 | 0.750 | 0.68 | 0.748 | Best in PCA=50 sweep |
-| **llama3-8B** | **25** | **0.706 ± 0.007** | **0.756** | **0.70** | **0.750** | Best overall |
-| **qwen3-8B** | **25** | **0.706 ± 0.004** | **0.768** | **0.70** | **0.765** | Best overall |
+| llama3-8B | 25 | 0.706 ± 0.007 | 0.756 | 0.70 | 0.750 | Best overall |
+| llama3-8B | 32 (last) | 0.700 ± 0.003 | 0.754 | 0.69 | 0.750 | Last layer |
+| qwen3-8B | 25 | 0.706 ± 0.004 | 0.768 | 0.70 | 0.765 | Best overall |
+| qwen3-8B | 36 (last) | 0.715 ± 0.005 | 0.775 | 0.71 | 0.784 | Last layer — best for qwen3 |
 
-> Layer 25 is optimal for both models under no-PCA setting. PCA=50 sweep slightly favored layer 19 for llama3, but full-dim comparison shows layer 25 is superior.
+> **llama3**: layer 25 is optimal; last layer (32) is slightly weaker.
+> **qwen3**: last layer (36) outperforms layer 25 across all metrics — qwen3's steering signal strengthens toward the final layer.
+
+#### llama3-8B, Layer 32 (last)
+
+| Class | Precision | Recall | F1 | Support |
+|---|---|---|---|---|
+| no_steer(0) | 0.70 | 0.66 | 0.68 | 2,322 |
+| steer(+1) | 0.68 | 0.71 | 0.69 | 2,321 |
+| **macro avg** | **0.69** | **0.69** | **0.69** | 4,643 |
+
+Accuracy: 0.69 &nbsp; ROC-AUC: 0.750
+
+```
+              pred 0   pred +1
+true 0          1533      789
+true +1          666     1655
+```
 
 #### llama3-8B, Layer 19
 
@@ -231,6 +250,22 @@ Accuracy: 0.70 &nbsp; ROC-AUC: 0.750
               pred 0   pred +1
 true 0          1559      763
 true +1          646     1675
+```
+
+#### qwen3-8B, Layer 36 (last)
+
+| Class | Precision | Recall | F1 | Support |
+|---|---|---|---|---|
+| no_steer(0) | 0.72 | 0.69 | 0.71 | 2,047 |
+| steer(+1) | 0.71 | 0.73 | 0.72 | 2,046 |
+| **macro avg** | **0.71** | **0.71** | **0.71** | 4,093 |
+
+Accuracy: 0.71 &nbsp; ROC-AUC: 0.784
+
+```
+              pred 0   pred +1
+true 0          1422      625
+true +1          548     1498
 ```
 
 #### qwen3-8B, Layer 25
