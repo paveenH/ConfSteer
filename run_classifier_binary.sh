@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-MODEL="llama3"
+MODEL="qwen3"
 LAYER=25
 # PCA=200
 RATIO=1.0
