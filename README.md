@@ -350,11 +350,49 @@ python classifier_binary.py --model llama3 --layer 25 --samples samples/llama3/s
 ### Pipeline
 
 ```
-[1] Load samples_binary_{roles}.npz  (already downsampled, float16)
+[1] Load _train.npz / _test.npz  (already downsampled, float16)
 [2] Cast X to float32  →  slice layer  →  (N, hidden_dim)
-[3] StandardScaler + optional PCA
-[4] LogisticRegression (class_weight="balanced"), 5-fold CV
-[5] Evaluate: F1, ROC-AUC, classification_report, confusion matrix
+[3] StandardScaler fit on train, transform test
+[4] LogisticRegression (class_weight="balanced"), 5-fold CV on train
+[5] Evaluate on held-out test: F1, ROC-AUC, classification_report, confusion matrix
+```
+
+---
+
+## CNN Classifier (`classifier_cnn.py`)
+
+Trains a 1D-CNN with layer attention over all layers (or a layer range) to predict:
+**should we apply +4 steering?**
+
+Architecture: Linear proj (D→proj_dim) → 1D-CNN (kernel=3) → Layer Attention → MLP → 2 classes
+
+### Usage
+
+```bash
+# Recommended: question-level train/test split
+python classifier_cnn.py --model llama3 \
+  --train samples/llama3/samples_binary_all_train.npz \
+  --test  samples/llama3/samples_binary_all_test.npz
+
+# With custom hyperparameters
+python classifier_cnn.py --model llama3 \
+  --train samples/llama3/samples_binary_all_train.npz \
+  --test  samples/llama3/samples_binary_all_test.npz \
+  --layers 10-25 --proj_dim 128 --cnn_channels 256 --epochs 30
+
+# Legacy: single npz with sample-level split (deprecated)
+python classifier_cnn.py --model llama3 --samples samples/llama3/samples_binary_all.npz
+```
+
+### Pipeline
+
+```
+[1] Load _train.npz / _test.npz  (already downsampled, float16)
+[2] Select layer range  →  (N, L, hidden_dim)
+[3] Per-layer StandardScaler fit on train, transform test
+[4] LayerAttentionCNN: proj → 1D-CNN → attention → MLP
+[5] Train with AdamW + CosineAnnealingLR; best checkpoint by val loss
+[6] Evaluate on held-out test: Acc, ROC-AUC, classification_report
 ```
 
 ---
