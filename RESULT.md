@@ -361,6 +361,7 @@ qwen3 CNN AUC=0.549 (near random), with epoch 1 val acc=6.5% (near-zero). Traini
 | 2D-CNN | 5k | Conv2d(1→32→64, kernel=3×64) → GAP → MLP | 30 | 0.729 | 0.67 | 0.67 | Slow convergence; 403k params |
 | PCA-CNN | **25k** | Per-layer PCA (D→128) → 1D-CNN → LayerAttn | 2 | **0.786** | 0.72 | 0.72 | +0.016 vs 5k; overfitting persists |
 | Sparse Attn | **25k** | Dim-proj (L→64) → Top-k (k=512) → MLP | 27 | 0.757 | 0.69 | 0.69 | +0.011 vs 5k; no overfitting |
+| L1-CNN | **25k** | Per-layer L1 (D→256) → 1D-CNN → LayerAttn | 3 | 0.774 | 0.70 | 0.70 | topd=256; overfits from epoch 4 |
 
 **Key Observations:**
 
