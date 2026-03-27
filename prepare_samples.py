@@ -289,6 +289,8 @@ def main():
     parser.add_argument("--task",   nargs="*", default=None,
                         choices=["binary", "three", "orig"],
                         help="Which outputs to save (default: all). E.g. --task orig")
+    parser.add_argument("--max_per_class", type=int, default=None,
+                        help="Cap each class to this many samples (orig task only). E.g. --max_per_class 1000")
     args = parser.parse_args()
 
     roles_filter = set(args.roles) if args.roles else None
@@ -341,7 +343,7 @@ def main():
 
     if "orig" in tasks:
         print("\n[4e] Downsampling train → orig_correct...")
-        X_orig_tr, y_orig_tr_ds, meta_orig_tr = downsample_orig(X_tr, y_orig_tr, meta_tr, args.ratio, args.seed)
+        X_orig_tr, y_orig_tr_ds, meta_orig_tr = downsample_orig(X_tr, y_orig_tr, meta_tr, args.ratio, args.seed, args.max_per_class)
         print("\n[4f] Preparing test → orig_correct (no downsample)...")
         print(f"  [orig test]  correct(1): {(y_orig_te==1).sum()}, wrong(0): {(y_orig_te==0).sum()}  total: {len(y_orig_te)}")
         save_npz(out_dir / f"samples_orig_{roles_tag}_train.npz",  X_orig_tr, y_orig_tr_ds, meta_orig_tr, roles_list)
