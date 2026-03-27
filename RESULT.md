@@ -254,13 +254,24 @@ Training: 20 epochs, AdamW lr=1e-3, CosineAnnealingLR, batch=64, dropout=0.5, be
 > **Note:** CV AUC is computed on the balanced train set (1:1); Test AUC is on the imbalanced test set.
 > Compared to sample-level split, Test AUC drops ~0.10 for LR — confirming prior results were inflated by leakage.
 
+### Threshold Sweep (llama3 LR layer 25, CV AUC=0.770, Test AUC=0.654)
+
+| Threshold | Precision (steer) | Recall (steer) | TP | FP | TP/FP |
+|---|---|---|---|---|---|
+| 0.5 | 0.11 | 0.52 | 1,194 | 9,318 | 1:7.8 |
+| 0.7 | 0.12 | 0.41 | 950 | 7,195 | 1:7.6 |
+| 0.8 | 0.12 | 0.36 | 820 | 5,967 | 1:7.3 |
+
+Raising the threshold reduces both TP and FP proportionally — precision stays flat at 0.11–0.12. The score distribution has no high-precision region; threshold tuning cannot rescue a low-AUC model.
+
 ### qwen3 CNN anomaly
 
-qwen3 CNN AUC=0.549 (near random), with epoch 1 val acc=6.5% (near-zero). Training loss barely moves (0.694→0.673). Likely cause: README lists qwen3 hidden dim as 3584/29 layers, but sample shape shows 4096/37 layers — architecture info needs verification.
+qwen3 CNN AUC=0.549 (near random), with epoch 1 val acc=6.5% (near-zero). Training loss barely moves (0.694→0.673). qwen3 architecture confirmed: 37 layers (including embedding), hidden dim=4096 — README has been corrected.
 
 ### Observations
 
 - **Leakage confirmed**: LR Test AUC 0.65–0.67 vs sample-level ~0.75–0.78 → ~0.10 inflation from question leakage
 - **CNN vs LR (llama3)**: CNN AUC 0.692 vs LR 0.654 (+0.038); CNN is more conservative (higher precision, lower recall)
-- **Precision bottleneck**: steer precision 0.10–0.14 means ~9–10 FP per TP → net accuracy gain unlikely in real deployment
-- **Signal ceiling**: AUC ~0.69–0.70 for llama3; predicting steering effectiveness from hidden states alone appears fundamentally limited
+- **Precision bottleneck**: steer precision 0.10–0.14 regardless of threshold → net accuracy gain unlikely in real deployment
+- **Signal ceiling**: AUC ~0.69 for llama3; predicting steering effectiveness from hidden states appears fundamentally limited
+- **Next direction**: switch target to `orig_correct` (is the model currently right?) — stronger signal, better supported by probing literature
