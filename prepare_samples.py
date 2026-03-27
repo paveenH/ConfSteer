@@ -82,13 +82,14 @@ def extract(model: str, label_files, roles_filter=None):
     """
     For each label entry, load the corresponding row from its role H5.
     Returns:
-      X       : (N, n_layers, hidden_dim) float16
-      y_three : (N,) int8  — 0=no_change, 1=pos4_works, 2=neg4_works
-      meta    : list of dicts with task/orig_stem/role/index per row
+      X        : (N, n_layers, hidden_dim) float16
+      y_three  : (N,) int8  — 0=no_change, 1=pos4_works, 2=neg4_works
+      y_orig   : (N,) int8  — 1=orig_correct, 0=orig_wrong
+      meta     : list of dicts with task/orig_stem/role/index per row
     """
     import h5py
 
-    X_list, y_thr_list, meta_list = [], [], []
+    X_list, y_thr_list, y_orig_list, meta_list = [], [], [], []
     skipped_files = set()
 
     for task, orig_stem, entries in label_files:
@@ -114,6 +115,7 @@ def extract(model: str, label_files, roles_filter=None):
                     X_list.append(hs[idx, :, :])
                     lp = e["label_pos4"]
                     y_thr_list.append(2 if lp == -1 else lp)  # -1→2, 0→0, 1→1
+                    y_orig_list.append(1 if e["orig_correct"] else 0)
                     meta_list.append({
                         "task":      task,
                         "orig_stem": orig_stem,
@@ -126,9 +128,11 @@ def extract(model: str, label_files, roles_filter=None):
 
     X       = np.array(X_list, dtype=np.float16)
     y_three = np.array(y_thr_list, dtype=np.int8)
+    y_orig  = np.array(y_orig_list, dtype=np.int8)
     print(f"  Extracted {len(X)} samples, shape: {X.shape}")
-    print(f"  y_three  — 1(pos4): {(y_three==1).sum()}, 0(no_change): {(y_three==0).sum()}, 2(neg4): {(y_three==2).sum()}")
-    return X, y_three, meta_list
+    print(f"  y_three — 1(pos4): {(y_three==1).sum()}, 0(no_change): {(y_three==0).sum()}, 2(neg4): {(y_three==2).sum()}")
+    print(f"  y_orig  — 1(correct): {(y_orig==1).sum()}, 0(wrong): {(y_orig==0).sum()}")
+    return X, y_three, y_orig, meta_list
 
 
 # ==================== Question-level split ====================
@@ -206,6 +210,38 @@ def downsample_binary(X, y_three, meta_list, ratio: float, seed: int):
     return X[keep], y, [meta_list[i] for i in keep]
 
 
+def downsample_orig(X, y_orig, meta_list, ratio: float, seed: int, max_per_class: int = None):
+    """
+    orig_correct binary: class1 = correct (y_orig==1), class0 = wrong.
+    Downsample the majority class to ratio × n_minority.
+    If max_per_class is set, further cap each class to that many samples.
+    """
+    rng = np.random.default_rng(seed)
+    idx_c1 = np.where(y_orig == 1)[0]
+    idx_c0 = np.where(y_orig == 0)[0]
+
+    # downsample the majority class
+    if len(idx_c1) >= len(idx_c0):
+        n_keep = min(int(ratio * len(idx_c0)), len(idx_c1))
+        idx_c1_kept = rng.choice(idx_c1, size=n_keep, replace=False)
+        idx_c0_kept = idx_c0
+    else:
+        n_keep = min(int(ratio * len(idx_c1)), len(idx_c0))
+        idx_c0_kept = rng.choice(idx_c0, size=n_keep, replace=False)
+        idx_c1_kept = idx_c1
+
+    # cap each class if max_per_class is specified
+    if max_per_class is not None:
+        if len(idx_c1_kept) > max_per_class:
+            idx_c1_kept = rng.choice(idx_c1_kept, size=max_per_class, replace=False)
+        if len(idx_c0_kept) > max_per_class:
+            idx_c0_kept = rng.choice(idx_c0_kept, size=max_per_class, replace=False)
+
+    keep = np.sort(np.concatenate([idx_c1_kept, idx_c0_kept]))
+    print(f"  [orig] correct(1): {len(idx_c1)}, wrong(0): {len(idx_c0)} → kept: {len(idx_c1_kept)}+{len(idx_c0_kept)}={len(keep)}")
+    return X[keep], y_orig[keep], [meta_list[i] for i in keep]
+
+
 def downsample_three(X, y_three, meta_list, ratio: float, seed: int):
     """
     Three-class: 0=no_change, 1=pos4_works, 2=neg4_works.
@@ -250,19 +286,23 @@ def main():
     parser.add_argument("--test_size", type=float, default=0.2,
                         help="Fraction of questions for test set (default: 0.2)")
     parser.add_argument("--seed",   type=int, default=42)
+    parser.add_argument("--task",   nargs="*", default=None,
+                        choices=["binary", "three", "orig"],
+                        help="Which outputs to save (default: all). E.g. --task orig")
     args = parser.parse_args()
 
     roles_filter = set(args.roles) if args.roles else None
     roles_tag    = "_".join(sorted(args.roles)) if args.roles else "all"
     out_dir      = SAMPLE_DIR / args.model
+    tasks        = set(args.task) if args.task else {"binary", "three", "orig"}
 
     print(f"\n{'='*55}")
     print(f"  prepare_samples")
     print(f"  Model     : {args.model}")
     print(f"  Roles     : {roles_tag}")
+    print(f"  Tasks     : {', '.join(sorted(tasks))}")
     print(f"  Ratio     : {args.ratio}  Test size: {args.test_size}  Seed: {args.seed}")
-    print(f"  Out       : {out_dir}/samples_binary_{roles_tag}_{{train,test}}.npz")
-    print(f"              {out_dir}/samples_three_{roles_tag}_{{train,test}}.npz")
+    print(f"  Out       : {out_dir}/samples_{{{'|'.join(sorted(tasks))}}}_{roles_tag}_{{train,test}}.npz")
     print(f"{'='*55}\n")
 
     print("[1] Loading labels...")
@@ -271,34 +311,41 @@ def main():
     print(f"  {len(label_files)} label files, {total_entries} entries")
 
     print("\n[2] Extracting hidden states...")
-    X, y_three, meta = extract(args.model, label_files, roles_filter)
+    X, y_three, y_orig, meta = extract(args.model, label_files, roles_filter)
 
     print("\n[3] Question-level train/test split...")
     train_mask, test_mask = question_level_split(y_three, meta, args.test_size, args.seed)
 
-    X_tr, y_tr, meta_tr = X[train_mask], y_three[train_mask], [meta[i] for i in np.where(train_mask)[0]]
-    X_te, y_te, meta_te = X[test_mask],  y_three[test_mask],  [meta[i] for i in np.where(test_mask)[0]]
+    X_tr, y_tr, y_orig_tr, meta_tr = X[train_mask], y_three[train_mask], y_orig[train_mask], [meta[i] for i in np.where(train_mask)[0]]
+    X_te, y_te, y_orig_te, meta_te = X[test_mask],  y_three[test_mask],  y_orig[test_mask],  [meta[i] for i in np.where(test_mask)[0]]
 
     roles_list = args.roles if args.roles else []
 
-    print("\n[4a] Downsampling train → binary...")
-    X_bin_tr, y_bin_tr, meta_bin_tr = downsample_binary(X_tr, y_tr, meta_tr, args.ratio, args.seed)
-
-    print("\n[4b] Preparing test → binary (no downsample)...")
-    y_bin_te = (y_te == 1).astype(np.int8)
-    print(f"  [binary test] class1(pos4): {(y_bin_te==1).sum()}, class0(other): {(y_bin_te==0).sum()}  total: {len(y_bin_te)}")
-
-    print("\n[4c] Downsampling train → three-class...")
-    X_thr_tr, y_thr_tr, meta_thr_tr = downsample_three(X_tr, y_tr, meta_tr, args.ratio, args.seed)
-
-    print("\n[4d] Preparing test → three-class (no downsample)...")
-    print(f"  [three test]  1(pos4): {(y_te==1).sum()}, 2(neg4): {(y_te==2).sum()}, 0(no_change): {(y_te==0).sum()}  total: {len(y_te)}")
-
     print("\n[5] Saving...")
-    save_npz(out_dir / f"samples_binary_{roles_tag}_train.npz", X_bin_tr, y_bin_tr, meta_bin_tr, roles_list)
-    save_npz(out_dir / f"samples_binary_{roles_tag}_test.npz",  X_te,     y_bin_te, meta_te,     roles_list)
-    save_npz(out_dir / f"samples_three_{roles_tag}_train.npz",  X_thr_tr, y_thr_tr, meta_thr_tr, roles_list)
-    save_npz(out_dir / f"samples_three_{roles_tag}_test.npz",   X_te,     y_te,     meta_te,     roles_list)
+    if "binary" in tasks:
+        print("\n[4a] Downsampling train → binary...")
+        X_bin_tr, y_bin_tr, meta_bin_tr = downsample_binary(X_tr, y_tr, meta_tr, args.ratio, args.seed)
+        print("\n[4b] Preparing test → binary (no downsample)...")
+        y_bin_te = (y_te == 1).astype(np.int8)
+        print(f"  [binary test] class1(pos4): {(y_bin_te==1).sum()}, class0(other): {(y_bin_te==0).sum()}  total: {len(y_bin_te)}")
+        save_npz(out_dir / f"samples_binary_{roles_tag}_train.npz", X_bin_tr, y_bin_tr,  meta_bin_tr, roles_list)
+        save_npz(out_dir / f"samples_binary_{roles_tag}_test.npz",  X_te,     y_bin_te,  meta_te,     roles_list)
+
+    if "three" in tasks:
+        print("\n[4c] Downsampling train → three-class...")
+        X_thr_tr, y_thr_tr, meta_thr_tr = downsample_three(X_tr, y_tr, meta_tr, args.ratio, args.seed)
+        print("\n[4d] Preparing test → three-class (no downsample)...")
+        print(f"  [three test]  1(pos4): {(y_te==1).sum()}, 2(neg4): {(y_te==2).sum()}, 0(no_change): {(y_te==0).sum()}  total: {len(y_te)}")
+        save_npz(out_dir / f"samples_three_{roles_tag}_train.npz", X_thr_tr, y_thr_tr, meta_thr_tr, roles_list)
+        save_npz(out_dir / f"samples_three_{roles_tag}_test.npz",  X_te,     y_te,     meta_te,     roles_list)
+
+    if "orig" in tasks:
+        print("\n[4e] Downsampling train → orig_correct...")
+        X_orig_tr, y_orig_tr_ds, meta_orig_tr = downsample_orig(X_tr, y_orig_tr, meta_tr, args.ratio, args.seed)
+        print("\n[4f] Preparing test → orig_correct (no downsample)...")
+        print(f"  [orig test]  correct(1): {(y_orig_te==1).sum()}, wrong(0): {(y_orig_te==0).sum()}  total: {len(y_orig_te)}")
+        save_npz(out_dir / f"samples_orig_{roles_tag}_train.npz",  X_orig_tr, y_orig_tr_ds, meta_orig_tr, roles_list)
+        save_npz(out_dir / f"samples_orig_{roles_tag}_test.npz",   X_te,      y_orig_te,    meta_te,      roles_list)
 
     print("\nDone.")
 
