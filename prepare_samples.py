@@ -293,10 +293,14 @@ def main():
                         help="Cap each class to this many samples in train set (orig task only). E.g. --max_per_class 1000")
     parser.add_argument("--max_test_per_class", type=int, default=None,
                         help="Cap each class to this many samples in test set (orig task only). E.g. --max_test_per_class 1000")
+    parser.add_argument("--tag", type=str, default=None,
+                        help="Optional suffix appended to output filenames. E.g. --tag 5k → samples_orig_all_5k_train.npz")
     args = parser.parse_args()
 
     roles_filter = set(args.roles) if args.roles else None
     roles_tag    = "_".join(sorted(args.roles)) if args.roles else "all"
+    if args.tag:
+        roles_tag = f"{roles_tag}_{args.tag}"
     out_dir      = SAMPLE_DIR / args.model
     tasks        = set(args.task) if args.task else {"binary", "three", "orig"}
 
