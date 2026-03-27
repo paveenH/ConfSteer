@@ -344,47 +344,30 @@ qwen3 CNN AUC=0.549 (near random), with epoch 1 val acc=6.5% (near-zero). Traini
 
 ---
 
-### Architectural Experiments (llama3-8B, 5k/2k samples)
+### Classifier Benchmark (llama3-8B)
 
-> All classifiers use: train=`samples_orig_all_5k_train.npz` (10k), test=`samples_orig_all_5k_test.npz` (4k), question-level split, per-layer StandardScaler.
+> Question-level split; per-layer StandardScaler; all layers (0–32); balanced classes (y=0/y=1 equal).
+> Train/test sizes: **5k** = 10k/4k samples; **25k** = 50k/4k samples.
 
-| Classifier | Architecture | Best Epoch | Test AUC | Test Acc | F1 macro | Notes |
-|---|---|---|---|---|---|---|
-| CNN (baseline) | Linear proj (D→64) → 1D-CNN → LayerAttn → MLP | 1 | 0.768 | 0.70 | 0.70 | Overfits from epoch 2 |
-| PCA-CNN | Per-layer PCA (D→**128**) → 1D-CNN → LayerAttn | 3 | 0.770 | 0.71 | 0.71 | pca_dim=128; PCA variance = nan (numerical issue) |
-| L1-MLP | L1 sparse selector (top-**1024**) → MLP(256→64→2) | 1 | 0.775 | 0.71 | 0.71 | topk=1024; Stage 2 still overfits |
-| Sparse Attention | Dim-proj (L→64) → Top-k attn (k=**512**) → MLP | 29 | 0.746 | 0.69 | 0.69 | No overfitting; train/val loss converge |
-| Sparse Attention | Dim-proj (L→64) → Top-k attn (k=**1024**) → MLP | 27 | 0.750 | 0.68 | 0.68 | Same parameter count (topk only affects inference) |
-| 2D-CNN | Conv2d(1→32→64, kernel=3×64) → GAP → MLP | 30 | 0.729 | 0.67 | 0.67 | Slow convergence; no overfitting; 403k params |
+| Classifier | Train Size | Architecture | Best Epoch | Test AUC | Test Acc | F1 macro | Notes |
+|---|---|---|---|---|---|---|---|
+| LR (layer 23) | 1k | Single-layer LR | — | 0.732 | — | — | CV AUC; single best layer |
+| CNN | 1k | Linear proj (D→64) → 1D-CNN → LayerAttn → MLP | 1 | 0.736 | 0.69 | 0.69 | Overfits from epoch 2 |
+| CNN | 5k | Linear proj (D→64) → 1D-CNN → LayerAttn → MLP | 1 | 0.768 | 0.70 | 0.70 | Overfits from epoch 2 |
+| PCA-CNN | 5k | Per-layer PCA (D→128) → 1D-CNN → LayerAttn | 3 | 0.770 | 0.71 | 0.71 | PCA variance = nan (numerical, non-critical) |
+| L1-MLP | 5k | L1 sparse selector (top-1024) → MLP(256→64→2) | 1 | 0.775 | 0.71 | 0.71 | Stage 2 still overfits |
+| Sparse Attn | 5k | Dim-proj (L→64) → Top-k (k=512) → MLP | 29 | 0.746 | 0.69 | 0.69 | No overfitting; train/val converge |
+| Sparse Attn | 5k | Dim-proj (L→64) → Top-k (k=1024) → MLP | 27 | 0.750 | 0.68 | 0.68 | topk only affects inference, not param count |
+| 2D-CNN | 5k | Conv2d(1→32→64, kernel=3×64) → GAP → MLP | 30 | 0.729 | 0.67 | 0.67 | Slow convergence; 403k params |
+| PCA-CNN | **25k** | Per-layer PCA (D→128) → 1D-CNN → LayerAttn | 2 | **0.786** | 0.72 | 0.72 | +0.016 vs 5k; overfitting persists |
+| Sparse Attn | **25k** | Dim-proj (L→64) → Top-k (k=512) → MLP | 27 | 0.757 | 0.69 | 0.69 | +0.011 vs 5k; no overfitting |
 
-**Observations:**
-- All three architectures converge to AUC 0.77–0.78, best checkpoint at epoch 1–3
-- Overfitting pattern persists regardless of architecture: train acc → 100%, val acc stagnates at ~0.71
-- PCA-CNN: `explained_variance_ratio_ = nan` due to near-zero eigenvalues after StandardScaler (numerical issue, does not affect the result materially)
-- L1-MLP: Stage 1 sparse selector identifies 1024 most discriminative (layer, dim) pairs; Stage 2 MLP trained on these features still overfits
-- **Signal ceiling appears to be AUC ~0.77** for llama3-8B orig_correct classification with 10k training samples
+**Key Observations:**
 
-**Key observation — Sparse Attention trade-off:**
-- Sparse Attention (10,947 params) is the only architecture that **does not overfit** — train/val loss stay close throughout 30 epochs, best checkpoint at epoch 29
-- However, AUC drops to 0.746 vs 0.770–0.775 for PCA-CNN/L1-MLP
-- This reveals a **bias-variance trade-off**: smaller capacity → no overfitting, but underfits the signal
-- The other models overfit but their early checkpoints (epoch 1–3) still capture more signal than Sparse Attention's converged state
-- **Conclusion**: the signal is real but requires sufficient model capacity to capture; regularization alone (L1, PCA, sparse attention) does not resolve the fundamental capacity-vs-data tension
+1. **Overfitting is universal** — all high-capacity models (CNN, PCA-CNN, L1-MLP) best at epoch 1–3; train acc → 100%, val stagnates. Regularization alone (L1, PCA) does not resolve this.
+2. **Bias-variance trade-off** — Sparse Attn (10,947 params) is the only model that doesn't overfit, but underfits instead (AUC 0.746–0.757 vs 0.770–0.786). The signal requires sufficient capacity to capture.
+3. **Scaling helps** — 5k→25k raises AUC by +0.011–0.016. Signal ceiling rises with data but overfitting onset accelerates (best epoch: 3→2 for PCA-CNN).
+4. **Current best: PCA-CNN @ 25k → AUC 0.786**
 
-**Pending:** 2D-CNN results; qwen3 experiments.
-
----
-
-### Scale Experiments (llama3-8B, 25k/2k samples)
-
-> Train=`samples_orig_all_25k_train.npz` (50k), test=`samples_orig_all_25k_test.npz` (4k), question-level split, per-layer StandardScaler.
-
-| Classifier | Best Epoch | Test AUC | Test Acc | F1 macro | Notes |
-|---|---|---|---|---|---|
-| PCA-CNN (pca_dim=128) | 2 | **0.786** | 0.72 | 0.72 | 5× more data → +0.016 AUC vs 5k; best epoch 2 (still overfits fast) |
-
-**Observations:**
-- Scaling from 5k→25k questions raises AUC from 0.770 → 0.786 (+0.016)
-- Overfitting pattern persists: best epoch is still 2 (epoch 3 already degrades); val acc stagnates at 0.72
-- Suggests the signal ceiling rises with more data; further scaling (100k+) may continue to help
+**Pending:** L1-MLP @ 25k; qwen3 experiments; middle-layers-only (11–19) ablation.
 
