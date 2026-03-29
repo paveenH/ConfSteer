@@ -362,13 +362,15 @@ qwen3 CNN AUC=0.549 (near random), with epoch 1 val acc=6.5% (near-zero). Traini
 | PCA-CNN | **25k** | Per-layer PCA (D→128) → 1D-CNN → LayerAttn | 2 | **0.786** | 0.72 | 0.72 | +0.016 vs 5k; overfitting persists |
 | Sparse Attn | **25k** | Dim-proj (L→64) → Top-k (k=512) → MLP | 27 | 0.757 | 0.69 | 0.69 | +0.011 vs 5k; no overfitting |
 | L1-CNN | **25k** | Per-layer L1 (D→256) → 1D-CNN → LayerAttn | 3 | 0.774 | 0.70 | 0.70 | topd=256; overfits from epoch 4 |
+| Transformer | **25k** | Per-layer PCA (D→128) → TransformerEnc (2L, nhead=4) → MeanPool | 2 | 0.780 | 0.71 | 0.71 | 294k params; overfits from epoch 3 |
 
 **Key Observations:**
 
-1. **Overfitting is universal** — all high-capacity models (CNN, PCA-CNN, L1-MLP) best at epoch 1–3; train acc → 100%, val stagnates. Regularization alone (L1, PCA) does not resolve this.
-2. **Bias-variance trade-off** — Sparse Attn (10,947 params) is the only model that doesn't overfit, but underfits instead (AUC 0.746–0.757 vs 0.770–0.786). The signal requires sufficient capacity to capture.
-3. **Scaling helps** — 5k→25k raises AUC by +0.011–0.016. Signal ceiling rises with data but overfitting onset accelerates (best epoch: 3→2 for PCA-CNN).
-4. **Current best: PCA-CNN @ 25k → AUC 0.786**
+1. **Overfitting is universal** — all models best at epoch 1–3; train acc → 100%, val stagnates. Architecture and regularization alone do not resolve this.
+2. **Bias-variance trade-off** — Sparse Attn (10,947 params) is the only model that doesn't overfit, but underfits instead (AUC 0.757 vs 0.780–0.786). The signal requires sufficient capacity to capture.
+3. **Scaling helps** — 5k→25k raises AUC by +0.011–0.016 across all architectures.
+4. **Transformer vs PCA-CNN** — Transformer (294k params) captures non-local cross-layer interactions but AUC 0.780 < PCA-CNN 0.786; more capacity does not help here.
+5. **Current best: PCA-CNN @ 25k → AUC 0.786**
 
-**Pending:** L1-MLP @ 25k; qwen3 experiments; middle-layers-only (11–19) ablation.
+**Pending:** qwen3 experiments; middle-layers-only (11–19) ablation; RSN neuron projection features.
 
