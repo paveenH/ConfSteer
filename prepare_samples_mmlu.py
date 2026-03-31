@@ -241,11 +241,12 @@ def main():
         "person",
     ]
     roles = args.roles if args.roles else DEFAULT_ROLES
-    roles_tag = "_".join(r.replace(" ", "_").replace("{task}", "task") for r in roles)
+    roles_base = "_".join(r.replace(" ", "_").replace("{task}", "task") for r in roles)
     if len(roles) == len(DEFAULT_ROLES) and set(roles) == set(DEFAULT_ROLES):
-        roles_tag = "all"
-    if args.tag:
-        roles_tag = f"{roles_tag}_{args.tag}"
+        roles_base = "all"
+    roles_tag = f"{roles_base}_{args.tag}" if args.tag else roles_base
+    roles_tag_train = roles_tag
+    roles_tag_test  = roles_tag
 
     answer_dir = Path(args.answer_dir) if args.answer_dir else BASE_DIR / "answer"
     out_dir    = SAMPLE_DIR / args.model
@@ -281,8 +282,8 @@ def main():
     print(f"  [orig test] correct(1): {(y_te_ds==1).sum()}, wrong(0): {(y_te_ds==0).sum()}  total: {len(y_te_ds)}")
 
     print("\n[5] Saving...")
-    train_path = out_dir / f"samples_orig_mmlu_{roles_tag}_train.npz"
-    test_path  = out_dir / f"samples_orig_mmlu_{roles_tag}_test.npz"
+    train_path = out_dir / f"samples_orig_mmlu_{roles_tag_train}_train.npz"
+    test_path  = out_dir / f"samples_orig_mmlu_{roles_tag_test}_test.npz"
     save_npz(train_path, X_tr_ds, y_tr_ds, meta_tr_ds, roles)
     save_npz(test_path,  X_te_ds, y_te_ds, meta_te_ds, roles)
 
