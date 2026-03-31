@@ -19,6 +19,7 @@ Usage:
 """
 
 import argparse
+import pickle
 from pathlib import Path
 
 import numpy as np
@@ -51,7 +52,7 @@ def fit_scale_pca(X_tr: np.ndarray, X_te: np.ndarray, pca_dim: int):
     """
     Fit StandardScaler + PCA per layer on train, transform both splits.
     X: (N, L, D)  →  (N, L, pca_dim)
-    Returns transformed arrays and fitted objects.
+    Returns transformed arrays and fitted scalers/pcas.
     """
     N_tr, L, D = X_tr.shape
     N_te       = X_te.shape[0]
@@ -74,7 +75,37 @@ def fit_scale_pca(X_tr: np.ndarray, X_te: np.ndarray, pca_dim: int):
 
     var = np.mean([p.explained_variance_ratio_.sum() for p in pcas])
     print(f"  PCA({pca_dim}): mean explained variance = {var:.3f}")
-    return out_tr, out_te
+    return out_tr, out_te, scalers, pcas
+
+
+def transform_scale_pca(X: np.ndarray, scalers: list, pcas: list, pca_dim: int) -> np.ndarray:
+    """
+    Apply pre-fitted scalers + PCAs to new data.
+    X: (N, L, D)  →  (N, L, pca_dim)
+    """
+    N, L, _ = X.shape
+    out = np.zeros((N, L, pca_dim), dtype=np.float32)
+    for l in range(L):
+        X_l = scalers[l].transform(X[:, l, :])
+        n_comp = pcas[l].n_components_
+        out[:, l, :n_comp] = pcas[l].transform(X_l)
+    return out
+
+
+def save_classifier(save_dir: Path, model_state: dict, scalers: list, pcas: list,
+                    config: dict):
+    """
+    Save all artifacts needed for inference:
+      <save_dir>/model.pt       — PyTorch model weights + config
+      <save_dir>/preprocessor.pkl — scalers + pcas (pickle)
+    """
+    save_dir.mkdir(parents=True, exist_ok=True)
+    torch.save({"model_state": model_state, "config": config},
+               save_dir / "model.pt")
+    with open(save_dir / "preprocessor.pkl", "wb") as f:
+        pickle.dump({"scalers": scalers, "pcas": pcas}, f)
+    print(f"  Saved model     → {save_dir / 'model.pt'}")
+    print(f"  Saved preproc   → {save_dir / 'preprocessor.pkl'}")
 
 
 # ==================== Model ====================
@@ -163,6 +194,9 @@ def main():
     parser.add_argument("--lr",      type=float, default=3e-4)
     parser.add_argument("--batch",   type=int,   default=64)
     parser.add_argument("--device",  default="cuda" if __import__("torch").cuda.is_available() else "cpu")
+    parser.add_argument("--save_dir", type=str, default=None,
+                        help="Directory to save model + preprocessor for inference. "
+                             "E.g. models/llama3_pca128")
     args = parser.parse_args()
 
     torch.manual_seed(RANDOM_SEED)
@@ -184,7 +218,7 @@ def main():
     _, L, D = X_tr.shape
 
     print(f"\n[2] Per-layer StandardScaler + PCA({args.pca_dim})...")
-    X_train, X_test = fit_scale_pca(X_tr, X_te, args.pca_dim)
+    X_train, X_test, scalers, pcas = fit_scale_pca(X_tr, X_te, args.pca_dim)
     print(f"  Train: {X_train.shape}  Test: {X_test.shape}")
 
     train_ds = TensorDataset(torch.tensor(X_train), torch.tensor(y_train))
@@ -230,6 +264,19 @@ def main():
     print(f"  ROC-AUC: {auc:.3f}")
     print("\nConfusion matrix (rows=true, cols=pred):  labels: 0, 1")
     print(confusion_matrix(all_labels, all_preds, labels=[0, 1]))
+
+    if args.save_dir:
+        print(f"\n[6] Saving classifier to {args.save_dir} ...")
+        config = {
+            "num_layers":    L,
+            "pca_dim":       args.pca_dim,
+            "cnn_channels":  args.cnn_channels,
+            "kernel_size":   args.kernel_size,
+            "dropout":       args.dropout,
+            "hidden_dim":    D,
+            "model_name":    args.model,
+        }
+        save_classifier(Path(args.save_dir), best_state, scalers, pcas, config)
 
 
 if __name__ == "__main__":
