@@ -277,9 +277,9 @@ def main():
     print("\n[3] Downsampling train set...")
     X_tr_ds, y_tr_ds, meta_tr_ds = downsample_orig(X_tr, y_tr, meta_tr, args.ratio, args.seed, args.max_per_class)
 
-    print("\n[4] Preparing test set...")
-    X_te_ds, y_te_ds, meta_te_ds = downsample_orig(X_te, y_te, meta_te, 1.0, args.seed, args.max_test_per_class)
-    print(f"  [orig test] correct(1): {(y_te_ds==1).sum()}, wrong(0): {(y_te_ds==0).sum()}  total: {len(y_te_ds)}")
+    print("\n[4] Preparing test set (original distribution)...")
+    print(f"  [orig test] correct(1): {(y_te==1).sum()}, wrong(0): {(y_te==0).sum()}  total: {len(y_te)}")
+    X_te_ds, y_te_ds, meta_te_ds = X_te, y_te, meta_te
 
     print("\n[5] Saving...")
     train_path = out_dir / f"samples_orig_mmlu_{roles_tag_train}_train.npz"
