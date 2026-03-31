@@ -374,3 +374,35 @@ qwen3 CNN AUC=0.549 (near random), with epoch 1 val acc=6.5% (near-zero). Traini
 
 **Pending:** qwen3 experiments; middle-layers-only (11–19) ablation; RSN neuron projection features.
 
+---
+
+## 2026-03-31 — Classifier-Guided Steering Benchmark (MMLU)
+
+> **Question**: Can the previously trained PCA-CNN (`orig_correct` classifier, AUC=0.786) improve real-world benchmark accuracy by selectively steering only predicted-wrong samples?
+> **Setup**: Three-way comparison on standard MMLU (57 tasks, 14,042 samples), using llama3-8B with α=4, layers 11–20, TOP=20%.
+> **Classifier used**: PCA-CNN trained on MMLU-Pro / FACTOR / GPQA / LogiQA / AR-LSAT / TruthfulQA hidden states.
+
+### Three-Way Results (llama3-8B, MMLU, α=4, layers 11–20)
+
+| Condition | Correct | Total | Accuracy |
+|---|---|---|---|
+| no_steer | 9,420 | 14,042 | **67.08%** |
+| classifier | 9,393 | 14,042 | **66.89%** |
+| always_steer | 9,317 | 14,042 | **66.35%** |
+
+### Observations
+
+- **Classifier does not improve over no_steer**: steering is net harmful on MMLU regardless of condition.
+- **Classifier slightly recovers** vs always_steer (+0.54%), but still falls short of no_steer (−0.19%).
+- **Root cause**: RSN steering vectors are extracted from MMLU → steering is already tuned to this domain, yet both steered conditions underperform. MMLU is a domain where steering consistently decreases accuracy (consistent with prior observations).
+- **Classifier trained on out-of-domain data** (MMLU-Pro/FACTOR/GPQA etc.) — predictions may not transfer well to MMLU's distribution.
+
+### Next Step
+
+Retrain the PCA-CNN classifier on **MMLU hidden states** (same domain as the RSN steering vectors) for better calibration:
+- Currently extracting MMLU hidden states (7 roles) for llama3 and qwen3 via `run_hidden_mmlu.sh`
+- H5 output: `ConfSteer/HiddenStates/{model}/mmlu/{role}_{task}_{size}.h5`
+- Will use `prepare_samples.py` (or a new `prepare_samples_mmlu.py`) to build train/test splits
+- Re-train `classifier_pca_cnn.py --save_dir models/{model}_mmlu_pca128` on MMLU-based samples
+- Re-run three-way benchmark with MMLU-trained classifier
+
