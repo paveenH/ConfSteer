@@ -59,10 +59,11 @@ def role_to_key(role: str, task: str) -> str:
 
 def role_to_h5_prefix(role: str, task: str) -> str:
     """Convert role name to the H5 filename prefix.
-    e.g. "{task} expert" + task="anatomy" → "anatomy_expert"
+    e.g. "{task} expert" + task="ElectronicCommunications" → "electroniccommunications_expert"
+    The {task} placeholder in the prefix is lowercased to match actual H5 naming convention.
     """
-    task_slug = task.replace(" ", "_")
-    r = role.replace("{task}", task_slug)
+    task_slug_lower = task.replace(" ", "_").lower()
+    r = role.replace("{task}", task_slug_lower)
     return r.replace(" ", "_")
 
 
