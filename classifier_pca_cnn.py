@@ -36,13 +36,22 @@ RANDOM_SEED = 42
 
 # ==================== Data loading ====================
 
-def load_samples(path: Path):
-    data  = np.load(path, allow_pickle=False)
-    X     = data["X"]
-    y     = data["y"]
-    roles = list(data["roles"])
-    print(f"  Loaded: shape={X.shape}, roles={roles}")
-    print(f"  y — 1: {(y==1).sum()}, 0: {(y==0).sum()}")
+def load_samples(paths):
+    """Load and concatenate one or more npz files in memory."""
+    if isinstance(paths, (str, Path)):
+        paths = [paths]
+    X_list, y_list = [], []
+    for path in paths:
+        data = np.load(path, allow_pickle=False)
+        X_list.append(data["X"])
+        y_list.append(data["y"])
+        roles = list(data["roles"])
+        print(f"  Loaded {Path(path).name}: shape={data['X'].shape}, roles={roles}")
+        print(f"    y — 1: {(data['y']==1).sum()}, 0: {(data['y']==0).sum()}")
+    X = np.concatenate(X_list, axis=0) if len(X_list) > 1 else X_list[0]
+    y = np.concatenate(y_list, axis=0) if len(y_list) > 1 else y_list[0]
+    if len(paths) > 1:
+        print(f"  Merged: shape={X.shape}, y — 1: {(y==1).sum()}, 0: {(y==0).sum()}")
     return X.astype(np.float32), y.astype(np.int64)
 
 
@@ -222,8 +231,10 @@ def evaluate(model, loader, criterion, device):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model",   default="llama3", choices=["llama3", "qwen3"])
-    parser.add_argument("--train",   required=True)
-    parser.add_argument("--test",    required=True)
+    parser.add_argument("--train",   required=True, nargs="+",
+                        help="One or more train npz files (merged in memory)")
+    parser.add_argument("--test",    required=True, nargs="+",
+                        help="One or more test npz files (merged in memory)")
     parser.add_argument("--arch",    default="cnn", choices=["cnn", "transformer"],
                         help="Model architecture: cnn (default) or transformer")
     parser.add_argument("--pca_dim", type=int, default=128)
@@ -257,6 +268,7 @@ def main():
     print(f"  Arch   : {args.arch}")
     print(f"  Train  : {args.train}")
     print(f"  Test   : {args.test}")
+
     print(f"  PCA dim: {args.pca_dim}")
     print(f"  Device : {device}")
     print(f"{'='*55}\n")
