@@ -513,18 +513,82 @@ The MMLU-trained classifier transfers reasonably to MMLU-Pro (OOD). Its main lim
 
 ## TODO
 
-### [2] OOD Classification Evaluation on MMLU-Pro HS (Next)
-Evaluate the MMLU-trained classifier (`models/llama3_pca128_mmlu_cnn_k7`) directly on MMLU-Pro hidden states to get a true OOD AUC/accuracy.
+### [2] OOD Classification Evaluation on MMLU-Pro HS ✓ Done — see below
 
-**Steps:**
-1. Prepare MMLU-Pro samples npz: extract HS + orig_correct labels from MMLU-Pro answer JSONs + H5 files (similar to `prepare_samples_mmlu.py`)
-2. Write inference script: load classifier, apply per-layer scaler+PCA, run forward pass, compute AUC/accuracy
-3. Record results
+---
 
-**Needed info:**
-- Path to MMLU-Pro hidden states (e.g., `HiddenStates/llama3/mmlupro/`)
-- Path to MMLU-Pro answer JSONs (e.g., `answer/llama3/mmlupro/`)
-- Whether format matches MMLU (same H5 structure, same answer JSON keys)
+## 2026-04-01 — OOD Classification Evaluation: MMLU-trained Classifier on MMLU-Pro HS
+
+### Setup
+- Script: `eval_classifier_mmlupro.py`
+- Classifier: `models/llama3_pca128_mmlu_cnn_k7` (trained on MMLU, evaluated OOD on MMLU-Pro)
+- Data: 12,032 samples, 90 tasks, neutral role only
+- Label distribution: correct(1)=4,300 (35.7%), wrong(0)=7,732 (64.3%)
+
+### Overall Results
+
+| Metric | Value |
+|---|---|
+| Accuracy | 71.59% |
+| ROC-AUC | **0.732** |
+| Predicted steer rate (y_pred=0) | 69.4% |
+
+### Classification Report
+
+|  | Precision | Recall | F1 |
+|---|---|---|---|
+| wrong(0) | 0.76 | **0.82** | 0.79 |
+| correct(1) | 0.62 | 0.53 | 0.57 |
+
+Confusion matrix:
+```
+              pred=0   pred=1
+true=0 (wrong)  6334     1398
+true=1 (correct) 2020    2280
+```
+
+### Per-task AUC
+
+Mean per-task AUC: **0.659** | Mean steer rate: 68.6%
+
+**Top 5 best tasks** (good OOD generalization):
+
+| Task | AUC | Acc | SteerRate | N |
+|---|---|---|---|---|
+| Economics | 0.885 | 82.5% | 37.5% | 400 |
+| ComputerScience | 0.841 | 76.7% | 53.3% | 60 |
+| Psychology | 0.836 | 81.3% | 14.8% | 305 |
+| Biology | 0.816 | 83.5% | 14.8% | 351 |
+| Genetics | 0.793 | 78.2% | 66.7% | 147 |
+
+**Top 5 worst tasks** (classifier fails OOD):
+
+| Task | AUC | Acc | SteerRate | N |
+|---|---|---|---|---|
+| abstract_algebra | 0.487 | 74.7% | 98.8% | 83 |
+| Math | 0.466 | 82.0% | 98.0% | 344 |
+| ElectricCircuits | 0.455 | 76.1% | 98.5% | 67 |
+| college_mathematics | 0.503 | 79.7% | 100.0% | 74 |
+| atkins | 0.503 | 79.2% | 100.0% | 101 |
+
+### Analysis
+
+1. **AUC 0.732 is reasonable OOD performance** — MMLU (4-option) → MMLU-Pro (up to 10-option) is a significant domain shift. The classifier still captures meaningful correctness signals from hidden states.
+
+2. **Two distinct task clusters:**
+   - **High-AUC tasks** (Economics, Psychology, Biology): classifier works well, steer rate is moderate (15–55%). These are tasks where HS geometry is similar between MMLU and MMLU-Pro.
+   - **Low-AUC tasks** (Math, ElectricCircuits, abstract_algebra): AUC near 0.5 (random), steer rate ~100%. The classifier sees almost all samples as wrong — likely because MMLU-Pro math/physics is far harder than MMLU training data.
+
+3. **The benchmark steer rate (69.4%) is explained**: OOD bias toward predicting wrong drives the high steer rate seen in the benchmark results. The classifier is not useless — it accurately detects wrong on most tasks — but on hard quantitative tasks it collapses.
+
+4. **wrong(0) recall = 82%, correct(1) recall = 53%**: The classifier is conservative — it would rather steer unnecessarily than miss a wrong answer. This is actually the safer direction for a steering system.
+
+### Conclusion
+The MMLU-trained classifier generalizes moderately well to MMLU-Pro (global AUC 0.732, mean per-task AUC 0.659). The main failure mode is quantitative/math tasks where Pro difficulty far exceeds MMLU training distribution. For social science, biology, and economics tasks the classifier is reliable.
+
+**Implication for benchmark:** The classifier's 37.20% on MMLU-Pro (vs 35.74% no_steer) is a real improvement, driven by good performance on non-math tasks. The gap vs always_steer is mostly explained by math tasks where the classifier already predicts all wrong (= same as always_steer anyway).
+
+---
 
 ### [3] Three-class Classification (steer +4 / steer -4 / no change)
 Redefine labels using both steering directions:
