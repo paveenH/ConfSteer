@@ -111,21 +111,19 @@ def save_classifier(save_dir: Path, model_state: dict, scalers: list, pcas: list
 # ==================== Model ====================
 
 class PCA_CNN(nn.Module):
-    """1D-CNN over layers (after per-layer PCA compression)."""
+    """1D-CNN over layers (after per-layer PCA compression), with residual connection."""
 
     def __init__(self, num_layers: int, pca_dim: int,
                  cnn_channels: int = 64, kernel_size: int = 3,
                  dropout: float = 0.3):
         super().__init__()
 
-        self.cnn = nn.Sequential(
-            nn.Conv1d(pca_dim, cnn_channels, kernel_size, padding=kernel_size // 2),
-            nn.GELU(),
-            nn.Conv1d(cnn_channels, cnn_channels, kernel_size, padding=kernel_size // 2),
-            nn.GELU(),
-        )
-        self.attn = nn.Linear(cnn_channels, 1)
-        self.head = nn.Sequential(
+        self.conv1 = nn.Conv1d(pca_dim, cnn_channels, kernel_size, padding=kernel_size // 2)
+        self.conv2 = nn.Conv1d(cnn_channels, cnn_channels, kernel_size, padding=kernel_size // 2)
+        self.proj  = nn.Conv1d(pca_dim, cnn_channels, 1) if pca_dim != cnn_channels else nn.Identity()
+        self.act   = nn.GELU()
+        self.attn  = nn.Linear(cnn_channels, 1)
+        self.head  = nn.Sequential(
             nn.Linear(cnn_channels, 64),
             nn.GELU(),
             nn.Dropout(dropout),
@@ -134,11 +132,51 @@ class PCA_CNN(nn.Module):
 
     def forward(self, x):
         # x: (B, L, pca_dim)
-        x = x.permute(0, 2, 1)                         # (B, pca_dim, L)
-        x = self.cnn(x)                                 # (B, cnn_ch, L)
-        x = x.permute(0, 2, 1)                         # (B, L, cnn_ch)
+        x = x.permute(0, 2, 1)                          # (B, pca_dim, L)
+        residual = self.proj(x)                          # (B, cnn_ch, L)
+        x = self.act(self.conv1(x))                      # (B, cnn_ch, L)
+        x = self.act(self.conv2(x) + residual)           # residual connection
+        x = x.permute(0, 2, 1)                          # (B, L, cnn_ch)
         w = torch.softmax(self.attn(x).squeeze(-1), dim=-1).unsqueeze(-1)
-        x = (x * w).sum(dim=1)                         # (B, cnn_ch)
+        x = (x * w).sum(dim=1)                          # (B, cnn_ch)
+        return self.head(x)
+
+
+class PCA_Transformer(nn.Module):
+    """Transformer encoder over layers (after per-layer PCA compression).
+
+    Self-attention lets every layer attend to every other layer directly,
+    capturing long-range cross-layer patterns that CNN misses.
+    """
+
+    def __init__(self, num_layers: int, pca_dim: int,
+                 nhead: int = 4, num_encoder_layers: int = 2,
+                 dim_feedforward: int = 256, dropout: float = 0.3):
+        super().__init__()
+
+        self.input_proj = nn.Linear(pca_dim, pca_dim)   # optional input projection
+        encoder_layer = nn.TransformerEncoderLayer(
+            d_model=pca_dim,
+            nhead=nhead,
+            dim_feedforward=dim_feedforward,
+            dropout=dropout,
+            batch_first=True,
+            norm_first=True,                             # Pre-LN: more stable training
+        )
+        self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=num_encoder_layers)
+        self.attn = nn.Linear(pca_dim, 1)
+        self.head = nn.Sequential(
+            nn.Linear(pca_dim, 64),
+            nn.GELU(),
+            nn.Dropout(dropout),
+            nn.Linear(64, 2),
+        )
+
+    def forward(self, x):
+        # x: (B, L, pca_dim)
+        x = self.encoder(x)                              # (B, L, pca_dim)
+        w = torch.softmax(self.attn(x).squeeze(-1), dim=-1).unsqueeze(-1)
+        x = (x * w).sum(dim=1)                          # (B, pca_dim)
         return self.head(x)
 
 
@@ -186,9 +224,19 @@ def main():
     parser.add_argument("--model",   default="llama3", choices=["llama3", "qwen3"])
     parser.add_argument("--train",   required=True)
     parser.add_argument("--test",    required=True)
+    parser.add_argument("--arch",    default="cnn", choices=["cnn", "transformer"],
+                        help="Model architecture: cnn (default) or transformer")
     parser.add_argument("--pca_dim", type=int, default=128)
-    parser.add_argument("--cnn_channels", type=int, default=64)
-    parser.add_argument("--kernel_size",  type=int, default=3)
+    parser.add_argument("--cnn_channels",      type=int,   default=64,
+                        help="CNN channels (cnn arch only)")
+    parser.add_argument("--kernel_size",       type=int,   default=3,
+                        help="CNN kernel size (cnn arch only)")
+    parser.add_argument("--nhead",             type=int,   default=4,
+                        help="Transformer attention heads (transformer arch only)")
+    parser.add_argument("--num_encoder_layers",type=int,   default=2,
+                        help="Transformer encoder layers (transformer arch only)")
+    parser.add_argument("--dim_feedforward",   type=int,   default=256,
+                        help="Transformer FFN dim (transformer arch only)")
     parser.add_argument("--dropout",      type=float, default=0.3)
     parser.add_argument("--epochs",  type=int,   default=30)
     parser.add_argument("--lr",      type=float, default=3e-4)
@@ -204,8 +252,9 @@ def main():
     device = torch.device(args.device)
 
     print(f"\n{'='*55}")
-    print(f"  PCA-CNN Classifier")
+    print(f"  PCA-{args.arch.upper()} Classifier")
     print(f"  Model  : {args.model}")
+    print(f"  Arch   : {args.arch}")
     print(f"  Train  : {args.train}")
     print(f"  Test   : {args.test}")
     print(f"  PCA dim: {args.pca_dim}")
@@ -226,12 +275,21 @@ def main():
     train_loader = DataLoader(train_ds, batch_size=args.batch, shuffle=True)
     test_loader  = DataLoader(test_ds,  batch_size=args.batch, shuffle=False)
 
-    model = PCA_CNN(
-        num_layers=L, pca_dim=args.pca_dim,
-        cnn_channels=args.cnn_channels,
-        kernel_size=args.kernel_size,
-        dropout=args.dropout,
-    ).to(device)
+    if args.arch == "transformer":
+        model = PCA_Transformer(
+            num_layers=L, pca_dim=args.pca_dim,
+            nhead=args.nhead,
+            num_encoder_layers=args.num_encoder_layers,
+            dim_feedforward=args.dim_feedforward,
+            dropout=args.dropout,
+        ).to(device)
+    else:
+        model = PCA_CNN(
+            num_layers=L, pca_dim=args.pca_dim,
+            cnn_channels=args.cnn_channels,
+            kernel_size=args.kernel_size,
+            dropout=args.dropout,
+        ).to(device)
 
     n_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"\n[3] Model: {n_params:,} trainable parameters")
@@ -268,14 +326,24 @@ def main():
     if args.save_dir:
         print(f"\n[6] Saving classifier to {args.save_dir} ...")
         config = {
+            "arch":          args.arch,
             "num_layers":    L,
             "pca_dim":       args.pca_dim,
-            "cnn_channels":  args.cnn_channels,
-            "kernel_size":   args.kernel_size,
             "dropout":       args.dropout,
             "hidden_dim":    D,
             "model_name":    args.model,
         }
+        if args.arch == "transformer":
+            config.update({
+                "nhead":              args.nhead,
+                "num_encoder_layers": args.num_encoder_layers,
+                "dim_feedforward":    args.dim_feedforward,
+            })
+        else:
+            config.update({
+                "cnn_channels": args.cnn_channels,
+                "kernel_size":  args.kernel_size,
+            })
         save_classifier(Path(args.save_dir), best_state, scalers, pcas, config)
 
 
