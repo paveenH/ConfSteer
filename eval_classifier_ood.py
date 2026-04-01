@@ -49,6 +49,7 @@ LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 # ──────────────────────────────────────────────
 
 class PCA_CNN(nn.Module):
+    """New architecture: two Conv1d layers with residual connection."""
     def __init__(self, num_layers, pca_dim, cnn_channels=64, kernel_size=3, dropout=0.3):
         super().__init__()
         self.conv1 = nn.Conv1d(pca_dim, cnn_channels, kernel_size, padding=kernel_size // 2)
@@ -71,6 +72,30 @@ class PCA_CNN(nn.Module):
         return self.head(x)
 
 
+class PCA_CNN_v1(nn.Module):
+    """Old architecture: Sequential CNN without residual connection."""
+    def __init__(self, num_layers, pca_dim, cnn_channels=64, kernel_size=3, dropout=0.3):
+        super().__init__()
+        self.cnn = nn.Sequential(
+            nn.Conv1d(pca_dim, cnn_channels, kernel_size, padding=kernel_size // 2),
+            nn.GELU(),
+            nn.Conv1d(cnn_channels, cnn_channels, kernel_size, padding=kernel_size // 2),
+            nn.GELU(),
+        )
+        self.attn = nn.Linear(cnn_channels, 1)
+        self.head = nn.Sequential(
+            nn.Linear(cnn_channels, 64), nn.GELU(), nn.Dropout(dropout), nn.Linear(64, 2),
+        )
+
+    def forward(self, x):
+        x = x.permute(0, 2, 1)
+        x = self.cnn(x)
+        x = x.permute(0, 2, 1)
+        w = torch.softmax(self.attn(x).squeeze(-1), dim=-1).unsqueeze(-1)
+        x = (x * w).sum(dim=1)
+        return self.head(x)
+
+
 # ──────────────────────────────────────────────
 #  Load classifier
 # ──────────────────────────────────────────────
@@ -78,18 +103,31 @@ class PCA_CNN(nn.Module):
 def load_classifier(clf_dir: Path, device: torch.device):
     ckpt = torch.load(clf_dir / "model.pt", map_location="cpu")
     cfg  = ckpt["config"]
-    model = PCA_CNN(
-        num_layers=cfg["num_layers"],
-        pca_dim=cfg["pca_dim"],
-        cnn_channels=cfg.get("cnn_channels", 64),
-        kernel_size=cfg.get("kernel_size", 3),
-        dropout=cfg.get("dropout", 0.3),
-    ).to(device)
+    keys = list(ckpt["model_state"].keys())
+    # Detect architecture by state_dict keys
+    if any(k.startswith("cnn.") for k in keys):
+        arch = "v1"
+        model = PCA_CNN_v1(
+            num_layers=cfg["num_layers"],
+            pca_dim=cfg["pca_dim"],
+            cnn_channels=cfg.get("cnn_channels", 64),
+            kernel_size=cfg.get("kernel_size", 3),
+            dropout=cfg.get("dropout", 0.3),
+        ).to(device)
+    else:
+        arch = "v2(residual)"
+        model = PCA_CNN(
+            num_layers=cfg["num_layers"],
+            pca_dim=cfg["pca_dim"],
+            cnn_channels=cfg.get("cnn_channels", 64),
+            kernel_size=cfg.get("kernel_size", 3),
+            dropout=cfg.get("dropout", 0.3),
+        ).to(device)
     model.load_state_dict(ckpt["model_state"])
     model.eval()
     with open(clf_dir / "preprocessor.pkl", "rb") as f:
         prep = pickle.load(f)
-    print(f"  Classifier: L={cfg['num_layers']}, pca_dim={cfg['pca_dim']}, "
+    print(f"  Classifier: arch={arch}, L={cfg['num_layers']}, pca_dim={cfg['pca_dim']}, "
           f"cnn_ch={cfg.get('cnn_channels',64)}, kernel={cfg.get('kernel_size',3)}")
     return model, prep["scalers"], prep["pcas"], cfg["pca_dim"]
 
