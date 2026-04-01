@@ -274,8 +274,8 @@ def main():
     print(f"{'='*55}\n")
 
     print("[1] Loading samples...")
-    X_tr, y_train = load_samples(Path(args.train))
-    X_te, y_test  = load_samples(Path(args.test))
+    X_tr, y_train = load_samples(args.train)
+    X_te, y_test  = load_samples(args.test)
     _, L, D = X_tr.shape
 
     print(f"\n[2] Per-layer StandardScaler + PCA({args.pca_dim})...")
