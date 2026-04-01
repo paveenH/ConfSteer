@@ -562,6 +562,82 @@ The classifier generalizes moderately to MMLU-Pro (overlapping subjects) but fai
 
 ---
 
+## 2026-04-01 — Non-MMLU-Trained Classifier: OOD Generalization on MMLU HS
+
+### Setup
+- **Classifier**: `models/llama3_pca128` — PCA-CNN v1 (no residual, kernel=3) trained on non-MMLU tasks (FACTOR, GPQA, AR-LSAT, LogiQA)
+- **Eval target**: MMLU hidden states (OOD in the opposite direction)
+- **Script**: `eval_classifier_ood.py --benchmark mmlu`
+- **Data**: 14,042 samples, 57 tasks, neutral role
+- **Label distribution**: correct(1)=9,413 (67.0%), wrong(0)=4,629 (33.0%)
+
+### Overall Results
+
+| Metric | Value |
+|---|---|
+| Accuracy | 71.55% |
+| ROC-AUC | **0.773** |
+| Steer rate (y_pred=0) | 29.5% |
+| wrong(0) recall | 52% |
+| correct(1) recall | 81% |
+
+Confusion matrix:
+```
+              pred=0   pred=1
+true=0 (wrong)  2385     2244
+true=1 (correct) 1751    7662
+```
+
+### Per-task AUC (selected)
+
+Mean per-task AUC: **0.739** | Mean steer rate: 31.8%
+
+**Top tasks** (AUC ≥ 0.80):
+
+| Task | AUC | SteerRate | N |
+|---|---|---|---|
+| high_school_government_and_politics | 0.878 | 11.9% | 193 |
+| miscellaneous | 0.872 | 17.0% | 783 |
+| marketing | 0.864 | 14.1% | 234 |
+| us_foreign_policy | 0.848 | 17.0% | 100 |
+| high_school_geography | 0.836 | 15.2% | 198 |
+| high_school_computer_science | 0.826 | 29.0% | 100 |
+| college_biology | 0.823 | 19.4% | 144 |
+| clinical_knowledge | 0.823 | 19.2% | 265 |
+| high_school_psychology | 0.806 | 8.1% | 545 |
+
+**Worst tasks** (AUC ≤ 0.65):
+
+| Task | AUC | SteerRate | N |
+|---|---|---|---|
+| virology | 0.597 | 15.7% | 166 |
+| global_facts | 0.574 | 85.0% | 100 |
+| high_school_mathematics | 0.568 | 64.4% | 270 |
+| college_mathematics | 0.494 | 78.0% | 100 |
+| abstract_algebra | 0.433 | 73.0% | 100 |
+
+### Analysis
+
+1. **AUC 0.773 — stronger OOD generalization than the reverse direction**: The non-MMLU classifier on MMLU achieves mean per-task AUC 0.739, compared to MMLU classifier on MMLU-Pro (0.659) and GPQA (0.565). Training on harder, more diverse tasks (GPQA/FACTOR/LogiQA) appears to produce a more generalizable correctness signal.
+
+2. **Steer rate is low (29.5%)**: This classifier is less biased toward predicting wrong — MMLU is easier (~67% correct) than the training data distribution, so fewer samples trigger steering. The opposite OOD bias compared to `llama3_pca128_mmlu_cnn_k7` on MMLU-Pro.
+
+3. **Same failure mode**: Math tasks (abstract_algebra AUC 0.433, college_mathematics 0.494, high_school_mathematics 0.568) still fail — consistent with the pattern seen across all OOD evaluations. Quantitative reasoning tasks have distinct HS geometry.
+
+4. **Social science / humanities still lead**: Top tasks are social science, history, psychology, biology — same cluster pattern as before. The correctness signal in these domains generalizes across benchmarks.
+
+### Cross-Classifier Comparison
+
+| Classifier | Trained on | Eval on | AUC | Mean per-task AUC | Steer Rate |
+|---|---|---|---|---|---|
+| `mmlu_cnn_k7` | MMLU | MMLU-Pro | 0.732 | 0.659 | 69.4% |
+| `mmlu_cnn_k7` | MMLU | GPQA | 0.574 | 0.565 | 89.8% |
+| `pca128` | non-MMLU | MMLU | 0.773 | 0.739 | 29.5% |
+
+Training on harder/more diverse tasks generalizes better in the easy→hard direction than training on easy tasks and generalizing to hard ones.
+
+---
+
 ### TODO
 
 - [ ] **[3] Three-class Classification**: y=0 (+steer corrects), y=1 (−steer corrects), y=2 (correct or neither). Severe class imbalance (~5.7% / 2.7% / 91.6%) — needs weighted loss or oversampling. Confirm `label_pos4` / `label_neg4` availability in MMLU data.
