@@ -408,56 +408,40 @@ Retrain the PCA-CNN classifier on **MMLU hidden states** (same domain as the RSN
 
 ## 2026-03-31 — Use MMLU as Training data
 
-### Data Preparation (`prepare_samples_mmlu.py`)
+### Motivation
+Previous classifier was trained on mixed benchmarks (ARC, GPQA, etc.), introducing noisy and inconsistent signals across different task formats and difficulty levels. Switching to MMLU-only training ensures the classifier and RSN steering vectors share the same data source.
 
-Built `prepare_samples_mmlu.py` to extract `orig_correct` training samples directly from MMLU answer JSONs + H5 files, bypassing ConfSteer's `make_labels.py` pipeline (which requires steering data).
+### Data (`prepare_samples_mmlu.py`)
+Extracts `orig_correct` labels directly from MMLU answer JSONs + H5 files, without requiring steering data.
 
-**Key design decisions:**
 - Each (question, role) is an independent sample; label = whether that role answered correctly
-- Question-level train/test split: all 7 roles of the same question go to the same split
-- Train set: downsampled to 1:1 (ratio=1.0); Test set: original distribution
-- Output naming: `samples_orig_mmlu_{tag}_{train|test}.npz` to avoid collision with existing `samples_orig_all_*`
-
-**Actual sample distribution (llama3 8B, all 7 roles):**
-- Total extracted: ~98k samples
-- Question-level correct ratio: 63.1% (majority=1 questions: 7087 / 11229)
-- Sample-level correct ratio: ~50% — because per-role correct/wrong averages out across 7 roles
-- `unconfident` role is a clear outlier: correct ratio only 0.333 (vs ~0.52–0.55 for other roles)
+- Question-level split: all 7 roles of the same question go to the same train/test split
+- Train: 1:1 downsampled (58,940 samples); Test: original distribution (14,732 samples, ~50% correct)
+- Sample-level correct ratio ~50% is expected (not a bug): question-level correct ratio is 63.1%, but per-role correct/wrong averages out across 7 roles
+- `unconfident` is a clear outlier (correct ratio 0.333 vs ~0.51–0.55 for other roles)
 
 | Role | correct | wrong | ratio |
 |---|---|---|---|
-| confident | 1104 | 924 | 0.544 |
 | neutral | 1128 | 930 | 0.548 |
-| non {task} expert | 1075 | 1051 | 0.506 |
-| person | 1091 | 975 | 0.528 |
+| confident | 1104 | 924 | 0.544 |
 | student | 1099 | 948 | 0.537 |
-| unconfident | 773 | 1548 | 0.333 |
+| person | 1091 | 975 | 0.528 |
 | {task} expert | 1096 | 990 | 0.525 |
-
-*(test set numbers shown above)*
-
-**Files saved (llama3):**
-- `samples/llama3/samples_orig_mmlu_all_train.npz` — 58940 samples, 1:1 balanced
-- `samples/llama3/samples_orig_mmlu_all_test.npz` — 14732 samples, original distribution (~50%)
+| non {task} expert | 1075 | 1051 | 0.506 |
+| unconfident | 773 | 1548 | 0.333 |
 
 ### Classifier Training (`classifier_pca_cnn.py`)
 
-Trained PCA-CNN classifier on MMLU-only data (vs. previous mixed-benchmark training).
+Architecture updates: added residual connection to `PCA_CNN`; added `PCA_Transformer` as an alternative (`--arch transformer`).
 
-**Experiment 1 — default settings (batch=64, dropout=0.3, ch=64):**
-- Best checkpoint: epoch 1 (val acc=73.8%, AUC=0.808)
-- Severe overfitting: train acc reaches 98.8% by epoch 30, val loss diverges immediately
-- Best val: correct(1) recall=69%, wrong(0) recall=79%
+| Experiment | Config | Best Epoch | Val Acc | AUC | wrong(0) recall | correct(1) recall |
+|---|---|---|---|---|---|---|
+| default | ch=64, k=3, dropout=0.3, batch=64 | 1 | 73.8% | 0.808 | 79% | 69% |
+| small | ch=32, k=3, dropout=0.5, batch=256, lr=1e-4 | 5 | 72.9% | 0.802 | 82% | 64% |
+| **CNN+residual k=7** | ch=64, k=7, dropout=0.5, batch=256, lr=1e-4 | 3 | 73.5% | **0.809** | 81% | 66% |
+| Transformer | nhead=4, layers=2, ffn=256 | pending | — | — | — | — |
 
-**Experiment 2 — small model (batch=256, dropout=0.5, ch=32, lr=1e-4):**
-- Best checkpoint: epoch 5 (val acc=72.9%, AUC=0.802)
-- Overfitting significantly reduced; training stable until ~epoch 8
-- Best val: correct(1) recall=64%, wrong(0) recall=82%
+**Current best: CNN+residual k=7** (AUC 0.809, reduced overfitting — best epoch 3 vs 1 for default). Saved to `models/llama3_pca128_mmlu_cnn_k7`.
 
-**Summary:**
-- ROC-AUC ~0.80 indicates the classifier genuinely learns signal from MMLU hidden states
-- Default model (AUC=0.808) saved to `models/llama3_pca128_mmlu` for benchmark use
-- Small model saved to `models/llama3_pca128_mmlu_small`
-
-**Next step:** Run three-way classifier benchmark (`get_answer_classifier_mmlu.py`) with MMLU-trained classifier to compare no_steer / always_steer / classifier on held-out tasks.
+**Next step:** Compare with Transformer results; run three-way classifier benchmark (no_steer / always_steer / classifier) with the best model.
 
