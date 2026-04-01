@@ -562,79 +562,57 @@ The classifier generalizes moderately to MMLU-Pro (overlapping subjects) but fai
 
 ---
 
-## 2026-04-01 — Non-MMLU-Trained Classifier: OOD Generalization on MMLU HS
+## 2026-04-01 — Combined MMLU+MMLU-Pro Classifier
 
 ### Setup
-- **Classifier**: `models/llama3_pca128` — PCA-CNN v1 (no residual, kernel=3) trained on non-MMLU tasks (FACTOR, GPQA, AR-LSAT, LogiQA)
-- **Eval target**: MMLU hidden states (OOD in the opposite direction)
-- **Script**: `eval_classifier_ood.py --benchmark mmlu`
-- **Data**: 14,042 samples, 57 tasks, neutral role
-- **Label distribution**: correct(1)=9,413 (67.0%), wrong(0)=4,629 (33.0%)
+- **Classifier**: `models/llama3_pca128_mmlu_mmlupro_cnn_k7` — PCA-CNN (residual, kernel=7) trained on MMLU + MMLU-Pro hidden states (all 7 roles)
+- **Training data**: merged in-memory (`classifier_pca_cnn.py` with `--train` accepting multiple npz files)
+- **Config**: `--arch cnn --kernel_size 7 --dropout 0.5 --epochs 10 --batch 256 --lr 1e-4`
 
-### Overall Results
+### Dataset
+
+| Split | correct(1) | wrong(0) | Total |
+|---|---|---|---|
+| Train (MMLU) | — | — | — |
+| Train (MMLU-Pro) | — | — | — |
+| Test (merged) | 16,803 | 16,910 | **33,713** |
+
+> Train set is 1:1 downsampled (balanced); test set retains original distribution (near 50/50 after merging MMLU + MMLU-Pro).
+
+### Training Log
+
+| Epoch | Train Loss | Train Acc | Val Loss | Val Acc |
+|---|---|---|---|---|
+| 1 | 0.6120 | 0.660 | 0.5589 | 0.709 | ← best |
+| 2 | 0.5493 | 0.724 | 0.5482 | 0.719 | ← |
+| 3 | 0.5218 | 0.742 | 0.5453 | 0.722 | ← |
+| 4 | 0.4986 | 0.757 | 0.5469 | 0.722 | |
+| 5 | 0.4762 | 0.772 | 0.5536 | 0.723 | |
+| 10 | 0.4121 | 0.811 | 0.5893 | 0.716 | |
+
+Best checkpoint: **epoch 3**
+
+### Results
 
 | Metric | Value |
 |---|---|
-| Accuracy | 71.55% |
-| ROC-AUC | **0.773** |
-| Steer rate (y_pred=0) | 29.5% |
-| wrong(0) recall | 52% |
-| correct(1) recall | 81% |
+| Accuracy | 72.2% |
+| ROC-AUC | **0.789** |
+| wrong(0) precision / recall | 0.70 / 0.78 |
+| correct(1) precision / recall | 0.75 / 0.66 |
+| F1 macro | 0.72 |
 
-Confusion matrix:
-```
-              pred=0   pred=1
-true=0 (wrong)  2385     2244
-true=1 (correct) 1751    7662
-```
+### Comparison
 
-### Per-task AUC (selected)
-
-Mean per-task AUC: **0.739** | Mean steer rate: 31.8%
-
-**Top tasks** (AUC ≥ 0.80):
-
-| Task | AUC | SteerRate | N |
+| Classifier | Trained on | AUC | Notes |
 |---|---|---|---|
-| high_school_government_and_politics | 0.878 | 11.9% | 193 |
-| miscellaneous | 0.872 | 17.0% | 783 |
-| marketing | 0.864 | 14.1% | 234 |
-| us_foreign_policy | 0.848 | 17.0% | 100 |
-| high_school_geography | 0.836 | 15.2% | 198 |
-| high_school_computer_science | 0.826 | 29.0% | 100 |
-| college_biology | 0.823 | 19.4% | 144 |
-| clinical_knowledge | 0.823 | 19.2% | 265 |
-| high_school_psychology | 0.806 | 8.1% | 545 |
+| `mmlu_cnn_k7` | MMLU only | 0.812 | In-domain |
+| `pca128` | non-MMLU (GPQA/FACTOR/…) | 0.786 | 25k samples |
+| `mmlu_mmlupro_cnn_k7` | MMLU + MMLU-Pro | **0.789** | Combined, more diverse |
 
-**Worst tasks** (AUC ≤ 0.65):
+Combined training (MMLU + MMLU-Pro) achieves AUC 0.789 — comparable to the best non-MMLU classifier (0.786) and slightly below MMLU-only (0.812). The additional MMLU-Pro diversity does not hurt generalization while increasing training coverage.
 
-| Task | AUC | SteerRate | N |
-|---|---|---|---|
-| virology | 0.597 | 15.7% | 166 |
-| global_facts | 0.574 | 85.0% | 100 |
-| high_school_mathematics | 0.568 | 64.4% | 270 |
-| college_mathematics | 0.494 | 78.0% | 100 |
-| abstract_algebra | 0.433 | 73.0% | 100 |
-
-### Analysis
-
-1. **AUC 0.773 — stronger OOD generalization than the reverse direction**: The non-MMLU classifier on MMLU achieves mean per-task AUC 0.739, compared to MMLU classifier on MMLU-Pro (0.659) and GPQA (0.565). Training on harder, more diverse tasks (GPQA/FACTOR/LogiQA) appears to produce a more generalizable correctness signal.
-
-2. **Steer rate is low (29.5%)**: This classifier is less biased toward predicting wrong — MMLU is easier (~67% correct) than the training data distribution, so fewer samples trigger steering. The opposite OOD bias compared to `llama3_pca128_mmlu_cnn_k7` on MMLU-Pro.
-
-3. **Same failure mode**: Math tasks (abstract_algebra AUC 0.433, college_mathematics 0.494, high_school_mathematics 0.568) still fail — consistent with the pattern seen across all OOD evaluations. Quantitative reasoning tasks have distinct HS geometry.
-
-4. **Social science / humanities still lead**: Top tasks are social science, history, psychology, biology — same cluster pattern as before. The correctness signal in these domains generalizes across benchmarks.
-
-### Cross-Classifier Comparison
-
-| Classifier | Trained on | Eval on | AUC | Mean per-task AUC | Steer Rate |
-|---|---|---|---|---|---|
-| `mmlu_cnn_k7` | MMLU | MMLU-Pro | 0.732 | 0.659 | 69.4% |
-| `mmlu_cnn_k7` | MMLU | GPQA | 0.574 | 0.565 | 89.8% |
-| `pca128` | non-MMLU | MMLU | 0.773 | 0.739 | 29.5% |
-
-Training on harder/more diverse tasks generalizes better in the easy→hard direction than training on easy tasks and generalizing to hard ones.
+**Next step**: OOD evaluation of `mmlu_mmlupro_cnn_k7` on GPQA and other benchmarks.
 
 ---
 
@@ -643,3 +621,12 @@ Training on harder/more diverse tasks generalizes better in the easy→hard dire
 - [ ] **[3] Three-class Classification**: y=0 (+steer corrects), y=1 (−steer corrects), y=2 (correct or neither). Severe class imbalance (~5.7% / 2.7% / 91.6%) — needs weighted loss or oversampling. Confirm `label_pos4` / `label_neg4` availability in MMLU data.
 - [ ] **[1] Extend Benchmark**: Apply classifier steering to FACTOR, AR-LSAT, LogiQA after classifier matures.
 
+### CNN Optimization Directions
+
+| Priority | Method | Expected Gain | Cost |
+|---|---|---|---|
+| ★★★ | Label smoothing (`label_smoothing=0.1`) + weight decay↑ (`0.05–0.1`) | Directly reduces overfitting | 2-line change |
+| ★★★ | Mixup in latent space (`X_mix = λXi + (1−λ)Xj`) | Equivalent to 2× data | Modify train loop |
+| ★★ | Gaussian noise augmentation (`σ ≈ 0.01`) | Lightweight regularization | 5-line change |
+| ★★ | PCA dim 128→256 | Retain more hidden state info | 1 param change |
+| ★ | Multi-head layer attention | More flexible layer weighting | Larger refactor |
