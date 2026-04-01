@@ -439,9 +439,19 @@ Architecture updates: added residual connection to `PCA_CNN`; added `PCA_Transfo
 | default | ch=64, k=3, dropout=0.3, batch=64 | 1 | 73.8% | 0.808 | 79% | 69% |
 | small | ch=32, k=3, dropout=0.5, batch=256, lr=1e-4 | 5 | 72.9% | 0.802 | 82% | 64% |
 | **CNN+residual k=7** | ch=64, k=7, dropout=0.5, batch=256, lr=1e-4 | 3 | 73.5% | **0.809** | 81% | 66% |
-| Transformer | nhead=4, layers=2, ffn=256 | pending | — | — | — | — |
+| Transformer | nhead=4, layers=2, ffn=256, dropout=0.3, batch=256, lr=1e-4 | 14 | 73.2% | 0.798 | 81% | 65% |
 
-**Current best: CNN+residual k=7** (AUC 0.809, reduced overfitting — best epoch 3 vs 1 for default). Saved to `models/llama3_pca128_mmlu_cnn_k7`.
+**Current best: CNN+residual k=7** (AUC 0.809). Transformer converges more stably (best epoch 14, no early overfitting) but AUC 0.798 < CNN.
 
-**Next step:** Compare with Transformer results; run three-way classifier benchmark (no_steer / always_steer / classifier) with the best model.
+#### Transformer Training Behavior
+- Epoch 1 → 14: val acc gradually rises from 63.8% to 73.2% (no sudden collapse)
+- Epoch 14–30: plateaus around 73.2–73.3%, val loss stagnates at ~0.537
+- Train/val gap is small (~0.014 loss at epoch 14), indicating much less overfitting than CNN
+
+**Comparison:**
+- CNN+residual k=7: faster convergence, higher AUC (0.809), but best at epoch 3 → still somewhat overfit
+- Transformer: slower convergence, stable training, AUC 0.798 — better regularization behavior, slightly weaker peak performance
+- Both models reach similar accuracy (~73%) and wrong(0) recall (~81%)
+
+**Next step:** Run three-way classifier benchmark (no_steer / always_steer / classifier) with CNN+residual k=7 (`models/llama3_pca128_mmlu_cnn_k7`) as the primary model.
 
