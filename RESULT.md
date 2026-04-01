@@ -451,3 +451,90 @@ Architecture updates: added residual connection to `PCA_CNN`; added `PCA_Transfo
 
 **Next step:** Run three-way classifier benchmark (no_steer / always_steer / classifier) with `models/llama3_pca128_mmlu_cnn_k7`.
 
+---
+
+## 2026-04-01 — Classifier-Guided Steering Benchmark (MMLU-Pro, OOD)
+
+### Setup
+- Model: llama3-8B-Instruct, alpha=4, layers 11–20
+- Classifier: `models/llama3_pca128_mmlu_cnn_k7` (trained on MMLU, applied OOD to MMLU-Pro)
+- Role: neutral only
+- Script: `get_answer_classifier_mmlupro_mmlu.py`
+- Data: `benchmark/mmlupro_test.json` (90 tasks, 12,032 samples total)
+
+### Overall Results
+
+| Condition | Accuracy | Steered |
+|---|---|---|
+| no_steer | 35.74% | 0% |
+| always_steer | **37.43%** | 100% |
+| classifier | 37.20% | 69.4% |
+
+Classifier achieves 37.20% using only 69.4% of the steering interventions that `always_steer` uses — within 0.23% of `always_steer`.
+
+### Per-task Win/Tie/Loss vs no_steer
+
+| | clf vs no_steer | always_steer vs no_steer |
+|---|---|---|
+| Better | 51 | — |
+| Same | 16 | — |
+| Worse | 23 | — |
+
+### Observations
+
+1. **Steer rate bias**: Classifier mean steer rate = 68.6% (median 72.8%), ranging from 14.8% to 100%. The classifier heavily predicts y=0 (wrong) on MMLU-Pro — reasonable since Pro is much harder than MMLU (~35% vs ~62% accuracy). In OOD conditions the classifier collapses toward always-steer behavior.
+
+2. **Top gains (clf = always_steer, steer rate ~100%)**:
+
+| Task | no_steer | clf | Δ |
+|---|---|---|---|
+| fund | 14.93% | 28.36% | +13.4% |
+| thermo | 23.64% | 36.36% | +12.7% |
+| atkins | 20.79% | 30.69% | +9.9% |
+| ElectricalMachines | 28.43% | 38.24% | +9.8% |
+
+3. **Top losses (classifier incorrectly suppresses steering)**:
+
+| Task | no_steer | clf | Δ |
+|---|---|---|---|
+| management | 51.35% | 43.24% | −8.1% |
+| college physics | 26.47% | 17.65% | −8.8% |
+| Finance | 20.27% | 14.86% | −5.4% |
+
+4. **Steer rate vs Δacc correlation**: r = 0.338 — tasks with higher steer rate tend to gain more, consistent with the OOD-bias interpretation.
+
+### Conclusion
+
+The MMLU-trained classifier transfers reasonably to MMLU-Pro (OOD). Its main limitation is a strong bias toward predicting wrong (high steer rate), making it behave close to `always_steer`. The 0.23% gap versus `always_steer` suggests the selective steering is not fully exploiting the classifier's discriminative power.
+
+**Next step:** Raise the steering threshold (e.g., steer only when P(wrong) > 0.7) to reduce false positives and test whether selective steering can match `always_steer` accuracy with fewer interventions.
+
+---
+
+## TODO
+
+### [2] OOD Classification Evaluation on MMLU-Pro HS (Next)
+Evaluate the MMLU-trained classifier (`models/llama3_pca128_mmlu_cnn_k7`) directly on MMLU-Pro hidden states to get a true OOD AUC/accuracy.
+
+**Steps:**
+1. Prepare MMLU-Pro samples npz: extract HS + orig_correct labels from MMLU-Pro answer JSONs + H5 files (similar to `prepare_samples_mmlu.py`)
+2. Write inference script: load classifier, apply per-layer scaler+PCA, run forward pass, compute AUC/accuracy
+3. Record results
+
+**Needed info:**
+- Path to MMLU-Pro hidden states (e.g., `HiddenStates/llama3/mmlupro/`)
+- Path to MMLU-Pro answer JSONs (e.g., `answer/llama3/mmlupro/`)
+- Whether format matches MMLU (same H5 structure, same answer JSON keys)
+
+### [3] Three-class Classification (steer +4 / steer -4 / no change)
+Redefine labels using both steering directions:
+- y=0: orig_wrong, +4 steering corrects → apply +steer
+- y=1: orig_wrong, −4 steering corrects → apply −steer
+- y=2: orig_correct or neither steering helps → no steer
+
+**Challenge:** severe class imbalance (~5.7% / ~2.7% / ~91.6%) — needs weighted loss or oversampling.
+**Needed:** confirm `label_pos4` and `label_neg4` label files are available for MMLU data.
+
+### [1] Extend Benchmark to Other Tasks (Later)
+Apply `get_answer_classifier_mmlupro_mmlu.py` to FACTOR, AR-LSAT, GPQA, LogiQA after classifier is more mature (post task [3]).
+
