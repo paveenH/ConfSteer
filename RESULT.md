@@ -434,24 +434,20 @@ Extracts `orig_correct` labels directly from MMLU answer JSONs + H5 files, witho
 
 Architecture updates: added residual connection to `PCA_CNN`; added `PCA_Transformer` as an alternative (`--arch transformer`).
 
+**Data split (corrected):**
+- Train: 58,940 samples (1:1 downsampled, y=1: 29,470 / y=0: 29,470)
+- Test: 19,663 samples (original distribution, y=1: 12,297 / y=0: 7,366 → ~62.5% correct)
+
 | Experiment | Config | Best Epoch | Val Acc | AUC | wrong(0) recall | correct(1) recall |
 |---|---|---|---|---|---|---|
-| default | ch=64, k=3, dropout=0.3, batch=64 | 1 | 73.8% | 0.808 | 79% | 69% |
-| small | ch=32, k=3, dropout=0.5, batch=256, lr=1e-4 | 5 | 72.9% | 0.802 | 82% | 64% |
-| **CNN+residual k=7** | ch=64, k=7, dropout=0.5, batch=256, lr=1e-4 | 3 | 73.5% | **0.809** | 81% | 66% |
-| Transformer | nhead=4, layers=2, ffn=256, dropout=0.3, batch=256, lr=1e-4 | 14 | 73.2% | 0.798 | 81% | 65% |
+| **CNN+residual k=7** | ch=64, k=7, dropout=0.5, batch=256, lr=1e-4 | 4 | 72.4% | **0.812** | 80% | 68% |
+| Transformer | nhead=4, layers=2, ffn=256, dropout=0.3, batch=256, lr=1e-4 | 8 | 71.0% | 0.793 | 79% | 66% |
 
-**Current best: CNN+residual k=7** (AUC 0.809). Transformer converges more stably (best epoch 14, no early overfitting) but AUC 0.798 < CNN.
+**Current best: CNN+residual k=7** (AUC 0.812, saved to `models/llama3_pca128_mmlu_cnn_k7`).
 
-#### Transformer Training Behavior
-- Epoch 1 → 14: val acc gradually rises from 63.8% to 73.2% (no sudden collapse)
-- Epoch 14–30: plateaus around 73.2–73.3%, val loss stagnates at ~0.537
-- Train/val gap is small (~0.014 loss at epoch 14), indicating much less overfitting than CNN
+#### Training Behavior Comparison
+- **CNN**: converges fast; best epoch 4, then val loss rises — mild overfitting
+- **Transformer**: slower ramp-up (epoch 1 val acc 65.6% vs CNN 70.6%); best epoch 8; less overfitting but 0.019 lower AUC
 
-**Comparison:**
-- CNN+residual k=7: faster convergence, higher AUC (0.809), but best at epoch 3 → still somewhat overfit
-- Transformer: slower convergence, stable training, AUC 0.798 — better regularization behavior, slightly weaker peak performance
-- Both models reach similar accuracy (~73%) and wrong(0) recall (~81%)
-
-**Next step:** Run three-way classifier benchmark (no_steer / always_steer / classifier) with CNN+residual k=7 (`models/llama3_pca128_mmlu_cnn_k7`) as the primary model.
+**Next step:** Run three-way classifier benchmark (no_steer / always_steer / classifier) with `models/llama3_pca128_mmlu_cnn_k7`.
 
