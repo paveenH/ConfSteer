@@ -614,9 +614,93 @@ Combined training (MMLU + MMLU-Pro) achieves AUC 0.789 — comparable to the bes
 
 **Next step**: OOD evaluation of `mmlu_mmlupro_cnn_k7` on GPQA and other benchmarks.
 
+### OOD Eval: `mmlu_mmlupro_cnn_k7` → GPQA
+
+| Metric | Value |
+|---|---|
+| Accuracy | 67.03% |
+| ROC-AUC | **0.555** |
+| Steer rate (y_pred=0) | 88.2% |
+| wrong(0) recall | 91% |
+| correct(1) recall | 17% |
+
+| Task | AUC | SteerRate | N |
+|---|---|---|---|
+| GPQA_(gpqa_diamond) | 0.582 | 90.9% | 198 |
+| GPQA_(gpqa_extended) | 0.563 | 87.5% | 546 |
+| GPQA_(gpqa_main) | 0.536 | 87.7% | 448 |
+
+Mean per-task AUC: **0.560**
+
+**vs `mmlu_cnn_k7`** (MMLU-only, GPQA AUC 0.574): adding MMLU-Pro does not improve GPQA OOD generalization (0.555 vs 0.574). GPQA remains a hard OOD target regardless of training data diversity within MMLU-style tasks.
+
 ---
 
-### TODO
+## 2026-04-01 — Label Smoothing + Weight Decay Optimization
+
+### Setup
+- **Classifier**: `models/llama3_pca128_mmlu_mmlupro_cnn_k7_ls`
+- **Changes**: `label_smoothing=0.1`, `weight_decay=0.05` (vs previous: no smoothing, `weight_decay=0.01`)
+- **Config**: `--arch cnn --kernel_size 7 --dropout 0.5 --epochs 20 --batch 256 --lr 1e-4`
+- **Training data**: same as above (MMLU + MMLU-Pro combined, 7 roles)
+
+### Training Log
+
+| Epoch | Train Loss | Train Acc | Val Loss | Val Acc |
+|---|---|---|---|---|
+| 1 | 0.6300 | 0.659 | 0.5891 | 0.709 |
+| 2 | 0.5816 | 0.723 | 0.5801 | 0.720 |
+| 3 | 0.5609 | 0.742 | 0.5771 | 0.723 |
+| 4 | 0.5432 | 0.756 | 0.5774 | **0.724** | ← best |
+| 5 | 0.5253 | 0.774 | 0.5838 | 0.723 |
+| 10 | 0.4372 | 0.849 | 0.6380 | 0.711 |
+| 20 | 0.3794 | 0.895 | 0.6966 | 0.703 |
+
+Best checkpoint: **epoch 4** (vs epoch 3 without smoothing)
+
+### Results
+
+| Metric | Value |
+|---|---|
+| Accuracy | 72.4% |
+| ROC-AUC | **0.790** |
+| wrong(0) precision / recall | 0.70 / 0.78 |
+| correct(1) precision / recall | 0.75 / 0.67 |
+| F1 macro | 0.72 |
+
+### Comparison vs Previous
+
+| Config | Best Epoch | Val Acc | AUC |
+|---|---|---|---|
+| Baseline (no smoothing) | 3/10 | 72.2% | 0.789 |
+| + label_smoothing=0.1 + wd=0.05 | 4/20 | 72.4% | 0.790 |
+
+**Conclusion**: Marginal improvement (+0.001 AUC, best epoch shifted from 3→4). Overfitting pattern fundamentally unchanged — train/val diverge from epoch 4 onward. Label smoothing alone is insufficient. **Next step**: Mixup augmentation.
+
+### OOD Eval: `mmlu_mmlupro_cnn_k7_ls` → GPQA
+
+| Metric | Value |
+|---|---|
+| Accuracy | 66.61% |
+| ROC-AUC | **0.554** |
+| Steer rate (y_pred=0) | 87.4% |
+| wrong(0) precision / recall | 0.70 / 0.90 |
+| correct(1) precision / recall | 0.45 / 0.18 |
+| F1 macro | 0.52 |
+
+| Task | AUC | Acc | SteerRate | N |
+|---|---|---|---|---|
+| GPQA_(gpqa_diamond) | 0.580 | 65.2% | 90.4% | 198 |
+| GPQA_(gpqa_extended) | 0.561 | 67.6% | 86.6% | 546 |
+| GPQA_(gpqa_main) | 0.534 | 66.1% | 87.1% | 448 |
+
+Mean per-task AUC: **0.558**
+
+**vs baseline** (`mmlu_mmlupro_cnn_k7`, AUC 0.555): Label smoothing has zero effect on OOD generalization (+0.003). Root cause: `orig_correct` label in GPQA is not systematically encoded in hidden states — GPQA difficulty confounds the signal entirely.
+
+---
+
+## TODO
 
 - [ ] **[3] Three-class Classification**: y=0 (+steer corrects), y=1 (−steer corrects), y=2 (correct or neither). Severe class imbalance (~5.7% / 2.7% / 91.6%) — needs weighted loss or oversampling. Confirm `label_pos4` / `label_neg4` availability in MMLU data.
 - [ ] **[1] Extend Benchmark**: Apply classifier steering to FACTOR, AR-LSAT, LogiQA after classifier matures.
@@ -625,7 +709,7 @@ Combined training (MMLU + MMLU-Pro) achieves AUC 0.789 — comparable to the bes
 
 | Priority | Method | Expected Gain | Cost |
 |---|---|---|---|
-| ★★★ | Label smoothing (`label_smoothing=0.1`) + weight decay↑ (`0.05–0.1`) | Directly reduces overfitting | 2-line change |
+| ~~★★★~~ | ~~Label smoothing (`label_smoothing=0.1`) + weight decay↑ (`0.05–0.1`)~~ | ~~Directly reduces overfitting~~ | ✅ Done — marginal gain (+0.001 AUC) |
 | ★★★ | Mixup in latent space (`X_mix = λXi + (1−λ)Xj`) | Equivalent to 2× data | Modify train loop |
 | ★★ | Gaussian noise augmentation (`σ ≈ 0.01`) | Lightweight regularization | 5-line change |
 | ★★ | PCA dim 128→256 | Retain more hidden state info | 1 param change |
