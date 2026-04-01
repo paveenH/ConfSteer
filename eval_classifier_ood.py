@@ -161,6 +161,56 @@ def load_mmlupro(model: str, size: str, role: str):
     return np.array(X_list, dtype=np.float32), np.array(y_list, dtype=np.int64), task_list
 
 
+def load_mmlu(model: str, size: str, role: str):
+    """
+    answer/llama3/mmlu/{task}_8B_answers.json
+    HiddenStates/llama3/mmlu/{role}_{task}_8B.h5
+    answer key: answer_{role}
+    label: integer index → LETTERS[label]
+    """
+    ans_dir = ANSWER_DIR / model / "mmlu"
+    hs_dir  = HIDDEN_DIR / model / "mmlu"
+    ans_key = f"answer_{role}"
+
+    ans_files = sorted(ans_dir.glob(f"*_{size}_answers.json"))
+    if not ans_files:
+        raise FileNotFoundError(f"No answer files in {ans_dir}")
+    print(f"  Found {len(ans_files)} answer files")
+
+    X_list, y_list, task_list = [], [], []
+    skipped = []
+    for ans_path in ans_files:
+        with open(ans_path, encoding="utf-8") as f:
+            d = json.load(f)
+        samples = d["data"]
+        if not samples:
+            continue
+        task      = samples[0]["task"]
+        task_slug = task.replace(" ", "_")
+        h5_path   = hs_dir / f"{role}_{task_slug}_{size}.h5"
+        if not h5_path.exists():
+            skipped.append(h5_path.name)
+            continue
+        with h5py.File(h5_path, "r") as hf:
+            hs   = hf["hidden_states"]
+            n_h5 = hs.shape[0]
+            for idx, sample in enumerate(samples):
+                if idx >= n_h5:
+                    break
+                pred = sample.get(ans_key)
+                if pred is None:
+                    continue
+                true_letter  = LETTERS[int(sample["label"])]
+                orig_correct = int(pred == true_letter)
+                X_list.append(hs[idx, :, :])
+                y_list.append(orig_correct)
+                task_list.append(task_slug)
+
+    if skipped:
+        print(f"  Skipped {len(skipped)} H5 not found: {skipped[:5]}")
+    return np.array(X_list, dtype=np.float32), np.array(y_list, dtype=np.int64), task_list
+
+
 def load_gpqa(model: str, size: str, role: str):
     """
     answer/llama3/gpqa/orig/GPQA_({subtask})_8B_answers.json
@@ -213,6 +263,7 @@ def load_gpqa(model: str, size: str, role: str):
 
 
 LOADERS = {
+    "mmlu":    load_mmlu,
     "mmlupro": load_mmlupro,
     "gpqa":    load_gpqa,
 }
