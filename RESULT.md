@@ -1,5 +1,46 @@
 # ConfSteer Result Log
 
+### Quick Reference
+
+#### RSN Paper Key Numbers (ACL, `main.tex`)
+
+| Experiment | Key Result |
+|---|---|
+| MMLU-E abstention | Non-Expert E-ratio **44.8%** → Expert **6.9%**; conditional accuracy unchanged |
+| RSN causal steering | α=+4, layers 11–19: recovers expert-level accuracy from neutral baseline |
+| RSN knockout | Suppression lock confirmed — ablating RSNs prevents expert role from committing |
+| GSM8K Confidence Ratio | Llama3: pos **1.37** / orig **1.08** / neg **0.91**; Qwen3: pos **0.33** / orig **0.31** / neg **0.27** |
+| Cross-model transfer | IT→Base steering transfer confirmed (RSN vectors generalize across model variants) |
+| ARC / CSQA generalization | RSN steering effect replicates on ARC-Challenge and CommonsenseQA |
+| Future Work (Section 5.2) | Explicitly mentions "temporal confidence dynamics during multi-step reasoning" → motivates Capitulation Rate |
+
+#### Canonical Run Config
+
+| Parameter | Value |
+|---|---|
+| Primary model | Llama3-8B-IT (`meta-llama/Llama-3.1-8B-Instruct`) |
+| Secondary model | Qwen3-8B-IT (`Qwen/Qwen3-8B`) |
+| Steering alpha | ±4 |
+| Steering layers | 11–20 (Llama3), 11–20 (Qwen3) |
+| Mask type | NMD (`nmd`) |
+| TOP percentage | 0.5% |
+| Roles (7) | `neutral`, `{task} expert`, `non {task} expert`, `confident`, `unconfident`, `student`, `person` |
+| Benchmark priority | MMLU → MMLU-E (abstention) → GSM8K (open-ended) |
+
+#### Server Paths
+
+| Resource | Path |
+|---|---|
+| Work root | `/data1/paveen/RolePlaying` |
+| Components base | `/data1/paveen/RolePlaying/components` |
+| Benchmark files | `components/benchmark/{name}.json` (e.g. `mmlupro_test.json`, `gsm8k_test_sample.json`) |
+| NMD mask dir | `components/mask/{hs_prefix}_non_logits/` (e.g. `llama3_non_logits/`) |
+| Mask filename format | `nmd_{percentage}_{start}_{end}_{size}.npy` (e.g. `nmd_0.5_11_20_8B.npy`) |
+| Answer output root | `components/{model}/{ans_file}/` (e.g. `components/llama3/answer_mdf_mmlupro/`) |
+| Hidden states (ConfSteer) | `/data1/paveen/ConfSteer/HiddenStates/{model}/mmlu/` |
+| Classifier models | `/data1/paveen/ConfSteer/models/` (e.g. `llama3_pca128_mmlu_cnn_k7`) |
+| Best classifier | `llama3_pca128_mmlu_cnn_k7` — PCA-CNN residual, AUC 0.812 (MMLU in-domain) |
+
 ---
 
 ## 2026-03-20 — Neutral Role Only
@@ -390,10 +431,49 @@ qwen3 CNN AUC=0.549 (near random), with epoch 1 val acc=6.5% (near-zero). Traini
 | classifier | 9,393 | 14,042 | **66.89%** |
 | always_steer | 9,317 | 14,042 | **66.35%** |
 
+### Classifier Steer Rate
+
+| Metric | Value |
+|---|---|
+| Total steered samples | 4,137 / 14,042 |
+| Overall steer rate | **29.5%** |
+| Mean per-task steer rate | 31.8% |
+| Steer rate range | 5.0% ~ 84.0% |
+
+**Lowest steer rate tasks** (classifier mostly predicts correct):
+
+| Task | Steer Rate |
+|---|---|
+| moral_scenarios | 5.0% |
+| high_school_psychology | 8.6% |
+| world_religions | 11.1% |
+| sociology | 11.9% |
+| high_school_government_and_politics | 12.4% |
+
+**Highest steer rate tasks** (classifier mostly predicts wrong):
+
+| Task | Steer Rate |
+|---|---|
+| high_school_physics | 65.6% |
+| abstract_algebra | 69.0% |
+| college_physics | 74.5% |
+| college_mathematics | 78.0% |
+| global_facts | 84.0% |
+
+**Tasks where classifier ≥ no_steer**: 23 / 57. Top gains:
+
+| Task | no_steer | classifier | Δ | Steer Rate |
+|---|---|---|---|---|
+| college_mathematics | 37.00% | 40.00% | +3.00% | 78.0% |
+| us_foreign_policy | 86.00% | 89.00% | +3.00% | 18.0% |
+| high_school_macroeconomics | 67.69% | 69.23% | +1.54% | 28.5% |
+| professional_law | 47.91% | 49.41% | +1.50% | 52.9% |
+| high_school_microeconomics | 77.73% | 78.99% | +1.26% | 26.5% |
+
 ### Observations
 
 - **Classifier does not improve over no_steer**: steering is net harmful on MMLU regardless of condition.
-- **Classifier slightly recovers** vs always_steer (+0.54%), but still falls short of no_steer (−0.19%).
+- **Classifier steers only 29.5%** of samples (vs 100% always_steer), but still falls short of no_steer (−0.19%).
 - **Root cause**: RSN steering vectors are extracted from MMLU → steering is already tuned to this domain, yet both steered conditions underperform. MMLU is a domain where steering consistently decreases accuracy (consistent with prior observations).
 - **Classifier trained on out-of-domain data** (MMLU-Pro/FACTOR/GPQA etc.) — predictions may not transfer well to MMLU's distribution.
 
@@ -697,8 +777,6 @@ Best checkpoint: **epoch 4** (vs epoch 3 without smoothing)
 Mean per-task AUC: **0.558**
 
 **vs baseline** (`mmlu_mmlupro_cnn_k7`, AUC 0.555): Label smoothing has zero effect on OOD generalization (+0.003). Root cause: `orig_correct` label in GPQA is not systematically encoded in hidden states — GPQA difficulty confounds the signal entirely.
-
----
 
 ## TODO
 
